@@ -95,7 +95,8 @@ foo <font color='red'>bar</font> foo
 
 <div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#5599FF">&nbsp;</div>  **#5599FF** | Blue
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#ABD7FF">&nbsp;</div>  **#ABD7FF** | Blue light
+![Color blue light CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue-light.svg "Color blue light")
+**#ABD7FF** | Blue light
 
 <div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#AA53B6">&nbsp;</div>  **#AA53B6** | Purple
 
