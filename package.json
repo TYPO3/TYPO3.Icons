@@ -1,0 +1,10 @@
+{
+    "name": "wmdbsystems-typo3-icons",
+    "description": "SVG icons for the TYPO3 CMS backend",
+    "repository": "https://github.com/wmdbsystems/T3.Icons",
+    "readme": "readme.md",
+    "homepage": "http://www.wmdb.de",
+    "author": "Florian Steller",
+    "version": "0.0.1-dev",
+    "license": "MIT",
+}
