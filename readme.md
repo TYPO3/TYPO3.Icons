@@ -115,6 +115,12 @@ apps-toolbar-menu-search
 avatar-default
 
 
+### Default
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/default/default-not-found.svg" height="16" width="16">
+default-not-found
+
+
 ### MimeTypes
 
 ![MimeType Document](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype.svg "MimeType Document")
