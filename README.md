@@ -6,7 +6,7 @@ This repository contains all new svg icons for the TYPO3 CMS backend.
 
 ### Action
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 actions-document-paste-after.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-after.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-after.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-after.svg" height="64" width="64">
 actions-document-paste-before.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-before.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-before.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-before.svg" height="64" width="64">
 actions-document-paste-into.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-into.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-into.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-document-paste-into.svg" height="64" width="64">
@@ -34,7 +34,7 @@ actions-system-tree-search-open.svg | <img src="https://rawgit.com/wmdbsystems/T
 
 ### App
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 apps-filetree-folder-default.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-default.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-default.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-default.svg" height="64" width="64">
 apps-filetree-folder-locked.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-locked.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-locked.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-locked.svg" height="64" width="64">
 apps-filetree-folder-opened.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-opened.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-opened.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-opened.svg" height="64" width="64">
@@ -47,25 +47,25 @@ apps-toolbar-menu-search.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons
 
 ### Avatar
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 avatar-default.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/avatar/avatar-default.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/avatar/avatar-default.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/avatar/avatar-default.svg" height="64" width="64">
 
 
 ### Content
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 content-beside-text-img-left.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-left.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-left.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-left.svg" height="64" width="64">
 
 
 ### Default
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 default-not-found.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/default/default-not-found.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/default/default-not-found.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/default/default-not-found.svg" height="64" width="64">
 
 
 ### Mimetypes
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 mimetype-audio.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-audio.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-audio.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-audio.svg" height="64" width="64">
 mimetype-css.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-css.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-css.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-css.svg" height="64" width="64">
 mimetype-csv.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-csv.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-csv.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mimetypes/mimetype-csv.svg" height="64" width="64">
@@ -90,13 +90,13 @@ mimetype.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/mim
 
 ### Miscellaneous
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 miscellaneous-placeholder.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/miscellaneous/miscellaneous-placeholder.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/miscellaneous/miscellaneous-placeholder.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/miscellaneous/miscellaneous-placeholder.svg" height="64" width="64">
 
 
 ### Module
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 module-about.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-about.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-about.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-about.svg" height="64" width="64">
 module-aboutmodules.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-aboutmodules.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-aboutmodules.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-aboutmodules.svg" height="64" width="64">
 module-belog.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-belog.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-belog.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-belog.svg" height="64" width="64">
@@ -129,7 +129,7 @@ module-workspaces.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master
 
 ### Overlay
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 overlay-deleted.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-deleted.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-deleted.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-deleted.svg" height="64" width="64">
 overlay-hidden.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-hidden.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-hidden.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-hidden.svg" height="64" width="64">
 overlay-includes-subpages.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-includes-subpages.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-includes-subpages.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-includes-subpages.svg" height="64" width="64">
@@ -143,7 +143,7 @@ overlay-translated.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/maste
 
 ### Spinner
 IconName | Small | Default | Large
---- | --- | ---
+--- | --- | --- | ---
 spinner-circle-dark.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-dark.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-dark.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-dark.svg" height="64" width="64">
 spinner-circle-light.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="64" width="64">
 
