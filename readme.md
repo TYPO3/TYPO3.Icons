@@ -71,29 +71,40 @@ MimeType document ZIP archive
 ### Colors
 foo <font color='red'>bar</font> foo
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#FF8700">&nbsp;</div>  **#FF8700** | TYPO3 primary color
+![Color TYPO3](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-typo3.svg "Color TYPO3")
+**#FF8700** | TYPO3 primary color
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#E8A33D">&nbsp;</div>  **#E8A33D** | Yellow
+![Color yellow](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-yellow.svg "Color yellow")
+**#E8A33D** | Yellow
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#FFC857">&nbsp;</div>  **#FFC857** | Yellow light
+![Color yellow light](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-yellow-light.svg "Color yellow light")
+**#FFC857** | Yellow light
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#515151">&nbsp;</div>  **#515151** | Gray dark
+![Color gray dark](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-gray-dark.svg "Color gray dark")
+**#515151** | Gray dark
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#8C8C8C">&nbsp;</div>  **#8C8C8C** | Gray
+![Color gray](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-gray.svg "Color gray")
+**#8C8C8C** | Gray
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#B9B9B9">&nbsp;</div>  **#B9B9B9** | Gray light
+![Color gray light](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-gray-light.svg "Color gray light")
+**#B9B9B9** | Gray light
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#EFEFEF">&nbsp;</div>  **#EFEFEF** | Gray brighter
+![Color gray brighter](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-gray-brighter.svg "Color gray brighter")
+**#EFEFEF** | Gray brighter
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#CD201F">&nbsp;</div>  **#CD201F** | Red
+![Color red](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-red.svg "Color red")
+**#CD201F** | Red
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#FF6777">&nbsp;</div>  **#FF6777** | Red light
+![Color red light](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-red-light.svg "Color red light")
+**#FF6777** | Red light
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#79A548">&nbsp;</div>  **#79A548** | Green
+![Color green](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-green.svg "Color green")
+**#79A548** | Green
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#aad400">&nbsp;</div>  **#AAD400** | Green light
+![Color green light](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-green-light.svg "Color green light")
+**#AAD400** | Green light
 
-![Color blue](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue-light.svg "Color blue")
+![Color blue](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue.svg "Color blue")
 **#5599FF** | Blue
 
 ![Color blue light](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue-light.svg "Color blue light")
