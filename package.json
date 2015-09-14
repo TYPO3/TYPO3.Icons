@@ -1,16 +1,17 @@
 {
-    "name": "wmdbsystems-typo3-icons",
-    "description": "SVG icons for the TYPO3 CMS backend",
-    "repository": "https://github.com/wmdbsystems/T3.Icons",
-    "readme": "README.md",
-    "homepage": "http://www.wmdb.de",
-    "author": "Florian Steller",
-    "version": "0.0.1-dev",
-    "license": "MIT",
-    "devDependencies": {
-      "gulp": "^3.9.0",
-      "gulp-front-matter": "^1.2.3",
-      "gulp-rename": "^1.2.2",
-      "gulp-swig": "^0.7.4"
-    }
+  "name": "wmdbsystems-typo3-icons",
+  "description": "SVG icons for the TYPO3 CMS backend",
+  "repository": "https://github.com/wmdbsystems/T3.Icons",
+  "readme": "README.md",
+  "homepage": "http://www.wmdb.de",
+  "author": "Florian Steller",
+  "version": "0.0.1-dev",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-front-matter": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.0",
+    "gulp-swig": "^0.7.4"
+  }
 }
