@@ -82,6 +82,33 @@ actions-system-help-open
 actions-system-tree-search-open
 
 
+### Apps
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/app/apps-filetree-folder-default.svg" height="16" width="16">
+apps-filetree-folder-default
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/app/apps-filetree-folder-locked.svg" height="16" width="16">
+apps-filetree-folder-locked
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/app/apps-filetree-folder-opened.svg" height="16" width="16">
+apps-filetree-folder-opened
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/app/apps-filetree-folder-recycler.svg" height="16" width="16">
+apps-filetree-folder-recycler
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/app/apps-filetree-folder-temp.svg" height="16" width="16">
+apps-filetree-folder-temp
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/app/apps-filetree-mount.svg" height="16" width="16">
+apps-filetree-mount
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/app/apps-pagetree-root.svg" height="16" width="16">
+apps-pagetree-root
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/app/apps-toolbar-menu-search.svg" height="16" width="16">
+apps-toolbar-menu-search
+
+
 ### MimeTypes
 
 ![MimeType Document](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype.svg "MimeType Document")
