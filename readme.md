@@ -184,6 +184,93 @@ MimeType document video
 MimeType document ZIP archive
 
 
+### Modules
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-about.svg" height="16" width="16">
+module-about
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-aboutmodules.svg" height="16" width="16">
+module-aboutmodules
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-belog.svg" height="16" width="16">
+module-belog
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-beuser.svg" height="16" width="16">
+module-beuser
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-config.svg" height="16" width="16">
+module-config
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-cshmanual.svg" height="16" width="16">
+module-cshmanual
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-dbal.svg" height="16" width="16">
+module-dbal
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-dbint.svg" height="16" width="16">
+module-dbint
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-documentation.svg" height="16" width="16">
+module-documentation
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-extensionmanager.svg" height="16" width="16">
+module-extensionmanager
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-filelist.svg" height="16" width="16">
+module-filelist
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-func.svg" height="16" width="16">
+module-func
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-indexed_search.svg" height="16" width="16">
+module-indexed_search
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-info.svg" height="16" width="16">
+module-info
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-install.svg" height="16" width="16">
+module-install
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-lang.svg" height="16" width="16">
+module-lang
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-list.svg" height="16" width="16">
+module-list
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-page.svg" height="16" width="16">
+module-page
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-permission.svg" height="16" width="16">
+module-permission
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-recycler.svg" height="16" width="16">
+module-recycler
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-reports.svg" height="16" width="16">
+module-reports
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-scheduler.svg" height="16" width="16">
+module-scheduler
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-setup.svg" height="16" width="16">
+module-setup
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-taskcenter.svg" height="16" width="16">
+module-taskcenter
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-tstemplate.svg" height="16" width="16">
+module-tstemplate
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-version.svg" height="16" width="16">
+module-version
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-viewpage.svg" height="16" width="16">
+module-viewpage
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-workspaces.svg" height="16" width="16">
+module-workspaces
+
+
 ### Overlays
 
 <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-deleted.svg" height="16" width="16">
