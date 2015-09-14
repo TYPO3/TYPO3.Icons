@@ -6,10 +6,10 @@ This repository contains all new svg icons for the TYPO3 CMS backend.
 
 ### Actions
 
-![Actions edit cut](https://rawgit.com/wmdbsystems/T3.Icons/master/src/actions/actions-edit-cut.svg "Actions edit cut")
+![Actions edit cut](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-edit-cut.svg "Actions edit cut")
 Action edit cut
 
-![Actions edit cut mono](https://rawgit.com/wmdbsystems/T3.Icons/master/src/actions/actions-edit-cut-mono.svg "Actions edit cut mono")
+![Actions edit cut mono](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-edit-cut-mono.svg "Actions edit cut mono")
 Action edit cut mono
 
 ### MimeTypes
