@@ -184,6 +184,12 @@ MimeType document video
 MimeType document ZIP archive
 
 
+### Miscellaneous
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/miscellaneous/miscellaneous-placeholder.svg" height="16" width="16">
+miscellaneous-placeholder
+
+
 ### Modules
 
 <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/module/module-about.svg" height="16" width="16">
