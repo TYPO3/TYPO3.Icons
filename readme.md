@@ -14,8 +14,14 @@ Action edit cut mono
 
 ### MimeTypes
 
-![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype.svg "MimeType Document CSS")
+![MimeType Document](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype.svg "MimeType Document")
 MimeType document
+
+![MimeType Document hidden](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-hidden.svg "MimeType Document CSS")
+MimeType document hidden
+
+![MimeType Document audio](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-audio.svg "MimeType Document audio")
+MimeType document audio
 
 ![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-css.svg "MimeType Document CSS")
 MimeType document CSS
@@ -28,9 +34,6 @@ MimeType document EXE
 
 ![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-flash.svg "MimeType Document CSS")
 MimeType document Flash
-
-![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-hidden.svg "MimeType Document CSS")
-MimeType document hidden
 
 ![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-html.svg "MimeType Document CSS")
 MimeType document html
@@ -49,9 +52,6 @@ MimeType document MS Powerpoint
 
 ![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-ms-word.svg "MimeType Document CSS")
 MimeType document MS Word
-
-![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-music.svg "MimeType Document CSS")
-MimeType document music
 
 ![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-pdf.svg "MimeType Document CSS")
 MimeType document PDF
