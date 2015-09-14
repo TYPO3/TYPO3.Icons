@@ -69,7 +69,6 @@ MimeType document ZIP archive
 ## Style guide
 
 ### Colors
-foo <font color='red'>bar</font> foo
 
 ![Color TYPO3](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-typo3.svg "Color TYPO3")
 **#FF8700** | TYPO3 primary color
