@@ -6,72 +6,72 @@ This repository contains all new svg icons for the TYPO3 CMS backend.
 
 ### Actions
 
-![Actions edit cut](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/actions/actions-edit-cut.svg "Actions edit cut")
+![Actions edit cut](https://rawgit.com/wmdbsystems/T3.Icons/master/src/actions/actions-edit-cut.svg "Actions edit cut")
 Action edit cut
 
-![Actions edit cut mono](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/actions/actions-edit-cut-mono.svg "Actions edit cut mono")
+![Actions edit cut mono](https://rawgit.com/wmdbsystems/T3.Icons/master/src/actions/actions-edit-cut-mono.svg "Actions edit cut mono")
 Action edit cut mono
 
 ### MimeTypes
 
-![MimeType Document](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype.svg "MimeType Document")
+![MimeType Document](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype.svg "MimeType Document")
 MimeType document
 
-![MimeType Document hidden](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-hidden.svg "MimeType Document CSS")
+![MimeType Document hidden](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-hidden.svg "MimeType Document CSS")
 MimeType document hidden
 
-![MimeType Document audio](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-audio.svg "MimeType Document audio")
+![MimeType Document audio](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-audio.svg "MimeType Document audio")
 MimeType document audio
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-css.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-css.svg "MimeType Document CSS")
 MimeType document CSS
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-csv.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-csv.svg "MimeType Document CSS")
 MimeType document CSV
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-exe.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-exe.svg "MimeType Document CSS")
 MimeType document EXE
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-flash.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-flash.svg "MimeType Document CSS")
 MimeType document Flash
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-html.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-html.svg "MimeType Document CSS")
 MimeType document html
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-image.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-image.svg "MimeType Document CSS")
 MimeType document image
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-js.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-js.svg "MimeType Document CSS")
 MimeType document JavaScript
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-ms-excel.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-ms-excel.svg "MimeType Document CSS")
 MimeType document MS Excel
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-ms-powerpoint.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-ms-powerpoint.svg "MimeType Document CSS")
 MimeType document MS Powerpoint
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-ms-word.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-ms-word.svg "MimeType Document CSS")
 MimeType document MS Word
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-pdf.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-pdf.svg "MimeType Document CSS")
 MimeType document PDF
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-php.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-php.svg "MimeType Document CSS")
 MimeType document PHP
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-tar.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-tar.svg "MimeType Document CSS")
 MimeType document TAR archive
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-ts.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-ts.svg "MimeType Document CSS")
 MimeType document TypoScript
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-txt.svg "MimeType Document CSS")
-MimeType document text 
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-txt.svg "MimeType Document CSS")
+MimeType document text
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-video.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-video.svg "MimeType Document CSS")
 MimeType document video
 
-![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-zip.svg "MimeType Document CSS")
+![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-zip.svg "MimeType Document CSS")
 MimeType document ZIP archive
 
 ## Style guide
