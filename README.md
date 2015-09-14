@@ -320,46 +320,46 @@ spinner-circle-light
 
 ### Colors
 
-![Color TYPO3](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-typo3.svg "Color TYPO3")
+![Color TYPO3](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-typo3.svg "Color TYPO3")
 **#FF8700** | TYPO3 primary color
 
-![Color yellow](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-yellow.svg "Color yellow")
+![Color yellow](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-yellow.svg "Color yellow")
 **#E8A33D** | Yellow
 
-![Color yellow light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-yellow-light.svg "Color yellow light")
+![Color yellow light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-yellow-light.svg "Color yellow light")
 **#FFC857** | Yellow light
 
-![Color gray dark](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-gray-dark.svg "Color gray dark")
+![Color gray dark](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-gray-dark.svg "Color gray dark")
 **#515151** | Gray dark
 
-![Color gray](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-gray.svg "Color gray")
+![Color gray](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-gray.svg "Color gray")
 **#8C8C8C** | Gray
 
-![Color gray light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-gray-light.svg "Color gray light")
+![Color gray light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-gray-light.svg "Color gray light")
 **#B9B9B9** | Gray light
 
-![Color gray brighter](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-gray-brighter.svg "Color gray brighter")
+![Color gray brighter](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-gray-brighter.svg "Color gray brighter")
 **#EFEFEF** | Gray brighter
 
-![Color red](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-red.svg "Color red")
+![Color red](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-red.svg "Color red")
 **#CD201F** | Red
 
-![Color red light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-red-light.svg "Color red light")
+![Color red light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-red-light.svg "Color red light")
 **#FF6777** | Red light
 
-![Color green](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-green.svg "Color green")
+![Color green](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-green.svg "Color green")
 **#79A548** | Green
 
-![Color green light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-green-light.svg "Color green light")
+![Color green light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-green-light.svg "Color green light")
 **#AAD400** | Green light
 
-![Color blue](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue.svg "Color blue")
+![Color blue](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-blue.svg "Color blue")
 **#5599FF** | Blue
 
-![Color blue light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue-light.svg "Color blue light")
+![Color blue light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-blue-light.svg "Color blue light")
 **#ABD7FF** | Blue light
 
-![Color purple](https://rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-purple.svg "Color purple")
+![Color purple](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-purple.svg "Color purple")
 **#AA53B6** | Purple
 
 ### Fonts
