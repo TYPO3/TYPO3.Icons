@@ -66,7 +66,7 @@ MimeType document TAR archive
 MimeType document TypoScript
 
 ![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-txt.svg "MimeType Document CSS")
-MimeType document text
+MimeType document text 
 
 ![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype-video.svg "MimeType Document CSS")
 MimeType document video
