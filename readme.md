@@ -6,11 +6,81 @@ This repository contains all new svg icons for the TYPO3 CMS backend.
 
 ### Actions
 
+![actions-document-paste](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-paste.svg "actions-document-paste")
+actions-document-paste
+
+![actions-document-paste-after](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-paste-after.svg "actions-document-paste-after")
+actions-document-paste-after
+
+![actions-document-paste-before](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-paste-before.svg "actions-document-paste-before")
+actions-document-paste-before
+
+![actions-document-paste-into](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-paste-into.svg "actions-document-paste-into")
+actions-document-paste-into
+
+![actions-document-save](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-save.svg "actions-document-save")
+actions-document-save
+
+![actions-document-save-cleartranslationcache](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-save-cleartranslationcache.svg "actions-document-save-cleartranslationcache")
+actions-document-save-cleartranslationcache
+
+![actions-document-save-close](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-save-close.svg "actions-document-save-close")
+actions-document-save-close
+
+![actions-document-save-new](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-save-new.svg "actions-document-save-new")
+actions-document-save-new
+
+![actions-document-save-translation](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-save-translation.svg "actions-document-save-translation")
+actions-document-save-translation
+
+![actions-document-save-view](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-document-save-view.svg "actions-document-save-view")
+actions-document-save-view
+
 ![actions-edit-cut-release](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-edit-cut-release.svg "actions-edit-cut-release")
 actions-edit-cut-release
 
 ![actions-edit-cut](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-edit-cut.svg "actions-edit-cut")
 actions-edit-cut
+
+![actions-filter](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-filter.svg "actions-filter")
+actions-filter
+
+![actions-page-move](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-page-move.svg "actions-page-move")
+actions-page-move
+
+![actions-page-move](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-page-move.svg "actions-page-move")
+actions-page-move
+
+![actions-page-new](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-page-new.svg "actions-page-new")
+actions-page-new
+
+![actions-page-open](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-page-open.svg "actions-page-open")
+actions-page-open
+
+![actions-page-open](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-page-open.svg "actions-page-open")
+actions-page-open
+
+![actions-refresh](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-refresh.svg "actions-refresh")
+actions-refresh
+
+![actions-search](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-search.svg "actions-search")
+actions-search
+
+![actions-system-cache-clear-impact-high](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-system-cache-clear-impact-high.svg "actions-system-cache-clear-impact-high")
+actions-system-cache-clear-impact-high
+
+![actions-system-cache-clear-impact-low](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-system-cache-clear-impact-low.svg "actions-system-cache-clear-impact-low")
+actions-system-cache-clear-impact-low
+
+![actions-system-cache-clear-impact-medium](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-system-cache-clear-impact-medium.svg "actions-system-cache-clear-impact-medium")
+actions-system-cache-clear-impact-medium
+
+![actions-system-help-open](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-system-help-open.svg "actions-system-help-open")
+actions-system-help-open
+
+![actions-system-tree-search-open](https://rawgit.com/wmdbsystems/T3.Icons/master/src/action/actions-system-tree-search-open.svg "actions-system-tree-search-open")
+actions-system-tree-search-open
+
 
 ### MimeTypes
 
