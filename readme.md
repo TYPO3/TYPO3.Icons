@@ -144,6 +144,37 @@ MimeType document video
 ![MimeType Document CSS](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype-zip.svg "MimeType Document CSS")
 MimeType document ZIP archive
 
+
+### Overlays
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-deleted.svg" height="16" width="16">
+overlay-deleted
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-hidden.svg" height="16" width="16">
+overlay-hidden
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-includes-subpages.svg" height="16" width="16">
+overlay-includes-subpages
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-locked.svg" height="16" width="16">
+overlay-locked
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-missing.svg" height="16" width="16">
+overlay-missing
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-readonly.svg" height="16" width="16">
+overlay-readonly
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-restricted.svg" height="16" width="16">
+overlay-restricted
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-scheduled.svg" height="16" width="16">
+overlay-scheduled
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/overlay/overlay-translated.svg" height="16" width="16">
+overlay-translated
+
+
 ## Style guide
 
 ### Colors
