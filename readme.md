@@ -301,6 +301,15 @@ overlay-scheduled
 overlay-translated
 
 
+### Spinner
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/spinner/spinner-circle-dark.svg" height="16" width="16">
+spinner-circle-dark
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/spinner/spinner-circle-light.svg" height="16" width="16">
+spinner-circle-light
+
+
 ## Style guide
 
 ### Colors
