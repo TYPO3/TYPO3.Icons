@@ -4,6 +4,14 @@ This repository contains all new svg icons for the TYPO3 CMS backend.
 
 ## Icons
 
+### Actions
+
+![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/action-edit-cut.svg "MimeType Document CSS")
+Action edit cut
+
+![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/action-edit-cut-mono.svg "MimeType Document CSS")
+Action edit cut mono
+
 ### MimeTypes
 
 ![MimeType Document CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/icons/working-files/mimetypes/mimetype.svg "MimeType Document CSS")
