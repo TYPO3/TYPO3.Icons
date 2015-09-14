@@ -93,12 +93,13 @@ foo <font color='red'>bar</font> foo
 
 <div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#aad400">&nbsp;</div>  **#AAD400** | Green light
 
-<div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#5599FF">&nbsp;</div>  **#5599FF** | Blue
+![Color blue](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue-light.svg "Color blue")
+**#5599FF** | Blue
 
-![Color blue light CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue-light.svg "Color blue light")
+![Color blue light](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-blue-light.svg "Color blue light")
 **#ABD7FF** | Blue light
 
-![Color purple CSS](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-purple.svg "Color purple")
+![Color purple](https://cdn.rawgit.com/wmdbsystems/T3.Icons/master/material/grafics/colors/color-purple.svg "Color purple")
 **#AA53B6** | Purple
 
 ### Fonts
