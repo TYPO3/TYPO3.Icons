@@ -109,6 +109,12 @@ apps-pagetree-root
 apps-toolbar-menu-search
 
 
+### Avatar
+
+<img src="https://rawgit.com/wmdbsystems/T3.Icons/master/src/avatar/avatar-default.svg" height="16" width="16">
+avatar-default
+
+
 ### MimeTypes
 
 ![MimeType Document](https://rawgit.com/wmdbsystems/T3.Icons/master/src/mimetypes/mimetype.svg "MimeType Document")
