@@ -1,3 +1,7 @@
+<style>
+#foo {color: red}
+</style>
+
 # TYPO3 Backend Icons
 
 This repository contains all new svg icons for the TYPO3 CMS backend.
@@ -69,6 +73,7 @@ MimeType document ZIP archive
 ## Style guide
 
 ### Colors
+<div id="foo">Hallo Welt</div>
 
 <div style="display:inline-block; border-radius:100%; height:16px; width:16px; line-height: 1rem; background:#FF8700">&nbsp;</div>  **#FF8700** | TYPO3 primary color
 
