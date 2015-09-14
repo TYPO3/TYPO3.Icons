@@ -1,62 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.2"
-        id="text-github"
-        x="0px"
-        y="0px"
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        id="svg6217 xml:space="preserve"
-    >
-
-  <g
-     style="stroke:#000000;stroke-width:2;stroke-miterlimit:2.5;stroke-dasharray:none;stroke-opacity:1"
-     id="g4198"
-     transform="matrix(0,1,-1,0,0.95913124,48.25)" />
-  <g
-     style="stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68488746"
-     id="g4198-3"
-     transform="matrix(0,1,-1,0,0.959131,48.25)" />
-  <g
-     style="stroke:#000000;stroke-width:2;stroke-miterlimit:2.5;stroke-dasharray:none;stroke-opacity:1"
-     id="g4198-2"
-     transform="matrix(0,1,-1,0,0.95913124,48.25)" />
-  <g
-     id="g4198-3-6-3"
-     transform="matrix(0,-1,1,0,13.959142,-32.216101)" />
-  <g
-     id="g4141"
-     transform="translate(-1.000001,1)">
-    <g
-       id="g4237">
-      <path
-         style="fill:#b9b9b9;fill-opacity:1;stroke:#b9b9b9;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 2,0 2,16 14,16 14,4 10,0 Z m 8,0 z"
-         id="rect4171"
-         transform="translate(1.000001,-1)"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccccccc" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="path4178"
-         d="m 11.000001,2.9805283 0,-1.9902643 0,-1.9902642 4,4.0000002 z"
-         inkscape:transform-center-x="-0.62266511"
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.65" />
-      <path
-         style="opacity:0.15;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:transform-center-x="0.62266499"
-         d="m 15.000001,3.0243396 0,2.4878302 0,2.4878302 -4,-5 z"
-         id="path4446"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
-    </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Layer 1"
-     style="display:inline" />
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g id="apps-filetree-folder-default">
+	<path fill="#FFC857" d="M16,4v10H0V5V4V2h7l1.33,2H16z"/>
+	<path fill="#E8A33D" d="M16,5H8.33L7,7H0V5V4h16V5z"/>
+</g>
 </svg>
