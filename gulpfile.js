@@ -44,19 +44,20 @@ function getIcons(dir) {
 //
 // Minify SVGs
 //
-gulp.task('svgmin', function () {
-    return gulp.src([
+gulp.task('svgmin', function(cb) {
+    gulp.src([
             options.src + '**/*.svg'
         ])
         .pipe(svgmin())
         .pipe(gulp.dest(options.dist));
+    cb();
 });
 
 
 //
 // Compile Readme
 //
-gulp.task('compile-readme', function() {
+gulp.task('compile-readme', function(cb) {
 	var data = [];
 	var folders = getFolders(options.dist);
 	for (var i=0; i<folders.length; i++) {
@@ -72,15 +73,19 @@ gulp.task('compile-readme', function() {
 			folders: data
 		}
 	};
-	gulp.src(options.readme.template)
+    gulp.src(options.readme.template)
 		.pipe(frontMatter({ property: 'data' }))
 		.pipe(swig(opts))
 		.pipe(rename(options.readme.filename))
 		.pipe(gulp.dest(options.readme.destination));
+    cb();
 });
 
 
 //
 // Default Task
 //
-gulp.task('default', ['svgmin','compile-readme']);
+gulp.task('default', [
+    'svgmin',
+    'compile-readme'
+]);
