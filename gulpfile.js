@@ -2,6 +2,7 @@
 // Require
 //
 var fs = require('fs'),
+    pkg = require('./package.json'),
     path = require('path'),
     gulp = require('gulp'),
     swig = require('gulp-swig'),
@@ -15,9 +16,14 @@ var fs = require('fs'),
 //
 var options = {
     readme: {
-        template: './tmpl/README.tmpl',
+        template: './tmpl/markdown/README.tmpl',
         filename: 'README.md',
-        destination: '.'
+        destination: '.',
+    },
+    index: {
+        template: './tmpl/html/index.tmpl',
+        filename: 'index.html',
+        destination: './dist'
     },
     src: './src/',
     dist: './dist/'
@@ -57,19 +63,22 @@ gulp.task('svgmin', function(cb) {
 //
 // Compile Readme
 //
-gulp.task('compile-readme', function(cb) {
+gulp.task('compile-docs', function(cb) {
 	var data = [];
 	var folders = getFolders(options.dist);
 	for (var i=0; i<folders.length; i++) {
 		var folder = folders[i];
+        icons = getIcons(options.dist + folder);
 		data.push({
 			folder: folder,
 			title: folder.charAt(0).toUpperCase() + folder.slice(1),
-			icons: getIcons(options.dist + folder)
+            count: icons.length,
+			icons: icons
 		});
 	}
 	var opts = {
 		data: {
+            pkg: pkg,
 			folders: data
 		}
 	};
@@ -78,6 +87,11 @@ gulp.task('compile-readme', function(cb) {
 		.pipe(swig(opts))
 		.pipe(rename(options.readme.filename))
 		.pipe(gulp.dest(options.readme.destination));
+    gulp.src(options.index.template)
+		.pipe(frontMatter({ property: 'data' }))
+		.pipe(swig(opts))
+		.pipe(rename(options.index.filename))
+		.pipe(gulp.dest(options.index.destination));
     cb();
 });
 
@@ -87,5 +101,5 @@ gulp.task('compile-readme', function(cb) {
 //
 gulp.task('default', [
     'svgmin',
-    'compile-readme'
+    'compile-docs'
 ]);
