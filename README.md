@@ -165,6 +165,7 @@ spinner-circle-light.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/mas
 IconName | Small | Default | Large
 --- | --- | --- | ---
 status-user-admin.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-admin.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-admin.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-admin.svg" height="64" width="64">
+status-user-backend.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-backend.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-backend.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-backend.svg" height="64" width="64">
 
 
 ## Style guide
