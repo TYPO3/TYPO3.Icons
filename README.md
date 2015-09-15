@@ -161,6 +161,12 @@ spinner-circle-dark.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/mast
 spinner-circle-light.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="64" width="64">
 
 
+### Status
+IconName | Small | Default | Large
+--- | --- | --- | ---
+status-user-admin.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-admin.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-admin.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/status/status-user-admin.svg" height="64" width="64">
+
+
 ## Style guide
 
 ### Colors
