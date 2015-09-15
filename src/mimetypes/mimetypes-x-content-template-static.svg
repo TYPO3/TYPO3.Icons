@@ -4,8 +4,8 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16"
 	 enable-background="new 0 0 16 16" xml:space="preserve">
 <path fill="#FFFFFF" d="M1,1h14v14H1V1z"/>
-<path fill="#5599FF" d="M14,2v12H2V2H14 M15,1H1v14h14V1L15,1z"/>
-<path fill="#5599FF" d="M3,3h10v3H3V3z"/>
-<path fill="#5599FF" d="M3,7h3v6H3V7z"/>
-<path fill="#ABD7FF" d="M7,7h6v6H7V7z"/>
+<path fill="#8C8C8C" d="M14,2v12H2V2H14 M15,1H1v14h14V1L15,1z"/>
+<path fill="#8C8C8C" d="M3,3h10v3H3V3z"/>
+<path fill="#8C8C8C" d="M3,7h3v6H3V7z"/>
+<path fill="#B9B9B9" d="M7,7h6v6H7V7z"/>
 </svg>
