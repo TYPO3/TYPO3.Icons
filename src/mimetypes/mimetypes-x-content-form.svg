@@ -93,21 +93,10 @@
                id="layer1-1"
                inkscape:label="Ebene 1">
               <path
-                 style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:#8c8c8c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                 d="m -0.18420874,1036.1482 10.91227574,0 0,1.369 -10.91227574,0 z"
-                 id="rect4200" />
-              <path
-                 style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:#8c8c8c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                 d="m -0.18420874,1038.8861 10.91227574,0 0,1.369 -10.91227574,0 z"
-                 id="rect4204" />
-              <path
-                 style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:#8c8c8c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                 d="m -0.18420874,1041.6241 16.36841774,0 0,6.845 -16.36841774,0 z"
-                 id="rect4206" />
-              <path
-                 style="opacity:1;fill:#5599ff;fill-opacity:1;stroke:#8c8c8c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-                 d="m -0.18420874,1049.8384 5.45613244,0 0,2.738 -5.45613244,0 z"
-                 id="rect4208" />
+                 style="opacity:1;fill:#8c8c8c;fill-opacity:1;stroke:#8c8c8c;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+                 d="m -0.18420875,1036.1482 16.36841675,0 0,2.738 -16.36841675,0 z"
+                 id="rect4200"
+                 inkscape:connector-curvature="0" />
             </g>
           </g>
         </g>
