@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="3.0361262"
+     inkscape:cx="-11.963874"
      inkscape:cy="11.813079"
      inkscape:document-units="px"
      inkscape:current-layer="g4137"
@@ -58,6 +58,10 @@
     <g
        id="g4137"
        transform="matrix(1.0045597,0,0,1.1481974,-1.0120021,-153.5926)">
+      <path
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 2.0028696,1037.2388 13.9364534,0 0,12.193 -13.9364534,0 z"
+         id="rect4164" />
       <g
          transform="matrix(0,0.54433149,-0.62216312,0,4.5616247,1065.2176)"
          id="g4198-21"
@@ -78,13 +82,10 @@
          d="M 1 1 L 1 2 L 1 14 L 1 15 L 2 15 L 15 15 L 15 14 L 15 1 L 2 1 L 1 1 z M 2 2 L 14 2 L 14 14 L 2 14 L 2 2 z "
          transform="matrix(0.995461,0,0,0.87093038,1.0074086,1036.3678)"
          id="rect4341" />
-      <rect
-         style="opacity:1;fill:#8c8c8c;fill-opacity:0.86666667;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4355"
-         width="9.9546099"
-         height="1.7418607"
-         x="3.9937916"
-         y="1038.9806" />
+      <path
+         style="opacity:1;fill:#8c8c8c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 3.9937916,1038.9806 9.9546094,0 0,1.7419 -9.9546094,0 z"
+         id="rect4142" />
     </g>
   </g>
 </svg>
