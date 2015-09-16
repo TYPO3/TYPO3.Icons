@@ -60,6 +60,7 @@ avatar-default.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/di
 IconName | Small | Default | Large
 --- | --- | --- | ---
 content-beside-text-img-left.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-left.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-left.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-left.svg" height="64" width="64">
+content-beside-text-img-right.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-right.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-right.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-right.svg" height="64" width="64">
 
 
 ### Default
