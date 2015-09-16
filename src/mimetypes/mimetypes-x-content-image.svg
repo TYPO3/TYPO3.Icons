@@ -142,36 +142,24 @@
           </g>
         </g>
       </g>
-      <rect
+      <path
          style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4542"
-         width="9.9546099"
-         height="0.87093037"
-         x="3.9937916"
-         y="1039.8516" />
-      <rect
-         y="1045.948"
-         x="3.9937916"
-         height="0.87093037"
-         width="9.9546099"
-         id="rect4544"
-         style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="-13.948404"
-         x="1039.8516"
-         height="0.99546099"
-         width="6.967443"
-         id="rect4546"
+         d="m 3.9937916,1039.8516 9.9546094,0 0,0.8709 -9.9546094,0 z"
+         id="rect4542" />
+      <path
          style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         transform="matrix(0,1,-1,0,0,0)" />
-      <rect
+         d="m 3.9937916,1045.948 9.9546094,0 0,0.8709 -9.9546094,0 z"
+         id="rect4544" />
+      <path
+         transform="matrix(0,1,-1,0,0,0)"
          style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4548"
-         width="6.967443"
-         height="0.99546099"
-         x="1039.8516"
-         y="-4.9892492"
-         transform="matrix(0,1,-1,0,0,0)" />
+         d="m 1039.8516,-13.948404 6.9674,0 0,0.995461 -6.9674,0 z"
+         id="rect4546" />
+      <path
+         transform="matrix(0,1,-1,0,0,0)"
+         style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 1039.8516,-4.9892492 6.9674,0 0,0.995461 -6.9674,0 z"
+         id="rect4548" />
     </g>
   </g>
 </svg>
