@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.627417"
-     inkscape:cx="12.631672"
+     inkscape:cx="2.0250703"
      inkscape:cy="7.0389848"
      inkscape:document-units="px"
-     inkscape:current-layer="g4137"
+     inkscape:current-layer="g4496"
      showgrid="false"
      units="px"
      showguides="false"
@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -100,39 +100,10 @@
              id="g4496"
              transform="matrix(0.74999979,0,0,0.74999978,10.060819,262.0123)">
             <path
-               sodipodi:type="star"
                style="fill:#5599ff;fill-opacity:1;stroke:#ffaaaa;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               id="path4138"
-               sodipodi:sides="3"
-               sodipodi:cx="4.6875"
-               sodipodi:cy="1040.7061"
-               sodipodi:r1="6.1575189"
-               sodipodi:r2="3.0787594"
-               sodipodi:arg1="0.52359878"
-               sodipodi:arg2="1.5707963"
-               inkscape:flatsided="false"
-               inkscape:rounded="0"
-               inkscape:randomized="0"
-               d="m 10.020068,1043.7848 -5.3325679,0 -5.33256787,0 2.66628387,-4.6181 2.6662839,-4.6182 2.6662838,4.6182 z"
-               inkscape:transform-center-y="-0.91266705"
-               transform="matrix(0.56257984,0,0,0.4330741,35.487206,597.88857)" />
-            <path
-               transform="matrix(0.50007085,0,0,0.2887157,38.11355,748.56767)"
-               inkscape:transform-center-y="-0.60844396"
-               d="m 10.020068,1043.7848 -5.3325679,0 -5.33256787,0 2.66628387,-4.6181 2.6662839,-4.6182 2.6662838,4.6182 z"
-               inkscape:randomized="0"
-               inkscape:rounded="0"
-               inkscape:flatsided="false"
-               sodipodi:arg2="1.5707963"
-               sodipodi:arg1="0.52359878"
-               sodipodi:r2="3.0787594"
-               sodipodi:r1="6.1575189"
-               sodipodi:cy="1040.7061"
-               sodipodi:cx="4.6875"
-               sodipodi:sides="3"
-               id="path4144"
-               style="fill:#5599ff;fill-opacity:1;stroke:#ffaaaa;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               sodipodi:type="star" />
+               d="M 7.25 7.25 L 6.125 8.75 L 5 10.25 L 7 10.25 L 7.25 10.25 L 9 10.25 L 9.5 10.25 L 11 10.25 L 10 9.25 L 9 8.25 L 8.4277344 8.8222656 L 8.375 8.75 L 7.25 7.25 z "
+               transform="matrix(1.3333337,0,0,1.3333337,28.457629,1036.2581)"
+               id="path4138" />
             <circle
                style="fill:#e8a33d;fill-opacity:1;stroke:#ffaaaa;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="path4146"
