@@ -7,7 +7,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="document-php.svg"
+   sodipodi:docname="mimetype-php.svg"
    inkscape:version="0.91 r13725"
    width="16"
    height="16"
@@ -15,13 +15,13 @@
    id="svg6217"
    version="1.1">
   <sodipodi:namedview
-     inkscape:current-layer="g4237"
+     inkscape:current-layer="text4150"
      inkscape:window-maximized="1"
      inkscape:window-y="23"
      inkscape:window-x="2048"
-     inkscape:cy="4.555475"
-     inkscape:cx="7.2040953"
-     inkscape:zoom="22.627417"
+     inkscape:cy="5.3331288"
+     inkscape:cx="11.3513"
+     inkscape:zoom="64"
      showgrid="false"
      id="namedview13"
      inkscape:window-height="1051"
@@ -60,6 +60,30 @@
          id="path3429"
          d="m 622,477.971 60.121,0 0,-59.971 -60.121,0 0,59.971 z" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3391-3">
+      <path
+         d="M 0,600 800,600 800,0 0,0 0,600 Z"
+         id="path3393-7"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3407-4">
+      <path
+         d="m 316,477.408 60.363,0 0,-60.408 -60.363,0 0,60.408 z"
+         id="path3409-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3427-7">
+      <path
+         d="m 622,477.971 60.121,0 0,-59.971 -60.121,0 0,59.971 z"
+         id="path3429-5"
+         inkscape:connector-curvature="0" />
+    </clipPath>
   </defs>
   <metadata
      id="metadata6222">
@@ -69,7 +93,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -95,9 +119,11 @@
        id="g4237">
       <path
          style="fill:#6b7eb9;fill-opacity:1;stroke:#b9b9b9;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 2 0 L 2 16 L 14 16 L 14 4 L 10 0 L 2 0 z M 10 0 L 14 0.01953125 L 14 0 L 10 0 z "
+         d="M 2,0 2,16 14,16 14,4 10,0 Z m 8,0 z"
          transform="translate(1.000001,-1)"
-         id="rect4171" />
+         id="rect4171"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
@@ -115,12 +141,21 @@
       <g
          style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="text4621"
-         transform="matrix(0.78392345,0,0,0.78392345,8.7055744,5.3685862)">
+         transform="matrix(0.78392345,0,0,0.78392345,8.7055744,5.3685862)" />
+      <g
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="text4150">
         <path
-           d="m -0.66171169,6.7539396 1.36291504,0 0,1.7053223 -1.36291504,0 0,-1.7053223 z m 1.32263183,-0.9869384 -1.28234863,0 0,-1.0339356 q 0,-0.6781006 0.18798828,-1.1145019 0.18798828,-0.4364014 0.79223633,-1.013794 L 0.96304417,2.0072355 Q 1.3457346,1.6514006 1.5135813,1.3358488 1.6881418,1.0202971 1.6881418,0.69131756 q 0,-0.59753418 -0.4431152,-0.96679688 -0.43640138,-0.36926269 -1.16149903,-0.36926269 -0.53039551,0 -1.13464357,0.23498535 -0.5975342,0.23498535 -1.2487793,0.68481445 l 0,-1.26220703 q 0.6311035,-0.38269046 1.2756348,-0.57067866 0.6512451,-0.1879883 1.34277342,-0.1879883 1.23535158,0 1.98059078,0.6512451 0.7519532,0.6512451 0.7519532,1.71874999 0,0.51025391 -0.2416993,0.97351071 -0.2416992,0.456543 -0.8459472,1.0339356 L 1.3725901,3.2090178 Q 1.0570383,3.5245695 0.92276096,3.7058439 0.79519749,3.8804045 0.74148655,4.0482512 0.70120335,4.1892424 0.68106174,4.3906584 0.66092014,4.5920744 0.66092014,4.9411955 l 0,0.8258057 z"
-           id="path4626"
+           d="m 13,7.0562869 c 0,0.2659645 -0.02988,0.5016458 -0.08964,0.707044 -0.05777,0.2027649 -0.140443,0.3791968 -0.248008,0.5292955 -0.10757,0.1500987 -0.237052,0.2843976 -0.388446,0.4028967 -0.149403,0.118499 -0.284662,0.2264647 -0.473905,0.3238972 l 0,0.9805797 -1.3,0 0,-1.411126 c 0.141433,-0.050033 0.483068,-0.1013823 0.596615,-0.1540488 0.115537,-0.052667 0.236054,-0.1382493 0.361553,-0.2567478 0.11753,-0.1053325 0.209163,-0.2277814 0.2749,-0.3673468 0.06773,-0.1395656 0.101593,-0.2975643 0.101593,-0.473996 0,-0.2633311 -0.06474,-0.4502963 -0.194222,-0.5608954 -0.127491,-0.1132323 -0.30777,-0.1698484 -0.540838,-0.1698484 -0.143425,0 -0.305775,0.040816 -0.48705,0.1224488 -0.179283,0.081633 -0.343626,0.1869651 -0.493028,0.3159974 l -0.119523,0 0,-1.2047398 C 10.127491,5.7685982 10.323706,5.6948653 10.588647,5.6184991 10.853587,5.5395001 11.122511,5.5 11.39542,5.5 c 0.492032,0 0.88247,0.1435155 1.171314,0.4305464 C 12.855579,6.2175773 13.000001,6.5928241 13,7.0562869 Z M 11.800001,12 l -1.3,0 0,-1.25 1.3,0 z"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';fill:#ffffff;fill-opacity:1"
+           id="path4157"
            inkscape:connector-curvature="0"
-           style="fill:#ffffff;fill-opacity:1" />
+           sodipodi:nodetypes="sccccccccccscscccccsssccccc" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path4559"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.31116104px;line-height:125%;font-family:Verdana;-inkscape-font-specification:'Verdana Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 8.399493,12.000046 -3.399492,-2.6547077 0,-1.0905839 3.399492,-2.6547079 0,1.3728563 -2.379135,1.8319831 2.379135,1.8224091 0,1.372751 z" />
       </g>
     </g>
   </g>
