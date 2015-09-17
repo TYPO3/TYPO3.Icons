@@ -19,9 +19,9 @@
      inkscape:window-maximized="1"
      inkscape:window-y="23"
      inkscape:window-x="2048"
-     inkscape:cy="9.3198435"
-     inkscape:cx="6.1133075"
-     inkscape:zoom="1"
+     inkscape:cy="10.866635"
+     inkscape:cx="4.6773458"
+     inkscape:zoom="32"
      showgrid="false"
      id="namedview13"
      inkscape:window-height="1051"
@@ -103,9 +103,11 @@
        id="g4237">
       <path
          style="fill:#ff8700;fill-opacity:1;stroke:#b9b9b9;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 2 0 L 2 16 L 14 16 L 14 4 L 10 0 L 2 0 z M 10 0 L 14 0.01953125 L 14 0 L 10 0 z "
+         d="M 2,0 2,16 14,16 14,4 10,0 Z m 8,0 z"
          transform="translate(1.000001,-1)"
-         id="rect4171" />
+         id="rect4171"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
