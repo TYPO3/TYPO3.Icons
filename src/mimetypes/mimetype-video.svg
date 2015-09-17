@@ -1100,9 +1100,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-18.038456"
-     inkscape:cy="1.4558929"
+     inkscape:zoom="22.627417"
+     inkscape:cx="1.1723062"
+     inkscape:cy="10.480357"
      inkscape:document-units="px"
      inkscape:current-layer="layer1-5"
      showgrid="false"
@@ -1200,9 +1200,10 @@
            id="g4198-3-6-3" />
         <path
            id="rect4171"
-           d="m 23.139,1037.2752 0,16 12,0 0,-12 -4,-4 -8,0 z m 8,0 4,0.019 0,-0.019 -4,0 z"
+           d="m 23.139,1037.2752 0,16 12,0 0,-12 -4,-4 z m 8,0 z"
            style="fill:#cd201f;fill-opacity:1;stroke:#b9b9b9;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccc" />
         <g
            transform="translate(21.139,1037.2752)"
            style="display:inline"
@@ -1210,7 +1211,7 @@
            id="layer2" />
         <g
            style="fill:#ffffff;fill-opacity:1"
-           transform="matrix(0,-0.4,0.4,0,-52.642994,1236.3367)"
+           transform="matrix(0,-0.45833355,0.45,0,-62.840741,1263.6171)"
            id="g4211">
           <path
              inkscape:connector-curvature="0"
