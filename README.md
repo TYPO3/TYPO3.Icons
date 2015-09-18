@@ -128,6 +128,7 @@ miscellaneous-placeholder.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icon
 ### Module
 IconName | Small | Default | Large
 --- | --- | --- | ---
+.DS_Store | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/.DS_Store" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/.DS_Store" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/.DS_Store" height="64" width="64">
 module-about.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-about.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-about.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-about.svg" height="64" width="64">
 module-aboutmodules.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-aboutmodules.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-aboutmodules.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-aboutmodules.svg" height="64" width="64">
 module-belog.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-belog.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-belog.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/module/module-belog.svg" height="64" width="64">

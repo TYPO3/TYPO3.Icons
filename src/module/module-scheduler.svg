@@ -20,7 +20,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -551,6 +551,531 @@
         fill: #6daae0;
       }
     </style>
+    <style
+       id="style4150-1">
+
+      .cls-2 {
+        fill: #6daae0;
+        stroke: #d1d1d1;
+        stroke-width: 1px;
+      }
+    </style>
+    <style
+       id="style4165-01">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4188-7">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4211-19">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4234-5">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4257-6">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4280-8">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4150-3-5">
+
+      .cls-2 {
+        fill: #6daae0;
+        stroke: #d1d1d1;
+        stroke-width: 1px;
+      }
+    </style>
+    <style
+       id="style4165-6-9">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4188-9-6">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4211-4-1">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4234-0-8">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4257-3-3">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4280-2-8">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4150-6-7">
+
+      .cls-2 {
+        fill: #6daae0;
+        stroke: #d1d1d1;
+        stroke-width: 1px;
+      }
+    </style>
+    <style
+       id="style4165-4-1">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4188-8-1">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4211-1-2">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4234-7-3">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4257-8-4">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4280-28-6">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4150-8-0">
+
+      .cls-2 {
+        fill: #6daae0;
+        stroke: #d1d1d1;
+        stroke-width: 1px;
+      }
+    </style>
+    <style
+       id="style4165-40-4">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4188-80-3">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4211-3-5">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4234-2-2">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4257-7-4">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4280-1-5">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4150-86-0">
+
+      .cls-2 {
+        fill: #6daae0;
+        stroke: #d1d1d1;
+        stroke-width: 1px;
+      }
+    </style>
+    <style
+       id="style4165-2-7">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4188-91-8">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4211-8-3">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4234-9-9">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4257-9-9">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4280-27-5">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4150-9-1">
+
+      .cls-2 {
+        fill: #6daae0;
+        stroke: #d1d1d1;
+        stroke-width: 1px;
+      }
+    </style>
+    <style
+       id="style4165-29-6">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4188-6-2">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4211-32-6">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4234-6-0">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4257-33-7">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4280-9-5">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4150-32-4">
+
+      .cls-2 {
+        fill: #6daae0;
+        stroke: #d1d1d1;
+        stroke-width: 1px;
+      }
+    </style>
+    <style
+       id="style4165-0-9">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4188-98-0">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4211-6-3">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+    <style
+       id="style4234-8-7">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4257-76-8">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #6daae0;
+      }
+    </style>
+    <style
+       id="style4280-0-5">
+
+      .cls-3 {
+        stroke: #6daae0;
+        stroke-width: 1px;
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #6daae0;
+      }
+    </style>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -566,12 +1091,12 @@
      id="namedview8"
      showgrid="false"
      inkscape:zoom="11.313708"
-     inkscape:cx="45.687489"
+     inkscape:cx="24.474285"
      inkscape:cy="29.289621"
      inkscape:window-x="2048"
      inkscape:window-y="23"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4335" />
+     inkscape:current-layer="svg2" />
   <path
      fill="#FF5E49"
      d="M0 0h64v64H0z"
@@ -601,57 +1126,49 @@
            id="g4144-4" />
         <g
            transform="translate(0.04989366,-0.12500524)"
-           id="g4335">
-          <path
-             transform="translate(417.75009,279.625)"
-             id="path4366-3"
-             d="m 8.0019531,0 c -3.3137099,0 -6,4.5817202 -6,9 0,0.3462668 0.02268,0.6766525 0.054687,1 l 11.8906249,0 c 0.032,-0.3233295 0.05469,-0.653754 0.05469,-1 0,-4.4182798 -2.686289,-9 -5.9999994,-9 z M 2.2128906,11 c 0.6857858,3.183615 3.013983,5 5.7890625,5 2.7751239,0 5.1033189,-1.81629 5.7890629,-5 L 2.2128906,11 Z"
-             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             inkscape:connector-curvature="0" />
-          <path
-             sodipodi:nodetypes="sssss"
-             inkscape:connector-curvature="0"
-             id="path4345"
-             d="m 430.75009,288.5 c 0,3.86599 -2.23857,6.125 -5,6.125 -2.76143,0 -5,-2.25901 -5,-6.125 0,-3.866 2.23857,-7.875 5,-7.875 2.76143,0 5,4.009 5,7.875 z"
-             style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <path
-             style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             d="m 425.2518,286.625 1,0 0,3 -1,0 z"
-             id="rect4371-7"
-             inkscape:connector-curvature="0" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path4374-8"
-             d="m 427.7518,287.625 1,0 0,2 -1,0 z"
-             style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <path
-             style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             d="m 430.2518,287.625 1,0 0,2 -1,0 z"
-             id="path4376-5"
-             inkscape:connector-curvature="0" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path4378-9"
-             d="m 422.7518,287.625 1,0 0,2 -1,0 z"
-             style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <path
-             style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             d="m 420.2518,287.625 1,0 0,2 -1,0 z"
-             id="path4380-3"
-             inkscape:connector-curvature="0" />
-          <path
-             sodipodi:nodetypes="ccccc"
-             inkscape:connector-curvature="0"
-             id="rect4369-1"
-             d="m 420.75009,289.625 10,0 -0.10012,1 -9.8,0 z"
-             style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path4356"
-             d="m 425.2518,291.625 1,0 0,2 -1,0 z"
-             style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-        </g>
+           id="g4335" />
       </g>
     </g>
   </g>
+  <path
+     inkscape:connector-curvature="0"
+     id="path4366"
+     d="m 32.00009,16 c -7.1797,0 -13,9.16344 -13,18 0,0.69254 0.0492,1.3533 0.1184,2 l 25.76302,0 c 0.0694,-0.64666 0.1184,-1.3075 0.1184,-2 0,-8.83656 -5.82028,-18 -13,-18 z M 19.45713,38 c 1.48586,6.36724 6.5303,10 12.54296,10 6.01278,0 11.0572,-3.63258 12.54298,-10 l -25.08594,0 z"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     sodipodi:nodetypes="ccccc"
+     inkscape:connector-curvature="0"
+     id="rect4369"
+     d="m 20.99999,36 22,0 -0.6,2 -21,0 z"
+     style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path4203"
+     d="m 30.99999,28 2,0 0,6 -2,0 z"
+     style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path4207"
+     d="m 21,30 2,0 0,4 -2,0 z"
+     style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 30.99999,38 2,0 0,6 -2,0 z"
+     id="path4220"
+     inkscape:connector-curvature="0" />
+  <path
+     style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 26,30 2,0 0,4 -2,0 z"
+     id="path4430"
+     inkscape:connector-curvature="0" />
+  <path
+     style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 36,30 2,0 0,4 -2,0 z"
+     id="path4432"
+     inkscape:connector-curvature="0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path4434"
+     d="m 41,30 2,0 0,4 -2,0 z"
+     style="opacity:1;fill:#ff5e49;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
 </svg>
