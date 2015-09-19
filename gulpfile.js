@@ -5,9 +5,11 @@ var fs = require('fs'),
     pkg = require('./package.json'),
     path = require('path'),
     gulp = require('gulp'),
+	clean = require('gulp-clean'),
     swig = require('gulp-swig'),
     svgmin = require('gulp-svgmin'),
     rename = require('gulp-rename'),
+	sequence = require('gulp-sequence'),
     frontMatter = require('gulp-front-matter');
 
 
@@ -18,7 +20,7 @@ var options = {
     readme: {
         template: './tmpl/markdown/README.tmpl',
         filename: 'README.md',
-        destination: '.',
+        destination: '.'
     },
     index: {
         template: './tmpl/html/index.tmpl',
@@ -53,12 +55,20 @@ function getIcons(dir) {
 
 
 //
+// Clean SVGs
+//
+gulp.task('clean-svg', function(cb) {
+	gulp.src([options.dist + '**/*.svg'])
+        .pipe(clean());
+    cb();
+});
+
+
+//
 // Minify SVGs
 //
 gulp.task('svgmin', function(cb) {
-    gulp.src([
-            options.src + '**/*.svg'
-        ])
+	gulp.src([options.src + '**/*.svg'])
         .pipe(svgmin())
         .pipe(gulp.dest(options.dist));
     cb();
@@ -104,7 +114,6 @@ gulp.task('compile-docs', function(cb) {
 //
 // Default Task
 //
-gulp.task('default', [
-    'svgmin',
-    'compile-docs'
-]);
+gulp.task('default', function (cb) {
+	sequence('clean-svg', 'svgmin', 'compile-docs')(cb);
+});
