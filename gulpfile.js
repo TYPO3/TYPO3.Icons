@@ -42,7 +42,12 @@ function getFolders(dir) {
 function getIcons(dir) {
 	return fs.readdirSync(dir)
 		.filter(function(file) {
-			return fs.statSync(path.join(dir, file)).isFile();
+			fileExtension = path.extname(path.join(dir, file));
+			if(fileExtension === ".svg"){
+				return true;
+			} else {
+				return false;
+			}
 		});
 }
 
