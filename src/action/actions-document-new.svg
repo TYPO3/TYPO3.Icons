@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<g id="actions-document-new">
+	<path d="M10,14H8.5H2V2h12v6.5V10h1V1.5C15,1.224,14.776,1,14.5,1h-13C1.224,1,1,1.224,1,1.5v13C1,14.776,1.224,15,1.5,15H10V14z"
+		/>
+	<path d="M14,14v1h0.5c0.276,0,0.5-0.224,0.5-0.5V14H14z"/>
+	<rect x="3" y="3" width="10" height="2"/>
+	<rect x="3" y="6" width="2" height="1"/>
+	<rect x="3" y="8" width="2" height="1"/>
+	<rect x="3" y="10" width="2" height="1"/>
+	<rect x="3" y="12" width="2" height="1"/>
+	<rect x="6" y="6" width="2" height="1"/>
+	<rect x="6" y="8" width="2" height="1"/>
+	<rect x="9" y="6" width="4" height="1"/>
+	<path d="M7,12.5V12H6v1h1.086C7.034,12.844,7,12.678,7,12.5z"/>
+	<path d="M8,10.086V10H6v1h1.086C7.232,10.563,7.563,10.232,8,10.086z"/>
+	<path d="M10,8.5c0-0.178,0.034-0.344,0.086-0.5H9v1h1V8.5z"/>
+	<path d="M15.5,13H13v2.5c0,0.3-0.2,0.5-0.5,0.5h-1c-0.3,0-0.5-0.2-0.5-0.5V13H8.5C8.2,13,8,12.8,8,12.5v-1C8,11.2,8.2,11,8.5,11H11
+		V8.5C11,8.2,11.2,8,11.5,8h1C12.8,8,13,8.2,13,8.5V11h2.5c0.3,0,0.5,0.2,0.5,0.5v1C16,12.8,15.8,13,15.5,13z"/>
+</g>
+</svg>
