@@ -51,19 +51,6 @@ actions-system-shortcut-new.svg | <img src="https://rawgit.com/wmdbsystems/T3.Ic
 actions-system-tree-search-open.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-system-tree-search-open.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-system-tree-search-open.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/action/actions-system-tree-search-open.svg" height="64" width="64">
 
 
-### App
-IconName | Small | Default | Large
---- | --- | --- | ---
-apps-filetree-folder-default.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-default.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-default.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-default.svg" height="64" width="64">
-apps-filetree-folder-locked.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-locked.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-locked.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-locked.svg" height="64" width="64">
-apps-filetree-folder-opened.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-opened.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-opened.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-opened.svg" height="64" width="64">
-apps-filetree-folder-recycler.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-recycler.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-recycler.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-recycler.svg" height="64" width="64">
-apps-filetree-folder-temp.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-temp.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-temp.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-folder-temp.svg" height="64" width="64">
-apps-filetree-mount.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-mount.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-mount.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-filetree-mount.svg" height="64" width="64">
-apps-pagetree-root.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-pagetree-root.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-pagetree-root.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-pagetree-root.svg" height="64" width="64">
-apps-toolbar-menu-search.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-toolbar-menu-search.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-toolbar-menu-search.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/app/apps-toolbar-menu-search.svg" height="64" width="64">
-
-
 ### Avatar
 IconName | Small | Default | Large
 --- | --- | --- | ---
