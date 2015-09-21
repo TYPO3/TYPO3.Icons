@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<path d="M9.293,3.293l-8,8C1.105,11.48,1,11.735,1,12v3h3c0.265,0,0.52-0.105,0.707-0.293l8-8L9.293,3.293z"/>
+<polygon fill="#FFFFFF" points="3,11 2,12 2,13 3,13 3,14 4,14 5,13 "/>
+<rect x="3.214" y="7.396" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.503 7.0429)" fill="#FFFFFF" width="7.071" height="0.707"/>
+<path d="M13.707,5.707l1.354-1.354c0.195-0.195,0.195-0.512,0-0.707l-2.707-2.707c-0.195-0.195-0.512-0.195-0.707,0l-1.354,1.354
+	L13.707,5.707z"/>
+</svg>
