@@ -266,8 +266,8 @@ status-user-group-backend.svg | <img src="https://rawgit.com/wmdbsystems/T3.Icon
 ![Color blue light](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-blue-light.svg "Color blue light")
 **#ABD7FF** | Blue light
 
-![Color purple](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-purple.svg "Color purple")
-**#AA53B6** | Purple
+![Color rebaccapurple](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-purple.svg "Color rebaccapurple")
+**#663399** | Purple
 
 ### Fonts
 
