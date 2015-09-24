@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="mimetypes-media-video.svg">
+   sodipodi:docname="mimetypes-media-video-vimeo.svg">
   <defs
      id="defs4">
     <style
@@ -1092,6 +1092,30 @@
          id="path3429"
          inkscape:connector-curvature="0" />
     </clipPath>
+    <clipPath
+       id="clipPath4272"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4274"
+         d="m 0,600.011 600,0 L 600,0 0,0 0,600.011 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4860"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4862"
+         d="m 209.204,101.117 24.318,0 0,-14.24 -24.318,0 0,14.24 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4884"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4886"
+         d="m 429.204,101.117 24.318,0 0,-14.24 -24.318,0 0,14.24 z" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1100,9 +1124,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="-8.4841208"
-     inkscape:cy="10.480357"
+     inkscape:zoom="1"
+     inkscape:cx="9.1683706"
+     inkscape:cy="2.8468172"
      inkscape:document-units="px"
      inkscape:current-layer="layer1-5"
      showgrid="false"
@@ -1121,7 +1145,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1201,7 +1225,7 @@
         <path
            id="rect4171"
            d="m 23.139,1037.2752 0,16 12,0 0,-12 -4,-4 z m 8,0 z"
-           style="fill:#c83c3c;fill-opacity:1;stroke:#b9b9b9;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:#1ab7ea;fill-opacity:1;stroke:#b9b9b9;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="cccccccc" />
         <g
@@ -1209,17 +1233,6 @@
            style="display:inline"
            inkscape:label="Layer 1"
            id="layer2" />
-        <g
-           style="fill:#ffffff;fill-opacity:1"
-           transform="matrix(0,-0.45833355,0.45,0,-62.840741,1263.6171)"
-           id="g4211">
-          <path
-             inkscape:connector-curvature="0"
-             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             id="path4209"
-             d="m 447.80156,198.41877 0,-4.6188 0,-4.6188 4,2.3094 4,2.3094 -4,2.3094 z"
-             transform="matrix(0,1.25,-1.2990381,0,725.40735,-359.797)" />
-        </g>
         <path
            style="opacity:0.65;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            inkscape:transform-center-x="-0.62266511"
@@ -1234,6 +1247,12 @@
            d="m 35.139,1041.2995 0,2.4879 0,2.4878 -4,-5 z"
            inkscape:transform-center-x="0.62266499"
            style="opacity:0.15;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           sodipodi:nodetypes="ccccsccccccc"
+           id="path9951"
+           d="m 24.667499,1045.1397 c 0.869657,-0.7803 1.646028,-2.1402 2.547342,-1.8577 1.493665,0.3865 0.848321,3.2439 1.697091,4.5797 1.162471,-0.6556 1.916742,-2.0345 1.603406,-2.7501 -0.07007,-0.2001 0.01521,-0.6988 -0.939152,-0.263 -0.247716,0.113 -0.237588,-0.3252 -0.193989,-0.3845 0.883583,-0.9709 1.393842,-1.3759 1.998465,-1.3511 0.50846,0.085 1.402664,0.6564 1.238491,2.0267 -0.340304,2.0389 -3.334069,5.2408 -4.334707,5.1229 -1.145597,0.2526 -1.728013,-3.3665 -2.589561,-5.0666 l -0.788406,0.305 c -0.324871,0.051 -0.280044,-0.1564 -0.23898,-0.3613 z"
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0" />
       </g>
     </g>
   </g>
