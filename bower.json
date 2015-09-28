@@ -9,7 +9,7 @@
     "description": "SVG icons for the TYPO3 CMS backend",
     "license": "MIT",
     "homepage": "https://github.com/wmdbsystems/T3.Icons",
-    "private": true,
+    "private": false,
     "repository": {
         "type": "git",
         "url": "git://github.com/wmdbsystems/T3.Icons.git"
