@@ -51,6 +51,9 @@ function getIcons(dir) {
 			}
 		});
 }
+function getFileContents(file) {
+	return fs.readFileSync(file, 'utf8');
+}
 
 
 //
@@ -80,9 +83,18 @@ gulp.task('svgmin', function(cb) {
 gulp.task('compile-docs', function(cb) {
 	var data = [];
 	var folders = getFolders(options.dist);
-	for (var i=0; i<folders.length; i++) {
-		var folder = folders[i];
-        icons = getIcons(options.dist + folder);
+	for (var folderCount=0; folderCount<folders.length; folderCount++) {
+		var folder = folders[folderCount];
+        iconFiles = getIcons(options.dist + folder);
+		icons = [];
+		for (var i=0; i < iconFiles.length; i++) {
+			file = options.dist + folder + '/' + iconFiles[i];
+			icons[i] = {
+				file: iconFiles[i],
+				path: file,
+				inline: getFileContents(file)
+			};
+		}
 		data.push({
 			folder: folder,
 			title: folder.charAt(0).toUpperCase() + folder.slice(1),

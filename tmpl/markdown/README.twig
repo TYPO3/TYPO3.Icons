@@ -7,7 +7,7 @@
 ### {{ folder.title }}
 IconName | Small | Default | Large
 --- | --- | --- | ---
-{% for icon in folder.icons %}{{ icon|replace({'.svg': ''}) }} | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon }}" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon }}" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon }}" height="64" width="64">
+{% for icon in folder.icons %}{{ icon.file|replace({'.svg': ''}) }} | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="64" width="64">
 {% endfor %}
 {% endfor %}
 ## Style guide

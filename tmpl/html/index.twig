@@ -27,6 +27,11 @@
                 background-color: #eeeeee;
                 border-color: #bbbbbb;
             }
+            .btn-inverted {
+                color: #dddddd;
+                background-color: #373a3c;
+                border-color: #222;
+            }
             .btn-grid {
                 margin: 2px;
                 float: left;
@@ -170,10 +175,10 @@
 
                             <div class="card card-block clearfix">
                                 {% for icon in folder.icons %}
-                                    <span class="btn btn-icon btn-default btn-grid" title="{{ icon|replace({'.svg': ''}) }}">
+                                    <span class="btn btn-icon btn-default btn-grid" title="{{ icon.file|replace({'.svg': ''}) }}">
                                         <span class="icon icon-size-small icon-state-default">
                                             <span class="icon-markup">
-                                                <img src="{{ folder.folder }}/{{ icon }}" height="16" width="16">
+                                                <img src="{{ folder.folder }}/{{ icon.file }}" height="16" width="16">
                                             </span>
                                         </span>
                                     </span>
@@ -194,13 +199,20 @@
                                         {% for icon in folder.icons %}
                                         <tr>
                                             <td>
-                                                {{ icon|replace({'.svg': ''}) }}
+                                                {{ icon.file|replace({'.svg': ''}) }}
                                             </td>
                                             <td>
                                                 <span class="btn btn-icon btn-default">
                                                     <span class="icon icon-size-small icon-state-default">
                                                         <span class="icon-markup">
-                                                            <img src="{{ folder.folder }}/{{ icon }}" height="16" width="16">
+                                                            <img src="{{ folder.folder }}/{{ icon.file }}" height="16" width="16">
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="btn btn-icon btn-inverted">
+                                                    <span class="icon icon-size-small icon-state-default">
+                                                        <span class="icon-markup">
+                                                            {{ icon.inline }}
                                                         </span>
                                                     </span>
                                                 </span>
@@ -209,14 +221,22 @@
                                                 <span class="btn btn-icon btn-default">
                                                     <span class="icon icon-size-small icon-state-default">
                                                         <span class="icon-markup">
-                                                            <img src="{{ folder.folder }}/{{ icon }}" height="16" width="16">
+                                                            <img src="{{ folder.folder }}/{{ icon.file }}" height="16" width="16">
+                                                        </span>
+                                                    </span>
+                                                    Button Label
+                                                </span>
+                                                <span class="btn btn-icon btn-inverted">
+                                                    <span class="icon icon-size-small icon-state-default">
+                                                        <span class="icon-markup">
+                                                            {{ icon.inline }}
                                                         </span>
                                                     </span>
                                                     Button Label
                                                 </span>
                                             </td>
                                             <td>
-                                                <a class="btn btn-sm btn-secondary-outline" href="{{ folder.folder }}/{{ icon }}">
+                                                <a class="btn btn-sm btn-secondary-outline" href="{{ folder.folder }}/{{ icon.file }}">
                                                     File
                                                 </a>
                                             </td>
@@ -242,11 +262,11 @@
                                     <tbody>
                                         {% for icon in folder.icons %}
                                         <tr>
-                                            <td>{{ icon|replace({'.svg': ''}) }}</td>
-                                            <td><img src="{{ folder.folder }}/{{ icon }}" height="16" width="16"></td>
-                                            <td><img src="{{ folder.folder }}/{{ icon }}" height="32" width="32"></td>
-                                            <td><img src="{{ folder.folder }}/{{ icon }}" height="64" width="64"></td>
-                                            <td><a class="btn btn-sm btn-secondary-outline" href="{{ folder.folder }}/{{ icon }}">File</a></td>
+                                            <td>{{ icon.file|replace({'.svg': ''}) }}</td>
+                                            <td><img src="{{ folder.folder }}/{{ icon.file }}" height="16" width="16"></td>
+                                            <td><img src="{{ folder.folder }}/{{ icon.file }}" height="32" width="32"></td>
+                                            <td><img src="{{ folder.folder }}/{{ icon.file }}" height="64" width="64"></td>
+                                            <td><a class="btn btn-sm btn-secondary-outline" href="{{ folder.folder }}/{{ icon.file }}">File</a></td>
                                         </tr>
                                         {% endfor %}
                                     </tbody>
