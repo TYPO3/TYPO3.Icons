@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-<g id="actions-document-export-t3d" class="st0">
-	<g class="st1">
-		<path d="M9.055,12H11V9.25C11,9.112,11.112,9,11.25,9h1.5C12.888,9,13,9.112,13,9.25V12h1.953c0.215,0,0.33,0.253,0.188,0.415
-			l-2.953,3.37c-0.1,0.114-0.277,0.114-0.376,0l-2.945-3.37C8.726,12.253,8.84,12,9.055,12z"/>
-	</g>
-	<path class="st1" d="M13.707,3.207l-1.914-1.914C11.605,1.105,11.351,1,11.086,1H2.5C2.224,1,2,1.224,2,1.5v13
-		C2,14.776,2.224,15,2.5,15h7.298l-0.874-1H3V2h7v2.5C10,4.776,10.224,5,10.5,5H13v3.051c0.566,0.119,1,0.599,1,1.199V3.914
-		C14,3.649,13.895,3.395,13.707,3.207z M11,4V2l2,2H11z"/>
-	<rect x="4" y="3" class="st1" width="4" height="2"/>
-	<rect x="6" y="6" class="st1" width="4" height="1"/>
-	<rect x="6" y="10" class="st1" width="4" height="1"/>
-	<rect x="4" y="6" class="st1" width="1" height="7"/>
-	<rect x="6" y="12" class="st1" width="2" height="1"/>
-	<rect x="6" y="8" class="st1" width="3" height="1"/>
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g class="icon-color">
+	<path d="M11.823,15.823l-3.396-3.396C8.269,12.269,8.381,12,8.604,12H11V8h2v4h2.397c0.223,0,0.334,0.269,0.177,0.427l-3.396,3.396
+		C12.08,15.921,11.921,15.921,11.823,15.823z"/>
+	<path d="M13.707,3.207l-1.914-1.914C11.605,1.105,11.351,1,11.086,1H2.5C2.224,1,2,1.224,2,1.5v13C2,14.776,2.224,15,2.5,15H9l-1-1
+		H3V2h7v2.5C10,4.776,10.224,5,10.5,5H13v1l1,1V3.914C14,3.649,13.895,3.395,13.707,3.207z M11,4V2l2,2H11z"/>
+	<rect x="4" y="3" width="4" height="2"/>
+	<rect x="6" y="6" width="4" height="1"/>
+	<rect x="6" y="10" width="3" height="1"/>
+	<rect x="4" y="6" width="1" height="7"/>
+	<rect x="6" y="12" width="1" height="1"/>
+	<rect x="6" y="8" width="3" height="1"/>
 </g>
 </svg>
