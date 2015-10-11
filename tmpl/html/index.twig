@@ -55,7 +55,8 @@
                 white-space: nowrap;
                 vertical-align: -22%;
             }
-            .icon img {
+            .icon img,
+            .icon svg {
                 display: block;
                 height: 100%;
                 width: 100%;
@@ -149,6 +150,12 @@
             }
 
 
+            .card-inverse {
+                background-color: #333333;
+            }
+            .card-inverse .icon-color {
+                fill: #dddddd;
+            }
         </style>
     </head>
     <body>
@@ -251,6 +258,30 @@
                                         {% endfor %}
                                     </tbody>
                                 </table>
+                            </div>
+
+                        {% elseif folder.folder in ['spinner'] %}
+
+                            <div class="row">
+                            {% for icon in folder.icons %}
+                                <div class="col-sm-6 col-md-4">
+                                    <p>{{ icon.file|replace({'.svg': ''}) }}</p>
+                                    <div class="card card-block text-center">
+                                        <span class="icon icon-size-default icon-state-default icon-spin" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                            <span class="icon-markup">
+                                                {{ icon.inline }}
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="card card-block card-inverse text-center">
+                                        <span class="icon icon-size-default icon-state-default icon-spin" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                            <span class="icon-markup">
+                                                {{ icon.inline }}
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            {% endfor %}
                             </div>
 
                         {% else %}

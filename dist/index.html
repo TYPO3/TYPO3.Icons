@@ -55,7 +55,8 @@
                 white-space: nowrap;
                 vertical-align: -22%;
             }
-            .icon img {
+            .icon img,
+            .icon svg {
                 display: block;
                 height: 100%;
                 width: 100%;
@@ -149,6 +150,12 @@
             }
 
 
+            .card-inverse {
+                background-color: #333333;
+            }
+            .card-inverse .icon-color {
+                fill: #dddddd;
+            }
         </style>
     </head>
     <body>
@@ -208,7 +215,7 @@
                             </a>
                         
                             <a class="list-group-item" href="#section-spinner">
-                                <span class="label label-default label-pill pull-right">2</span>
+                                <span class="label label-default label-pill pull-right">3</span>
                                 Spinner
                             </a>
                         
@@ -4480,42 +4487,67 @@
                     <div class="m-y-lg">
                         <h3 id="section-spinner">
                             Spinner
-                            <small class="text-muted">2</small>
+                            <small class="text-muted">3</small>
                         </h3>
 
                         
 
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead class="thead-inverse">
-                                        <tr>
-                                            <th>IconName</th>
-                                            <th>Small</th>
-                                            <th>Default</th>
-                                            <th>Large</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        
-                                        <tr>
-                                            <td>spinner-circle-dark</td>
-                                            <td><img src="spinner/spinner-circle-dark.svg" height="16" width="16"></td>
-                                            <td><img src="spinner/spinner-circle-dark.svg" height="32" width="32"></td>
-                                            <td><img src="spinner/spinner-circle-dark.svg" height="64" width="64"></td>
-                                            <td><a class="btn btn-sm btn-secondary-outline" href="spinner/spinner-circle-dark.svg">File</a></td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>spinner-circle-light</td>
-                                            <td><img src="spinner/spinner-circle-light.svg" height="16" width="16"></td>
-                                            <td><img src="spinner/spinner-circle-light.svg" height="32" width="32"></td>
-                                            <td><img src="spinner/spinner-circle-light.svg" height="64" width="64"></td>
-                                            <td><a class="btn btn-sm btn-secondary-outline" href="spinner/spinner-circle-light.svg">File</a></td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
+                            <div class="row">
+                            
+                                <div class="col-sm-6 col-md-4">
+                                    <p>spinner-circle-dark</p>
+                                    <div class="card card-block text-center">
+                                        <span class="icon icon-size-default icon-state-default icon-spin" title="spinner-circle-dark">
+                                            <span class="icon-markup">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path opacity=".3" d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 3C5.243 3 3 5.243 3 8s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"/><path d="M14 9c-.553 0-1-.447-1-1 0-2.757-2.243-5-5-5-.552 0-1-.448-1-1s.448-1 1-1c3.86 0 7 3.14 7 7 0 .553-.447 1-1 1z"/></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="card card-block card-inverse text-center">
+                                        <span class="icon icon-size-default icon-state-default icon-spin" title="spinner-circle-dark">
+                                            <span class="icon-markup">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path opacity=".3" d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 3C5.243 3 3 5.243 3 8s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"/><path d="M14 9c-.553 0-1-.447-1-1 0-2.757-2.243-5-5-5-.552 0-1-.448-1-1s.448-1 1-1c3.86 0 7 3.14 7 7 0 .553-.447 1-1 1z"/></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-sm-6 col-md-4">
+                                    <p>spinner-circle-light</p>
+                                    <div class="card card-block text-center">
+                                        <span class="icon icon-size-default icon-state-default icon-spin" title="spinner-circle-light">
+                                            <span class="icon-markup">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g fill="#fff"><path opacity=".3" d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 3C5.243 3 3 5.243 3 8s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"/><path d="M14 9c-.553 0-1-.447-1-1 0-2.757-2.243-5-5-5-.552 0-1-.448-1-1s.448-1 1-1c3.86 0 7 3.14 7 7 0 .553-.447 1-1 1z"/></g></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="card card-block card-inverse text-center">
+                                        <span class="icon icon-size-default icon-state-default icon-spin" title="spinner-circle-light">
+                                            <span class="icon-markup">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g fill="#fff"><path opacity=".3" d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 3C5.243 3 3 5.243 3 8s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"/><path d="M14 9c-.553 0-1-.447-1-1 0-2.757-2.243-5-5-5-.552 0-1-.448-1-1s.448-1 1-1c3.86 0 7 3.14 7 7 0 .553-.447 1-1 1z"/></g></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-sm-6 col-md-4">
+                                    <p>spinner-circle</p>
+                                    <div class="card card-block text-center">
+                                        <span class="icon icon-size-default icon-state-default icon-spin" title="spinner-circle">
+                                            <span class="icon-markup">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g class="icon-color"><path opacity=".3" d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 3C5.243 3 3 5.243 3 8s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"/><path d="M14 9c-.553 0-1-.447-1-1 0-2.757-2.243-5-5-5-.552 0-1-.448-1-1s.448-1 1-1c3.86 0 7 3.14 7 7 0 .553-.447 1-1 1z"/></g></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="card card-block card-inverse text-center">
+                                        <span class="icon icon-size-default icon-state-default icon-spin" title="spinner-circle">
+                                            <span class="icon-markup">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g class="icon-color"><path opacity=".3" d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 3C5.243 3 3 5.243 3 8s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z"/><path d="M14 9c-.553 0-1-.447-1-1 0-2.757-2.243-5-5-5-.552 0-1-.448-1-1s.448-1 1-1c3.86 0 7 3.14 7 7 0 .553-.447 1-1 1z"/></g></svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            
                             </div>
 
                         

@@ -230,6 +230,7 @@ IconName | Small | Default | Large
 --- | --- | --- | ---
 spinner-circle-dark | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-dark.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-dark.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-dark.svg" height="64" width="64">
 spinner-circle-light | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle-light.svg" height="64" width="64">
+spinner-circle | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle.svg" height="32" width="32"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/spinner/spinner-circle.svg" height="64" width="64">
 
 
 ### Status
