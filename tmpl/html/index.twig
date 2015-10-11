@@ -1,0 +1,268 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{ pkg.name }}</title>
+        <meta name="description" content="{{ pkg.description }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+        <style type="text/css">
+            .btn img {
+                display: block;
+            }
+            .btn-sm {
+                padding: 4px 12px;
+                line-height: 16px;
+                border-radius: 2px;
+            }
+            .btn-icon {
+                padding: 4px 4px;
+                border-radius: 2px;
+                font-size: 11px;
+                line-height: 1.5;
+            }
+            .btn-default {
+                color: #333333;
+                background-color: #eeeeee;
+                border-color: #bbbbbb;
+            }
+            .btn-grid {
+                margin: 2px;
+                float: left;
+            }
+            .table td {
+                vertical-align: middle;
+            }
+
+
+            .icon {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                vertical-align: -22%;
+            }
+            .icon img {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+            .icon * {
+                display: block;
+                line-height: inherit;
+            }
+            .icon-markup {
+                position: absolute;
+                display: block;
+                text-align: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            .icon-overlay {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 60%;
+                width: 60%;
+                text-align: center;
+            }
+            .icon-spin .icon-markup {
+                -webkit-animation: icon-spin 2s infinite linear;
+                animation: icon-spin 2s infinite linear;
+            }
+            @-webkit-keyframes icon-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(359deg);
+                    transform: rotate(359deg);
+                }
+            }
+            @keyframes icon-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(359deg);
+                    transform: rotate(359deg);
+                }
+            }
+            .icon-state-disabled .icon-markup {
+                opacity: 0.5;
+            }
+            .icon-size-small {
+                height: 16px;
+                width: 16px;
+                line-height: 16px;
+            }
+            .icon-size-small .icon-unify {
+                line-height: 16px;
+                font-size: 14px;
+            }
+            .icon-size-small .icon-overlay .icon-unify {
+                line-height: 10px;
+                font-size: 9px;
+            }
+            .icon-size-default {
+                height: 32px;
+                width: 32px;
+                line-height: 32px;
+            }
+            .icon-size-default .icon-unify {
+                line-height: 32px;
+                font-size: 28px;
+            }
+            .icon-size-default .icon-overlay .icon-unify {
+                line-height: 20px;
+                font-size: 18px;
+            }
+            .icon-size-large {
+                height: 48px;
+                width: 48px;
+                line-height: 48px;
+            }
+            .icon-size-large .icon-unify {
+                line-height: 48px;
+                font-size: 42px;
+            }
+            .icon-size-large .icon-overlay .icon-unify {
+                line-height: 30px;
+                font-size: 26px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container m-y-lg">
+            <h1>{{ pkg.name }}</h1>
+            <p>{{ pkg.description }}</p>
+
+            <div class="row">
+
+                <div class="col-md-4 col-md-push-8 m-y-lg">
+                    <div class="list-group">
+                        {% for folder in folders %}
+                            <a class="list-group-item" href="#section-{{ folder.folder }}">
+                                <span class="label label-default label-pill pull-right">{{ folder.count }}</span>
+                                {{ folder.title }}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-md-pull-4">
+                    {% for folder in folders %}
+                    <div class="m-y-lg">
+                        <h3 id="section-{{ folder.folder }}">
+                            {{ folder.title }}
+                            <small class="text-muted">{{ folder.count }}</small>
+                        </h3>
+
+                        {% if folder.folder in ['action'] %}
+
+                            <div class="card card-block clearfix">
+                                {% for icon in folder.icons %}
+                                    <span class="btn btn-icon btn-default btn-grid" title="{{ icon|replace({'.svg': ''}) }}">
+                                        <span class="icon icon-size-small icon-state-default">
+                                            <span class="icon-markup">
+                                                <img src="{{ folder.folder }}/{{ icon }}" height="16" width="16">
+                                            </span>
+                                        </span>
+                                    </span>
+                                {% endfor %}
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>IconName</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for icon in folder.icons %}
+                                        <tr>
+                                            <td>
+                                                {{ icon|replace({'.svg': ''}) }}
+                                            </td>
+                                            <td>
+                                                <span class="btn btn-icon btn-default">
+                                                    <span class="icon icon-size-small icon-state-default">
+                                                        <span class="icon-markup">
+                                                            <img src="{{ folder.folder }}/{{ icon }}" height="16" width="16">
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="btn btn-icon btn-default">
+                                                    <span class="icon icon-size-small icon-state-default">
+                                                        <span class="icon-markup">
+                                                            <img src="{{ folder.folder }}/{{ icon }}" height="16" width="16">
+                                                        </span>
+                                                    </span>
+                                                    Button Label
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-sm btn-secondary-outline" href="{{ folder.folder }}/{{ icon }}">
+                                                    File
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        {% else %}
+
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th>IconName</th>
+                                            <th>Small</th>
+                                            <th>Default</th>
+                                            <th>Large</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for icon in folder.icons %}
+                                        <tr>
+                                            <td>{{ icon|replace({'.svg': ''}) }}</td>
+                                            <td><img src="{{ folder.folder }}/{{ icon }}" height="16" width="16"></td>
+                                            <td><img src="{{ folder.folder }}/{{ icon }}" height="32" width="32"></td>
+                                            <td><img src="{{ folder.folder }}/{{ icon }}" height="64" width="64"></td>
+                                            <td><a class="btn btn-sm btn-secondary-outline" href="{{ folder.folder }}/{{ icon }}">File</a></td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        {% endif %}
+
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    </body>
+</html>

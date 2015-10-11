@@ -6,11 +6,10 @@ var fs = require('fs'),
     path = require('path'),
     gulp = require('gulp'),
 	clean = require('gulp-clean'),
-    swig = require('gulp-swig'),
+    twig = require('gulp-twig'),
     svgmin = require('gulp-svgmin'),
     rename = require('gulp-rename'),
-	sequence = require('gulp-sequence'),
-    frontMatter = require('gulp-front-matter');
+	sequence = require('gulp-sequence');
 
 
 //
@@ -18,12 +17,12 @@ var fs = require('fs'),
 //
 var options = {
     readme: {
-        template: './tmpl/markdown/README.tmpl',
+        template: './tmpl/markdown/README.twig',
         filename: 'README.md',
         destination: '.'
     },
     index: {
-        template: './tmpl/html/index.tmpl',
+        template: './tmpl/html/index.twig',
         filename: 'index.html',
         destination: './dist'
     },
@@ -98,13 +97,11 @@ gulp.task('compile-docs', function(cb) {
 		}
 	};
     gulp.src(options.readme.template)
-		.pipe(frontMatter({ property: 'data' }))
-		.pipe(swig(opts))
+		.pipe(twig(opts))
 		.pipe(rename(options.readme.filename))
 		.pipe(gulp.dest(options.readme.destination));
     gulp.src(options.index.template)
-		.pipe(frontMatter({ property: 'data' }))
-		.pipe(swig(opts))
+		.pipe(twig(opts))
 		.pipe(rename(options.index.filename))
 		.pipe(gulp.dest(options.index.destination));
     cb();
