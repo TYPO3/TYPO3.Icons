@@ -263,6 +263,16 @@ status-user-group-frontend | <img src="https://rawgit.com/wmdbsystems/T3.Icons/m
 
 ## Style guide
 
+### Action Icons
+
+- Size: 16x16px.
+- Protective space: 1px
+- Effective Size: 14x14px
+- Outline width: 1px
+- Smooth Edges: 0,5px / 0,25px
+- Color: black / transparent
+- CSS class "icon-color" must be applied to the paths if its not coloured
+
 ### Colors
 
 ![Color TYPO3](https://rawgit.com/wmdbsystems/T3.Icons/master/material/graphics/colors/color-typo3.svg "Color TYPO3")
