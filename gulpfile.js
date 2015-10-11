@@ -71,7 +71,11 @@ gulp.task('clean-svg', function(cb) {
 //
 gulp.task('svgmin', function(cb) {
 	gulp.src([options.src + '**/*.svg'])
-        .pipe(svgmin())
+        .pipe(svgmin({
+            plugins: [
+				{ removeDimensions: true }
+			]
+        }))
         .pipe(gulp.dest(options.dist));
     cb();
 });
