@@ -27,7 +27,8 @@ var options = {
         destination: './dist'
     },
     src: './src/',
-    dist: './dist/'
+    dist: './dist/',
+	material: './material/'
 };
 
 
@@ -43,7 +44,7 @@ function getFolders(dir) {
 function getIcons(dir) {
 	return fs.readdirSync(dir)
 		.filter(function(file) {
-			fileExtension = path.extname(path.join(dir, file));
+			var fileExtension = path.extname(path.join(dir, file));
 			if(fileExtension === ".svg"){
 				return true;
 			} else {
@@ -76,7 +77,7 @@ gulp.task('svgmin', function(cb) {
 				{ removeDimensions: true }
 			]
         }))
-        .pipe(gulp.dest(options.dist));
+        .pipe(gulp.dest(options.dist));	
     cb();
 });
 
@@ -85,14 +86,25 @@ gulp.task('svgmin', function(cb) {
 // Compile Readme
 //
 gulp.task('compile-docs', function(cb) {
+	
+	// Copy generated svg files to be used staticly 
+	// in docs for previewing overlays
+	gulp.src([options.dist + 'app/apps-filetree-folder-default.svg'])
+        .pipe(gulp.dest(options.material + 'icons/'));
+	gulp.src([options.dist + 'app/apps-filetree-folder-temp.svg'])
+        .pipe(gulp.dest(options.material + 'icons/'));
+	gulp.src([options.dist + 'app/apps-pagetree-page.svg'])
+        .pipe(gulp.dest(options.material + 'icons/'));
+		
+	// Prepare Data
 	var data = [];
 	var folders = getFolders(options.dist);
 	for (var folderCount=0; folderCount<folders.length; folderCount++) {
 		var folder = folders[folderCount];
-        iconFiles = getIcons(options.dist + folder);
-		icons = [];
+        var iconFiles = getIcons(options.dist + folder);
+		var icons = [];
 		for (var i=0; i < iconFiles.length; i++) {
-			file = options.dist + folder + '/' + iconFiles[i];
+			var file = options.dist + folder + '/' + iconFiles[i];
 			icons[i] = {
 				file: iconFiles[i],
 				path: file,
@@ -112,15 +124,18 @@ gulp.task('compile-docs', function(cb) {
 			folders: data
 		}
 	};
+	// Compile Readme
     gulp.src(options.readme.template)
 		.pipe(twig(opts))
 		.pipe(rename(options.readme.filename))
 		.pipe(gulp.dest(options.readme.destination));
+	// Compile Template
     gulp.src(options.index.template)
 		.pipe(twig(opts))
 		.pipe(rename(options.index.filename))
 		.pipe(gulp.dest(options.index.destination));
     cb();
+
 });
 
 

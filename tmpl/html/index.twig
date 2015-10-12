@@ -260,6 +260,68 @@
                                 </table>
                             </div>
 
+                        {% elseif folder.folder in ['overlay'] %}
+
+                            <div class="row">
+                            {% for icon in folder.icons %}
+                                <div class="col-sm-6 col-xl-4">
+                                    <p>{{ icon.file|replace({'.svg': ''}) }}</p>
+                                    <div class="card card-block text-center">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                                    <span class="icon-markup">
+                                                        <img src="../material/icons/apps-filetree-folder-default.svg">
+                                                    </span>
+                                                    <span class="icon-overlay">
+                                                        {{ icon.inline }}
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                                    <span class="icon-markup">
+                                                        <img src="../material/icons/apps-filetree-folder-temp.svg">
+                                                    </span>
+                                                    <span class="icon-overlay">
+                                                        {{ icon.inline }}
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                                    <span class="icon-markup">
+                                                        <img src="../material/icons/apps-pagetree-page.svg">
+                                                    </span>
+                                                    <span class="icon-overlay">
+                                                        {{ icon.inline }}
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                            <span class="icon-markup">
+                                                {{ icon.inline }}
+                                            </span>
+                                        </span>
+                                        <hr>
+                                        <span class="icon icon-size-default icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                            <span class="icon-markup">
+                                                {{ icon.inline }}
+                                            </span>
+                                        </span>
+                                        <hr>
+                                        <span class="icon icon-size-large icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                            <span class="icon-markup">
+                                                {{ icon.inline }}
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            </div>
+
                         {% elseif folder.folder in ['spinner'] %}
 
                             <div class="row">
