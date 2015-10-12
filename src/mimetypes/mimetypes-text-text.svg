@@ -5,38 +5,23 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   id="svg6217"
-   viewBox="0 0 16 16"
-   height="16"
-   width="16"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="mimetype-txt.svg">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
-     id="namedview25"
-     showgrid="false"
-     showguides="false"
-     inkscape:zoom="32"
-     inkscape:cx="5.1712913"
-     inkscape:cy="10.798053"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g4237" />
+   id="svg2"
+   viewBox="0 0 16 16">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <defs
-     id="defs6219">
+     id="defs14">
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3391">
@@ -58,97 +43,98 @@
          d="m 622,477.971 60.121,0 0,-59.971 -60.121,0 0,59.971 z"
          id="path3429" />
     </clipPath>
+    <clipPath
+       id="clipPath3391-7"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3393-8"
+         d="M 0,600 800,600 800,0 0,0 0,600 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath3407-0"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3409-3"
+         d="m 316,477.408 60.363,0 0,-60.408 -60.363,0 0,60.408 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath3427-9"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3429-3"
+         d="m 622,477.971 60.121,0 0,-59.971 -60.121,0 0,59.971 z" />
+    </clipPath>
   </defs>
-  <metadata
-     id="metadata6222">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
   <g
-     transform="matrix(0,1,-1,0,0.95913124,48.25)"
+     transform="matrix(0,1,-1,0,5.6437136,64.159903)"
      id="g4198"
      style="stroke:#000000;stroke-width:2;stroke-miterlimit:2.5;stroke-dasharray:none;stroke-opacity:1" />
   <g
-     transform="matrix(0,1,-1,0,0.959131,48.25)"
+     transform="matrix(0,1,-1,0,5.6437134,64.159903)"
      id="g4198-3"
      style="stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68488746" />
   <g
-     transform="matrix(0,1,-1,0,0.95913124,48.25)"
+     transform="matrix(0,1,-1,0,5.6437136,64.159903)"
      id="g4198-2"
      style="stroke:#000000;stroke-width:2;stroke-miterlimit:2.5;stroke-dasharray:none;stroke-opacity:1" />
   <g
-     transform="matrix(0,-1,1,0,13.959142,-32.216101)"
+     transform="matrix(0,-1,1,0,18.643724,-16.306198)"
      id="g4198-3-6-3" />
+  <path
+     id="rect4171"
+     d="M 2,0 2,16 14,16 14,4 10,0 Z m 8,0 z"
+     style="fill:#b9b9b9;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="opacity:0.65;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 10,3.980528 10,1.990264 10,0 14,4 Z"
+     id="path4178" />
   <g
-     transform="translate(-1.000001,1)"
-     id="g4141">
-    <g
-       id="g4237">
-      <path
-         id="rect4171"
-         d="M 2,0 2,16 14,16 14,4 10,0 Z m 8,0 z"
-         style="fill:#b9b9b9;fill-opacity:1;stroke:#b9b9b9;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         transform="translate(1.000001,-1)"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccccccc" />
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:0.65"
-         d="m 11.000001,2.9805283 0,-1.9902643 0,-1.9902642 4,4.0000002 z"
-         id="path4178" />
-      <path
-         id="path4446"
-         d="m 15.000001,3.0243396 0,2.4878302 0,2.4878302 -4,-5 z"
-         style="opacity:0.15;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <g
-         id="g4186"
-         transform="translate(1,0)">
-        <rect
-           ry="0"
-           rx="0"
-           y="5"
-           x="4.000001"
-           height="1"
-           width="8"
-           id="rect4159"
-           style="opacity:1;fill:#515151;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-        <rect
-           style="opacity:1;fill:#515151;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4409"
-           width="8"
-           height="1"
-           x="4.000001"
-           y="7"
-           rx="0"
-           ry="0" />
-        <rect
-           ry="0"
-           rx="0"
-           y="9"
-           x="4.000001"
-           height="1"
-           width="8"
-           id="rect4411"
-           style="opacity:1;fill:#515151;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-        <rect
-           style="opacity:1;fill:#515151;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4413"
-           width="8"
-           height="1"
-           x="4.000001"
-           y="11"
-           rx="0"
-           ry="0" />
-      </g>
-    </g>
+     style="fill:#8c8c8c;fill-opacity:1"
+     transform="translate(-9.5367432e-7,1)"
+     id="g4186">
+    <rect
+       style="opacity:1;fill:#8c8c8c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4159"
+       width="8"
+       height="1"
+       x="4.000001"
+       y="5"
+       rx="0"
+       ry="0" />
+    <rect
+       ry="0"
+       rx="0"
+       y="7"
+       x="4.000001"
+       height="1"
+       width="8"
+       id="rect4409"
+       style="opacity:1;fill:#8c8c8c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#8c8c8c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4411"
+       width="8"
+       height="1"
+       x="4.000001"
+       y="9"
+       rx="0"
+       ry="0" />
+    <rect
+       ry="0"
+       rx="0"
+       y="11"
+       x="4.000001"
+       height="1"
+       width="8"
+       id="rect4413"
+       style="opacity:1;fill:#8c8c8c;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
+  <path
+     id="path4446"
+     d="M 14,4.02434 14,6.5121698 14,9 10,4 Z"
+     style="opacity:0.15;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <g
+     transform="translate(4.6845824,15.909903)"
      style="display:inline"
      id="layer2" />
 </svg>
