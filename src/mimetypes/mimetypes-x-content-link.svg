@@ -1077,10 +1077,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="12.12302"
-     inkscape:cy="3.8254402"
+     inkscape:cx="25.5"
+     inkscape:cy="4"
      inkscape:document-units="px"
-     inkscape:current-layer="g4296"
+     inkscape:current-layer="g4137-8"
      showgrid="false"
      units="px"
      showguides="false"
@@ -1114,9 +1114,9 @@
          transform="matrix(1.0045597,0,0,1.1481974,-1.0120021,-153.5926)">
         <path
            style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           d="m 2.0028696,1037.2388 13.9364534,0 0,12.193 -13.9364534,0 z"
-           id="rect4164"
-           inkscape:connector-curvature="0" />
+           d="M 1 1 L 1 15 L 8 15 L 8 8 L 15 8 L 15 1 L 1 1 z "
+           transform="matrix(0.995461,0,0,0.87093038,1.0074086,1036.3678)"
+           id="rect4164" />
         <g
            transform="matrix(0,0.54433149,-0.62216312,0,4.5616247,1065.2176)"
            id="g4198-21-2"
@@ -1134,10 +1134,9 @@
            id="g4198-3-6-3-0-3" />
         <path
            style="opacity:1;fill:#b9b9b9;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           d="m 1,1 0,1 0,12 0,1 1,0 13,0 0,-1 L 15,1 2,1 1,1 Z M 2,2 14,2 14,14 2,14 2,2 Z"
+           d="M 1 1 L 1 2 L 1 14 L 1 15 L 2 15 L 8 15 L 8 14 L 2 14 L 2 2 L 14 2 L 14 8 L 15 8 L 15 1 L 2 1 L 1 1 z "
            transform="matrix(0.995461,0,0,0.87093038,1.0074086,1036.3678)"
-           id="rect4341"
-           inkscape:connector-curvature="0" />
+           id="rect4341" />
         <g
            id="g4296"
            transform="translate(21.900141,0.70762752)">
