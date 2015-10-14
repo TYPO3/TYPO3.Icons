@@ -286,13 +286,17 @@ status-user-group-frontend | <img src="https://rawgit.com/wmdbsystems/T3.Icons/m
 
 ### Action Icons
 
-- Size: 16x16px.
+- Size: 16x16px
 - Protective space: 1px
 - Effective Size: 14x14px
 - Outline width: 1px
 - Smooth Edges: 0,5px / 0,25px
 - Color: black / transparent
 - CSS class "icon-color" must be applied to the paths if its not coloured
+
+### Overlay Icons
+
+- Size: 11x11px
 
 ### Colors
 
