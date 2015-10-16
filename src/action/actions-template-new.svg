@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>actions-template-new</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g class="icon-color" fill-rule="evenodd">
+        <path d="M6.041,14.25 L6.041,14 L2,14 L2,2 L14,2 L14,6.125 L14.313,6.125 C14.582,6.125 14.808,6.208 15,6.33 L15,1.498 C15,1.223 14.78,1 14.502,1 L1.498,1 C1.223,1 1,1.22 1,1.498 L1,14.502 C1,14.777 1.22,15 1.498,15 L6.317,15 C6.155,14.789 6.041,14.537 6.041,14.25 Z M15.5,13 L13,13 L13,15.5 C13,15.776 12.776,16 12.5,16 L11.5,16 C11.224,16 11,15.776 11,15.5 L11,13 L8.5,13 C8.224,13 8,12.776 8,12.5 L8,11.5 C8,11.224 8.224,11 8.5,11 L11,11 L11,8.5 C11,8.224 11.224,8 11.5,8 L12.5,8 C12.776,8 13,8.224 13,8.5 L13,11 L15.5,11 C15.776,11 16,11.224 16,11.5 L16,12.5 C16,12.776 15.776,13 15.5,13 Z M7,9 L9,9 L8.992,7 L7,7 L7,9 Z M3,7 L6,7 L6,13 L3,13 L3,7 Z M3,3 L13,3 L13,6 L3,6 L3,3 Z"></path>
+    </g>
+</svg>
