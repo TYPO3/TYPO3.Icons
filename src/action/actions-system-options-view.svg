@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>actions-system-options-view</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g class="icon-color" fill-rule="evenodd">
+        <path d="M1,2.50123084 C1,2.22440869 1.21990657,2 1.49826741,2 L14.5017326,2 C14.7769181,2 15,2.22975063 15,2.50123084 L15,12.4987692 C15,12.7755913 14.7800934,13 14.5017326,13 L1.49826741,13 C1.22308192,13 1,12.7702494 1,12.4987692 L1,2.50123084 Z M2,3 L14,3 L14,12 L2,12 L2,3 Z M6,8 L6,11 L13,11 L13,8 L6,8 Z M6,4 L6,7 L13,7 L13,4 L6,4 Z M3,9 L5,9 L5,10 L3,10 L3,9 Z M3,5 L5,5 L5,6 L3,6 L3,5 Z M7,5 L12,5 L12,6 L7,6 L7,5 Z M7,9 L12,9 L12,10 L7,10 L7,9 Z"></path>
+    </g>
+</svg>
