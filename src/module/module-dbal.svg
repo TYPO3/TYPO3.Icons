@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-<g id="Background">
-	<rect fill="#415697" width="64" height="64"/>
+<rect fill="#415697" width="64" height="64"/>
+<g>
+	<path fill="#FFFFFF" d="M53,24H35c-0.552,0-1-0.448-1-1v-4c0-0.552,0.448-1,1-1h18c0.552,0,1,0.448,1,1v4
+		C54,23.552,53.552,24,53,24z"/>
 </g>
-<g id="Icon">
-	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M39.4,39.5v-3.3c3.2-0.2,6.2-0.9,8-2.1v2.2
-		C47.4,37.9,44,39.2,39.4,39.5z M39.4,34.6v-3.3c3.2-0.2,6.2-0.9,8-2.1v2.2C47.4,32.9,44,34.3,39.4,34.6z M39.4,29.6v-3.3
-		c0,0,0,0,0,0l0.1,0.1c0,0,0-0.1,0-0.1c3.2-0.2,6.2-0.9,7.9-2.1v2.2C47.4,27.9,44,29.3,39.4,29.6z M38.5,24.7
-		c-2.1-2.3-6.6-3.3-11-3.4v-1.6c0-1.8,4.4-3.3,9.9-3.3s9.9,1.5,9.9,3.3v1.7C47.4,23.1,43.5,24.5,38.5,24.7z M36.4,27.7v1.7
-		c0,1.8-4.4,3.3-9.9,3.3s-9.9-1.5-9.9-3.3v-1.7c0-1.8,4.4-3.3,9.9-3.3S36.4,25.9,36.4,27.7z M36.4,32.1v2.2c0,1.8-4.4,3.3-9.9,3.3
-		s-9.9-1.5-9.9-3.3v-2.2c2.1,1.5,6,2.2,9.9,2.2S34.3,33.6,36.4,32.1z M36.4,37.1v2.2c0,1.8-4.4,3.3-9.9,3.3s-9.9-1.5-9.9-3.3v-2.2
-		c2.1,1.5,6,2.2,9.9,2.2S34.3,38.6,36.4,37.1z M36.4,42.1v2.2c0,1.8-4.4,3.3-9.9,3.3s-9.9-1.5-9.9-3.3v-2.2c2.1,1.5,6,2.2,9.9,2.2
-		S34.3,43.6,36.4,42.1z"/>
+<rect x="50" y="20" fill="#415697" width="2" height="2"/>
+<rect x="46" y="20" fill="#415697" width="2" height="2"/>
+<g>
+	<path fill="#FFFFFF" d="M53,32H35c-0.552,0-1-0.448-1-1v-4c0-0.552,0.448-1,1-1h18c0.552,0,1,0.448,1,1v4
+		C54,31.552,53.552,32,53,32z"/>
 </g>
+<rect x="50" y="28" fill="#415697" width="2" height="2"/>
+<rect x="46" y="28" fill="#415697" width="2" height="2"/>
+<g>
+	<path fill="#FFFFFF" d="M53,44H35c-0.552,0-1-0.448-1-1v-8c0-0.552,0.448-1,1-1h18c0.552,0,1,0.448,1,1v8
+		C54,43.552,53.552,44,53,44z"/>
+</g>
+<rect x="50" y="40" fill="#415697" width="2" height="2"/>
+<rect x="46" y="40" fill="#415697" width="2" height="2"/>
+<rect x="42" y="46" fill="#FFFFFF" width="4" height="4"/>
+<g>
+	<path fill="#FFFFFF" d="M29,24H11c-0.552,0-1-0.448-1-1v-4c0-0.552,0.448-1,1-1h18c0.552,0,1,0.448,1,1v4
+		C30,23.552,29.552,24,29,24z"/>
+</g>
+<rect x="26" y="20" fill="#415697" width="2" height="2"/>
+<rect x="22" y="20" fill="#415697" width="2" height="2"/>
+<g>
+	<path fill="#FFFFFF" d="M29,32H11c-0.552,0-1-0.448-1-1v-4c0-0.552,0.448-1,1-1h18c0.552,0,1,0.448,1,1v4
+		C30,31.552,29.552,32,29,32z"/>
+</g>
+<rect x="26" y="28" fill="#415697" width="2" height="2"/>
+<rect x="22" y="28" fill="#415697" width="2" height="2"/>
+<g>
+	<path fill="#FFFFFF" d="M29,44H11c-0.552,0-1-0.448-1-1v-8c0-0.552,0.448-1,1-1h18c0.552,0,1,0.448,1,1v8
+		C30,43.552,29.552,44,29,44z"/>
+</g>
+<rect x="26" y="40" fill="#415697" width="2" height="2"/>
+<rect x="22" y="40" fill="#415697" width="2" height="2"/>
+<rect x="18" y="46" fill="#FFFFFF" width="4" height="4"/>
+<rect x="42" y="44" opacity="0.5" fill="#FFFFFF" width="4" height="2"/>
+<rect x="18" y="44" opacity="0.5" fill="#FFFFFF" width="4" height="2"/>
+<rect x="18" y="48" fill="#FFFFFF" width="28" height="2"/>
 </svg>
