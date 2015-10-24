@@ -362,7 +362,7 @@ module-workspaces | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dis
 
 ### Overlay
 
-IconName | 
+IconName | Overlay
 --- | ---
 overlay-advanced | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-advanced.svg" height="11" width="11">
 overlay-backenduser | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-backenduser.svg" height="11" width="11">

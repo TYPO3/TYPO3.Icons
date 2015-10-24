@@ -6,7 +6,7 @@
 {% for folder in folders %}
 ### {{ folder.title }}
 {% if folder.folder in ['overlay'] %}
-IconName | 
+IconName | Overlay
 --- | ---
 {% for icon in folder.icons %}{{ icon.file|replace({'.svg': ''}) }} | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="11" width="11">
 {% endfor %}
