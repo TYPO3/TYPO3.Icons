@@ -9,7 +9,9 @@
 	<path fill="#999999" d="M2,0v16h12V4h-0.012l0.004-0.008l-3.984-3.986L10,0.014V0H2z M3,1h6v4h4v10H3V1z M10,1.412L12.586,4H10
 		V1.412z"/>
 </g>
-<path fill="#C83C3C" d="M9,9h7v7H9V9z"/>
-<path opacity="0.2" d="M15,10v5h-5v-5H15 M16,9H9v7h7V9L16,9z"/>
-<polygon fill="#FFFFFF" points="13,14.5 10.5,12.5 13,10.5 13,12 15,12 15,13 13,13 "/>
+<g>
+	<path fill="#C83C3C" d="M5,5h11v11H5V5z"/>
+	<path opacity="0.2" enable-background="new    " d="M15,6v9H6V6H15 M16,5H5v11h11V5L16,5z"/>
+	<polygon fill="#FFFFFF" points="11,13 7,10.5 11,8 11,10 14,10 14,11 11,11 	"/>
+</g>
 </svg>
