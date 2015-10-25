@@ -399,6 +399,7 @@ overlay-news | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/ove
 overlay-readonly | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-readonly.svg" height="11" width="11">
 overlay-restricted | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-restricted.svg" height="11" width="11">
 overlay-scheduled | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-scheduled.svg" height="11" width="11">
+overlay-shop | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-shop.svg" height="11" width="11">
 overlay-shortcut | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-shortcut.svg" height="11" width="11">
 overlay-translated | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-translated.svg" height="11" width="11">
 overlay-warning | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-warning.svg" height="11" width="11">
