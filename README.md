@@ -384,6 +384,7 @@ overlay-media | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/ov
 overlay-missing | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-missing.svg" height="11" width="11">
 overlay-mountpoint | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-mountpoint.svg" height="11" width="11">
 overlay-new | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-new.svg" height="11" width="11">
+overlay-news | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-news.svg" height="11" width="11">
 overlay-readonly | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-readonly.svg" height="11" width="11">
 overlay-restricted | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-restricted.svg" height="11" width="11">
 overlay-scheduled | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-scheduled.svg" height="11" width="11">
