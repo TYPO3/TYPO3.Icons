@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g>
+	<polygon fill="#AAAAAA" points="0.5,9.5 0.5,5.5 2.793,5.5 3.793,6.5 6.5,6.5 6.5,9.5 	"/>
+	<path fill="#666666" d="M2.586,6l0.707,0.707L3.586,7H4h2v2H1V6H2.586 M3,5H0v5h7V6H4L3,5L3,5z"/>
+</g>
+<g>
+	<polygon fill="#AAAAAA" points="0.5,15.5 0.5,11.5 2.793,11.5 3.793,12.5 6.5,12.5 6.5,15.5 	"/>
+	<path fill="#666666" d="M2.586,12l0.707,0.707L3.586,13H4h2v2H1v-3H2.586 M3,11H0v5h7v-4H4L3,11L3,11z"/>
+</g>
+<rect x="10" y="8" fill="#999999" width="1" height="1"/>
+<rect x="12" y="8" fill="#666666" width="1" height="1"/>
+<rect x="10" y="14" fill="#999999" width="1" height="1"/>
+<rect x="8" y="8" fill="#AAAAAA" width="1" height="1"/>
+<rect x="8" y="14" fill="#AAAAAA" width="1" height="1"/>
+<rect x="12" y="14" fill="#666666" width="1" height="1"/>
+<polygon fill="#79A548" points="10,2 15,2 15,5 14,5 14,3 10,3 10,5 6,2.5 10,0 "/>
+</svg>
