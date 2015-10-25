@@ -382,6 +382,7 @@ overlay-backenduser | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/d
 overlay-backendusers | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-backendusers.svg" height="11" width="11">
 overlay-deleted | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-deleted.svg" height="11" width="11">
 overlay-edit | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-edit.svg" height="11" width="11">
+overlay-external-link | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-external-link.svg" height="11" width="11">
 overlay-frontenduser | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-frontenduser.svg" height="11" width="11">
 overlay-frontendusers | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-frontendusers.svg" height="11" width="11">
 overlay-hidden | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-hidden.svg" height="11" width="11">
