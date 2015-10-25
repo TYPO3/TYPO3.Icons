@@ -4,5 +4,5 @@
 	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <path fill="#FFFFFF" d="M1,1h14v14H1V1z"/>
 <path fill="#999999" d="M1,1v14h14V1H1z M2,2h12v12H2V2z"/>
-<path fill="#333333" d="M4,7h8v2H4V7z"/>
+<path fill="#666666" d="M4,7h8v2H4V7z"/>
 </svg>
