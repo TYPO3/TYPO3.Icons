@@ -379,6 +379,7 @@ overlay-includes-subpages | <img src="https://rawgit.com/wmdbsystems/T3.Icons/ma
 overlay-info | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-info.svg" height="11" width="11">
 overlay-list | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-list.svg" height="11" width="11">
 overlay-locked | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-locked.svg" height="11" width="11">
+overlay-media | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-media.svg" height="11" width="11">
 overlay-missing | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-missing.svg" height="11" width="11">
 overlay-mountpoint | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-mountpoint.svg" height="11" width="11">
 overlay-new | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-new.svg" height="11" width="11">
