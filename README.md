@@ -175,6 +175,7 @@ apps-pagetree-backend-user-hideinmenu | <img src="https://rawgit.com/wmdbsystems
 apps-pagetree-backend-user | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-backend-user.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-backend-user.svg" height="32" width="32">
 apps-pagetree-collapse | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-collapse.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-collapse.svg" height="32" width="32">
 apps-pagetree-expand | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-expand.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-expand.svg" height="32" width="32">
+apps-pagetree-folder-contains-approve | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-folder-contains-approve.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-folder-contains-approve.svg" height="32" width="32">
 apps-pagetree-folder-contains-news | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-folder-contains-news.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-folder-contains-news.svg" height="32" width="32">
 apps-pagetree-folder-contains | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-folder-contains.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-folder-contains.svg" height="32" width="32">
 apps-pagetree-folder-default | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-folder-default.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/apps/apps-pagetree-folder-default.svg" height="32" width="32">
@@ -372,6 +373,7 @@ module-workspaces | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dis
 IconName | Overlay
 --- | ---
 overlay-advanced | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-advanced.svg" height="11" width="11">
+overlay-approved | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-approved.svg" height="11" width="11">
 overlay-backenduser | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-backenduser.svg" height="11" width="11">
 overlay-backendusers | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-backendusers.svg" height="11" width="11">
 overlay-deleted | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/overlay/overlay-deleted.svg" height="11" width="11">
