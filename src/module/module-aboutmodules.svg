@@ -5,11 +5,11 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="modules" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="module-aboutmodules" sketch:type="MSLayerGroup">
+        <g id="module-aboutmodules-v2" sketch:type="MSLayerGroup">
             <g id="Background" fill="#3A81B4" sketch:type="MSShapeGroup">
                 <rect id="Rectangle-path" x="0" y="0" width="64" height="64"></rect>
             </g>
-            <path d="M48,18 L48,46 L16,46 L16,18 L48,18 Z M18,20 L18,44 L24,44 L24,20 L18,20 Z M26,20 L26,44 L46,44 L46,20 L26,20 Z M20,38 L22,38 L22,40 L20,40 L20,38 Z M20,34 L22,34 L22,36 L20,36 L20,34 Z M20,30 L22,30 L22,32 L20,32 L20,30 Z M20,26 L22,26 L22,28 L20,28 L20,26 Z M20,22 L22,22 L22,24 L20,24 L20,22 Z M28,24 L38,24 L38,26 L28,26 L28,24 Z M28,32 L38,32 L38,34 L28,34 L28,32 Z M28,28 L42,28 L42,30 L28,30 L28,28 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M48,18 L48,44 L16,44 L16,18 L48,18 Z M22,18 L22,44 L24,44 L24,18 L22,18 Z M18,36 L18,38 L20,38 L20,36 L18,36 Z M18,40 L18,42 L20,42 L20,40 L18,40 Z M18,32 L18,34 L20,34 L20,32 L18,32 Z M18,28 L18,30 L20,30 L20,28 L18,28 Z M18,24 L18,26 L20,26 L20,24 L18,24 Z M18,20 L18,22 L20,22 L20,20 L18,20 Z M28,24 L28,26 L38,26 L38,24 L28,24 Z M28,32 L28,34 L38,34 L38,32 L28,32 Z M28,28 L28,30 L42,30 L42,28 L28,28 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

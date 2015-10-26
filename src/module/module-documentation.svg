@@ -5,12 +5,12 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="modules" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="module-documentation" sketch:type="MSLayerGroup">
+        <g id="module-documentation-v1" sketch:type="MSLayerGroup">
             <g id="Background" fill="#DA6C39" sketch:type="MSShapeGroup">
                 <rect id="Rectangle-path" x="0" y="0" width="64" height="64"></rect>
             </g>
             <g id="Icon" transform="translate(20.000000, 18.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
-                <path d="M6,26 L6,2 L22,2 L22,10 L24,10 L24,0.996 C24,0.44 23.552,0 23,0 L1,0 C0.458,0 0,0.446 0,0.996 L0,27.004 C0,27.56 0.448,28 1,28 L11.502,28 L9.502,26 L6,26 Z M2,2 L4,2 L4,26 L2,26 L2,2 Z M8,4 L20,4 L20,6 L8,6 L8,4 Z M19.646,29.646 L12.854,22.854 C12.538,22.538 12.762,22 13.208,22 L18,22 L18,14 L22,14 L22,22 L26.794,22 C27.24,22 27.462,22.538 27.148,22.854 L20.356,29.646 C20.16,29.842 19.842,29.842 19.646,29.646 Z" id="Fill-2"></path>
+                <path d="M5,18 L14,18 L14,10 L24,10 L24,0.996 C24,0.44 23.552,0 23,0 L1,0 C0.458,0 0,0.446 0,0.996 L0,27.004 C0,27.56 0.448,28 1,28 L11.502,28 L5,18 Z M2,2 L4,2 L4,26 L2,26 L2,2 Z M8,4 L20,4 L20,6 L8,6 L8,4 Z M19.646,29.646 L12.854,22.854 C12.538,22.538 12.762,22 13.208,22 L18,22 L18,14 L22,14 L22,22 L26.794,22 C27.24,22 27.462,22.538 27.148,22.854 L20.356,29.646 C20.16,29.842 19.842,29.842 19.646,29.646 Z" id="Fill-2"></path>
             </g>
         </g>
     </g>
