@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-<g id="Background">
-	<rect fill="#8B2F60" width="64" height="64"/>
-</g>
-<g id="Icon">
-	<path fill="#FFFFFF" d="M32.1,31.8v-16C23.2,15.9,16,23.1,16,32c0,8.9,7.2,16.1,16.1,16.1c4.5,0,8.5-1.8,11.4-4.8L32.1,31.8z
-		 M35.5,32.1l11.4,11.4c3-2.9,4.8-7,4.8-11.4H35.5z M50.2,30.1C50.2,21.2,43,14,34.1,14v16.1H50.2z"/>
-</g>
+<rect fill="#8B2F60" width="64" height="64"/>
+<path fill="#FFFFFF" d="M45,50H17c-0.552,0-1-0.448-1-1V15c0-0.552,0.448-1,1-1h28c0.552,0,1,0.448,1,1v34
+	C46,49.552,45.552,50,45,50z"/>
+<rect x="42" y="42" fill="#8B2F60" width="4" height="2"/>
+<rect x="42" y="44" opacity="0.75" fill="#8B2F60" width="4" height="6"/>
+<rect x="42" y="34" fill="#8B2F60" width="4" height="2"/>
+<rect x="42" y="36" opacity="0.75" fill="#8B2F60" width="4" height="6"/>
+<rect x="42" y="26" fill="#8B2F60" width="4" height="2"/>
+<rect x="42" y="28" opacity="0.75" fill="#8B2F60" width="4" height="6"/>
+<rect x="20" y="18" fill="#8B2F60" width="16" height="2"/>
+<rect x="20" y="22" opacity="0.5" fill="#8B2F60" width="10" height="2"/>
+<rect x="20" y="26" opacity="0.5" fill="#8B2F60" width="10" height="2"/>
+<rect x="20" y="34" opacity="0.5" fill="#8B2F60" width="4" height="12"/>
+<rect x="26" y="38" opacity="0.5" fill="#8B2F60" width="4" height="8"/>
+<rect x="32" y="32" opacity="0.5" fill="#8B2F60" width="4" height="14"/>
 </svg>
