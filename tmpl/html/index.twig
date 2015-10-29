@@ -170,16 +170,19 @@
                 <div class="col-md-4 col-md-push-8 m-y-lg">
                     <div class="list-group">
                         {% for folder in folders %}
+                            {% if folder.count > 0 %}
                             <a class="list-group-item" href="#section-{{ folder.folder }}">
                                 <span class="label label-default label-pill pull-right">{{ folder.count }}</span>
                                 {{ folder.title }}
                             </a>
+                            {% endif %}
                         {% endfor %}
                     </div>
                 </div>
 
                 <div class="col-md-8 col-md-pull-4">
                     {% for folder in folders %}
+                    {% if folder.count > 0 %}
                     <div class="m-y-lg">
                         <h3 id="section-{{ folder.folder }}">
                             {{ folder.title }}
@@ -386,6 +389,7 @@
                         {% endif %}
 
                     </div>
+                    {% endif %}
                     {% endfor %}
                 </div>
 

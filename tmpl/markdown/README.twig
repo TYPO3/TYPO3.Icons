@@ -3,7 +3,7 @@
 {{ pkg.description }}
 
 ## Icons
-{% for folder in folders %}
+{% for folder in folders %}{% if folder.count > 0 %}
 ### {{ folder.title }}
 {% if folder.folder in ['overlay'] %}
 IconName | Overlay
@@ -16,7 +16,7 @@ IconName | Small | Default
 {% for icon in folder.icons %}{{ icon.file|replace({'.svg': ''}) }} | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="32" width="32">
 {% endfor %}
 {% endif %}
-{% endfor %}
+{% endif %}{% endfor %}
 ## Style guide
 
 ### Action Icons
