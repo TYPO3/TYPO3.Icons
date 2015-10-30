@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFC857;}
+	.st1{opacity:0.2;enable-background:new    ;}
+	.st2{fill:#FFE4AB;}
+	.st3{opacity:0.3;}
+</style>
+<polygon class="st0" points="15,10 10,15 1,15 1,1 15,1 "/>
+<polygon class="st1" points="9,14 2,14 2,2 14,2 14,9 15,9 15,1 1,1 1,15 9,15 "/>
+<polygon class="st2" points="10,15 9,15 9,9 15,9 15,10 "/>
+<path class="st3" d="M13.586,10L10,13.586V10H13.586 M15,9H9v6h1l5-5V9L15,9z"/>
+</svg>
