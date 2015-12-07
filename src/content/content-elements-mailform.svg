@@ -1,1 +1,15 @@
-<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><g fill-rule="nonzero"><path fill="#fff" d="M1 1h14v14H1z"/><path d="M1 1v14h14V1H1zm1 1h12v12H2V2z" fill="#999"/></g><path d="M13 5v7H3V5l5 4 5-4z" fill="#59f"/><path d="M8 8l5-4H3l5 4z" fill="#abd7ff"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<path fill="#FFE6BB" d="M8,1l7,5v9H1V6L8,1z"/>
+<path fill="#E8A33D" d="M8,2.2l6,4.3V14H2V6.5L8,2.2 M8,1L1,6v9h14V6L8,1L8,1z"/>
+<rect x="3" y="3" fill="#FFFFFF" width="10" height="10"/>
+<path fill="#666666" d="M12,4v8H4V4H12 M13,3H3v10h10V3L13,3z"/>
+<rect x="5" y="7" fill="#B9B9B9" width="6" height="1"/>
+<rect x="5" y="5" fill="#B9B9B9" width="6" height="1"/>
+<rect x="5" y="9" fill="#B9B9B9" width="6" height="1"/>
+<path fill="#FFC857" d="M15,6v9H1V6l7,5L15,6z"/>
+<path fill="#E8A33D" d="M8,11L1,6v9h14V6L8,11z M2,7.9l3.5,2.5L2,14V7.9z M3.4,14l2.9-2.9L8,12.2l1.6-1.2l2.9,2.9H3.4z M10.5,10.5
+	L14,7.9V14L10.5,10.5z"/>
+</svg>
