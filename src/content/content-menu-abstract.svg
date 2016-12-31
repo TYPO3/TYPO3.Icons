@@ -8,6 +8,6 @@
 <rect x="5" y="3" fill="#B9B9B9" width="8" height="1"/>
 <rect x="5" y="5" fill="#B9B9B9" width="8" height="3"/>
 <rect x="5" y="11" fill="#B9B9B9" width="8" height="2"/>
-<rect x="3" y="3" fill="#FF8700" width="1" height="1"/>
-<rect x="3" y="9" fill="#FF8700" width="1" height="1"/>
+<rect x="3" y="3" fill="#FF8700" width="1" height="5"/>
+<rect x="3" y="9" fill="#FF8700" width="1" height="4"/>
 </svg>
