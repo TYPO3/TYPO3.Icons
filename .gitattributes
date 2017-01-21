@@ -2,6 +2,8 @@
 /.gitattributes export-ignore
 
 # Enforce checkout with linux lf consistent over all plattforms
+*.editorconfig text eol=lf
+*.gitattribute text eol=lf
 *.html text eol=lf
 *.css text eol=lf
 *.tmpl text eol=lf
@@ -17,4 +19,5 @@
 *.sql text eol=lf
 *.t3s text eol=lf
 *.txt text eol=lf
+*.twig text eol=lf
 *.svg text eol=lf
