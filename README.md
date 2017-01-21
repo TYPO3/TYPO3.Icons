@@ -256,6 +256,7 @@ avatar-default | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/a
 ### Content
 IconName | Small | Default
 --- | --- | ---
+content-accordion | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-accordion.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-accordion.svg" height="32" width="32">
 content-audio | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-audio.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-audio.svg" height="32" width="32">
 content-beside-text-img-above-center | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-above-center.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-above-center.svg" height="32" width="32">
 content-beside-text-img-above-left | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-above-left.svg" height="16" width="16"> | <img src="https://rawgit.com/wmdbsystems/T3.Icons/master/dist/content/content-beside-text-img-above-left.svg" height="32" width="32">
