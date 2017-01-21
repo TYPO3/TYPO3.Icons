@@ -1,11 +1,31 @@
 {
-  "name": "wmdbsystems-typo3-icons",
+  "name": "typo3-icons",
   "description": "SVG icons for the TYPO3 CMS backend",
-  "repository": "https://github.com/wmdbsystems/T3.Icons",
+  "version": "0.0.14",
+  "keywords": [
+    "TYPO3",
+    "Icons"
+  ],
+  "homepage": "https://github.com/TYPO3/TYPO3.Icons#readme",
+  "author": "The TYPO3.Icons Authors (https://github.com/TYPO3/TYPO3.Icons/graphs/contributors)",
+  "contributors": [
+    {
+      "name": "TYPO3 CMS Core Team",
+      "url": "https://forge.typo3.org/projects/typo3cms-core"
+    },
+    {
+      "name": "The TYPO3 Community",
+      "url": "https://typo3.org/community/"
+    }
+  ],
   "readme": "README.md",
-  "homepage": "http://www.wmdb.de",
-  "author": "Florian Steller",
-  "version": "0.0.1-dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TYPO3/TYPO3.Icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TYPO3/TYPO3.Icons/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.0",
