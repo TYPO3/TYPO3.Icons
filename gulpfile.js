@@ -60,7 +60,7 @@ function getFileContents(file) {
 //
 // Clean SVGs
 //
-gulp.task('clean-svg', function (cb) {
+gulp.task('clean', function (cb) {
     gulp.src([options.dist + '**/*.svg'])
         .pipe(clean());
     cb();
@@ -70,7 +70,7 @@ gulp.task('clean-svg', function (cb) {
 //
 // Minify SVGs
 //
-gulp.task('svgmin', function (cb) {
+gulp.task('min', function (cb) {
     gulp.src([options.src + '**/*.svg'])
         .pipe(svgmin({
             plugins: [
@@ -85,7 +85,7 @@ gulp.task('svgmin', function (cb) {
 //
 // Compile Readme
 //
-gulp.task('compile-docs', function (cb) {
+gulp.task('docs', function (cb) {
 
     // Copy generated svg files to be used staticly
     // in docs for previewing overlays
@@ -143,5 +143,5 @@ gulp.task('compile-docs', function (cb) {
 // Default Task
 //
 gulp.task('default', function (cb) {
-    sequence('clean-svg', 'svgmin', 'compile-docs')(cb);
+    sequence('clean', 'min', 'docs')(cb);
 });
