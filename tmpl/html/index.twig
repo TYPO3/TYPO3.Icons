@@ -46,8 +46,6 @@
                 vertical-align: middle;
                 white-space: nowrap;
             }
-
-
             .icon {
                 position: relative;
                 display: inline-block;
@@ -149,8 +147,6 @@
                 line-height: 30px;
                 font-size: 26px;
             }
-
-
             .card-inverse {
                 background-color: #333333;
             }
@@ -263,7 +259,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            
+
                         {% elseif folder.folder in ['module'] %}
 
                              <div class="row">
@@ -277,7 +273,7 @@
                                                 {{ icon.inline }}
                                             </span>
                                         </span>
-                                        
+
                                         <hr>
 
                                         <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
