@@ -530,3 +530,13 @@ status-user-group-frontend | <img src="https://rawgit.com/wmdbsystems/T3.Icons/m
 ### Fonts
 
 The icon text was written in Verdana.
+
+### Build
+
+```
+npm install gulp-cli -g
+npm install
+gulp clean
+gulp min
+gulp docs
+```
