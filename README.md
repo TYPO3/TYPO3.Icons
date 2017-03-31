@@ -8,6 +8,7 @@ SVG icons for the TYPO3 CMS backend
 IconName | Small | Default
 --- | --- | ---
 actions-add | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-add.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-add.svg" height="32" width="32">
+actions-check | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-check.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-check.svg" height="32" width="32">
 actions-close | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-close.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-close.svg" height="32" width="32">
 actions-cloud | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-cloud.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-cloud.svg" height="32" width="32">
 actions-database-export | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-database-export.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-database-export.svg" height="32" width="32">
