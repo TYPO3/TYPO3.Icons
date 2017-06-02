@@ -31,8 +31,13 @@
     "gulp": "^3.9.0",
     "gulp-clean": "^0.3.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sequence": "^0.4.1",
     "gulp-svgmin": "^1.2.0",
     "gulp-twig": "^0.4.0"
+  },
+  "scripts": {
+    "clean": "./node_modules/.bin/gulp clean",
+    "min": "./node_modules/.bin/gulp min",
+    "docs": "./node_modules/.bin/gulp docs",
+    "build": "npm run clean && npm run min && npm run docs"
   }
 }
