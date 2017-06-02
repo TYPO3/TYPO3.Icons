@@ -7,6 +7,7 @@ SVG icons for the TYPO3 CMS backend
 ### Actions
 IconName | Small | Default
 --- | --- | ---
+actions-add-placeholder | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-add-placeholder.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-add-placeholder.svg" height="32" width="32">
 actions-add | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-add.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-add.svg" height="32" width="32">
 actions-check | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-check.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-check.svg" height="32" width="32">
 actions-close | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-close.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-close.svg" height="32" width="32">
@@ -155,6 +156,7 @@ actions-view-go-forward | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/
 actions-view-go-up | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-go-up.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-go-up.svg" height="32" width="32">
 actions-view-list-collapse | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-list-collapse.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-list-collapse.svg" height="32" width="32">
 actions-view-list-expand | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-list-expand.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-list-expand.svg" height="32" width="32">
+actions-view-page | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-page.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-page.svg" height="32" width="32">
 actions-view-paging-first-disabled | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-paging-first-disabled.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-paging-first-disabled.svg" height="32" width="32">
 actions-view-paging-first | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-paging-first.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-paging-first.svg" height="32" width="32">
 actions-view-paging-last-disabled | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-paging-last-disabled.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-view-paging-last-disabled.svg" height="32" width="32">
@@ -355,6 +357,7 @@ mimetypes-text-js | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/m
 mimetypes-text-php | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-text-php.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-text-php.svg" height="32" width="32">
 mimetypes-text-text | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-text-text.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-text-text.svg" height="32" width="32">
 mimetypes-text-ts | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-text-ts.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-text-ts.svg" height="32" width="32">
+mimetypes-text-typoscript | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-text-typoscript.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-text-typoscript.svg" height="32" width="32">
 mimetypes-word | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-word.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-word.svg" height="32" width="32">
 mimetypes-x-backend_layout | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-backend_layout.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-backend_layout.svg" height="32" width="32">
 mimetypes-x-content-divider | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-content-divider.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-content-divider.svg" height="32" width="32">
@@ -444,6 +447,7 @@ overlay-backenduser | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist
 overlay-backendusers | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/overlay/overlay-backendusers.svg" height="11" width="11">
 overlay-deleted | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/overlay/overlay-deleted.svg" height="11" width="11">
 overlay-edit | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/overlay/overlay-edit.svg" height="11" width="11">
+overlay-endtime | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/overlay/overlay-endtime.svg" height="11" width="11">
 overlay-external-link | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/overlay/overlay-external-link.svg" height="11" width="11">
 overlay-frontenduser | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/overlay/overlay-frontenduser.svg" height="11" width="11">
 overlay-frontendusers | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/overlay/overlay-frontendusers.svg" height="11" width="11">

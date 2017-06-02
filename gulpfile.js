@@ -8,8 +8,7 @@ var fs = require('fs'),
     clean = require('gulp-clean'),
     twig = require('gulp-twig'),
     svgmin = require('gulp-svgmin'),
-    rename = require('gulp-rename'),
-    sequence = require('gulp-sequence');
+    rename = require('gulp-rename');
 
 
 //
@@ -26,8 +25,14 @@ var options = {
         filename: 'index.html',
         destination: './dist'
     },
+    documentation: {
+        template: './tmpl/html/docs.twig',
+        filename: 'index.html',
+        destination: './docs'
+    },
     src: './src/',
     dist: './dist/',
+    docs: './docs/images/',
     material: './material/'
 };
 
@@ -63,6 +68,8 @@ function getFileContents(file) {
 gulp.task('clean', function (cb) {
     gulp.src([options.dist + '**/*.svg'])
         .pipe(clean());
+    gulp.src([options.docs + '**/*.svg'])
+        .pipe(clean());
     cb();
 });
 
@@ -77,6 +84,7 @@ gulp.task('min', function (cb) {
                 { removeDimensions: true }
             ]
         }))
+        .pipe(gulp.dest(options.docs))
         .pipe(gulp.dest(options.dist));
     cb();
 });
@@ -134,14 +142,16 @@ gulp.task('docs', function (cb) {
         .pipe(twig(opts))
         .pipe(rename(options.index.filename))
         .pipe(gulp.dest(options.index.destination));
+    // Compile github Pages
+    gulp.src(options.documentation.template)
+        .pipe(twig(opts))
+        .pipe(rename(options.documentation.filename))
+        .pipe(gulp.dest(options.documentation.destination));
     cb();
-
 });
 
 
 //
 // Default Task
 //
-gulp.task('default', function (cb) {
-    sequence('clean', 'min', 'docs')(cb);
-});
+gulp.task('default', ['clean', 'min', 'docs']);
