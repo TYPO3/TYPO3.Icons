@@ -8,8 +8,7 @@ var fs = require('fs'),
     clean = require('gulp-clean'),
     twig = require('gulp-twig'),
     svgmin = require('gulp-svgmin'),
-    rename = require('gulp-rename'),
-    sequence = require('gulp-sequence');
+    rename = require('gulp-rename');
 
 
 //
@@ -142,6 +141,4 @@ gulp.task('docs', function (cb) {
 //
 // Default Task
 //
-gulp.task('default', function (cb) {
-    sequence('clean', 'min', 'docs')(cb);
-});
+gulp.task('default', ['clean', 'min', 'docs']);
