@@ -1,4 +1,4 @@
-# typo3-icons
+# @typo3/icons
 
 SVG icons for the TYPO3 CMS backend
 
@@ -17,6 +17,10 @@ actions-database-import | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/
 actions-database-reload | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-database-reload.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-database-reload.svg" height="32" width="32">
 actions-database | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-database.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-database.svg" height="32" width="32">
 actions-delete | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-delete.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-delete.svg" height="32" width="32">
+actions-device-desktop | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-device-desktop.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-device-desktop.svg" height="32" width="32">
+actions-device-mobile | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-device-mobile.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-device-mobile.svg" height="32" width="32">
+actions-device-rotate | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-device-rotate.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-device-rotate.svg" height="32" width="32">
+actions-device-tablet | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-device-tablet.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-device-tablet.svg" height="32" width="32">
 actions-document-duplicates-select | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-duplicates-select.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-duplicates-select.svg" height="32" width="32">
 actions-document-edit-access | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-edit-access.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-edit-access.svg" height="32" width="32">
 actions-document-export-csv | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-export-csv.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-export-csv.svg" height="32" width="32">
