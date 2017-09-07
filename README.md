@@ -1,4 +1,4 @@
-# @typo3/icons
+# typo3-icons
 
 SVG icons for the TYPO3 CMS backend
 
@@ -44,6 +44,7 @@ actions-document-synchronize | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/ma
 actions-document-view | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-view.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-view.svg" height="32" width="32">
 actions-document | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document.svg" height="32" width="32">
 actions-download | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-download.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-download.svg" height="32" width="32">
+actions-duplicate | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-duplicate.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-duplicate.svg" height="32" width="32">
 actions-duplicates | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-duplicates.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-duplicates.svg" height="32" width="32">
 actions-edit-copy-release | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-edit-copy-release.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-edit-copy-release.svg" height="32" width="32">
 actions-edit-copy | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-edit-copy.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-edit-copy.svg" height="32" width="32">
@@ -142,6 +143,7 @@ actions-template-new | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dis
 actions-unlock | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-unlock.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-unlock.svg" height="32" width="32">
 actions-unmarkstate | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-unmarkstate.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-unmarkstate.svg" height="32" width="32">
 actions-upload | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-upload.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-upload.svg" height="32" width="32">
+actions-variable-select | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-variable-select.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-variable-select.svg" height="32" width="32">
 actions-version-document-remove | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-document-remove.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-document-remove.svg" height="32" width="32">
 actions-version-page-open | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-page-open.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-page-open.svg" height="32" width="32">
 actions-version-swap-version | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-swap-version.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-swap-version.svg" height="32" width="32">
@@ -336,8 +338,6 @@ form-advanced-password | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/d
 form-checkbox | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-checkbox.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-checkbox.svg" height="32" width="32">
 form-content-element | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-content-element.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-content-element.svg" height="32" width="32">
 form-date-picker | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-date-picker.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-date-picker.svg" height="32" width="32">
-form-duplicate | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-duplicate.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-duplicate.svg" height="32" width="32">
-form-element-selector | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-element-selector.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-element-selector.svg" height="32" width="32">
 form-fieldset | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-fieldset.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-fieldset.svg" height="32" width="32">
 form-file-upload | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-file-upload.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-file-upload.svg" height="32" width="32">
 form-finisher | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-finisher.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-finisher.svg" height="32" width="32">
