@@ -1,4 +1,4 @@
-# typo3-icons
+# @typo3/icons
 
 SVG icons for the TYPO3 CMS backend
 
@@ -328,6 +328,36 @@ content-textpic | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/con
 IconName | Small | Default
 --- | --- | ---
 default-not-found | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/default/default-not-found.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/default/default-not-found.svg" height="32" width="32">
+
+### Form
+IconName | Small | Default
+--- | --- | ---
+form-advanced-password | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-advanced-password.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-advanced-password.svg" height="32" width="32">
+form-checkbox | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-checkbox.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-checkbox.svg" height="32" width="32">
+form-content-element | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-content-element.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-content-element.svg" height="32" width="32">
+form-date-picker | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-date-picker.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-date-picker.svg" height="32" width="32">
+form-duplicate | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-duplicate.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-duplicate.svg" height="32" width="32">
+form-element-selector | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-element-selector.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-element-selector.svg" height="32" width="32">
+form-fieldset | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-fieldset.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-fieldset.svg" height="32" width="32">
+form-file-upload | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-file-upload.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-file-upload.svg" height="32" width="32">
+form-finisher | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-finisher.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-finisher.svg" height="32" width="32">
+form-gridcontainer | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-gridcontainer.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-gridcontainer.svg" height="32" width="32">
+form-gridrow | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-gridrow.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-gridrow.svg" height="32" width="32">
+form-hidden | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-hidden.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-hidden.svg" height="32" width="32">
+form-image-upload | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-image-upload.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-image-upload.svg" height="32" width="32">
+form-insert-after | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-insert-after.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-insert-after.svg" height="32" width="32">
+form-insert-in | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-insert-in.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-insert-in.svg" height="32" width="32">
+form-multi-checkbox | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-multi-checkbox.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-multi-checkbox.svg" height="32" width="32">
+form-multi-select | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-multi-select.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-multi-select.svg" height="32" width="32">
+form-page | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-page.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-page.svg" height="32" width="32">
+form-password | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-password.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-password.svg" height="32" width="32">
+form-radio-button | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-radio-button.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-radio-button.svg" height="32" width="32">
+form-single-select | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-single-select.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-single-select.svg" height="32" width="32">
+form-static-text | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-static-text.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-static-text.svg" height="32" width="32">
+form-summary-page | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-summary-page.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-summary-page.svg" height="32" width="32">
+form-text | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-text.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-text.svg" height="32" width="32">
+form-textarea | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-textarea.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-textarea.svg" height="32" width="32">
+form-validator | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-validator.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-validator.svg" height="32" width="32">
 
 ### Mimetypes
 IconName | Small | Default
