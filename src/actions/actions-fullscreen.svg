@@ -3,7 +3,9 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <g class="icon-color">
-	<path d="M14.5,2h-13C1.2,2,1,2.2,1,2.5v9C1,11.8,1.2,12,1.5,12H6v1H4v1h2h4h2v-1h-2v-1h4.5c0.3,0,0.5-0.2,0.5-0.5v-9
-		C15,2.2,14.8,2,14.5,2z M14,11H2V3h12V11z"/>
+	<polygon points="2,2 2,3 2,6 3,6 3,3 6,3 6,2 3,2 	"/>
+	<polygon points="13,2 10,2 10,3 13,3 13,6 14,6 14,3 14,2 	"/>
+	<polygon points="3,10 2,10 2,13 2,14 3,14 6,14 6,13 3,13 	"/>
+	<polygon points="13,13 10,13 10,14 13,14 14,14 14,13 14,10 13,10 	"/>
 </g>
 </svg>
