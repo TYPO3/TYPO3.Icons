@@ -1,4 +1,4 @@
-# @typo3/icons
+# typo3-icons
 
 SVG icons for the TYPO3 CMS backend
 
@@ -49,6 +49,7 @@ actions-document-synchronize | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/ma
 actions-document-view | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-view.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document-view.svg" height="32" width="32">
 actions-document | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-document.svg" height="32" width="32">
 actions-download | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-download.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-download.svg" height="32" width="32">
+actions-duplicate | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-duplicate.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-duplicate.svg" height="32" width="32">
 actions-duplicates | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-duplicates.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-duplicates.svg" height="32" width="32">
 actions-edit-copy-release | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-edit-copy-release.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-edit-copy-release.svg" height="32" width="32">
 actions-edit-copy | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-edit-copy.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-edit-copy.svg" height="32" width="32">
@@ -149,6 +150,7 @@ actions-template-new | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dis
 actions-unlock | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-unlock.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-unlock.svg" height="32" width="32">
 actions-unmarkstate | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-unmarkstate.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-unmarkstate.svg" height="32" width="32">
 actions-upload | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-upload.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-upload.svg" height="32" width="32">
+actions-variable-select | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-variable-select.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-variable-select.svg" height="32" width="32">
 actions-version-document-remove | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-document-remove.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-document-remove.svg" height="32" width="32">
 actions-version-page-open | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-page-open.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-page-open.svg" height="32" width="32">
 actions-version-swap-version | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-swap-version.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/actions/actions-version-swap-version.svg" height="32" width="32">
@@ -336,6 +338,34 @@ IconName | Small | Default
 --- | --- | ---
 default-not-found | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/default/default-not-found.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/default/default-not-found.svg" height="32" width="32">
 
+### Form
+IconName | Small | Default
+--- | --- | ---
+form-advanced-password | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-advanced-password.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-advanced-password.svg" height="32" width="32">
+form-checkbox | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-checkbox.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-checkbox.svg" height="32" width="32">
+form-content-element | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-content-element.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-content-element.svg" height="32" width="32">
+form-date-picker | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-date-picker.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-date-picker.svg" height="32" width="32">
+form-fieldset | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-fieldset.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-fieldset.svg" height="32" width="32">
+form-file-upload | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-file-upload.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-file-upload.svg" height="32" width="32">
+form-finisher | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-finisher.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-finisher.svg" height="32" width="32">
+form-gridcontainer | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-gridcontainer.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-gridcontainer.svg" height="32" width="32">
+form-gridrow | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-gridrow.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-gridrow.svg" height="32" width="32">
+form-hidden | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-hidden.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-hidden.svg" height="32" width="32">
+form-image-upload | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-image-upload.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-image-upload.svg" height="32" width="32">
+form-insert-after | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-insert-after.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-insert-after.svg" height="32" width="32">
+form-insert-in | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-insert-in.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-insert-in.svg" height="32" width="32">
+form-multi-checkbox | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-multi-checkbox.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-multi-checkbox.svg" height="32" width="32">
+form-multi-select | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-multi-select.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-multi-select.svg" height="32" width="32">
+form-page | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-page.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-page.svg" height="32" width="32">
+form-password | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-password.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-password.svg" height="32" width="32">
+form-radio-button | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-radio-button.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-radio-button.svg" height="32" width="32">
+form-single-select | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-single-select.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-single-select.svg" height="32" width="32">
+form-static-text | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-static-text.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-static-text.svg" height="32" width="32">
+form-summary-page | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-summary-page.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-summary-page.svg" height="32" width="32">
+form-text | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-text.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-text.svg" height="32" width="32">
+form-textarea | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-textarea.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-textarea.svg" height="32" width="32">
+form-validator | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-validator.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/form/form-validator.svg" height="32" width="32">
+
 ### Mimetypes
 IconName | Small | Default
 --- | --- | ---
@@ -393,8 +423,8 @@ mimetypes-x-content-text | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master
 mimetypes-x-index_config | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-index_config.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-index_config.svg" height="32" width="32">
 mimetypes-x-sys_action | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_action.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_action.svg" height="32" width="32">
 mimetypes-x-sys_category | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_category.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_category.svg" height="32" width="32">
-mimetypes-x-sys_filemounts | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_filemounts.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_filemounts.svg" height="32" width="32">
 mimetypes-x-sys_file_storage | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_file_storage.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_file_storage.svg" height="32" width="32">
+mimetypes-x-sys_filemounts | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_filemounts.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_filemounts.svg" height="32" width="32">
 mimetypes-x-sys_language | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_language.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_language.svg" height="32" width="32">
 mimetypes-x-sys_news | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_news.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_news.svg" height="32" width="32">
 mimetypes-x-sys_note | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_note.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_note.svg" height="32" width="32">
