@@ -1,4 +1,4 @@
-# typo3-icons
+# @typo3/icons
 
 SVG icons for the TYPO3 CMS backend
 
@@ -293,6 +293,7 @@ content-carousel-header | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/
 content-carousel-html | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-carousel-html.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-carousel-html.svg" height="32" width="32">
 content-carousel-image | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-carousel-image.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-carousel-image.svg" height="32" width="32">
 content-carousel | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-carousel.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-carousel.svg" height="32" width="32">
+content-clock | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-clock.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-clock.svg" height="32" width="32">
 content-coffee | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-coffee.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-coffee.svg" height="32" width="32">
 content-elements-login | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-elements-login.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-elements-login.svg" height="32" width="32">
 content-elements-mailform | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-elements-mailform.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/content/content-elements-mailform.svg" height="32" width="32">
@@ -423,8 +424,8 @@ mimetypes-x-content-text | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master
 mimetypes-x-index_config | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-index_config.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-index_config.svg" height="32" width="32">
 mimetypes-x-sys_action | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_action.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_action.svg" height="32" width="32">
 mimetypes-x-sys_category | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_category.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_category.svg" height="32" width="32">
-mimetypes-x-sys_file_storage | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_file_storage.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_file_storage.svg" height="32" width="32">
 mimetypes-x-sys_filemounts | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_filemounts.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_filemounts.svg" height="32" width="32">
+mimetypes-x-sys_file_storage | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_file_storage.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_file_storage.svg" height="32" width="32">
 mimetypes-x-sys_language | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_language.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_language.svg" height="32" width="32">
 mimetypes-x-sys_news | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_news.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_news.svg" height="32" width="32">
 mimetypes-x-sys_note | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_note.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/mimetypes/mimetypes-x-sys_note.svg" height="32" width="32">
