@@ -10,8 +10,6 @@
 <polygon fill="#FFC857" points="1,9.5 5,11.5 5,9.5 1,7.5 "/>
 <polygon fill="#FFC857" points="10,9.5 15,11.5 15,9.5 10,7.5 "/>
 <polygon fill="#FFC857" points="12.9,10.7 10,9.5 5,3 6.6,2.4 "/>
-<path display="none" fill="#8C8C8C" d="M10,2l4,0.8v11L10.2,13L10,13l-0.2,0L5,14l-3-0.8V2.3L4.8,3L5,3l0.2,0L10,2 M10,1L5,2L1,1v13
-	l4,1l5-1l5,1V2L10,1L10,1z"/>
 <polygon opacity="0.15" points="10,13 5,15 5,3 10,1 "/>
 <path opacity="0.3" d="M10,2.1l4,1.6v9.8l-3.6-1.5L10,11.9l-0.4,0.1L5,13.9l-3-1.5V2.6l2.6,1.3L5,4.1l0.4-0.2L10,2.1 M10,1L5,3L1,1
 	v12l4,2l5-2l5,2V3L10,1L10,1z"/>
