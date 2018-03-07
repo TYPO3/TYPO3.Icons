@@ -6,7 +6,7 @@
     "TYPO3",
     "Icons"
   ],
-  "homepage": "https://github.com/TYPO3/TYPO3.Icons#readme",
+  "homepage": "http://typo3.github.io/TYPO3.Icons/",
   "author": "The TYPO3.Icons Authors (https://github.com/TYPO3/TYPO3.Icons/graphs/contributors)",
   "contributors": [
     {
@@ -28,11 +28,11 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-clean": "^0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
     "gulp-rename": "^1.2.2",
-    "gulp-svgmin": "^1.2.0",
-    "gulp-twig": "^0.4.0"
+    "gulp-svgmin": "^1.2.4",
+    "gulp-twig": "^1.2.0"
   },
   "scripts": {
     "clean": "./node_modules/.bin/gulp clean",
