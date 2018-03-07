@@ -448,6 +448,7 @@ IconName | Small | Default
 --- | --- | ---
 module-about | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-about.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-about.svg" height="32" width="32">
 module-aboutmodules | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-aboutmodules.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-aboutmodules.svg" height="32" width="32">
+module-adminpanel | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-adminpanel.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-adminpanel.svg" height="32" width="32">
 module-belog | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-belog.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-belog.svg" height="32" width="32">
 module-beuser | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-beuser.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-beuser.svg" height="32" width="32">
 module-config | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-config.svg" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/module/module-config.svg" height="32" width="32">
