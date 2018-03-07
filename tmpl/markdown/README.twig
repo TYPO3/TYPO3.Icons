@@ -2,23 +2,9 @@
 
 {{ pkg.description }}
 
-## Icons
-{% for folder in folders %}{% if folder.count > 0 %}
-
-### {{ folder.title }}
-{% if folder.folder in ['overlay'] %}
-IconName | Overlay
---- | ---
-{% for icon in folder.icons %}{{ icon.file|replace({'.svg': ''}) }} | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="11" width="11">
-{% endfor %}
-{% else %}
-IconName | Small | Default
---- | --- | ---
-{% for icon in folder.icons %}{{ icon.file|replace({'.svg': ''}) }} | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="16" width="16"> | <img src="https://rawgit.com/TYPO3/TYPO3.Icons/master/dist/{{ folder.folder }}/{{ icon.file }}" height="32" width="32">
-{% endfor %}
-{% endif %}
-{% endif %}{% endfor %}
 ## Style guide
+
+Website: http://typo3.github.io/TYPO3.Icons/
 
 ### Action Icons
 
@@ -33,6 +19,10 @@ IconName | Small | Default
 ### Overlay Icons
 
 - Size: 11x11px
+
+### Module Icons
+
+- Size: 64x64px
 
 ### Colors
 
@@ -85,9 +75,6 @@ The icon text was written in Verdana.
 ### Build
 
 ```
-npm install gulp-cli -g
-npm install
-gulp clean
-gulp min
-gulp docs
+yarn install && npm gulp-cli -g
+npm run-script build
 ```
