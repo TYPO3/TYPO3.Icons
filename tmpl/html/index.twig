@@ -260,6 +260,30 @@
                                 </table>
                             </div>
 
+                        {% elseif folder.folder in ['information'] %}
+
+                            <div class="row">
+                            {% for icon in folder.icons %}
+                                <div class="col-sm-6 col-md-4">
+                                    <p>{{ icon.file|replace({'.svg': ''}) }}</p>
+                                    <div class="card card-block text-center">
+                                        <span class="icon icon-size-default icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                            <span class="icon-markup">
+                                                {{ icon.inline }}
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="card card-block card-inverse text-center">
+                                        <span class="icon icon-size-default icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                            <span class="icon-markup">
+                                                {{ icon.inline }}
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            </div>
+
                         {% elseif folder.folder in ['module'] %}
 
                              <div class="row">
