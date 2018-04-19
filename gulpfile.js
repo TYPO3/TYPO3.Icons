@@ -20,11 +20,6 @@ var options = {
         filename: 'README.md',
         destination: '.'
     },
-    index: {
-        template: './tmpl/html/index.twig',
-        filename: 'index.html',
-        destination: './dist'
-    },
     documentation: {
         template: './tmpl/html/docs.twig',
         filename: 'index.html',
@@ -137,11 +132,6 @@ gulp.task('docs', function (cb) {
         .pipe(twig(opts))
         .pipe(rename(options.readme.filename))
         .pipe(gulp.dest(options.readme.destination));
-    // Compile Template
-    gulp.src(options.index.template)
-        .pipe(twig(opts))
-        .pipe(rename(options.index.filename))
-        .pipe(gulp.dest(options.index.destination));
     // Compile github Pages
     gulp.src(options.documentation.template)
         .pipe(twig(opts))
