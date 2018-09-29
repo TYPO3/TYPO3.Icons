@@ -15,15 +15,57 @@ var fs = require('fs'),
 // Options
 //
 var options = {
-    readme: {
-        template: './tmpl/markdown/README.twig',
-        filename: 'README.md',
-        destination: '.'
-    },
-    documentation: {
-        template: './tmpl/html/docs.twig',
-        filename: 'index.html',
-        destination: './docs'
+    files: {
+        readme: {
+            template: './tmpl/markdown/README.twig',
+            filename: 'README.md',
+            destination: '.'
+        },
+        index: {
+            template: './tmpl/html/docs/index.html.twig',
+            filename: 'index.html',
+            destination: './docs'
+        },
+        action: {
+            template: './tmpl/html/docs/action.html.twig',
+            filename: 'action.html',
+            destination: './docs'
+        },
+        module: {
+            template: './tmpl/html/docs/module.html.twig',
+            filename: 'module.html',
+            destination: './docs'
+        },
+        overlay: {
+            template: './tmpl/html/docs/overlay.html.twig',
+            filename: 'overlay.html',
+            destination: './docs'
+        },
+        form: {
+            template: './tmpl/html/docs/form.html.twig',
+            filename: 'form.html',
+            destination: './docs'
+        },
+        apps: {
+            template: './tmpl/html/docs/apps.html.twig',
+            filename: 'apps.html',
+            destination: './docs'
+        },
+        content: {
+            template: './tmpl/html/docs/content.html.twig',
+            filename: 'content.html',
+            destination: './docs'
+        },
+        mimetypes: {
+            template: './tmpl/html/docs/mimetypes.html.twig',
+            filename: 'mimetypes.html',
+            destination: './docs'
+        },
+        misc: {
+            template: './tmpl/html/docs/misc.html.twig',
+            filename: 'misc.html',
+            destination: './docs'
+        }
     },
     src: './src/',
     dist: './dist/',
@@ -114,29 +156,31 @@ gulp.task('docs', function (cb) {
                 inline: getFileContents(file)
             };
         }
-        data.push({
+        data[folder] = {
             folder: folder,
             title: folder.charAt(0).toUpperCase() + folder.slice(1),
             count: icons.length,
             icons: icons
-        });
+        };
     }
-    var opts = {
-        data: {
-            pkg: pkg,
-            folders: data
+
+    // Compile templates
+    for (var key in options.files) {
+        if (options.files.hasOwnProperty(key)) {
+            let file = options.files[key];
+            let opts = {
+                data: {
+                    key: key,
+                    pkg: pkg,
+                    folders: data
+                }
+            };
+            gulp.src(file.template)
+                .pipe(twig(opts))
+                .pipe(rename(file.filename))
+                .pipe(gulp.dest(file.destination));
         }
-    };
-    // Compile Readme
-    gulp.src(options.readme.template)
-        .pipe(twig(opts))
-        .pipe(rename(options.readme.filename))
-        .pipe(gulp.dest(options.readme.destination));
-    // Compile github Pages
-    gulp.src(options.documentation.template)
-        .pipe(twig(opts))
-        .pipe(rename(options.documentation.filename))
-        .pipe(gulp.dest(options.documentation.destination));
+    }
     cb();
 });
 

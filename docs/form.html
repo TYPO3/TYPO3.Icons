@@ -1,0 +1,442 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Form - @typo3/icons</title>
+        <meta name="description" content="SVG icons for the TYPO3 CMS backend">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style type="text/css">
+            .btn img {
+                display: block;
+            }
+            .btn-sm {
+                padding: 4px 12px;
+                line-height: 16px;
+                border-radius: 2px;
+            }
+            .btn-icon {
+                padding: 4px 4px;
+                border-radius: 2px;
+                font-size: 11px;
+                line-height: 1.5;
+            }
+            .btn-default {
+                color: #333333;
+                background-color: #eeeeee;
+                border-color: #bbbbbb;
+            }
+            .btn-default .icon-color {
+                fill: #333333;
+            }
+            .btn-grid {
+                margin: 2px;
+                float: left;
+            }
+
+            .table td {
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+            .icon {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                vertical-align: -22%;
+            }
+
+            .icon img,
+            .icon svg {
+                display: block;
+                height: 100%;
+                width: 100%;
+                transform: translate3d(0,0,0);
+            }
+            .icon * {
+                display: block;
+                line-height: inherit;
+            }
+            .icon-markup {
+                position: absolute;
+                display: block;
+                text-align: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            .icon-color {
+               fill: currentColor;
+            }
+            .icon-overlay {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 68.75%;
+                width: 68.75%;
+                text-align: center;
+            }
+            .icon-spin .icon-markup {
+                -webkit-animation: icon-spin 2s infinite linear;
+                animation: icon-spin 2s infinite linear;
+            }
+            @-webkit-keyframes icon-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(359deg);
+                    transform: rotate(359deg);
+                }
+            }
+            @keyframes icon-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(359deg);
+                    transform: rotate(359deg);
+                }
+            }
+            .icon-state-disabled .icon-markup {
+                opacity: 0.5;
+            }
+            .icon-size-small {
+                height: 16px;
+                width: 16px;
+                line-height: 16px;
+            }
+            .icon-size-small .icon-unify {
+                line-height: 16px;
+                font-size: 14px;
+            }
+            .icon-size-small .icon-overlay .icon-unify {
+                line-height: 10px;
+                font-size: 9px;
+            }
+            .icon-size-default {
+                height: 32px;
+                width: 32px;
+                line-height: 32px;
+            }
+            .icon-size-default .icon-unify {
+                line-height: 32px;
+                font-size: 28px;
+            }
+            .icon-size-default .icon-overlay .icon-unify {
+                line-height: 20px;
+                font-size: 18px;
+            }
+            .icon-size-large {
+                height: 48px;
+                width: 48px;
+                line-height: 48px;
+            }
+            .icon-size-large .icon-unify {
+                line-height: 48px;
+                font-size: 42px;
+            }
+            .icon-size-large .icon-overlay .icon-unify {
+                line-height: 30px;
+                font-size: 26px;
+            }
+
+            .card {
+                overflow: hidden;
+            }
+            .card-deck {
+                margin-top: -15px;
+                margin-bottom: -15px;
+            }
+            .card-deck .card {
+                margin: 15px;
+                min-width: 250px;
+            }
+            .card-inverse .icon-color {
+                fill: #dddddd;
+            }
+
+
+            .card-group-element {
+                margin: -10px;
+                display: flex;
+                flex-wrap: wrap
+            }
+            .card-group-element-item {
+                width: 100%;
+                padding: 10px
+            }
+            .card-group-element-item .card {
+                height: 100%
+            }
+            .card-group-element-align-left {
+                justify-content: flex-start
+            }
+            .card-group-element-align-center {
+                justify-content: center
+            }
+            .card-group-element-align-right {
+                justify-content: flex-end
+            }
+            @media (min-width: 576px) {
+                .card-group-element-columns-2 .card-group-element-item {
+                    width:calc(100% / 2)
+                }
+            }
+            @media (min-width: 768px) {
+                .card-group-element-columns-3 .card-group-element-item {
+                    width:calc(100% / 3)
+                }
+            }
+            @media (min-width: 576px) {
+                .card-group-element-columns-4 .card-group-element-item {
+                    width:calc(100% / 2)
+                }
+            }
+            @media (min-width: 1200px) {
+                .card-group-element-columns-4 .card-group-element-item {
+                    width:calc(100% / 4)
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">@typo3/icons</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainnav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="action.html">Action</a></li>
+                        <li class="nav-item"><a class="nav-link" href="apps.html">Apps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="content.html">Content</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="form.html">Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mimetypes.html">Mimetypes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="module.html">Module</a></li>
+                        <li class="nav-item"><a class="nav-link" href="overlay.html">Overlay</a></li>
+                        <li class="nav-item"><a class="nav-link" href="misc.html">Misc</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container py-5">
+            
+        <h3 class="mb-3">
+    Form
+    <small class="text-muted">26</small>
+</h3>
+    <div class="table-responsive">
+    <table class="table table-striped">
+        <thead class="thead-inverse">
+            <tr>
+                <th>IconName</th>
+                <th>Small</th>
+                <th>Default</th>
+                <th>Large</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr>
+                <td>form-advanced-password</td>
+                <td><img src="images/form/form-advanced-password.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-advanced-password.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-advanced-password.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-advanced-password.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-checkbox</td>
+                <td><img src="images/form/form-checkbox.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-checkbox.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-checkbox.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-checkbox.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-content-element</td>
+                <td><img src="images/form/form-content-element.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-content-element.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-content-element.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-content-element.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-date-picker</td>
+                <td><img src="images/form/form-date-picker.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-date-picker.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-date-picker.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-date-picker.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-email</td>
+                <td><img src="images/form/form-email.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-email.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-email.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-email.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-fieldset</td>
+                <td><img src="images/form/form-fieldset.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-fieldset.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-fieldset.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-fieldset.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-file-upload</td>
+                <td><img src="images/form/form-file-upload.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-file-upload.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-file-upload.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-file-upload.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-finisher</td>
+                <td><img src="images/form/form-finisher.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-finisher.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-finisher.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-finisher.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-gridcontainer</td>
+                <td><img src="images/form/form-gridcontainer.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-gridcontainer.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-gridcontainer.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-gridcontainer.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-gridrow</td>
+                <td><img src="images/form/form-gridrow.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-gridrow.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-gridrow.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-gridrow.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-hidden</td>
+                <td><img src="images/form/form-hidden.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-hidden.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-hidden.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-hidden.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-image-upload</td>
+                <td><img src="images/form/form-image-upload.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-image-upload.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-image-upload.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-image-upload.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-multi-checkbox</td>
+                <td><img src="images/form/form-multi-checkbox.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-multi-checkbox.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-multi-checkbox.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-multi-checkbox.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-multi-select</td>
+                <td><img src="images/form/form-multi-select.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-multi-select.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-multi-select.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-multi-select.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-number</td>
+                <td><img src="images/form/form-number.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-number.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-number.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-number.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-page</td>
+                <td><img src="images/form/form-page.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-page.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-page.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-page.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-password</td>
+                <td><img src="images/form/form-password.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-password.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-password.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-password.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-radio-button</td>
+                <td><img src="images/form/form-radio-button.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-radio-button.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-radio-button.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-radio-button.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-single-select</td>
+                <td><img src="images/form/form-single-select.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-single-select.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-single-select.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-single-select.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-static-text</td>
+                <td><img src="images/form/form-static-text.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-static-text.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-static-text.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-static-text.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-summary-page</td>
+                <td><img src="images/form/form-summary-page.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-summary-page.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-summary-page.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-summary-page.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-telephone</td>
+                <td><img src="images/form/form-telephone.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-telephone.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-telephone.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-telephone.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-text</td>
+                <td><img src="images/form/form-text.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-text.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-text.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-text.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-textarea</td>
+                <td><img src="images/form/form-textarea.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-textarea.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-textarea.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-textarea.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-url</td>
+                <td><img src="images/form/form-url.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-url.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-url.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-url.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>form-validator</td>
+                <td><img src="images/form/form-validator.svg" height="16" width="16"></td>
+                <td><img src="images/form/form-validator.svg" height="32" width="32"></td>
+                <td><img src="images/form/form-validator.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/form/form-validator.svg">File</a></td>
+            </tr>
+                    </tbody>
+    </table>
+</div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html>

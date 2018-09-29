@@ -1,0 +1,52 @@
+{% extends "_layout.html.twig" %}
+{% block title %}Overlay{% endblock %}
+{% block content %}
+
+    {% set folder = folders.overlay %}
+    {% include '_header.html.twig' with {'folder': folder} %}
+
+    <div class="card-group-element card-group-element-columns-4">
+        {% for icon in folder.icons %}
+            <div class="card-group-element-item">
+                <div class="card">
+                    <div class="card-header">{{ icon.file|replace({'.svg': ''}) }}</div>
+                    <div class="card-body text-center">
+                        <div class="row">
+                            <div class="col">
+                                <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                    <span class="icon-markup">
+                                        <img src="images/apps/apps-filetree-folder-default.svg">
+                                    </span>
+                                    <span class="icon-overlay">
+                                        {{ icon.inline }}
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                    <span class="icon-markup">
+                                        <img src="images/apps/apps-filetree-folder-temp.svg">
+                                    </span>
+                                    <span class="icon-overlay">
+                                        {{ icon.inline }}
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                                    <span class="icon-markup">
+                                        <img src="images/apps/apps-pagetree-page.svg">
+                                    </span>
+                                    <span class="icon-overlay">
+                                        {{ icon.inline }}
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

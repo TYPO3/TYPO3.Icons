@@ -1,0 +1,9 @@
+{% extends "_layout.html.twig" %}
+{% block title %}Form{% endblock %}
+{% block content %}
+
+    {% set folder = folders.content %}
+    {% include '_header.html.twig' with {'folder': folder} %}
+    {% include '_default.html.twig' with {'folder': folder} %}
+
+{% endblock %}

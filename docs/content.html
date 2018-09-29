@@ -1,0 +1,687 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Form - @typo3/icons</title>
+        <meta name="description" content="SVG icons for the TYPO3 CMS backend">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style type="text/css">
+            .btn img {
+                display: block;
+            }
+            .btn-sm {
+                padding: 4px 12px;
+                line-height: 16px;
+                border-radius: 2px;
+            }
+            .btn-icon {
+                padding: 4px 4px;
+                border-radius: 2px;
+                font-size: 11px;
+                line-height: 1.5;
+            }
+            .btn-default {
+                color: #333333;
+                background-color: #eeeeee;
+                border-color: #bbbbbb;
+            }
+            .btn-default .icon-color {
+                fill: #333333;
+            }
+            .btn-grid {
+                margin: 2px;
+                float: left;
+            }
+
+            .table td {
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+            .icon {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                vertical-align: -22%;
+            }
+
+            .icon img,
+            .icon svg {
+                display: block;
+                height: 100%;
+                width: 100%;
+                transform: translate3d(0,0,0);
+            }
+            .icon * {
+                display: block;
+                line-height: inherit;
+            }
+            .icon-markup {
+                position: absolute;
+                display: block;
+                text-align: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            .icon-color {
+               fill: currentColor;
+            }
+            .icon-overlay {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 68.75%;
+                width: 68.75%;
+                text-align: center;
+            }
+            .icon-spin .icon-markup {
+                -webkit-animation: icon-spin 2s infinite linear;
+                animation: icon-spin 2s infinite linear;
+            }
+            @-webkit-keyframes icon-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(359deg);
+                    transform: rotate(359deg);
+                }
+            }
+            @keyframes icon-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(359deg);
+                    transform: rotate(359deg);
+                }
+            }
+            .icon-state-disabled .icon-markup {
+                opacity: 0.5;
+            }
+            .icon-size-small {
+                height: 16px;
+                width: 16px;
+                line-height: 16px;
+            }
+            .icon-size-small .icon-unify {
+                line-height: 16px;
+                font-size: 14px;
+            }
+            .icon-size-small .icon-overlay .icon-unify {
+                line-height: 10px;
+                font-size: 9px;
+            }
+            .icon-size-default {
+                height: 32px;
+                width: 32px;
+                line-height: 32px;
+            }
+            .icon-size-default .icon-unify {
+                line-height: 32px;
+                font-size: 28px;
+            }
+            .icon-size-default .icon-overlay .icon-unify {
+                line-height: 20px;
+                font-size: 18px;
+            }
+            .icon-size-large {
+                height: 48px;
+                width: 48px;
+                line-height: 48px;
+            }
+            .icon-size-large .icon-unify {
+                line-height: 48px;
+                font-size: 42px;
+            }
+            .icon-size-large .icon-overlay .icon-unify {
+                line-height: 30px;
+                font-size: 26px;
+            }
+
+            .card {
+                overflow: hidden;
+            }
+            .card-deck {
+                margin-top: -15px;
+                margin-bottom: -15px;
+            }
+            .card-deck .card {
+                margin: 15px;
+                min-width: 250px;
+            }
+            .card-inverse .icon-color {
+                fill: #dddddd;
+            }
+
+
+            .card-group-element {
+                margin: -10px;
+                display: flex;
+                flex-wrap: wrap
+            }
+            .card-group-element-item {
+                width: 100%;
+                padding: 10px
+            }
+            .card-group-element-item .card {
+                height: 100%
+            }
+            .card-group-element-align-left {
+                justify-content: flex-start
+            }
+            .card-group-element-align-center {
+                justify-content: center
+            }
+            .card-group-element-align-right {
+                justify-content: flex-end
+            }
+            @media (min-width: 576px) {
+                .card-group-element-columns-2 .card-group-element-item {
+                    width:calc(100% / 2)
+                }
+            }
+            @media (min-width: 768px) {
+                .card-group-element-columns-3 .card-group-element-item {
+                    width:calc(100% / 3)
+                }
+            }
+            @media (min-width: 576px) {
+                .card-group-element-columns-4 .card-group-element-item {
+                    width:calc(100% / 2)
+                }
+            }
+            @media (min-width: 1200px) {
+                .card-group-element-columns-4 .card-group-element-item {
+                    width:calc(100% / 4)
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">@typo3/icons</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainnav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="action.html">Action</a></li>
+                        <li class="nav-item"><a class="nav-link" href="apps.html">Apps</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="content.html">Content</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mimetypes.html">Mimetypes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="module.html">Module</a></li>
+                        <li class="nav-item"><a class="nav-link" href="overlay.html">Overlay</a></li>
+                        <li class="nav-item"><a class="nav-link" href="misc.html">Misc</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container py-5">
+            
+        <h3 class="mb-3">
+    Content
+    <small class="text-muted">61</small>
+</h3>
+    <div class="table-responsive">
+    <table class="table table-striped">
+        <thead class="thead-inverse">
+            <tr>
+                <th>IconName</th>
+                <th>Small</th>
+                <th>Default</th>
+                <th>Large</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr>
+                <td>content-accordion</td>
+                <td><img src="images/content/content-accordion.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-accordion.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-accordion.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-accordion.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-audio</td>
+                <td><img src="images/content/content-audio.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-audio.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-audio.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-audio.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-beside-text-img-above-center</td>
+                <td><img src="images/content/content-beside-text-img-above-center.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-beside-text-img-above-center.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-beside-text-img-above-center.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-beside-text-img-above-center.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-beside-text-img-above-left</td>
+                <td><img src="images/content/content-beside-text-img-above-left.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-beside-text-img-above-left.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-beside-text-img-above-left.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-beside-text-img-above-left.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-beside-text-img-above-right</td>
+                <td><img src="images/content/content-beside-text-img-above-right.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-beside-text-img-above-right.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-beside-text-img-above-right.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-beside-text-img-above-right.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-beside-text-img-below-center</td>
+                <td><img src="images/content/content-beside-text-img-below-center.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-beside-text-img-below-center.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-beside-text-img-below-center.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-beside-text-img-below-center.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-beside-text-img-below-left</td>
+                <td><img src="images/content/content-beside-text-img-below-left.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-beside-text-img-below-left.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-beside-text-img-below-left.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-beside-text-img-below-left.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-beside-text-img-below-right</td>
+                <td><img src="images/content/content-beside-text-img-below-right.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-beside-text-img-below-right.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-beside-text-img-below-right.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-beside-text-img-below-right.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-beside-text-img-left</td>
+                <td><img src="images/content/content-beside-text-img-left.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-beside-text-img-left.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-beside-text-img-left.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-beside-text-img-left.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-beside-text-img-right</td>
+                <td><img src="images/content/content-beside-text-img-right.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-beside-text-img-right.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-beside-text-img-right.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-beside-text-img-right.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-briefcase</td>
+                <td><img src="images/content/content-briefcase.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-briefcase.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-briefcase.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-briefcase.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-bullets</td>
+                <td><img src="images/content/content-bullets.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-bullets.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-bullets.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-bullets.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-carousel-header</td>
+                <td><img src="images/content/content-carousel-header.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-carousel-header.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-carousel-header.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-carousel-header.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-carousel-html</td>
+                <td><img src="images/content/content-carousel-html.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-carousel-html.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-carousel-html.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-carousel-html.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-carousel-image</td>
+                <td><img src="images/content/content-carousel-image.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-carousel-image.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-carousel-image.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-carousel-image.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-carousel</td>
+                <td><img src="images/content/content-carousel.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-carousel.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-carousel.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-carousel.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-clock</td>
+                <td><img src="images/content/content-clock.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-clock.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-clock.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-clock.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-coffee</td>
+                <td><img src="images/content/content-coffee.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-coffee.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-coffee.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-coffee.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-elements-login</td>
+                <td><img src="images/content/content-elements-login.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-elements-login.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-elements-login.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-elements-login.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-elements-mailform</td>
+                <td><img src="images/content/content-elements-mailform.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-elements-mailform.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-elements-mailform.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-elements-mailform.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-elements-searchform</td>
+                <td><img src="images/content/content-elements-searchform.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-elements-searchform.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-elements-searchform.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-elements-searchform.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-form</td>
+                <td><img src="images/content/content-form.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-form.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-form.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-form.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-header</td>
+                <td><img src="images/content/content-header.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-header.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-header.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-header.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-idea</td>
+                <td><img src="images/content/content-idea.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-idea.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-idea.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-idea.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-image</td>
+                <td><img src="images/content/content-image.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-image.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-image.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-image.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-info</td>
+                <td><img src="images/content/content-info.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-info.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-info.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-info.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-inside-text-img-left</td>
+                <td><img src="images/content/content-inside-text-img-left.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-inside-text-img-left.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-inside-text-img-left.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-inside-text-img-left.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-inside-text-img-right</td>
+                <td><img src="images/content/content-inside-text-img-right.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-inside-text-img-right.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-inside-text-img-right.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-inside-text-img-right.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-map</td>
+                <td><img src="images/content/content-map.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-map.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-map.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-map.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-marker</td>
+                <td><img src="images/content/content-marker.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-marker.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-marker.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-marker.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-media</td>
+                <td><img src="images/content/content-media.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-media.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-media.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-media.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-abstract</td>
+                <td><img src="images/content/content-menu-abstract.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-abstract.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-abstract.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-abstract.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-card</td>
+                <td><img src="images/content/content-menu-card.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-card.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-card.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-card.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-categorized</td>
+                <td><img src="images/content/content-menu-categorized.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-categorized.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-categorized.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-categorized.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-pages</td>
+                <td><img src="images/content/content-menu-pages.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-pages.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-pages.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-pages.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-recently-updated</td>
+                <td><img src="images/content/content-menu-recently-updated.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-recently-updated.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-recently-updated.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-recently-updated.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-related</td>
+                <td><img src="images/content/content-menu-related.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-related.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-related.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-related.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-section</td>
+                <td><img src="images/content/content-menu-section.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-section.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-section.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-section.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-sitemap-pages</td>
+                <td><img src="images/content/content-menu-sitemap-pages.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-sitemap-pages.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-sitemap-pages.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-sitemap-pages.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-sitemap</td>
+                <td><img src="images/content/content-menu-sitemap.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-sitemap.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-sitemap.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-sitemap.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-menu-thumbnail</td>
+                <td><img src="images/content/content-menu-thumbnail.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-menu-thumbnail.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-menu-thumbnail.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-menu-thumbnail.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-news</td>
+                <td><img src="images/content/content-news.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-news.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-news.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-news.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-panel</td>
+                <td><img src="images/content/content-panel.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-panel.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-panel.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-panel.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-plugin</td>
+                <td><img src="images/content/content-plugin.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-plugin.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-plugin.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-plugin.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-quote</td>
+                <td><img src="images/content/content-quote.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-quote.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-quote.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-quote.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-special-div</td>
+                <td><img src="images/content/content-special-div.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-special-div.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-special-div.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-special-div.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-special-html</td>
+                <td><img src="images/content/content-special-html.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-special-html.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-special-html.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-special-html.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-special-indexed_search</td>
+                <td><img src="images/content/content-special-indexed_search.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-special-indexed_search.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-special-indexed_search.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-special-indexed_search.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-special-menu</td>
+                <td><img src="images/content/content-special-menu.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-special-menu.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-special-menu.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-special-menu.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-special-shortcut</td>
+                <td><img src="images/content/content-special-shortcut.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-special-shortcut.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-special-shortcut.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-special-shortcut.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-special-uploads</td>
+                <td><img src="images/content/content-special-uploads.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-special-uploads.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-special-uploads.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-special-uploads.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-store</td>
+                <td><img src="images/content/content-store.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-store.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-store.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-store.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-tab-item</td>
+                <td><img src="images/content/content-tab-item.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-tab-item.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-tab-item.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-tab-item.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-tab</td>
+                <td><img src="images/content/content-tab.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-tab.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-tab.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-tab.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-table</td>
+                <td><img src="images/content/content-table.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-table.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-table.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-table.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-target</td>
+                <td><img src="images/content/content-target.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-target.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-target.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-target.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-text-columns</td>
+                <td><img src="images/content/content-text-columns.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-text-columns.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-text-columns.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-text-columns.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-text-teaser</td>
+                <td><img src="images/content/content-text-teaser.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-text-teaser.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-text-teaser.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-text-teaser.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-text</td>
+                <td><img src="images/content/content-text.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-text.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-text.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-text.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-textmedia</td>
+                <td><img src="images/content/content-textmedia.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-textmedia.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-textmedia.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-textmedia.svg">File</a></td>
+            </tr>
+                        <tr>
+                <td>content-textpic</td>
+                <td><img src="images/content/content-textpic.svg" height="16" width="16"></td>
+                <td><img src="images/content/content-textpic.svg" height="32" width="32"></td>
+                <td><img src="images/content/content-textpic.svg" height="64" width="64"></td>
+                <td><a class="btn btn-sm btn-secondary-outline" href="images/content/content-textpic.svg">File</a></td>
+            </tr>
+                    </tbody>
+    </table>
+</div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html>
