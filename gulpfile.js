@@ -65,6 +65,11 @@ var options = {
             template: './tmpl/html/docs/misc.html.twig',
             filename: 'misc.html',
             destination: './docs'
+        },
+        install: {
+            template: './tmpl/html/docs/install.html.twig',
+            filename: 'install.html',
+            destination: './docs'
         }
     },
     src: './src/',
