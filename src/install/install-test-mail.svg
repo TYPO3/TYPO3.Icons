@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<path fill="#FFC857" d="M16,2l14,10v18H2V12L16,2z"/>
+<path opacity="0.25" fill="#FFFFFF" d="M16,2l14,10v18H2V12L16,2z"/>
+<rect x="6" y="6" fill="#FFFFFF" width="20" height="20"/>
+<path opacity="0.5" d="M25,25H7V7h18 M26,6H6v20h20V6L26,6z"/>
+<rect x="9" y="11" fill="#B9B9B9" width="8" height="1"/>
+<rect x="9" y="9" fill="#B9B9B9" width="8" height="1"/>
+<rect x="9" y="14" fill="#B9B9B9" width="14" height="1"/>
+<rect x="9" y="16" fill="#B9B9B9" width="14" height="1"/>
+<rect x="9" y="18" fill="#B9B9B9" width="14" height="1"/>
+<rect x="9" y="20" fill="#B9B9B9" width="14" height="1"/>
+<rect x="9" y="22" fill="#B9B9B9" width="14" height="1"/>
+<path fill="#FFC857" d="M30,12v18H2V12l14,10L30,12z"/>
+<g opacity="5.000000e-02">
+	<polygon points="2,12 2,30 12.5,19.5 	"/>
+	<polygon points="19.5,19.5 30,30 30,12 	"/>
+</g>
+</svg>
