@@ -1,0 +1,77 @@
+{% set folder = folders.avatar %}
+{% include '_header.html.twig' with {'folder': folder} %}
+{% include '_default.html.twig' with {'folder': folder} %}
+
+<hr class="my-5">
+
+{% set folder = folders.default %}
+{% include '_header.html.twig' with {'folder': folder} %}
+{% include '_default.html.twig' with {'folder': folder} %}
+
+<hr class="my-5">
+
+{% set folder = folders.information %}
+{% include '_header.html.twig' with {'folder': folder} %}
+<div class="card-group-element card-group-element-columns-3">
+    {% for icon in folder.icons %}
+        <div class="card-group-element-item">
+            <div class="card">
+                <div class="card-header">{{ icon.file|replace({'.svg': ''}) }}</div>
+                <div class="card-body text-center">
+                        <span class="icon icon-size-default icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                            <span class="icon-markup">
+                                {{ icon.inline }}
+                            </span>
+                        </span>
+                </div>
+                <div class="card-body text-center text-white bg-dark">
+                        <span class="icon icon-size-default icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                            <span class="icon-markup">
+                                {{ icon.inline }}
+                            </span>
+                        </span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<hr class="my-5">
+
+{% set folder = folders.miscellaneous %}
+{% include '_header.html.twig' with {'folder': folder} %}
+{% include '_default.html.twig' with {'folder': folder} %}
+
+<hr class="my-5">
+
+{% set folder = folders.spinner %}
+{% include '_header.html.twig' with {'folder': folder} %}
+<div class="card-group-element card-group-element-columns-3">
+    {% for icon in folder.icons %}
+        <div class="card-group-element-item">
+            <div class="card">
+                <div class="card-header">{{ icon.file|replace({'.svg': ''}) }}</div>
+                <div class="card-body text-center">
+                        <span class="icon icon-size-default icon-state-default icon-spin" title="{{ icon.file|replace({'.svg': ''}) }}">
+                            <span class="icon-markup">
+                                {{ icon.inline }}
+                            </span>
+                        </span>
+                </div>
+                <div class="card-body text-center text-white bg-dark">
+                        <span class="icon icon-size-default icon-state-default icon-spin" title="{{ icon.file|replace({'.svg': ''}) }}">
+                            <span class="icon-markup">
+                                {{ icon.inline }}
+                            </span>
+                        </span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<hr class="my-5">
+
+{% set folder = folders.status %}
+{% include '_header.html.twig' with {'folder': folder} %}
+{% include '_default.html.twig' with {'folder': folder} %}

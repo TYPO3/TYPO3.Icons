@@ -2,8 +2,6 @@
 {% block title %}Install{% endblock %}
 {% block content %}
 
-    {% set folder = folders.install %}
-    {% include '_header.html.twig' with {'folder': folder} %}
-    {% include '_default.html.twig' with {'folder': folder} %}
+    {% include 'list/install.html.twig' %}
 
 {% endblock %}

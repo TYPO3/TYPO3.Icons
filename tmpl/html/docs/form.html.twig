@@ -2,8 +2,6 @@
 {% block title %}Form{% endblock %}
 {% block content %}
 
-    {% set folder = folders.form %}
-    {% include '_header.html.twig' with {'folder': folder} %}
-    {% include '_default.html.twig' with {'folder': folder} %}
+    {% include 'list/form.html.twig' %}
 
 {% endblock %}

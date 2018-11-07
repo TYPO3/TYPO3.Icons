@@ -2,8 +2,6 @@
 {% block title %}Mimetypes{% endblock %}
 {% block content %}
 
-    {% set folder = folders.mimetypes %}
-    {% include '_header.html.twig' with {'folder': folder} %}
-    {% include '_default.html.twig' with {'folder': folder} %}
+    {% include 'list/mimetypes.html.twig' %}
 
 {% endblock %}

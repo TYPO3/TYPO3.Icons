@@ -1,0 +1,63 @@
+{% set folder = folders.actions %}
+{% include '_header.html.twig' with {'folder': folder} %}
+
+<div class="table-responsive">
+    <table class="table table-striped mb-0">
+        <thead class="thead-dark">
+        <tr>
+            <th>IconName</th>
+            <th colspan="3">Icon</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for icon in folder.icons %}
+            <tr>
+                <td>
+                    {{ icon.file|replace({'.svg': ''}) }}
+                </td>
+                <td>
+                        <span class="icon icon-size-small icon-state-default">
+                            <span class="icon-markup">
+                                <img src="images/{{ folder.folder }}/{{ icon.file }}">
+                            </span>
+                        </span>
+                </td>
+                <td>
+                        <span class="btn btn-icon btn-default">
+                            <span class="icon icon-size-small icon-state-default">
+                                <span class="icon-markup">
+                                    {{ icon.inline }}
+                                </span>
+                            </span>
+                        </span>
+                    <span class="btn btn-icon btn-dark">
+                            <span class="icon icon-size-small icon-state-default">
+                                <span class="icon-markup">
+                                    {{ icon.inline }}
+                                </span>
+                            </span>
+                        </span>
+                </td>
+                <td>
+                        <span class="btn btn-icon btn-default">
+                            <span class="icon icon-size-small icon-state-default">
+                                <span class="icon-markup">
+                                    {{ icon.inline }}
+                                </span>
+                            </span>
+                            Button Label
+                        </span>
+                    <span class="btn btn-icon btn-dark">
+                            <span class="icon icon-size-small icon-state-default">
+                                <span class="icon-markup">
+                                    {{ icon.inline }}
+                                </span>
+                            </span>
+                            Button Label
+                        </span>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

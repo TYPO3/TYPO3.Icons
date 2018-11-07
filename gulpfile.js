@@ -26,6 +26,11 @@ var options = {
             filename: 'index.html',
             destination: './docs'
         },
+        all: {
+            template: './tmpl/html/docs/all.html.twig',
+            filename: 'all.html',
+            destination: './docs'
+        },
         action: {
             template: './tmpl/html/docs/action.html.twig',
             filename: 'action.html',
