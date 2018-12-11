@@ -11,15 +11,15 @@
                 <div class="card">
                     <div class="card-header">{{ icon.file|replace({'.svg': ''}) }}</div>
                     <div class="card-body text-center">
-                        <span class="icon icon-size-default icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                        <span class="icon icon-size-mega icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
                             <span class="icon-markup">
-                                {{ icon.inline }}
+                                <img src="images/{{ folder.folder }}/{{ icon.file }}" height="64" width="64">
                             </span>
                         </span>
                         <hr>
-                        <span class="icon icon-size-small icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
+                        <span class="icon icon-size-default icon-state-default" title="{{ icon.file|replace({'.svg': ''}) }}">
                             <span class="icon-markup">
-                                {{ icon.inline }}
+                                <img src="images/{{ folder.folder }}/{{ icon.file }}" height="32" width="32">
                             </span>
                         </span>
                     </div>
