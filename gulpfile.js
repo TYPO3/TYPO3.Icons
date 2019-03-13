@@ -139,11 +139,11 @@ gulp.task('docs', function (cb) {
 
     // Copy generated svg files to be used staticly
     // in docs for previewing overlays
-    gulp.src([options.dist + 'app/apps-filetree-folder-default.svg'])
+    gulp.src([options.dist + 'apps/apps-filetree-folder-default.svg'])
         .pipe(gulp.dest(options.material + 'icons/'));
-    gulp.src([options.dist + 'app/apps-filetree-folder-temp.svg'])
+    gulp.src([options.dist + 'apps/apps-filetree-folder-temp.svg'])
         .pipe(gulp.dest(options.material + 'icons/'));
-    gulp.src([options.dist + 'app/apps-pagetree-page.svg'])
+    gulp.src([options.dist + 'apps/apps-pagetree-page.svg'])
         .pipe(gulp.dest(options.material + 'icons/'));
 
     // Prepare Data
@@ -193,4 +193,4 @@ gulp.task('docs', function (cb) {
 //
 // Default Task
 //
-gulp.task('default', ['clean', 'min', 'docs']);
+gulp.task('default', gulp.series('clean', 'min', 'docs'));

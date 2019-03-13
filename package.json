@@ -28,10 +28,10 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-rename": "^1.4.0",
-    "gulp-svgmin": "^1.2.4",
+    "gulp-svgmin": "^2.1.0",
     "gulp-twig": "^1.2.0"
   },
   "scripts": {
@@ -41,6 +41,6 @@
     "build": "npm run clean && npm run min && npm run docs"
   },
   "dependencies": {
-    "npm": "^6.3.0"
+    "npm": "^6.9.0"
   }
 }
