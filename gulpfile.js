@@ -5,7 +5,7 @@ var fs = require('fs'),
     pkg = require('./package.json'),
     path = require('path'),
     gulp = require('gulp'),
-    clean = require('gulp-clean'),
+    del = require('del'),
     twig = require('gulp-twig'),
     svgmin = require('gulp-svgmin'),
     rename = require('gulp-rename');
@@ -74,7 +74,9 @@ var options = {
     },
     src: './src/',
     dist: './dist/',
-    docs: './docs/images/',
+    assets: './assets/',
+    docs: './docs/',
+    docs_images: './docs/images/',
     material: './material/'
 };
 
@@ -108,11 +110,7 @@ function getFileContents(file) {
 // Clean SVGs
 //
 gulp.task('clean', function (cb) {
-    gulp.src([options.dist + '**/*.svg'])
-        .pipe(clean());
-    gulp.src([options.docs + '**/*.svg'])
-        .pipe(clean());
-    cb();
+    return del([options.dist, options.docs], {force:true});
 });
 
 
@@ -126,7 +124,7 @@ gulp.task('min', function (cb) {
                 { removeDimensions: true }
             ]
         }))
-        .pipe(gulp.dest(options.docs))
+        .pipe(gulp.dest(options.docs_images))
         .pipe(gulp.dest(options.dist));
     cb();
 });
@@ -145,6 +143,8 @@ gulp.task('docs', function (cb) {
         .pipe(gulp.dest(options.material + 'icons/'));
     gulp.src([options.dist + 'apps/apps-pagetree-page.svg'])
         .pipe(gulp.dest(options.material + 'icons/'));
+    gulp.src([options.assets + 'favicon.ico'])
+        .pipe(gulp.dest(options.docs));
 
     // Prepare Data
     var data = [];
