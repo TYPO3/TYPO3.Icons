@@ -31,6 +31,11 @@ var options = {
             filename: 'action.html',
             destination: './docs'
         },
+        assets: {
+            template: './tmpl/html/docs/files.html.twig',
+            filename: 'files.html',
+            destination: './docs'
+        },
         module: {
             template: './tmpl/html/docs/module.html.twig',
             filename: 'module.html',
