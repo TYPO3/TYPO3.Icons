@@ -75,6 +75,6 @@ The icon text was written in Verdana.
 ### Build
 
 ```
-yarn install && npm gulp-cli -g
-npm run-script build
+yarn install
+yarn build
 ```

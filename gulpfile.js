@@ -1,20 +1,20 @@
 //
 // Require
 //
-var fs = require('fs'),
-    pkg = require('./package.json'),
-    path = require('path'),
-    gulp = require('gulp'),
-    del = require('del'),
-    twig = require('gulp-twig'),
-    svgmin = require('gulp-svgmin'),
-    rename = require('gulp-rename');
+const fs = require('fs');
+const pkg = require('./package.json');
+const path = require('path');
+const del = require('del');
+const twig = require('gulp-twig');
+const svgmin = require('gulp-svgmin');
+const rename = require('gulp-rename');
+const gulp = require('gulp');
 
 
 //
 // Options
 //
-var options = {
+const options = {
     files: {
         readme: {
             template: './tmpl/markdown/README.twig',
@@ -109,6 +109,33 @@ function getIcons(dir) {
 function getFileContents(file) {
     return fs.readFileSync(file, 'utf8');
 }
+function getData() {
+    let data = {};
+    let folders = getFolders(options.dist);
+    for (var folderCount = 0; folderCount < folders.length; folderCount++) {
+        var folder = folders[folderCount];
+        var iconFiles = getIcons(options.dist + folder);
+        var icons = [];
+        for (var i = 0; i < iconFiles.length; i++) {
+            let file = folder + '/' + iconFiles[i];
+            let relativeFile = options.dist + file;
+            icons[i] = {
+                identifier: path.basename(file, '.svg'),
+                file: iconFiles[i],
+                folder: folder,
+                path: file,
+                inline: getFileContents(relativeFile)
+            };
+        }
+        data[folder] = {
+            title: folder.charAt(0).toUpperCase() + folder.slice(1),
+            folder: folder,
+            count: icons.length,
+            icons: icons
+        };
+    }
+    return data;
+}
 
 
 //
@@ -122,8 +149,8 @@ gulp.task('clean', function (cb) {
 //
 // Minify SVGs
 //
-gulp.task('min', function (cb) {
-    gulp.src([options.src + '**/*.svg'])
+gulp.task('min', () => {
+    return gulp.src([options.src + '**/*.svg'])
         .pipe(svgmin({
             plugins: [
                 { removeDimensions: true }
@@ -131,7 +158,17 @@ gulp.task('min', function (cb) {
         }))
         .pipe(gulp.dest(options.docs_images))
         .pipe(gulp.dest(options.dist));
-    cb();
+});
+
+
+//
+// Data
+//
+gulp.task('data', (cb) => {
+    let data = JSON.stringify(getData(), null, 2);
+    fs.writeFile(options.dist + 'icons.json', data, 'utf8', () => {
+        cb();
+    });
 });
 
 
@@ -151,28 +188,8 @@ gulp.task('docs', function (cb) {
     gulp.src([options.assets + 'favicon.ico'])
         .pipe(gulp.dest(options.docs));
 
-    // Prepare Data
-    var data = [];
-    var folders = getFolders(options.dist);
-    for (var folderCount = 0; folderCount < folders.length; folderCount++) {
-        var folder = folders[folderCount];
-        var iconFiles = getIcons(options.dist + folder);
-        var icons = [];
-        for (var i = 0; i < iconFiles.length; i++) {
-            var file = options.dist + folder + '/' + iconFiles[i];
-            icons[i] = {
-                file: iconFiles[i],
-                path: file,
-                inline: getFileContents(file)
-            };
-        }
-        data[folder] = {
-            folder: folder,
-            title: folder.charAt(0).toUpperCase() + folder.slice(1),
-            count: icons.length,
-            icons: icons
-        };
-    }
+    // Fetch generated data
+    let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
 
     // Compile templates
     for (var key in options.files) {
@@ -182,7 +199,7 @@ gulp.task('docs', function (cb) {
                 data: {
                     key: key,
                     pkg: pkg,
-                    folders: data
+                    folders: data,
                 }
             };
             gulp.src(file.template)
@@ -198,4 +215,5 @@ gulp.task('docs', function (cb) {
 //
 // Default Task
 //
-gulp.task('default', gulp.series('clean', 'min', 'docs'));
+gulp.task('build', gulp.series('clean', 'min', 'data','docs'));
+gulp.task('default', gulp.series('build'));
