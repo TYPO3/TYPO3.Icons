@@ -2,7 +2,7 @@
   "actions": {
     "title": "Actions",
     "folder": "actions",
-    "count": 203,
+    "count": 204,
     "icons": [
       {
         "identifier": "actions-add-placeholder",
@@ -45,6 +45,13 @@
         "folder": "actions",
         "path": "actions/actions-calendar.svg",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path d=\"M13.5 3H12V1.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5V3H6V1.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5V3H1.5a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5zM10 2h1v2h-1V2zM4 2h1v2H4V2zm.25 12H2v-2.25h2.25V14zm0-2.75H2v-2.5h2.25v2.5zm0-3H2V6h2.25v2.25zm3 5.75h-2.5v-2.25h2.5V14zm0-2.75h-2.5v-2.5h2.5v2.5zm0-3h-2.5V6h2.5v2.25zm3 5.75h-2.5v-2.25h2.5V14zm0-2.75h-2.5v-2.5h2.5v2.5zm0-3h-2.5V6h2.5v2.25zM13 14h-2.25v-2.25H13V14zm0-2.75h-2.25v-2.5H13v2.5zm0-3h-2.25V6H13v2.25z\" class=\"icon-color\"/></svg>"
+      },
+      {
+        "identifier": "actions-category",
+        "file": "actions-category.svg",
+        "folder": "actions",
+        "path": "actions/actions-category.svg",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M2 1.5v13a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5zM13 14H3v-3h.586l1.707 1.707.293.293H10.414l.293-.293L12.414 11H13v3zm-1-4l-2 2H6l-2-2H3V2h10v8h-1z\"/><path d=\"M11 4H5v1h6V4zM11 6H5v1h6V6zM11 8H5v1h6V8z\"/></g></svg>"
       },
       {
         "identifier": "actions-check",
