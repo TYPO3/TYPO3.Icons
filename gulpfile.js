@@ -153,7 +153,8 @@ gulp.task('min', () => {
     return gulp.src([options.src + '**/*.svg'])
         .pipe(svgmin({
             plugins: [
-                { removeDimensions: true }
+                { removeDimensions: true },
+                { removeTitle: true }
             ]
         }))
         .pipe(gulp.dest(options.docs_images))
