@@ -2,7 +2,7 @@
   "actions": {
     "title": "Actions",
     "folder": "actions",
-    "count": 208,
+    "count": 209,
     "icons": [
       {
         "identifier": "actions-add-placeholder",
@@ -962,6 +962,13 @@
         "folder": "actions",
         "path": "actions/actions-sort-amount.svg",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M7 2h1v12H7z\"/><path d=\"M9 12l-1.5 2L6 12H5l2.3 3c.1.1.3.1.4 0l2.3-3H9zM6 4l1.5-2L9 4h1L7.7 1c-.1-.1-.3-.1-.4 0L5 4h1z\"/></g></svg>"
+      },
+      {
+        "identifier": "actions-star",
+        "file": "actions-star.svg",
+        "folder": "actions",
+        "path": "actions/actions-star.svg",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path d=\"M13.7 6H9.8L8.5 2.1c-.2-.4-.7-.4-.9 0L6.2 6H2.3c-.5 0-.7.6-.4.9l3 2.8-1.4 4.1c-.2.4.3.9.7.6L8 12l3.8 2.4c.4.2.9-.2.7-.6l-1.4-4.1 3-2.8c.3-.3.1-.9-.4-.9z\" class=\"icon-color\"/></svg>"
       },
       {
         "identifier": "actions-swap",
