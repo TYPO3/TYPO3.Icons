@@ -5,6 +5,13 @@
     "count": 213,
     "icons": [
       {
+        "identifier": "actions-accessibility",
+        "file": "actions-accessibility.svg",
+        "folder": "actions",
+        "path": "actions/actions-accessibility.svg",
+        "inline": "<svg viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm0 1c3.32 0 6 2.68 6 6s-2.68 6-6 6-6-2.68-6-6 2.68-6 6-6zm0 1a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm4.01 1.49a.5.5 0 0 0-.207.049l-3.41 1.46H7.6l-3.41-1.46a.5.5 0 0 0-.244-.043.5.5 0 0 0-.15.96l3.2 1.37v2.57l-1.46 3.41a.5.5 0 1 0 .918.396l1.5-3.5a.5.5 0 0 0 .041-.195.5.5 0 0 0 .041.195l1.5 3.5a.5.5 0 1 0 .918-.395l-1.46-3.41v-2.57l3.2-1.37a.5.5 0 0 0-.188-.967z\" class=\"icon-color\"/></svg>"
+      },
+      {
         "identifier": "actions-add-placeholder",
         "file": "actions-add-placeholder.svg",
         "folder": "actions",
@@ -3393,17 +3400,17 @@
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#999\" d=\"M1 1v5.656l8.485 8.485 5.657-5.657L6.657 1H1zm2.475 2.475A1.75 1.75 0 1 1 5.95 5.952a1.75 1.75 0 0 1-2.475-2.477z\"/><path fill=\"#FFF\" d=\"M1.99 1.99v4.242l7.495 7.495 4.243-4.243L6.233 1.99H1.99zm1.485 1.485A1.75 1.75 0 1 1 5.95 5.952a1.75 1.75 0 0 1-2.475-2.477z\"/><path fill=\"#999\" d=\"M3.475 3.475A1.75 1.75 0 1 0 5.952 5.95a1.75 1.75 0 0 0-2.477-2.475zm.707.707a.75.75 0 1 1 1.061 1.06.75.75 0 0 1-1.061-1.06z\"/><path fill=\"#FF8700\" d=\"M12.137 9.662l-2.475 2.475L6.126 8.6l2.475-2.474z\"/></svg>"
       },
       {
-        "identifier": "mimetypes-x-sys_filemounts",
-        "file": "mimetypes-x-sys_filemounts.svg",
-        "folder": "mimetypes",
-        "path": "mimetypes/mimetypes-x-sys_filemounts.svg",
-        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#EFEFEF\" d=\"M14 16H5l-3-2.5V2l3-2h9z\"/><path fill=\"#AAA\" d=\"M5 0L2 2v11.5L5 16h9V0H5zM3 13V2.5l2-1.3v13.5L3 13z\"/><path fill=\"#59F\" d=\"M6 9h2v1H6V9z\"/><path fill=\"#666\" d=\"M6 6h7v1H6V6zM6 4h7v1H6V4z\"/></svg>"
-      },
-      {
         "identifier": "mimetypes-x-sys_file_storage",
         "file": "mimetypes-x-sys_file_storage.svg",
         "folder": "mimetypes",
         "path": "mimetypes/mimetypes-x-sys_file_storage.svg",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#EFEFEF\" d=\"M14 16H5l-3-2.5V2l3-2h9z\"/><path fill=\"#AAA\" d=\"M5 0L2 2v11.5L5 16h9V0H5zM3 13V2.5l2-1.3v13.5L3 13z\"/><path fill=\"#59F\" d=\"M6 9h2v1H6V9z\"/><path fill=\"#666\" d=\"M6 6h7v1H6V6zM6 4h7v1H6V4z\"/></svg>"
+      },
+      {
+        "identifier": "mimetypes-x-sys_filemounts",
+        "file": "mimetypes-x-sys_filemounts.svg",
+        "folder": "mimetypes",
+        "path": "mimetypes/mimetypes-x-sys_filemounts.svg",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#EFEFEF\" d=\"M14 16H5l-3-2.5V2l3-2h9z\"/><path fill=\"#AAA\" d=\"M5 0L2 2v11.5L5 16h9V0H5zM3 13V2.5l2-1.3v13.5L3 13z\"/><path fill=\"#59F\" d=\"M6 9h2v1H6V9z\"/><path fill=\"#666\" d=\"M6 6h7v1H6V6zM6 4h7v1H6V4z\"/></svg>"
       },
       {
