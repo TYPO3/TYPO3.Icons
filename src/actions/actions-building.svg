@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g class="icon-color">
+	<rect x="4" y="3" width="2" height="1"/>
+	<rect x="10" y="3" width="2" height="1"/>
+	<rect x="10" y="5" width="2" height="1"/>
+	<rect x="4" y="5" width="2" height="1"/>
+	<rect x="4" y="7" width="2" height="1"/>
+	<rect x="7" y="3" width="2" height="1"/>
+	<rect x="7" y="5" width="2" height="1"/>
+	<rect x="7" y="7" width="2" height="1"/>
+	<rect x="10" y="7" width="2" height="1"/>
+	<rect x="4" y="9" width="2" height="1"/>
+	<rect x="7" y="9" width="2" height="1"/>
+	<rect x="10" y="9" width="2" height="1"/>
+	<path d="M13.75,1H2.25C2.112,1,2,1.112,2,1.25V14H1v1h14v-1h-1V1.25C14,1.112,13.888,1,13.75,1L13.75,1z M3,14V2h10
+		v12H9v-2H7v2H3L3,14z"/>
+</g>
+</svg>
