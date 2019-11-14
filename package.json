@@ -38,6 +38,7 @@
     "build": "gulp build"
   },
   "dependencies": {
+    "fuse.js": "^3.4.5",
     "npm": "^6.9.0"
   }
 }
