@@ -9,6 +9,7 @@ const twig = require('gulp-twig');
 const svgmin = require('gulp-svgmin');
 const rename = require('gulp-rename');
 const gulp = require('gulp');
+const svgSprite = require('gulp-svg-sprite');
 
 
 //
@@ -164,6 +165,32 @@ gulp.task('min', () => {
 
 
 //
+// SVG Sprite
+//
+gulp.task('sprites', () => {
+    return gulp.src([options.dist + 'actions/*.svg'])
+        .pipe(svgSprite({
+            svg: {
+                rootAttributes: {
+                    class: 'typo3-icons',
+                    style: 'display: none;'
+                },
+                namespaceIDs: true,
+                namespaceClassnames: false
+            },
+            mode: {
+                symbol: {
+                    dest: '',
+                    sprite: "actions.symbols.svg"
+                }
+            }
+        }))
+        .pipe(gulp.dest(options.docs_images))
+        .pipe(gulp.dest(options.dist));
+});
+
+
+//
 // Data
 //
 gulp.task('data', (cb) => {
@@ -217,5 +244,5 @@ gulp.task('docs', function (cb) {
 //
 // Default Task
 //
-gulp.task('build', gulp.series('clean', 'min', 'data', 'docs'));
+gulp.task('build', gulp.series('clean', 'min', 'data', 'sprites', 'docs'));
 gulp.task('default', gulp.series('build'));

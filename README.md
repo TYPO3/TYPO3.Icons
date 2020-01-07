@@ -77,5 +77,4 @@ The icon text was written in Verdana.
 ```
 yarn install
 yarn build
-yarn serve
 ```
