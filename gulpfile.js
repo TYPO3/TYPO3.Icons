@@ -142,7 +142,7 @@ function getData() {
 // Clean SVGs
 //
 gulp.task('clean', function (cb) {
-    return del([options.dist, options.docs], {force:true});
+    return del([options.dist, options.docs], { force: true });
 });
 
 
@@ -154,7 +154,8 @@ gulp.task('min', () => {
         .pipe(svgmin({
             plugins: [
                 { removeDimensions: true },
-                { removeTitle: true }
+                { removeTitle: true },
+                { collapseGroups: false }
             ]
         }))
         .pipe(gulp.dest(options.docs_images))
@@ -216,5 +217,5 @@ gulp.task('docs', function (cb) {
 //
 // Default Task
 //
-gulp.task('build', gulp.series('clean', 'min', 'data','docs'));
+gulp.task('build', gulp.series('clean', 'min', 'data', 'docs'));
 gulp.task('default', gulp.series('build'));

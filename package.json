@@ -28,16 +28,18 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "del": "^4.0.0",
-    "gulp": "^4.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-svgmin": "^1.2.4",
-    "gulp-twig": "^1.2.0"
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-twig": "^1.2.0",
+    "http-server": "^0.12.0"
   },
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "serve": "http-server ./docs"
   },
   "dependencies": {
-    "npm": "^6.9.0"
+    "npm": "^6.13.4"
   }
 }
