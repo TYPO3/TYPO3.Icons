@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<path fill="#FFFFFF" d="M1,1h14v14H1V1z"/>
-<path fill="#999999" d="M1,1v14h14V1H1z M2,2h12v12H2V2z"/>
-<rect x="3" y="4" fill="#999999" width="10" height="8"/>
-<rect x="4" y="5" fill="#EFEFEF" width="8" height="6"/>
-<path fill="#5599FF" d="M7.25,7.251l-1.125,1.5L5,10.251h6.001l-1-1L9.002,8.251L8.43,8.823L8.377,8.752l-1.125-1.5L7.25,7.251z"/>
-<circle fill="#E8A33D" cx="9.3" cy="6.501" r="0.75"/>
+<path fill="#5599FF" d="M1,2h14v12H1V2z"/>
+<path opacity="0.2" enable-background="new    " d="M14,3v10H2V3H14 M15,2H1v12h14V2L15,2z"/>
+<polygon fill="#E9F2FF" points="11,8.7 7,13 14,13 14,11.6 "/>
+<polygon fill="#AACCFF" points="2,9.8 2,13 11,13 5,6.5 "/>
+<circle fill="#FFFFFF" cx="11" cy="6" r="1"/>
 </svg>
