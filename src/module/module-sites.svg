@@ -3,16 +3,16 @@
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <rect fill="#439B92" width="64" height="64"/>
-<rect x="14" y="13" fill="#FFFFFF" width="36" height="38"/>
-<rect x="16" y="15" opacity="0.5" fill="#439B92" width="28" height="2"/>
-<rect x="46" y="15" fill="#439B92" width="2" height="2"/>
-<rect x="14" y="19" opacity="0.5" fill="#439B92" width="36" height="2"/>
-<rect x="18" y="29" opacity="0.75" fill="#439B92" width="28" height="8"/>
-<rect x="18" y="39" opacity="0.75" fill="#439B92" width="10" height="12"/>
-<rect x="30" y="39" opacity="0.75" fill="#439B92" width="16" height="12"/>
-<rect x="18" y="25" fill="#439B92" width="8" height="2"/>
-<rect x="28" y="25" opacity="0.5" fill="#439B92" width="2" height="2"/>
-<rect x="32" y="25" opacity="0.5" fill="#439B92" width="2" height="2"/>
-<rect x="40" y="25" opacity="0.5" fill="#439B92" width="2" height="2"/>
-<rect x="44" y="25" opacity="0.5" fill="#439B92" width="2" height="2"/>
+<rect x="14" y="12" fill="#FFFFFF" width="36" height="40"/>
+<rect x="16" y="14" opacity="0.5" fill="#439B92" width="28" height="2"/>
+<rect x="46" y="14" fill="#439B92" width="2" height="2"/>
+<rect x="14" y="18" opacity="0.5" fill="#439B92" width="36" height="2"/>
+<rect x="18" y="28" opacity="0.75" fill="#439B92" width="28" height="8"/>
+<rect x="18" y="38" opacity="0.75" fill="#439B92" width="10" height="14"/>
+<rect x="30" y="38" opacity="0.75" fill="#439B92" width="16" height="14"/>
+<rect x="18" y="24" fill="#439B92" width="8" height="2"/>
+<rect x="28" y="24" opacity="0.5" fill="#439B92" width="2" height="2"/>
+<rect x="32" y="24" opacity="0.5" fill="#439B92" width="2" height="2"/>
+<rect x="40" y="24" opacity="0.5" fill="#439B92" width="2" height="2"/>
+<rect x="44" y="24" opacity="0.5" fill="#439B92" width="2" height="2"/>
 </svg>
