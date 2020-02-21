@@ -2172,7 +2172,7 @@
   "content": {
     "title": "Content",
     "folder": "content",
-    "count": 81,
+    "count": 83,
     "icons": [
       {
         "identifier": "content-accordion",
@@ -2264,6 +2264,20 @@
         "folder": "content",
         "path": "content/content-bullets.svg",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#FFF\" d=\"M1 1h14v14H1V1z\"/><path fill=\"#999\" d=\"M1 1v14h14V1H1zm1 1h12v12H2V2z\"/><path fill=\"#666\" d=\"M3 3h10v2H3V3z\"/><path fill=\"#FF8700\" d=\"M3 6h1v1H3V6zm0 2h1v1H3V8zm0 2h1v1H3v-1zm0 2h1v1H3v-1z\"/><path fill=\"#B9B9B9\" d=\"M5 6h8v1H5V6zm0 2h8v1H5V8zm0 2h8v1H5v-1zm0 2h8v1H5v-1z\"/></svg>"
+      },
+      {
+        "identifier": "content-card-group",
+        "file": "content-card-group.svg",
+        "folder": "content",
+        "path": "content/content-card-group.svg",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#FFF\" d=\"M2 1h8v12H2z\"/><path fill=\"#CACACA\" d=\"M2 1h8v6H2V1z\"/><path opacity=\".5\" fill=\"#FFF\" d=\"M7 6H4l.8-1 .8-1 .8 1L7 6z\"/><path opacity=\".5\" fill=\"#FFF\" d=\"M8 6H5.3l.7-.7.7-.7.7.7.6.7z\"/><circle opacity=\".5\" fill=\"#FFF\" cx=\"7.5\" cy=\"3.5\" r=\".5\"/><path fill=\"#B9B9B9\" d=\"M4 9h2v1H4zm0-1h4v1H4z\"/><path fill=\"#999\" d=\"M2 1v12h8V1H2zm7 11H3V2h6v10z\"/><path fill=\"#FFF\" d=\"M6 3h8v12H6z\"/><path fill=\"#59F\" d=\"M6 3h8v6H6V3z\"/><path opacity=\".5\" fill=\"#FFF\" d=\"M11 8H8l.8-1 .8-1 .8 1 .6 1z\"/><path opacity=\".5\" fill=\"#FFF\" d=\"M12 8H9.3l.7-.7.7-.7.7.7.6.7z\"/><circle opacity=\".5\" fill=\"#FFF\" cx=\"11.5\" cy=\"5.5\" r=\".5\"/><path fill=\"#B9B9B9\" d=\"M8 11h2v1H8zm0-1h4v1H8z\"/><path fill=\"#666\" d=\"M6 3v12h8V3H6zm7 11H7V4h6v10z\"/></svg>"
+      },
+      {
+        "identifier": "content-card",
+        "file": "content-card.svg",
+        "folder": "content",
+        "path": "content/content-card.svg",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#FFF\" d=\"M4 2h8v12H4z\"/><path fill=\"#59F\" d=\"M4 2h8v6H4V2z\"/><path opacity=\".5\" fill=\"#FFF\" d=\"M9 7H6l.8-1 .8-1 .8 1L9 7z\"/><path opacity=\".5\" fill=\"#FFF\" d=\"M10 7H7.3l.7-.7.7-.7.7.7.6.7z\"/><circle opacity=\".5\" fill=\"#FFF\" cx=\"9.5\" cy=\"4.5\" r=\".5\"/><path fill=\"#B9B9B9\" d=\"M6 10h2v1H6zm0-1h4v1H6z\"/><path fill=\"#666\" d=\"M4 2v12h8V2H4zm7 11H5V3h6v10z\"/></svg>"
       },
       {
         "identifier": "content-carousel-header",
