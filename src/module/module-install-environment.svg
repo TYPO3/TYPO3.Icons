@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="595.28px" height="594.708px" viewBox="0 0 595.28 594.708" enable-background="new 0 0 595.28 594.708"
-	 xml:space="preserve">
-<g id="evnironment">
-	<rect id="environment-background" x="0.945" y="0.934" fill="#428954" width="594.335" height="593.774"/>
-	<path id="environment-icon" fill="#FFFFFF" d="M469.939,243.072H135.908v-71.578h334.031V243.072z M469.939,338.509H135.908
-		v-71.578h334.031V338.509z M469.939,433.947H135.908v-71.578h334.031V433.947z M350.643,219.212v-23.859H159.768v23.859H350.643z
-		 M350.643,314.65v-23.859H159.768v23.859H350.643z M350.643,410.087v-23.859H159.768v23.859H350.643z M434.15,189.388
-		c-9.879,0-17.895,8.015-17.895,17.895s8.016,17.895,17.895,17.895s17.895-8.015,17.895-17.895S444.029,189.388,434.15,189.388z
-		 M434.15,284.826c-9.879,0-17.895,8.015-17.895,17.895c0,9.879,8.016,17.895,17.895,17.895s17.895-8.016,17.895-17.895
-		C452.045,292.841,444.029,284.826,434.15,284.826z M434.15,380.263c-9.879,0-17.895,8.016-17.895,17.895
-		s8.016,17.895,17.895,17.895s17.895-8.016,17.895-17.895S444.029,380.263,434.15,380.263z"/>
-</g>
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<rect id="environment-background" fill="#428954" width="64" height="64"/>
+<polygon fill="#FFFFFF" points="45,18 19,18 16,22 16,36 48,36 48,22 "/>
+<polygon opacity="0.5" fill="#428954" enable-background="new    " points="48,22 16,22 19,18 45,18 "/>
+<path fill="#428954" d="M40,24h6v2h-6V24z"/>
+<path fill="#428954" d="M40,32h6v2h-6V32z"/>
+<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,24h20v2H18V24z"/>
+<path fill="#428954" d="M40,28h6v2h-6V28z"/>
+<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,28h20v2H18V28z"/>
+<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,32h20v2H18V32z"/>
+<path opacity="0.75" fill="#FFFFFF" d="M48,42v2H16v-2H48z"/>
+<path fill="#FFFFFF" d="M36,40v6h-8v-6h2v-4h4v4H36z"/>
+<path opacity="0.5" fill="#428954" enable-background="new    " d="M30,36h4v1h-4V36z"/>
 </svg>
