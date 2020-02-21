@@ -2172,7 +2172,7 @@
   "content": {
     "title": "Content",
     "folder": "content",
-    "count": 83,
+    "count": 85,
     "icons": [
       {
         "identifier": "content-accordion",
@@ -2229,6 +2229,20 @@
         "folder": "content",
         "path": "content/content-beside-text-img-below-right.svg",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#FFF\" d=\"M1 1h14v14H1z\"/><path fill=\"#999\" d=\"M14 2v12H2V2h12m1-1H1v14h14V1z\"/><g><path fill=\"#59F\" d=\"M7 7h6v6H7V7z\"/><path fill=\"#FFF\" d=\"M11 12H8l.75-1 .75-1 .75 1 .75 1z\"/><path fill=\"#FFF\" d=\"M12 12H9.333l.667-.667.667-.666.666.666L12 12z\"/><circle fill=\"#FFF\" cx=\"11.5\" cy=\"9.5\" r=\".5\"/></g><g><path fill=\"#B9B9B9\" d=\"M3 5h10v1H3z\"/><path fill=\"#666\" d=\"M3 3h10v1H3z\"/></g></svg>"
+      },
+      {
+        "identifier": "content-beside-text-img-centered-left",
+        "file": "content-beside-text-img-centered-left.svg",
+        "folder": "content",
+        "path": "content/content-beside-text-img-centered-left.svg",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#FFF\" d=\"M1 1h14v14H1z\"/><path fill=\"#999\" d=\"M14 2v12H2V2h12m1-1H1v14h14V1z\"/><path fill=\"#59F\" d=\"M3 5h6v6H3V5z\"/><path fill=\"#FFF\" d=\"M7 10H4l.8-1 .8-1 .8 1 .6 1z\"/><path fill=\"#FFF\" d=\"M8 10H5.3l.7-.7.7-.7.7.7.6.7z\"/><circle fill=\"#FFF\" cx=\"7.5\" cy=\"7.5\" r=\".5\"/><path fill=\"#B9B9B9\" d=\"M10 5h3v1h-3zm0 2h3v1h-3zm0 2h3v1h-3zm0 2h3v1h-3z\"/><path fill=\"#666\" d=\"M10 3h3v1h-3z\"/></svg>"
+      },
+      {
+        "identifier": "content-beside-text-img-centered-right",
+        "file": "content-beside-text-img-centered-right.svg",
+        "folder": "content",
+        "path": "content/content-beside-text-img-centered-right.svg",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#FFF\" d=\"M1 1h14v14H1z\"/><path fill=\"#999\" d=\"M14 2v12H2V2h12m1-1H1v14h14V1z\"/><path fill=\"#59F\" d=\"M7 5h6v6H7V5z\"/><path fill=\"#FFF\" d=\"M11 10H8l.8-1 .8-1 .8 1 .6 1z\"/><path fill=\"#FFF\" d=\"M12 10H9.3l.7-.7.7-.7.7.7.6.7z\"/><circle fill=\"#FFF\" cx=\"11.5\" cy=\"7.5\" r=\".5\"/><path fill=\"#B9B9B9\" d=\"M3 5h3v1H3zm0 2h3v1H3zm0 2h3v1H3zm0 2h3v1H3z\"/><path fill=\"#666\" d=\"M3 3h3v1H3z\"/></svg>"
       },
       {
         "identifier": "content-beside-text-img-left",
