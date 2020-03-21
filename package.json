@@ -36,11 +36,15 @@
     "gulp-twig": "^1.2.0",
     "http-server": "^0.12.0"
   },
+  "dependencies": {
+    "npm": "^6.13.4"
+  },
+  "resolutions": {
+      "mem": "^4.0.0",
+      "minimist": "^1.2.3"
+  },
   "scripts": {
     "build": "gulp build",
     "serve": "http-server ./docs"
-  },
-  "dependencies": {
-    "npm": "^6.13.4"
   }
 }
