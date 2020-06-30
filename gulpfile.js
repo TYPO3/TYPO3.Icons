@@ -241,6 +241,7 @@ gulp.task('docs', function (cb) {
                 data: data,
                 section: {},
                 rendering: {},
+                pathPrefix: '',
             }
         }))
         .pipe(rename('index.html'))
@@ -256,6 +257,7 @@ gulp.task('docs', function (cb) {
                     data: data,
                     section: section,
                     rendering: options.rendering[section.folder] ?? {},
+                    pathPrefix: '',
                 }
             }))
             .pipe(rename(section.folder + '.html'))
@@ -270,6 +272,7 @@ gulp.task('docs', function (cb) {
                         section: section,
                         rendering: options.rendering[section.folder] ?? {},
                         icon: icon,
+                        pathPrefix: '../',
                     }
                 }))
                 .pipe(rename(icon.identifier + '.html'))

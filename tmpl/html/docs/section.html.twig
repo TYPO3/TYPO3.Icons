@@ -4,7 +4,7 @@
 
     <nav>
         <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
-            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ pathPrefix }}index.html">Home</a></li>
             <li class="breadcrumb-item">{{ section.title }}</li>
         </ul>
     </nav>
@@ -15,7 +15,7 @@
     </h1>
     <div class="icongrid">
         {% for icon in section.icons %}
-            <a class="icongrid-item bg-light" href="{{ section.folder }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
+            <a class="icongrid-item bg-light" href="{{ pathPrefix }}{{ section.folder }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
                 <span class="icon icon-size-default icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
                     {% if not rendering.overlay %}
                         <span class="icon-markup">
@@ -23,7 +23,7 @@
                         </span>
                     {% else %}
                         <span class="icon-markup">
-                            <img src="/images/apps/apps-pagetree-page.svg">
+                            <img src="{{ pathPrefix }}images/apps/apps-pagetree-page.svg">
                         </span>
                         <span class="icon-overlay">
                             {{ icon.inline }}

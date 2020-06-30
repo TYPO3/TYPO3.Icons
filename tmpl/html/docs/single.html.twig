@@ -4,8 +4,8 @@
 
     <nav>
         <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
-            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="/{{ section.folder }}.html">{{ section.title }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ pathPrefix }}index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ pathPrefix }}{{ section.folder }}.html">{{ section.title }}</a></li>
             <li class="breadcrumb-item">{{ icon.identifier }}</li>
         </ul>
     </nav>
@@ -84,7 +84,7 @@
                             <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
                                 <span class="icon icon-size-{{ size }} icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
                                     <span class="icon-markup">
-                                        <img src="/images/apps/{{ mainIcon }}.svg">
+                                        <img src="{{ pathPrefix }}images/apps/{{ mainIcon }}.svg">
                                     </span>
                                     <span class="icon-overlay">
                                         {{ icon.inline }}
