@@ -10,6 +10,7 @@ const svgmin = require('gulp-svgmin');
 const rename = require('gulp-rename');
 const gulp = require('gulp');
 const svgSprite = require('gulp-svg-sprite');
+const yaml = require('js-yaml');
 
 
 //
@@ -90,6 +91,12 @@ const options = {
 //
 // Custom Functions
 //
+function getSvgoConfig() {
+    let config = fs.readFileSync('svgo.yaml', 'utf8');
+    config = yaml.safeLoad(config)
+
+    return config;
+}
 function getFolders(dir) {
     return fs.readdirSync(dir)
         .filter(function (file) {
@@ -152,13 +159,7 @@ gulp.task('clean', function (cb) {
 //
 gulp.task('min', () => {
     return gulp.src([options.src + '**/*.svg'])
-        .pipe(svgmin({
-            plugins: [
-                { removeDimensions: true },
-                { removeTitle: true },
-                { collapseGroups: false }
-            ]
-        }))
+        .pipe(svgmin(getSvgoConfig()))
         .pipe(gulp.dest(options.docs_images))
         .pipe(gulp.dest(options.dist));
 });

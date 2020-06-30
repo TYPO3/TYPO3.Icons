@@ -3673,17 +3673,17 @@
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g><path fill=\"#999\" d=\"M1 1v5.656l8.485 8.485 5.657-5.657L6.657 1H1zm2.475 2.475A1.75 1.75 0 115.95 5.952a1.75 1.75 0 01-2.475-2.477z\"/><path fill=\"#FFF\" d=\"M1.99 1.99v4.242l7.495 7.495 4.243-4.243L6.233 1.99H1.99zm1.485 1.485A1.75 1.75 0 115.95 5.952a1.75 1.75 0 01-2.475-2.477z\"/><path fill=\"#999\" d=\"M3.475 3.475A1.75 1.75 0 105.952 5.95a1.75 1.75 0 00-2.477-2.475zm.707.707a.75.75 0 111.061 1.06.75.75 0 01-1.061-1.06z\"/><path fill=\"#FF8700\" d=\"M12.137 9.662l-2.475 2.475L6.126 8.6l2.475-2.474z\"/></g></svg>"
       },
       {
-        "identifier": "mimetypes-x-sys_filemounts",
-        "file": "mimetypes-x-sys_filemounts.svg",
-        "folder": "mimetypes",
-        "path": "mimetypes/mimetypes-x-sys_filemounts.svg",
-        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#EFEFEF\" d=\"M14 16H5l-3-2.5V2l3-2h9z\"/><path fill=\"#AAA\" d=\"M5 0L2 2v11.5L5 16h9V0H5zM3 13V2.5l2-1.3v13.5L3 13z\"/><path fill=\"#59F\" d=\"M6 9h2v1H6V9z\"/><path fill=\"#666\" d=\"M6 6h7v1H6V6zM6 4h7v1H6V4z\"/></svg>"
-      },
-      {
         "identifier": "mimetypes-x-sys_file_storage",
         "file": "mimetypes-x-sys_file_storage.svg",
         "folder": "mimetypes",
         "path": "mimetypes/mimetypes-x-sys_file_storage.svg",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#EFEFEF\" d=\"M14 16H5l-3-2.5V2l3-2h9z\"/><path fill=\"#AAA\" d=\"M5 0L2 2v11.5L5 16h9V0H5zM3 13V2.5l2-1.3v13.5L3 13z\"/><path fill=\"#59F\" d=\"M6 9h2v1H6V9z\"/><path fill=\"#666\" d=\"M6 6h7v1H6V6zM6 4h7v1H6V4z\"/></svg>"
+      },
+      {
+        "identifier": "mimetypes-x-sys_filemounts",
+        "file": "mimetypes-x-sys_filemounts.svg",
+        "folder": "mimetypes",
+        "path": "mimetypes/mimetypes-x-sys_filemounts.svg",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#EFEFEF\" d=\"M14 16H5l-3-2.5V2l3-2h9z\"/><path fill=\"#AAA\" d=\"M5 0L2 2v11.5L5 16h9V0H5zM3 13V2.5l2-1.3v13.5L3 13z\"/><path fill=\"#59F\" d=\"M6 9h2v1H6V9z\"/><path fill=\"#666\" d=\"M6 6h7v1H6V6zM6 4h7v1H6V4z\"/></svg>"
       },
       {

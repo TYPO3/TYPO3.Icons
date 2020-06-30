@@ -1,0 +1,4 @@
+plugins:
+  - collapseGroups: false
+  - removeDimensions: true
+  - removeTitle: true
