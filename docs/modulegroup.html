@@ -1,0 +1,418 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Modulegroup - @typo3/icons</title>
+    <meta name="description" content="SVG icons for the TYPO3 CMS backend">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style type="text/css">
+    .btn img {
+        display: block;
+    }
+    .btn-sm {
+        padding: 4px 12px;
+        line-height: 16px;
+        border-radius: 2px;
+    }
+    .btn-icon {
+        padding: 4px 4px;
+        border-radius: 2px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    .btn-default {
+        color: #333333;
+        background-color: #eeeeee;
+        border-color: #bbbbbb;
+    }
+    .btn-default .icon-color {
+        fill: #333333;
+    }
+    .btn-grid {
+        margin: 2px;
+        float: left;
+    }
+
+    .table td {
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .icon {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: -22%;
+    }
+
+    .icon img,
+    .icon svg {
+        display: block;
+        height: 100%;
+        width: 100%;
+        transform: translate3d(0,0,0);
+    }
+    .icon * {
+        display: block;
+        line-height: inherit;
+    }
+    .icon-markup {
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .icon-color {
+        fill: currentColor;
+    }
+    .icon-overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 68.75%;
+        width: 68.75%;
+        text-align: center;
+    }
+    .icon-spin .icon-markup {
+        -webkit-animation: icon-spin 2s infinite linear;
+        animation: icon-spin 2s infinite linear;
+    }
+    @-webkit-keyframes icon-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+        }
+    }
+    @keyframes icon-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+        }
+    }
+    .icon-state-disabled .icon-markup {
+        opacity: 0.5;
+    }
+    .icon-size-small {
+        height: 16px;
+        width: 16px;
+        line-height: 16px;
+    }
+    .icon-size-small .icon-unify {
+        line-height: 16px;
+        font-size: 14px;
+    }
+    .icon-size-small .icon-overlay .icon-unify {
+        line-height: 10px;
+        font-size: 9px;
+    }
+    .icon-size-default {
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+    }
+    .icon-size-default .icon-unify {
+        line-height: 32px;
+        font-size: 28px;
+    }
+    .icon-size-default .icon-overlay .icon-unify {
+        line-height: 20px;
+        font-size: 18px;
+    }
+    .icon-size-large {
+        height: 48px;
+        width: 48px;
+        line-height: 48px;
+    }
+    .icon-size-large .icon-unify {
+        line-height: 48px;
+        font-size: 42px;
+    }
+    .icon-size-large .icon-overlay .icon-unify {
+        line-height: 30px;
+        font-size: 26px;
+    }
+    .icon-size-mega {
+        height: 64px;
+        width: 64px;
+        line-height: 64px;
+    }
+
+    .preview {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+        gap: 10px;
+    }
+    .preview + .preview {
+        margin-top: 10px;
+    }
+    .preview-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 128px;
+        width: 100%;
+    }
+    .preview-item[data-color="light"] {
+        color: #212529!important;
+        background-color: #f8f9fa!important;
+    }
+    .preview-item[data-color="dark"] {
+        color: #ffffff!important;
+        background-color: #343a40!important;
+    }
+    .preview-item[data-size]::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: .25rem .5rem;
+        background-color: rgba(0,0,0,0.05);
+        content: attr(data-size);
+        font-size: 10px;
+        border-radius: 0 4px 0 4px;
+    }
+
+    .icongrid {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+        gap: 10px;
+    }
+    .icongrid-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 96px;
+        width: 100%;
+        color: inherit;
+    }
+    .icongrid-item:hover,
+    .icongrid-item:focus {
+        box-shadow: 0 0 0 2px currentColor;
+        outline: none;
+        color: inherit;
+    }
+
+    .section + .section {
+        margin-top: 3.5rem;
+    }
+
+    .card {
+        overflow: hidden;
+    }
+    .card-deck {
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+    .card-deck .card {
+        margin: 15px;
+        min-width: 250px;
+    }
+    .card-inverse .icon-color {
+        fill: #dddddd;
+    }
+
+
+    .card-group-element {
+        margin: -10px;
+        display: flex;
+        flex-wrap: wrap
+    }
+    .card-group-element-item {
+        width: 100%;
+        padding: 10px
+    }
+    .card-group-element-item .card {
+        height: 100%
+    }
+    .card-group-element-align-left {
+        justify-content: flex-start
+    }
+    .card-group-element-align-center {
+        justify-content: center
+    }
+    .card-group-element-align-right {
+        justify-content: flex-end
+    }
+    @media (min-width: 576px) {
+        .card-group-element-columns-2 .card-group-element-item {
+            width:calc(100% / 2)
+        }
+    }
+    @media (min-width: 768px) {
+        .card-group-element-columns-3 .card-group-element-item {
+            width:calc(100% / 3)
+        }
+    }
+    @media (min-width: 576px) {
+        .card-group-element-columns-4 .card-group-element-item {
+            width:calc(100% / 2)
+        }
+    }
+    @media (min-width: 1200px) {
+        .card-group-element-columns-4 .card-group-element-item {
+            width:calc(100% / 4)
+        }
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        padding: 56px 0 0;
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    }
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 56px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+        .sidebar-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
+    .sidebar .nav-link.active {
+        color: #007bff;
+    }
+</style>
+</head>
+<body>
+
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
+        <a class="navbar-brand" href="index.html">@typo3/icons</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" id="mainnav">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/actions.html">Actions</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/apps.html">Apps</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/avatar.html">Avatar</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/content.html">Content</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/default.html">Default</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/files.html">Files</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/form.html">Form</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/information.html">Information</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/install.html">Install</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mimetypes.html">Mimetypes</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/miscellaneous.html">Miscellaneous</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/module.html">Module</a></li>
+                                                    <li class="nav-item"><a class="nav-link active" href="/modulegroup.html">Modulegroup</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/overlay.html">Overlay</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/spinner.html">Spinner</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/status.html">Status</a></li>
+                                            </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4" role="main">
+                <div style="max-width: 1110px; margin: 0 auto;">
+                    
+    <nav>
+        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item">Modulegroup</li>
+        </ul>
+    </nav>
+
+    <h1 class="h2 mb-4">
+        Modulegroup
+        <small class="text-muted">7</small>
+    </h1>
+    <div class="icongrid">
+                    <a class="icongrid-item bg-light" href="modulegroup/modulegroup-file.html" title="modulegroup-file">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="currentColor"><path d="M44 22v20H20V22h24zm-25-2a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V21a1 1 0 0 0-1-1H19z"/><path d="M36 40H22l7-12 7 12z"/><path d="M42 40H30l6-8 6 8z"/><circle cx="40" cy="26" r="2"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="modulegroup/modulegroup-help.html" title="modulegroup-help">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="currentColor"><path d="M33.49 38h-3a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM37.892 26.902c-.426-2.402-2.394-4.374-4.798-4.802a6.007 6.007 0 0 0-7.082 5.366c-.024.286.222.534.51.534h3.022c.254 0 .438-.196.494-.444A2.007 2.007 0 0 1 31.99 26c1.102 0 2 .898 2 2 0 .714-.398 1.314-.964 1.666a5.968 5.968 0 0 0-3.036 5.2v.634a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-.634c0-.718.402-1.318.972-1.67a5.978 5.978 0 0 0 2.93-6.294z"/><path d="M32 19c7.168 0 13 5.832 13 13s-5.832 13-13 13-13-5.832-13-13 5.832-13 13-13m0-3c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="modulegroup/modulegroup-site.html" title="modulegroup-site">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="currentColor"><path d="M32 16c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zm0 30a13.926 13.926 0 0 1-9.155-3.433c.027.008.103.023.103-.129v-.188c0-.184.19-.184.19-.368.192-.74.192-1.844.192-2.58l.002-.002v-.552l-.192-.184c-.19 0-.19-.186-.38-.186s-.38-.186-.572-.186h-.382s-.19 0-.19-.184c-1.336-.74-1.906-2.03-2.288-3.504 0-.37-.19-.74-.19-1.108-.188-.186-.188-.37-.38-.556-.38-.368-.188-1.106.192-1.844v-.368c0-.186 0-.186.19-.37 0-.18 0-.18.192-.366.38-.74 1.144-1.292 1.524-1.846.19-.184.19-.184.19-.368v-.184c.19-.184.19-.554.38-.74 0-.18.192-.552.192-.736 0-.37 0-.554-.192-.92-.19-.55-.309-1.024-.679-1.392a14.104 14.104 0 0 1 2.496-2.612l.331.349h1.746s.194 0 .194-.2l.194-.206s.194 0 .194-.204l.192-.204.194-.206c-.58.41-.58.206-.388 0l-.004-.002c.573-.604.609-.715 1.171-1.505A13.87 13.87 0 0 1 32 18c2.488 0 4.821.66 6.848 1.802-.177.181-.226.077-.226.267-.554.194-1.292-.194-1.846-.388a6.46 6.46 0 0 0-4.244-.194c-.554.194-1.844.388-1.292 1.552.368.584 1.29 1.166 2.214.39.368-.388.74-.97 1.29-.388.186.196.186.39.186.584-.186.58-.74.776-1.292.776-.74.194-1.48 0-2.216.194-.74.194-1.846.388-1.846 1.36 0 1.16-.37 1.356-1.294 1.55-.74 0-1.106.388-.74 1.164.186.58.74.58 1.11.388 1.476-.776 2.768-2.716 4.428-.388l.368-.194c.37-1.552.74-.58 1.108 0l.554.58c2.214-2.132 1.66.972 2.4 1.552-1.48-.388-3.14 1.164-4.43.194-2.214-1.744-3.69-.968-5.72.776-1.66 1.36-2.03 3.104-1.66 4.656.552 1.94 2.58 2.134 4.244 1.746.552-.196 1.66-.196 1.66.192-.37 1.746 1.66 2.91.92 4.848-.552 1.552.372 3.492 1.66 4.074 1.294.58 2.4-.97 2.956-2.328.184-.194 0-.58.184-.776 1.476-1.94 1.292-4.848 3.136-6.788.554-.58 2.4-2.714.92-4.46 3.508-.97 2.22 2.52 2.956 4.074.552-1.164.92-2.328 1.29-3.3.168-.53.291-.717.312-.747.035.407.062.816.062 1.232 0 7.718-6.282 14-14 14zm-8.728-6.757c-.022-.022-.027-.026 0 0z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="modulegroup/modulegroup-system.html" title="modulegroup-system">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="currentColor"><path d="M46.629 35.2l-1.943-1.143c.114-.686.229-1.371.229-2.057 0-.686-.114-1.371-.229-2.057l1.943-1.143c1.143-.686 1.486-2.057.8-3.086l-2.286-4c-.686-1.143-2.057-1.486-3.086-.8l-1.943 1.143c-1.029-.914-2.286-1.6-3.543-2.057v-1.714A2.293 2.293 0 0 0 34.285 16h-4.571a2.293 2.293 0 0 0-2.286 2.286V20c-1.257.457-2.514 1.143-3.543 2.057l-1.943-1.143a2.216 2.216 0 0 0-3.086.8l-2.286 4a2.216 2.216 0 0 0 .8 3.086l1.943 1.143c-.113.686-.227 1.371-.227 2.057 0 .686.114 1.371.229 2.057L17.371 35.2c-1.143.686-1.486 2.057-.8 3.086l2.286 4c.686 1.143 2.057 1.486 3.086.8l1.943-1.143c1.029.914 2.286 1.6 3.543 2.057v1.714A2.293 2.293 0 0 0 29.715 48h4.571a2.293 2.293 0 0 0 2.286-2.286V44c1.257-.457 2.514-1.143 3.543-2.057l1.943 1.143a2.216 2.216 0 0 0 3.086-.8l2.286-4c.684-1.029.341-2.515-.801-3.086zM43.2 41.143l-3.429-2.057c-1.486 1.6-3.314 2.743-5.486 3.2v3.429h-4.571v-3.429c-2.171-.457-4-1.6-5.486-3.2L20.8 41.143l-2.286-4 3.429-2.057c-.343-1.029-.571-2.057-.571-3.2s.229-2.171.571-3.2l-3.429-2.057 2.286-4 3.429 2.057c1.486-1.6 3.314-2.743 5.486-3.2v-3.429h4.571v3.429c2.171.457 4 1.6 5.486 3.2l3.429-2.057 2.286 4-3.429 2.057c.343 1.029.571 2.057.571 3.2s-.229 2.171-.571 3.2l3.429 2.057-2.287 4z"/><path d="M32 27.2c2.629 0 4.914 2.171 4.914 4.914S34.743 37.029 32 37.029s-4.914-2.171-4.914-4.914S29.371 27.2 32 27.2m0-2.286c-4 0-7.2 3.2-7.2 7.2s3.2 7.2 7.2 7.2 7.2-3.2 7.2-7.2-3.2-7.2-7.2-7.2z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="modulegroup/modulegroup-tools.html" title="modulegroup-tools">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="currentColor"><path d="M46 18c-3.5-3.5-18 8-18 8h-8l-4 4 4 4 2 2-4 4 6 6 4-4 2 2 4 4 4-4v-8s11.5-14.5 8-18zM21.4 32.6L18.8 30l2-2H26l-4.6 4.6zM36 43.2l-2 2-2.6-2.6L36 38v5.2zm.5-8.5L30 41.2l-.6-.6-1.4-1.4-1.4 1.4-2.6 2.6-3.2-3.2 2.6-2.6 1.4-1.4-1.4-1.4-.6-.6 6.5-6.5c4-3.2 11.5-8.2 14.8-8.2.3 0 .5.1.5.1.9 1.2-2.5 8.1-8.1 15.3z"/><path d="M38 25c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1m0-1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM18 46h-2v2h2v-2zM20 44h-2v2h2v-2zM18 42h-2v2h2v-2zM22 46h-2v2h2v-2z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="modulegroup/modulegroup-user.html" title="modulegroup-user">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="currentColor"><path d="M43.374 39.172c-2.952-.842-5.014-1.996-7.066-2.788-.198-.644-.666-1.786-.78-4.41 1.412-1.424 2.424-3.432 2.424-5.05v-3.852c0-2.8-2.276-5.074-5.252-5.074h-1.4c-2.8 0-5.252 2.274-5.252 5.074v3.852c0 1.632 1.024 3.662 2.456 5.088-.048 2.576-.532 3.712-.762 4.356-2.07.788-4.142 1.958-7.116 2.806 0 0-2.452 1.4-2.626 6.826h28c-.174-5.602-2.626-6.828-2.626-6.828z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="modulegroup/modulegroup-web.html" title="modulegroup-web">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="currentColor"><path d="M43.4 22.4l-3.8-3.8c-.4-.4-.8-.6-1.4-.6H21c-.6 0-1 .4-1 1v26c0 .6.4 1 1 1h22c.6 0 1-.4 1-1V23.8c0-.6-.2-1-.6-1.4zM42 44H22V20h14v5c0 .6.4 1 1 1h5v18zm-4-20v-4l4 4h-4z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+            </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

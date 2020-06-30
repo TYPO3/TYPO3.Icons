@@ -17,67 +17,66 @@ const yaml = require('js-yaml');
 // Options
 //
 const options = {
-    files: {
-        readme: {
-            template: './tmpl/markdown/README.twig',
-            filename: 'README.md',
-            destination: '.'
-        },
-        index: {
-            template: './tmpl/html/docs/index.html.twig',
-            filename: 'index.html',
-            destination: './docs'
-        },
-        action: {
-            template: './tmpl/html/docs/action.html.twig',
-            filename: 'action.html',
-            destination: './docs'
-        },
-        assets: {
-            template: './tmpl/html/docs/files.html.twig',
-            filename: 'files.html',
-            destination: './docs'
-        },
-        module: {
-            template: './tmpl/html/docs/module.html.twig',
-            filename: 'module.html',
-            destination: './docs'
-        },
-        overlay: {
-            template: './tmpl/html/docs/overlay.html.twig',
-            filename: 'overlay.html',
-            destination: './docs'
-        },
-        form: {
-            template: './tmpl/html/docs/form.html.twig',
-            filename: 'form.html',
-            destination: './docs'
+    rendering: {
+        actions: {
+            preview: true,
+            buttons: true,
         },
         apps: {
-            template: './tmpl/html/docs/apps.html.twig',
-            filename: 'apps.html',
-            destination: './docs'
+            preview: true,
+            buttons: true,
+        },
+        avatar: {
+            preview: true,
+            buttons: true,
         },
         content: {
-            template: './tmpl/html/docs/content.html.twig',
-            filename: 'content.html',
-            destination: './docs'
+            preview: true,
+            buttons: true,
         },
-        mimetypes: {
-            template: './tmpl/html/docs/mimetypes.html.twig',
-            filename: 'mimetypes.html',
-            destination: './docs'
+        default: {
+            preview: true,
+            buttons: true,
         },
-        misc: {
-            template: './tmpl/html/docs/misc.html.twig',
-            filename: 'misc.html',
-            destination: './docs'
+        files: {
+            preview: true,
+        },
+        form: {
+            preview: true,
+            buttons: true,
+        },
+        information: {
+            preview: true,
         },
         install: {
-            template: './tmpl/html/docs/install.html.twig',
-            filename: 'install.html',
-            destination: './docs'
-        }
+            preview: true,
+        },
+        mimetypes: {
+            preview: true,
+            buttons: true,
+        },
+        miscellaneous: {
+            preview: true,
+            buttons: true,
+        },
+        module: {
+            preview: true,
+        },
+        modulegroup: {
+            preview: true,
+        },
+        overlay: {
+            overlay: true,
+        },
+        spinner: {
+            preview: true,
+            buttons: true,
+            spinning: true,
+        },
+        status: {
+            preview: true,
+            buttons: true,
+        },
     },
     src: './src/',
     dist: './dist/',
@@ -221,23 +220,63 @@ gulp.task('docs', function (cb) {
     // Fetch generated data
     let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
 
-    // Compile templates
-    for (var key in options.files) {
-        if (options.files.hasOwnProperty(key)) {
-            let file = options.files[key];
-            let opts = {
+    // README
+    gulp.src('./tmpl/markdown/README.md.twig')
+        .pipe(twig({
+            data: {
+                pkg: pkg,
+                data: data,
+                section: {},
+                rendering: {},
+            }
+        }))
+        .pipe(rename('README.md'))
+        .pipe(gulp.dest(path.join('.')));
+
+    // Index
+    gulp.src('./tmpl/html/docs/index.html.twig')
+        .pipe(twig({
+            data: {
+                pkg: pkg,
+                data: data,
+                section: {},
+                rendering: {},
+            }
+        }))
+        .pipe(rename('index.html'))
+        .pipe(gulp.dest(path.join('./docs')));
+
+    // Build pages
+    for (let sectionKey in data) {
+        let section = data[sectionKey];
+        gulp.src('./tmpl/html/docs/section.html.twig')
+            .pipe(twig({
                 data: {
-                    key: key,
                     pkg: pkg,
-                    folders: data,
+                    data: data,
+                    section: section,
+                    rendering: options.rendering[section.folder] ?? {},
                 }
-            };
-            gulp.src(file.template)
-                .pipe(twig(opts))
-                .pipe(rename(file.filename))
-                .pipe(gulp.dest(file.destination));
+            }))
+            .pipe(rename(section.folder + '.html'))
+            .pipe(gulp.dest(path.join('./docs')));
+        for (let iconKey in section.icons) {
+            let icon = section.icons[iconKey];
+            gulp.src('./tmpl/html/docs/single.html.twig')
+                .pipe(twig({
+                    data: {
+                        pkg: pkg,
+                        data: data,
+                        section: section,
+                        rendering: options.rendering[section.folder] ?? {},
+                        icon: icon,
+                    }
+                }))
+                .pipe(rename(icon.identifier + '.html'))
+                .pipe(gulp.dest(path.join('./docs', section.folder)));
         }
     }
+
     cb();
 });
 

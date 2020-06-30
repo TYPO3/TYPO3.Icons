@@ -1,0 +1,116 @@
+{% extends "_layout.html.twig" %}
+{% block title %}{{ icon.identifier }} - {{ section.title }}{% endblock %}
+{% block content %}
+
+    <nav>
+        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="/{{ section.folder }}.html">{{ section.title }}</a></li>
+            <li class="breadcrumb-item">{{ icon.identifier }}</li>
+        </ul>
+    </nav>
+
+    <h1 class="h2 mb-4">{{ icon.identifier }}</h1>
+
+    {% if rendering.preview %}
+        <div class="section">
+            {% set colors = ['light', 'dark'] %}
+            {% for color in colors %}
+                <div class="preview">
+                    {% set sizes = ['mega', 'large', 'default', 'small'] %}
+                    {% for size in sizes %}
+                        <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
+                            <span class="icon icon-size-{{ size }} icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                                <span class="icon-markup">
+                                    {{ icon.inline }}
+                                </span>
+                            </span>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if rendering.buttons %}
+        <div class="section">
+            <h2 class="mb-3">Buttons</h2>
+            <p>
+                <span class="btn btn-icon btn-default">
+                    <span class="icon icon-size-small icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                        <span class="icon-markup">
+                            {{ icon.inline }}
+                        </span>
+                    </span>
+                </span>
+                <span class="btn btn-icon btn-dark">
+                    <span class="icon icon-size-small icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                        <span class="icon-markup">
+                            {{ icon.inline }}
+                        </span>
+                    </span>
+                </span>
+            </p>
+            <p>
+                <span class="btn btn-icon btn-default">
+                    <span class="icon icon-size-small icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                        <span class="icon-markup">
+                            {{ icon.inline }}
+                        </span>
+                    </span>
+                    Button Label
+                </span>
+                <span class="btn btn-icon btn-dark">
+                    <span class="icon icon-size-small icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                        <span class="icon-markup">
+                            {{ icon.inline }}
+                        </span>
+                    </span>
+                    Button Label
+                </span>
+            </p>
+        </div>
+    {% endif %}
+
+    {% if rendering.overlay %}
+        <div class="section">
+            <div class="preview">
+                {% set mainIcons = ['apps-filetree-folder-default', 'apps-filetree-folder-temp', 'apps-pagetree-page'] %}
+                {% for mainIcon in mainIcons %}
+                    {% set colors = ['light', 'dark'] %}
+                    {% for color in colors %}
+                        {% set sizes = ['mega', 'large', 'default', 'small'] %}
+                        {% for size in sizes %}
+                            <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
+                                <span class="icon icon-size-{{ size }} icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                                    <span class="icon-markup">
+                                        <img src="/images/apps/{{ mainIcon }}.svg">
+                                    </span>
+                                    <span class="icon-overlay">
+                                        {{ icon.inline }}
+                                    </span>
+                                </span>
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="section">
+        <h2 class="mb-3">Markup</h2>
+        <pre class="p-3 rounded bg-light"><code>{{ icon.inline|escape }}</code></pre>
+    </div>
+
+    <div class="section">
+        <h2 class="mb-3">TYPO3 ViewHelper</h2>
+        {% if rendering.overlay %}
+            <pre class="p-3 rounded bg-light"><code>&lt;core:icon identifier=&quot;apps-pagetree-page&quot; overlay=&quot;{{ icon.identifier }}&quot; size=&quot;small&quot; /&gt;</code></pre>
+        {% else %}
+            <pre class="p-3 rounded bg-light"><code>&lt;core:icon identifier=&quot;{{ icon.identifier }}&quot; size=&quot;small&quot; /&gt;</code></pre>
+        {% endif %}
+    </div>
+
+
+{% endblock %}

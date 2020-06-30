@@ -1,0 +1,478 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>mimetypes-media-image - Mimetypes - @typo3/icons</title>
+    <meta name="description" content="SVG icons for the TYPO3 CMS backend">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style type="text/css">
+    .btn img {
+        display: block;
+    }
+    .btn-sm {
+        padding: 4px 12px;
+        line-height: 16px;
+        border-radius: 2px;
+    }
+    .btn-icon {
+        padding: 4px 4px;
+        border-radius: 2px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    .btn-default {
+        color: #333333;
+        background-color: #eeeeee;
+        border-color: #bbbbbb;
+    }
+    .btn-default .icon-color {
+        fill: #333333;
+    }
+    .btn-grid {
+        margin: 2px;
+        float: left;
+    }
+
+    .table td {
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .icon {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: -22%;
+    }
+
+    .icon img,
+    .icon svg {
+        display: block;
+        height: 100%;
+        width: 100%;
+        transform: translate3d(0,0,0);
+    }
+    .icon * {
+        display: block;
+        line-height: inherit;
+    }
+    .icon-markup {
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .icon-color {
+        fill: currentColor;
+    }
+    .icon-overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 68.75%;
+        width: 68.75%;
+        text-align: center;
+    }
+    .icon-spin .icon-markup {
+        -webkit-animation: icon-spin 2s infinite linear;
+        animation: icon-spin 2s infinite linear;
+    }
+    @-webkit-keyframes icon-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+        }
+    }
+    @keyframes icon-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+        }
+    }
+    .icon-state-disabled .icon-markup {
+        opacity: 0.5;
+    }
+    .icon-size-small {
+        height: 16px;
+        width: 16px;
+        line-height: 16px;
+    }
+    .icon-size-small .icon-unify {
+        line-height: 16px;
+        font-size: 14px;
+    }
+    .icon-size-small .icon-overlay .icon-unify {
+        line-height: 10px;
+        font-size: 9px;
+    }
+    .icon-size-default {
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+    }
+    .icon-size-default .icon-unify {
+        line-height: 32px;
+        font-size: 28px;
+    }
+    .icon-size-default .icon-overlay .icon-unify {
+        line-height: 20px;
+        font-size: 18px;
+    }
+    .icon-size-large {
+        height: 48px;
+        width: 48px;
+        line-height: 48px;
+    }
+    .icon-size-large .icon-unify {
+        line-height: 48px;
+        font-size: 42px;
+    }
+    .icon-size-large .icon-overlay .icon-unify {
+        line-height: 30px;
+        font-size: 26px;
+    }
+    .icon-size-mega {
+        height: 64px;
+        width: 64px;
+        line-height: 64px;
+    }
+
+    .preview {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+        gap: 10px;
+    }
+    .preview + .preview {
+        margin-top: 10px;
+    }
+    .preview-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 128px;
+        width: 100%;
+    }
+    .preview-item[data-color="light"] {
+        color: #212529!important;
+        background-color: #f8f9fa!important;
+    }
+    .preview-item[data-color="dark"] {
+        color: #ffffff!important;
+        background-color: #343a40!important;
+    }
+    .preview-item[data-size]::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: .25rem .5rem;
+        background-color: rgba(0,0,0,0.05);
+        content: attr(data-size);
+        font-size: 10px;
+        border-radius: 0 4px 0 4px;
+    }
+
+    .icongrid {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+        gap: 10px;
+    }
+    .icongrid-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 96px;
+        width: 100%;
+        color: inherit;
+    }
+    .icongrid-item:hover,
+    .icongrid-item:focus {
+        box-shadow: 0 0 0 2px currentColor;
+        outline: none;
+        color: inherit;
+    }
+
+    .section + .section {
+        margin-top: 3.5rem;
+    }
+
+    .card {
+        overflow: hidden;
+    }
+    .card-deck {
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+    .card-deck .card {
+        margin: 15px;
+        min-width: 250px;
+    }
+    .card-inverse .icon-color {
+        fill: #dddddd;
+    }
+
+
+    .card-group-element {
+        margin: -10px;
+        display: flex;
+        flex-wrap: wrap
+    }
+    .card-group-element-item {
+        width: 100%;
+        padding: 10px
+    }
+    .card-group-element-item .card {
+        height: 100%
+    }
+    .card-group-element-align-left {
+        justify-content: flex-start
+    }
+    .card-group-element-align-center {
+        justify-content: center
+    }
+    .card-group-element-align-right {
+        justify-content: flex-end
+    }
+    @media (min-width: 576px) {
+        .card-group-element-columns-2 .card-group-element-item {
+            width:calc(100% / 2)
+        }
+    }
+    @media (min-width: 768px) {
+        .card-group-element-columns-3 .card-group-element-item {
+            width:calc(100% / 3)
+        }
+    }
+    @media (min-width: 576px) {
+        .card-group-element-columns-4 .card-group-element-item {
+            width:calc(100% / 2)
+        }
+    }
+    @media (min-width: 1200px) {
+        .card-group-element-columns-4 .card-group-element-item {
+            width:calc(100% / 4)
+        }
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        padding: 56px 0 0;
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    }
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 56px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+        .sidebar-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
+    .sidebar .nav-link.active {
+        color: #007bff;
+    }
+</style>
+</head>
+<body>
+
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
+        <a class="navbar-brand" href="index.html">@typo3/icons</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" id="mainnav">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/actions.html">Actions</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/apps.html">Apps</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/avatar.html">Avatar</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/content.html">Content</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/default.html">Default</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/files.html">Files</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/form.html">Form</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/information.html">Information</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/install.html">Install</a></li>
+                                                    <li class="nav-item"><a class="nav-link active" href="/mimetypes.html">Mimetypes</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/miscellaneous.html">Miscellaneous</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/module.html">Module</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/modulegroup.html">Modulegroup</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/overlay.html">Overlay</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/spinner.html">Spinner</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/status.html">Status</a></li>
+                                            </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4" role="main">
+                <div style="max-width: 1110px; margin: 0 auto;">
+                    
+    <nav>
+        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="/mimetypes.html">Mimetypes</a></li>
+            <li class="breadcrumb-item">mimetypes-media-image</li>
+        </ul>
+    </nav>
+
+    <h1 class="h2 mb-4">mimetypes-media-image</h1>
+
+            <div class="section">
+                                        <div class="preview">
+                                                                <div class="preview-item" data-color="light" data-size="mega">
+                            <span class="icon icon-size-mega icon-state-default">
+                                <span class="icon-markup">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                                </span>
+                            </span>
+                        </div>
+                                            <div class="preview-item" data-color="light" data-size="large">
+                            <span class="icon icon-size-large icon-state-default">
+                                <span class="icon-markup">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                                </span>
+                            </span>
+                        </div>
+                                            <div class="preview-item" data-color="light" data-size="default">
+                            <span class="icon icon-size-default icon-state-default">
+                                <span class="icon-markup">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                                </span>
+                            </span>
+                        </div>
+                                            <div class="preview-item" data-color="light" data-size="small">
+                            <span class="icon icon-size-small icon-state-default">
+                                <span class="icon-markup">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                                </span>
+                            </span>
+                        </div>
+                                    </div>
+                            <div class="preview">
+                                                                <div class="preview-item" data-color="dark" data-size="mega">
+                            <span class="icon icon-size-mega icon-state-default">
+                                <span class="icon-markup">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                                </span>
+                            </span>
+                        </div>
+                                            <div class="preview-item" data-color="dark" data-size="large">
+                            <span class="icon icon-size-large icon-state-default">
+                                <span class="icon-markup">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                                </span>
+                            </span>
+                        </div>
+                                            <div class="preview-item" data-color="dark" data-size="default">
+                            <span class="icon icon-size-default icon-state-default">
+                                <span class="icon-markup">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                                </span>
+                            </span>
+                        </div>
+                                            <div class="preview-item" data-color="dark" data-size="small">
+                            <span class="icon icon-size-small icon-state-default">
+                                <span class="icon-markup">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                                </span>
+                            </span>
+                        </div>
+                                    </div>
+                    </div>
+    
+            <div class="section">
+            <h2 class="mb-3">Buttons</h2>
+            <p>
+                <span class="btn btn-icon btn-default">
+                    <span class="icon icon-size-small icon-state-default">
+                        <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                        </span>
+                    </span>
+                </span>
+                <span class="btn btn-icon btn-dark">
+                    <span class="icon icon-size-small icon-state-default">
+                        <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                        </span>
+                    </span>
+                </span>
+            </p>
+            <p>
+                <span class="btn btn-icon btn-default">
+                    <span class="icon icon-size-small icon-state-default">
+                        <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                        </span>
+                    </span>
+                    Button Label
+                </span>
+                <span class="btn btn-icon btn-dark">
+                    <span class="icon icon-size-small icon-state-default">
+                        <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="svg2" version="1.1" viewBox="0 0 16 16"><defs id="defs20"><clipPath id="clipPath3391" clipPathUnits="userSpaceOnUse"><path id="path3393" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407" clipPathUnits="userSpaceOnUse"><path id="path3409" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427" clipPathUnits="userSpaceOnUse"><path id="path3429" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-7" clipPathUnits="userSpaceOnUse"><path id="path3393-8" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-0" clipPathUnits="userSpaceOnUse"><path id="path3409-3" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-9" clipPathUnits="userSpaceOnUse"><path id="path3429-3" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-5" clipPathUnits="userSpaceOnUse"><path id="path3393-6" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-6" clipPathUnits="userSpaceOnUse"><path id="path3409-6" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-0" clipPathUnits="userSpaceOnUse"><path id="path3429-8" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-8" clipPathUnits="userSpaceOnUse"><path id="path3393-83" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-2" clipPathUnits="userSpaceOnUse"><path id="path3409-2" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-2" clipPathUnits="userSpaceOnUse"><path id="path3429-34" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-25" clipPathUnits="userSpaceOnUse"><path id="path3393-0" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-27" clipPathUnits="userSpaceOnUse"><path id="path3409-1" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-93" clipPathUnits="userSpaceOnUse"><path id="path3429-7" d="M622 477.971h60.121V418H622v59.971z"/></clipPath><clipPath id="clipPath3391-2" clipPathUnits="userSpaceOnUse"><path id="path3393-9" d="M0 600h800V0H0v600z"/></clipPath><clipPath id="clipPath3407-9" clipPathUnits="userSpaceOnUse"><path id="path3409-0" d="M316 477.408h60.363V417H316v60.408z"/></clipPath><clipPath id="clipPath3427-8" clipPathUnits="userSpaceOnUse"><path id="path3429-5" d="M622 477.971h60.121V418H622v59.971z"/></clipPath></defs><g id="g6705" fill="#59f" fill-opacity="1"><g id="g4141" transform="translate(-1 1)"><g id="g4237" fill="#59f" fill-opacity="1" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0"><path id="rect4171" stroke="#b9b9b9" d="M2 0v16h12V4l-4-4zm8 0z" transform="translate(1 -1)"/><path id="path4178" stroke="none" d="M11 2.98V-1l4 4z" opacity=".65"/><path id="path4446" stroke="none" d="M15 3.024V8l-4-5z" opacity=".15"/></g></g></g><path id="path6" fill="#fff" fill-opacity="1" d="M10 4V0l4 4h-4z" opacity=".65"/><path id="path4446-1" fill="#000" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="1" stroke-width="0" d="M14 4.024V9l-4-5z" opacity=".15"/><style id="style9465" type="text/css"></style><g id="g5202" fill="#fff" fill-opacity="1" transform="matrix(1.33333 0 0 1.33333 -2.667 -4.333)"><path id="path5190" d="M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z"/><path id="path5192" d="M11 13H7l1-1 1-1 1 1 1 1z"/><circle id="circle5194" cx="9.75" cy="9.25" r=".75"/></g></svg>
+                        </span>
+                    </span>
+                    Button Label
+                </span>
+            </p>
+        </div>
+    
+    
+    <div class="section">
+        <h2 class="mb-3">Markup</h2>
+        <pre class="p-3 rounded bg-light"><code>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; id=&quot;svg2&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot;&gt;&lt;defs id=&quot;defs20&quot;&gt;&lt;clipPath id=&quot;clipPath3391&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3393&quot; d=&quot;M0 600h800V0H0v600z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3407&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3409&quot; d=&quot;M316 477.408h60.363V417H316v60.408z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3427&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3429&quot; d=&quot;M622 477.971h60.121V418H622v59.971z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3391-7&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3393-8&quot; d=&quot;M0 600h800V0H0v600z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3407-0&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3409-3&quot; d=&quot;M316 477.408h60.363V417H316v60.408z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3427-9&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3429-3&quot; d=&quot;M622 477.971h60.121V418H622v59.971z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3391-5&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3393-6&quot; d=&quot;M0 600h800V0H0v600z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3407-6&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3409-6&quot; d=&quot;M316 477.408h60.363V417H316v60.408z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3427-0&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3429-8&quot; d=&quot;M622 477.971h60.121V418H622v59.971z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3391-8&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3393-83&quot; d=&quot;M0 600h800V0H0v600z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3407-2&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3409-2&quot; d=&quot;M316 477.408h60.363V417H316v60.408z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3427-2&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3429-34&quot; d=&quot;M622 477.971h60.121V418H622v59.971z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3391-25&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3393-0&quot; d=&quot;M0 600h800V0H0v600z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3407-27&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3409-1&quot; d=&quot;M316 477.408h60.363V417H316v60.408z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3427-93&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3429-7&quot; d=&quot;M622 477.971h60.121V418H622v59.971z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3391-2&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3393-9&quot; d=&quot;M0 600h800V0H0v600z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3407-9&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3409-0&quot; d=&quot;M316 477.408h60.363V417H316v60.408z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id=&quot;clipPath3427-8&quot; clipPathUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path id=&quot;path3429-5&quot; d=&quot;M622 477.971h60.121V418H622v59.971z&quot;/&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;g id=&quot;g6705&quot; fill=&quot;#59f&quot; fill-opacity=&quot;1&quot;&gt;&lt;g id=&quot;g4141&quot; transform=&quot;translate(-1 1)&quot;&gt;&lt;g id=&quot;g4237&quot; fill=&quot;#59f&quot; fill-opacity=&quot;1&quot; stroke-dasharray=&quot;none&quot; stroke-linecap=&quot;butt&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;4&quot; stroke-opacity=&quot;1&quot; stroke-width=&quot;0&quot;&gt;&lt;path id=&quot;rect4171&quot; stroke=&quot;#b9b9b9&quot; d=&quot;M2 0v16h12V4l-4-4zm8 0z&quot; transform=&quot;translate(1 -1)&quot;/&gt;&lt;path id=&quot;path4178&quot; stroke=&quot;none&quot; d=&quot;M11 2.98V-1l4 4z&quot; opacity=&quot;.65&quot;/&gt;&lt;path id=&quot;path4446&quot; stroke=&quot;none&quot; d=&quot;M15 3.024V8l-4-5z&quot; opacity=&quot;.15&quot;/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;path id=&quot;path6&quot; fill=&quot;#fff&quot; fill-opacity=&quot;1&quot; d=&quot;M10 4V0l4 4h-4z&quot; opacity=&quot;.65&quot;/&gt;&lt;path id=&quot;path4446-1&quot; fill=&quot;#000&quot; fill-opacity=&quot;1&quot; stroke=&quot;none&quot; stroke-dasharray=&quot;none&quot; stroke-linecap=&quot;butt&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;4&quot; stroke-opacity=&quot;1&quot; stroke-width=&quot;0&quot; d=&quot;M14 4.024V9l-4-5z&quot; opacity=&quot;.15&quot;/&gt;&lt;style id=&quot;style9465&quot; type=&quot;text/css&quot;&gt;&lt;/style&gt;&lt;g id=&quot;g5202&quot; fill=&quot;#fff&quot; fill-opacity=&quot;1&quot; transform=&quot;matrix(1.33333 0 0 1.33333 -2.667 -4.333)&quot;&gt;&lt;path id=&quot;path5190&quot; d=&quot;M9.5 13H5l1.125-1.5L7.25 10l1.125 1.5L9.5 13z&quot;/&gt;&lt;path id=&quot;path5192&quot; d=&quot;M11 13H7l1-1 1-1 1 1 1 1z&quot;/&gt;&lt;circle id=&quot;circle5194&quot; cx=&quot;9.75&quot; cy=&quot;9.25&quot; r=&quot;.75&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;</code></pre>
+    </div>
+
+    <div class="section">
+        <h2 class="mb-3">TYPO3 ViewHelper</h2>
+                    <pre class="p-3 rounded bg-light"><code>&lt;core:icon identifier=&quot;mimetypes-media-image&quot; size=&quot;small&quot; /&gt;</code></pre>
+            </div>
+
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,870 +1,971 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Content - @typo3/icons</title>
-        <meta name="description" content="SVG icons for the TYPO3 CMS backend">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <style type="text/css">
-            .btn img {
-                display: block;
-            }
-            .btn-sm {
-                padding: 4px 12px;
-                line-height: 16px;
-                border-radius: 2px;
-            }
-            .btn-icon {
-                padding: 4px 4px;
-                border-radius: 2px;
-                font-size: 11px;
-                line-height: 1.5;
-            }
-            .btn-default {
-                color: #333333;
-                background-color: #eeeeee;
-                border-color: #bbbbbb;
-            }
-            .btn-default .icon-color {
-                fill: #333333;
-            }
-            .btn-grid {
-                margin: 2px;
-                float: left;
-            }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Content - @typo3/icons</title>
+    <meta name="description" content="SVG icons for the TYPO3 CMS backend">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style type="text/css">
+    .btn img {
+        display: block;
+    }
+    .btn-sm {
+        padding: 4px 12px;
+        line-height: 16px;
+        border-radius: 2px;
+    }
+    .btn-icon {
+        padding: 4px 4px;
+        border-radius: 2px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    .btn-default {
+        color: #333333;
+        background-color: #eeeeee;
+        border-color: #bbbbbb;
+    }
+    .btn-default .icon-color {
+        fill: #333333;
+    }
+    .btn-grid {
+        margin: 2px;
+        float: left;
+    }
 
-            .table td {
-                vertical-align: middle;
-                white-space: nowrap;
-            }
-            .icon {
-                position: relative;
-                display: inline-block;
-                overflow: hidden;
-                white-space: nowrap;
-                vertical-align: -22%;
-            }
+    .table td {
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .icon {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: -22%;
+    }
 
-            .icon img,
-            .icon svg {
-                display: block;
-                height: 100%;
-                width: 100%;
-                transform: translate3d(0,0,0);
-            }
-            .icon * {
-                display: block;
-                line-height: inherit;
-            }
-            .icon-markup {
-                position: absolute;
-                display: block;
-                text-align: center;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-            }
-            .icon-color {
-               fill: currentColor;
-            }
-            .icon-overlay {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                height: 68.75%;
-                width: 68.75%;
-                text-align: center;
-            }
-            .icon-spin .icon-markup {
-                -webkit-animation: icon-spin 2s infinite linear;
-                animation: icon-spin 2s infinite linear;
-            }
-            @-webkit-keyframes icon-spin {
-                0% {
-                    -webkit-transform: rotate(0deg);
-                    transform: rotate(0deg);
-                }
-                100% {
-                    -webkit-transform: rotate(359deg);
-                    transform: rotate(359deg);
-                }
-            }
-            @keyframes icon-spin {
-                0% {
-                    -webkit-transform: rotate(0deg);
-                    transform: rotate(0deg);
-                }
-                100% {
-                    -webkit-transform: rotate(359deg);
-                    transform: rotate(359deg);
-                }
-            }
-            .icon-state-disabled .icon-markup {
-                opacity: 0.5;
-            }
-            .icon-size-small {
-                height: 16px;
-                width: 16px;
-                line-height: 16px;
-            }
-            .icon-size-small .icon-unify {
-                line-height: 16px;
-                font-size: 14px;
-            }
-            .icon-size-small .icon-overlay .icon-unify {
-                line-height: 10px;
-                font-size: 9px;
-            }
-            .icon-size-default {
-                height: 32px;
-                width: 32px;
-                line-height: 32px;
-            }
-            .icon-size-default .icon-unify {
-                line-height: 32px;
-                font-size: 28px;
-            }
-            .icon-size-default .icon-overlay .icon-unify {
-                line-height: 20px;
-                font-size: 18px;
-            }
-            .icon-size-large {
-                height: 48px;
-                width: 48px;
-                line-height: 48px;
-            }
-            .icon-size-large .icon-unify {
-                line-height: 48px;
-                font-size: 42px;
-            }
-            .icon-size-large .icon-overlay .icon-unify {
-                line-height: 30px;
-                font-size: 26px;
-            }
-            .icon-size-mega {
-                height: 64px;
-                width: 64px;
-                line-height: 64px;
-            }
+    .icon img,
+    .icon svg {
+        display: block;
+        height: 100%;
+        width: 100%;
+        transform: translate3d(0,0,0);
+    }
+    .icon * {
+        display: block;
+        line-height: inherit;
+    }
+    .icon-markup {
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .icon-color {
+        fill: currentColor;
+    }
+    .icon-overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 68.75%;
+        width: 68.75%;
+        text-align: center;
+    }
+    .icon-spin .icon-markup {
+        -webkit-animation: icon-spin 2s infinite linear;
+        animation: icon-spin 2s infinite linear;
+    }
+    @-webkit-keyframes icon-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+        }
+    }
+    @keyframes icon-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+        }
+    }
+    .icon-state-disabled .icon-markup {
+        opacity: 0.5;
+    }
+    .icon-size-small {
+        height: 16px;
+        width: 16px;
+        line-height: 16px;
+    }
+    .icon-size-small .icon-unify {
+        line-height: 16px;
+        font-size: 14px;
+    }
+    .icon-size-small .icon-overlay .icon-unify {
+        line-height: 10px;
+        font-size: 9px;
+    }
+    .icon-size-default {
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+    }
+    .icon-size-default .icon-unify {
+        line-height: 32px;
+        font-size: 28px;
+    }
+    .icon-size-default .icon-overlay .icon-unify {
+        line-height: 20px;
+        font-size: 18px;
+    }
+    .icon-size-large {
+        height: 48px;
+        width: 48px;
+        line-height: 48px;
+    }
+    .icon-size-large .icon-unify {
+        line-height: 48px;
+        font-size: 42px;
+    }
+    .icon-size-large .icon-overlay .icon-unify {
+        line-height: 30px;
+        font-size: 26px;
+    }
+    .icon-size-mega {
+        height: 64px;
+        width: 64px;
+        line-height: 64px;
+    }
 
-            .card {
-                overflow: hidden;
-            }
-            .card-deck {
-                margin-top: -15px;
-                margin-bottom: -15px;
-            }
-            .card-deck .card {
-                margin: 15px;
-                min-width: 250px;
-            }
-            .card-inverse .icon-color {
-                fill: #dddddd;
-            }
+    .preview {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+        gap: 10px;
+    }
+    .preview + .preview {
+        margin-top: 10px;
+    }
+    .preview-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 128px;
+        width: 100%;
+    }
+    .preview-item[data-color="light"] {
+        color: #212529!important;
+        background-color: #f8f9fa!important;
+    }
+    .preview-item[data-color="dark"] {
+        color: #ffffff!important;
+        background-color: #343a40!important;
+    }
+    .preview-item[data-size]::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: .25rem .5rem;
+        background-color: rgba(0,0,0,0.05);
+        content: attr(data-size);
+        font-size: 10px;
+        border-radius: 0 4px 0 4px;
+    }
+
+    .icongrid {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+        gap: 10px;
+    }
+    .icongrid-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 96px;
+        width: 100%;
+        color: inherit;
+    }
+    .icongrid-item:hover,
+    .icongrid-item:focus {
+        box-shadow: 0 0 0 2px currentColor;
+        outline: none;
+        color: inherit;
+    }
+
+    .section + .section {
+        margin-top: 3.5rem;
+    }
+
+    .card {
+        overflow: hidden;
+    }
+    .card-deck {
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+    .card-deck .card {
+        margin: 15px;
+        min-width: 250px;
+    }
+    .card-inverse .icon-color {
+        fill: #dddddd;
+    }
 
 
-            .card-group-element {
-                margin: -10px;
-                display: flex;
-                flex-wrap: wrap
-            }
-            .card-group-element-item {
-                width: 100%;
-                padding: 10px
-            }
-            .card-group-element-item .card {
-                height: 100%
-            }
-            .card-group-element-align-left {
-                justify-content: flex-start
-            }
-            .card-group-element-align-center {
-                justify-content: center
-            }
-            .card-group-element-align-right {
-                justify-content: flex-end
-            }
-            @media (min-width: 576px) {
-                .card-group-element-columns-2 .card-group-element-item {
-                    width:calc(100% / 2)
-                }
-            }
-            @media (min-width: 768px) {
-                .card-group-element-columns-3 .card-group-element-item {
-                    width:calc(100% / 3)
-                }
-            }
-            @media (min-width: 576px) {
-                .card-group-element-columns-4 .card-group-element-item {
-                    width:calc(100% / 2)
-                }
-            }
-            @media (min-width: 1200px) {
-                .card-group-element-columns-4 .card-group-element-item {
-                    width:calc(100% / 4)
-                }
-            }
+    .card-group-element {
+        margin: -10px;
+        display: flex;
+        flex-wrap: wrap
+    }
+    .card-group-element-item {
+        width: 100%;
+        padding: 10px
+    }
+    .card-group-element-item .card {
+        height: 100%
+    }
+    .card-group-element-align-left {
+        justify-content: flex-start
+    }
+    .card-group-element-align-center {
+        justify-content: center
+    }
+    .card-group-element-align-right {
+        justify-content: flex-end
+    }
+    @media (min-width: 576px) {
+        .card-group-element-columns-2 .card-group-element-item {
+            width:calc(100% / 2)
+        }
+    }
+    @media (min-width: 768px) {
+        .card-group-element-columns-3 .card-group-element-item {
+            width:calc(100% / 3)
+        }
+    }
+    @media (min-width: 576px) {
+        .card-group-element-columns-4 .card-group-element-item {
+            width:calc(100% / 2)
+        }
+    }
+    @media (min-width: 1200px) {
+        .card-group-element-columns-4 .card-group-element-item {
+            width:calc(100% / 4)
+        }
+    }
 
-        </style>
-    </head>
-    <body>
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        padding: 56px 0 0;
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    }
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 56px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+        .sidebar-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
+    .sidebar .nav-link.active {
+        color: #007bff;
+    }
+</style>
+</head>
+<body>
 
-        <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">@typo3/icons</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mainnav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="action.html">Action</a></li>
-                        <li class="nav-item"><a class="nav-link" href="apps.html">Apps</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="content.html">Content</a></li>
-                        <li class="nav-item"><a class="nav-link" href="files.html">Files</a></li>
-                        <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
-                        <li class="nav-item"><a class="nav-link" href="install.html">Install</a></li>
-                        <li class="nav-item"><a class="nav-link" href="mimetypes.html">Mimetypes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="module.html">Module</a></li>
-                        <li class="nav-item"><a class="nav-link" href="overlay.html">Overlay</a></li>
-                        <li class="nav-item"><a class="nav-link" href="misc.html">Misc</a></li>
-                    </ul>
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
+        <a class="navbar-brand" href="index.html">@typo3/icons</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" id="mainnav">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                                                    <li class="nav-item"><a class="nav-link" href="/actions.html">Actions</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/apps.html">Apps</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/avatar.html">Avatar</a></li>
+                                                    <li class="nav-item"><a class="nav-link active" href="/content.html">Content</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/default.html">Default</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/files.html">Files</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/form.html">Form</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/information.html">Information</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/install.html">Install</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/mimetypes.html">Mimetypes</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/miscellaneous.html">Miscellaneous</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/module.html">Module</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/modulegroup.html">Modulegroup</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/overlay.html">Overlay</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/spinner.html">Spinner</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="/status.html">Status</a></li>
+                                            </ul>
                 </div>
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4" role="main">
+                <div style="max-width: 1110px; margin: 0 auto;">
+                    
+    <nav>
+        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
+            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+            <li class="breadcrumb-item">Content</li>
+        </ul>
+    </nav>
+
+    <h1 class="h2 mb-4">
+        Content
+        <small class="text-muted">86</small>
+    </h1>
+    <div class="icongrid">
+                    <a class="icongrid-item bg-light" href="content/content-accordion.html" title="content-accordion">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#CCC" d="M2 2h12v12H2z"/><path fill="#999" d="M13 3v10H3V3h10m1-1H2v12h12V2z"/><path fill="#FFF" d="M1 5h14v6H1z"/><path fill="#666" d="M14 6v4H2V6m13-1H1v6h14V5z"/><path fill="#CCC" d="M4 7h8v2H4z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-audio.html" title="content-audio">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#323232" d="M8 1C4.1 1 1 4.1 1 8s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zm0 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/><g fill="#FFF" opacity=".15"><path d="M9.9 7.5c.1.2.1.3.1.5 0 1.1-.9 2-2 2-.2 0-.3 0-.5-.1l3.1 4.5c1.7-.7 3.1-2.1 3.8-3.8L9.9 7.5zM6 8c0-1.1.9-2 2-2 .2 0 .3 0 .5.1L5.4 1.5c-1.8.7-3.2 2.1-3.9 3.9L6 8.5V8z"/></g><path fill="#1A1A1A" d="M8 2c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6m0-1C4.1 1 1 4.1 1 8s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"/><path fill="#1E1E1E" d="M8 7c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1m0-1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-above-center.html" title="content-beside-text-img-above-center">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><g><path fill="#59F" d="M5 3h6v6H5V3z"/><path fill="#FFF" d="M9 8H6l.75-1 .75-1 .75 1L9 8z"/><path fill="#FFF" d="M10 8H7.333L8 7.333l.667-.666.666.666L10 8z"/><circle cx="9.5" cy="5.5" r=".5" fill="#FFF"/></g><g><path fill="#B9B9B9" d="M3 12h10v1H3z"/><path fill="#666" d="M3 10h10v1H3z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-above-left.html" title="content-beside-text-img-above-left">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><g><path fill="#59F" d="M3 3h6v6H3V3z"/><path fill="#FFF" d="M7 8H4l.75-1 .75-1 .75 1L7 8z"/><path fill="#FFF" d="M8 8H5.333L6 7.333l.667-.666.666.666L8 8z"/><circle cx="7.5" cy="5.5" r=".5" fill="#FFF"/></g><g><path fill="#B9B9B9" d="M3 12h10v1H3z"/><path fill="#666" d="M3 10h10v1H3z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-above-right.html" title="content-beside-text-img-above-right">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><g><path fill="#59F" d="M7 3h6v6H7V3z"/><path fill="#FFF" d="M11 8H8l.75-1 .75-1 .75 1L11 8z"/><path fill="#FFF" d="M12 8H9.333L10 7.333l.667-.666.666.666L12 8z"/><circle cx="11.5" cy="5.5" r=".5" fill="#FFF"/></g><g><path fill="#B9B9B9" d="M3 12h10v1H3z"/><path fill="#666" d="M3 10h10v1H3z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-below-center.html" title="content-beside-text-img-below-center">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><g><path fill="#59F" d="M5 7h6v6H5V7z"/><path fill="#FFF" d="M9 12H6l.75-1 .75-1 .75 1L9 12z"/><path fill="#FFF" d="M10 12H7.333L8 11.333l.667-.666.666.666L10 12z"/><circle cx="9.5" cy="9.5" r=".5" fill="#FFF"/></g><g><path fill="#B9B9B9" d="M3 5h10v1H3z"/><path fill="#666" d="M3 3h10v1H3z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-below-left.html" title="content-beside-text-img-below-left">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><g><path fill="#59F" d="M3 7h6v6H3V7z"/><path fill="#FFF" d="M7 12H4l.75-1 .75-1 .75 1L7 12z"/><path fill="#FFF" d="M8 12H5.333L6 11.333l.667-.666.666.666L8 12z"/><circle cx="7.5" cy="9.5" r=".5" fill="#FFF"/></g><g><path fill="#B9B9B9" d="M3 5h10v1H3z"/><path fill="#666" d="M3 3h10v1H3z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-below-right.html" title="content-beside-text-img-below-right">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><g><path fill="#59F" d="M7 7h6v6H7V7z"/><path fill="#FFF" d="M11 12H8l.75-1 .75-1 .75 1 .75 1z"/><path fill="#FFF" d="M12 12H9.333l.667-.667.667-.666.666.666L12 12z"/><circle cx="11.5" cy="9.5" r=".5" fill="#FFF"/></g><g><path fill="#B9B9B9" d="M3 5h10v1H3z"/><path fill="#666" d="M3 3h10v1H3z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-centered-left.html" title="content-beside-text-img-centered-left">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><path fill="#59F" d="M3 5h6v6H3V5z"/><path fill="#FFF" d="M7 10H4l.8-1 .8-1 .8 1 .6 1z"/><path fill="#FFF" d="M8 10H5.3l.7-.7.7-.7.7.7.6.7z"/><circle cx="7.5" cy="7.5" r=".5" fill="#FFF"/><path fill="#B9B9B9" d="M10 5h3v1h-3zm0 2h3v1h-3zm0 2h3v1h-3zm0 2h3v1h-3z"/><path fill="#666" d="M10 3h3v1h-3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-centered-right.html" title="content-beside-text-img-centered-right">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><path fill="#59F" d="M7 5h6v6H7V5z"/><path fill="#FFF" d="M11 10H8l.8-1 .8-1 .8 1 .6 1z"/><path fill="#FFF" d="M12 10H9.3l.7-.7.7-.7.7.7.6.7z"/><circle cx="11.5" cy="7.5" r=".5" fill="#FFF"/><path fill="#B9B9B9" d="M3 5h3v1H3zm0 2h3v1H3zm0 2h3v1H3zm0 2h3v1H3z"/><path fill="#666" d="M3 3h3v1H3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-left.html" title="content-beside-text-img-left">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><g><path fill="#59F" d="M3 3h6v6H3V3z"/><path fill="#FFF" d="M7 8H4l.75-1 .75-1 .75 1L7 8z"/><path fill="#FFF" d="M8 8H5.333L6 7.333l.667-.666.666.666L8 8z"/><circle cx="7.5" cy="5.5" r=".5" fill="#FFF"/></g><g><path fill="#B9B9B9" d="M10 5h3v1h-3zM10 7h3v1h-3zM10 9h3v1h-3zM10 11h3v1h-3z"/><path fill="#666" d="M10 3h3v1h-3z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-beside-text-img-right.html" title="content-beside-text-img-right">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><g><path fill="#59F" d="M7 3h6v6H7V3z"/><path fill="#FFF" d="M11 8H8l.75-1 .75-1 .75 1L11 8z"/><path fill="#FFF" d="M12 8H9.333L10 7.333l.667-.666.666.666L12 8z"/><circle cx="11.5" cy="5.5" r=".5" fill="#FFF"/></g><g><path fill="#B9B9B9" d="M3 5h3v1H3zM3 7h3v1H3zM3 9h3v1H3zM3 11h3v1H3z"/><path fill="#666" d="M3 3h3v1H3z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-book.html" title="content-book">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#9F6358" d="M3 1h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3V1z"/><path fill="#6F453D" d="M12 2v12H4V2h8m0-1H3v14h9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/><path fill="#BC928A" d="M10.75 6h-5.5A.25.25 0 0 1 5 5.75v-2.5A.25.25 0 0 1 5.25 3h5.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25z"/><path fill="#53342E" d="M3 1h1v14H3z"/><path fill="#402823" d="M11 11h2v2h-2z"/><path fill="#BC928A" d="M5 12h2v1H5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-briefcase.html" title="content-briefcase">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#666" d="M10 3c.6 0 1 .4 1 1v1H5V4c0-.6.4-1 1-1h4m0-1H6c-1.1 0-2 .9-2 2v1c0 .6.4 1 1 1h6c.6 0 1-.4 1-1V4c0-1.1-.9-2-2-2z"/><path fill="#9F6358" d="M1 4h14v10H1z"/><path fill="#6F453D" d="M14 5v8H2V5h12m1-1H1v10h14V4z"/><path fill="#BC928A" d="M11 9H5L1 4h14z"/><path fill="#6F453D" d="M12.9 5l-2.4 3h-5L3.1 5h9.8M15 4H1l4 5h6l4-5z"/><path fill="#402823" d="M6 8h1v2H6zM9 8h1v2H9z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-bullets.html" title="content-bullets">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#666" d="M3 3h10v2H3V3z"/><path fill="#FF8700" d="M3 6h1v1H3V6zm0 2h1v1H3V8zm0 2h1v1H3v-1zm0 2h1v1H3v-1z"/><path fill="#B9B9B9" d="M5 6h8v1H5V6zm0 2h8v1H5V8zm0 2h8v1H5v-1zm0 2h8v1H5v-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-card-group.html" title="content-card-group">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M2 1h8v12H2z"/><path fill="#CACACA" d="M2 1h8v6H2V1z"/><path fill="#FFF" d="M7 6H4l.8-1 .8-1 .8 1L7 6z" opacity=".5"/><path fill="#FFF" d="M8 6H5.3l.7-.7.7-.7.7.7.6.7z" opacity=".5"/><circle cx="7.5" cy="3.5" r=".5" fill="#FFF" opacity=".5"/><path fill="#B9B9B9" d="M4 9h2v1H4zm0-1h4v1H4z"/><path fill="#999" d="M2 1v12h8V1H2zm7 11H3V2h6v10z"/><path fill="#FFF" d="M6 3h8v12H6z"/><path fill="#59F" d="M6 3h8v6H6V3z"/><path fill="#FFF" d="M11 8H8l.8-1 .8-1 .8 1 .6 1z" opacity=".5"/><path fill="#FFF" d="M12 8H9.3l.7-.7.7-.7.7.7.6.7z" opacity=".5"/><circle cx="11.5" cy="5.5" r=".5" fill="#FFF" opacity=".5"/><path fill="#B9B9B9" d="M8 11h2v1H8zm0-1h4v1H8z"/><path fill="#666" d="M6 3v12h8V3H6zm7 11H7V4h6v10z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-card.html" title="content-card">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 2h8v12H4z"/><path fill="#59F" d="M4 2h8v6H4V2z"/><path fill="#FFF" d="M9 7H6l.8-1 .8-1 .8 1L9 7z" opacity=".5"/><path fill="#FFF" d="M10 7H7.3l.7-.7.7-.7.7.7.6.7z" opacity=".5"/><circle cx="9.5" cy="4.5" r=".5" fill="#FFF" opacity=".5"/><path fill="#B9B9B9" d="M6 10h2v1H6zm0-1h4v1H6z"/><path fill="#666" d="M4 2v12h8V2H4zm7 11H5V3h6v10z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-carousel-header.html" title="content-carousel-header">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#CCC" d="M1 3h14v10H1z"/><path fill="#999" d="M14 4v8H2V4h12m1-1H1v10h14V3z"/><path fill="#FFF" d="M3 2h10v12H3z"/><path fill="#666" d="M12 3v10H4V3h8m1-1H3v12h10V2z"/><path fill="#CCC" d="M5 7h6v1H5z"/><path fill="#666" d="M5 4h6v2H5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-carousel-html.html" title="content-carousel-html">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#CCC" d="M1 3h14v10H1z"/><path fill="#999" d="M14 4v8H2V4h12m1-1H1v10h14V3z"/><path fill="#FFF" d="M3 2h10v12H3z"/><path fill="#666" d="M12 3v10H4V3h8m1-1H3v12h10V2z"/><path fill="#F16529" d="M5 8.4v-.8l2-2.1v1.1L5.8 8 7 9.4v1.1L5 8.4zm6 0l-2 2.1V9.4L10.2 8 9 6.6V5.5l2 2.1v.8z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-carousel-image.html" title="content-carousel-image">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#CCC" d="M1 3h14v10H1z"/><path fill="#999" d="M14 4v8H2V4h12m1-1H1v10h14V3z"/><path fill="#FFF" d="M3 2h10v12H3z"/><path fill="#666" d="M12 3v10H4V3h8m1-1H3v12h10V2z"/><g><path fill="#59F" d="M5 4h6v8H5V4z"/><path fill="#E9F2FF" d="M11 5.7c-.1-.1-.3-.2-.5-.2-.6 0-1 .4-1 1s.4 1 1 1c.2 0 .4-.1.5-.2V5.7zM9.5 9l-2 3H11v-1z"/><path fill="#ACF" d="M5 9.8V12h4.5l-3-4.5z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-carousel-item-calltoaction.html" title="content-carousel-item-calltoaction">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#CCC" d="M1 3h14v10H1z"/><path fill="#999" d="M14 4v8H2V4h12m1-1H1v10h14V3z"/><path fill="#FFF" d="M3 2h10v12H3z"/><path fill="#666" d="M12 3v10H4V3h8m1-1H3v12h10V2z"/><path fill="#666" d="M5 4h6v2H5z"/><path fill="#59F" d="M5 11h3v1H5v-1z"/><path fill="#CCC" d="M5 7h6v1H5zm0 2h6v1H5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-carousel-item-textandimage.html" title="content-carousel-item-textandimage">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#CCC" d="M1 3h14v10H1V3z"/><path fill="#999" d="M14 4v8H2V4h12m1-1H1v10h14V3z"/><path fill="#FFF" d="M3 2h10v12H3V2z"/><path fill="#666" d="M12 3v10H4V3h8m1-1H3v12h10V2z"/><path fill="#666" d="M5 4h6v1H5V4z"/><g><path fill="#59F" d="M5 6h6v6H5V6z"/><path fill="#E9F2FF" d="M11 6.7c-.1-.1-.3-.2-.5-.2-.6 0-1 .4-1 1s.4 1 1 1c.2 0 .4-.1.5-.2V6.7zM9.5 9l-2 3H11v-1z"/><path fill="#ACF" d="M5 9.8V12h4.5l-3-4.5z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-carousel.html" title="content-carousel">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#CCC" d="M1 3h14v10H1z"/><path fill="#999" d="M14 4v8H2V4h12m1-1H1v10h14V3z"/><path fill="#FFF" d="M3 2h10v12H3z"/><path fill="#666" d="M12 3v10H4V3h8m1-1H3v12h10V2z"/><path fill="#CCC" d="M5 7h6v1H5zM5 9h6v1H5zM5 11h6v1H5z"/><path fill="#666" d="M5 4h6v2H5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-clock.html" title="content-clock">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M8 1C4.1 1 1 4.1 1 8s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"/><path fill="#B9B9B9" d="M9.2 7.5l4.1-4.1c-.1-.1-.2-.3-.3-.4-.1-.1-.2-.2-.4-.3L8.5 6.8V1h-1v5.8L3.4 2.7l-.7.7 4.1 4.1H1v1h5.8l-4.1 4.1c.2.3.5.5.7.7l4.1-4.1V15h1V9.2l4.1 4.1c.3-.2.5-.5.7-.7L9.2 8.5H15V8v-.5H9.2z"/><circle cx="8" cy="8" r="5" fill="#FFF"/><path fill="#515151" d="M8 2c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6m0-1C4.1 1 1 4.1 1 8s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"/><path fill="#C83C3C" d="M7.7 7.2l.7 1.6 3.1-1.6c-.1-.3-.2-.6-.4-.9l-3.4.9z"/><path fill="#515151" d="M4.7 5.4l2.7 3.2 1.2-1.2-3.2-2.7c-.3.2-.5.4-.7.7z"/><path fill="#515151" d="M8 7.1c-.5 0-.9.4-.9.9s.4.9.9.9.9-.4.9-.9-.4-.9-.9-.9z"/><circle cx="8" cy="8" r=".5" fill="#FFF"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-coffee.html" title="content-coffee">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#9F6358" d="M12 15H4L2.5 3h11z"/><path fill="#FFF" d="M12 12H4L3 6h10z" opacity=".3"/><path fill="#6F453E" d="M12.4 4l-1.3 10H4.9L3.6 4h8.8m1.1-1h-11L4 15h8l1.5-12z"/><circle cx="8" cy="9" r="2.5" fill="#FFF"/><path fill="#212121" d="M2 3h12v1H2z"/><path fill="#333" d="M4 1h8v2H4z"/><ellipse cx="8" cy="9" fill="#9F6358" rx="1.5" ry="1" transform="rotate(-70.001 8 9)"/><path fill="#FFF" d="M8.761 6.616l.282.103-1.71 4.699-.282-.103z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-csv.html" title="content-csv">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#45B058" d="M1 1h14v14H1V1z"/><path d="M1 1v14h14V1H1zm1 1h12v12H2V2z" opacity=".2"/><path fill="#FFF" d="M3 3h10v2H3V3z"/><path fill="#FFF" d="M7 6h2v1H7V6zm0 2h2v1H7V8zm0 2h2v1H7v-1zm0 2h2v1H7v-1zm3-6h3v1h-3V6zm0 2h3v1h-3V8zm0 2h3v1h-3v-1zm0 2h3v1h-3v-1zM3 6h3v1H3V6zm0 2h3v1H3V8zm0 2h3v1H3v-1zm0 2h3v1H3v-1z" opacity=".5"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-dashboard-empty.html" title="content-dashboard-empty">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M6 1h7v3H6z"/><path fill="#BBB" d="M10 1H6v3h7V1h-3zM9 3H7V2h2v1zm3 0h-2V2h2v1z"/><path fill="#FFF" d="M1 1h6v2h8v12H1V1z"/><path fill="#999" d="M6 2v2h8v10H2V2h4m1-1H1v14h14V3H7V1z"/><path fill="#EAEAEA" d="M13 5H3v8h10z"/><path fill="#999" d="M13 5h-2v1h2zM9 12H8v1h1zM7 12H6v1h1zM4 8H3v1h1zM5 12H3v1h2zM4 10H3v1h1zM4 5H3v2h1zM6 5H5v1h1zM8 5H7v1h1zM10 5H9v1h1zM13 11h-1v2h1zM11 12h-1v1h1zM13 7h-1v1h1zM13 9h-1v1h1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-dashboard.html" title="content-dashboard">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M6 1h7v3H6z"/><path fill="#BBB" d="M10 1H6v3h7V1h-3zM9 3H7V2h2v1zm3 0h-2V2h2v1z"/><path fill="#FFF" d="M1 1h6v2h8v12H1V1z"/><path fill="#999" d="M6 2v2h8v10H2V2h4m1-1H1v14h14V3H7V1z"/><g><path fill="#B9B9B9" d="M3 11h3v2H3z"/></g><g><path fill="#D9D9D9" d="M3 5h5v5H3z"/></g><g><path fill="#A4276A" d="M8 10H3V9l1.5-1.5 1.5 1L8 6v4z"/></g><g opacity=".5"><path fill="#A4276A" d="M3 3h2v1H3z"/></g><g><path fill="#666" d="M9 5h4v1H9z"/></g><g><path fill="#B9B9B9" d="M9 6h4v4H9z"/></g><g><path fill="#B9B9B9" d="M7 12h4v1H7z"/></g><g><path fill="#666" d="M7 11h6v1H7z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-elements-login.html" title="content-elements-login">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#666" d="M9 2.5c.8 0 1.5.7 1.5 1.5v2c0 .8-.7 1.5-1.5 1.5H7c-.8 0-1.5-.7-1.5-1.5V4c0-.8.7-1.5 1.5-1.5h2M9 1H7C5.3 1 4 2.4 4 4v2c0 1.6 1.3 3 3 3h2c1.6 0 3-1.4 3-3V4c0-1.6-1.4-3-3-3z"/><path fill="#FFC857" d="M2 5h12v10H2z"/><path fill="#E8A33D" d="M13 6v8H3V6h10m1-1H2v10h12V5z"/><path fill="#B3812B" d="M10 9c0-1.1-.9-2-2-2s-2 .9-2 2c0 .7.4 1.4 1 1.7V13h2v-2.3c.6-.3 1-1 1-1.7z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-elements-mailform.html" title="content-elements-mailform">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFE6BB" d="M8 1l7 5v9H1V6l7-5z"/><path fill="#E8A33D" d="M8 2.2l6 4.3V14H2V6.5l6-4.3M8 1L1 6v9h14V6L8 1z"/><path fill="#FFF" d="M3 3h10v10H3z"/><path fill="#666" d="M12 4v8H4V4h8m1-1H3v10h10V3z"/><path fill="#B9B9B9" d="M5 7h6v1H5zM5 5h6v1H5zM5 9h6v1H5z"/><path fill="#FFC857" d="M15 6v9H1V6l7 5 7-5z"/><path fill="#E8A33D" d="M8 11L1 6v9h14V6l-7 5zM2 7.9l3.5 2.5L2 14V7.9zM3.4 14l2.9-2.9L8 12.2 9.6 11l2.9 2.9H3.4zm7.1-3.5L14 7.9V14l-3.5-3.5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-elements-searchform.html" title="content-elements-searchform">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#E8A33D" d="M14.7 13.2l-2.8-2.8c-.4.6-.9 1.1-1.5 1.5l2.8 2.7c.2.2.5.3.8.3.6 0 1.1-.5 1.1-1.1-.1-.2-.2-.4-.4-.6z"/><circle cx="7" cy="7" r="6" fill="#ABD7FF"/><path fill="#59F" d="M7 2.5c2.5 0 4.5 2 4.5 4.5s-2 4.5-4.5 4.5-4.5-2-4.5-4.5 2-4.5 4.5-4.5M7 1C3.7 1 1 3.7 1 7s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z"/><circle cx="8.5" cy="5.5" r="1.5" fill="#FFF" opacity=".6"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-form.html" title="content-form">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><path fill="#B9B9B9" d="M3 3h8v1H3zM3 5h8v1H3zM3 7h10v4H3z"/><path fill="#59F" d="M3 12h4v1H3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-gallery.html" title="content-gallery">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#999" d="M5 1h9v11H5z"/><path fill="#FFF" d="M6 2h7v9H6z"/><g><path fill="#59F" d="M7 3h5v7H7V3z"/><path fill="#E9F2FF" d="M12 3.653a.977.977 0 0 0-.5-.153 1 1 0 0 0 0 2 .977.977 0 0 0 .5-.153V3.653zM11 7l-2 3h3V8.5z"/><path fill="#ACF" d="M7 7v3h4L8 5.5z"/></g><path fill="#666" d="M2 4h9v11H2z"/><path fill="#FFF" d="M3 5h7v9H3z"/><g><path fill="#59F" d="M4 6h5v7H4V6z"/><path fill="#E9F2FF" d="M9 6.653a.977.977 0 0 0-.5-.153 1 1 0 0 0 0 2 .977.977 0 0 0 .5-.153V6.653zM8 10l-2 3h3v-1.5z"/><path fill="#ACF" d="M4 10v3h4L5 8.5z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-header.html" title="content-header">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#666" d="M3 3h10v2H3V3z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-idea.html" title="content-idea">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFC857" d="M13.5 4.5c0 3-2.5 4-2.5 7.5H5c0-3.5-2.5-4.5-2.5-7.5S5 0 8 0s5.5 1.5 5.5 4.5z"/><path fill="#E8A33D" d="M8 1c1.1 0 4.5.3 4.5 3.5 0 1.2-.5 2-1 3-.6 1-1.2 2-1.4 3.5H5.9c-.2-1.5-.8-2.6-1.4-3.5-.6-1-1-1.8-1-3C3.5 1.3 6.9 1 8 1m0-1C5 0 2.5 1.5 2.5 4.5S5 8.5 5 12h6c0-3.5 2.5-4.5 2.5-7.5S11 0 8 0z"/><path fill="#FFC857" d="M8.5 13h-1c-.5 0-1-.4-1-1V6c0-.5.4-1 1-1h1c.5 0 1 .4 1 1v6c0 .6-.4 1-1 1z"/><path fill="#E8A33D" d="M8.5 5.5c.3 0 .5.2.5.5v6c0 .3-.2.5-.5.5h-1c-.3 0-.5-.2-.5-.5V6c0-.3.2-.5.5-.5h1m0-.5h-1c-.6 0-1 .4-1 1v6c0 .6.4 1 1 1h1c.6 0 1-.4 1-1V6c0-.6-.4-1-1-1z"/><path fill="#AAA" d="M10 16H6c-.6 0-1-.4-1-1v-3c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v3c0 .6-.4 1-1 1z"/><path fill="#666" d="M10 12v3H6v-3h4m0-1H6c-.6 0-1 .4-1 1v3c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-3c0-.6-.4-1-1-1z"/><path fill="#666" d="M5 13h6v1H5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-image.html" title="content-image">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#59F" d="M1 2h14v12H1V2z"/><path d="M14 3v10H2V3h12m1-1H1v12h14V2z" opacity=".2"/><path fill="#E9F2FF" d="M11 8.7L7 13h7v-1.4z"/><path fill="#ACF" d="M2 9.8V13h9L5 6.5z"/><circle cx="11" cy="6" r="1" fill="#FFF"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-info.html" title="content-info">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#6EAADD" d="M8 1c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7z"/><path fill="#4E789A" d="M8 2c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6m0-1C4.1 1 1 4.1 1 8s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"/><path fill="#FFF" d="M10 11H9V7H6.5v1H7v3H6v1h4zM7 4h2v2H7z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-inside-text-img-left.html" title="content-inside-text-img-left">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><path fill="#59F" d="M3 3h6v6H3V3z"/><path fill="#FFF" d="M7 8H4l.8-1 .8-1 .8 1L7 8z"/><path fill="#FFF" d="M8 8H5.3l.7-.7.7-.7.7.7.6.7z"/><circle cx="7.5" cy="5.5" r=".5" fill="#FFF"/><path fill="#B9B9B9" d="M10 6h3v1h-3zM10 8h3v1h-3zM3 10h10v1H3zM3 12h10v1H3z"/><path fill="#666" d="M10 3h3v2h-3V3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-inside-text-img-right.html" title="content-inside-text-img-right">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M14 2v12H2V2h12m1-1H1v14h14V1z"/><path fill="#59F" d="M7 3h6v6H7V3z"/><path fill="#FFF" d="M11 8H8l.8-1 .8-1 .8 1 .6 1z"/><path fill="#FFF" d="M12 8H9.3l.7-.7.7-.7.7.7.6.7z"/><circle cx="11.5" cy="5.5" r=".5" fill="#FFF"/><path fill="#B9B9B9" d="M3 6h3v1H3zM3 8h3v1H3zM3 10h10v1H3zM3 12h10v1H3z"/><path fill="#666" d="M3 3h3v2H3V3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-listgroup.html" title="content-listgroup">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 2h14v12H1V2z"/><path fill="#999" d="M1 2v12h14V2H1zm1 1h12v10H2V3z"/><path fill="#6F5499" d="M3 4h2v2H3z"/><path fill="#B9B9B9" d="M6 4h7v2H6z"/><path fill="#6F5499" d="M3 7h2v2H3z"/><path fill="#B9B9B9" d="M6 7h7v2H6z"/><path fill="#6F5499" d="M3 10h2v2H3z"/><path fill="#B9B9B9" d="M6 10h7v2H6z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-map.html" title="content-map">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#59F" d="M1 1v12l4 2 5-2 5 2V3l-5-2-5 2z"/><path fill="#79A548" d="M1 1v8l4 2 5-2 5 2V3l-5-2-5 2z"/><path fill="#EFEFEF" d="M15 9.5l-4.3-1.7-4.1-5.4L10 1l5 2z"/><path fill="#CECECE" d="M15 8.5L11.3 7 7.6 2 10 1l5 2z"/><path fill="#FFC857" d="M10 9.5l-5 2v-2l5-2zM1 9.5l4 2v-2l-4-2zM10 9.5l5 2v-2l-5-2z"/><path fill="#FFC857" d="M12.9 10.7L10 9.5 5 3l1.6-.6z"/><path d="M10 13l-5 2V3l5-2z" opacity=".15"/><path d="M10 2.1l4 1.6v9.8L10.4 12l-.4-.1-.4.1L5 13.9l-3-1.5V2.6l2.6 1.3.4.2.4-.2L10 2.1M10 1L5 3 1 1v12l4 2 5-2 5 2V3l-5-2z" opacity=".3"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-marker.html" title="content-marker">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#C83C3C" d="M13 6c0 2.8-3 9-5 9S3 8.8 3 6s2.2-5 5-5 5 2.2 5 5z"/><path d="M8 2c2.2 0 4 1.8 4 4 0 2.8-3 8-4 8S4 8.8 4 6c0-2.2 1.8-4 4-4m0-1C5.2 1 3 3.2 3 6s3 9 5 9 5-6.2 5-9-2.2-5-5-5z" opacity=".2"/><circle cx="8" cy="6" r="2" fill="#FFF"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-media.html" title="content-media">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#639" d="M1 2h14v12H1V2z"/><path d="M14 3v10H2V3h12m1-1H1v12h14V2z" opacity=".2"/><path fill="#FFF" d="M6 10.5v-5l2.5 1.25L11 8 8.5 9.25 6 10.5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-abstract.html" title="content-menu-abstract">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#B9B9B9" d="M5 9h8v1H5zM5 3h8v1H5zM5 5h8v3H5zM5 11h8v2H5z"/><path fill="#FF8700" d="M3 3h1v5H3zM3 9h1v4H3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-card.html" title="content-menu-card">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M2 1h12v14H2V1z"/><path fill="#999" d="M2 1v14h12V1H2zm1 1h10v12H3V2z"/><path fill="#CCC" d="M4 8h2v2H4z"/><path fill="#666" d="M4 3h8v1H4z"/><path fill="#CCC" d="M4 5h2v2H4zM4 11h2v2H4z"/><path fill="#FFF" d="M7 5h8v11H7z"/><path fill="#59F" d="M7 5h8v6H7V5z"/><path fill="#FFF" d="M12 10H9l1.6-2 1.4 2z" opacity=".5"/><path fill="#FFF" d="M13 10h-2.7l1.4-1.4L13 10z" opacity=".5"/><circle cx="12.5" cy="7.5" r=".5" fill="#FFF" opacity=".5"/><path fill="#B9B9B9" d="M9 13h2v1H9zM9 12h4v1H9z"/><path fill="#666" d="M7 5v11h8V5H7zm7 10H8V6h6v9z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-categorized.html" title="content-menu-categorized">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#999" d="M3 6h10v1H3zM3 8h2v1H3zM3 10h2v1H3zM3 12h2v1H3z"/><path fill="#666" d="M3 3h10v2H3z"/><path fill="#FF8700" d="M7.5 8L6 9v4h3V9z"/><circle cx="7.5" cy="9.5" r=".5" fill="#FFF"/><path fill="#59F" d="M11.5 8L10 9v4h3V9z"/><circle cx="11.5" cy="9.5" r=".5" fill="#FFF"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-pages.html" title="content-menu-pages">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#B9B9B9" d="M6 3h7v2H6z"/><path fill="#FF8700" d="M3 3h2v2H3z"/><path fill="#B9B9B9" d="M6 6h7v1H6z"/><path fill="#FF8700" d="M4 6h1v1H4z"/><path fill="#B9B9B9" d="M8 8h5v1H8z"/><path fill="#FF8700" d="M6 8h1v1H6z"/><path fill="#B9B9B9" d="M8 10h5v1H8z"/><path fill="#FF8700" d="M6 10h1v1H6z"/><path fill="#B9B9B9" d="M8 12h5v1H8z"/><path fill="#FF8700" d="M6 12h1v1H6z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-recently-updated.html" title="content-menu-recently-updated">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#B9B9B9" d="M5 10h8v1H5z"/><path fill="#FF8700" d="M3 10h1v1H3z"/><path fill="#B9B9B9" d="M5 12h8v1H5z"/><path fill="#59F" d="M5 7h6v1H5z"/><path fill="#59F" d="M5 4h1v4H5zM10 4h1v4h-1z"/><path fill="#59F" d="M9 4h2v1H9zM7 4.5L9 3v3z"/><path fill="#FF8700" d="M3 12h1v1H3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-related.html" title="content-menu-related">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path fill="#59F" d="M1 10h6v5H1z"/><path d="M1 10v5h6v-5H1zm5 4H2v-3h4v3z" opacity=".2"/><path fill="#FFF" d="M3 12h2v1H3v-1z"/></g><g><path fill="#639" d="M9 10h6v5H9z"/><path d="M9 10v5h6v-5H9zm5 4h-4v-3h4v3z" opacity=".2"/><path fill="#FFF" d="M11 12h2v1h-2v-1z"/></g><g><g><path fill="#999" d="M4 1h8v8H4z"/><path fill="#FFF" d="M5 2h6v6H5z"/><path fill="#515151" d="M6 3h4v2H6V3z"/><path fill="#B9B9B9" d="M6 6h4v1H6z"/></g></g><path d="M1 3h1v1H1zM3 3h1v1H3zM1 5h1v1H1zM1 7h1v1H1zM14 3h1v1h-1zM12 3h1v1h-1zM14 5h1v1h-1zM14 7h1v1h-1zM1 9h1v1H1zM14 9h1v1h-1z" opacity=".2"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-section.html" title="content-menu-section">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" x="0" y="0" version="1.1" viewBox="0 0 16 16" xml:space="preserve"><style>.st2{fill:#b9b9b9}.st4{fill:#ff8700}</style><path fill="#fff" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path d="M5 12h8v1H5zM5 6h8v1H5zM7 8h6v1H7zM7 10h6v1H7v-1z" class="st2"/><path fill="#666" d="M3 3h10v2H3V3z"/><path d="M3 6h1v1H3zM5 8h1v1H5zM5 10h1v1H5zM3 12h1v1H3z" class="st4"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-sitemap-pages.html" title="content-menu-sitemap-pages">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#639" d="M1 11h4v4H1v-4z"/><path d="M4 12v2H2v-2h2m1-1H1v4h4v-4z" opacity=".25"/><path fill="#59F" d="M6 11h4v4H6v-4z"/><path d="M9 12v2H7v-2h2m1-1H6v4h4v-4z" opacity=".25"/><path fill="#59F" d="M11 11h4v4h-4v-4z"/><path d="M14 12v2h-2v-2h2m1-1h-4v4h4v-4z" opacity=".25"/><g><path fill="#999" d="M1 2h9v8H1z"/><path fill="#FFF" d="M2 3h7v6H2z"/><path fill="#515151" d="M3 4h5v2H3V4z"/><path fill="#B9B9B9" d="M3 7h5v1H3z"/></g><g><path fill="#999" d="M6 1h9v9H6z"/><path fill="#FFF" d="M7 2h7v7H7z"/><path fill="#515151" d="M8 3h5v2H8V3z"/><path fill="#B9B9B9" d="M8 6h5v1H8z"/></g><path fill="#999" d="M2.5 10h1v1h-1zM7.5 10h1v1h-1zM12.5 10h1v1h-1z" opacity=".5"/><path fill="#FFF" d="M5 2h1v8H5z" opacity=".75"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-sitemap.html" title="content-menu-sitemap">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#59F" d="M3 11h4v4H3v-4z"/><path d="M6 12v2H4v-2h2m1-1H3v4h4v-4z" opacity=".25"/><path fill="#59F" d="M9 11h4v4H9v-4z"/><path d="M12 12v2h-2v-2h2m1-1H9v4h4v-4z" opacity=".25"/><path fill="#999" d="M4.5 10h1v1h-1zM10.5 10h1v1h-1z" opacity=".5"/><g><path fill="#999" d="M3 1h10v9H3z"/><path fill="#FFF" d="M4 2h8v7H4z"/><path fill="#515151" d="M5 3h6v2H5V3z"/><path fill="#B9B9B9" d="M5 6h6v1H5z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-menu-thumbnail.html" title="content-menu-thumbnail">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M2 1h12v14H2z"/><path fill="#666" d="M13 2v12H3V2m11-1H2v14h12V1z"/><path fill="#CCC" d="M4 5h2v2H4zM7 5h2v2H7zM10 5h2v2h-2zM4 8h2v2H4zM7 8h2v2H7zM10 8h2v2h-2zM4 11h2v2H4zM7 11h2v2H7zM10 11h2v2h-2z"/><path fill="#666" d="M4 3h8v1H4z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-news.html" title="content-news">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M14 3V1H2v14h14V3h-2z"/><path fill="#999" d="M14 3V1H2v14h14V3h-2zm1 11H3V2h10v11h1V4h1v10z"/><path fill="#333" d="M4 3h8v1H4V3z"/><path fill="#59F" d="M4 5h3v3H4V5z"/><path fill="#AAA" d="M4 9h3v1H4V9zm4 0h4v1H8V9zm-4 2h3v1H4v-1zm4 0h4v1H8v-1zm0-4h4v1H8V7zm0-2h4v1H8V5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-panel.html" title="content-panel">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 2h14v12H1z"/><path fill="#666" d="M14 13H2V4h12m1-2H1v12h14V2z"/><path fill="#CCC" d="M4 6h8v1H4zM4 8h8v1H4zM4 10h8v1H4z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-plugin.html" title="content-plugin">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#666" d="M14.271 3.18L8.276 1.467 8 1.388l-.276.079L1.729 3.18 1 3.388v9.224l.729.208 5.995 1.713.276.079.276-.079 5.995-1.713.729-.208V3.388z"/><path fill="#AAD400" d="M8 2.433l5.035 1.438L8 5.336 2.945 3.877z"/><path fill="#FFC857" d="M2.004 4.651l5.494 1.585v7.188l-5.494-1.57z"/><path fill="#FF6777" d="M8.502 13.424V6.235l5.494-1.597v7.216z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-quote.html" title="content-quote">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path fill="#FFF" d="M6.3 12.5H2.5v-11h11v11H9.7L8 15.1z"/><path fill="#999" d="M13 2v10H9.5l-.3.4L8 14.2l-1.2-1.8-.3-.4H3V2h10m1-1H2v12h4l2 3 2-3h4V1z"/></g><path fill="#333" d="M4 3h8v2H4z"/><path fill="#B6B6B6" d="M4 6h6v1H4zM4 8h4v1H4z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-special-div.html" title="content-special-div">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#666" d="M4 7h8v2H4V7z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-special-html.html" title="content-special-html">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#F16529" d="M7.25 12L3 8.682V7.318L7.25 4v1.716l-2.975 2.29 2.974 2.278L7.25 12zM13 8.682L8.75 12v-1.716L11.726 8 8.75 5.716V4L13 7.318v1.364z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-special-indexed_search.html" title="content-special-indexed_search">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#E8A33D" d="M14.7 13.2l-2.8-2.8c-.4.6-.9 1.1-1.5 1.5l2.8 2.7c.2.2.5.3.8.3.6 0 1.1-.5 1.1-1.1-.1-.2-.2-.4-.4-.6z"/><circle cx="7" cy="7" r="6" fill="#ABD7FF"/><path fill="#59F" d="M7 2.5c2.5 0 4.5 2 4.5 4.5s-2 4.5-4.5 4.5-4.5-2-4.5-4.5 2-4.5 4.5-4.5M7 1C3.7 1 1 3.7 1 7s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z"/><circle cx="8.5" cy="5.5" r="1.5" fill="#FFF" opacity=".6"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-special-menu.html" title="content-special-menu">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#999" d="M1 1h14v14H1V1z"/><path fill="#FFF" d="M2 2h12v12H2V2z"/><path fill="#79A548" d="M6 4h4v2H6V4z"/><path fill="#FF8700" d="M4 10h3v2H4v-2z"/><path fill="#C83C3C" d="M9 10h3v2H9v-2z"/><path fill="#666" d="M7.5 6h1v3h-1zM5 8h1v2H5zM10 8h1v2h-1z"/><path fill="#666" d="M11 8v1H5V8h6z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-special-shortcut.html" title="content-special-shortcut">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g><path fill="#FFF" d="M1 1v14h7V8h7V1H1z"/><path fill="#999" d="M1 1v14h7v-1H2V2h12v6h1V1H1z"/><path fill="#666" d="M3 3h10v2H3z"/><path fill="#B9B9B9" d="M3 6h10v1H3zM3 8h5v1H3zM3 10h5v1H3zM3 12h5v1H3z"/></g><g><path fill="#666" d="M9 9h7v7H9z"/><path fill="#FFF" d="M10 10h5v5h-5z"/><path d="M11 13.115c0 .082.012.178.036.286.024.107.052.205.083.294.03.088.064.177.102.266.037.088.065.152.085.192l.043.085c.011.024.031.036.06.036a.078.078 0 0 0 .019-.002c.036-.011.052-.036.049-.072-.061-.568.014-.969.226-1.204a.882.882 0 0 1 .364-.234c.151-.057.34-.094.569-.113v.535c0 .06.028.102.083.126a.148.148 0 0 0 .053.011c.038 0 .07-.013.096-.04l1.091-1.091c.028-.029.041-.061.041-.098s-.013-.069-.04-.096l-1.091-1.091c-.041-.044-.091-.054-.149-.03a.128.128 0 0 0-.083.126v.558c-.584.04-1.009.197-1.276.471-.241.246-.361.608-.361 1.085z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-special-uploads.html" title="content-special-uploads">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#FFC857" d="M13 8v5H5V7h4l1 1h3z"/><path fill="#E8A33D" d="M13 9H9l-1 1H5V8h8v1z"/><path fill="#FF8700" d="M3 3h1v1H3zM3 5h1v1H3z"/><path fill="#B9B9B9" d="M5 3h8v1H5zM5 5h8v1H5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-store.html" title="content-store">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#B9B9B9" d="M2 6h13v9H2z"/><path fill="#94604C" d="M10 9h3v5h-3z"/><path d="M10 9v5h.5V9.5h2V14h.5V9z" opacity=".2"/><path d="M14 7v7H3V7h11m1-1H2v9h13V6z" opacity=".15"/><path fill="#515151" d="M1 14h15v1H1z"/><g><path fill="#8C8C8C" d="M15.5 7.5h-14L1 7h15z"/><path fill="#C83C3C" d="M16 7H1l1-5h13z"/><g><path fill="#FFF" d="M3 7H2l.9-5h.8z"/></g><g><path fill="#FFF" d="M5 7H4l.6-5h.9z"/></g><g><path fill="#FFF" d="M7 7H6l.3-5h.9z"/></g><g><path fill="#FFF" d="M9 7H8l.1-5h.8z"/></g><g><path fill="#FFF" d="M11 7h-1l-.2-5h.9z"/></g><g><path fill="#FFF" d="M13 7h-1l-.5-5h.9z"/></g><g><path fill="#FFF" d="M15 7h-1l-.7-5h.8z"/></g><path d="M2.7 3h12.5L15 2H2l-.2 1z" opacity=".2"/></g><g><path fill="#59F" d="M4 9h5v4H4z"/><path fill="#515151" d="M8.5 9.5v3h-4v-3h4M9 9H4v4h5V9z"/><g opacity=".2"><path fill="#FFF" d="M4.5 9.5h4v1h-4z"/></g></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-tab-item.html" title="content-tab-item">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFC857" d="M7 4V2H1v12h14V4z"/><path fill="#E8A33D" d="M6 3v2h8v8H2V3h4m1-1H1v12h14V4H7V2z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-tab.html" title="content-tab">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFE3AB" d="M6 2h4v3H6z"/><path fill="#EEBA6E" d="M9 3v1H7V3h2m1-1H6v3h4V2z"/><path fill="#FFE3AB" d="M9 2h4v3H9z"/><path fill="#EEBA6E" d="M12 3v1h-2V3h2m1-1H9v3h4V2z"/><path fill="#FFC857" d="M7 4V2H1v12h14V4z"/><path fill="#E8A33D" d="M6 3v2h8v8H2V3h4m1-1H1v12h14V4H7V2z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-table.html" title="content-table">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#666" d="M3 3h10v2H3V3z"/><path fill="#B9B9B9" d="M7 6h2v1H7V6zM7 8h2v1H7V8zM7 10h2v1H7v-1zM7 12h2v1H7v-1zM10 6h3v1h-3V6zM10 8h3v1h-3V8zM10 10h3v1h-3v-1zM10 12h3v1h-3v-1zM3 6h3v1H3V6zM3 8h3v1H3V8zM3 10h3v1H3v-1zM3 12h3v1H3v-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-target.html" title="content-target">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" fill="#C83C3C"/><circle cx="8" cy="8" r="5" fill="#FFF"/><circle cx="8" cy="8" r="3" fill="#C83C3C"/><circle cx="8" cy="8" r="1" fill="#FFF"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-text-columns.html" title="content-text-columns">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#666" d="M3 3h10v2H3V3z"/><path fill="#B9B9B9" d="M8.5 6H13v1H8.5V6zm0 2H13v1H8.5V8zm0 2H13v1H8.5v-1zm0 2H13v1H8.5v-1zM3 6h4.5v1H3V6zm0 2h4.5v1H3V8zm0 2h4.5v1H3v-1zm0 2h4.5v1H3v-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-text-teaser.html" title="content-text-teaser">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#666" d="M3 3h4.5v2H3V3z"/><path fill="#B9B9B9" d="M3 6h4.5v2H3V6zM8.5 5H13v1H8.5V5zm0 2H13v1H8.5V7zm0 2H13v1H8.5V9zm0 2H13v1H8.5v-1zm0-8H13v1H8.5V3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-text.html" title="content-text">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#666" d="M3 3h10v2H3V3z"/><path fill="#B9B9B9" d="M3 6h10v1H3V6zm0 2h10v1H3V8zm0 2h10v1H3v-1zm0 2h10v1H3v-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-textmedia.html" title="content-textmedia">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#666" d="M3 3h10v1H3V3z"/><path fill="#B9B9B9" d="M3 5h10v1H3V5z"/><path fill="#639" d="M7 7h6v6H7V7z"/><path fill="#B9B9B9" d="M3 7h3v1H3V7zm0 2h3v1H3V9zm0 2h3v1H3v-1z"/><path fill="#FFF" d="M9 11.5v-3l1.3.8 1.3.8-1.3.8-1.3.6z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-textpic.html" title="content-textpic">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M1 1h14v14H1V1z"/><path fill="#999" d="M1 1v14h14V1H1zm1 1h12v12H2V2z"/><path fill="#666" d="M3 3h10v1H3V3z"/><path fill="#B9B9B9" d="M3 5h10v1H3V5z"/><path fill="#59F" d="M7 7h6v6H7V7z"/><path fill="#FFF" d="M11 12H8l.75-1 .75-1 .75 1 .75 1z"/><path fill="#FFF" d="M12 12H9.333l.667-.667.667-.666.666.666L12 12z"/><circle cx="11.5" cy="9.5" r=".5" fill="#FFF"/><path fill="#B9B9B9" d="M3 7h3v1H3V7zm0 2h3v1H3V9zm0 2h3v1H3v-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-timeline-item.html" title="content-timeline-item">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M6 5h7v6H6z"/><path fill="#666" d="M12 6v4H7V6h5m1-1H6v6h7V5z"/><path fill="#59F" d="M7 6h2v4H7z"/><path fill="#999" d="M5 3.5v-1H4V1H3v14h1v-1.5h1v-1H4v-4h1v-1H4v-4zm1-1h1v1H6zm2 0h1v1H8zm2 0h1v1h-1zm-4 10h1v1H6zm2 0h1v1H8zm2 0h1v1h-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-timeline.html" title="content-timeline">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M6 1h7v4H6z"/><path fill="#666" d="M12 2v2H7V2h5m1-1H6v4h7V1z"/><path fill="#FFF" d="M6 6h7v4H6z"/><path fill="#666" d="M12 7v2H7V7h5m1-1H6v4h7V6z"/><path fill="#FFF" d="M6 11h7v4H6z"/><path fill="#666" d="M12 12v2H7v-2h5m1-1H6v4h7v-4z"/><path fill="#59F" d="M7 2h2v2H7zm0 5h2v2H7zm0 5h2v2H7z"/><path fill="#999" d="M5 3.5v-1H4V1H3v14h1v-1.5h1v-1H4v-4h1v-1H4v-4z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-calltoaction.html" title="content-widget-calltoaction">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/><path fill="#59F" d="M8 11h2v1H8z"/><path fill="#B9B9B9" d="M7 7h4v1H7zM7 9h4v1H7z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-chart-bar.html" title="content-widget-chart-bar">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/><path fill="#59F" d="M6 10h2v3H6z"/><path fill="#FFC857" d="M8 6h2v7H8z"/><path fill="#79A548" d="M10 8h2v5h-2z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-chart-pie.html" title="content-widget-chart-pie">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" x="0" y="0" version="1.1" viewBox="0 0 16 16" xml:space="preserve"><style>.st3{fill:#b9b9b9}</style><path fill="#fff" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z" class="st3"/><circle cx="9" cy="10" r="3" fill="#59f"/><path fill="#ffc857" d="M9 10h3c0-1.7-1.3-3-3-3v3z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-chart.html" title="content-widget-chart">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/><path fill="#FFC857" d="M12 13H6v-3l1.875-2 1.875 2L12 7.625V13z"/><path fill="#59F" d="M12 13H6v-1l1.875-2 1.875 2L12 9.625V13z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-image.html" title="content-widget-image">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/><g><path fill="#59F" d="M6 6h6v7H6V6z"/><path fill="#E9F2FF" d="M12 7.153A.977.977 0 0 0 11.5 7a1 1 0 0 0 0 2 .977.977 0 0 0 .5-.153V7.153zM10.5 10l-2 3H12v-1z"/><path fill="#ACF" d="M6 10.75V13h4.5l-3-4.5z"/></g></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-list.html" title="content-widget-list">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1zM8 6h4v1H8V6zm0 2h4v1H8V8zm0 2h4v1H8v-1zm0 2h4v1H8v-1z"/><path fill="#FF8700" d="M6 6h1v1H6V6zm0 2h1v1H6V8zm0 2h1v1H6v-1zm0 2h1v1H6v-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-number.html" title="content-widget-number">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/><path fill="#A4276A" d="M8 7v1h2v1H8v1h2v1H8v1h2.75a.25.25 0 0 0 .25-.25v-4.5a.25.25 0 0 0-.25-.25H8z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-rss.html" title="content-widget-rss">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/><path fill="#FF8700" d="M6 8c2.757 0 5 2.243 5 5h1a6 6 0 0 0-6-6v1z"/><path fill="#FF8700" d="M6 10c1.654 0 3 1.346 3 3h1a4 4 0 0 0-4-4v1zM6.75 13a.75.75 0 0 1 0-1.5.75.75 0 0 1 0 1.5z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-table.html" title="content-widget-table">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/><path fill="#666" d="M6 6h2v1H6z"/><path fill="#B9B9B9" d="M6 8h2v1H6zM6 10h2v1H6zM6 12h2v1H6z"/><path fill="#666" d="M9 6h1v1H9z"/><path fill="#B9B9B9" d="M9 8h1v1H9zM9 10h1v1H9zM9 12h1v1H9z"/><path fill="#666" d="M11 6h1v1h-1z"/><path fill="#B9B9B9" d="M11 8h1v1h-1zM11 10h1v1h-1zM11 12h1v1h-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget-text.html" title="content-widget-text">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/><path fill="#666" d="M6 6h6v1H6z"/><path fill="#B9B9B9" d="M6 8h6v1H6zM6 10h6v1H6zM6 12h6v1H6z"/></svg>
+                        </span>
+                                    </span>
+            </a>
+                    <a class="icongrid-item bg-light" href="content/content-widget.html" title="content-widget">
+                <span class="icon icon-size-default icon-state-default">
+                                            <span class="icon-markup">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#FFF" d="M4 3h10v12H4V3z"/><path fill="#666" d="M4 3v12h10V3H4zm1 1h8v10H5V4z"/><path fill="#999" d="M5 4h8v1H5z"/><path fill="#B9B9B9" d="M2 1h1v1H2zM2 3h1v1H2zM2 5h1v1H2zM2 7h1v1H2zM2 9h1v1H2zM2 11h1v1H2zM4 1h1v1H4zM6 1h1v1H6zM8 1h1v1H8zM10 1h1v1h-1z"/></svg>
+                        </span>
+                                    </span>
+            </a>
             </div>
-        </nav>
 
-        <div class="container py-5">
-            
-        <h3 class="mb-3">
-    Content
-    <small class="text-muted">86</small>
-</h3>
-    <div class="table-responsive">
-    <table class="table table-striped">
-        <thead class="thead-inverse">
-            <tr>
-                <th>IconName</th>
-                <th>Small</th>
-                <th>Default</th>
-                <th>Large</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-                        <tr>
-                <td>content-accordion</td>
-                <td><img src="images/content/content-accordion.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-accordion.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-accordion.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-accordion.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-audio</td>
-                <td><img src="images/content/content-audio.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-audio.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-audio.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-audio.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-above-center</td>
-                <td><img src="images/content/content-beside-text-img-above-center.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-above-center.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-above-center.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-above-center.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-above-left</td>
-                <td><img src="images/content/content-beside-text-img-above-left.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-above-left.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-above-left.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-above-left.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-above-right</td>
-                <td><img src="images/content/content-beside-text-img-above-right.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-above-right.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-above-right.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-above-right.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-below-center</td>
-                <td><img src="images/content/content-beside-text-img-below-center.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-below-center.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-below-center.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-below-center.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-below-left</td>
-                <td><img src="images/content/content-beside-text-img-below-left.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-below-left.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-below-left.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-below-left.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-below-right</td>
-                <td><img src="images/content/content-beside-text-img-below-right.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-below-right.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-below-right.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-below-right.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-centered-left</td>
-                <td><img src="images/content/content-beside-text-img-centered-left.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-centered-left.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-centered-left.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-centered-left.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-centered-right</td>
-                <td><img src="images/content/content-beside-text-img-centered-right.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-centered-right.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-centered-right.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-centered-right.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-left</td>
-                <td><img src="images/content/content-beside-text-img-left.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-left.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-left.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-left.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-beside-text-img-right</td>
-                <td><img src="images/content/content-beside-text-img-right.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-beside-text-img-right.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-beside-text-img-right.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-beside-text-img-right.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-book</td>
-                <td><img src="images/content/content-book.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-book.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-book.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-book.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-briefcase</td>
-                <td><img src="images/content/content-briefcase.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-briefcase.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-briefcase.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-briefcase.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-bullets</td>
-                <td><img src="images/content/content-bullets.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-bullets.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-bullets.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-bullets.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-card-group</td>
-                <td><img src="images/content/content-card-group.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-card-group.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-card-group.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-card-group.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-card</td>
-                <td><img src="images/content/content-card.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-card.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-card.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-card.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-carousel-header</td>
-                <td><img src="images/content/content-carousel-header.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-carousel-header.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-carousel-header.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-carousel-header.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-carousel-html</td>
-                <td><img src="images/content/content-carousel-html.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-carousel-html.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-carousel-html.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-carousel-html.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-carousel-image</td>
-                <td><img src="images/content/content-carousel-image.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-carousel-image.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-carousel-image.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-carousel-image.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-carousel-item-calltoaction</td>
-                <td><img src="images/content/content-carousel-item-calltoaction.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-carousel-item-calltoaction.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-carousel-item-calltoaction.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-carousel-item-calltoaction.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-carousel-item-textandimage</td>
-                <td><img src="images/content/content-carousel-item-textandimage.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-carousel-item-textandimage.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-carousel-item-textandimage.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-carousel-item-textandimage.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-carousel</td>
-                <td><img src="images/content/content-carousel.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-carousel.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-carousel.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-carousel.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-clock</td>
-                <td><img src="images/content/content-clock.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-clock.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-clock.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-clock.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-coffee</td>
-                <td><img src="images/content/content-coffee.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-coffee.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-coffee.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-coffee.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-csv</td>
-                <td><img src="images/content/content-csv.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-csv.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-csv.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-csv.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-dashboard-empty</td>
-                <td><img src="images/content/content-dashboard-empty.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-dashboard-empty.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-dashboard-empty.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-dashboard-empty.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-dashboard</td>
-                <td><img src="images/content/content-dashboard.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-dashboard.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-dashboard.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-dashboard.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-elements-login</td>
-                <td><img src="images/content/content-elements-login.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-elements-login.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-elements-login.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-elements-login.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-elements-mailform</td>
-                <td><img src="images/content/content-elements-mailform.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-elements-mailform.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-elements-mailform.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-elements-mailform.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-elements-searchform</td>
-                <td><img src="images/content/content-elements-searchform.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-elements-searchform.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-elements-searchform.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-elements-searchform.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-form</td>
-                <td><img src="images/content/content-form.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-form.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-form.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-form.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-gallery</td>
-                <td><img src="images/content/content-gallery.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-gallery.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-gallery.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-gallery.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-header</td>
-                <td><img src="images/content/content-header.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-header.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-header.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-header.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-idea</td>
-                <td><img src="images/content/content-idea.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-idea.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-idea.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-idea.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-image</td>
-                <td><img src="images/content/content-image.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-image.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-image.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-image.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-info</td>
-                <td><img src="images/content/content-info.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-info.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-info.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-info.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-inside-text-img-left</td>
-                <td><img src="images/content/content-inside-text-img-left.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-inside-text-img-left.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-inside-text-img-left.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-inside-text-img-left.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-inside-text-img-right</td>
-                <td><img src="images/content/content-inside-text-img-right.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-inside-text-img-right.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-inside-text-img-right.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-inside-text-img-right.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-listgroup</td>
-                <td><img src="images/content/content-listgroup.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-listgroup.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-listgroup.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-listgroup.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-map</td>
-                <td><img src="images/content/content-map.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-map.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-map.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-map.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-marker</td>
-                <td><img src="images/content/content-marker.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-marker.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-marker.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-marker.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-media</td>
-                <td><img src="images/content/content-media.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-media.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-media.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-media.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-abstract</td>
-                <td><img src="images/content/content-menu-abstract.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-abstract.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-abstract.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-abstract.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-card</td>
-                <td><img src="images/content/content-menu-card.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-card.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-card.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-card.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-categorized</td>
-                <td><img src="images/content/content-menu-categorized.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-categorized.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-categorized.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-categorized.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-pages</td>
-                <td><img src="images/content/content-menu-pages.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-pages.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-pages.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-pages.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-recently-updated</td>
-                <td><img src="images/content/content-menu-recently-updated.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-recently-updated.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-recently-updated.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-recently-updated.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-related</td>
-                <td><img src="images/content/content-menu-related.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-related.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-related.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-related.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-section</td>
-                <td><img src="images/content/content-menu-section.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-section.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-section.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-section.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-sitemap-pages</td>
-                <td><img src="images/content/content-menu-sitemap-pages.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-sitemap-pages.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-sitemap-pages.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-sitemap-pages.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-sitemap</td>
-                <td><img src="images/content/content-menu-sitemap.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-sitemap.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-sitemap.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-sitemap.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-menu-thumbnail</td>
-                <td><img src="images/content/content-menu-thumbnail.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-menu-thumbnail.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-menu-thumbnail.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-menu-thumbnail.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-news</td>
-                <td><img src="images/content/content-news.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-news.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-news.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-news.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-panel</td>
-                <td><img src="images/content/content-panel.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-panel.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-panel.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-panel.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-plugin</td>
-                <td><img src="images/content/content-plugin.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-plugin.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-plugin.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-plugin.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-quote</td>
-                <td><img src="images/content/content-quote.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-quote.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-quote.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-quote.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-special-div</td>
-                <td><img src="images/content/content-special-div.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-special-div.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-special-div.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-special-div.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-special-html</td>
-                <td><img src="images/content/content-special-html.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-special-html.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-special-html.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-special-html.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-special-indexed_search</td>
-                <td><img src="images/content/content-special-indexed_search.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-special-indexed_search.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-special-indexed_search.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-special-indexed_search.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-special-menu</td>
-                <td><img src="images/content/content-special-menu.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-special-menu.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-special-menu.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-special-menu.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-special-shortcut</td>
-                <td><img src="images/content/content-special-shortcut.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-special-shortcut.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-special-shortcut.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-special-shortcut.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-special-uploads</td>
-                <td><img src="images/content/content-special-uploads.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-special-uploads.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-special-uploads.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-special-uploads.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-store</td>
-                <td><img src="images/content/content-store.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-store.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-store.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-store.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-tab-item</td>
-                <td><img src="images/content/content-tab-item.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-tab-item.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-tab-item.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-tab-item.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-tab</td>
-                <td><img src="images/content/content-tab.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-tab.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-tab.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-tab.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-table</td>
-                <td><img src="images/content/content-table.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-table.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-table.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-table.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-target</td>
-                <td><img src="images/content/content-target.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-target.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-target.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-target.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-text-columns</td>
-                <td><img src="images/content/content-text-columns.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-text-columns.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-text-columns.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-text-columns.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-text-teaser</td>
-                <td><img src="images/content/content-text-teaser.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-text-teaser.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-text-teaser.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-text-teaser.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-text</td>
-                <td><img src="images/content/content-text.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-text.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-text.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-text.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-textmedia</td>
-                <td><img src="images/content/content-textmedia.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-textmedia.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-textmedia.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-textmedia.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-textpic</td>
-                <td><img src="images/content/content-textpic.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-textpic.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-textpic.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-textpic.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-timeline-item</td>
-                <td><img src="images/content/content-timeline-item.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-timeline-item.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-timeline-item.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-timeline-item.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-timeline</td>
-                <td><img src="images/content/content-timeline.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-timeline.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-timeline.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-timeline.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-calltoaction</td>
-                <td><img src="images/content/content-widget-calltoaction.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-calltoaction.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-calltoaction.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-calltoaction.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-chart-bar</td>
-                <td><img src="images/content/content-widget-chart-bar.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-chart-bar.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-chart-bar.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-chart-bar.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-chart-pie</td>
-                <td><img src="images/content/content-widget-chart-pie.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-chart-pie.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-chart-pie.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-chart-pie.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-chart</td>
-                <td><img src="images/content/content-widget-chart.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-chart.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-chart.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-chart.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-image</td>
-                <td><img src="images/content/content-widget-image.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-image.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-image.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-image.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-list</td>
-                <td><img src="images/content/content-widget-list.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-list.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-list.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-list.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-number</td>
-                <td><img src="images/content/content-widget-number.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-number.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-number.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-number.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-rss</td>
-                <td><img src="images/content/content-widget-rss.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-rss.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-rss.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-rss.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-table</td>
-                <td><img src="images/content/content-widget-table.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-table.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-table.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-table.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget-text</td>
-                <td><img src="images/content/content-widget-text.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget-text.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget-text.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget-text.svg">File</a></td>
-            </tr>
-                        <tr>
-                <td>content-widget</td>
-                <td><img src="images/content/content-widget.svg" height="16" width="16"></td>
-                <td><img src="images/content/content-widget.svg" height="32" width="32"></td>
-                <td><img src="images/content/content-widget.svg" height="64" width="64"></td>
-                <td><a class="btn btn-sm btn-outline-dark" href="images/content/content-widget.svg">File</a></td>
-            </tr>
-                    </tbody>
-    </table>
-</div>
-
+                </div>
+            </main>
         </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    </body>
+</body>
 </html>

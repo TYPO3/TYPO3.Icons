@@ -1,248 +1,44 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{% block title %}{% endblock %} - {{ pkg.name }}</title>
-        <meta name="description" content="{{ pkg.description }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <style type="text/css">
-            .btn img {
-                display: block;
-            }
-            .btn-sm {
-                padding: 4px 12px;
-                line-height: 16px;
-                border-radius: 2px;
-            }
-            .btn-icon {
-                padding: 4px 4px;
-                border-radius: 2px;
-                font-size: 11px;
-                line-height: 1.5;
-            }
-            .btn-default {
-                color: #333333;
-                background-color: #eeeeee;
-                border-color: #bbbbbb;
-            }
-            .btn-default .icon-color {
-                fill: #333333;
-            }
-            .btn-grid {
-                margin: 2px;
-                float: left;
-            }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} - {{ pkg.name }}</title>
+    <meta name="description" content="{{ pkg.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    {% include '_styles.html.twig' %}
+</head>
+<body>
 
-            .table td {
-                vertical-align: middle;
-                white-space: nowrap;
-            }
-            .icon {
-                position: relative;
-                display: inline-block;
-                overflow: hidden;
-                white-space: nowrap;
-                vertical-align: -22%;
-            }
-
-            .icon img,
-            .icon svg {
-                display: block;
-                height: 100%;
-                width: 100%;
-                transform: translate3d(0,0,0);
-            }
-            .icon * {
-                display: block;
-                line-height: inherit;
-            }
-            .icon-markup {
-                position: absolute;
-                display: block;
-                text-align: center;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-            }
-            .icon-color {
-               fill: currentColor;
-            }
-            .icon-overlay {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                height: 68.75%;
-                width: 68.75%;
-                text-align: center;
-            }
-            .icon-spin .icon-markup {
-                -webkit-animation: icon-spin 2s infinite linear;
-                animation: icon-spin 2s infinite linear;
-            }
-            @-webkit-keyframes icon-spin {
-                0% {
-                    -webkit-transform: rotate(0deg);
-                    transform: rotate(0deg);
-                }
-                100% {
-                    -webkit-transform: rotate(359deg);
-                    transform: rotate(359deg);
-                }
-            }
-            @keyframes icon-spin {
-                0% {
-                    -webkit-transform: rotate(0deg);
-                    transform: rotate(0deg);
-                }
-                100% {
-                    -webkit-transform: rotate(359deg);
-                    transform: rotate(359deg);
-                }
-            }
-            .icon-state-disabled .icon-markup {
-                opacity: 0.5;
-            }
-            .icon-size-small {
-                height: 16px;
-                width: 16px;
-                line-height: 16px;
-            }
-            .icon-size-small .icon-unify {
-                line-height: 16px;
-                font-size: 14px;
-            }
-            .icon-size-small .icon-overlay .icon-unify {
-                line-height: 10px;
-                font-size: 9px;
-            }
-            .icon-size-default {
-                height: 32px;
-                width: 32px;
-                line-height: 32px;
-            }
-            .icon-size-default .icon-unify {
-                line-height: 32px;
-                font-size: 28px;
-            }
-            .icon-size-default .icon-overlay .icon-unify {
-                line-height: 20px;
-                font-size: 18px;
-            }
-            .icon-size-large {
-                height: 48px;
-                width: 48px;
-                line-height: 48px;
-            }
-            .icon-size-large .icon-unify {
-                line-height: 48px;
-                font-size: 42px;
-            }
-            .icon-size-large .icon-overlay .icon-unify {
-                line-height: 30px;
-                font-size: 26px;
-            }
-            .icon-size-mega {
-                height: 64px;
-                width: 64px;
-                line-height: 64px;
-            }
-
-            .card {
-                overflow: hidden;
-            }
-            .card-deck {
-                margin-top: -15px;
-                margin-bottom: -15px;
-            }
-            .card-deck .card {
-                margin: 15px;
-                min-width: 250px;
-            }
-            .card-inverse .icon-color {
-                fill: #dddddd;
-            }
-
-
-            .card-group-element {
-                margin: -10px;
-                display: flex;
-                flex-wrap: wrap
-            }
-            .card-group-element-item {
-                width: 100%;
-                padding: 10px
-            }
-            .card-group-element-item .card {
-                height: 100%
-            }
-            .card-group-element-align-left {
-                justify-content: flex-start
-            }
-            .card-group-element-align-center {
-                justify-content: center
-            }
-            .card-group-element-align-right {
-                justify-content: flex-end
-            }
-            @media (min-width: 576px) {
-                .card-group-element-columns-2 .card-group-element-item {
-                    width:calc(100% / 2)
-                }
-            }
-            @media (min-width: 768px) {
-                .card-group-element-columns-3 .card-group-element-item {
-                    width:calc(100% / 3)
-                }
-            }
-            @media (min-width: 576px) {
-                .card-group-element-columns-4 .card-group-element-item {
-                    width:calc(100% / 2)
-                }
-            }
-            @media (min-width: 1200px) {
-                .card-group-element-columns-4 .card-group-element-item {
-                    width:calc(100% / 4)
-                }
-            }
-
-        </style>
-    </head>
-    <body>
-
-        <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">{{ pkg.name }}</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mainnav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link{% if key == 'action' %} active{% endif %}" href="action.html">Action</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'apps' %} active{% endif %}" href="apps.html">Apps</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'content' %} active{% endif %}" href="content.html">Content</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'files' %} active{% endif %}" href="files.html">Files</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'form' %} active{% endif %}" href="form.html">Form</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'install' %} active{% endif %}" href="install.html">Install</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'mimetypes' %} active{% endif %}" href="mimetypes.html">Mimetypes</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'module' %} active{% endif %}" href="module.html">Module</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'overlay' %} active{% endif %}" href="overlay.html">Overlay</a></li>
-                        <li class="nav-item"><a class="nav-link{% if key == 'misc' %} active{% endif %}" href="misc.html">Misc</a></li>
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
+        <a class="navbar-brand" href="index.html">{{ pkg.name }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" id="mainnav">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        {% for navSection in data %}
+                            <li class="nav-item"><a class="nav-link{% if navSection.folder == section.folder %} active{% endif %}" href="/{{ navSection.folder }}.html">{{ navSection.title }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
-            </div>
-        </nav>
-
-        <div class="container py-5">
-            {% block content %}{% endblock %}
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4" role="main">
+                <div style="max-width: 1110px; margin: 0 auto;">
+                    {% block content %}{% endblock %}
+                </div>
+            </main>
         </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    </body>
+</body>
 </html>
