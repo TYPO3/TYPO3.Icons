@@ -11,6 +11,7 @@ const rename = require('gulp-rename');
 const gulp = require('gulp');
 const svgSprite = require('gulp-svg-sprite');
 const yaml = require('js-yaml');
+const merge = require('deepmerge');
 
 
 //
@@ -82,6 +83,7 @@ const options = {
     dist: './dist/',
     assets: './assets/',
     docs: './docs/',
+    meta: './meta/',
     material: './material/'
 };
 
@@ -115,6 +117,28 @@ function getIcons(dir) {
 function getFileContents(file) {
     return fs.readFileSync(file, 'utf8');
 }
+function getMetaData(file) {
+    let basename = path.basename(file, '.svg');
+    let folder = path.dirname(file);
+    let defaultmeta = {
+        alias: [
+        ],
+        tags: [
+        ]
+    };
+    let metafile = path.join(options.meta, folder, basename + '.yaml' );
+    let metadata = {};
+    if (fs.existsSync(metafile)) {
+        metadata = yaml.safeLoad(fs.readFileSync(metafile, 'utf8'));
+    }
+    let finalMetaData = merge.all([defaultmeta, metadata])
+    finalMetaData.identifier = basename;
+    finalMetaData.file = path.basename(file);
+    finalMetaData.path = file;
+    finalMetaData.folder = folder;
+    finalMetaData.inline = getFileContents(path.join(options.dist, file));
+    return finalMetaData;
+}
 function getData() {
     let data = {};
     let folders = getFolders(options.dist);
@@ -123,15 +147,8 @@ function getData() {
         var iconFiles = getIcons(options.dist + folder);
         var icons = [];
         for (var i = 0; i < iconFiles.length; i++) {
-            let file = folder + '/' + iconFiles[i];
-            let relativeFile = options.dist + file;
-            icons[i] = {
-                identifier: path.basename(file, '.svg'),
-                file: iconFiles[i],
-                folder: folder,
-                path: file,
-                inline: getFileContents(relativeFile)
-            };
+            let file = path.join(folder, iconFiles[i]);
+            icons[i] = getMetaData(file);
         }
         data[folder] = {
             title: folder.charAt(0).toUpperCase() + folder.slice(1),

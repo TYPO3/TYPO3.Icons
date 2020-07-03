@@ -1,0 +1,6 @@
+alias:
+  - actions-message-error-close
+  - actions-message-information-close
+  - actions-message-notice-close
+  - actions-message-ok-close
+  - actions-message-warning-close

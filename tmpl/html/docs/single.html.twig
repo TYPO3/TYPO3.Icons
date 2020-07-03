@@ -12,6 +12,9 @@
 
     <div class="mb-4">
         <h1 class="h2 mb-2">{{ icon.identifier }}</h1>
+        {% if icon.tags|length > 0 %}
+            <p class="mb-1"><strong>Tags:</strong> {{ icon.tags|join(', ') }}</p>
+        {% endif %}
     </div>
 
     {% if section.rendering.preview %}
@@ -114,5 +117,15 @@
         {% endif %}
     </div>
 
+    {% if icon.alias|length > 0 %}
+        <div class="section">
+            <h2 class="mb-3">Alias</h2>
+            <ul class="list-unstyled">
+                {% for alias in icon.alias %}
+                    <li>{{ alias }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
 
 {% endblock %}
