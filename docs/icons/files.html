@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Files - @typo3/icons</title>
+    <title>Files - @typo3/icons SVG icons for the TYPO3 CMS backend</title>
     <meta name="description" content="SVG icons for the TYPO3 CMS backend">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -52,26 +52,30 @@
         </ul>
     </nav>
 
-    <div class="mb-4">
-        <h1 class="h2 mb-2">Files <small class="text-muted">3</small></h1>
+    <div class="d-flex mb-4">
+        <h2 class="mb-0">Files</h2>
+        <form class="d-flex flex-nowrap ml-auto">
+            <label for="search" class="sr-only">Search for icons</label>
+            <input class="form-control search mb-0" id="search" placeholder="Start typing to filter..." autocomplete="off">
+        </form>
     </div>
 
-    <div class="icongrid">
-                    <a class="icongrid-item bg-light" data-search="files-folder-content" href="../icons/files/files-folder-content.html" title="files-folder-content">
+    <div class="icongrid" id="iconlist">
+                    <a class="icongrid-item bg-light" data-type="icon" data-identifier="files-folder-content" data-search="files-folder-content" href="../icons/files/files-folder-content.html" title="files-folder-content">
                 <span class="icon icon-size-default icon-state-default">
                                             <span class="icon-markup">
                             <svg class="icon-color" role="img"><use xlink:href="../assets/icons/files.symbols.svg#files-folder-content" /></svg>
                         </span>
                                     </span>
             </a>
-                    <a class="icongrid-item bg-light" data-search="files-folder-images" href="../icons/files/files-folder-images.html" title="files-folder-images">
+                    <a class="icongrid-item bg-light" data-type="icon" data-identifier="files-folder-images" data-search="files-folder-images" href="../icons/files/files-folder-images.html" title="files-folder-images">
                 <span class="icon icon-size-default icon-state-default">
                                             <span class="icon-markup">
                             <svg class="icon-color" role="img"><use xlink:href="../assets/icons/files.symbols.svg#files-folder-images" /></svg>
                         </span>
                                     </span>
             </a>
-                    <a class="icongrid-item bg-light" data-search="files-folder" href="../icons/files/files-folder.html" title="files-folder">
+                    <a class="icongrid-item bg-light" data-type="icon" data-identifier="files-folder" data-search="files-folder" href="../icons/files/files-folder.html" title="files-folder">
                 <span class="icon icon-size-default icon-state-default">
                                             <span class="icon-markup">
                             <svg class="icon-color" role="img"><use xlink:href="../assets/icons/files.symbols.svg#files-folder" /></svg>

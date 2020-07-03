@@ -1,25 +1,19 @@
 // Inplace Search
-var inplaceSearch = document.getElementById('inplaceSearch');
-if (inplaceSearch) {
-    inplaceSearch.addEventListener('keyup', filterNames);
-
-    function filterNames() {
-        // Get value of input
-        let filterValue = document.getElementById('filterInput').value.toUpperCase();
-        // Get names ul
-        let ul = document.getElementById('names');
-        // Get lis from ul
-        let li = ul.querySelectorAll('li.collection-item');
-        // Loop through collection-item lis
-        for (let i = 0; i < li.length; i++) {
-            let a = li[i].getElementsByTagName('a')[0];
-            // If matched
-            if (a.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
-                li[i].style.display = '';
+let search = document.getElementById('search');
+if (search) {
+    search.addEventListener('keyup', filterIcons);
+    function filterIcons() {
+        let searchWord = this.value.toLowerCase();
+        let iconList = document.getElementById('iconlist');
+        let icons = iconList.querySelectorAll('[data-type="icon"]');
+        for (let i = 0; i < icons.length; i++) {
+            let icon = icons[i];
+            let elementSearch = icon.dataset.search;
+            if (elementSearch.toLowerCase().indexOf(searchWord) > -1) {
+                icon.style.display = 'flex';
             } else {
-                li[i].style.display = 'none';
+                icon.style.display = 'none';
             }
         }
     }
-
 }
