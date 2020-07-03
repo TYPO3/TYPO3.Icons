@@ -271,13 +271,13 @@
     bottom: 0;
     left: 0;
     z-index: 100;
-    padding: 106px 0 0;
+    padding: 56px 0 0;
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 .sidebar-sticky {
     position: relative;
     top: 0;
-    height: calc(100vh - 106px);
+    height: calc(100vh - 56px);
     padding-top: .5rem;
     overflow-x: hidden;
     overflow-y: auto;
@@ -286,14 +286,6 @@
     .sidebar-sticky {
         position: -webkit-sticky;
         position: sticky;
-    }
-}
-@media (min-width: 768px) {
-    .sidebar {
-        padding-top: 56px;
-    }
-    .sidebar-sticky {
-        height: calc(100vh - 56px);
     }
 }
 .sidebar .nav-link {
