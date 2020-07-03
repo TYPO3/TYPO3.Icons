@@ -2,7 +2,7 @@
   "actions": {
     "title": "Actions",
     "folder": "actions",
-    "count": 221,
+    "count": 216,
     "symbols": "actions.symbols.svg",
     "rendering": {
       "preview": true,
@@ -66,7 +66,9 @@
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M7 2v7.3H5c-.4 0-.6.5-.4.8l3 3.7c.2.2.6.2.8 0l3-3.7c.2-.3 0-.8-.4-.8H9V2H7z\"/></g></svg>"
       },
       {
-        "alias": [],
+        "alias": [
+          "actions-version-workspace-sendtoprevstage"
+        ],
         "tags": [],
         "identifier": "actions-arrow-left",
         "file": "actions-arrow-left.svg",
@@ -75,7 +77,9 @@
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M14 7H6.7V5c0-.4-.5-.6-.8-.4l-3.7 3c-.2.2-.2.6 0 .8l3.7 3c.3.3.8 0 .8-.4V9H14V7z\"/></g></svg>"
       },
       {
-        "alias": [],
+        "alias": [
+          "actions-version-workspace-sendtostage"
+        ],
         "tags": [],
         "identifier": "actions-arrow-right",
         "file": "actions-arrow-right.svg",
@@ -188,9 +192,14 @@
           "actions-message-information-close",
           "actions-message-notice-close",
           "actions-message-ok-close",
-          "actions-message-warning-close"
+          "actions-message-warning-close",
+          "actions-input-clear"
         ],
-        "tags": [],
+        "tags": [
+          "reset",
+          "clear",
+          "close"
+        ],
         "identifier": "actions-close",
         "file": "actions-close.svg",
         "path": "actions/actions-close.svg",
@@ -972,15 +981,6 @@
       {
         "alias": [],
         "tags": [],
-        "identifier": "actions-input-clear",
-        "file": "actions-input-clear.svg",
-        "path": "actions/actions-input-clear.svg",
-        "folder": "actions",
-        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M11.9 5.5L9.4 8l2.5 2.5c.2.2.2.5 0 .7l-.7.7c-.2.2-.5.2-.7 0L8 9.4l-2.5 2.5c-.2.2-.5.2-.7 0l-.7-.7c-.2-.2-.2-.5 0-.7L6.6 8 4.1 5.5c-.2-.2-.2-.5 0-.7l.7-.7c.2-.2.5-.2.7 0L8 6.6l2.5-2.5c.2-.2.5-.2.7 0l.7.7c.2.2.2.5 0 .7z\"/></g></svg>"
-      },
-      {
-        "alias": [],
-        "tags": [],
         "identifier": "actions-insert-record",
         "file": "actions-insert-record.svg",
         "path": "actions/actions-insert-record.svg",
@@ -997,8 +997,15 @@
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M13 1.501A.504.504 0 0 0 12.5 1h-11c-.271 0-.5.224-.5.501V12.5c0 .271.224.501.5.501h5.066l.096-1H2V2h10v3.5l1 .85V1.5zM3 6v1h7.004l.001-1H3zm0 3h4.991c.492-.68.992-1 .992-1H3v1zm0 1v1h3.876c.125-.39.242-.721.447-1H3zm0-7h8v2H3V3zm9.37 9.57c-.07.06-.15.07-.23.04-.07-.04-.14-.11-.14-.2v-1.29s-2.69.192-4.03 3.88C7.97 8.534 12 9.12 12 9.12V7.83c0-.08.07-.16.14-.19.08-.03.17-.02.23.03l2.56 2.28c.04.04.07.09.07.15s-.03.12-.07.16l-2.56 2.31z\"/></g></svg>"
       },
       {
-        "alias": [],
-        "tags": [],
+        "alias": [
+          "actions-wizard-rte",
+          "actions-wizard-link"
+        ],
+        "tags": [
+          "anchor",
+          "hyperlink",
+          "href"
+        ],
         "identifier": "actions-link",
         "file": "actions-link.svg",
         "path": "actions/actions-link.svg",
@@ -1773,24 +1780,6 @@
       {
         "alias": [],
         "tags": [],
-        "identifier": "actions-version-workspace-sendtoprevstage",
-        "file": "actions-version-workspace-sendtoprevstage.svg",
-        "path": "actions/actions-version-workspace-sendtoprevstage.svg",
-        "folder": "actions",
-        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path d=\"M14 7H6.7V5c0-.4-.5-.6-.8-.4l-3.7 3c-.2.2-.2.6 0 .8l3.7 3c.3.3.8 0 .8-.4V9H14V7z\" class=\"icon-color\"/></svg>"
-      },
-      {
-        "alias": [],
-        "tags": [],
-        "identifier": "actions-version-workspace-sendtostage",
-        "file": "actions-version-workspace-sendtostage.svg",
-        "path": "actions/actions-version-workspace-sendtostage.svg",
-        "folder": "actions",
-        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path d=\"M2 9h7.3v2c0 .4.5.6.8.4l3.7-3c.2-.2.2-.6 0-.8l-3.7-3c-.3-.2-.8 0-.8.4v2H2v2z\" class=\"icon-color\"/></svg>"
-      },
-      {
-        "alias": [],
-        "tags": [],
         "identifier": "actions-version-workspaces-preview-link",
         "file": "actions-version-workspaces-preview-link.svg",
         "path": "actions/actions-version-workspaces-preview-link.svg",
@@ -1994,24 +1983,6 @@
         "path": "actions/actions-window-open.svg",
         "folder": "actions",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M10.05 8.657l-.707-.707L14.293 3l.706.707z\"/><path d=\"M13 8.536V12H3V5h6.464l1-1H2.5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7.535l-1 1.001zM15.573 6.573l-4.146-4.146A.25.25 0 0 1 11.604 2h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177z\"/></g></svg>"
-      },
-      {
-        "alias": [],
-        "tags": [],
-        "identifier": "actions-wizard-link",
-        "file": "actions-wizard-link.svg",
-        "path": "actions/actions-wizard-link.svg",
-        "folder": "actions",
-        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M13.7 3.8l-1.4-1.4c-.8-.8-2-.8-2.8 0L5.9 5.9c-.8.8-.8 2 0 2.8l1.2 1.2.9-.8L6.9 8c-.4-.4-.4-1 0-1.4l3.2-3.2c.4-.4 1-.4 1.4 0l1.1 1.1c.4.4.4 1 0 1.4l-1.3 1.3c.2.4.4.9.4 1.4l2-2c.7-.8.7-2.1 0-2.8z\"/><path d=\"M8.9 6.1l-.9.8L9.1 8c.4.4.4 1 0 1.4l-3.2 3.2c-.4.4-1 .4-1.4 0l-1.1-1.1c-.4-.4-.4-1 0-1.4l1.3-1.3c-.2-.4-.4-.9-.4-1.4l-2 2c-.8.8-.8 2 0 2.8l1.4 1.4c.8.8 2 .8 2.8 0l3.5-3.5c.8-.8.8-2 0-2.8L8.9 6.1z\"/></g></svg>"
-      },
-      {
-        "alias": [],
-        "tags": [],
-        "identifier": "actions-wizard-rte",
-        "file": "actions-wizard-rte.svg",
-        "path": "actions/actions-wizard-rte.svg",
-        "folder": "actions",
-        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M13.7 3.8l-1.4-1.4c-.8-.8-2-.8-2.8 0L5.9 5.9c-.8.8-.8 2 0 2.8l1.2 1.2.9-.8L6.9 8c-.4-.4-.4-1 0-1.4l3.2-3.2c.4-.4 1-.4 1.4 0l1.1 1.1c.4.4.4 1 0 1.4l-1.3 1.3c.2.4.4.9.4 1.4l2-2c.7-.8.7-2.1 0-2.8z\"/><path d=\"M8.9 6.1l-.9.8L9.1 8c.4.4.4 1 0 1.4l-3.2 3.2c-.4.4-1 .4-1.4 0l-1.1-1.1c-.4-.4-.4-1 0-1.4l1.3-1.3c-.2-.4-.4-.9-.4-1.4l-2 2c-.8.8-.8 2 0 2.8l1.4 1.4c.8.8 2 .8 2.8 0l3.5-3.5c.8-.8.8-2 0-2.8L8.9 6.1z\"/></g></svg>"
       }
     ]
   },
