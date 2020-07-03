@@ -82,7 +82,6 @@ const options = {
     dist: './dist/',
     assets: './assets/',
     docs: './docs/',
-    docs_images: './docs/images/',
     material: './material/'
 };
 
@@ -138,6 +137,8 @@ function getData() {
             title: folder.charAt(0).toUpperCase() + folder.slice(1),
             folder: folder,
             count: icons.length,
+            symbols: folder + '.symbols.svg',
+            rendering: options.rendering[folder] ?? {},
             icons: icons
         };
     }
@@ -159,34 +160,39 @@ gulp.task('clean', function (cb) {
 gulp.task('min', () => {
     return gulp.src([options.src + '**/*.svg'])
         .pipe(svgmin(getSvgoConfig()))
-        .pipe(gulp.dest(options.docs_images))
+        .pipe(gulp.dest(path.join(options.docs, 'assets/icons')))
         .pipe(gulp.dest(options.dist));
 });
 
 
 //
-// SVG Sprite
+// SVG Sprites
 //
-gulp.task('sprites', () => {
-    return gulp.src([options.dist + 'actions/*.svg'])
-        .pipe(svgSprite({
-            svg: {
-                rootAttributes: {
-                    class: 'typo3-icons',
-                    style: 'display: none;'
+gulp.task('sprites', (cb) => {
+    let folders = getFolders(options.dist);
+    for (var folderCount = 0; folderCount < folders.length; folderCount++) {
+        var folder = folders[folderCount];
+        gulp.src([path.join(options.dist, folder) + '/*.svg'])
+            .pipe(svgSprite({
+                svg: {
+                    rootAttributes: {
+                        class: 'typo3-icons-' + folder,
+                        style: 'display: none;'
+                    },
+                    namespaceIDs: true,
+                    namespaceClassnames: false
                 },
-                namespaceIDs: true,
-                namespaceClassnames: false
-            },
-            mode: {
-                symbol: {
-                    dest: '',
-                    sprite: "actions.symbols.svg"
+                mode: {
+                    symbol: {
+                        dest: '',
+                        sprite: folder + '.symbols.svg'
+                    }
                 }
-            }
-        }))
-        .pipe(gulp.dest(options.docs_images))
-        .pipe(gulp.dest(options.dist));
+            }))
+            .pipe(gulp.dest(path.join(options.docs, 'assets/icons')))
+            .pipe(gulp.dest(options.dist));
+    }
+    cb();
 });
 
 
@@ -206,16 +212,9 @@ gulp.task('data', (cb) => {
 //
 gulp.task('docs', function (cb) {
 
-    // Copy generated svg files to be used staticly
-    // in docs for previewing overlays
-    gulp.src([options.dist + 'apps/apps-filetree-folder-default.svg'])
-        .pipe(gulp.dest(options.material + 'icons/'));
-    gulp.src([options.dist + 'apps/apps-filetree-folder-temp.svg'])
-        .pipe(gulp.dest(options.material + 'icons/'));
-    gulp.src([options.dist + 'apps/apps-pagetree-page.svg'])
-        .pipe(gulp.dest(options.material + 'icons/'));
-    gulp.src([options.assets + 'favicon.ico'])
-        .pipe(gulp.dest(options.docs));
+    // Copy static assets
+    gulp.src([path.join(options.assets, '**/*')])
+        .pipe(gulp.dest(path.join(options.docs, 'assets')));
 
     // Fetch generated data
     let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
@@ -226,8 +225,7 @@ gulp.task('docs', function (cb) {
             data: {
                 pkg: pkg,
                 data: data,
-                section: {},
-                rendering: {},
+                section: {}
             }
         }))
         .pipe(rename('README.md'))
@@ -256,12 +254,11 @@ gulp.task('docs', function (cb) {
                     pkg: pkg,
                     data: data,
                     section: section,
-                    rendering: options.rendering[section.folder] ?? {},
-                    pathPrefix: '',
+                    pathPrefix: '../',
                 }
             }))
             .pipe(rename(section.folder + '.html'))
-            .pipe(gulp.dest(path.join('./docs')));
+            .pipe(gulp.dest(path.join('./docs/icons')));
         for (let iconKey in section.icons) {
             let icon = section.icons[iconKey];
             gulp.src('./tmpl/html/docs/single.html.twig')
@@ -270,13 +267,12 @@ gulp.task('docs', function (cb) {
                         pkg: pkg,
                         data: data,
                         section: section,
-                        rendering: options.rendering[section.folder] ?? {},
                         icon: icon,
-                        pathPrefix: '../',
+                        pathPrefix: '../../',
                     }
                 }))
                 .pipe(rename(icon.identifier + '.html'))
-                .pipe(gulp.dest(path.join('./docs', section.folder)));
+                .pipe(gulp.dest(path.join('./docs/icons', section.folder)));
         }
     }
 

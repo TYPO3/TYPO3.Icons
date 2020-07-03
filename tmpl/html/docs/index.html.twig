@@ -2,19 +2,37 @@
 {% block title %}Index{% endblock %}
 {% block content %}
 
-    <h1 class="h3 my-4 text-center">
-        {{ pkg.description }}
-    </h1>
-    <div class="card-group-element card-group-element-columns-3">
-        {% for navSection in data %}
-            <div class="card-group-element-item">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ navSection.title }}</h5>
-                        <a href="{{ pathPrefix }}{{ navSection.folder }}.html" class="card-link">Show Icons</a>
-                    </div>
-                </div>
-            </div>
+    <nav>
+        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
+            <li class="breadcrumb-item">Home</li>
+        </ul>
+    </nav>
+
+    <div class="mb-4">
+        <h1 class="h2 mb-2">Icons</h1>
+        <p>{{ pkg.description }}</p>
+    </div>
+
+    <div class="icongrid">
+        {% for section in data %}
+            {% for icon in section.icons %}
+                <a class="icongrid-item bg-light" data-search="{{ icon.identifier }}" href="{{ pathPrefix }}icons/{{ section.folder }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
+                    <span class="icon icon-size-default icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
+                        {% if not section.rendering.overlay %}
+                            <span class="icon-markup">
+                                {% include '_symbol.html.twig' with { icon: icon } %}
+                            </span>
+                        {% else %}
+                            <span class="icon-markup">
+                                <img src="{{ pathPrefix }}assets/icons/apps/apps-pagetree-page.svg">
+                            </span>
+                            <span class="icon-overlay">
+                                {% include '_symbol.html.twig' with { icon: icon } %}
+                            </span>
+                        {% endif %}
+                    </span>
+                </a>
+            {% endfor %}
         {% endfor %}
     </div>
 

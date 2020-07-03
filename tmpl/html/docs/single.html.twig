@@ -5,14 +5,16 @@
     <nav>
         <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
             <li class="breadcrumb-item"><a href="{{ pathPrefix }}index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="{{ pathPrefix }}{{ section.folder }}.html">{{ section.title }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ pathPrefix }}icons/{{ section.folder }}.html">{{ section.title }}</a></li>
             <li class="breadcrumb-item">{{ icon.identifier }}</li>
         </ul>
     </nav>
 
-    <h1 class="h2 mb-4">{{ icon.identifier }}</h1>
+    <div class="mb-4">
+        <h1 class="h2 mb-2">{{ icon.identifier }}</h1>
+    </div>
 
-    {% if rendering.preview %}
+    {% if section.rendering.preview %}
         <div class="section">
             {% set colors = ['light', 'dark'] %}
             {% for color in colors %}
@@ -20,9 +22,9 @@
                     {% set sizes = ['mega', 'large', 'default', 'small'] %}
                     {% for size in sizes %}
                         <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
-                            <span class="icon icon-size-{{ size }} icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                            <span class="icon icon-size-{{ size }} icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
                                 <span class="icon-markup">
-                                    {{ icon.inline }}
+                                    {% include '_symbol.html.twig' with { icon: icon } %}
                                 </span>
                             </span>
                         </div>
@@ -32,38 +34,38 @@
         </div>
     {% endif %}
 
-    {% if rendering.buttons %}
+    {% if section.rendering.buttons %}
         <div class="section">
             <h2 class="mb-3">Buttons</h2>
             <p>
                 <span class="btn btn-icon btn-default">
-                    <span class="icon icon-size-small icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                    <span class="icon icon-size-small icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
-                            {{ icon.inline }}
+                            {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
                     </span>
                 </span>
                 <span class="btn btn-icon btn-dark">
-                    <span class="icon icon-size-small icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                    <span class="icon icon-size-small icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
-                            {{ icon.inline }}
+                            {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
                     </span>
                 </span>
             </p>
             <p>
                 <span class="btn btn-icon btn-default">
-                    <span class="icon icon-size-small icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                    <span class="icon icon-size-small icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
-                            {{ icon.inline }}
+                            {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
                     </span>
                     Button Label
                 </span>
                 <span class="btn btn-icon btn-dark">
-                    <span class="icon icon-size-small icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                    <span class="icon icon-size-small icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
-                            {{ icon.inline }}
+                            {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
                     </span>
                     Button Label
@@ -72,7 +74,7 @@
         </div>
     {% endif %}
 
-    {% if rendering.overlay %}
+    {% if section.rendering.overlay %}
         <div class="section">
             <div class="preview">
                 {% set mainIcons = ['apps-filetree-folder-default', 'apps-filetree-folder-temp', 'apps-pagetree-page'] %}
@@ -82,12 +84,12 @@
                         {% set sizes = ['mega', 'large', 'default', 'small'] %}
                         {% for size in sizes %}
                             <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
-                                <span class="icon icon-size-{{ size }} icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
+                                <span class="icon icon-size-{{ size }} icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
                                     <span class="icon-markup">
-                                        <img src="{{ pathPrefix }}images/apps/{{ mainIcon }}.svg">
+                                        <img src="{{ pathPrefix }}assets/icons/apps/{{ mainIcon }}.svg">
                                     </span>
                                     <span class="icon-overlay">
-                                        {{ icon.inline }}
+                                        {% include '_symbol.html.twig' with { icon: icon } %}
                                     </span>
                                 </span>
                             </div>
@@ -105,7 +107,7 @@
 
     <div class="section">
         <h2 class="mb-3">TYPO3 ViewHelper</h2>
-        {% if rendering.overlay %}
+        {% if section.rendering.overlay %}
             <pre class="p-3 rounded bg-light"><code>&lt;core:icon identifier=&quot;apps-pagetree-page&quot; overlay=&quot;{{ icon.identifier }}&quot; size=&quot;small&quot; /&gt;</code></pre>
         {% else %}
             <pre class="p-3 rounded bg-light"><code>&lt;core:icon identifier=&quot;{{ icon.identifier }}&quot; size=&quot;small&quot; /&gt;</code></pre>

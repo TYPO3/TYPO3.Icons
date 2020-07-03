@@ -9,24 +9,24 @@
         </ul>
     </nav>
 
-    <h1 class="h2 mb-4">
-        {{ section.title }}
-        <small class="text-muted">{{ section.count }}</small>
-    </h1>
+    <div class="mb-4">
+        <h1 class="h2 mb-2">{{ section.title }} <small class="text-muted">{{ section.count }}</small></h1>
+    </div>
+
     <div class="icongrid">
         {% for icon in section.icons %}
-            <a class="icongrid-item bg-light" href="{{ pathPrefix }}{{ section.folder }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
-                <span class="icon icon-size-default icon-state-default{% if rendering.spinning %} icon-spin{% endif %}">
-                    {% if not rendering.overlay %}
+            <a class="icongrid-item bg-light" data-search="{{ icon.identifier }}" href="{{ pathPrefix }}icons/{{ section.folder }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
+                <span class="icon icon-size-default icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
+                    {% if not section.rendering.overlay %}
                         <span class="icon-markup">
-                            {{ icon.inline }}
+                            {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
                     {% else %}
                         <span class="icon-markup">
-                            <img src="{{ pathPrefix }}images/apps/apps-pagetree-page.svg">
+                            <img src="{{ pathPrefix }}assets/icons/apps/apps-pagetree-page.svg">
                         </span>
                         <span class="icon-overlay">
-                            {{ icon.inline }}
+                            {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
                     {% endif %}
                 </span>

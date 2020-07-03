@@ -3,6 +3,11 @@
     "title": "Actions",
     "folder": "actions",
     "count": 229,
+    "symbols": "actions.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "actions-accessibility",
@@ -1613,6 +1618,11 @@
     "title": "Apps",
     "folder": "apps",
     "count": 86,
+    "symbols": "apps.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "apps-clipboard-images",
@@ -2222,6 +2232,11 @@
     "title": "Avatar",
     "folder": "avatar",
     "count": 1,
+    "symbols": "avatar.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "avatar-default",
@@ -2236,6 +2251,11 @@
     "title": "Content",
     "folder": "content",
     "count": 86,
+    "symbols": "content.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "content-accordion",
@@ -2845,6 +2865,11 @@
     "title": "Default",
     "folder": "default",
     "count": 1,
+    "symbols": "default.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "default-not-found",
@@ -2859,6 +2884,10 @@
     "title": "Files",
     "folder": "files",
     "count": 3,
+    "symbols": "files.symbols.svg",
+    "rendering": {
+      "preview": true
+    },
     "icons": [
       {
         "identifier": "files-folder-content",
@@ -2887,6 +2916,11 @@
     "title": "Form",
     "folder": "form",
     "count": 26,
+    "symbols": "form.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "form-advanced-password",
@@ -3076,6 +3110,10 @@
     "title": "Information",
     "folder": "information",
     "count": 2,
+    "symbols": "information.symbols.svg",
+    "rendering": {
+      "preview": true
+    },
     "icons": [
       {
         "identifier": "information-os-unknown",
@@ -3097,6 +3135,10 @@
     "title": "Install",
     "folder": "install",
     "count": 27,
+    "symbols": "install.symbols.svg",
+    "rendering": {
+      "preview": true
+    },
     "icons": [
       {
         "identifier": "install-check-brokenextension",
@@ -3293,6 +3335,11 @@
     "title": "Mimetypes",
     "folder": "mimetypes",
     "count": 63,
+    "symbols": "mimetypes.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "mimetypes-application",
@@ -3741,6 +3788,11 @@
     "title": "Miscellaneous",
     "folder": "miscellaneous",
     "count": 1,
+    "symbols": "miscellaneous.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "miscellaneous-placeholder",
@@ -3755,6 +3807,10 @@
     "title": "Module",
     "folder": "module",
     "count": 43,
+    "symbols": "module.symbols.svg",
+    "rendering": {
+      "preview": true
+    },
     "icons": [
       {
         "identifier": "module-about",
@@ -4063,6 +4119,10 @@
     "title": "Modulegroup",
     "folder": "modulegroup",
     "count": 7,
+    "symbols": "modulegroup.symbols.svg",
+    "rendering": {
+      "preview": true
+    },
     "icons": [
       {
         "identifier": "modulegroup-file",
@@ -4119,6 +4179,10 @@
     "title": "Overlay",
     "folder": "overlay",
     "count": 27,
+    "symbols": "overlay.symbols.svg",
+    "rendering": {
+      "overlay": true
+    },
     "icons": [
       {
         "identifier": "overlay-advanced",
@@ -4315,6 +4379,12 @@
     "title": "Spinner",
     "folder": "spinner",
     "count": 3,
+    "symbols": "spinner.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true,
+      "spinning": true
+    },
     "icons": [
       {
         "identifier": "spinner-circle-dark",
@@ -4343,6 +4413,11 @@
     "title": "Status",
     "folder": "status",
     "count": 5,
+    "symbols": "status.symbols.svg",
+    "rendering": {
+      "preview": true,
+      "buttons": true
+    },
     "icons": [
       {
         "identifier": "status-user-admin",
