@@ -2,7 +2,7 @@
   "actions": {
     "title": "Actions",
     "folder": "actions",
-    "count": 216,
+    "count": 217,
     "symbols": "actions.symbols.svg",
     "rendering": {
       "preview": true,
@@ -1974,6 +1974,15 @@
         "path": "actions/actions-viewmode-tiles.svg",
         "folder": "actions",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><g class=\"icon-color\"><path d=\"M6 2v4H2V2h4m.5-1h-5a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5zM14 10v4h-4v-4h4m.5-1h-5a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5zM6 10v4H2v-4h4m.5-1h-5a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5zM14 2v4h-4V2h4m.5-1h-5a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5z\"/></g></svg>"
+      },
+      {
+        "alias": [],
+        "tags": [],
+        "identifier": "actions-wallet",
+        "file": "actions-wallet.svg",
+        "path": "actions/actions-wallet.svg",
+        "folder": "actions",
+        "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path d=\"M13.75 4H13V1.327a.25.25 0 0 0-.316-.24L2.184 3.95A.25.25 0 0 0 2 4.19v9.56c0 .138.112.25.25.25h11.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25zM12 2.31V4H5.8L12 2.31zM13 10v3H3V5h10v3h-2v2h2z\"/></svg>"
       },
       {
         "alias": [],
@@ -4666,18 +4675,18 @@
       {
         "alias": [],
         "tags": [],
-        "identifier": "mimetypes-x-sys_file_storage",
-        "file": "mimetypes-x-sys_file_storage.svg",
-        "path": "mimetypes/mimetypes-x-sys_file_storage.svg",
+        "identifier": "mimetypes-x-sys_filemounts",
+        "file": "mimetypes-x-sys_filemounts.svg",
+        "path": "mimetypes/mimetypes-x-sys_filemounts.svg",
         "folder": "mimetypes",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#EFEFEF\" d=\"M14 16H5l-3-2.5V2l3-2h9z\"/><path fill=\"#AAA\" d=\"M5 0L2 2v11.5L5 16h9V0H5zM3 13V2.5l2-1.3v13.5L3 13z\"/><path fill=\"#59F\" d=\"M6 9h2v1H6V9z\"/><path fill=\"#666\" d=\"M6 6h7v1H6V6zM6 4h7v1H6V4z\"/></svg>"
       },
       {
         "alias": [],
         "tags": [],
-        "identifier": "mimetypes-x-sys_filemounts",
-        "file": "mimetypes-x-sys_filemounts.svg",
-        "path": "mimetypes/mimetypes-x-sys_filemounts.svg",
+        "identifier": "mimetypes-x-sys_file_storage",
+        "file": "mimetypes-x-sys_file_storage.svg",
+        "path": "mimetypes/mimetypes-x-sys_file_storage.svg",
         "folder": "mimetypes",
         "inline": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 16 16\"><path fill=\"#EFEFEF\" d=\"M14 16H5l-3-2.5V2l3-2h9z\"/><path fill=\"#AAA\" d=\"M5 0L2 2v11.5L5 16h9V0H5zM3 13V2.5l2-1.3v13.5L3 13z\"/><path fill=\"#59F\" d=\"M6 9h2v1H6V9z\"/><path fill=\"#666\" d=\"M6 6h7v1H6V6zM6 4h7v1H6V4z\"/></svg>"
       },

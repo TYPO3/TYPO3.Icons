@@ -134,7 +134,7 @@ function getMetaData(file) {
     let finalMetaData = merge.all([defaultmeta, metadata])
     finalMetaData.identifier = basename;
     finalMetaData.file = path.basename(file);
-    finalMetaData.path = file;
+    finalMetaData.path = file.replace("\\", "/"); // replace = Windows Hotfix
     finalMetaData.folder = folder;
     finalMetaData.inline = getFileContents(path.join(options.dist, file));
     return finalMetaData;
@@ -230,7 +230,7 @@ gulp.task('data', (cb) => {
 gulp.task('docs', function (cb) {
 
     // Copy static assets
-    gulp.src([path.join(options.assets, '**/*')])
+    gulp.src([path.join(options.assets, '**/*')], { base: options.assets })
         .pipe(gulp.dest(path.join(options.docs, 'assets')));
 
     // Fetch generated data
