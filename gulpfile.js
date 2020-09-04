@@ -12,6 +12,7 @@ const gulp = require('gulp');
 const svgSprite = require('gulp-svg-sprite');
 const yaml = require('js-yaml');
 const merge = require('deepmerge');
+const execSync = require('child_process').execSync;
 
 
 //
@@ -97,12 +98,14 @@ function getSvgoConfig() {
 
     return config;
 }
+
 function getFolders(dir) {
     return fs.readdirSync(dir)
         .filter(function (file) {
             return fs.statSync(path.join(dir, file)).isDirectory();
         });
 }
+
 function getIcons(dir) {
     return fs.readdirSync(dir)
         .filter(function (file) {
@@ -114,31 +117,72 @@ function getIcons(dir) {
             }
         });
 }
+
 function getFileContents(file) {
     return fs.readFileSync(file, 'utf8');
 }
-function getMetaData(file) {
+
+function getMetaDataFileName(file) {
     let basename = path.basename(file, '.svg');
     let folder = path.dirname(file);
+    return metafile = path.join(options.meta, folder, basename + '.yaml' );
+}
+
+function getMetaData(file) {
     let defaultmeta = {
+        changes: [
+        ],
         alias: [
         ],
         tags: [
         ]
     };
-    let metafile = path.join(options.meta, folder, basename + '.yaml' );
+    let metafile = getMetaDataFileName(file);
     let metadata = {};
     if (fs.existsSync(metafile)) {
         metadata = yaml.safeLoad(fs.readFileSync(metafile, 'utf8'));
     }
-    let finalMetaData = merge.all([defaultmeta, metadata])
-    finalMetaData.identifier = basename;
-    finalMetaData.file = path.basename(file);
-    finalMetaData.path = file.replace("\\", "/"); // replace = Windows Hotfix
-    finalMetaData.folder = folder;
-    finalMetaData.inline = getFileContents(path.join(options.dist, file));
-    return finalMetaData;
+    return merge.all([defaultmeta, metadata]);
 }
+
+function updateMetaData(file, metadata) {
+    let metafile = getMetaDataFileName(file);
+    if (!fs.existsSync(path.dirname(metafile))){
+        fs.mkdirSync(path.dirname(metafile));
+    }
+    fs.writeFileSync(metafile, yaml.safeDump(metadata), 'utf8');
+}
+
+function getVersionChanges(file) {
+    let filename = path.join(options.src, file);
+    let commithashes = execSync('git log --pretty=format:"%H" ' + filename).toString().split("\n");
+    let fileversions = {};
+    for (let key in commithashes) {
+        let hashversions = execSync('git tag --contains ' + commithashes[key]).toString().split("\n");
+        for (let versionKey in hashversions) {
+            if (hashversions[versionKey].length > 0) {
+                hashversion = hashversions[versionKey].charAt(0) === 'v' ? hashversions[versionKey].substr(1) : hashversions[versionKey];
+                fileversions[hashversion] = hashversion;
+            }
+        }
+    }
+    let versions = [];
+    for (let key in fileversions) {
+        versions.push(key);
+    }
+    return sortVersions(versions);
+}
+
+function sortVersions(versions) {
+    return versions.sort((a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+}
+
+function generateVersionData(file) {
+    let metadata = getMetaData(file)
+    metadata.changes = getVersionChanges(file);
+    updateMetaData(file, metadata);
+}
+
 function getData() {
     let data = {};
     let folders = getFolders(options.dist);
@@ -149,6 +193,11 @@ function getData() {
         for (var i = 0; i < iconFiles.length; i++) {
             let file = path.join(folder, iconFiles[i]);
             icons[i] = getMetaData(file);
+            icons[i].identifier = path.basename(file, '.svg');
+            icons[i].file = path.basename(file);
+            icons[i].path = file.replace("\\", "/"); // replace = Windows Hotfix
+            icons[i].folder = path.dirname(file);
+            icons[i].inline = getFileContents(path.join(options.dist, file));
         }
         data[folder] = {
             title: folder.charAt(0).toUpperCase() + folder.slice(1),
@@ -227,7 +276,6 @@ gulp.task('data', (cb) => {
 // Aliases
 //
 gulp.task('aliases', (cb) => {
-    // Fetch generated data
     let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
     let list = {};
     for (let sectionKey in data) {
@@ -244,6 +292,22 @@ gulp.task('aliases', (cb) => {
     fs.writeFile(options.dist + 'icons-aliases.json', JSON.stringify(list, null, 2), 'utf8', () => {
         cb();
     });
+});
+
+//
+// Build Versions
+//
+gulp.task('build-versions', (cb) => {
+    let folders = getFolders(options.dist);
+    for (var folderCount = 0; folderCount < folders.length; folderCount++) {
+        var folder = folders[folderCount];
+        var iconFiles = getIcons(options.dist + folder);
+        for (var i = 0; i < iconFiles.length; i++) {
+            let file = path.join(folder, iconFiles[i]);
+            generateVersionData(file);
+        }
+    }
+    cb();
 });
 
 //

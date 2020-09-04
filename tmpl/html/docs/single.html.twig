@@ -12,9 +12,10 @@
 
     <div class="mb-4">
         <h1 class="h2 mb-2">{{ icon.identifier }}</h1>
-        {% if icon.tags|length > 0 %}
-            <p class="mb-1"><strong>Tags:</strong> {{ icon.tags|join(', ') }}</p>
-        {% endif %}
+        <div class="d-sm-flex">
+            <div class="my-2 flex-grow-1">{% if icon.tags|length > 0 %}<strong>Tags:</strong> {{ icon.tags|join(', ') }}{% endif %}</div>
+            <div class="my-2">{% if icon.changes|length > 0 %}Introduced in <a class="badge badge-primary" href="https://github.com/TYPO3/TYPO3.Icons/releases/tag/{{ icon.changes.0 }}" target="_blank" rel="noopener">v{{ icon.changes.0 }}</a>{% endif %}</div>
+        </div>
     </div>
 
     {% if section.rendering.preview %}

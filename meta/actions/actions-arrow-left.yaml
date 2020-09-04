@@ -1,2 +1,6 @@
+changes:
+  - 1.11.0
+  - 1.11.1
 alias:
   - actions-version-workspace-sendtoprevstage
+tags: []
