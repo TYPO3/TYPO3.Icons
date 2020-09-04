@@ -19,7 +19,7 @@
     <div class="icongrid" id="iconlist">
         {% for section in data %}
             {% for icon in section.icons %}
-                <a class="icongrid-item bg-light" data-type="icon" data-identifier="{{ icon.identifier }}" data-search="{{ icon.identifier }} {{ icon.tags|join(' ') }}" href="{{ pathPrefix }}icons/{{ section.folder }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
+                <a class="icongrid-item bg-light" data-type="icon" data-identifier="{{ icon.identifier }}" data-search="{{ icon.identifier }} {{ icon.alias|join(' ') }} {{ icon.tags|join(' ') }}" href="{{ pathPrefix }}icons/{{ section.folder }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
                     <span class="icon icon-size-default icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
                         {% if not section.rendering.overlay %}
                             <span class="icon-markup">
