@@ -223,6 +223,28 @@ gulp.task('data', (cb) => {
     });
 });
 
+//
+// Aliases
+//
+gulp.task('aliases', (cb) => {
+    // Fetch generated data
+    let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
+    let list = {};
+    for (let sectionKey in data) {
+        let section = data[sectionKey];
+        for (let iconKey in section.icons) {
+            let icon = section.icons[iconKey];
+            if (icon.alias.length > 0) {
+                for (let key in icon.alias) {
+                    list[icon.alias[key]] = icon.identifier;
+                }
+            }
+        }
+    }
+    fs.writeFile(options.dist + 'icons-aliases.json', JSON.stringify(list, null, 2), 'utf8', () => {
+        cb();
+    });
+});
 
 //
 // Compile Readme
@@ -300,5 +322,5 @@ gulp.task('docs', function (cb) {
 //
 // Default Task
 //
-gulp.task('build', gulp.series('clean', 'min', 'data', 'sprites', 'docs'));
+gulp.task('build', gulp.series('clean', 'min', 'data', 'aliases', 'sprites', 'docs'));
 gulp.task('default', gulp.series('build'));
