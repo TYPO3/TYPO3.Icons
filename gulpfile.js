@@ -355,6 +355,7 @@ gulp.task('docs', function (cb) {
             .pipe(twig({
                 data: {
                     pkg: pkg,
+                    typo3: JSON.parse(fs.readFileSync('./typo3.json', 'utf8')),
                     data: data,
                     section: section,
                     pathPrefix: '../',
@@ -368,6 +369,7 @@ gulp.task('docs', function (cb) {
                 .pipe(twig({
                     data: {
                         pkg: pkg,
+                        typo3: JSON.parse(fs.readFileSync('./typo3.json', 'utf8')),
                         data: data,
                         section: section,
                         icon: icon,
