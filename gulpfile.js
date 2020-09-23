@@ -14,6 +14,10 @@ const yaml = require('js-yaml');
 const merge = require('deepmerge');
 const execSync = require('child_process').execSync;
 
+const minifyCSS = require('gulp-clean-css');
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+
 
 //
 // Options
@@ -215,10 +219,27 @@ function getData() {
 //
 // Clean SVGs
 //
-gulp.task('clean', function (cb) {
+gulp.task('clean', () => {
     return del([options.dist, options.docs], { force: true });
 });
 
+
+//
+// Sass
+//
+gulp.task('sass', (cb) => {
+    gulp.src(path.join(options.assets, 'scss/icons.scss'))
+        .pipe(gulp.dest(options.dist))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(minifyCSS())
+        .pipe(gulp.dest(path.join(options.assets, 'css')))
+        .pipe(gulp.dest(options.dist));
+    gulp.src(path.join(options.assets, 'scss/docs.scss'))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(minifyCSS())
+        .pipe(gulp.dest(path.join(options.assets, 'css')))
+    cb();
+});
 
 //
 // Minify SVGs
@@ -316,7 +337,10 @@ gulp.task('build-versions', (cb) => {
 gulp.task('docs', function (cb) {
 
     // Copy static assets
-    gulp.src([path.join(options.assets, '**/*')], { base: options.assets })
+    gulp.src([
+            path.join(options.assets, '**/*'),
+            '!' + path.join(options.assets, '**/*(*.scss)'),
+        ], { base: options.assets })
         .pipe(gulp.dest(path.join(options.docs, 'assets')));
 
     // Fetch generated data
@@ -388,5 +412,5 @@ gulp.task('docs', function (cb) {
 //
 // Default Task
 //
-gulp.task('build', gulp.series('clean', 'min', 'data', 'aliases', 'sprites', 'docs'));
+gulp.task('build', gulp.series('clean', 'sass', 'min', 'data', 'aliases', 'sprites', 'docs'));
 gulp.task('default', gulp.series('build'));
