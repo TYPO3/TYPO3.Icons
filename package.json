@@ -39,7 +39,8 @@
     "js-yaml": "^3.14.0"
   },
   "dependencies": {
-    "npm": "^6.14.5"
+    "npm": "^6.14.5",
+    "stylelint": "^13.7.1"
   },
   "resolutions": {
     "mem": "^4.0.0",
@@ -50,6 +51,7 @@
     "build-versions": "gulp build-versions",
     "docs": "gulp docs",
     "aliases": "gulp aliases",
-    "serve": "http-server ./docs"
+    "serve": "http-server ./docs",
+    "stylelint": "stylelint assets/css/*"
   }
 }
