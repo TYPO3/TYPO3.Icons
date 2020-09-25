@@ -1008,36 +1008,6 @@
       "svg": "svgs/actions/actions-system-backend-user-switch.svg",
       "sprite": "sprites/actions.svg#actions-system-backend-user-switch"
     },
-    "actions-system-cache-clear-impact-high": {
-      "identifier": "actions-system-cache-clear-impact-high",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-cache-clear-impact-high.svg",
-      "sprite": "sprites/actions.svg#actions-system-cache-clear-impact-high"
-    },
-    "actions-system-cache-clear-impact-low": {
-      "identifier": "actions-system-cache-clear-impact-low",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-cache-clear-impact-low.svg",
-      "sprite": "sprites/actions.svg#actions-system-cache-clear-impact-low"
-    },
-    "actions-system-cache-clear-impact-medium": {
-      "identifier": "actions-system-cache-clear-impact-medium",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-cache-clear-impact-medium.svg",
-      "sprite": "sprites/actions.svg#actions-system-cache-clear-impact-medium"
-    },
-    "actions-system-cache-clear-rte": {
-      "identifier": "actions-system-cache-clear-rte",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-cache-clear-rte.svg",
-      "sprite": "sprites/actions.svg#actions-system-cache-clear-rte"
-    },
-    "actions-system-cache-clear": {
-      "identifier": "actions-system-cache-clear",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-cache-clear.svg",
-      "sprite": "sprites/actions.svg#actions-system-cache-clear"
-    },
     "actions-system-extension-configure": {
       "identifier": "actions-system-extension-configure",
       "category": "actions",
@@ -3628,6 +3598,11 @@
   "aliases": {
     "actions-version-workspace-sendtoprevstage": "actions-arrow-left",
     "actions-version-workspace-sendtostage": "actions-arrow-right",
+    "actions-system-cache-clear": "actions-bolt",
+    "actions-system-cache-clear-impact-high": "actions-bolt",
+    "actions-system-cache-clear-impact-medium": "actions-bolt",
+    "actions-system-cache-clear-impact-low": "actions-bolt",
+    "actions-system-cache-clear-rte": "actions-bolt",
     "actions-view-paging-first": "actions-chevron-bar-left",
     "actions-view-paging-first-disabled": "actions-chevron-bar-left",
     "actions-view-paging-last": "actions-chevron-bar-right",
