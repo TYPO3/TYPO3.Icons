@@ -600,6 +600,12 @@
       "svg": "svgs/actions/actions-extension.svg",
       "sprite": "sprites/actions.svg#actions-extension"
     },
+    "actions-eye": {
+      "identifier": "actions-eye",
+      "category": "actions",
+      "svg": "svgs/actions/actions-eye.svg",
+      "sprite": "sprites/actions.svg#actions-eye"
+    },
     "actions-file-add": {
       "identifier": "actions-file-add",
       "category": "actions",
@@ -1271,12 +1277,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-view-table-expand.svg",
       "sprite": "sprites/actions.svg#actions-view-table-expand"
-    },
-    "actions-view": {
-      "identifier": "actions-view",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view.svg",
-      "sprite": "sprites/actions.svg#actions-view"
     },
     "actions-viewmode-list": {
       "identifier": "actions-viewmode-list",
@@ -3620,6 +3620,8 @@
     "actions-edit-delete": "actions-delete",
     "actions-selection-delete": "actions-delete",
     "actions-version-document-remove": "actions-delete",
+    "actions-version-workspace-preview": "actions-eye",
+    "actions-view": "actions-eye",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link"
   }
