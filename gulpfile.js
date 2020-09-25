@@ -237,13 +237,12 @@ gulp.task('clean', () => {
 //
 // Sass
 //
-gulp.task('sass', (cb) => {
-    gulp.src(path.join(options.assets, 'scss/icons.scss'))
+gulp.task('sass', () => {
+    return gulp.src(path.join(options.assets, 'scss/icons.scss'))
         .pipe(gulp.dest(options.dist))
         .pipe(sass().on('error', sass.logError))
         .pipe(minifyCSS())
         .pipe(gulp.dest(options.dist));
-    cb();
 });
 
 //
@@ -301,7 +300,8 @@ gulp.task('data', (cb) => {
 //
 // Build Versions
 //
-gulp.task('build-versions', (cb) => {
+gulp.task('build-versions', () => {
+    return new Promise((resolve) => {
     let folders = getFolders(options.src);
     for (var folderCount = 0; folderCount < folders.length; folderCount++) {
         var folder = folders[folderCount];
@@ -312,7 +312,8 @@ gulp.task('build-versions', (cb) => {
             generateVersionData(identifier, folder);
         }
     }
-    cb();
+        resolve();
+});
 });
 
 //
