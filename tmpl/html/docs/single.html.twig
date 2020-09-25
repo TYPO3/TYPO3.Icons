@@ -1,11 +1,11 @@
 {% extends "_layout.html.twig" %}
-{% block title %}{{ icon.identifier }} - {{ section.title }}{% endblock %}
+{% block title %}{{ icon.identifier }} - {{ category.title }}{% endblock %}
 {% block content %}
 
     <nav>
         <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
             <li class="breadcrumb-item"><a href="{{ pathPrefix }}index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="{{ pathPrefix }}icons/{{ section.folder }}.html">{{ section.title }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ pathPrefix }}icons/{{ category.identifier }}.html">{{ category.title }}</a></li>
             <li class="breadcrumb-item">{{ icon.identifier }}</li>
         </ul>
     </nav>
@@ -13,24 +13,24 @@
     <div class="mb-4">
         <h1 class="h2 mb-2">{{ icon.identifier }}</h1>
         <div class="d-sm-flex">
-            <div class="my-2 flex-grow-1">{% if icon.tags|length > 0 %}<strong>Tags:</strong> {{ icon.tags|join(', ') }}{% endif %}</div>
-            {%- if icon.changes|length > 0 -%}
-                <div class="my-2 ml-sm-3">Introduced in <a class="badge badge-primary" href="https://github.com/TYPO3/TYPO3.Icons/releases/tag/{{ icon.changes.0 }}" target="_blank" rel="noopener">v{{ icon.changes.0 }}</a></div>
+            <div class="my-2 flex-grow-1">{% if icon._meta.tags|length > 0 %}<strong>Tags:</strong> {{ icon._meta.tags|join(', ') }}{% endif %}</div>
+            {%- if icon._meta.changes|length > 0 -%}
+                <div class="my-2 ml-sm-3">Introduced in <a class="badge badge-primary" href="https://github.com/TYPO3/TYPO3.Icons/releases/tag/{{ icon._meta.changes.0 }}" target="_blank" rel="noopener">v{{ icon._meta.changes.0 }}</a></div>
                 {%- set available = false -%}
                 {%- for typo3version, version in typo3.versions -%}
-                    {%- if version in icon.changes %}{% set available = true %}{% endif -%}
+                    {%- if version in icon._meta.changes %}{% set available = true %}{% endif -%}
                 {%- endfor -%}
                 {%- if available -%}
                 <div class="my-2 ml-sm-3">
                     Available in TYPO3
-                    {% for typo3version, version in typo3.versions %}{% if version in icon.changes %}<span class="badge badge-primary">{{ typo3version }}</span> {% endif %}{% endfor %}
+                    {% for typo3version, version in typo3.versions %}{% if version in icon._meta.changes %}<span class="badge badge-primary">{{ typo3version }}</span> {% endif %}{% endfor %}
                 </div>
                 {%- endif -%}
             {% endif %}
         </div>
     </div>
 
-    {%- if section.rendering.preview -%}
+    {%- if category.rendering.preview -%}
         <div class="section">
             {%- set colors = ['light', 'dark'] -%}
             {%- for color in colors -%}
@@ -38,7 +38,7 @@
                     {%- set sizes = ['mega', 'large', 'default', 'small'] -%}
                     {%- for size in sizes -%}
                         <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
-                            <span class="icon icon-size-{{ size }} icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
+                            <span class="icon icon-size-{{ size }} icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                                 <span class="icon-markup">
                                     {% include '_symbol.html.twig' with { icon: icon } %}
                                 </span>
@@ -50,19 +50,19 @@
         </div>
     {%- endif -%}
 
-    {%- if section.rendering.buttons -%}
+    {%- if category.rendering.buttons -%}
         <div class="section">
             <h2 class="mb-3">Buttons</h2>
             <p>
                 <span class="btn btn-icon btn-default">
-                    <span class="icon icon-size-small icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
+                    <span class="icon icon-size-small icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
                             {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
                     </span>
                 </span>
                 <span class="btn btn-icon btn-dark">
-                    <span class="icon icon-size-small icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
+                    <span class="icon icon-size-small icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
                             {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
@@ -71,7 +71,7 @@
             </p>
             <p>
                 <span class="btn btn-icon btn-default">
-                    <span class="icon icon-size-small icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
+                    <span class="icon icon-size-small icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
                             {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
@@ -79,7 +79,7 @@
                     Button Label
                 </span>
                 <span class="btn btn-icon btn-dark">
-                    <span class="icon icon-size-small icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
+                    <span class="icon icon-size-small icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
                             {% include '_symbol.html.twig' with { icon: icon } %}
                         </span>
@@ -90,7 +90,7 @@
         </div>
     {%- endif -%}
 
-    {%- if section.rendering.overlay -%}
+    {%- if category.rendering.overlay -%}
         <div class="section">
             <div class="preview">
                 {% set mainIcons = ['apps-filetree-folder-default', 'apps-filetree-folder-temp', 'apps-pagetree-page'] %}
@@ -100,9 +100,9 @@
                         {% set sizes = ['mega', 'large', 'default', 'small'] %}
                         {% for size in sizes %}
                             <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
-                                <span class="icon icon-size-{{ size }} icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
+                                <span class="icon icon-size-{{ size }} icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                                     <span class="icon-markup">
-                                        <img src="{{ pathPrefix }}assets/icons/apps/{{ mainIcon }}.svg">
+                                        <img src="{{ pathPrefix }}dist/svgs/apps/{{ mainIcon }}.svg">
                                     </span>
                                     <span class="icon-overlay">
                                         {% include '_symbol.html.twig' with { icon: icon } %}
@@ -118,23 +118,23 @@
 
     <div class="section">
         <h2 class="mb-3">Markup</h2>
-        <pre class="p-3 rounded bg-light"><code>{{ icon.inline|escape }}</code></pre>
+        <pre class="p-3 rounded bg-light"><code>{{ icon._inline|escape }}</code></pre>
     </div>
 
     <div class="section">
         <h2 class="mb-3">TYPO3 ViewHelper</h2>
-        {%- if section.rendering.overlay -%}
+        {%- if category.rendering.overlay -%}
             <pre class="p-3 rounded bg-light"><code>&lt;core:icon identifier=&quot;apps-pagetree-page&quot; overlay=&quot;{{ icon.identifier }}&quot; size=&quot;small&quot; /&gt;</code></pre>
         {%- else -%}
             <pre class="p-3 rounded bg-light"><code>&lt;core:icon identifier=&quot;{{ icon.identifier }}&quot; size=&quot;small&quot; /&gt;</code></pre>
         {%- endif -%}
     </div>
 
-    {%- if icon.alias|length > 0 -%}
+    {%- if icon._meta.alias|length > 0 -%}
         <div class="section">
             <h2 class="mb-3">Alias</h2>
             <ul class="list-unstyled">
-                {%- for alias in icon.alias -%}
+                {%- for alias in icon._meta.alias -%}
                     <li>{{ alias }}</li>
                 {%- endfor -%}
             </ul>
@@ -144,7 +144,7 @@
     <div class="section">
         <h2 class="mb-3">Download</h2>
         <p>
-            <a class="btn btn-primary" href="{{ pathPrefix }}assets/icons/{{ icon.folder }}/{{ icon.file }}">Download</a>
+            <a class="btn btn-primary" href="{{ pathPrefix }}dist/{{ icon.svg }}">Download</a>
         </p>
     </div>
 

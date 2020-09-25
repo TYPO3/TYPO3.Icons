@@ -86,6 +86,8 @@ const options = {
     },
     src: './src/',
     dist: './dist/',
+    dist_svgs: './dist/svgs/',
+    dist_sprites: './dist/sprites/',
     assets: './assets/',
     docs: './docs/',
     meta: './meta/',
@@ -122,26 +124,35 @@ function getIcons(dir) {
         });
 }
 
-function getFileContents(file) {
-    return fs.readFileSync(file, 'utf8');
+function getCategories() {
+    let categories = getFolders(options.src);
+    return categories.map((category) => {
+        let icons = getIcons(path.join(options.dist_svgs, category)).map((icon) => { return path.basename(icon, '.svg') });
+        return {
+            identifier: category,
+            title: category.charAt(0).toUpperCase() + category.slice(1),
+            sprite: 'sprites/' + category + '.svg',
+            rendering: options.rendering[category] ?? {},
+            icons: icons,
+            count: icons.length
+        };
+    });
 }
 
-function getMetaDataFileName(file) {
-    let basename = path.basename(file, '.svg');
-    let folder = path.dirname(file);
-    return metafile = path.join(options.meta, folder, basename + '.yaml' );
+function getMetaDataFileName(identifier, folder) {
+    return path.join(options.meta, folder, identifier + '.yaml' );
 }
 
-function getMetaData(file) {
+function getMetaData(identifier, folder) {
     let defaultmeta = {
-        changes: [
-        ],
         alias: [
+        ],
+        changes: [
         ],
         tags: [
         ]
     };
-    let metafile = getMetaDataFileName(file);
+    let metafile = path.join(options.meta, folder, identifier + '.yaml' );
     let metadata = {};
     if (fs.existsSync(metafile)) {
         metadata = yaml.safeLoad(fs.readFileSync(metafile, 'utf8'));
@@ -149,16 +160,16 @@ function getMetaData(file) {
     return merge.all([defaultmeta, metadata]);
 }
 
-function updateMetaData(file, metadata) {
-    let metafile = getMetaDataFileName(file);
+function updateMetaData(identifier, folder, metadata) {
+    let metafile = getMetaDataFileName(identifier, folder);
     if (!fs.existsSync(path.dirname(metafile))){
         fs.mkdirSync(path.dirname(metafile));
     }
     fs.writeFileSync(metafile, yaml.safeDump(metadata), 'utf8');
 }
 
-function getVersionChanges(file) {
-    let filename = path.join(options.src, file);
+function getVersionChanges(identifier, folder) {
+    let filename = path.join(options.src, folder, identifier + '.svg');
     let commithashes = execSync('git log --pretty=format:"%H" ' + filename).toString().split("\n");
     let fileversions = {};
     for (let key in commithashes) {
@@ -181,36 +192,35 @@ function sortVersions(versions) {
     return versions.sort((a, b) => a.localeCompare(b, undefined, { numeric:true }) );
 }
 
-function generateVersionData(file) {
-    let metadata = getMetaData(file)
-    metadata.changes = getVersionChanges(file);
-    updateMetaData(file, metadata);
+function generateVersionData(identifier, folder) {
+    let metadata = getMetaData(identifier, folder)
+    metadata.changes = getVersionChanges(identifier, folder);
+    updateMetaData(identifier, folder, metadata);
 }
 
 function getData() {
     let data = {};
-    let folders = getFolders(options.dist);
+        data.icons = {};
+        data.aliases = {};
+    let folders = getFolders(options.dist_svgs);
     for (var folderCount = 0; folderCount < folders.length; folderCount++) {
-        var folder = folders[folderCount];
-        var iconFiles = getIcons(options.dist + folder);
-        var icons = [];
+        let folder = folders[folderCount];
+        let iconFiles = getIcons(path.join(options.dist_svgs, folder));
         for (var i = 0; i < iconFiles.length; i++) {
-            let file = path.join(folder, iconFiles[i]);
-            icons[i] = getMetaData(file);
-            icons[i].identifier = path.basename(file, '.svg');
-            icons[i].file = path.basename(file);
-            icons[i].path = file.replace("\\", "/"); // replace = Windows Hotfix
-            icons[i].folder = path.dirname(file);
-            icons[i].inline = getFileContents(path.join(options.dist, file));
+            let file = path.join('svgs', folder, iconFiles[i]);
+            let identifier = path.basename(file, '.svg');
+            let metaData = getMetaData(identifier, folder);
+            if (metaData.alias.length > 0) {
+                for (let aliasKey in metaData.alias) {
+                    data.aliases[metaData.alias[aliasKey]] = identifier;
+                }
+            }
+            data.icons[identifier] = {};
+            data.icons[identifier].identifier = identifier;
+            data.icons[identifier].category   = folder;
+            data.icons[identifier].svg        = 'svgs/' + folder + '/' + identifier + '.svg';
+            data.icons[identifier].sprite     = 'sprites/' + folder + '.svg' + '#' + identifier;
         }
-        data[folder] = {
-            title: folder.charAt(0).toUpperCase() + folder.slice(1),
-            folder: folder,
-            count: icons.length,
-            symbols: folder + '.symbols.svg',
-            rendering: options.rendering[folder] ?? {},
-            icons: icons
-        };
     }
     return data;
 }
@@ -232,12 +242,7 @@ gulp.task('sass', (cb) => {
         .pipe(gulp.dest(options.dist))
         .pipe(sass().on('error', sass.logError))
         .pipe(minifyCSS())
-        .pipe(gulp.dest(path.join(options.assets, 'css')))
         .pipe(gulp.dest(options.dist));
-    gulp.src(path.join(options.assets, 'scss/docs.scss'))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(minifyCSS())
-        .pipe(gulp.dest(path.join(options.assets, 'css')))
     cb();
 });
 
@@ -247,39 +252,39 @@ gulp.task('sass', (cb) => {
 gulp.task('min', () => {
     return gulp.src([options.src + '**/*.svg'])
         .pipe(svgmin(getSvgoConfig()))
-        .pipe(gulp.dest(path.join(options.docs, 'assets/icons')))
-        .pipe(gulp.dest(options.dist));
+        .pipe(gulp.dest(options.dist_svgs));
 });
 
 
 //
 // SVG Sprites
 //
-gulp.task('sprites', (cb) => {
-    let folders = getFolders(options.dist);
-    for (var folderCount = 0; folderCount < folders.length; folderCount++) {
-        var folder = folders[folderCount];
-        gulp.src([path.join(options.dist, folder) + '/*.svg'])
-            .pipe(svgSprite({
-                svg: {
-                    rootAttributes: {
-                        class: 'typo3-icons-' + folder,
-                        style: 'display: none;'
+gulp.task('sprites', () => {
+    let processFolder = (folder) => {
+        return new Promise((resolve, reject) => {
+            gulp.src([path.join(options.dist_svgs, folder) + '/*.svg'])
+                .pipe(svgSprite({
+                    svg: {
+                        rootAttributes: {
+                            class: 'typo3-icons-' + folder,
+                            style: 'display: none;'
+                        },
+                        namespaceIDs: true,
+                        namespaceClassnames: false
                     },
-                    namespaceIDs: true,
-                    namespaceClassnames: false
-                },
-                mode: {
-                    symbol: {
-                        dest: '',
-                        sprite: folder + '.symbols.svg'
+                    mode: {
+                        symbol: {
+                            dest: '',
+                            sprite: folder + '.svg'
+                        }
                     }
-                }
-            }))
-            .pipe(gulp.dest(path.join(options.docs, 'assets/icons')))
-            .pipe(gulp.dest(options.dist));
-    }
-    cb();
+                }))
+                .on('error', reject)
+                .pipe(gulp.dest(options.dist_sprites))
+                .on('end', resolve);
+        });
+    };
+    return Promise.all(getFolders(options.dist_svgs).map(processFolder));
 });
 
 
@@ -294,38 +299,17 @@ gulp.task('data', (cb) => {
 });
 
 //
-// Aliases
-//
-gulp.task('aliases', (cb) => {
-    let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
-    let list = {};
-    for (let sectionKey in data) {
-        let section = data[sectionKey];
-        for (let iconKey in section.icons) {
-            let icon = section.icons[iconKey];
-            if (icon.alias.length > 0) {
-                for (let key in icon.alias) {
-                    list[icon.alias[key]] = icon.identifier;
-                }
-            }
-        }
-    }
-    fs.writeFile(options.dist + 'icons-aliases.json', JSON.stringify(list, null, 2), 'utf8', () => {
-        cb();
-    });
-});
-
-//
 // Build Versions
 //
 gulp.task('build-versions', (cb) => {
-    let folders = getFolders(options.dist);
+    let folders = getFolders(options.src);
     for (var folderCount = 0; folderCount < folders.length; folderCount++) {
         var folder = folders[folderCount];
-        var iconFiles = getIcons(options.dist + folder);
+        var iconFiles = getIcons(options.src + folder);
         for (var i = 0; i < iconFiles.length; i++) {
             let file = path.join(folder, iconFiles[i]);
-            generateVersionData(file);
+            let identifier = path.basename(file, '.svg');
+            generateVersionData(identifier, folder);
         }
     }
     cb();
@@ -336,23 +320,36 @@ gulp.task('build-versions', (cb) => {
 //
 gulp.task('docs', function (cb) {
 
+    // Build Docs CSS
+    gulp.src(path.join(options.assets, 'scss/docs.scss'))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(minifyCSS())
+        .pipe(gulp.dest(path.join(options.docs, 'assets', 'css')))
+
     // Copy static assets
-    gulp.src([
-            path.join(options.assets, '**/*'),
+    gulp.src([path.join(options.assets, '**/*'),
             '!' + path.join(options.assets, '**/*(*.scss)'),
         ], { base: options.assets })
         .pipe(gulp.dest(path.join(options.docs, 'assets')));
+    gulp.src([path.join(options.dist, '**/*')], { base: options.dist } )
+        .pipe(gulp.dest(path.join(options.docs, 'dist')));
 
     // Fetch generated data
+    let typo3 = JSON.parse(fs.readFileSync('./typo3.json', 'utf8'))
+    let categories = getCategories();
     let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
+    let icons = data.icons;
+    for(let iconKey in icons) {
+        icons[iconKey]._meta = getMetaData(icons[iconKey].identifier, icons[iconKey].category);
+        icons[iconKey]._inline = fs.readFileSync(path.join(options.dist, icons[iconKey].svg), 'utf8')
+    }
 
     // README
     gulp.src('./tmpl/markdown/README.md.twig')
         .pipe(twig({
             data: {
                 pkg: pkg,
-                data: data,
-                section: {}
+                typo3: typo3,
             }
         }))
         .pipe(rename('README.md'))
@@ -363,8 +360,10 @@ gulp.task('docs', function (cb) {
         .pipe(twig({
             data: {
                 pkg: pkg,
-                data: data,
-                section: {},
+                typo3: typo3,
+                icons: icons,
+                category: {},
+                categories: categories,
                 rendering: {},
                 pathPrefix: '',
             }
@@ -373,35 +372,38 @@ gulp.task('docs', function (cb) {
         .pipe(gulp.dest(path.join('./docs')));
 
     // Build pages
-    for (let sectionKey in data) {
-        let section = data[sectionKey];
+    for (let categoryKey in categories) {
+        let category = categories[categoryKey];
         gulp.src('./tmpl/html/docs/section.html.twig')
             .pipe(twig({
                 data: {
                     pkg: pkg,
-                    typo3: JSON.parse(fs.readFileSync('./typo3.json', 'utf8')),
-                    data: data,
-                    section: section,
+                    typo3: typo3,
+                    icons: icons,
+                    category: category,
+                    categories: categories,
                     pathPrefix: '../',
                 }
             }))
-            .pipe(rename(section.folder + '.html'))
+            .pipe(rename(category.identifier + '.html'))
             .pipe(gulp.dest(path.join('./docs/icons')));
-        for (let iconKey in section.icons) {
-            let icon = section.icons[iconKey];
+        for (let iconKey in category.icons) {
+            let iconIdentifier = category.icons[iconKey];
+            let icon = icons[iconIdentifier];
             gulp.src('./tmpl/html/docs/single.html.twig')
                 .pipe(twig({
                     data: {
                         pkg: pkg,
-                        typo3: JSON.parse(fs.readFileSync('./typo3.json', 'utf8')),
-                        data: data,
-                        section: section,
+                        typo3: typo3,
                         icon: icon,
+                        icons: icons,
+                        category: category,
+                        categories: categories,
                         pathPrefix: '../../',
                     }
                 }))
-                .pipe(rename(icon.identifier + '.html'))
-                .pipe(gulp.dest(path.join('./docs/icons', section.folder)));
+                .pipe(rename(iconIdentifier + '.html'))
+                .pipe(gulp.dest(path.join('./docs/icons', category.identifier)));
         }
     }
 
@@ -412,5 +414,5 @@ gulp.task('docs', function (cb) {
 //
 // Default Task
 //
-gulp.task('build', gulp.series('clean', 'sass', 'min', 'data', 'aliases', 'sprites', 'docs'));
+gulp.task('build', gulp.series('clean', 'sass', 'min', 'sprites', 'data', 'docs'));
 gulp.task('default', gulp.series('build'));

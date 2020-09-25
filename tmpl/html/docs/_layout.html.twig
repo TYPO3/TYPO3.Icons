@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ pathPrefix }}assets/css/docs.css">
-    <link rel="stylesheet" href="{{ pathPrefix }}assets/css/icons.css">
+    <link rel="stylesheet" href="{{ pathPrefix }}dist/icons.css">
     <link rel="shortcut icon" href="{{ pathPrefix }}assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -28,8 +28,8 @@
                     </ul>
                     <hr>
                     <ul class="nav flex-column">
-                        {% for navSection in data %}
-                            <li class="nav-item"><a class="nav-link{% if navSection.folder == section.folder %} active{% endif %}" href="{{ pathPrefix }}icons/{{ navSection.folder }}.html">{{ navSection.title }}</a></li>
+                        {% for categoryItem in categories %}
+                            <li class="nav-item"><a class="nav-link{% if categoryItem.identifier == category.identifier %} active{% endif %}" href="{{ pathPrefix }}icons/{{ categoryItem.identifier }}.html">{{ categoryItem.title }}</a></li>
                         {% endfor %}
                     </ul>
                     <hr>

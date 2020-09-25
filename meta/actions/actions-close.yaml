@@ -1,14 +1,11 @@
+alias:
+  - actions-message-error-close
+  - actions-message-information-close
+  - actions-message-notice-close
+  - actions-message-ok-close
+  - actions-message-warning-close
+  - actions-input-clear
 changes:
-  - 0.0.3
-  - 0.0.4
-  - 0.0.7
-  - 0.0.8
-  - 0.0.9
-  - 0.0.10
-  - 0.0.11
-  - 0.0.12
-  - 0.0.13
-  - 0.0.14
   - 1.0.0
   - 1.1.0
   - 1.1.1
@@ -25,13 +22,6 @@ changes:
   - 1.10.0
   - 1.11.0
   - 1.11.1
-alias:
-  - actions-message-error-close
-  - actions-message-information-close
-  - actions-message-notice-close
-  - actions-message-ok-close
-  - actions-message-warning-close
-  - actions-input-clear
 tags:
   - reset
   - clear

@@ -17,17 +17,18 @@
     </div>
 
     <div class="icongrid" id="iconlist">
-        {% for section in data %}
-            {% for icon in section.icons %}
-                <a class="icongrid-item bg-light" data-type="icon" data-identifier="{{ icon.identifier }}" data-search="{{ icon.identifier }} {{ icon.alias|join(' ') }} {{ icon.tags|join(' ') }}" href="{{ pathPrefix }}icons/{{ section.folder }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
-                    <span class="icon icon-size-default icon-state-default{% if section.rendering.spinning %} icon-spin{% endif %}">
-                        {% if not section.rendering.overlay %}
+        {% for categoryItem in categories %}
+            {% for iconIdentifier in categoryItem.icons %}
+                {% set icon = icons[iconIdentifier] %}
+                <a class="icongrid-item bg-light" data-type="icon" data-identifier="{{ icon.identifier }}" data-search="{{ icon.identifier }} {{ icon._meta.alias|join(' ') }} {{ icon._meta.tags|join(' ') }}" href="{{ pathPrefix }}icons/{{ categoryItem.identifier }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
+                    <span class="icon icon-size-default icon-state-default{% if categoryItem.rendering.spinning %} icon-spin{% endif %}">
+                        {% if not categoryItem.rendering.overlay %}
                             <span class="icon-markup">
                                 {% include '_symbol.html.twig' with { icon: icon } %}
                             </span>
                         {% else %}
                             <span class="icon-markup">
-                                <img src="{{ pathPrefix }}assets/icons/apps/apps-pagetree-page.svg">
+                                <img src="{{ pathPrefix }}dist/svgs/apps/apps-pagetree-page.svg">
                             </span>
                             <span class="icon-overlay">
                                 {% include '_symbol.html.twig' with { icon: icon } %}
