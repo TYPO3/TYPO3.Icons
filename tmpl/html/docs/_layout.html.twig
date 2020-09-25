@@ -32,7 +32,6 @@
                             <li class="nav-item">
                                 <a class="nav-link{% if categoryItem.identifier == category.identifier %} active{% endif %} d-flex justify-content-between align-items-center" href="{{ pathPrefix }}icons/{{ categoryItem.identifier }}.html">
                                     {{ categoryItem.title }}
-                                    <span class="badge badge-secondary badge-pill">{{ categoryItem.count }}</span>
                                 </a>
                             </li>
                         {% endfor %}
