@@ -528,12 +528,6 @@
       "svg": "svgs/actions/actions-edit-pick-date.svg",
       "sprite": "sprites/actions.svg#actions-edit-pick-date"
     },
-    "actions-edit-redo": {
-      "identifier": "actions-edit-redo",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-redo.svg",
-      "sprite": "sprites/actions.svg#actions-edit-redo"
-    },
     "actions-edit-rename": {
       "identifier": "actions-edit-rename",
       "category": "actions",
@@ -557,12 +551,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-edit-undelete-edit.svg",
       "sprite": "sprites/actions.svg#actions-edit-undelete-edit"
-    },
-    "actions-edit-undo": {
-      "identifier": "actions-edit-undo",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-undo.svg",
-      "sprite": "sprites/actions.svg#actions-edit-undo"
     },
     "actions-edit-upload": {
       "identifier": "actions-edit-upload",
@@ -918,6 +906,12 @@
       "svg": "svgs/actions/actions-preview.svg",
       "sprite": "sprites/actions.svg#actions-preview"
     },
+    "actions-redo": {
+      "identifier": "actions-redo",
+      "category": "actions",
+      "svg": "svgs/actions/actions-redo.svg",
+      "sprite": "sprites/actions.svg#actions-redo"
+    },
     "actions-refresh": {
       "identifier": "actions-refresh",
       "category": "actions",
@@ -1127,6 +1121,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-typo3.svg",
       "sprite": "sprites/actions.svg#actions-typo3"
+    },
+    "actions-undo": {
+      "identifier": "actions-undo",
+      "category": "actions",
+      "svg": "svgs/actions/actions-undo.svg",
+      "sprite": "sprites/actions.svg#actions-undo"
     },
     "actions-unlink": {
       "identifier": "actions-unlink",
@@ -3578,6 +3578,7 @@
     "actions-system-typoscript-documentation-open": "actions-notebook-typoscript",
     "actions-system-extension-documentation": "actions-notebook",
     "actions-add-placeholder": "actions-placeholder-add",
+    "actions-edit-redo": "actions-redo",
     "actions-system-refresh": "actions-refresh",
     "actions-document-save-new": "actions-save-add",
     "actions-document-save-close": "actions-save-close",
@@ -3588,6 +3589,7 @@
     "actions-version-swap-version": "actions-swap",
     "actions-version-swap-workspace": "actions-swap",
     "actions-edit-unhide": "actions-toggle-off",
-    "actions-edit-hide": "actions-toggle-on"
+    "actions-edit-hide": "actions-toggle-on",
+    "actions-edit-undo": "actions-undo"
   }
 }
