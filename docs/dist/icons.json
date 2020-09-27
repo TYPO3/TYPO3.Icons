@@ -570,12 +570,6 @@
       "svg": "svgs/actions/actions-edit-download.svg",
       "sprite": "sprites/actions.svg#actions-edit-download"
     },
-    "actions-edit-hide": {
-      "identifier": "actions-edit-hide",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-hide.svg",
-      "sprite": "sprites/actions.svg#actions-edit-hide"
-    },
     "actions-edit-insert-default": {
       "identifier": "actions-edit-insert-default",
       "category": "actions",
@@ -641,12 +635,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-edit-undo.svg",
       "sprite": "sprites/actions.svg#actions-edit-undo"
-    },
-    "actions-edit-unhide": {
-      "identifier": "actions-edit-unhide",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-unhide.svg",
-      "sprite": "sprites/actions.svg#actions-edit-unhide"
     },
     "actions-edit-upload": {
       "identifier": "actions-edit-upload",
@@ -1163,6 +1151,18 @@
       "category": "actions",
       "svg": "svgs/actions/actions-template-new.svg",
       "sprite": "sprites/actions.svg#actions-template-new"
+    },
+    "actions-toggle-off": {
+      "identifier": "actions-toggle-off",
+      "category": "actions",
+      "svg": "svgs/actions/actions-toggle-off.svg",
+      "sprite": "sprites/actions.svg#actions-toggle-off"
+    },
+    "actions-toggle-on": {
+      "identifier": "actions-toggle-on",
+      "category": "actions",
+      "svg": "svgs/actions/actions-toggle-on.svg",
+      "sprite": "sprites/actions.svg#actions-toggle-on"
     },
     "actions-translate": {
       "identifier": "actions-translate",
@@ -3621,6 +3621,8 @@
     "actions-version-workspace-preview": "actions-eye",
     "actions-view": "actions-eye",
     "actions-wizard-rte": "actions-link",
-    "actions-wizard-link": "actions-link"
+    "actions-wizard-link": "actions-link",
+    "actions-edit-unhide": "actions-toggle-off",
+    "actions-edit-hide": "actions-toggle-on"
   }
 }
