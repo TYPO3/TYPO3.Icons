@@ -354,6 +354,18 @@
       "svg": "svgs/actions/actions-debug.svg",
       "sprite": "sprites/actions.svg#actions-debug"
     },
+    "actions-delete-edit": {
+      "identifier": "actions-delete-edit",
+      "category": "actions",
+      "svg": "svgs/actions/actions-delete-edit.svg",
+      "sprite": "sprites/actions.svg#actions-delete-edit"
+    },
+    "actions-delete-restore": {
+      "identifier": "actions-delete-restore",
+      "category": "actions",
+      "svg": "svgs/actions/actions-delete-restore.svg",
+      "sprite": "sprites/actions.svg#actions-delete-restore"
+    },
     "actions-delete": {
       "identifier": "actions-delete",
       "category": "actions",
@@ -515,18 +527,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-edit-merge-localization.svg",
       "sprite": "sprites/actions.svg#actions-edit-merge-localization"
-    },
-    "actions-edit-restore": {
-      "identifier": "actions-edit-restore",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-restore.svg",
-      "sprite": "sprites/actions.svg#actions-edit-restore"
-    },
-    "actions-edit-undelete-edit": {
-      "identifier": "actions-edit-undelete-edit",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-undelete-edit.svg",
-      "sprite": "sprites/actions.svg#actions-edit-undelete-edit"
     },
     "actions-edit-upload": {
       "identifier": "actions-edit-upload",
@@ -3523,6 +3523,8 @@
     "actions-edit-cut-release": "actions-cut-release",
     "actions-edit-cut": "actions-cut",
     "actions-system-extension-sqldump": "actions-database-export",
+    "actions-edit-undelete-edit": "actions-delete-edit",
+    "actions-edit-restore": "actions-delete-restore",
     "actions-edit-delete": "actions-delete",
     "actions-selection-delete": "actions-delete",
     "actions-version-document-remove": "actions-delete",
