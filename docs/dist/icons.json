@@ -372,29 +372,11 @@
       "svg": "svgs/actions/actions-document-edit-access.svg",
       "sprite": "sprites/actions.svg#actions-document-edit-access"
     },
-    "actions-document-export-csv": {
-      "identifier": "actions-document-export-csv",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-export-csv.svg",
-      "sprite": "sprites/actions.svg#actions-document-export-csv"
-    },
-    "actions-document-export-t3d": {
-      "identifier": "actions-document-export-t3d",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-export-t3d.svg",
-      "sprite": "sprites/actions.svg#actions-document-export-t3d"
-    },
     "actions-document-history-open": {
       "identifier": "actions-document-history-open",
       "category": "actions",
       "svg": "svgs/actions/actions-document-history-open.svg",
       "sprite": "sprites/actions.svg#actions-document-history-open"
-    },
-    "actions-document-import-t3d": {
-      "identifier": "actions-document-import-t3d",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-import-t3d.svg",
-      "sprite": "sprites/actions.svg#actions-document-import-t3d"
     },
     "actions-document-info": {
       "identifier": "actions-document-info",
@@ -666,17 +648,35 @@
       "svg": "svgs/actions/actions-file-add.svg",
       "sprite": "sprites/actions.svg#actions-file-add"
     },
+    "actions-file-csv-download": {
+      "identifier": "actions-file-csv-download",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-csv-download.svg",
+      "sprite": "sprites/actions.svg#actions-file-csv-download"
+    },
     "actions-file-csv": {
       "identifier": "actions-file-csv",
       "category": "actions",
       "svg": "svgs/actions/actions-file-csv.svg",
       "sprite": "sprites/actions.svg#actions-file-csv"
     },
+    "actions-file-edit": {
+      "identifier": "actions-file-edit",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-edit.svg",
+      "sprite": "sprites/actions.svg#actions-file-edit"
+    },
     "actions-file-html": {
       "identifier": "actions-file-html",
       "category": "actions",
       "svg": "svgs/actions/actions-file-html.svg",
       "sprite": "sprites/actions.svg#actions-file-html"
+    },
+    "actions-file-move": {
+      "identifier": "actions-file-move",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-move.svg",
+      "sprite": "sprites/actions.svg#actions-file-move"
     },
     "actions-file-openoffice": {
       "identifier": "actions-file-openoffice",
@@ -689,6 +689,36 @@
       "category": "actions",
       "svg": "svgs/actions/actions-file-pdf.svg",
       "sprite": "sprites/actions.svg#actions-file-pdf"
+    },
+    "actions-file-search": {
+      "identifier": "actions-file-search",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-search.svg",
+      "sprite": "sprites/actions.svg#actions-file-search"
+    },
+    "actions-file-t3d-download": {
+      "identifier": "actions-file-t3d-download",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-t3d-download.svg",
+      "sprite": "sprites/actions.svg#actions-file-t3d-download"
+    },
+    "actions-file-t3d-upload": {
+      "identifier": "actions-file-t3d-upload",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-t3d-upload.svg",
+      "sprite": "sprites/actions.svg#actions-file-t3d-upload"
+    },
+    "actions-file-t3d": {
+      "identifier": "actions-file-t3d",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-t3d.svg",
+      "sprite": "sprites/actions.svg#actions-file-t3d"
+    },
+    "actions-file-view": {
+      "identifier": "actions-file-view",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-view.svg",
+      "sprite": "sprites/actions.svg#actions-file-view"
     },
     "actions-file": {
       "identifier": "actions-file",
@@ -863,24 +893,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-open.svg",
       "sprite": "sprites/actions.svg#actions-open"
-    },
-    "actions-page-move": {
-      "identifier": "actions-page-move",
-      "category": "actions",
-      "svg": "svgs/actions/actions-page-move.svg",
-      "sprite": "sprites/actions.svg#actions-page-move"
-    },
-    "actions-page-new": {
-      "identifier": "actions-page-new",
-      "category": "actions",
-      "svg": "svgs/actions/actions-page-new.svg",
-      "sprite": "sprites/actions.svg#actions-page-new"
-    },
-    "actions-page-open": {
-      "identifier": "actions-page-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-page-open.svg",
-      "sprite": "sprites/actions.svg#actions-page-open"
     },
     "actions-pagetree-mountroot": {
       "identifier": "actions-pagetree-mountroot",
@@ -1080,12 +1092,6 @@
       "svg": "svgs/actions/actions-system-options-view.svg",
       "sprite": "sprites/actions.svg#actions-system-options-view"
     },
-    "actions-system-pagemodule-open": {
-      "identifier": "actions-system-pagemodule-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-pagemodule-open.svg",
-      "sprite": "sprites/actions.svg#actions-system-pagemodule-open"
-    },
     "actions-system-shortcut-active": {
       "identifier": "actions-system-shortcut-active",
       "category": "actions",
@@ -1176,12 +1182,6 @@
       "svg": "svgs/actions/actions-variable-select.svg",
       "sprite": "sprites/actions.svg#actions-variable-select"
     },
-    "actions-version-page-open": {
-      "identifier": "actions-version-page-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-version-page-open.svg",
-      "sprite": "sprites/actions.svg#actions-version-page-open"
-    },
     "actions-view-go-back": {
       "identifier": "actions-view-go-back",
       "category": "actions",
@@ -1205,12 +1205,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-view-go-up.svg",
       "sprite": "sprites/actions.svg#actions-view-go-up"
-    },
-    "actions-view-page": {
-      "identifier": "actions-view-page",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-page.svg",
-      "sprite": "sprites/actions.svg#actions-view-page"
     },
     "actions-viewmode-list": {
       "identifier": "actions-viewmode-list",
@@ -3576,6 +3570,14 @@
     "actions-version-workspaces-preview-link": "actions-eye-link",
     "actions-version-workspace-preview": "actions-eye",
     "actions-view": "actions-eye",
+    "actions-page-new": "actions-file-add",
+    "actions-document-export-csv": "actions-file-csv-download",
+    "actions-version-page-open": "actions-file-edit",
+    "actions-page-open": "actions-file-edit",
+    "actions-system-pagemodule-open": "actions-file-search",
+    "actions-document-export-t3d": "actions-file-t3d-download",
+    "actions-document-import-t3d": "actions-file-t3d-upload",
+    "actions-view-page": "actions-file-view",
     "actions-system-tree-search-open": "actions-filter",
     "actions-insert-record": "actions-folder",
     "actions-wizard-rte": "actions-link",
