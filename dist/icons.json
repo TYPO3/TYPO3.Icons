@@ -648,6 +648,12 @@
       "svg": "svgs/actions/actions-extension.svg",
       "sprite": "sprites/actions.svg#actions-extension"
     },
+    "actions-eye-link": {
+      "identifier": "actions-eye-link",
+      "category": "actions",
+      "svg": "svgs/actions/actions-eye-link.svg",
+      "sprite": "sprites/actions.svg#actions-eye-link"
+    },
     "actions-eye": {
       "identifier": "actions-eye",
       "category": "actions",
@@ -1175,12 +1181,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-version-page-open.svg",
       "sprite": "sprites/actions.svg#actions-version-page-open"
-    },
-    "actions-version-workspaces-preview-link": {
-      "identifier": "actions-version-workspaces-preview-link",
-      "category": "actions",
-      "svg": "svgs/actions/actions-version-workspaces-preview-link.svg",
-      "sprite": "sprites/actions.svg#actions-version-workspaces-preview-link"
     },
     "actions-view-go-back": {
       "identifier": "actions-view-go-back",
@@ -3573,6 +3573,7 @@
     "actions-system-extension-update": "actions-extension-refresh",
     "actions-system-extension-update-disable": "actions-extension-refresh",
     "actions-system-extension-uninstall": "actions-extension-remove",
+    "actions-version-workspaces-preview-link": "actions-eye-link",
     "actions-version-workspace-preview": "actions-eye",
     "actions-view": "actions-eye",
     "actions-system-tree-search-open": "actions-filter",
