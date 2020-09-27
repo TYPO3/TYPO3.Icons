@@ -396,12 +396,6 @@
       "svg": "svgs/actions/actions-document-edit-access.svg",
       "sprite": "sprites/actions.svg#actions-document-edit-access"
     },
-    "actions-document-history-open": {
-      "identifier": "actions-document-history-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-history-open.svg",
-      "sprite": "sprites/actions.svg#actions-document-history-open"
-    },
     "actions-document-localize": {
       "identifier": "actions-document-localize",
       "category": "actions",
@@ -761,6 +755,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-heart.svg",
       "sprite": "sprites/actions.svg#actions-heart"
+    },
+    "actions-history": {
+      "identifier": "actions-history",
+      "category": "actions",
+      "svg": "svgs/actions/actions-history.svg",
+      "sprite": "sprites/actions.svg#actions-history"
     },
     "actions-house": {
       "identifier": "actions-house",
@@ -3570,6 +3570,7 @@
     "actions-view-page": "actions-file-view",
     "actions-system-tree-search-open": "actions-filter",
     "actions-insert-record": "actions-folder",
+    "actions-document-history-open": "actions-history",
     "actions-document-info": "actions-info",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
