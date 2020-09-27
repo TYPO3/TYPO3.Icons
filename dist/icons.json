@@ -870,12 +870,6 @@
       "svg": "svgs/actions/actions-notebook.svg",
       "sprite": "sprites/actions.svg#actions-notebook"
     },
-    "actions-online-media-add": {
-      "identifier": "actions-online-media-add",
-      "category": "actions",
-      "svg": "svgs/actions/actions-online-media-add.svg",
-      "sprite": "sprites/actions.svg#actions-online-media-add"
-    },
     "actions-open": {
       "identifier": "actions-open",
       "category": "actions",
@@ -3547,6 +3541,7 @@
     "actions-message-ok-close": "actions-close",
     "actions-message-warning-close": "actions-close",
     "actions-input-clear": "actions-close",
+    "actions-online-media-add": "actions-cloud",
     "actions-system-extension-configure": "actions-cog-alt",
     "actions-system-extension-sqldump": "actions-database-export",
     "actions-edit-delete": "actions-delete",
