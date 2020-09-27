@@ -228,6 +228,24 @@
       "svg": "svgs/actions/actions-chevron-up.svg",
       "sprite": "sprites/actions.svg#actions-chevron-up"
     },
+    "actions-clipboard-close": {
+      "identifier": "actions-clipboard-close",
+      "category": "actions",
+      "svg": "svgs/actions/actions-clipboard-close.svg",
+      "sprite": "sprites/actions.svg#actions-clipboard-close"
+    },
+    "actions-clipboard-paste": {
+      "identifier": "actions-clipboard-paste",
+      "category": "actions",
+      "svg": "svgs/actions/actions-clipboard-paste.svg",
+      "sprite": "sprites/actions.svg#actions-clipboard-paste"
+    },
+    "actions-clipboard": {
+      "identifier": "actions-clipboard",
+      "category": "actions",
+      "svg": "svgs/actions/actions-clipboard.svg",
+      "sprite": "sprites/actions.svg#actions-clipboard"
+    },
     "actions-clock": {
       "identifier": "actions-clock",
       "category": "actions",
@@ -360,12 +378,6 @@
       "svg": "svgs/actions/actions-device-unidentified.svg",
       "sprite": "sprites/actions.svg#actions-device-unidentified"
     },
-    "actions-document-duplicates-select": {
-      "identifier": "actions-document-duplicates-select",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-duplicates-select.svg",
-      "sprite": "sprites/actions.svg#actions-document-duplicates-select"
-    },
     "actions-document-edit-access": {
       "identifier": "actions-document-edit-access",
       "category": "actions",
@@ -377,12 +389,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-document-history-open.svg",
       "sprite": "sprites/actions.svg#actions-document-history-open"
-    },
-    "actions-document-info": {
-      "identifier": "actions-document-info",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-info.svg",
-      "sprite": "sprites/actions.svg#actions-document-info"
     },
     "actions-document-localize": {
       "identifier": "actions-document-localize",
@@ -425,18 +431,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-document-paste-before.svg",
       "sprite": "sprites/actions.svg#actions-document-paste-before"
-    },
-    "actions-document-paste-into": {
-      "identifier": "actions-document-paste-into",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-paste-into.svg",
-      "sprite": "sprites/actions.svg#actions-document-paste-into"
-    },
-    "actions-document-paste": {
-      "identifier": "actions-document-paste",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-paste.svg",
-      "sprite": "sprites/actions.svg#actions-document-paste"
     },
     "actions-document-select": {
       "identifier": "actions-document-select",
@@ -491,18 +485,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-duplicates.svg",
       "sprite": "sprites/actions.svg#actions-duplicates"
-    },
-    "actions-edit-copy-release": {
-      "identifier": "actions-edit-copy-release",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-copy-release.svg",
-      "sprite": "sprites/actions.svg#actions-edit-copy-release"
-    },
-    "actions-edit-copy": {
-      "identifier": "actions-edit-copy",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-copy.svg",
-      "sprite": "sprites/actions.svg#actions-edit-copy"
     },
     "actions-edit-cut-release": {
       "identifier": "actions-edit-cut-release",
@@ -791,6 +773,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-image.svg",
       "sprite": "sprites/actions.svg#actions-image"
+    },
+    "actions-info": {
+      "identifier": "actions-info",
+      "category": "actions",
+      "svg": "svgs/actions/actions-info.svg",
+      "sprite": "sprites/actions.svg#actions-info"
     },
     "actions-link": {
       "identifier": "actions-link",
@@ -3549,6 +3537,10 @@
     "actions-view-table-collapse": "actions-chevron-left",
     "actions-view-table-expand": "actions-chevron-right",
     "actions-view-list-collapse": "actions-chevron-up",
+    "actions-edit-copy-release": "actions-clipboard-close",
+    "actions-document-paste-into": "actions-clipboard-paste",
+    "actions-document-paste": "actions-clipboard-paste",
+    "actions-edit-copy": "actions-clipboard",
     "actions-message-error-close": "actions-close",
     "actions-message-information-close": "actions-close",
     "actions-message-notice-close": "actions-close",
@@ -3562,6 +3554,7 @@
     "actions-version-document-remove": "actions-delete",
     "actions-insert-reference": "actions-document-share",
     "actions-system-extension-download": "actions-download",
+    "actions-document-duplicates-select": "actions-duplicates",
     "actions-system-extension-install": "actions-extension-add",
     "actions-system-extension-import": "actions-extension-import",
     "actions-system-extension-update": "actions-extension-refresh",
@@ -3580,6 +3573,7 @@
     "actions-view-page": "actions-file-view",
     "actions-system-tree-search-open": "actions-filter",
     "actions-insert-record": "actions-folder",
+    "actions-document-info": "actions-info",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
     "actions-system-typoscript-documentation": "actions-notebook-typoscript",
