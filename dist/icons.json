@@ -1098,12 +1098,6 @@
       "svg": "svgs/actions/actions-system-pagemodule-open.svg",
       "sprite": "sprites/actions.svg#actions-system-pagemodule-open"
     },
-    "actions-system-refresh": {
-      "identifier": "actions-system-refresh",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-refresh.svg",
-      "sprite": "sprites/actions.svg#actions-system-refresh"
-    },
     "actions-system-shortcut-active": {
       "identifier": "actions-system-shortcut-active",
       "category": "actions",
@@ -3622,6 +3616,7 @@
     "actions-view": "actions-eye",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
+    "actions-system-refresh": "actions-refresh",
     "actions-edit-unhide": "actions-toggle-off",
     "actions-edit-hide": "actions-toggle-on"
   }
