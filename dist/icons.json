@@ -522,24 +522,6 @@
       "svg": "svgs/actions/actions-edit-merge-localization.svg",
       "sprite": "sprites/actions.svg#actions-edit-merge-localization"
     },
-    "actions-edit-pick-date": {
-      "identifier": "actions-edit-pick-date",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-pick-date.svg",
-      "sprite": "sprites/actions.svg#actions-edit-pick-date"
-    },
-    "actions-edit-rename": {
-      "identifier": "actions-edit-rename",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-rename.svg",
-      "sprite": "sprites/actions.svg#actions-edit-rename"
-    },
-    "actions-edit-replace": {
-      "identifier": "actions-edit-replace",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-replace.svg",
-      "sprite": "sprites/actions.svg#actions-edit-replace"
-    },
     "actions-edit-restore": {
       "identifier": "actions-edit-restore",
       "category": "actions",
@@ -3513,6 +3495,7 @@
     "actions-system-cache-clear-impact-medium": "actions-bolt",
     "actions-system-cache-clear-impact-low": "actions-bolt",
     "actions-system-cache-clear-rte": "actions-bolt",
+    "actions-edit-pick-date": "actions-calendar-alternative",
     "actions-move-down": "actions-caret-down",
     "actions-pagetree-expand": "actions-caret-down",
     "actions-move-left": "actions-caret-left",
@@ -3580,6 +3563,8 @@
     "actions-add-placeholder": "actions-placeholder-add",
     "actions-edit-redo": "actions-redo",
     "actions-system-refresh": "actions-refresh",
+    "actions-edit-rename": "actions-rename",
+    "actions-edit-replace": "actions-replace",
     "actions-document-save-new": "actions-save-add",
     "actions-document-save-close": "actions-save-close",
     "actions-document-save-cleartranslationcache": "actions-save-translation-clearcache",
