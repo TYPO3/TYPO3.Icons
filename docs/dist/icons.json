@@ -876,6 +876,12 @@
       "svg": "svgs/actions/actions-newspaper.svg",
       "sprite": "sprites/actions.svg#actions-newspaper"
     },
+    "actions-notebook-typoscript": {
+      "identifier": "actions-notebook-typoscript",
+      "category": "actions",
+      "svg": "svgs/actions/actions-notebook-typoscript.svg",
+      "sprite": "sprites/actions.svg#actions-notebook-typoscript"
+    },
     "actions-notebook": {
       "identifier": "actions-notebook",
       "category": "actions",
@@ -1097,18 +1103,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-system-shortcut-new.svg",
       "sprite": "sprites/actions.svg#actions-system-shortcut-new"
-    },
-    "actions-system-typoscript-documentation-open": {
-      "identifier": "actions-system-typoscript-documentation-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-typoscript-documentation-open.svg",
-      "sprite": "sprites/actions.svg#actions-system-typoscript-documentation-open"
-    },
-    "actions-system-typoscript-documentation": {
-      "identifier": "actions-system-typoscript-documentation",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-typoscript-documentation.svg",
-      "sprite": "sprites/actions.svg#actions-system-typoscript-documentation"
     },
     "actions-table": {
       "identifier": "actions-table",
@@ -3607,6 +3601,8 @@
     "actions-system-tree-search-open": "actions-filter",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
+    "actions-system-typoscript-documentation": "actions-notebook-typoscript",
+    "actions-system-typoscript-documentation-open": "actions-notebook-typoscript",
     "actions-system-extension-documentation": "actions-notebook",
     "actions-add-placeholder": "actions-placeholder-add",
     "actions-system-refresh": "actions-refresh",
