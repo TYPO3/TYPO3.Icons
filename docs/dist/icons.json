@@ -1116,12 +1116,6 @@
       "svg": "svgs/actions/actions-system-shortcut-new.svg",
       "sprite": "sprites/actions.svg#actions-system-shortcut-new"
     },
-    "actions-system-tree-search-open": {
-      "identifier": "actions-system-tree-search-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-tree-search-open.svg",
-      "sprite": "sprites/actions.svg#actions-system-tree-search-open"
-    },
     "actions-system-typoscript-documentation-open": {
       "identifier": "actions-system-typoscript-documentation-open",
       "category": "actions",
@@ -3620,6 +3614,7 @@
     "actions-version-document-remove": "actions-delete",
     "actions-version-workspace-preview": "actions-eye",
     "actions-view": "actions-eye",
+    "actions-system-tree-search-open": "actions-filter",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
     "actions-add-placeholder": "actions-placeholder-add",
