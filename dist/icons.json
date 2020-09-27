@@ -312,6 +312,18 @@
       "svg": "svgs/actions/actions-credit-card.svg",
       "sprite": "sprites/actions.svg#actions-credit-card"
     },
+    "actions-cut-release": {
+      "identifier": "actions-cut-release",
+      "category": "actions",
+      "svg": "svgs/actions/actions-cut-release.svg",
+      "sprite": "sprites/actions.svg#actions-cut-release"
+    },
+    "actions-cut": {
+      "identifier": "actions-cut",
+      "category": "actions",
+      "svg": "svgs/actions/actions-cut.svg",
+      "sprite": "sprites/actions.svg#actions-cut"
+    },
     "actions-database-export": {
       "identifier": "actions-database-export",
       "category": "actions",
@@ -485,18 +497,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-duplicates.svg",
       "sprite": "sprites/actions.svg#actions-duplicates"
-    },
-    "actions-edit-cut-release": {
-      "identifier": "actions-edit-cut-release",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-cut-release.svg",
-      "sprite": "sprites/actions.svg#actions-edit-cut-release"
-    },
-    "actions-edit-cut": {
-      "identifier": "actions-edit-cut",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-cut.svg",
-      "sprite": "sprites/actions.svg#actions-edit-cut"
     },
     "actions-edit-download": {
       "identifier": "actions-edit-download",
@@ -3543,6 +3543,8 @@
     "actions-input-clear": "actions-close",
     "actions-online-media-add": "actions-cloud",
     "actions-system-extension-configure": "actions-cog-alt",
+    "actions-edit-cut-release": "actions-cut-release",
+    "actions-edit-cut": "actions-cut",
     "actions-system-extension-sqldump": "actions-database-export",
     "actions-edit-delete": "actions-delete",
     "actions-selection-delete": "actions-delete",
