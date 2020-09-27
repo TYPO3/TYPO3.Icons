@@ -270,6 +270,12 @@
       "svg": "svgs/actions/actions-code.svg",
       "sprite": "sprites/actions.svg#actions-code"
     },
+    "actions-cog-alt": {
+      "identifier": "actions-cog-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-cog-alt.svg",
+      "sprite": "sprites/actions.svg#actions-cog-alt"
+    },
     "actions-cog": {
       "identifier": "actions-cog",
       "category": "actions",
@@ -642,6 +648,30 @@
       "svg": "svgs/actions/actions-expand.svg",
       "sprite": "sprites/actions.svg#actions-expand"
     },
+    "actions-extension-add": {
+      "identifier": "actions-extension-add",
+      "category": "actions",
+      "svg": "svgs/actions/actions-extension-add.svg",
+      "sprite": "sprites/actions.svg#actions-extension-add"
+    },
+    "actions-extension-import": {
+      "identifier": "actions-extension-import",
+      "category": "actions",
+      "svg": "svgs/actions/actions-extension-import.svg",
+      "sprite": "sprites/actions.svg#actions-extension-import"
+    },
+    "actions-extension-refresh": {
+      "identifier": "actions-extension-refresh",
+      "category": "actions",
+      "svg": "svgs/actions/actions-extension-refresh.svg",
+      "sprite": "sprites/actions.svg#actions-extension-refresh"
+    },
+    "actions-extension-remove": {
+      "identifier": "actions-extension-remove",
+      "category": "actions",
+      "svg": "svgs/actions/actions-extension-remove.svg",
+      "sprite": "sprites/actions.svg#actions-extension-remove"
+    },
     "actions-extension": {
       "identifier": "actions-extension",
       "category": "actions",
@@ -846,6 +876,12 @@
       "svg": "svgs/actions/actions-newspaper.svg",
       "sprite": "sprites/actions.svg#actions-newspaper"
     },
+    "actions-notebook": {
+      "identifier": "actions-notebook",
+      "category": "actions",
+      "svg": "svgs/actions/actions-notebook.svg",
+      "sprite": "sprites/actions.svg#actions-notebook"
+    },
     "actions-online-media-add": {
       "identifier": "actions-online-media-add",
       "category": "actions",
@@ -1025,60 +1061,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-system-backend-user-switch.svg",
       "sprite": "sprites/actions.svg#actions-system-backend-user-switch"
-    },
-    "actions-system-extension-configure": {
-      "identifier": "actions-system-extension-configure",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-configure.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-configure"
-    },
-    "actions-system-extension-documentation": {
-      "identifier": "actions-system-extension-documentation",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-documentation.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-documentation"
-    },
-    "actions-system-extension-download": {
-      "identifier": "actions-system-extension-download",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-download.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-download"
-    },
-    "actions-system-extension-import": {
-      "identifier": "actions-system-extension-import",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-import.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-import"
-    },
-    "actions-system-extension-install": {
-      "identifier": "actions-system-extension-install",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-install.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-install"
-    },
-    "actions-system-extension-sqldump": {
-      "identifier": "actions-system-extension-sqldump",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-sqldump.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-sqldump"
-    },
-    "actions-system-extension-uninstall": {
-      "identifier": "actions-system-extension-uninstall",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-uninstall.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-uninstall"
-    },
-    "actions-system-extension-update-disable": {
-      "identifier": "actions-system-extension-update-disable",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-update-disable.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-update-disable"
-    },
-    "actions-system-extension-update": {
-      "identifier": "actions-system-extension-update",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-extension-update.svg",
-      "sprite": "sprites/actions.svg#actions-system-extension-update"
     },
     "actions-system-help-open": {
       "identifier": "actions-system-help-open",
@@ -3609,14 +3591,23 @@
     "actions-message-ok-close": "actions-close",
     "actions-message-warning-close": "actions-close",
     "actions-input-clear": "actions-close",
+    "actions-system-extension-configure": "actions-cog-alt",
+    "actions-system-extension-sqldump": "actions-database-export",
     "actions-edit-delete": "actions-delete",
     "actions-selection-delete": "actions-delete",
     "actions-version-document-remove": "actions-delete",
+    "actions-system-extension-download": "actions-download",
+    "actions-system-extension-install": "actions-extension-add",
+    "actions-system-extension-import": "actions-extension-import",
+    "actions-system-extension-update": "actions-extension-refresh",
+    "actions-system-extension-update-disable": "actions-extension-refresh",
+    "actions-system-extension-uninstall": "actions-extension-remove",
     "actions-version-workspace-preview": "actions-eye",
     "actions-view": "actions-eye",
     "actions-system-tree-search-open": "actions-filter",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
+    "actions-system-extension-documentation": "actions-notebook",
     "actions-add-placeholder": "actions-placeholder-add",
     "actions-system-refresh": "actions-refresh",
     "actions-edit-unhide": "actions-toggle-off",
