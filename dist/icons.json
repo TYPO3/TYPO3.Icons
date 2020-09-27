@@ -6,12 +6,6 @@
       "svg": "svgs/actions/actions-accessibility.svg",
       "sprite": "sprites/actions.svg#actions-accessibility"
     },
-    "actions-add-placeholder": {
-      "identifier": "actions-add-placeholder",
-      "category": "actions",
-      "svg": "svgs/actions/actions-add-placeholder.svg",
-      "sprite": "sprites/actions.svg#actions-add-placeholder"
-    },
     "actions-add": {
       "identifier": "actions-add",
       "category": "actions",
@@ -899,6 +893,18 @@
       "category": "actions",
       "svg": "svgs/actions/actions-pause.svg",
       "sprite": "sprites/actions.svg#actions-pause"
+    },
+    "actions-placeholder-add": {
+      "identifier": "actions-placeholder-add",
+      "category": "actions",
+      "svg": "svgs/actions/actions-placeholder-add.svg",
+      "sprite": "sprites/actions.svg#actions-placeholder-add"
+    },
+    "actions-placeholder": {
+      "identifier": "actions-placeholder",
+      "category": "actions",
+      "svg": "svgs/actions/actions-placeholder.svg",
+      "sprite": "sprites/actions.svg#actions-placeholder"
     },
     "actions-play": {
       "identifier": "actions-play",
@@ -3616,6 +3622,7 @@
     "actions-view": "actions-eye",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
+    "actions-add-placeholder": "actions-placeholder-add",
     "actions-system-refresh": "actions-refresh",
     "actions-edit-unhide": "actions-toggle-off",
     "actions-edit-hide": "actions-toggle-on"
