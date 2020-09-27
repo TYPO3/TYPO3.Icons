@@ -84,6 +84,54 @@
       "svg": "svgs/actions/actions-calendar.svg",
       "sprite": "sprites/actions.svg#actions-calendar"
     },
+    "actions-caret-bar-bottom": {
+      "identifier": "actions-caret-bar-bottom",
+      "category": "actions",
+      "svg": "svgs/actions/actions-caret-bar-bottom.svg",
+      "sprite": "sprites/actions.svg#actions-caret-bar-bottom"
+    },
+    "actions-caret-bar-left": {
+      "identifier": "actions-caret-bar-left",
+      "category": "actions",
+      "svg": "svgs/actions/actions-caret-bar-left.svg",
+      "sprite": "sprites/actions.svg#actions-caret-bar-left"
+    },
+    "actions-caret-bar-right": {
+      "identifier": "actions-caret-bar-right",
+      "category": "actions",
+      "svg": "svgs/actions/actions-caret-bar-right.svg",
+      "sprite": "sprites/actions.svg#actions-caret-bar-right"
+    },
+    "actions-caret-bar-top": {
+      "identifier": "actions-caret-bar-top",
+      "category": "actions",
+      "svg": "svgs/actions/actions-caret-bar-top.svg",
+      "sprite": "sprites/actions.svg#actions-caret-bar-top"
+    },
+    "actions-caret-down": {
+      "identifier": "actions-caret-down",
+      "category": "actions",
+      "svg": "svgs/actions/actions-caret-down.svg",
+      "sprite": "sprites/actions.svg#actions-caret-down"
+    },
+    "actions-caret-left": {
+      "identifier": "actions-caret-left",
+      "category": "actions",
+      "svg": "svgs/actions/actions-caret-left.svg",
+      "sprite": "sprites/actions.svg#actions-caret-left"
+    },
+    "actions-caret-right": {
+      "identifier": "actions-caret-right",
+      "category": "actions",
+      "svg": "svgs/actions/actions-caret-right.svg",
+      "sprite": "sprites/actions.svg#actions-caret-right"
+    },
+    "actions-caret-up": {
+      "identifier": "actions-caret-up",
+      "category": "actions",
+      "svg": "svgs/actions/actions-caret-up.svg",
+      "sprite": "sprites/actions.svg#actions-caret-up"
+    },
     "actions-cart": {
       "identifier": "actions-cart",
       "category": "actions",
@@ -114,6 +162,12 @@
       "svg": "svgs/actions/actions-check.svg",
       "sprite": "sprites/actions.svg#actions-check"
     },
+    "actions-chevron-bar-down": {
+      "identifier": "actions-chevron-bar-down",
+      "category": "actions",
+      "svg": "svgs/actions/actions-chevron-bar-down.svg",
+      "sprite": "sprites/actions.svg#actions-chevron-bar-down"
+    },
     "actions-chevron-bar-left": {
       "identifier": "actions-chevron-bar-left",
       "category": "actions",
@@ -125,6 +179,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-chevron-bar-right.svg",
       "sprite": "sprites/actions.svg#actions-chevron-bar-right"
+    },
+    "actions-chevron-bar-up": {
+      "identifier": "actions-chevron-bar-up",
+      "category": "actions",
+      "svg": "svgs/actions/actions-chevron-bar-up.svg",
+      "sprite": "sprites/actions.svg#actions-chevron-bar-up"
     },
     "actions-chevron-contract": {
       "identifier": "actions-chevron-contract",
@@ -780,47 +840,11 @@
       "svg": "svgs/actions/actions-merge.svg",
       "sprite": "sprites/actions.svg#actions-merge"
     },
-    "actions-move-down": {
-      "identifier": "actions-move-down",
-      "category": "actions",
-      "svg": "svgs/actions/actions-move-down.svg",
-      "sprite": "sprites/actions.svg#actions-move-down"
-    },
-    "actions-move-left": {
-      "identifier": "actions-move-left",
-      "category": "actions",
-      "svg": "svgs/actions/actions-move-left.svg",
-      "sprite": "sprites/actions.svg#actions-move-left"
-    },
     "actions-move-move": {
       "identifier": "actions-move-move",
       "category": "actions",
       "svg": "svgs/actions/actions-move-move.svg",
       "sprite": "sprites/actions.svg#actions-move-move"
-    },
-    "actions-move-right": {
-      "identifier": "actions-move-right",
-      "category": "actions",
-      "svg": "svgs/actions/actions-move-right.svg",
-      "sprite": "sprites/actions.svg#actions-move-right"
-    },
-    "actions-move-to-bottom": {
-      "identifier": "actions-move-to-bottom",
-      "category": "actions",
-      "svg": "svgs/actions/actions-move-to-bottom.svg",
-      "sprite": "sprites/actions.svg#actions-move-to-bottom"
-    },
-    "actions-move-to-top": {
-      "identifier": "actions-move-to-top",
-      "category": "actions",
-      "svg": "svgs/actions/actions-move-to-top.svg",
-      "sprite": "sprites/actions.svg#actions-move-to-top"
-    },
-    "actions-move-up": {
-      "identifier": "actions-move-up",
-      "category": "actions",
-      "svg": "svgs/actions/actions-move-up.svg",
-      "sprite": "sprites/actions.svg#actions-move-up"
     },
     "actions-move": {
       "identifier": "actions-move",
@@ -863,18 +887,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-page-open.svg",
       "sprite": "sprites/actions.svg#actions-page-open"
-    },
-    "actions-pagetree-collapse": {
-      "identifier": "actions-pagetree-collapse",
-      "category": "actions",
-      "svg": "svgs/actions/actions-pagetree-collapse.svg",
-      "sprite": "sprites/actions.svg#actions-pagetree-collapse"
-    },
-    "actions-pagetree-expand": {
-      "identifier": "actions-pagetree-expand",
-      "category": "actions",
-      "svg": "svgs/actions/actions-pagetree-expand.svg",
-      "sprite": "sprites/actions.svg#actions-pagetree-expand"
     },
     "actions-pagetree-mountroot": {
       "identifier": "actions-pagetree-mountroot",
@@ -1242,35 +1254,11 @@
       "svg": "svgs/actions/actions-view-go-up.svg",
       "sprite": "sprites/actions.svg#actions-view-go-up"
     },
-    "actions-view-list-collapse": {
-      "identifier": "actions-view-list-collapse",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-list-collapse.svg",
-      "sprite": "sprites/actions.svg#actions-view-list-collapse"
-    },
-    "actions-view-list-expand": {
-      "identifier": "actions-view-list-expand",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-list-expand.svg",
-      "sprite": "sprites/actions.svg#actions-view-list-expand"
-    },
     "actions-view-page": {
       "identifier": "actions-view-page",
       "category": "actions",
       "svg": "svgs/actions/actions-view-page.svg",
       "sprite": "sprites/actions.svg#actions-view-page"
-    },
-    "actions-view-table-collapse": {
-      "identifier": "actions-view-table-collapse",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-table-collapse.svg",
-      "sprite": "sprites/actions.svg#actions-view-table-collapse"
-    },
-    "actions-view-table-expand": {
-      "identifier": "actions-view-table-expand",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-table-expand.svg",
-      "sprite": "sprites/actions.svg#actions-view-table-expand"
     },
     "actions-viewmode-list": {
       "identifier": "actions-viewmode-list",
@@ -3597,6 +3585,12 @@
     "actions-system-cache-clear-impact-medium": "actions-bolt",
     "actions-system-cache-clear-impact-low": "actions-bolt",
     "actions-system-cache-clear-rte": "actions-bolt",
+    "actions-move-down": "actions-caret-down",
+    "actions-pagetree-expand": "actions-caret-down",
+    "actions-move-left": "actions-caret-left",
+    "actions-move-right": "actions-caret-right",
+    "actions-pagetree-collapse": "actions-caret-right",
+    "actions-move-up": "actions-caret-up",
     "actions-view-paging-first": "actions-chevron-bar-left",
     "actions-view-paging-first-disabled": "actions-chevron-bar-left",
     "actions-view-paging-last": "actions-chevron-bar-right",
@@ -3605,6 +3599,10 @@
     "actions-view-paging-previous-disabled": "actions-chevron-double-left",
     "actions-view-paging-next": "actions-chevron-double-right",
     "actions-view-paging-next-disabled": "actions-chevron-double-right",
+    "actions-view-list-expand": "actions-chevron-down",
+    "actions-view-table-collapse": "actions-chevron-left",
+    "actions-view-table-expand": "actions-chevron-right",
+    "actions-view-list-collapse": "actions-chevron-up",
     "actions-message-error-close": "actions-close",
     "actions-message-information-close": "actions-close",
     "actions-message-notice-close": "actions-close",

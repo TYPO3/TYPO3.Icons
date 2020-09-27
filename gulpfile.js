@@ -124,6 +124,18 @@ function getIcons(dir) {
         });
 }
 
+function getMetaFiles(dir) {
+    return fs.readdirSync(dir)
+        .filter(function (file) {
+            var fileExtension = path.extname(path.join(dir, file));
+            if (fileExtension === ".yaml") {
+                return true;
+            } else {
+                return false;
+            }
+        });
+}
+
 function getCategories() {
     let categories = getFolders(options.src);
     return categories.map((category) => {
@@ -230,7 +242,27 @@ function getData() {
 // Clean SVGs
 //
 gulp.task('clean', () => {
-    return del([options.dist, options.docs], { force: true });
+    let tasks = [];
+    tasks.push(del([options.dist, options.docs], { force: true }));
+    tasks.push(new Promise((resolve) => {
+        let folders = getFolders(options.meta);
+        for (var folderCount = 0; folderCount < folders.length; folderCount++) {
+            let folder = folders[folderCount];
+            let files = getMetaFiles(path.join(options.meta, folder));
+            for (var i = 0; i < files.length; i++) {
+                let file = path.join(folder, files[i]);
+                let identifier = path.basename(file, '.yaml');
+                fs.stat(path.join(options.src, folder, identifier + '.svg'), (error) => {
+                    if (error !== null && error.code === 'ENOENT') {
+                        del(path.join(options.meta, file), { force: true });
+                    }
+                });
+            }
+        }
+        resolve();
+    }));
+
+    return Promise.all(tasks);
 });
 
 
