@@ -456,47 +456,17 @@
       "svg": "svgs/actions/actions-document-paste.svg",
       "sprite": "sprites/actions.svg#actions-document-paste"
     },
-    "actions-document-save-cleartranslationcache": {
-      "identifier": "actions-document-save-cleartranslationcache",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-save-cleartranslationcache.svg",
-      "sprite": "sprites/actions.svg#actions-document-save-cleartranslationcache"
-    },
-    "actions-document-save-close": {
-      "identifier": "actions-document-save-close",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-save-close.svg",
-      "sprite": "sprites/actions.svg#actions-document-save-close"
-    },
-    "actions-document-save-new": {
-      "identifier": "actions-document-save-new",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-save-new.svg",
-      "sprite": "sprites/actions.svg#actions-document-save-new"
-    },
-    "actions-document-save-translation": {
-      "identifier": "actions-document-save-translation",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-save-translation.svg",
-      "sprite": "sprites/actions.svg#actions-document-save-translation"
-    },
-    "actions-document-save-view": {
-      "identifier": "actions-document-save-view",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-save-view.svg",
-      "sprite": "sprites/actions.svg#actions-document-save-view"
-    },
-    "actions-document-save": {
-      "identifier": "actions-document-save",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-save.svg",
-      "sprite": "sprites/actions.svg#actions-document-save"
-    },
     "actions-document-select": {
       "identifier": "actions-document-select",
       "category": "actions",
       "svg": "svgs/actions/actions-document-select.svg",
       "sprite": "sprites/actions.svg#actions-document-select"
+    },
+    "actions-document-share": {
+      "identifier": "actions-document-share",
+      "category": "actions",
+      "svg": "svgs/actions/actions-document-share.svg",
+      "sprite": "sprites/actions.svg#actions-document-share"
     },
     "actions-document-synchronize": {
       "identifier": "actions-document-synchronize",
@@ -786,18 +756,6 @@
       "svg": "svgs/actions/actions-image.svg",
       "sprite": "sprites/actions.svg#actions-image"
     },
-    "actions-insert-record": {
-      "identifier": "actions-insert-record",
-      "category": "actions",
-      "svg": "svgs/actions/actions-insert-record.svg",
-      "sprite": "sprites/actions.svg#actions-insert-record"
-    },
-    "actions-insert-reference": {
-      "identifier": "actions-insert-reference",
-      "category": "actions",
-      "svg": "svgs/actions/actions-insert-reference.svg",
-      "sprite": "sprites/actions.svg#actions-insert-reference"
-    },
     "actions-link": {
       "identifier": "actions-link",
       "category": "actions",
@@ -995,6 +953,36 @@
       "category": "actions",
       "svg": "svgs/actions/actions-rss.svg",
       "sprite": "sprites/actions.svg#actions-rss"
+    },
+    "actions-save-add": {
+      "identifier": "actions-save-add",
+      "category": "actions",
+      "svg": "svgs/actions/actions-save-add.svg",
+      "sprite": "sprites/actions.svg#actions-save-add"
+    },
+    "actions-save-close": {
+      "identifier": "actions-save-close",
+      "category": "actions",
+      "svg": "svgs/actions/actions-save-close.svg",
+      "sprite": "sprites/actions.svg#actions-save-close"
+    },
+    "actions-save-translation-clearcache": {
+      "identifier": "actions-save-translation-clearcache",
+      "category": "actions",
+      "svg": "svgs/actions/actions-save-translation-clearcache.svg",
+      "sprite": "sprites/actions.svg#actions-save-translation-clearcache"
+    },
+    "actions-save-translation": {
+      "identifier": "actions-save-translation",
+      "category": "actions",
+      "svg": "svgs/actions/actions-save-translation.svg",
+      "sprite": "sprites/actions.svg#actions-save-translation"
+    },
+    "actions-save-view": {
+      "identifier": "actions-save-view",
+      "category": "actions",
+      "svg": "svgs/actions/actions-save-view.svg",
+      "sprite": "sprites/actions.svg#actions-save-view"
     },
     "actions-save": {
       "identifier": "actions-save",
@@ -3590,6 +3578,7 @@
     "actions-edit-delete": "actions-delete",
     "actions-selection-delete": "actions-delete",
     "actions-version-document-remove": "actions-delete",
+    "actions-insert-reference": "actions-document-share",
     "actions-system-extension-download": "actions-download",
     "actions-system-extension-install": "actions-extension-add",
     "actions-system-extension-import": "actions-extension-import",
@@ -3599,6 +3588,7 @@
     "actions-version-workspace-preview": "actions-eye",
     "actions-view": "actions-eye",
     "actions-system-tree-search-open": "actions-filter",
+    "actions-insert-record": "actions-folder",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
     "actions-system-typoscript-documentation": "actions-notebook-typoscript",
@@ -3606,6 +3596,12 @@
     "actions-system-extension-documentation": "actions-notebook",
     "actions-add-placeholder": "actions-placeholder-add",
     "actions-system-refresh": "actions-refresh",
+    "actions-document-save-new": "actions-save-add",
+    "actions-document-save-close": "actions-save-close",
+    "actions-document-save-cleartranslationcache": "actions-save-translation-clearcache",
+    "actions-document-save-translation": "actions-save-translation",
+    "actions-document-save-view": "actions-save-view",
+    "actions-document-save": "actions-save",
     "actions-edit-unhide": "actions-toggle-off",
     "actions-edit-hide": "actions-toggle-on"
   }
