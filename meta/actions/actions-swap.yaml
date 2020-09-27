@@ -1,4 +1,6 @@
-alias: []
+alias:
+  - actions-version-swap-version
+  - actions-version-swap-workspace
 changes:
   - 1.0.0
   - 1.1.0

@@ -1176,18 +1176,6 @@
       "svg": "svgs/actions/actions-version-page-open.svg",
       "sprite": "sprites/actions.svg#actions-version-page-open"
     },
-    "actions-version-swap-version": {
-      "identifier": "actions-version-swap-version",
-      "category": "actions",
-      "svg": "svgs/actions/actions-version-swap-version.svg",
-      "sprite": "sprites/actions.svg#actions-version-swap-version"
-    },
-    "actions-version-swap-workspace": {
-      "identifier": "actions-version-swap-workspace",
-      "category": "actions",
-      "svg": "svgs/actions/actions-version-swap-workspace.svg",
-      "sprite": "sprites/actions.svg#actions-version-swap-workspace"
-    },
     "actions-version-workspaces-preview-link": {
       "identifier": "actions-version-workspaces-preview-link",
       "category": "actions",
@@ -3602,6 +3590,8 @@
     "actions-document-save-translation": "actions-save-translation",
     "actions-document-save-view": "actions-save-view",
     "actions-document-save": "actions-save",
+    "actions-version-swap-version": "actions-swap",
+    "actions-version-swap-workspace": "actions-swap",
     "actions-edit-unhide": "actions-toggle-off",
     "actions-edit-hide": "actions-toggle-on"
   }
