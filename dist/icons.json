@@ -492,12 +492,6 @@
       "svg": "svgs/actions/actions-duplicates.svg",
       "sprite": "sprites/actions.svg#actions-duplicates"
     },
-    "actions-edit-download": {
-      "identifier": "actions-edit-download",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-download.svg",
-      "sprite": "sprites/actions.svg#actions-edit-download"
-    },
     "actions-edit-insert-default": {
       "identifier": "actions-edit-insert-default",
       "category": "actions",
@@ -3534,6 +3528,7 @@
     "actions-version-document-remove": "actions-delete",
     "actions-insert-reference": "actions-document-share",
     "actions-system-extension-download": "actions-download",
+    "actions-edit-download": "actions-download",
     "actions-document-duplicates-select": "actions-duplicates",
     "actions-system-extension-install": "actions-extension-add",
     "actions-system-extension-import": "actions-extension-import",
