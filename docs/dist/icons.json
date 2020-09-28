@@ -138,6 +138,12 @@
       "svg": "svgs/actions/actions-category.svg",
       "sprite": "sprites/actions.svg#actions-category"
     },
+    "actions-certificate-alternative": {
+      "identifier": "actions-certificate-alternative",
+      "category": "actions",
+      "svg": "svgs/actions/actions-certificate-alternative.svg",
+      "sprite": "sprites/actions.svg#actions-certificate-alternative"
+    },
     "actions-certificate": {
       "identifier": "actions-certificate",
       "category": "actions",
