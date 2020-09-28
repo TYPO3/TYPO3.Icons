@@ -1,5 +1,5 @@
 {% extends "_layout.html.twig" %}
-{% block title %}{{ section.title }}{% endblock %}
+{% block title %}{{ category.title }}{% endblock %}
 {% block content %}
 
     <nav>
@@ -18,25 +18,25 @@
     </div>
 
     <div class="icongrid" id="iconlist">
-        {% for iconIdentifier in category.icons %}
-            {% set icon = icons[iconIdentifier] %}
+        {%- for iconIdentifier in category.icons -%}
+            {%- set icon = icons[iconIdentifier] -%}
             <a class="icongrid-item bg-light" data-type="icon" data-identifier="{{ icon.identifier }}" data-search="{{ icon.identifier }} {{ icon._meta.alias|join(' ') }} {{ icon._meta.tags|join(' ') }}" href="{{ pathPrefix }}icons/{{ category.identifier }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
                 <span class="icon icon-size-default icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
-                    {% if not category.rendering.overlay %}
+                    {%- if not category.rendering.overlay -%}
                         <span class="icon-markup">
-                            {% include '_symbol.html.twig' with { icon: icon } %}
+                            {%- include '_symbol.html.twig' with { icon: icon } -%}
                         </span>
-                    {% else %}
+                    {%- else -%}
                         <span class="icon-markup">
                             <img src="{{ pathPrefix }}dist/svgs/apps/apps-pagetree-page.svg">
                         </span>
                         <span class="icon-overlay">
-                            {% include '_symbol.html.twig' with { icon: icon } %}
+                            {%- include '_symbol.html.twig' with { icon: icon } -%}
                         </span>
-                    {% endif %}
+                    {%- endif -%}
                 </span>
             </a>
-        {% endfor %}
+        {%- endfor -%}
     </div>
 
 {% endblock %}

@@ -57,14 +57,14 @@
                 <span class="btn btn-icon btn-default">
                     <span class="icon icon-size-small icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
-                            {% include '_symbol.html.twig' with { icon: icon } %}
+                            {%- include '_symbol.html.twig' with { icon: icon } -%}
                         </span>
                     </span>
                 </span>
                 <span class="btn btn-icon btn-dark">
                     <span class="icon icon-size-small icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
-                            {% include '_symbol.html.twig' with { icon: icon } %}
+                            {%- include '_symbol.html.twig' with { icon: icon } -%}
                         </span>
                     </span>
                 </span>
@@ -73,7 +73,7 @@
                 <span class="btn btn-icon btn-default">
                     <span class="icon icon-size-small icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
-                            {% include '_symbol.html.twig' with { icon: icon } %}
+                            {%- include '_symbol.html.twig' with { icon: icon } -%}
                         </span>
                     </span>
                     Button Label
@@ -81,7 +81,7 @@
                 <span class="btn btn-icon btn-dark">
                     <span class="icon icon-size-small icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                         <span class="icon-markup">
-                            {% include '_symbol.html.twig' with { icon: icon } %}
+                            {%- include '_symbol.html.twig' with { icon: icon } -%}
                         </span>
                     </span>
                     Button Label
@@ -93,25 +93,25 @@
     {%- if category.rendering.overlay -%}
         <div class="section">
             <div class="preview">
-                {% set mainIcons = ['apps-filetree-folder-default', 'apps-filetree-folder-temp', 'apps-pagetree-page'] %}
-                {% for mainIcon in mainIcons %}
-                    {% set colors = ['light', 'dark'] %}
-                    {% for color in colors %}
-                        {% set sizes = ['mega', 'large', 'default', 'small'] %}
-                        {% for size in sizes %}
+                {%- set mainIcons = ['apps-filetree-folder-default', 'apps-filetree-folder-temp', 'apps-pagetree-page'] -%}
+                {%- for mainIcon in mainIcons -%}
+                    {%- set colors = ['light', 'dark'] -%}
+                    {%- for color in colors -%}
+                        {%- set sizes = ['mega', 'large', 'default', 'small'] -%}
+                        {%- for size in sizes -%}
                             <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
                                 <span class="icon icon-size-{{ size }} icon-state-default{% if category.rendering.spinning %} icon-spin{% endif %}">
                                     <span class="icon-markup">
                                         <img src="{{ pathPrefix }}dist/svgs/apps/{{ mainIcon }}.svg">
                                     </span>
                                     <span class="icon-overlay">
-                                        {% include '_symbol.html.twig' with { icon: icon } %}
+                                        {%- include '_symbol.html.twig' with { icon: icon } -%}
                                     </span>
                                 </span>
                             </div>
-                        {% endfor %}
-                    {% endfor %}
-                {% endfor %}
+                        {%- endfor -%}
+                    {%- endfor -%}
+                {%- endfor -%}
             </div>
         </div>
     {%- endif -%}
