@@ -1,4 +1,6 @@
-alias: []
+alias:
+  - actions-system-shortcut-active
+  - actions-system-shortcut-new
 changes:
   - 1.5.0
   - 1.5.1

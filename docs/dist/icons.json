@@ -1038,18 +1038,6 @@
       "svg": "svgs/actions/actions-system-options-view.svg",
       "sprite": "sprites/actions.svg#actions-system-options-view"
     },
-    "actions-system-shortcut-active": {
-      "identifier": "actions-system-shortcut-active",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-shortcut-active.svg",
-      "sprite": "sprites/actions.svg#actions-system-shortcut-active"
-    },
-    "actions-system-shortcut-new": {
-      "identifier": "actions-system-shortcut-new",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-shortcut-new.svg",
-      "sprite": "sprites/actions.svg#actions-system-shortcut-new"
-    },
     "actions-table": {
       "identifier": "actions-table",
       "category": "actions",
@@ -3581,6 +3569,8 @@
     "actions-document-save-translation": "actions-save-translation",
     "actions-document-save-view": "actions-save-view",
     "actions-document-save": "actions-save",
+    "actions-system-shortcut-active": "actions-star",
+    "actions-system-shortcut-new": "actions-star",
     "actions-version-swap-version": "actions-swap",
     "actions-version-swap-workspace": "actions-swap",
     "actions-edit-unhide": "actions-toggle-off",
