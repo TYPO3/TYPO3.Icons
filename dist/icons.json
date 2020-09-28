@@ -888,6 +888,12 @@
       "svg": "svgs/actions/actions-preview.svg",
       "sprite": "sprites/actions.svg#actions-preview"
     },
+    "actions-question": {
+      "identifier": "actions-question",
+      "category": "actions",
+      "svg": "svgs/actions/actions-question.svg",
+      "sprite": "sprites/actions.svg#actions-question"
+    },
     "actions-redo": {
       "identifier": "actions-redo",
       "category": "actions",
@@ -1019,12 +1025,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-synchronize.svg",
       "sprite": "sprites/actions.svg#actions-synchronize"
-    },
-    "actions-system-help-open": {
-      "identifier": "actions-system-help-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-help-open.svg",
-      "sprite": "sprites/actions.svg#actions-system-help-open"
     },
     "actions-system-list-open": {
       "identifier": "actions-system-list-open",
@@ -3559,6 +3559,7 @@
     "actions-system-typoscript-documentation-open": "actions-notebook-typoscript",
     "actions-system-extension-documentation": "actions-notebook",
     "actions-add-placeholder": "actions-placeholder-add",
+    "actions-system-help-open": "actions-question",
     "actions-edit-redo": "actions-redo",
     "actions-system-refresh": "actions-refresh",
     "actions-edit-rename": "actions-rename",
