@@ -408,11 +408,23 @@
       "svg": "svgs/actions/actions-device-unidentified.svg",
       "sprite": "sprites/actions.svg#actions-device-unidentified"
     },
+    "actions-document-add": {
+      "identifier": "actions-document-add",
+      "category": "actions",
+      "svg": "svgs/actions/actions-document-add.svg",
+      "sprite": "sprites/actions.svg#actions-document-add"
+    },
     "actions-document-edit-access": {
       "identifier": "actions-document-edit-access",
       "category": "actions",
       "svg": "svgs/actions/actions-document-edit-access.svg",
       "sprite": "sprites/actions.svg#actions-document-edit-access"
+    },
+    "actions-document-edit": {
+      "identifier": "actions-document-edit",
+      "category": "actions",
+      "svg": "svgs/actions/actions-document-edit.svg",
+      "sprite": "sprites/actions.svg#actions-document-edit"
     },
     "actions-document-localize": {
       "identifier": "actions-document-localize",
@@ -426,23 +438,11 @@
       "svg": "svgs/actions/actions-document-move.svg",
       "sprite": "sprites/actions.svg#actions-document-move"
     },
-    "actions-document-new": {
-      "identifier": "actions-document-new",
+    "actions-document-readonly": {
+      "identifier": "actions-document-readonly",
       "category": "actions",
-      "svg": "svgs/actions/actions-document-new.svg",
-      "sprite": "sprites/actions.svg#actions-document-new"
-    },
-    "actions-document-open-read-only": {
-      "identifier": "actions-document-open-read-only",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-open-read-only.svg",
-      "sprite": "sprites/actions.svg#actions-document-open-read-only"
-    },
-    "actions-document-open": {
-      "identifier": "actions-document-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-open.svg",
-      "sprite": "sprites/actions.svg#actions-document-open"
+      "svg": "svgs/actions/actions-document-readonly.svg",
+      "sprite": "sprites/actions.svg#actions-document-readonly"
     },
     "actions-document-select": {
       "identifier": "actions-document-select",
@@ -3528,6 +3528,9 @@
     "actions-edit-delete": "actions-delete",
     "actions-selection-delete": "actions-delete",
     "actions-version-document-remove": "actions-delete",
+    "actions-document-new": "actions-document-add",
+    "actions-document-open": "actions-document-edit",
+    "actions-document-open-read-only": "actions-document-readonly",
     "actions-insert-reference": "actions-document-share",
     "actions-system-extension-download": "actions-download",
     "actions-edit-download": "actions-download",
