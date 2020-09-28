@@ -312,6 +312,12 @@
       "svg": "svgs/actions/actions-code-fork.svg",
       "sprite": "sprites/actions.svg#actions-code-fork"
     },
+    "actions-code-merge-localization": {
+      "identifier": "actions-code-merge-localization",
+      "category": "actions",
+      "svg": "svgs/actions/actions-code-merge-localization.svg",
+      "sprite": "sprites/actions.svg#actions-code-merge-localization"
+    },
     "actions-code-merge": {
       "identifier": "actions-code-merge",
       "category": "actions",
@@ -534,18 +540,6 @@
       "svg": "svgs/actions/actions-duplicates.svg",
       "sprite": "sprites/actions.svg#actions-duplicates"
     },
-    "actions-edit-insert-default": {
-      "identifier": "actions-edit-insert-default",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-insert-default.svg",
-      "sprite": "sprites/actions.svg#actions-edit-insert-default"
-    },
-    "actions-edit-merge-localization": {
-      "identifier": "actions-edit-merge-localization",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-merge-localization.svg",
-      "sprite": "sprites/actions.svg#actions-edit-merge-localization"
-    },
     "actions-expand": {
       "identifier": "actions-expand",
       "category": "actions",
@@ -755,6 +749,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-info.svg",
       "sprite": "sprites/actions.svg#actions-info"
+    },
+    "actions-insert": {
+      "identifier": "actions-insert",
+      "category": "actions",
+      "svg": "svgs/actions/actions-insert.svg",
+      "sprite": "sprites/actions.svg#actions-insert"
     },
     "actions-link": {
       "identifier": "actions-link",
@@ -3530,6 +3530,7 @@
     "actions-message-warning-close": "actions-close",
     "actions-input-clear": "actions-close",
     "actions-online-media-add": "actions-cloud",
+    "actions-edit-merge-localization": "actions-code-merge-localization",
     "actions-merge": "actions-code-merge",
     "actions-system-extension-configure": "actions-cog-alt",
     "actions-edit-cut-release": "actions-cut-release",
@@ -3568,6 +3569,7 @@
     "actions-insert-record": "actions-folder",
     "actions-document-history-open": "actions-history",
     "actions-document-info": "actions-info",
+    "actions-edit-insert-default": "actions-insert",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
     "actions-system-list-open": "actions-list-alternative",
