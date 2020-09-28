@@ -444,18 +444,6 @@
       "svg": "svgs/actions/actions-document-open.svg",
       "sprite": "sprites/actions.svg#actions-document-open"
     },
-    "actions-document-paste-after": {
-      "identifier": "actions-document-paste-after",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-paste-after.svg",
-      "sprite": "sprites/actions.svg#actions-document-paste-after"
-    },
-    "actions-document-paste-before": {
-      "identifier": "actions-document-paste-before",
-      "category": "actions",
-      "svg": "svgs/actions/actions-document-paste-before.svg",
-      "sprite": "sprites/actions.svg#actions-document-paste-before"
-    },
     "actions-document-select": {
       "identifier": "actions-document-select",
       "category": "actions",
@@ -851,6 +839,18 @@
       "category": "actions",
       "svg": "svgs/actions/actions-pagetree.svg",
       "sprite": "sprites/actions.svg#actions-pagetree"
+    },
+    "actions-paste-after": {
+      "identifier": "actions-paste-after",
+      "category": "actions",
+      "svg": "svgs/actions/actions-paste-after.svg",
+      "sprite": "sprites/actions.svg#actions-paste-after"
+    },
+    "actions-paste-before": {
+      "identifier": "actions-paste-before",
+      "category": "actions",
+      "svg": "svgs/actions/actions-paste-before.svg",
+      "sprite": "sprites/actions.svg#actions-paste-before"
     },
     "actions-pause": {
       "identifier": "actions-pause",
