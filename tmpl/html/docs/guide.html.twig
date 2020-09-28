@@ -1,0 +1,145 @@
+{% extends "_layout.html.twig" %}
+{% block title %}Guide{% endblock %}
+{% block content %}
+
+    <nav>
+        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
+            <li class="breadcrumb-item"><a href="{{ pathPrefix }}index.html">Home</a></li>
+            <li class="breadcrumb-item">Guide</li>
+        </ul>
+    </nav>
+
+    <h2>{{ pkg.name }}</h2>
+    <p>{{ pkg.description }}</p>
+
+    <hr class="my-4">
+
+    <h3>Action Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>16x16px</dd>
+
+        <dt>Protective space</dt>
+        <dd>1px</dd>
+
+        <dt>Effective Size</dt>
+        <dd>14x14px</dd>
+
+        <dt>Outline width</dt>
+        <dd>1px</dd>
+
+        <dt>Smoodt Edges</dt>
+        <dd>0.5px / 0.25px</dd>
+
+        <dt>Color</dt>
+        <dd>black / transparent</dd>
+
+        <dt>Note</dt>
+        <dd>CSS class "icon-color" must be applied to the paths</dd>
+    </dl>
+
+    <hr class="my-4">
+
+    <h3>Overlay Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>11x11px</dd>
+    </dl>
+
+    <hr class="my-4">
+
+    <h3>Module Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>64x64px</dd>
+    </dl>
+
+    <hr class="my-4">
+
+    <h3>Colors</h3>
+
+    <ul class="list-unstyled">
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #FF8700;"></span>
+            <span class="coloritem coloritem-code">#FF8700</span>
+            <span class="coloritem coloritem-name">TYPO3 primary color</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #E8A33D;"></span>
+            <span class="coloritem coloritem-code">#E8A33D</span>
+            <span class="coloritem coloritem-name">Yellow</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #FFC857;"></span>
+            <span class="coloritem coloritem-code">#FFC857</span>
+            <span class="coloritem coloritem-name">Yellow light</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #515151;"></span>
+            <span class="coloritem coloritem-code">#515151</span>
+            <span class="coloritem coloritem-name">Gray dark</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #8C8C8C;"></span>
+            <span class="coloritem coloritem-code">#8C8C8C</span>
+            <span class="coloritem coloritem-name">Gray</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #B9B9B9;"></span>
+            <span class="coloritem coloritem-code">#B9B9B9</span>
+            <span class="coloritem coloritem-name">Gray light</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #EFEFEF;"></span>
+            <span class="coloritem coloritem-code">#EFEFEF</span>
+            <span class="coloritem coloritem-name">Gray brighter</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #C83C3C;"></span>
+            <span class="coloritem coloritem-code">#C83C3C</span>
+            <span class="coloritem coloritem-name">Red</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #FF6777;"></span>
+            <span class="coloritem coloritem-code">#FF6777</span>
+            <span class="coloritem coloritem-name">Red light</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #79A548;"></span>
+            <span class="coloritem coloritem-code">#79A548</span>
+            <span class="coloritem coloritem-name">Green</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #AAD400;"></span>
+            <span class="coloritem coloritem-code">#AAD400</span>
+            <span class="coloritem coloritem-name">Green light</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #5599FF;"></span>
+            <span class="coloritem coloritem-code">#5599FF</span>
+            <span class="coloritem coloritem-name">Blue</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #ABD7FF;"></span>
+            <span class="coloritem coloritem-code">#ABD7FF</span>
+            <span class="coloritem coloritem-name">Blue light</span>
+        </li>
+        <li>
+            <span class="coloritem coloritem-box" style="background-color: #663399;"></span>
+            <span class="coloritem coloritem-code">#663399</span>
+            <span class="coloritem coloritem-name">Purple</span>
+        </li>
+    </ul>
+
+    <hr class="my-4">
+
+    <h3>Build</h3>
+    <pre><code>
+yarn install
+yarn stylelint
+yarn build-versions
+yarn build
+yarn serve
+    </code></pre>
+
+{% endblock %}

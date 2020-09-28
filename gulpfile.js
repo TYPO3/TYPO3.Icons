@@ -404,6 +404,22 @@ gulp.task('docs', function (cb) {
         .pipe(rename('index.html'))
         .pipe(gulp.dest(path.join('./docs')));
 
+    // Guide
+    gulp.src('./tmpl/html/docs/guide.html.twig')
+        .pipe(twig({
+            data: {
+                pkg: pkg,
+                typo3: typo3,
+                icons: icons,
+                category: {},
+                categories: categories,
+                rendering: {},
+                pathPrefix: '',
+            }
+        }))
+        .pipe(rename('guide.html'))
+        .pipe(gulp.dest(path.join('./docs')));
+
     // Build pages
     for (let categoryKey in categories) {
         let category = categories[categoryKey];

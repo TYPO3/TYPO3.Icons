@@ -200,3 +200,18 @@
     font-weight: 500;
     color: #007bff;
 }
+.coloritem {
+    display: inline-block;
+    vertical-align: middle;
+    &-box {
+        border-radius: 3px;
+        height: 1.25rem;
+        width: 1.25rem;
+        background-color: #fafafa;
+    }
+    &-code {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        font-family: monospace;
+    }
+}
