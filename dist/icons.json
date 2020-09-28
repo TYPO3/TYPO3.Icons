@@ -870,11 +870,11 @@
       "svg": "svgs/actions/actions-options.svg",
       "sprite": "sprites/actions.svg#actions-options"
     },
-    "actions-pagetree-mountroot": {
-      "identifier": "actions-pagetree-mountroot",
+    "actions-pagetree-mount": {
+      "identifier": "actions-pagetree-mount",
       "category": "actions",
-      "svg": "svgs/actions/actions-pagetree-mountroot.svg",
-      "sprite": "sprites/actions.svg#actions-pagetree-mountroot"
+      "svg": "svgs/actions/actions-pagetree-mount.svg",
+      "sprite": "sprites/actions.svg#actions-pagetree-mount"
     },
     "actions-pagetree": {
       "identifier": "actions-pagetree",
@@ -3583,6 +3583,7 @@
     "actions-system-typoscript-documentation-open": "actions-notebook-typoscript",
     "actions-system-extension-documentation": "actions-notebook",
     "actions-system-options-view": "actions-options",
+    "actions-pagetree-mountroot": "actions-pagetree-mount",
     "actions-add-placeholder": "actions-placeholder-add",
     "actions-system-help-open": "actions-question",
     "actions-edit-redo": "actions-redo",
