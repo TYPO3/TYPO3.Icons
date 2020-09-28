@@ -1,4 +1,5 @@
-alias: []
+alias:
+  - actions-variable-select
 changes:
   - 1.5.0
   - 1.5.1

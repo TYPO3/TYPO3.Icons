@@ -1128,11 +1128,23 @@
       "svg": "svgs/actions/actions-user.svg",
       "sprite": "sprites/actions.svg#actions-user"
     },
-    "actions-variable-select": {
-      "identifier": "actions-variable-select",
+    "actions-variable-add": {
+      "identifier": "actions-variable-add",
       "category": "actions",
-      "svg": "svgs/actions/actions-variable-select.svg",
-      "sprite": "sprites/actions.svg#actions-variable-select"
+      "svg": "svgs/actions/actions-variable-add.svg",
+      "sprite": "sprites/actions.svg#actions-variable-add"
+    },
+    "actions-variable-remove": {
+      "identifier": "actions-variable-remove",
+      "category": "actions",
+      "svg": "svgs/actions/actions-variable-remove.svg",
+      "sprite": "sprites/actions.svg#actions-variable-remove"
+    },
+    "actions-variable": {
+      "identifier": "actions-variable",
+      "category": "actions",
+      "svg": "svgs/actions/actions-variable.svg",
+      "sprite": "sprites/actions.svg#actions-variable"
     },
     "actions-view-go-back": {
       "identifier": "actions-view-go-back",
@@ -3579,6 +3591,7 @@
     "actions-edit-undo": "actions-undo",
     "actions-edit-upload": "actions-upload",
     "actions-system-backend-user-emulate": "actions-user-emulate",
-    "actions-system-backend-user-switch": "actions-user-switch"
+    "actions-system-backend-user-switch": "actions-user-switch",
+    "actions-variable-select": "actions-variable-add"
   }
 }
