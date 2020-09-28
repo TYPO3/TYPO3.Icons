@@ -1020,18 +1020,6 @@
       "svg": "svgs/actions/actions-synchronize.svg",
       "sprite": "sprites/actions.svg#actions-synchronize"
     },
-    "actions-system-backend-user-emulate": {
-      "identifier": "actions-system-backend-user-emulate",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-backend-user-emulate.svg",
-      "sprite": "sprites/actions.svg#actions-system-backend-user-emulate"
-    },
-    "actions-system-backend-user-switch": {
-      "identifier": "actions-system-backend-user-switch",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-backend-user-switch.svg",
-      "sprite": "sprites/actions.svg#actions-system-backend-user-switch"
-    },
     "actions-system-help-open": {
       "identifier": "actions-system-help-open",
       "category": "actions",
@@ -1133,6 +1121,18 @@
       "category": "actions",
       "svg": "svgs/actions/actions-upload.svg",
       "sprite": "sprites/actions.svg#actions-upload"
+    },
+    "actions-user-emulate": {
+      "identifier": "actions-user-emulate",
+      "category": "actions",
+      "svg": "svgs/actions/actions-user-emulate.svg",
+      "sprite": "sprites/actions.svg#actions-user-emulate"
+    },
+    "actions-user-switch": {
+      "identifier": "actions-user-switch",
+      "category": "actions",
+      "svg": "svgs/actions/actions-user-switch.svg",
+      "sprite": "sprites/actions.svg#actions-user-switch"
     },
     "actions-user": {
       "identifier": "actions-user",
@@ -3586,6 +3586,8 @@
     "actions-edit-unhide": "actions-toggle-off",
     "actions-edit-hide": "actions-toggle-on",
     "actions-edit-undo": "actions-undo",
-    "actions-edit-upload": "actions-upload"
+    "actions-edit-upload": "actions-upload",
+    "actions-system-backend-user-emulate": "actions-user-emulate",
+    "actions-system-backend-user-switch": "actions-user-switch"
   }
 }
