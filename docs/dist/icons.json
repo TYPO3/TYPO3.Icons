@@ -540,12 +540,6 @@
       "svg": "svgs/actions/actions-edit-merge-localization.svg",
       "sprite": "sprites/actions.svg#actions-edit-merge-localization"
     },
-    "actions-edit-upload": {
-      "identifier": "actions-edit-upload",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-upload.svg",
-      "sprite": "sprites/actions.svg#actions-edit-upload"
-    },
     "actions-expand": {
       "identifier": "actions-expand",
       "category": "actions",
@@ -3579,6 +3573,7 @@
     "actions-version-swap-workspace": "actions-swap",
     "actions-edit-unhide": "actions-toggle-off",
     "actions-edit-hide": "actions-toggle-on",
-    "actions-edit-undo": "actions-undo"
+    "actions-edit-undo": "actions-undo",
+    "actions-edit-upload": "actions-upload"
   }
 }
