@@ -804,12 +804,6 @@
       "svg": "svgs/actions/actions-menu.svg",
       "sprite": "sprites/actions.svg#actions-menu"
     },
-    "actions-merge": {
-      "identifier": "actions-merge",
-      "category": "actions",
-      "svg": "svgs/actions/actions-merge.svg",
-      "sprite": "sprites/actions.svg#actions-merge"
-    },
     "actions-message-add": {
       "identifier": "actions-message-add",
       "category": "actions",
@@ -3536,6 +3530,7 @@
     "actions-message-warning-close": "actions-close",
     "actions-input-clear": "actions-close",
     "actions-online-media-add": "actions-cloud",
+    "actions-merge": "actions-code-merge",
     "actions-system-extension-configure": "actions-cog-alt",
     "actions-edit-cut-release": "actions-cut-release",
     "actions-edit-cut": "actions-cut",
