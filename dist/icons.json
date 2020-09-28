@@ -156,6 +156,12 @@
       "svg": "svgs/actions/actions-chat.svg",
       "sprite": "sprites/actions.svg#actions-chat"
     },
+    "actions-check-square": {
+      "identifier": "actions-check-square",
+      "category": "actions",
+      "svg": "svgs/actions/actions-check-square.svg",
+      "sprite": "sprites/actions.svg#actions-check-square"
+    },
     "actions-check": {
       "identifier": "actions-check",
       "category": "actions",
@@ -756,12 +762,6 @@
       "svg": "svgs/actions/actions-marker.svg",
       "sprite": "sprites/actions.svg#actions-marker"
     },
-    "actions-markstate": {
-      "identifier": "actions-markstate",
-      "category": "actions",
-      "svg": "svgs/actions/actions-markstate.svg",
-      "sprite": "sprites/actions.svg#actions-markstate"
-    },
     "actions-menu-alternative": {
       "identifier": "actions-menu-alternative",
       "category": "actions",
@@ -1008,6 +1008,12 @@
       "svg": "svgs/actions/actions-sort-amount.svg",
       "sprite": "sprites/actions.svg#actions-sort-amount"
     },
+    "actions-square": {
+      "identifier": "actions-square",
+      "category": "actions",
+      "svg": "svgs/actions/actions-square.svg",
+      "sprite": "sprites/actions.svg#actions-square"
+    },
     "actions-star": {
       "identifier": "actions-star",
       "category": "actions",
@@ -1097,12 +1103,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-unlock.svg",
       "sprite": "sprites/actions.svg#actions-unlock"
-    },
-    "actions-unmarkstate": {
-      "identifier": "actions-unmarkstate",
-      "category": "actions",
-      "svg": "svgs/actions/actions-unmarkstate.svg",
-      "sprite": "sprites/actions.svg#actions-unmarkstate"
     },
     "actions-upload": {
       "identifier": "actions-upload",
@@ -3502,6 +3502,7 @@
     "actions-move-right": "actions-caret-right",
     "actions-pagetree-collapse": "actions-caret-right",
     "actions-move-up": "actions-caret-up",
+    "actions-check-unmarkstate": "actions-check-square",
     "actions-view-paging-first": "actions-chevron-bar-left",
     "actions-view-paging-first-disabled": "actions-chevron-bar-left",
     "actions-view-paging-last": "actions-chevron-bar-right",
@@ -3582,6 +3583,7 @@
     "actions-document-save-translation": "actions-save-translation",
     "actions-document-save-view": "actions-save-view",
     "actions-document-save": "actions-save",
+    "actions-check-markstate": "actions-square",
     "actions-system-shortcut-active": "actions-star",
     "actions-system-shortcut-new": "actions-star",
     "actions-version-swap-version": "actions-swap",
