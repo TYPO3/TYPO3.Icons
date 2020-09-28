@@ -498,6 +498,12 @@
       "svg": "svgs/actions/actions-download.svg",
       "sprite": "sprites/actions.svg#actions-download"
     },
+    "actions-drag": {
+      "identifier": "actions-drag",
+      "category": "actions",
+      "svg": "svgs/actions/actions-drag.svg",
+      "sprite": "sprites/actions.svg#actions-drag"
+    },
     "actions-duplicate": {
       "identifier": "actions-duplicate",
       "category": "actions",
@@ -809,12 +815,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-merge.svg",
       "sprite": "sprites/actions.svg#actions-merge"
-    },
-    "actions-move-move": {
-      "identifier": "actions-move-move",
-      "category": "actions",
-      "svg": "svgs/actions/actions-move-move.svg",
-      "sprite": "sprites/actions.svg#actions-move-move"
     },
     "actions-move": {
       "identifier": "actions-move",
@@ -3537,6 +3537,7 @@
     "actions-insert-reference": "actions-document-share",
     "actions-system-extension-download": "actions-download",
     "actions-edit-download": "actions-download",
+    "actions-move-move": "actions-drag",
     "actions-document-duplicates-select": "actions-duplicates",
     "actions-system-extension-install": "actions-extension-add",
     "actions-system-extension-import": "actions-extension-import",
