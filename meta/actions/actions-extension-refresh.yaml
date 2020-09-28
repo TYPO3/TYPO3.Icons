@@ -1,5 +1,6 @@
 alias:
   - actions-system-extension-update
   - actions-system-extension-update-disable
-changes: []
+changes:
+  - 2.0.0
 tags: []

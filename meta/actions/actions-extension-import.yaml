@@ -1,4 +1,5 @@
 alias:
   - actions-system-extension-import
-changes: []
+changes:
+  - 2.0.0
 tags: []

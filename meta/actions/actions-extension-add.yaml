@@ -1,4 +1,5 @@
 alias:
   - actions-system-extension-install
-changes: []
+changes:
+  - 2.0.0
 tags: []

@@ -1,4 +1,5 @@
 alias:
   - actions-edit-undelete-edit
-changes: []
+changes:
+  - 2.0.0
 tags: []
