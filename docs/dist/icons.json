@@ -762,6 +762,12 @@
       "svg": "svgs/actions/actions-link.svg",
       "sprite": "sprites/actions.svg#actions-link"
     },
+    "actions-list-alternative": {
+      "identifier": "actions-list-alternative",
+      "category": "actions",
+      "svg": "svgs/actions/actions-list-alternative.svg",
+      "sprite": "sprites/actions.svg#actions-list-alternative"
+    },
     "actions-list": {
       "identifier": "actions-list",
       "category": "actions",
@@ -857,6 +863,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-open.svg",
       "sprite": "sprites/actions.svg#actions-open"
+    },
+    "actions-options": {
+      "identifier": "actions-options",
+      "category": "actions",
+      "svg": "svgs/actions/actions-options.svg",
+      "sprite": "sprites/actions.svg#actions-options"
     },
     "actions-pagetree-mountroot": {
       "identifier": "actions-pagetree-mountroot",
@@ -1055,18 +1067,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-synchronize.svg",
       "sprite": "sprites/actions.svg#actions-synchronize"
-    },
-    "actions-system-list-open": {
-      "identifier": "actions-system-list-open",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-list-open.svg",
-      "sprite": "sprites/actions.svg#actions-system-list-open"
-    },
-    "actions-system-options-view": {
-      "identifier": "actions-system-options-view",
-      "category": "actions",
-      "svg": "svgs/actions/actions-system-options-view.svg",
-      "sprite": "sprites/actions.svg#actions-system-options-view"
     },
     "actions-table": {
       "identifier": "actions-table",
@@ -3569,12 +3569,14 @@
     "actions-document-info": "actions-info",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
+    "actions-system-list-open": "actions-list-alternative",
     "actions-edit-localize-status-high": "actions-message-add",
     "actions-localize": "actions-message-localize",
     "actions-edit-localize-status-low": "actions-message-remove",
     "actions-system-typoscript-documentation": "actions-notebook-typoscript",
     "actions-system-typoscript-documentation-open": "actions-notebook-typoscript",
     "actions-system-extension-documentation": "actions-notebook",
+    "actions-system-options-view": "actions-options",
     "actions-add-placeholder": "actions-placeholder-add",
     "actions-system-help-open": "actions-question",
     "actions-edit-redo": "actions-redo",
