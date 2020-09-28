@@ -182,7 +182,7 @@ function updateMetaData(identifier, folder, metadata) {
 
 function getVersionChanges(identifier, folder) {
     let filename = path.join(options.src, folder, identifier + '.svg');
-    let commithashes = execSync('git log --pretty=format:"%H" ' + filename).toString().split("\n");
+    let commithashes = execSync('git log --follow --pretty=format:"%H" ' + filename).toString().split("\n");
     let fileversions = {};
     for (let key in commithashes) {
         let hashversions = execSync('git tag --contains ' + commithashes[key]).toString().split("\n");
