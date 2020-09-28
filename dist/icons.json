@@ -24,6 +24,18 @@
       "svg": "svgs/actions/actions-archive.svg",
       "sprite": "sprites/actions.svg#actions-archive"
     },
+    "actions-arrow-down-left": {
+      "identifier": "actions-arrow-down-left",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-down-left.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-down-left"
+    },
+    "actions-arrow-down-right": {
+      "identifier": "actions-arrow-down-right",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-down-right.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-down-right"
+    },
     "actions-arrow-down": {
       "identifier": "actions-arrow-down",
       "category": "actions",
@@ -35,6 +47,18 @@
       "category": "actions",
       "svg": "svgs/actions/actions-arrow-left.svg",
       "sprite": "sprites/actions.svg#actions-arrow-left"
+    },
+    "actions-arrow-right-down": {
+      "identifier": "actions-arrow-right-down",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-right-down.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-right-down"
+    },
+    "actions-arrow-right-up": {
+      "identifier": "actions-arrow-right-up",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-right-up.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-right-up"
     },
     "actions-arrow-right": {
       "identifier": "actions-arrow-right",
@@ -1145,30 +1169,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-variable.svg",
       "sprite": "sprites/actions.svg#actions-variable"
-    },
-    "actions-view-go-back": {
-      "identifier": "actions-view-go-back",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-go-back.svg",
-      "sprite": "sprites/actions.svg#actions-view-go-back"
-    },
-    "actions-view-go-down": {
-      "identifier": "actions-view-go-down",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-go-down.svg",
-      "sprite": "sprites/actions.svg#actions-view-go-down"
-    },
-    "actions-view-go-forward": {
-      "identifier": "actions-view-go-forward",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-go-forward.svg",
-      "sprite": "sprites/actions.svg#actions-view-go-forward"
-    },
-    "actions-view-go-up": {
-      "identifier": "actions-view-go-up",
-      "category": "actions",
-      "svg": "svgs/actions/actions-view-go-up.svg",
-      "sprite": "sprites/actions.svg#actions-view-go-up"
     },
     "actions-viewmode-list": {
       "identifier": "actions-viewmode-list",
@@ -3488,7 +3488,11 @@
     }
   },
   "aliases": {
+    "actions-view-go-back": "actions-arrow-down-left",
+    "actions-view-go-forward": "actions-arrow-down-right",
     "actions-version-workspace-sendtoprevstage": "actions-arrow-left",
+    "actions-view-go-down": "actions-arrow-right-down",
+    "actions-view-go-up": "actions-arrow-right-up",
     "actions-version-workspace-sendtostage": "actions-arrow-right",
     "actions-system-cache-clear": "actions-bolt",
     "actions-system-cache-clear-impact-high": "actions-bolt",
