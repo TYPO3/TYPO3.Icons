@@ -1086,6 +1086,12 @@
       "svg": "svgs/actions/actions-template-new.svg",
       "sprite": "sprites/actions.svg#actions-template-new"
     },
+    "actions-template": {
+      "identifier": "actions-template",
+      "category": "actions",
+      "svg": "svgs/actions/actions-template.svg",
+      "sprite": "sprites/actions.svg#actions-template"
+    },
     "actions-toggle-off": {
       "identifier": "actions-toggle-off",
       "category": "actions",
