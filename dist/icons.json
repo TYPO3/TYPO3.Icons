@@ -510,18 +510,6 @@
       "svg": "svgs/actions/actions-edit-insert-default.svg",
       "sprite": "sprites/actions.svg#actions-edit-insert-default"
     },
-    "actions-edit-localize-status-high": {
-      "identifier": "actions-edit-localize-status-high",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-localize-status-high.svg",
-      "sprite": "sprites/actions.svg#actions-edit-localize-status-high"
-    },
-    "actions-edit-localize-status-low": {
-      "identifier": "actions-edit-localize-status-low",
-      "category": "actions",
-      "svg": "svgs/actions/actions-edit-localize-status-low.svg",
-      "sprite": "sprites/actions.svg#actions-edit-localize-status-low"
-    },
     "actions-edit-merge-localization": {
       "identifier": "actions-edit-merge-localization",
       "category": "actions",
@@ -750,12 +738,6 @@
       "svg": "svgs/actions/actions-list.svg",
       "sprite": "sprites/actions.svg#actions-list"
     },
-    "actions-localize": {
-      "identifier": "actions-localize",
-      "category": "actions",
-      "svg": "svgs/actions/actions-localize.svg",
-      "sprite": "sprites/actions.svg#actions-localize"
-    },
     "actions-lock": {
       "identifier": "actions-lock",
       "category": "actions",
@@ -797,6 +779,30 @@
       "category": "actions",
       "svg": "svgs/actions/actions-merge.svg",
       "sprite": "sprites/actions.svg#actions-merge"
+    },
+    "actions-message-add": {
+      "identifier": "actions-message-add",
+      "category": "actions",
+      "svg": "svgs/actions/actions-message-add.svg",
+      "sprite": "sprites/actions.svg#actions-message-add"
+    },
+    "actions-message-localize": {
+      "identifier": "actions-message-localize",
+      "category": "actions",
+      "svg": "svgs/actions/actions-message-localize.svg",
+      "sprite": "sprites/actions.svg#actions-message-localize"
+    },
+    "actions-message-remove": {
+      "identifier": "actions-message-remove",
+      "category": "actions",
+      "svg": "svgs/actions/actions-message-remove.svg",
+      "sprite": "sprites/actions.svg#actions-message-remove"
+    },
+    "actions-message": {
+      "identifier": "actions-message",
+      "category": "actions",
+      "svg": "svgs/actions/actions-message.svg",
+      "sprite": "sprites/actions.svg#actions-message"
     },
     "actions-move": {
       "identifier": "actions-move",
@@ -3558,6 +3564,9 @@
     "actions-document-info": "actions-info",
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
+    "actions-edit-localize-status-high": "actions-message-add",
+    "actions-localize": "actions-message-localize",
+    "actions-edit-localize-status-low": "actions-message-remove",
     "actions-system-typoscript-documentation": "actions-notebook-typoscript",
     "actions-system-typoscript-documentation-open": "actions-notebook-typoscript",
     "actions-system-extension-documentation": "actions-notebook",
