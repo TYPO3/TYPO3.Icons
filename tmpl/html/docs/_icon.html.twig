@@ -1,0 +1,15 @@
+{%- set icon = iconIdentifier ? icons[iconIdentifier] : null -%}
+{%- set iconOverlay = iconOverlayIdentifier ? icons[iconOverlayIdentifier] : null -%}
+{%- set iconSize = iconSize ?? 'auto' -%}
+{%- set iconSpinning = iconSpinning ?? false -%}
+{% if icon %}
+<span class="icon icon-size-{{ iconSize }} icon-state-default{% if iconSpinning %} icon-spin{% endif %}">
+    <span class="icon-markup">
+        {% include '_symbol.html.twig' with { icon: icon } %}
+    </span>
+{% if iconOverlay %}    <span class="icon-overlay">
+        {% include '_symbol.html.twig' with { icon: iconOverlay } %}
+    </span>
+{% endif %}
+</span>
+{% endif %}

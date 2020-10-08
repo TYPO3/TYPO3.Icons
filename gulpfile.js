@@ -270,11 +270,24 @@ gulp.task('clean', () => {
 // Sass
 //
 gulp.task('sass', () => {
-    return gulp.src(path.join(options.assets, 'scss/icons.scss'))
-        .pipe(gulp.dest(options.dist))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(minifyCSS())
-        .pipe(gulp.dest(options.dist));
+    let tasks = [];
+    tasks.push(new Promise((resolve) => {
+        gulp.src(path.join(options.assets, 'scss/icons.scss'))
+            .pipe(gulp.dest(options.dist))
+            .pipe(sass().on('error', sass.logError))
+            .pipe(minifyCSS())
+            .pipe(gulp.dest(options.dist))
+            .on('end', resolve);
+    }));
+    tasks.push(new Promise((resolve) => {
+        gulp.src(path.join(options.assets, 'scss/icons-bootstrap.scss'))
+            .pipe(gulp.dest(options.dist))
+            .pipe(sass().on('error', sass.logError))
+            .pipe(minifyCSS())
+            .pipe(gulp.dest(options.dist))
+            .on('end', resolve);
+    }));
+    return Promise.all(tasks);
 });
 
 //

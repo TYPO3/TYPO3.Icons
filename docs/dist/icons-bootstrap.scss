@@ -1,0 +1,13 @@
+//
+// Bootstrap Extensions
+//
+$bootstrap-icons-btn-gap: .35em !default;
+
+//
+// Buttons
+//
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: $bootstrap-icons-btn-gap;
+}

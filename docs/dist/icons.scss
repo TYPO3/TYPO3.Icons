@@ -7,7 +7,7 @@
 // Example Usage
 // -------------
 //
-// <span class="icon icon-size-large icon-provider-svg">
+// <span class="icon icon-size-large">
 //   <span class="icon-markup">
 //     <img src="#" width="16" height="16">
 //   </span>
@@ -20,10 +20,10 @@
 //
 // Variables
 //
-$icon-size-small: 16px !default;
+$icon-size-small:   16px !default;
 $icon-size-default: 32px !default;
-$icon-size-large: 48px !default;
-$icon-size-mega: 64px !default;
+$icon-size-large:   48px !default;
+$icon-size-mega:    64px !default;
 $icon-unify-modifier: .86 !default;
 $icon-opacity-disabled: .5 !default;
 
@@ -35,7 +35,8 @@ $icon-opacity-disabled: .5 !default;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    vertical-align: -22%;
+    height: 1em;
+    width: 1em;
     svg,
     img {
         display: block;
@@ -84,8 +85,8 @@ $icon-opacity-disabled: .5 !default;
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 @keyframes icon-spin {
@@ -94,8 +95,8 @@ $icon-opacity-disabled: .5 !default;
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 

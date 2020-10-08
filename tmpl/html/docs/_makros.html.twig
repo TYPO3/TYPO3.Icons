@@ -1,0 +1,3 @@
+{% macro codeblock(markup, language = 'html') %}
+    <pre class="p-3 rounded bg-light"><code class="language-{{ language }}">{{ markup|trim|escape }}</code></pre>
+{% endmacro %}

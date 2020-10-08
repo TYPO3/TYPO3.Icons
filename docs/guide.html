@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/docs.css">
     <link rel="stylesheet" href="dist/icons.css">
+    <link rel="stylesheet" href="dist/icons-bootstrap.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -116,45 +117,58 @@
 
     <hr class="my-4">
 
-    <h3>Action Icons</h3>
-    <dl>
-        <dt>Size</dt>
-        <dd>16x16px</dd>
+    <h3>Sizes</h3>
 
-        <dt>Protective space</dt>
-        <dd>1px</dd>
-
-        <dt>Effective Size</dt>
-        <dd>14x14px</dd>
-
-        <dt>Outline width</dt>
-        <dd>1px</dd>
-
-        <dt>Smoodt Edges</dt>
-        <dd>0.5px / 0.25px</dd>
-
-        <dt>Color</dt>
-        <dd>black / transparent</dd>
-
-        <dt>Note</dt>
-        <dd>CSS class "icon-color" must be applied to the paths</dd>
-    </dl>
-
-    <hr class="my-4">
-
-    <h3>Overlay Icons</h3>
-    <dl>
-        <dt>Size</dt>
-        <dd>11x11px</dd>
-    </dl>
-
-    <hr class="my-4">
-
-    <h3>Module Icons</h3>
-    <dl>
-        <dt>Size</dt>
-        <dd>64x64px</dd>
-    </dl>
+    <div class="preview my-3"><div class="preview-item" data-color="light" data-size="mega"><span class="icon icon-size-mega icon-state-default">
+    <span class="icon-markup">
+        <svg class="icon-color" role="img"><use xlink:href="dist/sprites/actions.svg#actions-typo3" /></svg>
+    </span>
+</span>
+</div><div class="preview-item" data-color="light" data-size="large"><span class="icon icon-size-large icon-state-default">
+    <span class="icon-markup">
+        <svg class="icon-color" role="img"><use xlink:href="dist/sprites/actions.svg#actions-typo3" /></svg>
+    </span>
+</span>
+</div><div class="preview-item" data-color="light" data-size="default"><span class="icon icon-size-default icon-state-default">
+    <span class="icon-markup">
+        <svg class="icon-color" role="img"><use xlink:href="dist/sprites/actions.svg#actions-typo3" /></svg>
+    </span>
+</span>
+</div><div class="preview-item" data-color="light" data-size="small"><span class="icon icon-size-small icon-state-default">
+    <span class="icon-markup">
+        <svg class="icon-color" role="img"><use xlink:href="dist/sprites/actions.svg#actions-typo3" /></svg>
+    </span>
+</span>
+</div><div class="preview-item" data-color="light" data-size="auto"><span class="icon icon-size-auto icon-state-default">
+    <span class="icon-markup">
+        <svg class="icon-color" role="img"><use xlink:href="dist/sprites/actions.svg#actions-typo3" /></svg>
+    </span>
+</span>
+</div></div>
+    <div class="table-responsive my-3">
+        <table class="table table-bordered">
+            <tr>
+                <th>auto</th>
+                <td>Scales with font-size</td>
+            </tr>
+            <tr>
+                <th>small</th>
+                <td>16px</td>
+            </tr>
+            <tr>
+                <th>default</th>
+                <td>32px</td>
+            </tr>
+            <tr>
+                <th>large</th>
+                <td>48px</td>
+            </tr>
+            <tr>
+                <th>mega</th>
+                <td>64px</td>
+            </tr>
+        </table>
+    </div>
 
     <hr class="my-4">
 
@@ -235,14 +249,55 @@
 
     <hr class="my-4">
 
+    <h3>Action Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>16x16px</dd>
+
+        <dt>Protective space</dt>
+        <dd>1px</dd>
+
+        <dt>Effective Size</dt>
+        <dd>14x14px</dd>
+
+        <dt>Outline width</dt>
+        <dd>1px</dd>
+
+        <dt>Smoodt Edges</dt>
+        <dd>0.5px / 0.25px</dd>
+
+        <dt>Color</dt>
+        <dd>black / transparent</dd>
+
+        <dt>Note</dt>
+        <dd>CSS class "icon-color" must be applied to the paths</dd>
+    </dl>
+
+    <hr class="my-4">
+
+    <h3>Overlay Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>11x11px</dd>
+    </dl>
+
+    <hr class="my-4">
+
+    <h3>Module Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>64x64px</dd>
+    </dl>
+
+    <hr class="my-4">
+
     <h3>Build</h3>
-    <pre><code>
-yarn install
+        <pre class="p-3 rounded bg-light"><code class="language-bash">yarn install
 yarn stylelint
 yarn build-versions
 yarn build
-yarn serve
-    </code></pre>
+yarn serve</code></pre>
+
 
 </div>
                 </div>

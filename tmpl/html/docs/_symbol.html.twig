@@ -1,1 +1,5 @@
+{% if iconInline %}
+{{ icon._inline|raw }}
+{% else %}
 <svg class="icon-color" role="img"><use xlink:href="{{ pathPrefix }}dist/{{ icon.sprite }}" /></svg>
+{% endif %}

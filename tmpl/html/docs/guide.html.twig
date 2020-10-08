@@ -1,4 +1,5 @@
 {% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
 {% block title %}Guide{% endblock %}
 {% block content %}
 
@@ -14,45 +15,43 @@
 
     <hr class="my-4">
 
-    <h3>Action Icons</h3>
-    <dl>
-        <dt>Size</dt>
-        <dd>16x16px</dd>
+    <h3>Sizes</h3>
 
-        <dt>Protective space</dt>
-        <dd>1px</dd>
-
-        <dt>Effective Size</dt>
-        <dd>14x14px</dd>
-
-        <dt>Outline width</dt>
-        <dd>1px</dd>
-
-        <dt>Smoodt Edges</dt>
-        <dd>0.5px / 0.25px</dd>
-
-        <dt>Color</dt>
-        <dd>black / transparent</dd>
-
-        <dt>Note</dt>
-        <dd>CSS class "icon-color" must be applied to the paths</dd>
-    </dl>
-
-    <hr class="my-4">
-
-    <h3>Overlay Icons</h3>
-    <dl>
-        <dt>Size</dt>
-        <dd>11x11px</dd>
-    </dl>
-
-    <hr class="my-4">
-
-    <h3>Module Icons</h3>
-    <dl>
-        <dt>Size</dt>
-        <dd>64x64px</dd>
-    </dl>
+    <div class="preview my-3">
+    {%- set sizes = ['mega', 'large', 'default', 'small', 'auto'] -%}
+    {%- for size in sizes -%}
+        <div class="preview-item" data-color="light" data-size="{{ size }}">
+            {%- include '_icon.html.twig' with {
+                iconIdentifier: 'actions-typo3',
+                iconSize: size
+            } -%}
+        </div>
+    {%- endfor -%}
+    </div>
+    <div class="table-responsive my-3">
+        <table class="table table-bordered">
+            <tr>
+                <th>auto</th>
+                <td>Scales with font-size</td>
+            </tr>
+            <tr>
+                <th>small</th>
+                <td>16px</td>
+            </tr>
+            <tr>
+                <th>default</th>
+                <td>32px</td>
+            </tr>
+            <tr>
+                <th>large</th>
+                <td>48px</td>
+            </tr>
+            <tr>
+                <th>mega</th>
+                <td>64px</td>
+            </tr>
+        </table>
+    </div>
 
     <hr class="my-4">
 
@@ -133,13 +132,55 @@
 
     <hr class="my-4">
 
+    <h3>Action Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>16x16px</dd>
+
+        <dt>Protective space</dt>
+        <dd>1px</dd>
+
+        <dt>Effective Size</dt>
+        <dd>14x14px</dd>
+
+        <dt>Outline width</dt>
+        <dd>1px</dd>
+
+        <dt>Smoodt Edges</dt>
+        <dd>0.5px / 0.25px</dd>
+
+        <dt>Color</dt>
+        <dd>black / transparent</dd>
+
+        <dt>Note</dt>
+        <dd>CSS class "icon-color" must be applied to the paths</dd>
+    </dl>
+
+    <hr class="my-4">
+
+    <h3>Overlay Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>11x11px</dd>
+    </dl>
+
+    <hr class="my-4">
+
+    <h3>Module Icons</h3>
+    <dl>
+        <dt>Size</dt>
+        <dd>64x64px</dd>
+    </dl>
+
+    <hr class="my-4">
+
     <h3>Build</h3>
-    <pre><code>
+    {{ makros.codeblock('
 yarn install
 yarn stylelint
 yarn build-versions
 yarn build
 yarn serve
-    </code></pre>
+    ', 'bash') }}
 
 {% endblock %}
