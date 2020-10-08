@@ -1,0 +1,27 @@
+//
+// Icongrid
+//
+.icongrid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+    gap: 10px;
+}
+.icongrid-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    height: 96px;
+    width: 100%;
+    color: var(--icongrid-color);
+    background-color: var(--icongrid-bg-color);
+}
+.icongrid-item:hover,
+.icongrid-item:focus {
+    box-shadow: 0 0 0 2px var(--icongrid-color);
+    outline: none;
+    color: var(--icongrid-color);
+}
