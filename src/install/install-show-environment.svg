@@ -10,14 +10,14 @@
 </g>
 <rect x="8" y="6" fill="#FFFFFF" width="16" height="22"/>
 <polygon fill="#FFC857" points="20,2 12,2 11,3 11,7 21,7 21,3 "/>
-<polygon opacity="0.15" points="21,3 11,3 12,2 20,2 "/>
-<rect x="10" y="9" opacity="0.75" width="11" height="1"/>
-<rect x="10" y="11" opacity="0.75" width="8" height="1"/>
-<rect x="10" y="13" opacity="0.75" width="8" height="1"/>
-<rect x="10" y="17" opacity="0.5" width="12" height="1"/>
-<rect x="10" y="19" opacity="0.5" width="12" height="1"/>
-<rect x="10" y="21" opacity="0.5" width="12" height="1"/>
-<rect x="10" y="23" opacity="0.5" width="12" height="1"/>
-<rect x="10" y="25" opacity="0.5" width="12" height="1"/>
-<rect x="12" y="4" opacity="0.15" width="8" height="2"/>
+<polygon fill="#212121" opacity="0.15" points="21,3 11,3 12,2 20,2 "/>
+<rect fill="#212121" x="10" y="9" opacity="0.75" width="11" height="1"/>
+<rect fill="#212121" x="10" y="11" opacity="0.75" width="8" height="1"/>
+<rect fill="#212121" x="10" y="13" opacity="0.75" width="8" height="1"/>
+<rect fill="#212121" x="10" y="17" opacity="0.5" width="12" height="1"/>
+<rect fill="#212121" x="10" y="19" opacity="0.5" width="12" height="1"/>
+<rect fill="#212121" x="10" y="21" opacity="0.5" width="12" height="1"/>
+<rect fill="#212121" x="10" y="23" opacity="0.5" width="12" height="1"/>
+<rect fill="#212121" x="10" y="25" opacity="0.5" width="12" height="1"/>
+<rect fill="#212121" x="12" y="4" opacity="0.15" width="8" height="2"/>
 </svg>

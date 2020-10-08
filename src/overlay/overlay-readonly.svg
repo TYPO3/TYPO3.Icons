@@ -6,7 +6,7 @@
 	<circle fill="#C83C3C" cx="5.5" cy="5.5" r="5.5"/>
 	<path fill="#FFFFFF" d="M2.8,7.1l4.2-4.2l1.1,1.1L3.9,8.2L2.8,7.1z"/>
 	<path fill="#FFFFFF" d="M2.8,3.9l1.1-1.1l4.2,4.2L7.1,8.2L2.8,3.9z"/>
-	<path opacity="0.2" enable-background="new    " d="M5.5,1C8,1,10,3,10,5.5S8,10,5.5,10S1,8,1,5.5S3,1,5.5,1 M5.5,0
+	<path fill="#212121" opacity="0.2" enable-background="new    " d="M5.5,1C8,1,10,3,10,5.5S8,10,5.5,10S1,8,1,5.5S3,1,5.5,1 M5.5,0
 		C2.5,0,0,2.5,0,5.5S2.5,11,5.5,11S11,8.5,11,5.5S8.5,0,5.5,0L5.5,0z"/>
 </g>
 </svg>

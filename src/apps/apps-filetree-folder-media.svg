@@ -7,8 +7,8 @@
 	<path fill="#E8A33D" d="M16,5H8.33L7,7H0V5V4h16V5z"/>
 </g>
 <g>
-	<rect x="5" y="5" fill="#5599FF" width="11" height="11"/>
-	<path opacity="0.2" d="M15,6v9H6V6H15 M16,5H5v11h11V5L16,5z"/>
+	<rect fill="#5599FF" x="5" y="5" width="11" height="11"/>
+	<path fill="#212121" opacity="0.2" d="M15,6v9H6V6H15 M16,5H5v11h11V5L16,5z"/>
 	<path fill="#FFFFFF" d="M12,14H9.5H7l1.25-2l1.25-2l1.25,2L12,14z"/>
 	<path fill="#FFFFFF" d="M14,14h-2.5H9l1.25-1.5L11.5,11l1.25,1.5L14,14z"/>
 	<circle fill="#FFFFFF" cx="13" cy="9" r="1"/>

@@ -4,14 +4,14 @@
 	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <g opacity="0.5">
 	<path fill="#EFEFEF" d="M2,0v16h12V4l-4-4H2z"/>
-	<path opacity="0.65" fill="#FFFFFF" enable-background="new    " d="M10,4V0l4,4H10z"/>
-	<path opacity="0.2" enable-background="new    " d="M13,5v5L9,5H13z"/>
+	<path fill="#FFFFFF" opacity="0.65" enable-background="new    " d="M10,4V0l4,4H10z"/>
+	<path fill="#212121" opacity="0.2" enable-background="new    " d="M13,5v5L9,5H13z"/>
 	<path fill="#999999" d="M2,0v16h12V4h-0.012l0.004-0.008l-3.984-3.986L10,0.014V0H2z M3,1h6v4h4v10H3V1z M10,1.412L12.586,4H10
 		V1.412z"/>
 </g>
 <g>
 	<path fill="#C83C3C" d="M5,5h11v11H5V5z"/>
-	<path opacity="0.2" enable-background="new    " d="M15,6v9H6V6H15 M16,5H5v11h11V5L16,5z"/>
+	<path fill="#212121" opacity="0.2" enable-background="new    " d="M15,6v9H6V6H15 M16,5H5v11h11V5L16,5z"/>
 	<polygon fill="#FFFFFF" points="11,13 7,10.5 11,8 11,10 14,10 14,11 11,11 	"/>
 </g>
 </svg>

@@ -10,7 +10,7 @@
 	<path fill="#666666" d="M1,5h10v1H1V5z"/>
 	<path fill="#AAAAAA" d="M2.6,1h10.8L16,4H0L2.6,1z"/>
 	<path fill="#EFEFEF" d="M3.15,2h9.6l1.75,2H1.4L3.15,2z"/>
-	<path opacity="0.3" enable-background="new    " d="M6,9h4v1H6V9z"/>
+	<path fill="#212121" opacity="0.3" enable-background="new    " d="M6,9h4v1H6V9z"/>
 	<path fill="#CD201F" d="M13,7h2v1h-2V7z"/>
 	<path fill="#5599FF" d="M13,5h2v1h-2V5z"/>
 </g>

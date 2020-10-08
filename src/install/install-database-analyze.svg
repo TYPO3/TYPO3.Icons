@@ -6,15 +6,11 @@
 	<rect x="6" y="5.5" fill="#79A548" width="20" height="21"/>
 	<g>
 		<ellipse fill="#79A548" cx="16" cy="26.5" rx="10" ry="3.5"/>
-	</g>
-	<g>
 		<ellipse fill="#79A548" cx="16" cy="5.5" rx="10" ry="3.5"/>
 	</g>
 	<g opacity="0.25">
 		<ellipse fill="#FFFFFF" cx="16" cy="5.5" rx="10" ry="3.5"/>
-	</g>
-	<g opacity="0.25">
-		<ellipse cx="16" cy="5.3" rx="7" ry="1.8"/>
+		<ellipse fill="#212121" cx="16" cy="5.3" rx="7" ry="1.8"/>
 	</g>
 </g>
 <g>

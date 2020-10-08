@@ -8,6 +8,6 @@
 <rect x="4" y="6" fill="#B9B9B9" width="8" height="1"/>
 <rect x="4" y="8" fill="#B9B9B9" width="8" height="4"/>
 <rect x="4" y="13" fill="#5599FF" width="4" height="1"/>
-<path opacity="0.2" enable-background="new    " d="M13,5v5L9,5H13z"/>
+<path fill="#212121" opacity="0.2" enable-background="new    " d="M13,5v5L9,5H13z"/>
 <path fill="#999999" d="M2,0v16h12V4h0l0,0l-4-4l0,0v0H2z M3,1h6v4h4v10H3V1z M10,1.4L12.6,4H10V1.4z"/>
 </svg>

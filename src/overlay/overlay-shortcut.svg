@@ -5,6 +5,6 @@
 <g>
 	<rect fill="#666666" width="11" height="11"/>
 	<rect x="1" y="1" fill="#FFFFFF" width="9" height="9"/>
-	<polygon points="5,6 4,6 4,8 3,8 3,5 5,5 5,3 9,5.5 5,8 	"/>
+	<polygon fill="#212121" points="5,6 4,6 4,8 3,8 3,5 5,5 5,3 9,5.5 5,8 	"/>
 </g>
 </svg>

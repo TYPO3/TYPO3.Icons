@@ -4,7 +4,7 @@
 	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <path fill="#45B058" d="M2,0v16h12V4l-4-4H2z"/>
 <path opacity="0.65" fill="#FFFFFF" enable-background="new    " d="M10,4V2V0l4,4H10z"/>
-<path opacity="0.15" enable-background="new    " d="M14,4v2.5V9l-4-5H14z"/>
+<path fill="#212121" opacity="0.15" enable-background="new    " d="M14,4v2.5V9l-4-5H14z"/>
 <rect x="4" y="6" fill="#FFFFFF" width="2" height="1"/>
 <rect x="7" y="6" fill="#FFFFFF" width="2" height="1"/>
 <rect x="10" y="6" fill="#FFFFFF" width="2" height="1"/>

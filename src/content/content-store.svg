@@ -5,7 +5,7 @@
 <rect x="2" y="6" fill="#B9B9B9" width="13" height="9"/>
 <rect x="10" y="9" fill="#94604C" width="3" height="5"/>
 <polygon opacity="0.2" points="10,9 10,14 10.5,14 10.5,14 10.5,14 10.5,9.5 12.5,9.5 12.5,14 13,14 13,14 13,14 13,9 "/>
-<path opacity="0.15" d="M14,7v7H3V7H14 M15,6H2v9h13V6L15,6z"/>
+<path fill="#212121" opacity="0.15" d="M14,7v7H3V7H14 M15,6H2v9h13V6L15,6z"/>
 <rect x="1" y="14" fill="#515151" width="15" height="1"/>
 <g>
 	<polygon fill="#8C8C8C" points="15.5,7.5 1.5,7.5 1,7 16,7 	"/>

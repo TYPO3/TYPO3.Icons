@@ -5,21 +5,6 @@
 <g>
 	<polygon fill="#CECECE" points="14,9 10,10 6,9 2,10 2,2 6,1 10,2 14,1 	"/>
 </g>
-<g display="none">
-	<rect x="2" y="2" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="2" y="6" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="4" y="4" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="4" y="8" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="6" y="6" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="6" y="2" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="8" y="4" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="8" y="8" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="10" y="6" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="10" y="2" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="12" y="4" display="inline" fill="#666666" width="2" height="2"/>
-	<rect x="12" y="8" display="inline" fill="#666666" width="2" height="2"/>
-	<path display="inline" opacity="0.3" d="M13,3v6H3V3H13 M14,2H2v8h12V2L14,2z"/>
-</g>
 <g>
 	<polygon fill="#666666" points="2,2 2,4 4,3.5 4,1.5 	"/>
 	<polygon fill="#666666" points="2,6 2,8 4,7.5 4,5.5 	"/>
@@ -34,7 +19,7 @@
 	<polygon fill="#666666" points="14,5 14,3 12,3.5 12,5.5 	"/>
 	<polygon fill="#666666" points="14,9 14,7 12,7.5 12,9.5 	"/>
 </g>
-<path opacity="0.3" d="M6,2L9.8,3L10,3L10.2,3L13,2.3v5.9L10,9L6.2,8L6,8L5.8,8L3,8.7V2.8L6,2 M14,1l-4,1L6,1L2,2v8l4-1l4,1l4-1V1
+<path fill="#212121" opacity="0.3" d="M6,2L9.8,3L10,3L10.2,3L13,2.3v5.9L10,9L6.2,8L6,8L5.8,8L3,8.7V2.8L6,2 M14,1l-4,1L6,1L2,2v8l4-1l4,1l4-1V1
 	L14,1z"/>
 <rect x="2" y="1" fill="#333333" width="1" height="14"/>
 </svg>

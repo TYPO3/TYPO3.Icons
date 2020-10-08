@@ -4,30 +4,28 @@
 	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <g>
 	<rect x="1" y="10" fill="#5599FF" width="6" height="5"/>
-	<path opacity="0.2" d="M1,10v5h6v-5H1z M6,14H2v-3h4V14z"/>
+	<path fill="#212121" opacity="0.2" d="M1,10v5h6v-5H1z M6,14H2v-3h4V14z"/>
 	<path fill="#FFFFFF" d="M3,12h2v1H3V12z"/>
 </g>
 <g>
 	<rect x="9" y="10" fill="#663399" width="6" height="5"/>
-	<path opacity="0.2" d="M9,10v5h6v-5H9z M14,14h-4v-3h4V14z"/>
+	<path fill="#212121" opacity="0.2" d="M9,10v5h6v-5H9z M14,14h-4v-3h4V14z"/>
 	<path fill="#FFFFFF" d="M11,12h2v1h-2V12z"/>
 </g>
 <g>
-	<g>
-		<rect x="4" y="1" fill="#999999" width="8" height="8"/>
-		<rect x="5" y="2" fill="#FFFFFF" width="6" height="6"/>
-		<path fill="#515151" d="M6,3h4v2H6V3z"/>
-		<rect x="6" y="6" fill="#B9B9B9" width="4" height="1"/>
-	</g>
+	<rect x="4" y="1" fill="#999999" width="8" height="8"/>
+	<rect x="5" y="2" fill="#FFFFFF" width="6" height="6"/>
+	<path fill="#515151" d="M6,3h4v2H6V3z"/>
+	<rect x="6" y="6" fill="#B9B9B9" width="4" height="1"/>
 </g>
-<rect x="1" y="3" opacity="0.2" width="1" height="1"/>
-<rect x="3" y="3" opacity="0.2" width="1" height="1"/>
-<rect x="1" y="5" opacity="0.2" width="1" height="1"/>
-<rect x="1" y="7" opacity="0.2" width="1" height="1"/>
-<rect x="14" y="3" opacity="0.2" width="1" height="1"/>
-<rect x="12" y="3" opacity="0.2" width="1" height="1"/>
-<rect x="14" y="5" opacity="0.2" width="1" height="1"/>
-<rect x="14" y="7" opacity="0.2" width="1" height="1"/>
-<rect x="1" y="9" opacity="0.2" width="1" height="1"/>
-<rect x="14" y="9" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="1" y="3" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="3" y="3" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="1" y="5" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="1" y="7" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="14" y="3" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="12" y="3" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="14" y="5" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="14" y="7" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="1" y="9" opacity="0.2" width="1" height="1"/>
+<rect fill="#212121" x="14" y="9" opacity="0.2" width="1" height="1"/>
 </svg>
