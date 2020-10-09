@@ -11,7 +11,7 @@
 </g>
 <g>
 	<rect x="9" y="9" fill="#FFFFFF" width="7" height="7"/>
-	<path d="M14,12h-1v-1h-1v1h-1v1h1v1h1v-1h1"/>
+	<path fill="#212121" d="M14,12h-1v-1h-1v1h-1v1h1v1h1v-1h1"/>
 	<path fill="#666666" d="M9,9v1v5v1h1h6v-1V9h-6H9z M10,10h5v5h-5V10z"/>
 </g>
 </svg>

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <g>
 	<path fill="#5599FF" d="M2,0v16h12V4l-4-4H2z"/>
-	<path opacity="0.65" fill="#FFFFFF" enable-background="new    " d="M10,4V1.99V0l4,4H10z"/>
+	<path fill="#FFFFFF" opacity="0.65" enable-background="new    " d="M10,4V1.99V0l4,4H10z"/>
+	<path fill="#212121" opacity="0.15" enable-background="new    " d="M14,4v2.512V9l-4-5H14z"/>
+</g>
+<g>
 	<path fill="#FFFFFF" d="M11.479,10.09c-0.405-0.405-0.898-0.29-1.402,0.08L8.679,8.772l2.119-2.158l0.192,0.192l0.73-0.863
 		l-0.664-0.664l-0.863,0.73l0.192,0.192L8.227,8.32L6.826,6.919c0.361-0.503,0.48-1.003,0.084-1.398
 		C6.321,4.931,5.894,4.908,5.5,5.128c0.09,0.079,0.182,0.16,0.286,0.264C6.374,5.98,6.524,6.19,5.846,6.868
@@ -13,6 +16,5 @@
 		l0.45-0.458l1.381,1.381c-0.432,0.544-0.61,1.094-0.182,1.522c0.589,0.589,1.016,0.612,1.41,0.393
 		c-0.09-0.079-0.182-0.16-0.286-0.264c-0.588-0.588-0.738-0.798-0.06-1.476c0.678-0.678,0.866-0.506,1.454,0.082
 		c0.105,0.104,0.186,0.196,0.265,0.286C12.092,11.106,12.068,10.679,11.479,10.09z"/>
-	<path fill="#212121" opacity="0.15" enable-background="new    " d="M14,4v2.512V9l-4-5H14z"/>
 </g>
 </svg>

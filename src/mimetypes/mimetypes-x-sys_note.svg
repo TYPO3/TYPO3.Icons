@@ -3,7 +3,7 @@
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <polygon fill="#FFC857" points="15,10 10,15 1,15 1,1 15,1 "/>
-<polygon opacity="0.2" enable-background="new    " points="9,14 2,14 2,2 14,2 14,9 15,9 15,1 1,1 1,15 9,15 "/>
+<polygon fill="#212121" opacity="0.2" enable-background="new    " points="9,14 2,14 2,2 14,2 14,9 15,9 15,1 1,1 1,15 9,15 "/>
 <polygon fill="#FFE4AB" points="10,15 9,15 9,9 15,9 15,10 "/>
-<path opacity="0.3" enable-background="new    " d="M13.586,10L10,13.586V10H13.586 M15,9H9v6h1l5-5V9L15,9z"/>
+<path fill="#212121" opacity="0.3" enable-background="new    " d="M13.586,10L10,13.586V10H13.586 M15,9H9v6h1l5-5V9L15,9z"/>
 </svg>
