@@ -3,4 +3,5 @@ alias:
   - actions-system-extension-update-disable
 changes:
   - 2.0.0
+  - 2.0.1
 tags: []
