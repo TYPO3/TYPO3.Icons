@@ -786,6 +786,12 @@
       "svg": "svgs/actions/actions-logout.svg",
       "sprite": "sprites/actions.svg#actions-logout"
     },
+    "actions-map": {
+      "identifier": "actions-map",
+      "category": "actions",
+      "svg": "svgs/actions/actions-map.svg",
+      "sprite": "sprites/actions.svg#actions-map"
+    },
     "actions-marker": {
       "identifier": "actions-marker",
       "category": "actions",
