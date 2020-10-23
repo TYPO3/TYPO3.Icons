@@ -1020,6 +1020,12 @@
       "svg": "svgs/actions/actions-shield.svg",
       "sprite": "sprites/actions.svg#actions-shield"
     },
+    "actions-slack": {
+      "identifier": "actions-slack",
+      "category": "actions",
+      "svg": "svgs/actions/actions-slack.svg",
+      "sprite": "sprites/actions.svg#actions-slack"
+    },
     "actions-sort-amount-down": {
       "identifier": "actions-sort-amount-down",
       "category": "actions",
