@@ -780,6 +780,12 @@
       "svg": "svgs/actions/actions-lock.svg",
       "sprite": "sprites/actions.svg#actions-lock"
     },
+    "actions-login": {
+      "identifier": "actions-login",
+      "category": "actions",
+      "svg": "svgs/actions/actions-login.svg",
+      "sprite": "sprites/actions.svg#actions-login"
+    },
     "actions-logout": {
       "identifier": "actions-logout",
       "category": "actions",
@@ -3585,6 +3591,8 @@
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
     "actions-system-list-open": "actions-list-alternative",
+    "sign-in": "actions-login",
+    "sign-out": "actions-logout",
     "actions-edit-localize-status-high": "actions-message-add",
     "actions-localize": "actions-message-localize",
     "actions-edit-localize-status-low": "actions-message-remove",
