@@ -714,6 +714,12 @@
       "svg": "svgs/actions/actions-git.svg",
       "sprite": "sprites/actions.svg#actions-git"
     },
+    "actions-globe-alt": {
+      "identifier": "actions-globe-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-globe-alt.svg",
+      "sprite": "sprites/actions.svg#actions-globe-alt"
+    },
     "actions-globe": {
       "identifier": "actions-globe",
       "category": "actions",
