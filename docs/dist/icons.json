@@ -3506,6 +3506,7 @@
     }
   },
   "aliases": {
+    "actions-plus": "actions-add",
     "actions-view-go-back": "actions-arrow-down-left",
     "actions-view-go-forward": "actions-arrow-down-right",
     "actions-version-workspace-sendtoprevstage": "actions-arrow-left",
@@ -3606,6 +3607,7 @@
     "actions-system-help-open": "actions-question",
     "actions-edit-redo": "actions-redo",
     "actions-system-refresh": "actions-refresh",
+    "actions-minus": "actions-remove",
     "actions-edit-rename": "actions-rename",
     "actions-edit-replace": "actions-replace",
     "actions-document-save-new": "actions-save-add",

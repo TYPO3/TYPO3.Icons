@@ -1,4 +1,5 @@
-alias: []
+alias:
+  - actions-plus
 changes:
   - 1.0.0
   - 1.1.0
@@ -18,4 +19,5 @@ changes:
   - 1.11.1
   - 2.0.0
   - 2.0.1
-tags: []
+tags:
+  - plus
