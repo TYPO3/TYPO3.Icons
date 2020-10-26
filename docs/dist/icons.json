@@ -3599,6 +3599,7 @@
     "actions-system-typoscript-documentation": "actions-notebook-typoscript",
     "actions-system-typoscript-documentation-open": "actions-notebook-typoscript",
     "actions-system-extension-documentation": "actions-notebook",
+    "actions-pencil": "actions-open",
     "actions-system-options-view": "actions-options",
     "actions-pagetree-mountroot": "actions-pagetree-mount",
     "actions-add-placeholder": "actions-placeholder-add",
