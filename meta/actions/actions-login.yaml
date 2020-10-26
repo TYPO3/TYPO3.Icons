@@ -1,5 +1,5 @@
 alias:
-  - sign-in
+  - actions-sign-in
 changes: []
 tags:
   - sign-in
