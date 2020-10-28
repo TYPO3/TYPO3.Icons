@@ -3096,6 +3096,12 @@
       "svg": "svgs/module/module-func.svg",
       "sprite": "sprites/module.svg#module-func"
     },
+    "module-generic": {
+      "identifier": "module-generic",
+      "category": "module",
+      "svg": "svgs/module/module-generic.svg",
+      "sprite": "sprites/module.svg#module-generic"
+    },
     "module-help": {
       "identifier": "module-help",
       "category": "module",
