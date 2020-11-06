@@ -2,5 +2,6 @@ alias:
   - actions-sign-in
 changes:
   - 2.0.2
+  - 2.0.3
 tags:
   - sign-in
