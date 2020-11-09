@@ -1128,6 +1128,12 @@
       "svg": "svgs/actions/actions-translate.svg",
       "sprite": "sprites/actions.svg#actions-translate"
     },
+    "actions-trophy": {
+      "identifier": "actions-trophy",
+      "category": "actions",
+      "svg": "svgs/actions/actions-trophy.svg",
+      "sprite": "sprites/actions.svg#actions-trophy"
+    },
     "actions-typo3": {
       "identifier": "actions-typo3",
       "category": "actions",
