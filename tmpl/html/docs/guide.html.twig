@@ -183,4 +183,10 @@ yarn build
 yarn serve
     ', 'bash') }}
 
+    <h3>Release</h3>
+    {{ makros.codeblock('
+npm version [major | minor | patch]
+npm publish
+    ', 'bash') }}
+
 {% endblock %}
