@@ -540,6 +540,24 @@
       "svg": "svgs/actions/actions-duplicates.svg",
       "sprite": "sprites/actions.svg#actions-duplicates"
     },
+    "actions-envelope-open-text": {
+      "identifier": "actions-envelope-open-text",
+      "category": "actions",
+      "svg": "svgs/actions/actions-envelope-open-text.svg",
+      "sprite": "sprites/actions.svg#actions-envelope-open-text"
+    },
+    "actions-envelope-open": {
+      "identifier": "actions-envelope-open",
+      "category": "actions",
+      "svg": "svgs/actions/actions-envelope-open.svg",
+      "sprite": "sprites/actions.svg#actions-envelope-open"
+    },
+    "actions-envelope": {
+      "identifier": "actions-envelope",
+      "category": "actions",
+      "svg": "svgs/actions/actions-envelope.svg",
+      "sprite": "sprites/actions.svg#actions-envelope"
+    },
     "actions-expand": {
       "identifier": "actions-expand",
       "category": "actions",
