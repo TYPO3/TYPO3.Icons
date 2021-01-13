@@ -780,6 +780,12 @@
       "svg": "svgs/actions/actions-house.svg",
       "sprite": "sprites/actions.svg#actions-house"
     },
+    "actions-id-badge": {
+      "identifier": "actions-id-badge",
+      "category": "actions",
+      "svg": "svgs/actions/actions-id-badge.svg",
+      "sprite": "sprites/actions.svg#actions-id-badge"
+    },
     "actions-image": {
       "identifier": "actions-image",
       "category": "actions",
