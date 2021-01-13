@@ -744,6 +744,12 @@
       "svg": "svgs/actions/actions-fullscreen.svg",
       "sprite": "sprites/actions.svg#actions-fullscreen"
     },
+    "actions-gift": {
+      "identifier": "actions-gift",
+      "category": "actions",
+      "svg": "svgs/actions/actions-gift.svg",
+      "sprite": "sprites/actions.svg#actions-gift"
+    },
     "actions-git": {
       "identifier": "actions-git",
       "category": "actions",
