@@ -984,6 +984,12 @@
       "svg": "svgs/actions/actions-question.svg",
       "sprite": "sprites/actions.svg#actions-question"
     },
+    "actions-receipt": {
+      "identifier": "actions-receipt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-receipt.svg",
+      "sprite": "sprites/actions.svg#actions-receipt"
+    },
     "actions-redo": {
       "identifier": "actions-redo",
       "category": "actions",
