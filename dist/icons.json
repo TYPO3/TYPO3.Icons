@@ -78,6 +78,24 @@
       "svg": "svgs/actions/actions-ban.svg",
       "sprite": "sprites/actions.svg#actions-ban"
     },
+    "actions-barcode-read": {
+      "identifier": "actions-barcode-read",
+      "category": "actions",
+      "svg": "svgs/actions/actions-barcode-read.svg",
+      "sprite": "sprites/actions.svg#actions-barcode-read"
+    },
+    "actions-barcode-scan": {
+      "identifier": "actions-barcode-scan",
+      "category": "actions",
+      "svg": "svgs/actions/actions-barcode-scan.svg",
+      "sprite": "sprites/actions.svg#actions-barcode-scan"
+    },
+    "actions-barcode": {
+      "identifier": "actions-barcode",
+      "category": "actions",
+      "svg": "svgs/actions/actions-barcode.svg",
+      "sprite": "sprites/actions.svg#actions-barcode"
+    },
     "actions-bolt": {
       "identifier": "actions-bolt",
       "category": "actions",
