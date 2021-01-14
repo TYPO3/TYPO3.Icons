@@ -1,5 +1,6 @@
 alias: []
-changes: []
+changes:
+  - 2.1.0
 tags:
   - social
   - brand
