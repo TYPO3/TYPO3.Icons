@@ -1,4 +1,5 @@
 alias: []
-changes: []
+changes:
+  - 2.0.5
 tags:
   - mail
