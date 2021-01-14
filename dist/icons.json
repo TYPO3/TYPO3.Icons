@@ -1014,6 +1014,12 @@
       "svg": "svgs/actions/actions-pause.svg",
       "sprite": "sprites/actions.svg#actions-pause"
     },
+    "actions-percent-badge": {
+      "identifier": "actions-percent-badge",
+      "category": "actions",
+      "svg": "svgs/actions/actions-percent-badge.svg",
+      "sprite": "sprites/actions.svg#actions-percent-badge"
+    },
     "actions-percent": {
       "identifier": "actions-percent",
       "category": "actions",
