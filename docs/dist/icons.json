@@ -72,6 +72,12 @@
       "svg": "svgs/actions/actions-arrow-up.svg",
       "sprite": "sprites/actions.svg#actions-arrow-up"
     },
+    "actions-badge": {
+      "identifier": "actions-badge",
+      "category": "actions",
+      "svg": "svgs/actions/actions-badge.svg",
+      "sprite": "sprites/actions.svg#actions-badge"
+    },
     "actions-ban": {
       "identifier": "actions-ban",
       "category": "actions",
