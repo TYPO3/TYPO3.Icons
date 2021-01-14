@@ -792,6 +792,12 @@
       "svg": "svgs/actions/actions-fullscreen.svg",
       "sprite": "sprites/actions.svg#actions-fullscreen"
     },
+    "actions-gift-card": {
+      "identifier": "actions-gift-card",
+      "category": "actions",
+      "svg": "svgs/actions/actions-gift-card.svg",
+      "sprite": "sprites/actions.svg#actions-gift-card"
+    },
     "actions-gift": {
       "identifier": "actions-gift",
       "category": "actions",
