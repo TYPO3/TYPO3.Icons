@@ -1014,6 +1014,12 @@
       "svg": "svgs/actions/actions-pause.svg",
       "sprite": "sprites/actions.svg#actions-pause"
     },
+    "actions-percent": {
+      "identifier": "actions-percent",
+      "category": "actions",
+      "svg": "svgs/actions/actions-percent.svg",
+      "sprite": "sprites/actions.svg#actions-percent"
+    },
     "actions-placeholder-add": {
       "identifier": "actions-placeholder-add",
       "category": "actions",
