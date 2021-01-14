@@ -462,6 +462,12 @@
       "svg": "svgs/actions/actions-device-unidentified.svg",
       "sprite": "sprites/actions.svg#actions-device-unidentified"
     },
+    "actions-discord": {
+      "identifier": "actions-discord",
+      "category": "actions",
+      "svg": "svgs/actions/actions-discord.svg",
+      "sprite": "sprites/actions.svg#actions-discord"
+    },
     "actions-document-add": {
       "identifier": "actions-document-add",
       "category": "actions",
