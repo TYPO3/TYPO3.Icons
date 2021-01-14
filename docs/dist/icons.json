@@ -624,6 +624,12 @@
       "svg": "svgs/actions/actions-eye.svg",
       "sprite": "sprites/actions.svg#actions-eye"
     },
+    "actions-facebook": {
+      "identifier": "actions-facebook",
+      "category": "actions",
+      "svg": "svgs/actions/actions-facebook.svg",
+      "sprite": "sprites/actions.svg#actions-facebook"
+    },
     "actions-file-add": {
       "identifier": "actions-file-add",
       "category": "actions",
@@ -815,6 +821,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-link.svg",
       "sprite": "sprites/actions.svg#actions-link"
+    },
+    "actions-linkedin": {
+      "identifier": "actions-linkedin",
+      "category": "actions",
+      "svg": "svgs/actions/actions-linkedin.svg",
+      "sprite": "sprites/actions.svg#actions-linkedin"
     },
     "actions-list-alternative": {
       "identifier": "actions-list-alternative",
@@ -1194,6 +1206,12 @@
       "svg": "svgs/actions/actions-trophy.svg",
       "sprite": "sprites/actions.svg#actions-trophy"
     },
+    "actions-twitter": {
+      "identifier": "actions-twitter",
+      "category": "actions",
+      "svg": "svgs/actions/actions-twitter.svg",
+      "sprite": "sprites/actions.svg#actions-twitter"
+    },
     "actions-typo3": {
       "identifier": "actions-typo3",
       "category": "actions",
@@ -1289,6 +1307,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-window-open.svg",
       "sprite": "sprites/actions.svg#actions-window-open"
+    },
+    "actions-youtube": {
+      "identifier": "actions-youtube",
+      "category": "actions",
+      "svg": "svgs/actions/actions-youtube.svg",
+      "sprite": "sprites/actions.svg#actions-youtube"
     },
     "apps-clipboard-images": {
       "identifier": "apps-clipboard-images",
