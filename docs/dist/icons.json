@@ -246,6 +246,24 @@
       "svg": "svgs/actions/actions-chat.svg",
       "sprite": "sprites/actions.svg#actions-chat"
     },
+    "actions-check-circle-alt": {
+      "identifier": "actions-check-circle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-check-circle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-check-circle-alt"
+    },
+    "actions-check-circle": {
+      "identifier": "actions-check-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-check-circle.svg",
+      "sprite": "sprites/actions.svg#actions-check-circle"
+    },
+    "actions-check-square-alt": {
+      "identifier": "actions-check-square-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-check-square-alt.svg",
+      "sprite": "sprites/actions.svg#actions-check-square-alt"
+    },
     "actions-check-square": {
       "identifier": "actions-check-square",
       "category": "actions",
@@ -329,6 +347,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-chevron-up.svg",
       "sprite": "sprites/actions.svg#actions-chevron-up"
+    },
+    "actions-circle": {
+      "identifier": "actions-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-circle.svg",
+      "sprite": "sprites/actions.svg#actions-circle"
     },
     "actions-clipboard-close": {
       "identifier": "actions-clipboard-close",
