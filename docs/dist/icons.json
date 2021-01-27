@@ -1374,6 +1374,12 @@
       "svg": "svgs/actions/actions-window-open.svg",
       "sprite": "sprites/actions.svg#actions-window-open"
     },
+    "actions-window": {
+      "identifier": "actions-window",
+      "category": "actions",
+      "svg": "svgs/actions/actions-window.svg",
+      "sprite": "sprites/actions.svg#actions-window"
+    },
     "apps-clipboard-images": {
       "identifier": "apps-clipboard-images",
       "category": "apps",
