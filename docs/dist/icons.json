@@ -1266,6 +1266,12 @@
       "svg": "svgs/actions/actions-template.svg",
       "sprite": "sprites/actions.svg#actions-template"
     },
+    "actions-terminal": {
+      "identifier": "actions-terminal",
+      "category": "actions",
+      "svg": "svgs/actions/actions-terminal.svg",
+      "sprite": "sprites/actions.svg#actions-terminal"
+    },
     "actions-ticket": {
       "identifier": "actions-ticket",
       "category": "actions",
