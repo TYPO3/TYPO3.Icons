@@ -1080,6 +1080,12 @@
       "svg": "svgs/actions/actions-preview.svg",
       "sprite": "sprites/actions.svg#actions-preview"
     },
+    "actions-qrcode": {
+      "identifier": "actions-qrcode",
+      "category": "actions",
+      "svg": "svgs/actions/actions-qrcode.svg",
+      "sprite": "sprites/actions.svg#actions-qrcode"
+    },
     "actions-question": {
       "identifier": "actions-question",
       "category": "actions",
