@@ -150,6 +150,12 @@
       "svg": "svgs/actions/actions-brand-youtube.svg",
       "sprite": "sprites/actions.svg#actions-brand-youtube"
     },
+    "actions-browser": {
+      "identifier": "actions-browser",
+      "category": "actions",
+      "svg": "svgs/actions/actions-browser.svg",
+      "sprite": "sprites/actions.svg#actions-browser"
+    },
     "actions-building": {
       "identifier": "actions-building",
       "category": "actions",
