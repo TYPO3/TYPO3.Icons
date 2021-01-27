@@ -1,7 +1,7 @@
 {
   "name": "@typo3/icons",
   "description": "SVG icons for the TYPO3 CMS backend",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "keywords": [
     "TYPO3",
     "Icons"
