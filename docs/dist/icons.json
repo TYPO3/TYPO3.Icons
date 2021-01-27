@@ -1374,6 +1374,12 @@
       "svg": "svgs/actions/actions-window-open.svg",
       "sprite": "sprites/actions.svg#actions-window-open"
     },
+    "actions-window-restore": {
+      "identifier": "actions-window-restore",
+      "category": "actions",
+      "svg": "svgs/actions/actions-window-restore.svg",
+      "sprite": "sprites/actions.svg#actions-window-restore"
+    },
     "actions-window": {
       "identifier": "actions-window",
       "category": "actions",
