@@ -882,6 +882,12 @@
       "svg": "svgs/actions/actions-image.svg",
       "sprite": "sprites/actions.svg#actions-image"
     },
+    "actions-info-circle": {
+      "identifier": "actions-info-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-info-circle.svg",
+      "sprite": "sprites/actions.svg#actions-info-circle"
+    },
     "actions-info": {
       "identifier": "actions-info",
       "category": "actions",
@@ -1091,6 +1097,18 @@
       "category": "actions",
       "svg": "svgs/actions/actions-qrcode.svg",
       "sprite": "sprites/actions.svg#actions-qrcode"
+    },
+    "actions-question-circle-alt": {
+      "identifier": "actions-question-circle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-question-circle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-question-circle-alt"
+    },
+    "actions-question-circle": {
+      "identifier": "actions-question-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-question-circle.svg",
+      "sprite": "sprites/actions.svg#actions-question-circle"
     },
     "actions-question": {
       "identifier": "actions-question",
