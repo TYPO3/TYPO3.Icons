@@ -708,6 +708,12 @@
       "svg": "svgs/actions/actions-file-add.svg",
       "sprite": "sprites/actions.svg#actions-file-add"
     },
+    "actions-file-certificate": {
+      "identifier": "actions-file-certificate",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-certificate.svg",
+      "sprite": "sprites/actions.svg#actions-file-certificate"
+    },
     "actions-file-csv-download": {
       "identifier": "actions-file-csv-download",
       "category": "actions",
