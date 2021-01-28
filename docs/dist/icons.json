@@ -654,6 +654,36 @@
       "svg": "svgs/actions/actions-envelope.svg",
       "sprite": "sprites/actions.svg#actions-envelope"
     },
+    "actions-exclamation-circle-alt": {
+      "identifier": "actions-exclamation-circle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-exclamation-circle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-exclamation-circle-alt"
+    },
+    "actions-exclamation-circle": {
+      "identifier": "actions-exclamation-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-exclamation-circle.svg",
+      "sprite": "sprites/actions.svg#actions-exclamation-circle"
+    },
+    "actions-exclamation-triangle-alt": {
+      "identifier": "actions-exclamation-triangle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-exclamation-triangle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-exclamation-triangle-alt"
+    },
+    "actions-exclamation-triangle": {
+      "identifier": "actions-exclamation-triangle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-exclamation-triangle.svg",
+      "sprite": "sprites/actions.svg#actions-exclamation-triangle"
+    },
+    "actions-exclamation": {
+      "identifier": "actions-exclamation",
+      "category": "actions",
+      "svg": "svgs/actions/actions-exclamation.svg",
+      "sprite": "sprites/actions.svg#actions-exclamation"
+    },
     "actions-expand": {
       "identifier": "actions-expand",
       "category": "actions",
@@ -1337,6 +1367,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-translate.svg",
       "sprite": "sprites/actions.svg#actions-translate"
+    },
+    "actions-triangle": {
+      "identifier": "actions-triangle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-triangle.svg",
+      "sprite": "sprites/actions.svg#actions-triangle"
     },
     "actions-trophy": {
       "identifier": "actions-trophy",
