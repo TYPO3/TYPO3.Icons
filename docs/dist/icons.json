@@ -1008,6 +1008,18 @@
       "svg": "svgs/actions/actions-move.svg",
       "sprite": "sprites/actions.svg#actions-move"
     },
+    "actions-music-alt": {
+      "identifier": "actions-music-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-music-alt.svg",
+      "sprite": "sprites/actions.svg#actions-music-alt"
+    },
+    "actions-music": {
+      "identifier": "actions-music",
+      "category": "actions",
+      "svg": "svgs/actions/actions-music.svg",
+      "sprite": "sprites/actions.svg#actions-music"
+    },
     "actions-newspaper": {
       "identifier": "actions-newspaper",
       "category": "actions",
