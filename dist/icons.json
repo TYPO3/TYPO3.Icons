@@ -882,6 +882,12 @@
       "svg": "svgs/actions/actions-image.svg",
       "sprite": "sprites/actions.svg#actions-image"
     },
+    "actions-info-circle-alt": {
+      "identifier": "actions-info-circle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-info-circle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-info-circle-alt"
+    },
     "actions-info-circle": {
       "identifier": "actions-info-circle",
       "category": "actions",
