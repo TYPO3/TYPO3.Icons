@@ -252,6 +252,18 @@
       "svg": "svgs/actions/actions-chat.svg",
       "sprite": "sprites/actions.svg#actions-chat"
     },
+    "actions-check-badge-alt": {
+      "identifier": "actions-check-badge-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-check-badge-alt.svg",
+      "sprite": "sprites/actions.svg#actions-check-badge-alt"
+    },
+    "actions-check-badge": {
+      "identifier": "actions-check-badge",
+      "category": "actions",
+      "svg": "svgs/actions/actions-check-badge.svg",
+      "sprite": "sprites/actions.svg#actions-check-badge"
+    },
     "actions-check-circle-alt": {
       "identifier": "actions-check-circle-alt",
       "category": "actions",
