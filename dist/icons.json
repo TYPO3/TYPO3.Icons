@@ -666,6 +666,12 @@
       "svg": "svgs/actions/actions-envelope.svg",
       "sprite": "sprites/actions.svg#actions-envelope"
     },
+    "actions-exchange": {
+      "identifier": "actions-exchange",
+      "category": "actions",
+      "svg": "svgs/actions/actions-exchange.svg",
+      "sprite": "sprites/actions.svg#actions-exchange"
+    },
     "actions-exclamation-circle-alt": {
       "identifier": "actions-exclamation-circle-alt",
       "category": "actions",
