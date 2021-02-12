@@ -1110,6 +1110,12 @@
       "svg": "svgs/actions/actions-pagetree.svg",
       "sprite": "sprites/actions.svg#actions-pagetree"
     },
+    "actions-paperplane": {
+      "identifier": "actions-paperplane",
+      "category": "actions",
+      "svg": "svgs/actions/actions-paperplane.svg",
+      "sprite": "sprites/actions.svg#actions-paperplane"
+    },
     "actions-paste-after": {
       "identifier": "actions-paste-after",
       "category": "actions",
