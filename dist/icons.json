@@ -1146,6 +1146,12 @@
       "svg": "svgs/actions/actions-percent.svg",
       "sprite": "sprites/actions.svg#actions-percent"
     },
+    "actions-phone": {
+      "identifier": "actions-phone",
+      "category": "actions",
+      "svg": "svgs/actions/actions-phone.svg",
+      "sprite": "sprites/actions.svg#actions-phone"
+    },
     "actions-placeholder-add": {
       "identifier": "actions-placeholder-add",
       "category": "actions",
