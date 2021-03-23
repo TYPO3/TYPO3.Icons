@@ -100,7 +100,7 @@ const options = {
 //
 function getSvgoConfig() {
     let config = fs.readFileSync('svgo.yaml', 'utf8');
-    config = yaml.safeLoad(config)
+    config = yaml.load(config)
 
     return config;
 }
@@ -167,7 +167,7 @@ function getMetaData(identifier, folder) {
     let metafile = path.join(options.meta, folder, identifier + '.yaml' );
     let metadata = {};
     if (fs.existsSync(metafile)) {
-        metadata = yaml.safeLoad(fs.readFileSync(metafile, 'utf8'));
+        metadata = yaml.load(fs.readFileSync(metafile, 'utf8'));
     }
     return merge.all([defaultmeta, metadata]);
 }
