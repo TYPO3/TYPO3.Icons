@@ -177,7 +177,7 @@ function updateMetaData(identifier, folder, metadata) {
     if (!fs.existsSync(path.dirname(metafile))){
         fs.mkdirSync(path.dirname(metafile));
     }
-    fs.writeFileSync(metafile, yaml.safeDump(metadata), 'utf8');
+    fs.writeFileSync(metafile, yaml.dump(metadata), 'utf8');
 }
 
 function getVersionChanges(identifier, folder) {
