@@ -1422,6 +1422,12 @@
       "svg": "svgs/actions/actions-undo.svg",
       "sprite": "sprites/actions.svg#actions-undo"
     },
+    "actions-university": {
+      "identifier": "actions-university",
+      "category": "actions",
+      "svg": "svgs/actions/actions-university.svg",
+      "sprite": "sprites/actions.svg#actions-university"
+    },
     "actions-unlink": {
       "identifier": "actions-unlink",
       "category": "actions",
