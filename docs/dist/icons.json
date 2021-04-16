@@ -936,6 +936,12 @@
       "svg": "svgs/actions/actions-image.svg",
       "sprite": "sprites/actions.svg#actions-image"
     },
+    "actions-infinity": {
+      "identifier": "actions-infinity",
+      "category": "actions",
+      "svg": "svgs/actions/actions-infinity.svg",
+      "sprite": "sprites/actions.svg#actions-infinity"
+    },
     "actions-info-circle-alt": {
       "identifier": "actions-info-circle-alt",
       "category": "actions",
