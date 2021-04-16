@@ -52,6 +52,7 @@
   "scripts": {
     "build": "gulp build",
     "build-versions": "gulp build-versions",
+    "docs": "gulp docs",
     "serve": "http-server ./docs",
     "stylelint": "stylelint assets/scss/*"
   }

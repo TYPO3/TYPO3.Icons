@@ -2,17 +2,16 @@
 {% block title %}{{ category.title }}{% endblock %}
 {% block content %}
 
-    <nav>
-        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ pathPrefix }}index.html">Home</a></li>
             <li class="breadcrumb-item">{{ category.title }}</li>
-        </ul>
+        </ol>
     </nav>
 
     <div class="d-flex mb-4">
         <h2 class="mb-0">{{ category.title }}</h2>
-        <form class="d-flex flex-nowrap ml-auto">
-            <label for="search" class="sr-only">Search for icons</label>
+        <form class="d-flex flex-nowrap ms-auto">
             <input class="form-control search mb-0" id="search" placeholder="Start typing to filter..." autocomplete="off">
         </form>
     </div>
