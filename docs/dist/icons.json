@@ -828,6 +828,12 @@
       "svg": "svgs/actions/actions-file-t3d.svg",
       "sprite": "sprites/actions.svg#actions-file-t3d"
     },
+    "actions-file-text": {
+      "identifier": "actions-file-text",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-text.svg",
+      "sprite": "sprites/actions.svg#actions-file-text"
+    },
     "actions-file-view": {
       "identifier": "actions-file-view",
       "category": "actions",
