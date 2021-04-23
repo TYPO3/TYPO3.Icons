@@ -1470,6 +1470,12 @@
       "svg": "svgs/actions/actions-user.svg",
       "sprite": "sprites/actions.svg#actions-user"
     },
+    "actions-users": {
+      "identifier": "actions-users",
+      "category": "actions",
+      "svg": "svgs/actions/actions-users.svg",
+      "sprite": "sprites/actions.svg#actions-users"
+    },
     "actions-variable-add": {
       "identifier": "actions-variable-add",
       "category": "actions",
