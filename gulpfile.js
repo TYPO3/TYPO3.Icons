@@ -264,12 +264,15 @@ gulp.task('clean', () => {
 
     return Promise.all(tasks);
 });
+gulp.task('icons-clean', () => {
+    return del([options.dist], { force: true });
+});
 
 
 //
-// Sass
+// Icons Sass
 //
-gulp.task('sass', () => {
+gulp.task('icons-sass', () => {
     let tasks = [];
     tasks.push(new Promise((resolve) => {
         gulp.src(path.join(options.assets, 'scss/icons.scss'))
@@ -293,7 +296,7 @@ gulp.task('sass', () => {
 //
 // Minify SVGs
 //
-gulp.task('min', () => {
+gulp.task('icons-min', () => {
     return gulp.src([options.src + '**/*.svg'])
         .pipe(svgmin(getSvgoConfig()))
         .pipe(gulp.dest(options.dist_svgs));
@@ -303,7 +306,7 @@ gulp.task('min', () => {
 //
 // SVG Sprites
 //
-gulp.task('sprites', () => {
+gulp.task('icons-sprites', () => {
     let processFolder = (folder) => {
         return new Promise((resolve, reject) => {
             gulp.src([path.join(options.dist_svgs, folder) + '/*.svg'])
@@ -335,7 +338,7 @@ gulp.task('sprites', () => {
 //
 // Data
 //
-gulp.task('data', (cb) => {
+gulp.task('icons-data', (cb) => {
     let data = JSON.stringify(getData(), null, 2);
     fs.writeFile(options.dist + 'icons.json', data, 'utf8', () => {
         cb();
@@ -345,26 +348,29 @@ gulp.task('data', (cb) => {
 //
 // Build Versions
 //
-gulp.task('build-versions', () => {
+gulp.task('icons-versions', () => {
     return new Promise((resolve) => {
-    let folders = getFolders(options.src);
-    for (var folderCount = 0; folderCount < folders.length; folderCount++) {
-        var folder = folders[folderCount];
-        var iconFiles = getIcons(options.src + folder);
-        for (var i = 0; i < iconFiles.length; i++) {
-            let file = path.join(folder, iconFiles[i]);
-            let identifier = path.basename(file, '.svg');
-            generateVersionData(identifier, folder);
+        let folders = getFolders(options.src);
+        for (var folderCount = 0; folderCount < folders.length; folderCount++) {
+            var folder = folders[folderCount];
+            var iconFiles = getIcons(options.src + folder);
+            for (var i = 0; i < iconFiles.length; i++) {
+                let file = path.join(folder, iconFiles[i]);
+                let identifier = path.basename(file, '.svg');
+                generateVersionData(identifier, folder);
+            }
         }
-    }
         resolve();
-});
+    });
 });
 
-//
-// Compile Readme
-//
-gulp.task('docs', function (cb) {
+/**
+ * Docs
+ */
+gulp.task('docs-clean', () => {
+    return del([options.docs], { force: true });
+});
+gulp.task('docs-build', function (cb) {
 
     // Build Docs CSS
     gulp.src(path.join(options.assets, 'scss/docs.scss'))
@@ -474,7 +480,19 @@ gulp.task('docs', function (cb) {
 
 
 //
-// Default Task
+// Tasks
 //
-gulp.task('build', gulp.series('clean', 'sass', 'min', 'sprites', 'data', 'docs'));
-gulp.task('default', gulp.series('build'));
+gulp.task('icons', gulp.series(
+    'icons-clean',
+    'icons-sass',
+    'icons-min',
+    'icons-sprites',
+    'icons-data'
+));
+gulp.task('default', gulp.series(
+    'icons'
+));
+gulp.task('docs', gulp.series(
+    'docs-clean',
+    'docs-build'
+));

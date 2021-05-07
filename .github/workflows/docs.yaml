@@ -1,16 +1,18 @@
-name: CI
+name: Docs
 
 on:
   push:
-  pull_request:
+    branches:
+      - naster
 
 env:
   NODE: 14.x
 
 jobs:
-  build:
-    name: Build
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
+    if: github.repository == 'typo3/typo3.icons'
 
     steps:
       - name: Checkout Code
@@ -32,8 +34,16 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Stylelint
-        run: npm run stylelint
-
-      - name: Build
+      - name: Build icons
         run: npm run icons-build
+
+      - name: Build docs
+        run: npm run docs-build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          allow_empty_commit: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./docs/

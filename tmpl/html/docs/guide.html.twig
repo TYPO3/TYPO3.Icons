@@ -178,9 +178,15 @@
     {{ makros.codeblock('
 npm ci
 npm run stylelint
-npm run build-versions
-npm run build
-npm run serve
+npm run icons-versions
+npm run icons-build
+    ', 'bash') }}
+
+    <h3>Docs</h3>
+    {{ makros.codeblock('
+npm ci
+npm run docs-build
+npm run docs-serve
     ', 'bash') }}
 
     <h3>Release</h3>
