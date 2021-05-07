@@ -1,6 +1,6 @@
 # @typo3/icons
 
-SVG icons for the TYPO3 CMS backend
+SVG icons for TYPO3
 
 ## Style guide
 
