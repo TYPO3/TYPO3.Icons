@@ -39,17 +39,17 @@
     "gulp-twig": "^1.2.0",
     "http-server": "^0.12.3",
     "js-yaml": "^4.1.0",
-    "node-sass": "^5.0.0",
-    "stylelint": "^13.12.0"
+    "node-sass": "^6.0.0",
+    "stylelint": "^13.13.1"
   },
   "dependencies": {
-    "npm": "^7.10.0"
+    "npm": "^7.12.1"
   },
   "scripts": {
-    "site-serve":     "http-server ./_site",
-    "site-build":     "gulp site",
-    "icons-build":    "gulp icons",
-    "version-build":  "gulp version",
-    "stylelint":      "stylelint assets/scss/*"
+    "site-serve": "http-server ./_site",
+    "site-build": "gulp site",
+    "icons-build": "gulp icons",
+    "version-build": "gulp version",
+    "stylelint": "stylelint assets/scss/*"
   }
 }
