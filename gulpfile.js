@@ -396,17 +396,6 @@ gulp.task('site-build', function (cb) {
         icons[iconKey]._inline = fs.readFileSync(path.join(options.dist, icons[iconKey].svg), 'utf8')
     }
 
-    // README
-    gulp.src('./tmpl/markdown/README.md.twig')
-        .pipe(twig({
-            data: {
-                pkg: pkg,
-                typo3: typo3,
-            }
-        }))
-        .pipe(rename('README.md'))
-        .pipe(gulp.dest(path.join('.')));
-
     // Index
     gulp.src('./tmpl/html/docs/index.html.twig')
         .pipe(twig({
