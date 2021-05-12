@@ -239,31 +239,8 @@ function getData() {
 
 
 //
-// Clean SVGs
+// Icons Clean
 //
-gulp.task('clean', () => {
-    let tasks = [];
-    tasks.push(del([options.dist, options.site], { force: true }));
-    tasks.push(new Promise((resolve) => {
-        let folders = getFolders(options.meta);
-        for (var folderCount = 0; folderCount < folders.length; folderCount++) {
-            let folder = folders[folderCount];
-            let files = getMetaFiles(path.join(options.meta, folder));
-            for (var i = 0; i < files.length; i++) {
-                let file = path.join(folder, files[i]);
-                let identifier = path.basename(file, '.yaml');
-                fs.stat(path.join(options.src, folder, identifier + '.svg'), (error) => {
-                    if (error !== null && error.code === 'ENOENT') {
-                        del(path.join(options.meta, file), { force: true });
-                    }
-                });
-            }
-        }
-        resolve();
-    }));
-
-    return Promise.all(tasks);
-});
 gulp.task('icons-clean', () => {
     return del([options.dist], { force: true });
 });
@@ -293,8 +270,9 @@ gulp.task('icons-sass', () => {
     return Promise.all(tasks);
 });
 
+
 //
-// Minify SVGs
+// Icons Minify SVGs
 //
 gulp.task('icons-min', () => {
     return gulp.src([options.src + '**/*.svg'])
@@ -304,7 +282,7 @@ gulp.task('icons-min', () => {
 
 
 //
-// SVG Sprites
+// Icons SVG Sprites
 //
 gulp.task('icons-sprites', () => {
     let processFolder = (folder) => {
@@ -336,7 +314,7 @@ gulp.task('icons-sprites', () => {
 
 
 //
-// Data
+// Icons Data
 //
 gulp.task('icons-data', (cb) => {
     let data = JSON.stringify(getData(), null, 2);
@@ -345,11 +323,31 @@ gulp.task('icons-data', (cb) => {
     });
 });
 
+
 //
-// Build Versions
+// Versions History
 //
-gulp.task('icons-versions', () => {
-    return new Promise((resolve) => {
+gulp.task('version-history', () => {
+
+    let tasks = [];
+    tasks.push(new Promise((resolve) => {
+        let folders = getFolders(options.meta);
+        for (var folderCount = 0; folderCount < folders.length; folderCount++) {
+            let folder = folders[folderCount];
+            let files = getMetaFiles(path.join(options.meta, folder));
+            for (var i = 0; i < files.length; i++) {
+                let file = path.join(folder, files[i]);
+                let identifier = path.basename(file, '.yaml');
+                fs.stat(path.join(options.src, folder, identifier + '.svg'), (error) => {
+                    if (error !== null && error.code === 'ENOENT') {
+                        del(path.join(options.meta, file), { force: true });
+                    }
+                });
+            }
+        }
+        resolve();
+    }));
+    tasks.push(new Promise((resolve) => {
         let folders = getFolders(options.src);
         for (var folderCount = 0; folderCount < folders.length; folderCount++) {
             var folder = folders[folderCount];
@@ -361,8 +359,11 @@ gulp.task('icons-versions', () => {
             }
         }
         resolve();
-    });
+    }));
+
+    return Promise.all(tasks);
 });
+
 
 /**
  * Docs
@@ -480,6 +481,9 @@ gulp.task('icons', gulp.series(
 ));
 gulp.task('default', gulp.series(
     'icons'
+));
+gulp.task('version', gulp.series(
+    'version-history'
 ));
 gulp.task('site', gulp.series(
     'site-clean',

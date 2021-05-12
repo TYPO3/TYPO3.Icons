@@ -49,7 +49,7 @@
     "site-serve":     "http-server ./_site",
     "site-build":     "gulp site",
     "icons-build":    "gulp icons",
-    "icons-versions": "gulp icons-versions",
+    "version-build":  "gulp version",
     "stylelint":      "stylelint assets/scss/*"
   }
 }
