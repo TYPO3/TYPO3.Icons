@@ -46,8 +46,8 @@
     "npm": "^7.10.0"
   },
   "scripts": {
-    "docs-serve":     "http-server ./docs",
-    "docs-build":     "gulp docs",
+    "site-serve":     "http-server ./_site",
+    "site-build":     "gulp site",
     "icons-build":    "gulp icons",
     "icons-versions": "gulp icons-versions",
     "stylelint":      "stylelint assets/scss/*"

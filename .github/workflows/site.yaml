@@ -1,4 +1,4 @@
-name: Docs
+name: Site
 
 on:
   push:
@@ -37,8 +37,8 @@ jobs:
       - name: Build icons
         run: npm run icons-build
 
-      - name: Build docs
-        run: npm run docs-build
+      - name: Build site
+        run: npm run site-build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -46,4 +46,4 @@ jobs:
           allow_empty_commit: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./docs/
+          publish_dir: ./_site/

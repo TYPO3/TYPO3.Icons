@@ -89,7 +89,7 @@ const options = {
     dist_svgs: './dist/svgs/',
     dist_sprites: './dist/sprites/',
     assets: './assets/',
-    docs: './docs/',
+    site: './_site/',
     meta: './meta/',
     material: './material/'
 };
@@ -243,7 +243,7 @@ function getData() {
 //
 gulp.task('clean', () => {
     let tasks = [];
-    tasks.push(del([options.dist, options.docs], { force: true }));
+    tasks.push(del([options.dist, options.site], { force: true }));
     tasks.push(new Promise((resolve) => {
         let folders = getFolders(options.meta);
         for (var folderCount = 0; folderCount < folders.length; folderCount++) {
@@ -367,24 +367,24 @@ gulp.task('icons-versions', () => {
 /**
  * Docs
  */
-gulp.task('docs-clean', () => {
-    return del([options.docs], { force: true });
+gulp.task('site-clean', () => {
+    return del([options.site], { force: true });
 });
-gulp.task('docs-build', function (cb) {
+gulp.task('site-build', function (cb) {
 
     // Build Docs CSS
     gulp.src(path.join(options.assets, 'scss/docs.scss'))
         .pipe(sass().on('error', sass.logError))
         .pipe(minifyCSS())
-        .pipe(gulp.dest(path.join(options.docs, 'assets', 'css')))
+        .pipe(gulp.dest(path.join(options.site, 'assets', 'css')))
 
     // Copy static assets
     gulp.src([path.join(options.assets, '**/*'),
             '!' + path.join(options.assets, '**/*(*.scss)'),
         ], { base: options.assets })
-        .pipe(gulp.dest(path.join(options.docs, 'assets')));
+        .pipe(gulp.dest(path.join(options.site, 'assets')));
     gulp.src([path.join(options.dist, '**/*')], { base: options.dist } )
-        .pipe(gulp.dest(path.join(options.docs, 'dist')));
+        .pipe(gulp.dest(path.join(options.site, 'dist')));
 
     // Fetch generated data
     let typo3 = JSON.parse(fs.readFileSync('./typo3.json', 'utf8'))
@@ -421,7 +421,7 @@ gulp.task('docs-build', function (cb) {
             }
         }))
         .pipe(rename('index.html'))
-        .pipe(gulp.dest(path.join('./docs')));
+        .pipe(gulp.dest(path.join(options.site)));
 
     // Guide
     gulp.src('./tmpl/html/docs/guide.html.twig')
@@ -437,7 +437,7 @@ gulp.task('docs-build', function (cb) {
             }
         }))
         .pipe(rename('guide.html'))
-        .pipe(gulp.dest(path.join('./docs')));
+        .pipe(gulp.dest(path.join(options.site)));
 
     // Build pages
     for (let categoryKey in categories) {
@@ -454,7 +454,7 @@ gulp.task('docs-build', function (cb) {
                 }
             }))
             .pipe(rename(category.identifier + '.html'))
-            .pipe(gulp.dest(path.join('./docs/icons')));
+            .pipe(gulp.dest(path.join(options.site, 'icons')));
         for (let iconKey in category.icons) {
             let iconIdentifier = category.icons[iconKey];
             let icon = icons[iconIdentifier];
@@ -471,7 +471,7 @@ gulp.task('docs-build', function (cb) {
                     }
                 }))
                 .pipe(rename(iconIdentifier + '.html'))
-                .pipe(gulp.dest(path.join('./docs/icons', category.identifier)));
+                .pipe(gulp.dest(path.join(options.site, 'icons', category.identifier)));
         }
     }
 
@@ -492,7 +492,7 @@ gulp.task('icons', gulp.series(
 gulp.task('default', gulp.series(
     'icons'
 ));
-gulp.task('docs', gulp.series(
-    'docs-clean',
-    'docs-build'
+gulp.task('site', gulp.series(
+    'site-clean',
+    'site-build'
 ));
