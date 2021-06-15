@@ -912,6 +912,12 @@
       "svg": "svgs/actions/actions-globe.svg",
       "sprite": "sprites/actions.svg#actions-globe"
     },
+    "actions-hand-pointer": {
+      "identifier": "actions-hand-pointer",
+      "category": "actions",
+      "svg": "svgs/actions/actions-hand-pointer.svg",
+      "sprite": "sprites/actions.svg#actions-hand-pointer"
+    },
     "actions-heart": {
       "identifier": "actions-heart",
       "category": "actions",
