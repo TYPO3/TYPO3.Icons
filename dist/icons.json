@@ -540,6 +540,18 @@
       "svg": "svgs/actions/actions-delete.svg",
       "sprite": "sprites/actions.svg#actions-delete"
     },
+    "actions-device-desktop-star": {
+      "identifier": "actions-device-desktop-star",
+      "category": "actions",
+      "svg": "svgs/actions/actions-device-desktop-star.svg",
+      "sprite": "sprites/actions.svg#actions-device-desktop-star"
+    },
+    "actions-device-desktop-user": {
+      "identifier": "actions-device-desktop-user",
+      "category": "actions",
+      "svg": "svgs/actions/actions-device-desktop-user.svg",
+      "sprite": "sprites/actions.svg#actions-device-desktop-user"
+    },
     "actions-device-desktop": {
       "identifier": "actions-device-desktop",
       "category": "actions",
