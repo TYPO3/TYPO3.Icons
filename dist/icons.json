@@ -756,6 +756,12 @@
       "svg": "svgs/actions/actions-file-add.svg",
       "sprite": "sprites/actions.svg#actions-file-add"
     },
+    "actions-file-audio": {
+      "identifier": "actions-file-audio",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-audio.svg",
+      "sprite": "sprites/actions.svg#actions-file-audio"
+    },
     "actions-file-certificate": {
       "identifier": "actions-file-certificate",
       "category": "actions",
@@ -785,6 +791,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-file-html.svg",
       "sprite": "sprites/actions.svg#actions-file-html"
+    },
+    "actions-file-image": {
+      "identifier": "actions-file-image",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-image.svg",
+      "sprite": "sprites/actions.svg#actions-file-image"
     },
     "actions-file-move": {
       "identifier": "actions-file-move",
@@ -833,6 +845,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-file-text.svg",
       "sprite": "sprites/actions.svg#actions-file-text"
+    },
+    "actions-file-video": {
+      "identifier": "actions-file-video",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-video.svg",
+      "sprite": "sprites/actions.svg#actions-file-video"
     },
     "actions-file-view": {
       "identifier": "actions-file-view",

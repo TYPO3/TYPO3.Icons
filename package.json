@@ -47,6 +47,7 @@
   },
   "scripts": {
     "site-serve": "http-server ./_site",
+    "site-refresh": "gulp icons && gulp site",
     "site-build": "gulp site",
     "icons-build": "gulp icons",
     "version-build": "gulp version",
