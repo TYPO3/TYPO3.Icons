@@ -24,11 +24,29 @@
       "svg": "svgs/actions/actions-archive.svg",
       "sprite": "sprites/actions.svg#actions-archive"
     },
+    "actions-arrow-down-alt": {
+      "identifier": "actions-arrow-down-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-down-alt.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-down-alt"
+    },
+    "actions-arrow-down-left-alt": {
+      "identifier": "actions-arrow-down-left-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-down-left-alt.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-down-left-alt"
+    },
     "actions-arrow-down-left": {
       "identifier": "actions-arrow-down-left",
       "category": "actions",
       "svg": "svgs/actions/actions-arrow-down-left.svg",
       "sprite": "sprites/actions.svg#actions-arrow-down-left"
+    },
+    "actions-arrow-down-right-alt": {
+      "identifier": "actions-arrow-down-right-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-down-right-alt.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-down-right-alt"
     },
     "actions-arrow-down-right": {
       "identifier": "actions-arrow-down-right",
@@ -42,17 +60,41 @@
       "svg": "svgs/actions/actions-arrow-down.svg",
       "sprite": "sprites/actions.svg#actions-arrow-down"
     },
+    "actions-arrow-left-alt": {
+      "identifier": "actions-arrow-left-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-left-alt.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-left-alt"
+    },
     "actions-arrow-left": {
       "identifier": "actions-arrow-left",
       "category": "actions",
       "svg": "svgs/actions/actions-arrow-left.svg",
       "sprite": "sprites/actions.svg#actions-arrow-left"
     },
+    "actions-arrow-right-alt": {
+      "identifier": "actions-arrow-right-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-right-alt.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-right-alt"
+    },
+    "actions-arrow-right-down-alt": {
+      "identifier": "actions-arrow-right-down-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-right-down-alt.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-right-down-alt"
+    },
     "actions-arrow-right-down": {
       "identifier": "actions-arrow-right-down",
       "category": "actions",
       "svg": "svgs/actions/actions-arrow-right-down.svg",
       "sprite": "sprites/actions.svg#actions-arrow-right-down"
+    },
+    "actions-arrow-right-up-alt": {
+      "identifier": "actions-arrow-right-up-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-right-up-alt.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-right-up-alt"
     },
     "actions-arrow-right-up": {
       "identifier": "actions-arrow-right-up",
@@ -65,6 +107,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-arrow-right.svg",
       "sprite": "sprites/actions.svg#actions-arrow-right"
+    },
+    "actions-arrow-up-alt": {
+      "identifier": "actions-arrow-up-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-arrow-up-alt.svg",
+      "sprite": "sprites/actions.svg#actions-arrow-up-alt"
     },
     "actions-arrow-up": {
       "identifier": "actions-arrow-up",
