@@ -456,6 +456,18 @@
       "svg": "svgs/actions/actions-comment.svg",
       "sprite": "sprites/actions.svg#actions-comment"
     },
+    "actions-cookie-bite": {
+      "identifier": "actions-cookie-bite",
+      "category": "actions",
+      "svg": "svgs/actions/actions-cookie-bite.svg",
+      "sprite": "sprites/actions.svg#actions-cookie-bite"
+    },
+    "actions-cookie": {
+      "identifier": "actions-cookie",
+      "category": "actions",
+      "svg": "svgs/actions/actions-cookie.svg",
+      "sprite": "sprites/actions.svg#actions-cookie"
+    },
     "actions-credit-card": {
       "identifier": "actions-credit-card",
       "category": "actions",
