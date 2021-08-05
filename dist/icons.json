@@ -1356,6 +1356,18 @@
       "svg": "svgs/actions/actions-server.svg",
       "sprite": "sprites/actions.svg#actions-server"
     },
+    "actions-shield-star": {
+      "identifier": "actions-shield-star",
+      "category": "actions",
+      "svg": "svgs/actions/actions-shield-star.svg",
+      "sprite": "sprites/actions.svg#actions-shield-star"
+    },
+    "actions-shield-typo3": {
+      "identifier": "actions-shield-typo3",
+      "category": "actions",
+      "svg": "svgs/actions/actions-shield-typo3.svg",
+      "sprite": "sprites/actions.svg#actions-shield-typo3"
+    },
     "actions-shield": {
       "identifier": "actions-shield",
       "category": "actions",
