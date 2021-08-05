@@ -1026,6 +1026,18 @@
       "svg": "svgs/actions/actions-key.svg",
       "sprite": "sprites/actions.svg#actions-key"
     },
+    "actions-lightbulb-on": {
+      "identifier": "actions-lightbulb-on",
+      "category": "actions",
+      "svg": "svgs/actions/actions-lightbulb-on.svg",
+      "sprite": "sprites/actions.svg#actions-lightbulb-on"
+    },
+    "actions-lightbulb": {
+      "identifier": "actions-lightbulb",
+      "category": "actions",
+      "svg": "svgs/actions/actions-lightbulb.svg",
+      "sprite": "sprites/actions.svg#actions-lightbulb"
+    },
     "actions-link": {
       "identifier": "actions-link",
       "category": "actions",
