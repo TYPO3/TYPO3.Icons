@@ -948,6 +948,12 @@
       "svg": "svgs/actions/actions-globe.svg",
       "sprite": "sprites/actions.svg#actions-globe"
     },
+    "actions-graduation-cap": {
+      "identifier": "actions-graduation-cap",
+      "category": "actions",
+      "svg": "svgs/actions/actions-graduation-cap.svg",
+      "sprite": "sprites/actions.svg#actions-graduation-cap"
+    },
     "actions-hand-pointer": {
       "identifier": "actions-hand-pointer",
       "category": "actions",
