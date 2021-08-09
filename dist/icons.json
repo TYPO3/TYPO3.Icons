@@ -2346,6 +2346,42 @@
       "svg": "svgs/content/content-coffee.svg",
       "sprite": "sprites/content.svg#content-coffee"
     },
+    "content-container-columns-1": {
+      "identifier": "content-container-columns-1",
+      "category": "content",
+      "svg": "svgs/content/content-container-columns-1.svg",
+      "sprite": "sprites/content.svg#content-container-columns-1"
+    },
+    "content-container-columns-2-left": {
+      "identifier": "content-container-columns-2-left",
+      "category": "content",
+      "svg": "svgs/content/content-container-columns-2-left.svg",
+      "sprite": "sprites/content.svg#content-container-columns-2-left"
+    },
+    "content-container-columns-2-right": {
+      "identifier": "content-container-columns-2-right",
+      "category": "content",
+      "svg": "svgs/content/content-container-columns-2-right.svg",
+      "sprite": "sprites/content.svg#content-container-columns-2-right"
+    },
+    "content-container-columns-2": {
+      "identifier": "content-container-columns-2",
+      "category": "content",
+      "svg": "svgs/content/content-container-columns-2.svg",
+      "sprite": "sprites/content.svg#content-container-columns-2"
+    },
+    "content-container-columns-3": {
+      "identifier": "content-container-columns-3",
+      "category": "content",
+      "svg": "svgs/content/content-container-columns-3.svg",
+      "sprite": "sprites/content.svg#content-container-columns-3"
+    },
+    "content-container-columns-4": {
+      "identifier": "content-container-columns-4",
+      "category": "content",
+      "svg": "svgs/content/content-container-columns-4.svg",
+      "sprite": "sprites/content.svg#content-container-columns-4"
+    },
     "content-csv": {
       "identifier": "content-csv",
       "category": "content",
