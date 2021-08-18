@@ -171,6 +171,21 @@
         {%- else -%}
             {{ makros.codeblock('<core:icon identifier="' ~ icon.identifier ~ '" size="small" />') }}
         {%- endif -%}
+
+        <h3 class="my-3">CSS Background Image</h3>
+        {%- set cssbackgroundimageusage -%}
+.myclass {
+    background-size: 1em 1em;
+    background-image: url("data:image/svg+xml,{{ icon._inline|raw|replace({'class="icon-color"': 'fill="#fff"'})|replace({
+        '"': '\'',
+        '#': '%23',
+        '<': '%3c',
+        '>': '%3e'
+    }) }}");
+}
+        {%- endset -%}
+        {{ makros.codeblock(cssbackgroundimageusage) }}
+
     </div>
 
     {%- if icon._meta.alias|length > 0 -%}
