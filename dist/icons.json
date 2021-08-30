@@ -1164,6 +1164,12 @@
       "svg": "svgs/actions/actions-message-add.svg",
       "sprite": "sprites/actions.svg#actions-message-add"
     },
+    "actions-message-dots": {
+      "identifier": "actions-message-dots",
+      "category": "actions",
+      "svg": "svgs/actions/actions-message-dots.svg",
+      "sprite": "sprites/actions.svg#actions-message-dots"
+    },
     "actions-message-localize": {
       "identifier": "actions-message-localize",
       "category": "actions",
@@ -2549,6 +2555,24 @@
       "category": "content",
       "svg": "svgs/content/content-menu-thumbnail.svg",
       "sprite": "sprites/content.svg#content-menu-thumbnail"
+    },
+    "content-message-dots": {
+      "identifier": "content-message-dots",
+      "category": "content",
+      "svg": "svgs/content/content-message-dots.svg",
+      "sprite": "sprites/content.svg#content-message-dots"
+    },
+    "content-message": {
+      "identifier": "content-message",
+      "category": "content",
+      "svg": "svgs/content/content-message.svg",
+      "sprite": "sprites/content.svg#content-message"
+    },
+    "content-messages": {
+      "identifier": "content-messages",
+      "category": "content",
+      "svg": "svgs/content/content-messages.svg",
+      "sprite": "sprites/content.svg#content-messages"
     },
     "content-news": {
       "identifier": "content-news",
