@@ -2724,6 +2724,12 @@
       "svg": "svgs/content/content-timeline.svg",
       "sprite": "sprites/content.svg#content-timeline"
     },
+    "content-user": {
+      "identifier": "content-user",
+      "category": "content",
+      "svg": "svgs/content/content-user.svg",
+      "sprite": "sprites/content.svg#content-user"
+    },
     "content-widget-calltoaction": {
       "identifier": "content-widget-calltoaction",
       "category": "content",
