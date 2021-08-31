@@ -1212,6 +1212,12 @@
       "svg": "svgs/actions/actions-newspaper.svg",
       "sprite": "sprites/actions.svg#actions-newspaper"
     },
+    "actions-note": {
+      "identifier": "actions-note",
+      "category": "actions",
+      "svg": "svgs/actions/actions-note.svg",
+      "sprite": "sprites/actions.svg#actions-note"
+    },
     "actions-notebook-typoscript": {
       "identifier": "actions-notebook-typoscript",
       "category": "actions",
@@ -2585,6 +2591,12 @@
       "category": "content",
       "svg": "svgs/content/content-news.svg",
       "sprite": "sprites/content.svg#content-news"
+    },
+    "content-note": {
+      "identifier": "content-note",
+      "category": "content",
+      "svg": "svgs/content/content-note.svg",
+      "sprite": "sprites/content.svg#content-note"
     },
     "content-panel": {
       "identifier": "content-panel",
