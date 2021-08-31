@@ -1242,6 +1242,12 @@
       "svg": "svgs/actions/actions-options.svg",
       "sprite": "sprites/actions.svg#actions-options"
     },
+    "actions-package": {
+      "identifier": "actions-package",
+      "category": "actions",
+      "svg": "svgs/actions/actions-package.svg",
+      "sprite": "sprites/actions.svg#actions-package"
+    },
     "actions-pagetree-mount": {
       "identifier": "actions-pagetree-mount",
       "category": "actions",
@@ -2597,6 +2603,12 @@
       "category": "content",
       "svg": "svgs/content/content-note.svg",
       "sprite": "sprites/content.svg#content-note"
+    },
+    "content-package": {
+      "identifier": "content-package",
+      "category": "content",
+      "svg": "svgs/content/content-package.svg",
+      "sprite": "sprites/content.svg#content-package"
     },
     "content-panel": {
       "identifier": "content-panel",
