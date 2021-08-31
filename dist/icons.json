@@ -2286,6 +2286,12 @@
       "svg": "svgs/content/content-briefcase.svg",
       "sprite": "sprites/content.svg#content-briefcase"
     },
+    "content-building": {
+      "identifier": "content-building",
+      "category": "content",
+      "svg": "svgs/content/content-building.svg",
+      "sprite": "sprites/content.svg#content-building"
+    },
     "content-bullets": {
       "identifier": "content-bullets",
       "category": "content",
