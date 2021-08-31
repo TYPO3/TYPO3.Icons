@@ -2442,6 +2442,12 @@
       "svg": "svgs/content/content-elements-searchform.svg",
       "sprite": "sprites/content.svg#content-elements-searchform"
     },
+    "content-extension": {
+      "identifier": "content-extension",
+      "category": "content",
+      "svg": "svgs/content/content-extension.svg",
+      "sprite": "sprites/content.svg#content-extension"
+    },
     "content-form": {
       "identifier": "content-form",
       "category": "content",
