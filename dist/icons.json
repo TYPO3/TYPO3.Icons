@@ -192,6 +192,12 @@
       "svg": "svgs/actions/actions-brand-typo3.svg",
       "sprite": "sprites/actions.svg#actions-brand-typo3"
     },
+    "actions-brand-xing": {
+      "identifier": "actions-brand-xing",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-xing.svg",
+      "sprite": "sprites/actions.svg#actions-brand-xing"
+    },
     "actions-brand-youtube": {
       "identifier": "actions-brand-youtube",
       "category": "actions",
