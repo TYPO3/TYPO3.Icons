@@ -2430,6 +2430,24 @@
       "svg": "svgs/content/content-dashboard.svg",
       "sprite": "sprites/content.svg#content-dashboard"
     },
+    "content-device-desktop": {
+      "identifier": "content-device-desktop",
+      "category": "content",
+      "svg": "svgs/content/content-device-desktop.svg",
+      "sprite": "sprites/content.svg#content-device-desktop"
+    },
+    "content-device-mobile": {
+      "identifier": "content-device-mobile",
+      "category": "content",
+      "svg": "svgs/content/content-device-mobile.svg",
+      "sprite": "sprites/content.svg#content-device-mobile"
+    },
+    "content-device-tablet": {
+      "identifier": "content-device-tablet",
+      "category": "content",
+      "svg": "svgs/content/content-device-tablet.svg",
+      "sprite": "sprites/content.svg#content-device-tablet"
+    },
     "content-elements-login": {
       "identifier": "content-elements-login",
       "category": "content",
