@@ -1,0 +1,51 @@
+//
+// Iconstage
+//
+.iconstage {
+    --iconstage-icon-size: 256px;
+    --iconstage-gutter-width: calc(var(--iconstage-icon-size) / var(--iconstage-icon-base-size, 16));
+    --iconstage-gutter-color: #000000;
+    --iconstage-border-color: #cacaca;
+    --iconstage-border-radius: 5px;
+
+    position: relative;
+    border: 1px solid var(--iconstage-border-color);
+    border-radius: var(--iconstage-border-radius);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: .25;
+        background-image:
+            linear-gradient(
+                0deg,
+                var(--iconstage-gutter-color),
+                transparent 1px,
+                transparent
+            ),
+            linear-gradient(
+                90deg,
+                var(--iconstage-gutter-color),
+                transparent 1px,
+                transparent
+            );
+        background-size: var(--iconstage-gutter-width) var(--iconstage-gutter-width);
+        background-position: calc(50% + (var(--iconstage-gutter-width) / 2)) calc(50% + (var(--iconstage-gutter-width) / 2));
+    }
+}
+.iconstage-icon {
+    font-size: var(--iconstage-icon-size);
+    height: var(--iconstage-icon-size);
+    width: var(--iconstage-icon-size);
+    line-height: 1;
+}

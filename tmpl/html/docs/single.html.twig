@@ -31,6 +31,20 @@
         </div>
     </div>
 
+    {%- if category.identifier in ['actions', 'apps', 'content', 'default', 'form', 'information', 'mimetypes', 'status', 'spinner'] -%}
+        <div class="mb-4">
+            <div class="iconstage">
+                <div class="iconstage-icon">
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: icon.identifier,
+                        iconSize: 'auto',
+                        iconSpinning: category.rendering.spinning
+                    } -%}
+                </div>
+            </div>
+        </div>
+    {%- endif -%}
+
     {%- if category.rendering.preview -%}
         <div class="section">
             {%- set colors = ['light', 'dark'] -%}
