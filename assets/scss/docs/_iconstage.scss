@@ -7,7 +7,6 @@
     --iconstage-gutter-color: #000000;
     --iconstage-border-color: #cacaca;
     --iconstage-border-radius: 5px;
-
     position: relative;
     border: 1px solid var(--iconstage-border-color);
     border-radius: var(--iconstage-border-radius);
@@ -16,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     &:after {
         position: absolute;
         display: block;
