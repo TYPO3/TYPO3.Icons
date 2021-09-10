@@ -474,6 +474,18 @@
       "svg": "svgs/actions/actions-cloud.svg",
       "sprite": "sprites/actions.svg#actions-cloud"
     },
+    "actions-code-commit": {
+      "identifier": "actions-code-commit",
+      "category": "actions",
+      "svg": "svgs/actions/actions-code-commit.svg",
+      "sprite": "sprites/actions.svg#actions-code-commit"
+    },
+    "actions-code-compare": {
+      "identifier": "actions-code-compare",
+      "category": "actions",
+      "svg": "svgs/actions/actions-code-compare.svg",
+      "sprite": "sprites/actions.svg#actions-code-compare"
+    },
     "actions-code-fork": {
       "identifier": "actions-code-fork",
       "category": "actions",
@@ -491,6 +503,24 @@
       "category": "actions",
       "svg": "svgs/actions/actions-code-merge.svg",
       "sprite": "sprites/actions.svg#actions-code-merge"
+    },
+    "actions-code-pull-request-close": {
+      "identifier": "actions-code-pull-request-close",
+      "category": "actions",
+      "svg": "svgs/actions/actions-code-pull-request-close.svg",
+      "sprite": "sprites/actions.svg#actions-code-pull-request-close"
+    },
+    "actions-code-pull-request-draft": {
+      "identifier": "actions-code-pull-request-draft",
+      "category": "actions",
+      "svg": "svgs/actions/actions-code-pull-request-draft.svg",
+      "sprite": "sprites/actions.svg#actions-code-pull-request-draft"
+    },
+    "actions-code-pull-request": {
+      "identifier": "actions-code-pull-request",
+      "category": "actions",
+      "svg": "svgs/actions/actions-code-pull-request.svg",
+      "sprite": "sprites/actions.svg#actions-code-pull-request"
     },
     "actions-code": {
       "identifier": "actions-code",
