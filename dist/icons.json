@@ -1230,6 +1230,12 @@
       "svg": "svgs/actions/actions-message.svg",
       "sprite": "sprites/actions.svg#actions-message"
     },
+    "actions-microchip": {
+      "identifier": "actions-microchip",
+      "category": "actions",
+      "svg": "svgs/actions/actions-microchip.svg",
+      "sprite": "sprites/actions.svg#actions-microchip"
+    },
     "actions-move": {
       "identifier": "actions-move",
       "category": "actions",
@@ -2663,6 +2669,12 @@
       "category": "content",
       "svg": "svgs/content/content-messages.svg",
       "sprite": "sprites/content.svg#content-messages"
+    },
+    "content-microchip": {
+      "identifier": "content-microchip",
+      "category": "content",
+      "svg": "svgs/content/content-microchip.svg",
+      "sprite": "sprites/content.svg#content-microchip"
     },
     "content-news": {
       "identifier": "content-news",
