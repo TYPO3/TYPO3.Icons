@@ -1,4 +1,5 @@
 alias:
   - actions-version-document-remove
-changes: []
+changes:
+  - 2.3.2
 tags: []
