@@ -558,6 +558,12 @@
       "svg": "svgs/actions/actions-cookie.svg",
       "sprite": "sprites/actions.svg#actions-cookie"
     },
+    "actions-cpu": {
+      "identifier": "actions-cpu",
+      "category": "actions",
+      "svg": "svgs/actions/actions-cpu.svg",
+      "sprite": "sprites/actions.svg#actions-cpu"
+    },
     "actions-credit-card": {
       "identifier": "actions-credit-card",
       "category": "actions",
@@ -2441,6 +2447,12 @@
       "category": "content",
       "svg": "svgs/content/content-container-columns-4.svg",
       "sprite": "sprites/content.svg#content-container-columns-4"
+    },
+    "content-cpu": {
+      "identifier": "content-cpu",
+      "category": "content",
+      "svg": "svgs/content/content-cpu.svg",
+      "sprite": "sprites/content.svg#content-cpu"
     },
     "content-csv": {
       "identifier": "content-csv",
