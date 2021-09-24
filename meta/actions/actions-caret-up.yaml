@@ -1,5 +1,7 @@
 alias:
   - actions-move-up
+  - status-status-sorting-asc
+  - status-status-sorting-light-asc
 changes:
   - 2.0.0
   - 2.0.1

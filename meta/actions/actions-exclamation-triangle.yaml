@@ -1,4 +1,6 @@
-alias: []
+alias:
+  - status-dialog-warning
+  - status-dialog-error
 changes:
   - 2.2.1
   - 2.2.2

@@ -1,6 +1,7 @@
 alias:
   - actions-move-right
   - actions-pagetree-collapse
+  - status-status-current
 changes:
   - 2.0.0
   - 2.0.1

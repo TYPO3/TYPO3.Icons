@@ -1,4 +1,5 @@
-alias: []
+alias:
+  - status-dialog-ok
 changes:
   - 2.2.0
   - 2.2.1

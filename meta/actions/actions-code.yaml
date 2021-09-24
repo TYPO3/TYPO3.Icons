@@ -1,4 +1,6 @@
-alias: []
+alias:
+  - information-php-version
+  - sysnote-type-3
 changes:
   - 1.11.0
   - 1.11.1
