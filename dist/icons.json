@@ -1764,6 +1764,12 @@
       "svg": "svgs/actions/actions-wallet.svg",
       "sprite": "sprites/actions.svg#actions-wallet"
     },
+    "actions-window-cog": {
+      "identifier": "actions-window-cog",
+      "category": "actions",
+      "svg": "svgs/actions/actions-window-cog.svg",
+      "sprite": "sprites/actions.svg#actions-window-cog"
+    },
     "actions-window-open": {
       "identifier": "actions-window-open",
       "category": "actions",
@@ -4202,8 +4208,13 @@
     "actions-system-cache-clear-impact-medium": "actions-bolt",
     "actions-system-cache-clear-impact-low": "actions-bolt",
     "actions-system-cache-clear-rte": "actions-bolt",
+    "information-os-apple": "actions-brand-apple",
+    "information-git": "actions-brand-git",
+    "information-os-linux": "actions-brand-linux",
+    "information-php-version": "actions-brand-php",
     "actions-slack": "actions-brand-slack",
     "actions-typo3": "actions-brand-typo3",
+    "information-os-windows": "actions-brand-windows",
     "actions-edit-pick-date": "actions-calendar-alternative",
     "actions-move-to-bottom": "actions-caret-bar-bottom",
     "actions-move-to-top": "actions-caret-bar-top",
@@ -4251,7 +4262,6 @@
     "actions-edit-merge-localization": "actions-code-merge-localization",
     "actions-merge": "actions-code-merge",
     "actions-version-document-remove": "actions-code-pull-request-close",
-    "information-php-version": "actions-code",
     "sysnote-type-3": "actions-code",
     "actions-system-extension-configure": "actions-cog-alt",
     "sysnote-type-1": "actions-cog",
@@ -4341,6 +4351,7 @@
     "actions-system-backend-user-emulate": "actions-user-emulate",
     "actions-system-backend-user-switch": "actions-user-switch",
     "actions-variable-select": "actions-variable-add",
+    "information-application-context": "actions-window-cog",
     "empty-empty": "miscellaneous-placeholder"
   }
 }
