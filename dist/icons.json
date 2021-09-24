@@ -4274,7 +4274,7 @@
     "actions-edit-merge-localization": "actions-code-merge-localization",
     "actions-merge": "actions-code-merge",
     "actions-version-document-remove": "actions-code-pull-request-close",
-    "sysnote-type-3": "actions-code",
+    "sysnote-type-3": "actions-thumbtack",
     "actions-system-extension-configure": "actions-cog-alt",
     "sysnote-type-1": "actions-cog",
     "actions-edit-cut-release": "actions-cut-release",
