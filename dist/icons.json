@@ -1500,6 +1500,18 @@
       "svg": "svgs/actions/actions-server.svg",
       "sprite": "sprites/actions.svg#actions-server"
     },
+    "actions-share-alt": {
+      "identifier": "actions-share-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-share-alt.svg",
+      "sprite": "sprites/actions.svg#actions-share-alt"
+    },
+    "actions-share": {
+      "identifier": "actions-share",
+      "category": "actions",
+      "svg": "svgs/actions/actions-share.svg",
+      "sprite": "sprites/actions.svg#actions-share"
+    },
     "actions-shield-star": {
       "identifier": "actions-shield-star",
       "category": "actions",
