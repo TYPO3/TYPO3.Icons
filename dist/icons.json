@@ -1632,6 +1632,12 @@
       "svg": "svgs/actions/actions-terminal.svg",
       "sprite": "sprites/actions.svg#actions-terminal"
     },
+    "actions-thumbtack": {
+      "identifier": "actions-thumbtack",
+      "category": "actions",
+      "svg": "svgs/actions/actions-thumbtack.svg",
+      "sprite": "sprites/actions.svg#actions-thumbtack"
+    },
     "actions-ticket": {
       "identifier": "actions-ticket",
       "category": "actions",
@@ -2855,6 +2861,12 @@
       "category": "content",
       "svg": "svgs/content/content-textpic.svg",
       "sprite": "sprites/content.svg#content-textpic"
+    },
+    "content-thumbtack": {
+      "identifier": "content-thumbtack",
+      "category": "content",
+      "svg": "svgs/content/content-thumbtack.svg",
+      "sprite": "sprites/content.svg#content-thumbtack"
     },
     "content-timeline-item": {
       "identifier": "content-timeline-item",
