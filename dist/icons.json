@@ -156,6 +156,12 @@
       "svg": "svgs/actions/actions-bolt.svg",
       "sprite": "sprites/actions.svg#actions-bolt"
     },
+    "actions-brand-apple": {
+      "identifier": "actions-brand-apple",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-apple.svg",
+      "sprite": "sprites/actions.svg#actions-brand-apple"
+    },
     "actions-brand-discord": {
       "identifier": "actions-brand-discord",
       "category": "actions",
@@ -168,11 +174,29 @@
       "svg": "svgs/actions/actions-brand-facebook.svg",
       "sprite": "sprites/actions.svg#actions-brand-facebook"
     },
+    "actions-brand-git": {
+      "identifier": "actions-brand-git",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-git.svg",
+      "sprite": "sprites/actions.svg#actions-brand-git"
+    },
     "actions-brand-linkedin": {
       "identifier": "actions-brand-linkedin",
       "category": "actions",
       "svg": "svgs/actions/actions-brand-linkedin.svg",
       "sprite": "sprites/actions.svg#actions-brand-linkedin"
+    },
+    "actions-brand-linux": {
+      "identifier": "actions-brand-linux",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-linux.svg",
+      "sprite": "sprites/actions.svg#actions-brand-linux"
+    },
+    "actions-brand-php": {
+      "identifier": "actions-brand-php",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-php.svg",
+      "sprite": "sprites/actions.svg#actions-brand-php"
     },
     "actions-brand-slack": {
       "identifier": "actions-brand-slack",
@@ -191,6 +215,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-brand-typo3.svg",
       "sprite": "sprites/actions.svg#actions-brand-typo3"
+    },
+    "actions-brand-windows": {
+      "identifier": "actions-brand-windows",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-windows.svg",
+      "sprite": "sprites/actions.svg#actions-brand-windows"
     },
     "actions-brand-xing": {
       "identifier": "actions-brand-xing",
