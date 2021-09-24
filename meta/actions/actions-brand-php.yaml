@@ -1,4 +1,5 @@
 alias:
   - information-php-version
-changes: []
+changes:
+  - 2.4.0
 tags: []

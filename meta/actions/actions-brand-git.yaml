@@ -1,4 +1,5 @@
 alias:
   - information-git
-changes: []
+changes:
+  - 2.4.0
 tags: []

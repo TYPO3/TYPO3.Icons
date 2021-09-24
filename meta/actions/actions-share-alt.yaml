@@ -1,4 +1,5 @@
 alias:
   - share-alt
-changes: []
+changes:
+  - 2.4.0
 tags: []
