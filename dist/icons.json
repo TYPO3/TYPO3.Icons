@@ -4338,6 +4338,7 @@
     "actions-document-save-translation": "actions-save-translation",
     "actions-document-save-view": "actions-save-view",
     "actions-document-save": "actions-save",
+    "information-webserver": "actions-server",
     "share-alt": "actions-share-alt",
     "actions-check-markstate": "actions-square",
     "actions-system-shortcut-active": "actions-star",
