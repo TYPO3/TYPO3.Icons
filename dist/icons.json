@@ -2460,6 +2460,18 @@
       "svg": "svgs/content/content-carousel.svg",
       "sprite": "sprites/content.svg#content-carousel"
     },
+    "content-certificate-alternative": {
+      "identifier": "content-certificate-alternative",
+      "category": "content",
+      "svg": "svgs/content/content-certificate-alternative.svg",
+      "sprite": "sprites/content.svg#content-certificate-alternative"
+    },
+    "content-certificate": {
+      "identifier": "content-certificate",
+      "category": "content",
+      "svg": "svgs/content/content-certificate.svg",
+      "sprite": "sprites/content.svg#content-certificate"
+    },
     "content-clock": {
       "identifier": "content-clock",
       "category": "content",
