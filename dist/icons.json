@@ -1104,6 +1104,12 @@
       "svg": "svgs/actions/actions-hand-pointer.svg",
       "sprite": "sprites/actions.svg#actions-hand-pointer"
     },
+    "actions-heart-alt": {
+      "identifier": "actions-heart-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-heart-alt.svg",
+      "sprite": "sprites/actions.svg#actions-heart-alt"
+    },
     "actions-heart": {
       "identifier": "actions-heart",
       "category": "actions",
@@ -2615,6 +2621,12 @@
       "category": "content",
       "svg": "svgs/content/content-header.svg",
       "sprite": "sprites/content.svg#content-header"
+    },
+    "content-heart": {
+      "identifier": "content-heart",
+      "category": "content",
+      "svg": "svgs/content/content-heart.svg",
+      "sprite": "sprites/content.svg#content-heart"
     },
     "content-idea": {
       "identifier": "content-idea",
