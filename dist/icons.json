@@ -2916,6 +2916,12 @@
       "svg": "svgs/content/content-timeline.svg",
       "sprite": "sprites/content.svg#content-timeline"
     },
+    "content-trophy": {
+      "identifier": "content-trophy",
+      "category": "content",
+      "svg": "svgs/content/content-trophy.svg",
+      "sprite": "sprites/content.svg#content-trophy"
+    },
     "content-user": {
       "identifier": "content-user",
       "category": "content",
