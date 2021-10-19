@@ -234,6 +234,12 @@
       "svg": "svgs/actions/actions-brand-youtube.svg",
       "sprite": "sprites/actions.svg#actions-brand-youtube"
     },
+    "actions-briefcase": {
+      "identifier": "actions-briefcase",
+      "category": "actions",
+      "svg": "svgs/actions/actions-briefcase.svg",
+      "sprite": "sprites/actions.svg#actions-briefcase"
+    },
     "actions-browser": {
       "identifier": "actions-browser",
       "category": "actions",
