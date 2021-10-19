@@ -972,6 +972,12 @@
       "svg": "svgs/actions/actions-file-search.svg",
       "sprite": "sprites/actions.svg#actions-file-search"
     },
+    "actions-file-shield": {
+      "identifier": "actions-file-shield",
+      "category": "actions",
+      "svg": "svgs/actions/actions-file-shield.svg",
+      "sprite": "sprites/actions.svg#actions-file-shield"
+    },
     "actions-file-t3d-download": {
       "identifier": "actions-file-t3d-download",
       "category": "actions",
