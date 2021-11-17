@@ -180,6 +180,12 @@
       "svg": "svgs/actions/actions-brand-git.svg",
       "sprite": "sprites/actions.svg#actions-brand-git"
     },
+    "actions-brand-instagram": {
+      "identifier": "actions-brand-instagram",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-instagram.svg",
+      "sprite": "sprites/actions.svg#actions-brand-instagram"
+    },
     "actions-brand-linkedin": {
       "identifier": "actions-brand-linkedin",
       "category": "actions",
