@@ -156,6 +156,12 @@
       "svg": "svgs/actions/actions-bolt.svg",
       "sprite": "sprites/actions.svg#actions-bolt"
     },
+    "actions-book": {
+      "identifier": "actions-book",
+      "category": "actions",
+      "svg": "svgs/actions/actions-book.svg",
+      "sprite": "sprites/actions.svg#actions-book"
+    },
     "actions-brand-apple": {
       "identifier": "actions-brand-apple",
       "category": "actions",
