@@ -576,6 +576,12 @@
       "svg": "svgs/actions/actions-code.svg",
       "sprite": "sprites/actions.svg#actions-code"
     },
+    "actions-coffee": {
+      "identifier": "actions-coffee",
+      "category": "actions",
+      "svg": "svgs/actions/actions-coffee.svg",
+      "sprite": "sprites/actions.svg#actions-coffee"
+    },
     "actions-cog-alt": {
       "identifier": "actions-cog-alt",
       "category": "actions",
