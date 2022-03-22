@@ -1614,6 +1614,12 @@
       "svg": "svgs/actions/actions-star.svg",
       "sprite": "sprites/actions.svg#actions-star"
     },
+    "actions-store": {
+      "identifier": "actions-store",
+      "category": "actions",
+      "svg": "svgs/actions/actions-store.svg",
+      "sprite": "sprites/actions.svg#actions-store"
+    },
     "actions-swap": {
       "identifier": "actions-swap",
       "category": "actions",
