@@ -600,6 +600,12 @@
       "svg": "svgs/actions/actions-comment.svg",
       "sprite": "sprites/actions.svg#actions-comment"
     },
+    "actions-container": {
+      "identifier": "actions-container",
+      "category": "actions",
+      "svg": "svgs/actions/actions-container.svg",
+      "sprite": "sprites/actions.svg#actions-container"
+    },
     "actions-cookie-bite": {
       "identifier": "actions-cookie-bite",
       "category": "actions",
@@ -2561,6 +2567,12 @@
       "category": "content",
       "svg": "svgs/content/content-container-columns-4.svg",
       "sprite": "sprites/content.svg#content-container-columns-4"
+    },
+    "content-container": {
+      "identifier": "content-container",
+      "category": "content",
+      "svg": "svgs/content/content-container.svg",
+      "sprite": "sprites/content.svg#content-container"
     },
     "content-cpu": {
       "identifier": "content-cpu",
