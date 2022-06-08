@@ -15,8 +15,7 @@ const merge = require('deepmerge');
 const execSync = require('child_process').execSync;
 
 const minifyCSS = require('gulp-clean-css');
-const sass = require('gulp-sass');
-sass.compiler = require('node-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 
 
 //
@@ -98,13 +97,6 @@ const options = {
 //
 // Custom Functions
 //
-function getSvgoConfig() {
-    let config = fs.readFileSync('svgo.yaml', 'utf8');
-    config = yaml.load(config)
-
-    return config;
-}
-
 function getFolders(dir) {
     return fs.readdirSync(dir)
         .filter(function (file) {
@@ -276,7 +268,7 @@ gulp.task('icons-sass', () => {
 //
 gulp.task('icons-min', () => {
     return gulp.src([options.src + '**/*.svg'])
-        .pipe(svgmin(getSvgoConfig()))
+        .pipe(svgmin())
         .pipe(gulp.dest(options.dist_svgs));
 });
 
