@@ -1,7 +1,7 @@
 {
   "name": "@typo3/icons",
   "description": "SVG icons for the TYPO3 CMS backend",
-  "version": "2.6.0",
+  "version": "3.0.0",
   "keywords": [
     "TYPO3",
     "Icons"
@@ -40,7 +40,6 @@
     "http-server": "^14.1.1",
     "js-yaml": "^4.1.0",
     "postcss-scss": "^4.0.4",
-
     "node-sass": "^7.0.1",
     "stylelint": "^14.8.5",
     "stylelint-order": "^5.0.0",
