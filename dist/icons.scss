@@ -20,12 +20,22 @@
 //
 // Variables
 //
-$icon-size-small:   16px !default;
-$icon-size-default: 32px !default;
-$icon-size-large:   48px !default;
-$icon-size-mega:    64px !default;
-$icon-unify-modifier: .86 !default;
+$icon-size-small:       16px !default;
+$icon-size-medium:      32px !default;
+$icon-size-large:       48px !default;
+$icon-size-mega:        64px !default;
+$icon-unify-modifier:   .86 !default;
 $icon-opacity-disabled: .5 !default;
+
+:root {
+    --icon-color-primary: currentColor;
+    --icon-size-small: #{$icon-size-small};
+    --icon-size-medium: #{$icon-size-medium};
+    --icon-size-large: #{$icon-size-large};
+    --icon-size-mega: #{$icon-size-mega};
+    --icon-unify-modifier: #{$icon-unify-modifier};
+    --icon-opacity-disabled: #{$icon-size-mega};
+}
 
 //
 // Component
@@ -35,8 +45,9 @@ $icon-opacity-disabled: .5 !default;
     display: inline-flex;
     overflow: hidden;
     white-space: nowrap;
-    height: 1em;
-    width: 1em;
+    height: var(--icon-size, 1em);
+    width: var(--icon-size, 1em);
+    line-height: var(--icon-size, 1em);
     flex-shrink: 0;
     svg,
     img {
@@ -68,7 +79,7 @@ $icon-opacity-disabled: .5 !default;
     text-align: center;
 }
 .icon-color {
-    fill: currentColor;
+    fill: var(--icon-color-primary);
 }
 
 //
@@ -106,31 +117,29 @@ $icon-opacity-disabled: .5 !default;
 //
 .icon-state-disabled {
     .icon-markup {
-        opacity: $icon-opacity-disabled;
+        opacity: var(--icon-opacity-disabled);
     }
 }
 
 //
 // Variants
 //
-@mixin icon-size($identifier, $size) {
+@mixin icon-size($identifier) {
     .icon-size-#{$identifier} {
-        height: $size;
-        width: $size;
-        line-height: $size;
+        --icon-size: var(--icon-size-#{$identifier});
         .icon-unify {
-            line-height: $size;
-            font-size: ceil($size * $icon-unify-modifier);
+            line-height: var(--icon-size);
+            font-size: calc(var(--icon-size) * var(--icon-unify-modifier));
         }
         .icon-overlay {
             .icon-unify {
-                line-height: ceil($size / 1.6);
-                font-size: ceil(ceil($size / 1.6) * $icon-unify-modifier);
+                line-height: calc(var(--icon-size) / 1.6);
+                font-size: calc((var(--icon-size) / 1.6) * var(--icon-unify-modifier));
             }
         }
     }
 }
-@include icon-size(small, $icon-size-small);
-@include icon-size(default, $icon-size-default);
-@include icon-size(large, $icon-size-large);
-@include icon-size(mega, $icon-size-mega);
+@include icon-size(small);
+@include icon-size(medium);
+@include icon-size(large);
+@include icon-size(mega);

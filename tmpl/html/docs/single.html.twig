@@ -59,7 +59,7 @@
             {%- set colors = ['light', 'dark'] -%}
             {%- for color in colors -%}
                 <div class="preview">
-                    {%- set sizes = ['mega', 'large', 'default', 'small', 'auto'] -%}
+                    {%- set sizes = ['mega', 'large', 'medium', 'small', 'default'] -%}
                     {%- for size in sizes -%}
                         <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
                             {%- include '_icon.html.twig' with {
@@ -121,7 +121,7 @@
                 {%- for mainIcon in mainIcons -%}
                     {%- set colors = ['light', 'dark'] -%}
                     {%- for color in colors -%}
-                        {%- set sizes = ['mega', 'large', 'default', 'small', 'auto'] -%}
+                        {%- set sizes = ['mega', 'large', 'medium', 'small', 'default'] -%}
                         {%- for size in sizes -%}
                             <div class="preview-item" data-color="{{ color }}" data-size="{{ size }}">
                                 {%- include '_icon.html.twig' with {

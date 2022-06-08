@@ -18,7 +18,7 @@
     <h3>Sizes</h3>
 
     <div class="preview my-3">
-    {%- set sizes = ['mega', 'large', 'default', 'small', 'auto'] -%}
+    {%- set sizes = ['mega', 'large', 'medium', 'small', 'default'] -%}
     {%- for size in sizes -%}
         <div class="preview-item" data-color="light" data-size="{{ size }}">
             {%- include '_icon.html.twig' with {
@@ -31,7 +31,7 @@
     <div class="table-responsive my-3">
         <table class="table table-bordered">
             <tr>
-                <th>auto</th>
+                <th>default</th>
                 <td>Scales with font-size</td>
             </tr>
             <tr>
@@ -39,7 +39,7 @@
                 <td>16px</td>
             </tr>
             <tr>
-                <th>default</th>
+                <th>medium</th>
                 <td>32px</td>
             </tr>
             <tr>

@@ -24,14 +24,14 @@
                     {%- if not categoryItem.rendering.overlay -%}
                         {%- include '_icon.html.twig' with {
                             iconIdentifier: iconIdentifier,
-                            iconSize: 'default',
+                            iconSize: 'medium',
                             iconSpinning: categoryItem.rendering.spinning
                         } -%}
                     {%- else -%}
                         {%- include '_icon.html.twig' with {
                             iconIdentifier: 'apps-pagetree-page',
                             iconOverlayIdentifier: iconIdentifier,
-                            iconSize: 'default',
+                            iconSize: 'medium',
                             iconSpinning: categoryItem.rendering.spinning
                         } -%}
                     {%- endif -%}
