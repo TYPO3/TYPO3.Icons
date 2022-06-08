@@ -39,11 +39,12 @@
     "gulp-twig": "^1.2.0",
     "http-server": "^14.1.1",
     "js-yaml": "^4.1.0",
+    "postcss-scss": "^4.0.4",
+
     "node-sass": "^7.0.1",
-    "stylelint": "^14.8.5"
-  },
-  "dependencies": {
-    "npm": "^8.12.1"
+    "stylelint": "^14.8.5",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0"
   },
   "scripts": {
     "site-serve": "http-server ./_site",
