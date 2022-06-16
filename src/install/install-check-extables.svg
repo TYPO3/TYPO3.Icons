@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-<g id="g6705">
-	<g id="g4198-4" transform="matrix(0,1,-1,0,0.95913124,48.25)">
+<g>
+	<g transform="matrix(0,1,-1,0,0.95913124,48.25)">
 	</g>
-	<g id="g4198-3-7" transform="matrix(0,1,-1,0,0.959131,48.25)">
+	<g transform="matrix(0,1,-1,0,0.959131,48.25)">
 	</g>
-	<g id="g4198-2-8" transform="matrix(0,1,-1,0,0.95913124,48.25)">
+	<g transform="matrix(0,1,-1,0,0.95913124,48.25)">
 	</g>
-	<g id="g4198-3-6-3-3" transform="matrix(0,-1,1,0,13.959142,-32.216101)">
+	<g transform="matrix(0,-1,1,0,13.959142,-32.216101)">
 	</g>
-	<g id="g4141" transform="translate(-1.000001,1)">
-		<g id="g4237">
-			<path id="rect4171" fill="#C83C3C" d="M6,1v28h22V7l-6-6H6z"/>
+	<g transform="translate(-1.000001,1)">
+		<g>
+			<path fill="#C83C3C" d="M6,1v28h22V7l-6-6H6z"/>
 		</g>
 	</g>
-	<g id="layer2-7">
+	<g>
 	</g>
 </g>
-<path id="path6" opacity="0.65" fill="#FFF" d="M21,8V2l6,6H21z"/>
-<path id="path4446-1" opacity="0.15" fill="#212121" d="M27,8v3v3l-6-6L27,8z"/>
+<path opacity="0.65" fill="#FFF" d="M21,8V2l6,6H21z"/>
+<path opacity="0.15" fill="#212121" d="M27,8v3v3l-6-6L27,8z"/>
 <g>
 	<path fill="#FFF" d="M19.9,15.5L17.4,18l2.5,2.5c0.2,0.2,0.2,0.5,0,0.7l-0.7,0.7c-0.2,0.2-0.5,0.2-0.7,0L16,19.4l-2.5,2.5
 		c-0.2,0.2-0.5,0.2-0.7,0l-0.7-0.7c-0.2-0.2-0.2-0.5,0-0.7l2.5-2.5l-2.5-2.5c-0.2-0.2-0.2-0.5,0-0.7l0.7-0.7c0.2-0.2,0.5-0.2,0.7,0

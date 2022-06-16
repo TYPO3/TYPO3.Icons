@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<rect id="environment-background" fill="#428954" width="64" height="64"/>
+<rect fill="#428954" width="64" height="64"/>
 <polygon fill="#FFF" points="45,18 19,18 16,22 16,36 48,36 48,22 "/>
 <polygon opacity="0.5" fill="#428954" points="48,22 16,22 19,18 45,18 "/>
 <path fill="#428954" d="M40,24h6v2h-6V24z"/>

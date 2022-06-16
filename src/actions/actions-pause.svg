@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-<g class="icon-color">
+<g>
 	<path d="M6,4v8H4V4H6 M7,3H3v10h4V3L7,3z"/>
 	<path d="M12,4v8h-2V4H12 M13,3H9v10h4V3L13,3z"/>
 </g>

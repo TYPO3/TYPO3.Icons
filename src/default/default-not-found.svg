@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-<g id="default-not-found">
+<g>
 	<path fill="#CD201F" d="M11,12l3-2v6H2v-6l3,2l3-2L11,12z"/>
 	<path opacity="0.2" fill="#212121" d="M8,10.3l2.86,1.91L11,12.3l0.14-0.09l2.61-1.74v5.28H2.25v-5.28l2.61,1.74L5,12.3l0.14-0.09L8,10.3 M14,10
 		l-3,2l-3-2l-3,2l-3-2v6h12V10L14,10z"/>

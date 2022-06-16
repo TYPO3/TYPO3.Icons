@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-<g class="icon-color">
+<g>
 	<rect x="4" y="2" width="1" height="12"/>
 	<path d="M6,12l-1.5,2L3,12H2l2.3,3c0.1,0.1,0.3,0.1,0.4,0L7,12H6z"/>
 	<polygon points="9,5 14,5 14,4 8,4 8,6 9,6 	"/>

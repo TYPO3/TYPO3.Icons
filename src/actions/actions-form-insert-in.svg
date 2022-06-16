@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-<g class="icon-color">
+<g>
 	<polygon points="10,1 10,2 14,2 14,14 2,14 2,2 3,2 3,1 1,1 1,15 15,15 15,1 "/>
 	<rect x="3" y="3" width="10" height="3"/>
 	<rect x="4" y="1" width="5" height="1"/>
