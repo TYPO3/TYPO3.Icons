@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
 <g id="container_1_">
 	<rect x="6" y="5.5" fill="#FFC857" width="20" height="21"/>
 	<g>
@@ -11,18 +8,18 @@
 		<ellipse fill="#FFC857" cx="16" cy="5.5" rx="10" ry="3.5"/>
 	</g>
 	<g opacity="0.25">
-		<ellipse fill="#FFFFFF" cx="16" cy="5.5" rx="10" ry="3.5"/>
+		<ellipse fill="#FFF" cx="16" cy="5.5" rx="10" ry="3.5"/>
 	</g>
 	<g opacity="0.25">
 		<ellipse fill="#212121" cx="16" cy="5.3" rx="7" ry="1.8"/>
 	</g>
 </g>
 <g>
-	<path fill="#FFFFFF" d="M19,17.1l1.2-2.1l-0.9,0.5l-1.4-2.4c-0.1-0.2-0.3-0.2-0.4-0.2h-2.6c-0.4,0-0.7,0.2-0.9,0.5l-1.2,2.1l1.7,1
+	<path fill="#FFF" d="M19,17.1l1.2-2.1l-0.9,0.5l-1.4-2.4c-0.1-0.2-0.3-0.2-0.4-0.2h-2.6c-0.4,0-0.7,0.2-0.9,0.5l-1.2,2.1l1.7,1
 		L16,14l1.5,2.6l-0.9,0.5H19z"/>
-	<path fill="#FFFFFF" d="M15.8,22l1.2,2l0-1l2.7,0c0.2,0,0.3-0.1,0.4-0.3l1.4-2.5c0.1-0.2,0.1-0.3,0-0.5l-1.4-2.4l-1.7,1L20,21l-3,0
+	<path fill="#FFF" d="M15.8,22l1.2,2l0-1l2.7,0c0.2,0,0.3-0.1,0.4-0.3l1.4-2.5c0.1-0.2,0.1-0.3,0-0.5l-1.4-2.4l-1.7,1L20,21l-3,0
 		l0-1.1L15.8,22z"/>
-	<path fill="#FFFFFF" d="M13.2,16.9l-2.4,0l0.9,0.5l-1.4,2.4c-0.1,0.2-0.1,0.3,0,0.5l1.4,2.5c0.1,0.2,0.3,0.3,0.4,0.3l2.8,0l0-2
+	<path fill="#FFF" d="M13.2,16.9l-2.4,0l0.9,0.5l-1.4,2.4c-0.1,0.2-0.1,0.3,0,0.5l1.4,2.5c0.1,0.2,0.3,0.3,0.4,0.3l2.8,0l0-2
 		L12,21l1.5-2.6l0.9,0.5L13.2,16.9z"/>
 </g>
 </svg>
