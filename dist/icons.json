@@ -1254,6 +1254,12 @@
       "svg": "svgs/actions/actions-logout.svg",
       "sprite": "sprites/actions.svg#actions-logout"
     },
+    "actions-magnet": {
+      "identifier": "actions-magnet",
+      "category": "actions",
+      "svg": "svgs/actions/actions-magnet.svg",
+      "sprite": "sprites/actions.svg#actions-magnet"
+    },
     "actions-map": {
       "identifier": "actions-map",
       "category": "actions",
@@ -2705,6 +2711,12 @@
       "category": "content",
       "svg": "svgs/content/content-listgroup.svg",
       "sprite": "sprites/content.svg#content-listgroup"
+    },
+    "content-magnet": {
+      "identifier": "content-magnet",
+      "category": "content",
+      "svg": "svgs/content/content-magnet.svg",
+      "sprite": "sprites/content.svg#content-magnet"
     },
     "content-map": {
       "identifier": "content-map",
