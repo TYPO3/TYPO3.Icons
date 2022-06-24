@@ -630,6 +630,12 @@
       "svg": "svgs/actions/actions-credit-card.svg",
       "sprite": "sprites/actions.svg#actions-credit-card"
     },
+    "actions-crop": {
+      "identifier": "actions-crop",
+      "category": "actions",
+      "svg": "svgs/actions/actions-crop.svg",
+      "sprite": "sprites/actions.svg#actions-crop"
+    },
     "actions-cut-release": {
       "identifier": "actions-cut-release",
       "category": "actions",
