@@ -45,6 +45,8 @@
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0"
   },
+  "sass": "dist/icons.scss",
+  "style": "dist/icons.css",
   "scripts": {
     "site-serve": "http-server ./_site",
     "site-refresh": "gulp icons && gulp site",
