@@ -9,5 +9,6 @@ $bootstrap-icons-btn-gap: .35em !default;
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: $bootstrap-icons-btn-gap;
 }

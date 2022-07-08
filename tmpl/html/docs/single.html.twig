@@ -111,6 +111,24 @@
                     Button Label
                 </span>
             </p>
+            <p>
+                <span class="btn btn-default" style="width: 300px;">
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: icon.identifier,
+                        iconSize: 'small',
+                        iconSpinning: category.rendering.spinning
+                    } -%}
+                    Button Label
+                </span>
+                <span class="btn btn-dark" style="width: 300px;">
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: icon.identifier,
+                        iconSize: 'small',
+                        iconSpinning: category.rendering.spinning
+                    } -%}
+                    Button Label
+                </span>
+            </p>
         </div>
     {%- endif -%}
 
