@@ -87,6 +87,7 @@ const options = {
     dist: './dist/',
     dist_svgs: './dist/svgs/',
     dist_sprites: './dist/sprites/',
+    dist_scss: './dist/scss/',
     assets: './assets/',
     site: './_site/',
     meta: './meta/',
@@ -330,16 +331,21 @@ gulp.task('icons-data', (cb) => {
 //
 gulp.task('icons-variables', (cb) => {
     const data = getData();
+
+    if (!fs.existsSync(options.dist_scss)){
+        fs.mkdirSync(options.dist_scss);
+    }
+
     for (const [identifier, icon] of Object.entries(data.icons)) {
         const inlineIcon = fs.readFileSync(path.join(options.dist, icon.svg), 'utf8');
         const scssVariable = `$icon-${identifier}: url("data:image/svg+xml,${escapeSvg(inlineIcon)}") !default;`;
-        fs.appendFileSync(options.dist + `icons-variables-${icon.category}.scss`, scssVariable + "\n", 'utf8');
+        fs.appendFileSync(options.dist_scss + `icons-variables-${icon.category}.scss`, scssVariable + "\n", 'utf8');
     }
 
     const categories = getCategories();
     for (const category of Object.values(categories)) {
         const scssInclude = `@import 'icons-variables-${category.identifier}';`;
-        fs.appendFileSync(options.dist + `icons-variables.scss`, scssInclude + "\n", 'utf8');
+        fs.appendFileSync(options.dist_scss + `icons-variables.scss`, scssInclude + "\n", 'utf8');
     }
     cb();
 });
