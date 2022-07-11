@@ -217,15 +217,22 @@
         {%- set cssbackgroundimageusage -%}
 .myclass {
     background-size: 1em 1em;
-    background-image: url("data:image/svg+xml,{{ icon._inline|raw|replace({'class="icon-color"': 'fill="#fff"'})|replace({
-        '"': '\'',
-        '#': '%23',
-        '<': '%3c',
-        '>': '%3e'
-    }) }}");
+    background-image: url("data:image/svg+xml,{{ icon._inlineEscaped|raw|replace({"class='icon-color'": "fill='%23fff'"}) }}");
 }
         {%- endset -%}
         {{ makros.codeblock(cssbackgroundimageusage) }}
+
+        <h3 class="my-3">Sass Background Variable</h3>
+        {%- set sassbackgroundvariable -%}
+@import "@typo3/icons/dist/icons.scss";
+@import "@typo3/icons/dist/icons-variables-{{ icon.category }}.scss";
+
+.myclass {
+    background-size: 1em 1em;
+    background-image: $icon-{{ icon.identifier }};
+}
+        {%- endset -%}
+        {{ makros.codeblock(sassbackgroundvariable) }}
 
     </div>
 
