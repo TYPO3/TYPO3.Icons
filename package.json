@@ -1,7 +1,7 @@
 {
   "name": "@typo3/icons",
   "description": "SVG icons for the TYPO3 CMS backend",
-  "version": "3.0.0",
+  "version": "3.2.0",
   "keywords": [
     "TYPO3",
     "Icons"
@@ -45,6 +45,8 @@
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.2.0"
   },
+  "sass": "dist/icons.scss",
+  "style": "dist/icons.css",
   "scripts": {
     "site-serve": "http-server ./_site",
     "site-refresh": "gulp icons && gulp site",

@@ -87,6 +87,7 @@ const options = {
     dist: './dist/',
     dist_svgs: './dist/svgs/',
     dist_sprites: './dist/sprites/',
+    dist_scss: './dist/scss/',
     assets: './assets/',
     site: './_site/',
     meta: './meta/',
@@ -229,6 +230,16 @@ function getData() {
     return data;
 }
 
+function escapeSvg(svg) {
+    const charReplacementMap = {
+        '"': '\'',
+        '#': '%23',
+        '<': '%3c',
+        '>': '%3e'
+    };
+    const regex = new RegExp('[' + Object.keys(charReplacementMap).join('') + ']', 'g');
+    return svg.replace(regex, c => charReplacementMap[c]);
+}
 
 //
 // Icons Clean
@@ -315,6 +326,30 @@ gulp.task('icons-data', (cb) => {
     });
 });
 
+//
+// Icon variables
+//
+gulp.task('icons-variables', (cb) => {
+    const data = getData();
+
+    if (!fs.existsSync(options.dist_scss)){
+        fs.mkdirSync(options.dist_scss);
+    }
+
+    for (const [identifier, icon] of Object.entries(data.icons)) {
+        const inlineIcon = fs.readFileSync(path.join(options.dist, icon.svg), 'utf8');
+        const scssVariable = `$icon-${identifier}: url("data:image/svg+xml,${escapeSvg(inlineIcon)}") !default;`;
+        fs.appendFileSync(options.dist_scss + `icons-variables-${icon.category}.scss`, scssVariable + "\n", 'utf8');
+    }
+
+    const categories = getCategories();
+    for (const category of Object.values(categories)) {
+        const scssInclude = `@import 'icons-variables-${category.identifier}';`;
+        fs.appendFileSync(options.dist_scss + `icons-variables.scss`, scssInclude + "\n", 'utf8');
+    }
+    cb();
+});
+
 
 //
 // Versions History
@@ -384,9 +419,11 @@ gulp.task('site-build', function (cb) {
     let categories = getCategories();
     let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
     let icons = data.icons;
-    for(let iconKey in icons) {
+    for (let iconKey in icons) {
+        const iconContent = fs.readFileSync(path.join(options.dist, icons[iconKey].svg), 'utf8');
         icons[iconKey]._meta = getMetaData(icons[iconKey].identifier, icons[iconKey].category);
-        icons[iconKey]._inline = fs.readFileSync(path.join(options.dist, icons[iconKey].svg), 'utf8')
+        icons[iconKey]._inline = iconContent
+        icons[iconKey]._inlineEscaped = escapeSvg(iconContent)
     }
 
     // Index
@@ -469,7 +506,8 @@ gulp.task('icons', gulp.series(
     'icons-sass',
     'icons-min',
     'icons-sprites',
-    'icons-data'
+    'icons-data',
+    'icons-variables'
 ));
 gulp.task('default', gulp.series(
     'icons'

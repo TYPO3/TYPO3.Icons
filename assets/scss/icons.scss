@@ -33,7 +33,7 @@ $icon-opacity-disabled: .5 !default;
     --icon-size-large: #{$icon-size-large};
     --icon-size-mega: #{$icon-size-mega};
     --icon-unify-modifier: #{$icon-unify-modifier};
-    --icon-opacity-disabled: #{$icon-size-mega};
+    --icon-opacity-disabled: #{$icon-opacity-disabled};
 }
 
 //
@@ -53,7 +53,6 @@ $icon-opacity-disabled: .5 !default;
         display: block;
         height: 100%;
         width: 100%;
-        transform: translate3d(0, 0, 0);
     }
     * {
         display: block;
@@ -90,23 +89,11 @@ $icon-opacity-disabled: .5 !default;
         animation: icon-spin 2s infinite linear;
     }
 }
-@-webkit-keyframes icon-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
 @keyframes icon-spin {
     0% {
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
