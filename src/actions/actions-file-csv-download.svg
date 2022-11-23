@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<g class="icon-color">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<g>
 	<path d="M8,14H3V2h7v2.5C10,4.8,10.2,5,10.5,5H13v1l1,1V3.9c0-0.3-0.1-0.5-0.3-0.7l-1.9-1.9C11.6,1.1,11.4,1,11.1,1H2.5
 		C2.2,1,2,1.2,2,1.5v13C2,14.8,2.2,15,2.5,15H9L8,14z M11,2l2,2h-2V2z"/>
-	<rect id="rect4159" x="4" y="6" width="2" height="1"/>
-	<rect id="rect4163" x="7" y="6" width="2" height="1"/>
-	<rect id="rect4165" x="10" y="6" width="2" height="1"/>
-	<rect id="rect4167" x="4" y="8" width="2" height="1"/>
-	<rect id="rect4169" x="7" y="8" width="2" height="1"/>
-	<rect id="rect4174" x="4" y="10" width="2" height="1"/>
-	<rect id="rect4176" x="7" y="10" width="2" height="1"/>
-	<rect id="rect4180" x="4" y="12" width="2" height="1"/>
+	<rect x="4" y="6" width="2" height="1"/>
+	<rect x="7" y="6" width="2" height="1"/>
+	<rect x="10" y="6" width="2" height="1"/>
+	<rect x="4" y="8" width="2" height="1"/>
+	<rect x="7" y="8" width="2" height="1"/>
+	<rect x="4" y="10" width="2" height="1"/>
+	<rect x="7" y="10" width="2" height="1"/>
+	<rect x="4" y="12" width="2" height="1"/>
 	<path d="M11.823,15.823l-3.396-3.396C8.269,12.269,8.381,12,8.604,12H11V8h2v4h2.397c0.223,0,0.334,0.269,0.177,0.427l-3.396,3.396
 		C12.08,15.921,11.921,15.921,11.823,15.823z"/>
 </g>

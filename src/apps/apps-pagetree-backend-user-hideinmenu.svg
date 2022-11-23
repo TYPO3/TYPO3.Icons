@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="2 -3 16 16" enable-background="new 2 -3 16 16" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 -3 16 16"><!-- TODO ; remove shift -->
 <g opacity="0.5">
 	<path fill="#EFEFEF" d="M4-3v16h12V1l-4-4H4z"/>
-	<path fill="#FFFFFF" opacity="0.65" enable-background="new    " d="M12,1v-4l4,4H12z"/>
-	<path fill="#212121" opacity="0.2" enable-background="new    " d="M15,2v5l-4-5H15z"/>
+	<path fill="#FFF" opacity="0.65" d="M12,1v-4l4,4H12z"/>
+	<path fill="#212121" opacity="0.2" d="M15,2v5l-4-5H15z"/>
 	<path fill="#999999" d="M4-3v16h12V1l0,0l0,0l-4-4l0,0l0,0H4z M5-2h6v4h4v10H5V-2z M12-1.6L14.6,1H12V-1.6z"/>
 </g>
 <g>

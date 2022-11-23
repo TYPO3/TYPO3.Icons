@@ -1,17 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-<rect id="environment-background" fill="#428954" width="64" height="64"/>
-<polygon fill="#FFFFFF" points="45,18 19,18 16,22 16,36 48,36 48,22 "/>
-<polygon opacity="0.5" fill="#428954" enable-background="new    " points="48,22 16,22 19,18 45,18 "/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<rect fill="#428954" width="64" height="64"/>
+<polygon fill="#FFF" points="45,18 19,18 16,22 16,36 48,36 48,22 "/>
+<polygon opacity="0.5" fill="#428954" points="48,22 16,22 19,18 45,18 "/>
 <path fill="#428954" d="M40,24h6v2h-6V24z"/>
 <path fill="#428954" d="M40,32h6v2h-6V32z"/>
-<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,24h20v2H18V24z"/>
+<path opacity="0.5" fill="#428954" d="M18,24h20v2H18V24z"/>
 <path fill="#428954" d="M40,28h6v2h-6V28z"/>
-<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,28h20v2H18V28z"/>
-<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,32h20v2H18V32z"/>
-<path opacity="0.75" fill="#FFFFFF" d="M48,42v2H16v-2H48z"/>
-<path fill="#FFFFFF" d="M36,40v6h-8v-6h2v-4h4v4H36z"/>
-<path opacity="0.5" fill="#428954" enable-background="new    " d="M30,36h4v1h-4V36z"/>
+<path opacity="0.5" fill="#428954" d="M18,28h20v2H18V28z"/>
+<path opacity="0.5" fill="#428954" d="M18,32h20v2H18V32z"/>
+<path opacity="0.75" fill="#FFF" d="M48,42v2H16v-2H48z"/>
+<path fill="#FFF" d="M36,40v6h-8v-6h2v-4h4v4H36z"/>
+<path opacity="0.5" fill="#428954" d="M30,36h4v1h-4V36z"/>
 </svg>

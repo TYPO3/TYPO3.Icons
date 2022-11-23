@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 <path fill-rule="evenodd" clip-rule="evenodd" fill="#E8A33D" d="M64,16H32l-6-6H0v44h64V16z"/>
 <rect x="2" y="12" fill-rule="evenodd" clip-rule="evenodd" fill="#EAEAEA" width="60" height="40"/>
 <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFC857" d="M0,48h26l6-6h32v12H0V48z"/>

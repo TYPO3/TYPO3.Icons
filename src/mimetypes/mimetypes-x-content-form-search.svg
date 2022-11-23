@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 <g>
-	<path fill="#FFFFFF" d="M1,1v14h10.5C9.567,15,8,13.433,8,11.5S9.567,8,11.5,8S15,9.567,15,11.5V1H1z M15,11.5
+	<path fill="#FFF" d="M1,1v14h10.5C9.567,15,8,13.433,8,11.5S9.567,8,11.5,8S15,9.567,15,11.5V1H1z M15,11.5
 		c-0.001,0.009-0.001,0.018-0.002,0.027H15V11.5z"/>
 	<path fill="#B9B9B9" d="M3,7v4h5.039C8.287,9.279,9.761,8.002,11.5,8c0.519,0.001,1.032,0.118,1.5,0.342V7H3z"/>
 	<rect x="3" y="12" fill="#5599FF" width="4" height="1"/>
@@ -16,6 +13,6 @@
 		C12.429,13.374,12.405,12.926,12.666,12.665z"/>
 	<circle fill="#5599FF" cx="11.5" cy="11.5" r="2.5"/>
 	<circle fill="#ABD7FF" cx="11.5" cy="11.5" r="1.5"/>
-	<ellipse opacity="0.604" fill="#FFFFFF" enable-background="new    " cx="12" cy="11" rx="0.5" ry="0.5"/>
+	<ellipse opacity="0.604" fill="#FFF" cx="12" cy="11" rx="0.5" ry="0.5"/>
 </g>
 </svg>

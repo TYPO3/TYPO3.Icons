@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<g class="icon-color">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<g>
 	<path d="M14,3h-2V1H4v2H2v1h0.625L4,15h8l1.375-11H14V3z M11.1,14H4.9L3.6,4h8.8L11.1,14z"/>
 	<path d="M8,6.5C6.619,6.5,5.5,7.619,5.5,9s1.119,2.5,2.5,2.5s2.5-1.119,2.5-2.5S9.381,6.5,8,6.5z M7.06,8.658
 		c0.266-0.73,0.854-1.189,1.354-1.087l-1.011,2.777C6.958,10.101,6.795,9.386,7.06,8.658z M8.94,9.342
