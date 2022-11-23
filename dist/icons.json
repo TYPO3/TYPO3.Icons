@@ -1848,6 +1848,18 @@
       "svg": "svgs/actions/actions-variable.svg",
       "sprite": "sprites/actions.svg#actions-variable"
     },
+    "actions-viewmode-compare": {
+      "identifier": "actions-viewmode-compare",
+      "category": "actions",
+      "svg": "svgs/actions/actions-viewmode-compare.svg",
+      "sprite": "sprites/actions.svg#actions-viewmode-compare"
+    },
+    "actions-viewmode-layout": {
+      "identifier": "actions-viewmode-layout",
+      "category": "actions",
+      "svg": "svgs/actions/actions-viewmode-layout.svg",
+      "sprite": "sprites/actions.svg#actions-viewmode-layout"
+    },
     "actions-viewmode-list": {
       "identifier": "actions-viewmode-list",
       "category": "actions",
