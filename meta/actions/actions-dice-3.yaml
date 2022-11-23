@@ -1,4 +1,5 @@
 alias:
   - actions-dice-three
-changes: []
+changes:
+  - 3.3.0
 tags: []
