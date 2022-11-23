@@ -510,11 +510,23 @@
       "svg": "svgs/actions/actions-close.svg",
       "sprite": "sprites/actions.svg#actions-close"
     },
+    "actions-cloud-download": {
+      "identifier": "actions-cloud-download",
+      "category": "actions",
+      "svg": "svgs/actions/actions-cloud-download.svg",
+      "sprite": "sprites/actions.svg#actions-cloud-download"
+    },
     "actions-cloud-slash": {
       "identifier": "actions-cloud-slash",
       "category": "actions",
       "svg": "svgs/actions/actions-cloud-slash.svg",
       "sprite": "sprites/actions.svg#actions-cloud-slash"
+    },
+    "actions-cloud-upload": {
+      "identifier": "actions-cloud-upload",
+      "category": "actions",
+      "svg": "svgs/actions/actions-cloud-upload.svg",
+      "sprite": "sprites/actions.svg#actions-cloud-upload"
     },
     "actions-cloud": {
       "identifier": "actions-cloud",
