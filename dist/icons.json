@@ -4044,6 +4044,12 @@
       "svg": "svgs/module/module-permission.svg",
       "sprite": "sprites/module.svg#module-permission"
     },
+    "module-reactions": {
+      "identifier": "module-reactions",
+      "category": "module",
+      "svg": "svgs/module/module-reactions.svg",
+      "sprite": "sprites/module.svg#module-reactions"
+    },
     "module-recycler": {
       "identifier": "module-recycler",
       "category": "module",
