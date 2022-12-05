@@ -2682,6 +2682,12 @@
       "svg": "svgs/content/content-dashboard.svg",
       "sprite": "sprites/content.svg#content-dashboard"
     },
+    "content-database": {
+      "identifier": "content-database",
+      "category": "content",
+      "svg": "svgs/content/content-database.svg",
+      "sprite": "sprites/content.svg#content-database"
+    },
     "content-device-desktop": {
       "identifier": "content-device-desktop",
       "category": "content",
