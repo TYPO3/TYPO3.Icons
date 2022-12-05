@@ -1896,6 +1896,12 @@
       "svg": "svgs/actions/actions-wallet.svg",
       "sprite": "sprites/actions.svg#actions-wallet"
     },
+    "actions-webhook": {
+      "identifier": "actions-webhook",
+      "category": "actions",
+      "svg": "svgs/actions/actions-webhook.svg",
+      "sprite": "sprites/actions.svg#actions-webhook"
+    },
     "actions-window-cog": {
       "identifier": "actions-window-cog",
       "category": "actions",
@@ -3047,6 +3053,12 @@
       "category": "content",
       "svg": "svgs/content/content-user.svg",
       "sprite": "sprites/content.svg#content-user"
+    },
+    "content-webhook": {
+      "identifier": "content-webhook",
+      "category": "content",
+      "svg": "svgs/content/content-webhook.svg",
+      "sprite": "sprites/content.svg#content-webhook"
     },
     "content-widget-calltoaction": {
       "identifier": "content-widget-calltoaction",
