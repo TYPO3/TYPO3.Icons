@@ -1212,6 +1212,12 @@
       "svg": "svgs/actions/actions-house.svg",
       "sprite": "sprites/actions.svg#actions-house"
     },
+    "actions-hyphen": {
+      "identifier": "actions-hyphen",
+      "category": "actions",
+      "svg": "svgs/actions/actions-hyphen.svg",
+      "sprite": "sprites/actions.svg#actions-hyphen"
+    },
     "actions-id-badge": {
       "identifier": "actions-id-badge",
       "category": "actions",
@@ -1667,6 +1673,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-shield.svg",
       "sprite": "sprites/actions.svg#actions-shield"
+    },
+    "actions-soft-hyphen": {
+      "identifier": "actions-soft-hyphen",
+      "category": "actions",
+      "svg": "svgs/actions/actions-soft-hyphen.svg",
+      "sprite": "sprites/actions.svg#actions-soft-hyphen"
     },
     "actions-sort-amount-down": {
       "identifier": "actions-sort-amount-down",
