@@ -1380,6 +1380,48 @@
       "svg": "svgs/actions/actions-microchip.svg",
       "sprite": "sprites/actions.svg#actions-microchip"
     },
+    "actions-minus-badge-alt": {
+      "identifier": "actions-minus-badge-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-minus-badge-alt.svg",
+      "sprite": "sprites/actions.svg#actions-minus-badge-alt"
+    },
+    "actions-minus-badge": {
+      "identifier": "actions-minus-badge",
+      "category": "actions",
+      "svg": "svgs/actions/actions-minus-badge.svg",
+      "sprite": "sprites/actions.svg#actions-minus-badge"
+    },
+    "actions-minus-circle-alt": {
+      "identifier": "actions-minus-circle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-minus-circle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-minus-circle-alt"
+    },
+    "actions-minus-circle": {
+      "identifier": "actions-minus-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-minus-circle.svg",
+      "sprite": "sprites/actions.svg#actions-minus-circle"
+    },
+    "actions-minus-square-alt": {
+      "identifier": "actions-minus-square-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-minus-square-alt.svg",
+      "sprite": "sprites/actions.svg#actions-minus-square-alt"
+    },
+    "actions-minus-square": {
+      "identifier": "actions-minus-square",
+      "category": "actions",
+      "svg": "svgs/actions/actions-minus-square.svg",
+      "sprite": "sprites/actions.svg#actions-minus-square"
+    },
+    "actions-minus": {
+      "identifier": "actions-minus",
+      "category": "actions",
+      "svg": "svgs/actions/actions-minus.svg",
+      "sprite": "sprites/actions.svg#actions-minus"
+    },
     "actions-move": {
       "identifier": "actions-move",
       "category": "actions",
@@ -1565,12 +1607,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-refresh.svg",
       "sprite": "sprites/actions.svg#actions-refresh"
-    },
-    "actions-remove": {
-      "identifier": "actions-remove",
-      "category": "actions",
-      "svg": "svgs/actions/actions-remove.svg",
-      "sprite": "sprites/actions.svg#actions-remove"
     },
     "actions-rename": {
       "identifier": "actions-rename",
@@ -4538,6 +4574,7 @@
     "actions-edit-localize-status-high": "actions-message-add",
     "actions-localize": "actions-message-localize",
     "actions-edit-localize-status-low": "actions-message-remove",
+    "actions-remove": "actions-minus",
     "information-composer-mode": "actions-music",
     "sysnote-type-0": "actions-note",
     "actions-system-typoscript-documentation": "actions-notebook-typoscript",
@@ -4551,7 +4588,6 @@
     "actions-system-help-open": "actions-question",
     "actions-edit-redo": "actions-redo",
     "actions-system-refresh": "actions-refresh",
-    "actions-minus": "actions-remove",
     "actions-edit-rename": "actions-rename",
     "actions-edit-replace": "actions-replace",
     "actions-document-save-new": "actions-save-add",
