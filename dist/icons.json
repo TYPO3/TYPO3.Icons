@@ -6,12 +6,6 @@
       "svg": "svgs/actions/actions-accessibility.svg",
       "sprite": "sprites/actions.svg#actions-accessibility"
     },
-    "actions-add": {
-      "identifier": "actions-add",
-      "category": "actions",
-      "svg": "svgs/actions/actions-add.svg",
-      "sprite": "sprites/actions.svg#actions-add"
-    },
     "actions-approve": {
       "identifier": "actions-approve",
       "category": "actions",
@@ -1553,6 +1547,48 @@
       "category": "actions",
       "svg": "svgs/actions/actions-play.svg",
       "sprite": "sprites/actions.svg#actions-play"
+    },
+    "actions-plus-badge-alt": {
+      "identifier": "actions-plus-badge-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plus-badge-alt.svg",
+      "sprite": "sprites/actions.svg#actions-plus-badge-alt"
+    },
+    "actions-plus-badge": {
+      "identifier": "actions-plus-badge",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plus-badge.svg",
+      "sprite": "sprites/actions.svg#actions-plus-badge"
+    },
+    "actions-plus-circle-alt": {
+      "identifier": "actions-plus-circle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plus-circle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-plus-circle-alt"
+    },
+    "actions-plus-circle": {
+      "identifier": "actions-plus-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plus-circle.svg",
+      "sprite": "sprites/actions.svg#actions-plus-circle"
+    },
+    "actions-plus-square-alt": {
+      "identifier": "actions-plus-square-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plus-square-alt.svg",
+      "sprite": "sprites/actions.svg#actions-plus-square-alt"
+    },
+    "actions-plus-square": {
+      "identifier": "actions-plus-square",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plus-square.svg",
+      "sprite": "sprites/actions.svg#actions-plus-square"
+    },
+    "actions-plus": {
+      "identifier": "actions-plus",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plus.svg",
+      "sprite": "sprites/actions.svg#actions-plus"
     },
     "actions-preview": {
       "identifier": "actions-preview",
@@ -4448,7 +4484,6 @@
     }
   },
   "aliases": {
-    "actions-plus": "actions-add",
     "actions-view-go-back": "actions-arrow-down-left",
     "actions-view-go-forward": "actions-arrow-down-right",
     "actions-version-workspace-sendtoprevstage": "actions-arrow-left",
@@ -4585,6 +4620,7 @@
     "actions-pagetree-mountroot": "actions-pagetree-mount",
     "actions-document-paste-after": "actions-paste-after",
     "actions-add-placeholder": "actions-placeholder-add",
+    "actions-add": "actions-plus",
     "actions-system-help-open": "actions-question",
     "actions-edit-redo": "actions-redo",
     "actions-system-refresh": "actions-refresh",
