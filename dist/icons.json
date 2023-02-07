@@ -1710,6 +1710,30 @@
       "svg": "svgs/actions/actions-search.svg",
       "sprite": "sprites/actions.svg#actions-search"
     },
+    "actions-selection-elements-all": {
+      "identifier": "actions-selection-elements-all",
+      "category": "actions",
+      "svg": "svgs/actions/actions-selection-elements-all.svg",
+      "sprite": "sprites/actions.svg#actions-selection-elements-all"
+    },
+    "actions-selection-elements-invert": {
+      "identifier": "actions-selection-elements-invert",
+      "category": "actions",
+      "svg": "svgs/actions/actions-selection-elements-invert.svg",
+      "sprite": "sprites/actions.svg#actions-selection-elements-invert"
+    },
+    "actions-selection-elements-none": {
+      "identifier": "actions-selection-elements-none",
+      "category": "actions",
+      "svg": "svgs/actions/actions-selection-elements-none.svg",
+      "sprite": "sprites/actions.svg#actions-selection-elements-none"
+    },
+    "actions-selection": {
+      "identifier": "actions-selection",
+      "category": "actions",
+      "svg": "svgs/actions/actions-selection.svg",
+      "sprite": "sprites/actions.svg#actions-selection"
+    },
     "actions-server": {
       "identifier": "actions-server",
       "category": "actions",
