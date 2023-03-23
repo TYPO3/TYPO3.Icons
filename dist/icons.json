@@ -4194,6 +4194,12 @@
       "svg": "svgs/module/module-scheduler.svg",
       "sprite": "sprites/module.svg#module-scheduler"
     },
+    "module-security": {
+      "identifier": "module-security",
+      "category": "module",
+      "svg": "svgs/module/module-security.svg",
+      "sprite": "sprites/module.svg#module-security"
+    },
     "module-seo": {
       "identifier": "module-seo",
       "category": "module",
