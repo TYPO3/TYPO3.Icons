@@ -4230,11 +4230,11 @@
       "svg": "svgs/module/module-taskcenter.svg",
       "sprite": "sprites/module.svg#module-taskcenter"
     },
-    "module-templates": {
-      "identifier": "module-templates",
+    "module-template": {
+      "identifier": "module-template",
       "category": "module",
-      "svg": "svgs/module/module-templates.svg",
-      "sprite": "sprites/module.svg#module-templates"
+      "svg": "svgs/module/module-template.svg",
+      "sprite": "sprites/module.svg#module-template"
     },
     "module-tstemplate": {
       "identifier": "module-tstemplate",
@@ -4684,6 +4684,7 @@
     "actions-system-backend-user-switch": "actions-user-switch",
     "actions-variable-select": "actions-variable-add",
     "information-application-context": "actions-window-cog",
-    "empty-empty": "miscellaneous-placeholder"
+    "empty-empty": "miscellaneous-placeholder",
+    "module-templates": "module-template"
   }
 }
