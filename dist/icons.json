@@ -252,6 +252,12 @@
       "svg": "svgs/actions/actions-browser.svg",
       "sprite": "sprites/actions.svg#actions-browser"
     },
+    "actions-brush": {
+      "identifier": "actions-brush",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brush.svg",
+      "sprite": "sprites/actions.svg#actions-brush"
+    },
     "actions-building": {
       "identifier": "actions-building",
       "category": "actions",
