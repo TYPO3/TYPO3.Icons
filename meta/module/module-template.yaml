@@ -1,4 +1,5 @@
 alias:
   - module-templates
-changes: []
+changes:
+  - 3.6.0
 tags: []

@@ -1,4 +1,5 @@
 alias:
   - module-tstemplate
-changes: []
+changes:
+  - 3.6.0
 tags: []
