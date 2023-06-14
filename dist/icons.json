@@ -3318,6 +3318,12 @@
       "svg": "svgs/form/form-finisher.svg",
       "sprite": "sprites/form.svg#form-finisher"
     },
+    "form-gridcolumn": {
+      "identifier": "form-gridcolumn",
+      "category": "form",
+      "svg": "svgs/form/form-gridcolumn.svg",
+      "sprite": "sprites/form.svg#form-gridcolumn"
+    },
     "form-gridcontainer": {
       "identifier": "form-gridcontainer",
       "category": "form",
@@ -4685,6 +4691,7 @@
     "actions-variable-select": "actions-variable-add",
     "information-application-context": "actions-window-cog",
     "empty-empty": "miscellaneous-placeholder",
-    "module-templates": "module-template"
+    "module-templates": "module-template",
+    "module-tstemplate": "module-tsconfig"
   }
 }
