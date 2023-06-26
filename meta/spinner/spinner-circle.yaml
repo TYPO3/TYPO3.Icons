@@ -1,4 +1,6 @@
-alias: []
+alias:
+  - spinner-circle-light
+  - spinner-circle-dark
 changes:
   - 1.0.0
   - 1.1.0
