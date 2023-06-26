@@ -217,7 +217,7 @@
         {%- set cssbackgroundimageusage -%}
 .myclass {
     background-size: 1em 1em;
-    background-image: url("data:image/svg+xml,{{ icon._inlineEscaped|raw|replace({"class='icon-color'": "fill='%23fff'"}) }}");
+    background-image: url("data:image/svg+xml,{{ icon._inlineEscaped|raw|replace({"fill='currentColor'": "fill='%23fff'"}) }}");
 }
         {%- endset -%}
         {{ makros.codeblock(cssbackgroundimageusage) }}
