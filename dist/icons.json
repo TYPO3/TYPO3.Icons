@@ -1974,6 +1974,12 @@
       "svg": "svgs/actions/actions-variable.svg",
       "sprite": "sprites/actions.svg#actions-variable"
     },
+    "actions-video": {
+      "identifier": "actions-video",
+      "category": "actions",
+      "svg": "svgs/actions/actions-video.svg",
+      "sprite": "sprites/actions.svg#actions-video"
+    },
     "actions-viewmode-compare": {
       "identifier": "actions-viewmode-compare",
       "category": "actions",
