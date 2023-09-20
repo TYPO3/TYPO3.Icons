@@ -4,8 +4,8 @@
 .iconstage {
     --iconstage-icon-size: 256px;
     --iconstage-gutter-width: calc(var(--iconstage-icon-size) / var(--iconstage-icon-base-size, 16));
-    --iconstage-gutter-color: #000000;
-    --iconstage-border-color: #cacaca;
+    --iconstage-gutter-color: var(--bs-body-color);
+    --iconstage-border-color: color-mix(in srgb, var(--bs-body-color), var(--bs-body-bg));
     --iconstage-border-radius: 5px;
     position: relative;
     border: 1px solid var(--iconstage-border-color);

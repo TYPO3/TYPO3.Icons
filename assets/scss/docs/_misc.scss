@@ -2,9 +2,29 @@
 // Misc
 //
 .btn-default {
-    color: #333333;
-    background-color: #eeeeee;
-    border-color: #bbbbbb;
+    --bs-btn-color: #333333;
+    --bs-btn-bg: rgb(238, 238, 238);
+    --bs-btn-border-color: #bbbbbb;
+    --bs-btn-hover-color: #333333;
+    --bs-btn-hover-bg: #cacaca;
+    --bs-btn-hover-border-color: #bebebe;
+    --bs-btn-focus-shadow-rgb: 159, 159, 159;
+    --bs-btn-active-color: #333333;
+    --bs-btn-active-bg: #bebebe;
+    --bs-btn-active-border-color: #b3b3b3;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    --bs-btn-disabled-color: #333333;
+    --bs-btn-disabled-bg: rgb(238, 238, 238);
+    --bs-btn-disabled-border-color: #bbbbbb;
+}
+.btn-dark {
+    --bs-btn-border-color: color-mix(in srgb, var(--bs-btn-color) 5%, var(--bs-btn-bg));
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-btn-hover-color) 5%, var(--bs-btn-hover-bg));
+    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-btn-active-color) 5%, var(--bs-btn-active-bg));
+    --bs-btn-disabled-border-color: color-mix(in srgb, var(--bs-btn-disabled-color) 5%, var(--bs-btn-disabled-bg));
+}
+.bg-adapt-light {
+    background: color-mix(in srgb, var(--bs-body-color) 10%, var(--bs-body-bg));
 }
 .table td {
     vertical-align: middle;

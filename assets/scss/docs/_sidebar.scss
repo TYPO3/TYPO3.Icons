@@ -8,7 +8,8 @@
     left: 0;
     z-index: 100;
     padding: 56px 0 0;
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background: color-mix(in srgb, var(--bs-body-color) 5%, var(--bs-body-bg));
+    box-shadow: 1px 0 0 color-mix(in srgb, var(--bs-body-color) 15%, var(--bs-body-bg));
 }
 .sidebar-sticky {
     position: relative;
@@ -34,7 +35,7 @@
     }
 }
 .sidebar-version {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: color-mix(in srgb, var(--bs-body-color) 7.5%, var(--bs-body-bg));
     margin-top: auto;
     font-size: 80%;
     padding: .5rem 1rem;
@@ -45,12 +46,12 @@
 .sidebar-version:focus {
     text-decoration: none;
     color: inherit;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: color-mix(in srgb, var(--bs-body-color) 10%, var(--bs-body-bg));
 }
 .sidebar .nav-link {
-    color: #333333;
+    color: var(--bs-body-color);
 }
 .sidebar .nav-link.active {
     font-weight: 500;
-    color: #007bff;
+    color: var(--bs-link-color);
 }

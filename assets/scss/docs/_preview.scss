@@ -21,12 +21,16 @@
     width: 100%;
 }
 .preview-item {
-    color: var(--preview-color) !important;
-    background-color: var(--preview-bg-color) !important;
+    color: var(--preview-color);
+    background-color: var(--preview-bg-color);
+}
+.preview-item[data-color="light"] {
+    --preview-color: var(--preview-light-color);
+    --preview-bg-color: var(--preview-light-bg-color);
 }
 .preview-item[data-color="dark"] {
-    color: var(--preview-dark-color) !important;
-    background-color: var(--preview-dark-bg-color) !important;
+    --preview-color: var(--preview-dark-color);
+    --preview-bg-color: var(--preview-dark-bg-color);
 }
 .preview-item[data-size]:before {
     display: block;

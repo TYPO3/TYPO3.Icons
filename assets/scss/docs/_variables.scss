@@ -2,14 +2,27 @@
 // Variables
 //
 :root {
-    --block-color: #212529;
-    --block-bg-color: #f8f9fa;
+    // Block
+    --block-light-color: #212529;
+    --block-light-bg-color: #f8f9fa;
     --block-dark-color: #ffffff;
     --block-dark-bg-color: #343a40;
+    --block-color: var(--block-light-color);
+    --block-bg-color: var(--block-light-bg-color);
+    // Grid
     --icongrid-color: var(--block-color);
     --icongrid-bg-color: var(--block-bg-color);
-    --preview-color: var(--block-color);
-    --preview-bg-color: var(--block-bg-color);
+    // Preview
+    --preview-light-color: var(--block-light-color);
+    --preview-light-bg-color: var(--block-light-bg-color);
     --preview-dark-color: var(--block-dark-color);
     --preview-dark-bg-color: var(--block-dark-bg-color);
+    --preview-color: var(--preview-light-color);
+    --preview-bg-color: var(--preview-light-bg-color);
+}
+[data-bs-theme="dark"] {
+    --block-color: var(--block-dark-color);
+    --block-bg-color: var(--block-dark-bg-color);
+    --preview-color: var(--block-preview-dark-color);
+    --preview-bg-color: var(--block-preview-dark-bg-color);
 }
