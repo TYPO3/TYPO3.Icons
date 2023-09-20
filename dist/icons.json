@@ -210,12 +210,6 @@
       "svg": "svgs/actions/actions-brand-slack.svg",
       "sprite": "sprites/actions.svg#actions-brand-slack"
     },
-    "actions-brand-twitter": {
-      "identifier": "actions-brand-twitter",
-      "category": "actions",
-      "svg": "svgs/actions/actions-brand-twitter.svg",
-      "sprite": "sprites/actions.svg#actions-brand-twitter"
-    },
     "actions-brand-typo3": {
       "identifier": "actions-brand-typo3",
       "category": "actions",
@@ -227,6 +221,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-brand-windows.svg",
       "sprite": "sprites/actions.svg#actions-brand-windows"
+    },
+    "actions-brand-x": {
+      "identifier": "actions-brand-x",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-x.svg",
+      "sprite": "sprites/actions.svg#actions-brand-x"
     },
     "actions-brand-xing": {
       "identifier": "actions-brand-xing",
@@ -4544,6 +4544,7 @@
     "actions-slack": "actions-brand-slack",
     "actions-typo3": "actions-brand-typo3",
     "information-os-windows": "actions-brand-windows",
+    "actions-brand-twitter": "actions-brand-x",
     "actions-edit-pick-date": "actions-calendar-alternative",
     "actions-move-to-bottom": "actions-caret-bar-bottom",
     "actions-move-to-top": "actions-caret-bar-top",
