@@ -474,6 +474,18 @@
       "svg": "svgs/actions/actions-chevron-up.svg",
       "sprite": "sprites/actions.svg#actions-chevron-up"
     },
+    "actions-circle-full": {
+      "identifier": "actions-circle-full",
+      "category": "actions",
+      "svg": "svgs/actions/actions-circle-full.svg",
+      "sprite": "sprites/actions.svg#actions-circle-full"
+    },
+    "actions-circle-half": {
+      "identifier": "actions-circle-half",
+      "category": "actions",
+      "svg": "svgs/actions/actions-circle-half.svg",
+      "sprite": "sprites/actions.svg#actions-circle-half"
+    },
     "actions-circle": {
       "identifier": "actions-circle",
       "category": "actions",
