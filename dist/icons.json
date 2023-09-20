@@ -1446,6 +1446,12 @@
       "svg": "svgs/actions/actions-minus.svg",
       "sprite": "sprites/actions.svg#actions-minus"
     },
+    "actions-moon": {
+      "identifier": "actions-moon",
+      "category": "actions",
+      "svg": "svgs/actions/actions-moon.svg",
+      "sprite": "sprites/actions.svg#actions-moon"
+    },
     "actions-move": {
       "identifier": "actions-move",
       "category": "actions",
