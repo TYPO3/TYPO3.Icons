@@ -1,6 +1,7 @@
 alias:
   - actions-brand-twitter
-changes: []
+changes:
+  - 4.1.0
 tags:
   - social
   - brand
