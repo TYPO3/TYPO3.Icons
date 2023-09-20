@@ -246,6 +246,18 @@
       "svg": "svgs/actions/actions-briefcase.svg",
       "sprite": "sprites/actions.svg#actions-briefcase"
     },
+    "actions-brightness-high": {
+      "identifier": "actions-brightness-high",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brightness-high.svg",
+      "sprite": "sprites/actions.svg#actions-brightness-high"
+    },
+    "actions-brightness-low": {
+      "identifier": "actions-brightness-low",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brightness-low.svg",
+      "sprite": "sprites/actions.svg#actions-brightness-low"
+    },
     "actions-browser": {
       "identifier": "actions-browser",
       "category": "actions",
