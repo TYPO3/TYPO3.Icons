@@ -2,6 +2,8 @@ alias:
   - actions-move-right
   - actions-pagetree-collapse
   - status-status-current
+  - apps-irre-collapsed
+  - apps-pagetree-collapse
 changes:
   - 2.0.0
   - 2.0.1

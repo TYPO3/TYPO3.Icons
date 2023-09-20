@@ -2136,18 +2136,6 @@
       "svg": "svgs/apps/apps-filetree-root.svg",
       "sprite": "sprites/apps.svg#apps-filetree-root"
     },
-    "apps-irre-collapsed": {
-      "identifier": "apps-irre-collapsed",
-      "category": "apps",
-      "svg": "svgs/apps/apps-irre-collapsed.svg",
-      "sprite": "sprites/apps.svg#apps-irre-collapsed"
-    },
-    "apps-irre-expanded": {
-      "identifier": "apps-irre-expanded",
-      "category": "apps",
-      "svg": "svgs/apps/apps-irre-expanded.svg",
-      "sprite": "sprites/apps.svg#apps-irre-expanded"
-    },
     "apps-pagetree-backend-user-hideinmenu": {
       "identifier": "apps-pagetree-backend-user-hideinmenu",
       "category": "apps",
@@ -2171,12 +2159,6 @@
       "category": "apps",
       "svg": "svgs/apps/apps-pagetree-category-expand-all.svg",
       "sprite": "sprites/apps.svg#apps-pagetree-category-expand-all"
-    },
-    "apps-pagetree-collapse": {
-      "identifier": "apps-pagetree-collapse",
-      "category": "apps",
-      "svg": "svgs/apps/apps-pagetree-collapse.svg",
-      "sprite": "sprites/apps.svg#apps-pagetree-collapse"
     },
     "apps-pagetree-drag-copy-above": {
       "identifier": "apps-pagetree-drag-copy-above",
@@ -2231,12 +2213,6 @@
       "category": "apps",
       "svg": "svgs/apps/apps-pagetree-drag-place-denied.svg",
       "sprite": "sprites/apps.svg#apps-pagetree-drag-place-denied"
-    },
-    "apps-pagetree-expand": {
-      "identifier": "apps-pagetree-expand",
-      "category": "apps",
-      "svg": "svgs/apps/apps-pagetree-expand.svg",
-      "sprite": "sprites/apps.svg#apps-pagetree-expand"
     },
     "apps-pagetree-folder-contains-approve": {
       "identifier": "apps-pagetree-folder-contains-approve",
@@ -4545,10 +4521,14 @@
     "actions-pagetree-expand": "actions-caret-down",
     "status-status-sorting-desc": "actions-caret-down",
     "status-status-sorting-light-desc": "actions-caret-down",
+    "apps-irre-expanded": "actions-caret-down",
+    "apps-pagetree-expand": "actions-caret-down",
     "actions-move-left": "actions-caret-left",
     "actions-move-right": "actions-caret-right",
     "actions-pagetree-collapse": "actions-caret-right",
     "status-status-current": "actions-caret-right",
+    "apps-irre-collapsed": "actions-caret-right",
+    "apps-pagetree-collapse": "actions-caret-right",
     "actions-move-up": "actions-caret-up",
     "status-status-sorting-asc": "actions-caret-up",
     "status-status-sorting-light-asc": "actions-caret-up",

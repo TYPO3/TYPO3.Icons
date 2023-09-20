@@ -3,6 +3,8 @@ alias:
   - actions-pagetree-expand
   - status-status-sorting-desc
   - status-status-sorting-light-desc
+  - apps-irre-expanded
+  - apps-pagetree-expand
 changes:
   - 2.0.0
   - 2.0.1
