@@ -6,5 +6,5 @@
 	<polygon fill="#AAAAAA" points="0.5,10.5 0.5,5.5 2.793,5.5 3.793,6.5 6.5,6.5 6.5,10.5 	"/>
 	<path fill="#666666" d="M2.586,6l0.707,0.707L3.586,7H4h2v3H1V6H2.586 M3,5H0v6h7V6H4L3,5L3,5z"/>
 </g>
-<polygon points="13,11 9,8.5 13,6 13,8 16,8 16,9 13,9 "/>
+<polygon fill="currentColor" points="13,11 9,8.5 13,6 13,8 16,8 16,9 13,9 "/>
 </svg>

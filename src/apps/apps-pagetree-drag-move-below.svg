@@ -16,5 +16,5 @@
 <rect x="8" y="3" fill="#AAAAAA" width="1" height="1"/>
 <rect x="8" y="9" fill="#AAAAAA" width="1" height="1"/>
 <rect x="12" y="9" fill="#666666" width="1" height="1"/>
-<polygon points="10,16 6,13.5 10,11 10,13 14,13 14,11 15,11 15,14 10,14 "/>
+<polygon fill="currentColor" points="10,16 6,13.5 10,11 10,13 14,13 14,11 15,11 15,14 10,14 "/>
 </svg>
