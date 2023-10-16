@@ -16,7 +16,7 @@
         <div class="d-sm-flex">
             <div class="my-2 flex-grow-1">{% if icon._meta.tags|length > 0 %}<strong>Tags:</strong> {{ icon._meta.tags|join(', ') }}{% endif %}</div>
             {%- if icon._meta.changes|length > 0 -%}
-                <div class="my-2 ms-sm-3">Introduced in <a href="https://github.com/TYPO3/TYPO3.Icons/releases/tag/{{ icon._meta.changes.0 }}" target="_blank" rel="noopener">v{{ icon._meta.changes.0 }}</a></div>
+                <div class="my-2 ms-sm-3">Introduced in <a href="https://github.com/TYPO3/TYPO3.Icons/releases/tag/v{{ icon._meta.changes.0 }}" target="_blank" rel="noopener">v{{ icon._meta.changes.0 }}</a></div>
                 {%- set available = false -%}
                 {%- for typo3version, version in typo3.versions -%}
                     {%- if version in icon._meta.changes %}{% set available = true %}{% endif -%}
