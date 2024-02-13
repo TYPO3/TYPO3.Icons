@@ -210,6 +210,12 @@
       "svg": "svgs/actions/actions-brand-slack.svg",
       "sprite": "sprites/actions.svg#actions-brand-slack"
     },
+    "actions-brand-threads": {
+      "identifier": "actions-brand-threads",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-threads.svg",
+      "sprite": "sprites/actions.svg#actions-brand-threads"
+    },
     "actions-brand-typo3": {
       "identifier": "actions-brand-typo3",
       "category": "actions",
