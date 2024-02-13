@@ -198,6 +198,12 @@
       "svg": "svgs/actions/actions-brand-linux.svg",
       "sprite": "sprites/actions.svg#actions-brand-linux"
     },
+    "actions-brand-mastodon": {
+      "identifier": "actions-brand-mastodon",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-mastodon.svg",
+      "sprite": "sprites/actions.svg#actions-brand-mastodon"
+    },
     "actions-brand-php": {
       "identifier": "actions-brand-php",
       "category": "actions",
