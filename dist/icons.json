@@ -2064,6 +2064,12 @@
       "svg": "svgs/actions/actions-wallet.svg",
       "sprite": "sprites/actions.svg#actions-wallet"
     },
+    "actions-wave": {
+      "identifier": "actions-wave",
+      "category": "actions",
+      "svg": "svgs/actions/actions-wave.svg",
+      "sprite": "sprites/actions.svg#actions-wave"
+    },
     "actions-webhook": {
       "identifier": "actions-webhook",
       "category": "actions",
