@@ -1860,6 +1860,12 @@
       "svg": "svgs/actions/actions-store.svg",
       "sprite": "sprites/actions.svg#actions-store"
     },
+    "actions-surfboard": {
+      "identifier": "actions-surfboard",
+      "category": "actions",
+      "svg": "svgs/actions/actions-surfboard.svg",
+      "sprite": "sprites/actions.svg#actions-surfboard"
+    },
     "actions-swap": {
       "identifier": "actions-swap",
       "category": "actions",
