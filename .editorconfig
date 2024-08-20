@@ -15,6 +15,11 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 4
 
+# SVG-Files
+[*.svg]
+indent_style = tab
+indent_size = 4
+
 # TWIG-Files
 [*.twig]
 indent_style = space
