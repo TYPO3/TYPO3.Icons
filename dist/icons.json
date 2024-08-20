@@ -306,11 +306,11 @@
       "svg": "svgs/actions/actions-canvas.svg",
       "sprite": "sprites/actions.svg#actions-canvas"
     },
-    "actions-caplock": {
-      "identifier": "actions-caplock",
+    "actions-capslock": {
+      "identifier": "actions-capslock",
       "category": "actions",
-      "svg": "svgs/actions/actions-caplock.svg",
-      "sprite": "sprites/actions.svg#actions-caplock"
+      "svg": "svgs/actions/actions-capslock.svg",
+      "sprite": "sprites/actions.svg#actions-capslock"
     },
     "actions-caret-bar-bottom": {
       "identifier": "actions-caret-bar-bottom",
