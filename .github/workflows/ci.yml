@@ -5,7 +5,7 @@ on:
   pull_request:
 
 env:
-  NODE: 16.x
+  NODE: 20.x
 
 jobs:
   build:

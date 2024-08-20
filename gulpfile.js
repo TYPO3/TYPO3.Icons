@@ -94,7 +94,6 @@ const options = {
     material: './material/'
 };
 
-
 //
 // Custom Functions
 //
@@ -299,6 +298,25 @@ gulp.task('icons-sprites', () => {
                         },
                         namespaceIDs: true,
                         namespaceClassnames: false
+                    },
+                    shape: {
+                        transform: [
+                            {
+                                svgo: {
+                                    plugins: [
+                                        {
+                                            name: 'preset-default',
+                                        },
+                                        {
+                                            name: 'removeAttrs',
+                                            params: {
+                                                attrs: 'xml:space',
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                        ],
                     },
                     mode: {
                         symbol: {

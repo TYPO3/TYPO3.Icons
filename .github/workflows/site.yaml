@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  NODE: 16.x
+  NODE: 20.x
 
 jobs:
   deploy:
