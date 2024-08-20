@@ -15,7 +15,7 @@ const merge = require('deepmerge');
 const execSync = require('child_process').execSync;
 
 const minifyCSS = require('gulp-clean-css');
-const sass = require('gulp-sass')(require('node-sass'));
+const sass = require('gulp-sass')(require('sass'));
 
 
 //
