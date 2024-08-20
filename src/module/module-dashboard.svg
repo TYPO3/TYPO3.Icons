@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 64 64" enable-background="new 0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
 <rect fill="#A4276A" width="64" height="64"/>
 <path opacity="0.5" fill="#FFFFFF" d="M40,16h10v-1c0-0.5-0.5-1-1-1h-9V16z"/>
 <rect x="28" y="14" opacity="0.75" fill="#FFFFFF" width="10" height="2"/>

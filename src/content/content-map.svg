@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" enable-background="new 0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16">
 <polygon fill="#5599FF" points="1,1 1,13 5,15 10,13 15,15 15,3 10,1 5,3 "/>
 <polygon fill="#79A548" points="1,1 1,9 5,11 10,9 15,11 15,3 10,1 5,3 "/>
 <polygon fill="#EFEFEF" points="15,9.5 10.7,7.8 6.6,2.4 10,1 15,3 "/>
