@@ -4266,6 +4266,12 @@
       "svg": "svgs/module/module-setup.svg",
       "sprite": "sprites/module.svg#module-setup"
     },
+    "module-site-settings": {
+      "identifier": "module-site-settings",
+      "category": "module",
+      "svg": "svgs/module/module-site-settings.svg",
+      "sprite": "sprites/module.svg#module-site-settings"
+    },
     "module-sites": {
       "identifier": "module-sites",
       "category": "module",
