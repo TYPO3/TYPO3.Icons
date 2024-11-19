@@ -18,6 +18,28 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     }
+
+    document.querySelectorAll('.copy-btn').forEach((button) => {
+        button.addEventListener('click', () => {
+            const codeBlock = button.nextElementSibling?.querySelector('code');
+
+            if (codeBlock) {
+                const textToCopy = codeBlock.textContent.trim();
+
+                navigator.clipboard
+                    .writeText(textToCopy)
+                    .then(() => {
+                        button.textContent = 'Copied!';
+                        setTimeout(() => {
+                            button.textContent = 'Copy';
+                        }, 2000);
+                    })
+                    .catch((error) => {
+                        console.error('Failed to copy text:', error);
+                    });
+            }
+        });
+    });
 });
 
 // Theme
