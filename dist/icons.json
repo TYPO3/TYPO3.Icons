@@ -192,6 +192,12 @@
       "svg": "svgs/actions/actions-brand-github.svg",
       "sprite": "sprites/actions.svg#actions-brand-github"
     },
+    "actions-brand-gitlab": {
+      "identifier": "actions-brand-gitlab",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-gitlab.svg",
+      "sprite": "sprites/actions.svg#actions-brand-gitlab"
+    },
     "actions-brand-instagram": {
       "identifier": "actions-brand-instagram",
       "category": "actions",
