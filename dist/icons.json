@@ -162,6 +162,12 @@
       "svg": "svgs/actions/actions-brand-apple.svg",
       "sprite": "sprites/actions.svg#actions-brand-apple"
     },
+    "actions-brand-bluesky": {
+      "identifier": "actions-brand-bluesky",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-bluesky.svg",
+      "sprite": "sprites/actions.svg#actions-brand-bluesky"
+    },
     "actions-brand-discord": {
       "identifier": "actions-brand-discord",
       "category": "actions",
