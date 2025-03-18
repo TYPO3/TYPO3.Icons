@@ -696,6 +696,12 @@
       "svg": "svgs/actions/actions-cookie.svg",
       "sprite": "sprites/actions.svg#actions-cookie"
     },
+    "actions-copyright": {
+      "identifier": "actions-copyright",
+      "category": "actions",
+      "svg": "svgs/actions/actions-copyright.svg",
+      "sprite": "sprites/actions.svg#actions-copyright"
+    },
     "actions-cpu": {
       "identifier": "actions-cpu",
       "category": "actions",
