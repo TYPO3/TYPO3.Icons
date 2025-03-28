@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  NODE: 20.x
+  NODE: 22.x
 
 jobs:
   deploy:
@@ -16,15 +16,15 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '${{ env.NODE }}'
 
       - name: Set up cache
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ env.NODE }}-${{ hashFiles('package.json') }}-${{ hashFiles('package-lock.json') }}
@@ -41,7 +41,7 @@ jobs:
         run: npm run site-build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           allow_empty_commit: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
