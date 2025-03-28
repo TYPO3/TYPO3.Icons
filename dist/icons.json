@@ -198,6 +198,12 @@
       "svg": "svgs/actions/actions-brand-gitlab.svg",
       "sprite": "sprites/actions.svg#actions-brand-gitlab"
     },
+    "actions-brand-google": {
+      "identifier": "actions-brand-google",
+      "category": "actions",
+      "svg": "svgs/actions/actions-brand-google.svg",
+      "sprite": "sprites/actions.svg#actions-brand-google"
+    },
     "actions-brand-instagram": {
       "identifier": "actions-brand-instagram",
       "category": "actions",
@@ -689,6 +695,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-cookie.svg",
       "sprite": "sprites/actions.svg#actions-cookie"
+    },
+    "actions-copyright": {
+      "identifier": "actions-copyright",
+      "category": "actions",
+      "svg": "svgs/actions/actions-copyright.svg",
+      "sprite": "sprites/actions.svg#actions-copyright"
     },
     "actions-cpu": {
       "identifier": "actions-cpu",
@@ -1338,6 +1350,12 @@
       "svg": "svgs/actions/actions-lightbulb.svg",
       "sprite": "sprites/actions.svg#actions-lightbulb"
     },
+    "actions-line-columns": {
+      "identifier": "actions-line-columns",
+      "category": "actions",
+      "svg": "svgs/actions/actions-line-columns.svg",
+      "sprite": "sprites/actions.svg#actions-line-columns"
+    },
     "actions-link": {
       "identifier": "actions-link",
       "category": "actions",
@@ -1931,6 +1949,12 @@
       "category": "actions",
       "svg": "svgs/actions/actions-terminal.svg",
       "sprite": "sprites/actions.svg#actions-terminal"
+    },
+    "actions-text-indent": {
+      "identifier": "actions-text-indent",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-indent.svg",
+      "sprite": "sprites/actions.svg#actions-text-indent"
     },
     "actions-thumbtack": {
       "identifier": "actions-thumbtack",
