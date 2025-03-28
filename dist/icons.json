@@ -1950,6 +1950,12 @@
       "svg": "svgs/actions/actions-terminal.svg",
       "sprite": "sprites/actions.svg#actions-terminal"
     },
+    "actions-text-indent": {
+      "identifier": "actions-text-indent",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-indent.svg",
+      "sprite": "sprites/actions.svg#actions-text-indent"
+    },
     "actions-thumbtack": {
       "identifier": "actions-thumbtack",
       "category": "actions",
