@@ -144,6 +144,24 @@
       "svg": "svgs/actions/actions-barcode.svg",
       "sprite": "sprites/actions.svg#actions-barcode"
     },
+    "actions-bell-ring": {
+      "identifier": "actions-bell-ring",
+      "category": "actions",
+      "svg": "svgs/actions/actions-bell-ring.svg",
+      "sprite": "sprites/actions.svg#actions-bell-ring"
+    },
+    "actions-bell-slash": {
+      "identifier": "actions-bell-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-bell-slash.svg",
+      "sprite": "sprites/actions.svg#actions-bell-slash"
+    },
+    "actions-bell": {
+      "identifier": "actions-bell",
+      "category": "actions",
+      "svg": "svgs/actions/actions-bell.svg",
+      "sprite": "sprites/actions.svg#actions-bell"
+    },
     "actions-bolt": {
       "identifier": "actions-bolt",
       "category": "actions",
