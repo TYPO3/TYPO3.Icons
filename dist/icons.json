@@ -1350,6 +1350,12 @@
       "svg": "svgs/actions/actions-lightbulb.svg",
       "sprite": "sprites/actions.svg#actions-lightbulb"
     },
+    "actions-line-columns": {
+      "identifier": "actions-line-columns",
+      "category": "actions",
+      "svg": "svgs/actions/actions-line-columns.svg",
+      "sprite": "sprites/actions.svg#actions-line-columns"
+    },
     "actions-link": {
       "identifier": "actions-link",
       "category": "actions",
