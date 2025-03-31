@@ -330,6 +330,18 @@
       "svg": "svgs/actions/actions-building.svg",
       "sprite": "sprites/actions.svg#actions-building"
     },
+    "actions-bullhorn-slash": {
+      "identifier": "actions-bullhorn-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-bullhorn-slash.svg",
+      "sprite": "sprites/actions.svg#actions-bullhorn-slash"
+    },
+    "actions-bullhorn": {
+      "identifier": "actions-bullhorn",
+      "category": "actions",
+      "svg": "svgs/actions/actions-bullhorn.svg",
+      "sprite": "sprites/actions.svg#actions-bullhorn"
+    },
     "actions-calendar-alternative": {
       "identifier": "actions-calendar-alternative",
       "category": "actions",
