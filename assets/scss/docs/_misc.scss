@@ -48,12 +48,10 @@
         font-family: monospace;
     }
 }
-
 .code-container {
     position: relative;
     border-radius: var(--bs-border-radius);
     overflow: hidden;
-
     .code-copy-btn {
         font-family: var(--bs-font-monospace);
         position: absolute;
