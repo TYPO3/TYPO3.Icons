@@ -48,3 +48,19 @@
         font-family: monospace;
     }
 }
+
+.code-container {
+    position: relative;
+    border-radius: var(--bs-border-radius);
+    overflow: hidden;
+
+    .code-copy-btn {
+        font-family: var(--bs-font-monospace);
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-end: 0;
+        border-start-start-radius: 0;
+        border-start-end-radius: 0;
+        border-end-end-radius: 0;
+    }
+}

@@ -1,3 +1,6 @@
 {% macro codeblock(markup, language = 'html') %}
-    <pre class="p-3 rounded bg-adapt-light"><code class="language-{{ language }}">{{ markup|trim|escape }}</code></pre>
+    <div class="code-container position-relative">
+        <button class="btn btn-default btn-sm code-copy-btn" aria-label="Copy code" title="Copy">Copy</button>
+        <pre class="p-3 rounded bg-adapt-light code-block"><code class="language-{{ language }}">{{ markup|trim|escape }}</code></pre>
+    </div>
 {% endmacro %}
