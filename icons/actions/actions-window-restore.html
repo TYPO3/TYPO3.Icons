@@ -235,37 +235,55 @@ Button Label
         <h2 class="mb-3">Usage</h2>
 
         <h3 class="my-3">Markup</h3>
-            <pre class="p-3 rounded bg-adapt-light"><code class="language-svg">&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 16 16&quot;&gt;&lt;g fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M14 1H5a1 1 0 0 0-1 1v2H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-3 4v2H2V5h9zm-9 9V8h9v6H2zm12-3h-2V5a1 1 0 0 0-1-1H5V2h9v9z&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;</code></pre>
+            <div class="code-container position-relative">
+        <button class="btn btn-default btn-sm code-copy-btn" aria-label="Copy code" title="Copy">Copy</button>
+        <pre class="p-3 rounded bg-adapt-light code-block"><code class="language-svg">&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 16 16&quot;&gt;&lt;g fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M14 1H5a1 1 0 0 0-1 1v2H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-3 4v2H2V5h9zm-9 9V8h9v6H2zm12-3h-2V5a1 1 0 0 0-1-1H5V2h9v9z&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;</code></pre>
+    </div>
 
 
-        <h3 class="my-3">Inline</h3>    <pre class="p-3 rounded bg-adapt-light"><code class="language-html">&lt;span class=&quot;icon icon-size-small icon-state-default&quot;&gt;
+        <h3 class="my-3">Inline</h3>    <div class="code-container position-relative">
+        <button class="btn btn-default btn-sm code-copy-btn" aria-label="Copy code" title="Copy">Copy</button>
+        <pre class="p-3 rounded bg-adapt-light code-block"><code class="language-html">&lt;span class=&quot;icon icon-size-small icon-state-default&quot;&gt;
     &lt;span class=&quot;icon-markup&quot;&gt;
         &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 16 16&quot;&gt;&lt;g fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M14 1H5a1 1 0 0 0-1 1v2H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-3 4v2H2V5h9zm-9 9V8h9v6H2zm12-3h-2V5a1 1 0 0 0-1-1H5V2h9v9z&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;
     &lt;/span&gt;
 &lt;/span&gt;</code></pre>
+    </div>
 
 
-        <h3 class="my-3">Sprite</h3>    <pre class="p-3 rounded bg-adapt-light"><code class="language-html">&lt;span class=&quot;icon icon-size-small icon-state-default&quot;&gt;
+        <h3 class="my-3">Sprite</h3>    <div class="code-container position-relative">
+        <button class="btn btn-default btn-sm code-copy-btn" aria-label="Copy code" title="Copy">Copy</button>
+        <pre class="p-3 rounded bg-adapt-light code-block"><code class="language-html">&lt;span class=&quot;icon icon-size-small icon-state-default&quot;&gt;
     &lt;span class=&quot;icon-markup&quot;&gt;
         &lt;svg role=&quot;img&quot;&gt;&lt;use xlink:href=&quot;dist/sprites/actions.svg#actions-window-restore&quot; /&gt;&lt;/svg&gt;
     &lt;/span&gt;
 &lt;/span&gt;</code></pre>
+    </div>
 
 
-        <h3 class="my-3">TYPO3 ViewHelper</h3>    <pre class="p-3 rounded bg-adapt-light"><code class="language-html">&lt;core:icon identifier=&quot;actions-window-restore&quot; size=&quot;small&quot; /&gt;</code></pre>
-<h3 class="my-3">CSS Background Image</h3>    <pre class="p-3 rounded bg-adapt-light"><code class="language-html">.myclass {
+        <h3 class="my-3">TYPO3 ViewHelper</h3>    <div class="code-container position-relative">
+        <button class="btn btn-default btn-sm code-copy-btn" aria-label="Copy code" title="Copy">Copy</button>
+        <pre class="p-3 rounded bg-adapt-light code-block"><code class="language-html">&lt;core:icon identifier=&quot;actions-window-restore&quot; size=&quot;small&quot; /&gt;</code></pre>
+    </div>
+<h3 class="my-3">CSS Background Image</h3>    <div class="code-container position-relative">
+        <button class="btn btn-default btn-sm code-copy-btn" aria-label="Copy code" title="Copy">Copy</button>
+        <pre class="p-3 rounded bg-adapt-light code-block"><code class="language-html">.myclass {
     background-size: 1em 1em;
     background-image: url(&quot;data:image/svg+xml,%3csvg xmlns=&#039;http://www.w3.org/2000/svg&#039; viewBox=&#039;0 0 16 16&#039;%3e%3cg fill=&#039;%23fff&#039;%3e%3cpath d=&#039;M14 1H5a1 1 0 0 0-1 1v2H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-2h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-3 4v2H2V5h9zm-9 9V8h9v6H2zm12-3h-2V5a1 1 0 0 0-1-1H5V2h9v9z&#039;/%3e%3c/g%3e%3c/svg%3e&quot;);
 }</code></pre>
+    </div>
 
 
-        <h3 class="my-3">Sass Background Variable</h3>    <pre class="p-3 rounded bg-adapt-light"><code class="language-html">@import &quot;@typo3/icons/dist/icons.scss&quot;;
+        <h3 class="my-3">Sass Background Variable</h3>    <div class="code-container position-relative">
+        <button class="btn btn-default btn-sm code-copy-btn" aria-label="Copy code" title="Copy">Copy</button>
+        <pre class="p-3 rounded bg-adapt-light code-block"><code class="language-html">@import &quot;@typo3/icons/dist/icons.scss&quot;;
 @import &quot;@typo3/icons/dist/scss/icons-variables-actions.scss&quot;;
 
 .myclass {
     background-size: 1em 1em;
     background-image: $icon-actions-window-restore;
 }</code></pre>
+    </div>
 
 
     </div><div class="section">
