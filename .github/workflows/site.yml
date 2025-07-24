@@ -3,11 +3,20 @@ name: Site
 
 on:
   push:
-    branches:
-      - main
+    branches: [$default-branch]
+  workflow_dispatch:
 
 env:
   NODE: 22.x
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -16,10 +25,7 @@ jobs:
     if: github.repository == 'typo3/typo3.icons'
     environment:
       name: github-pages
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout Code
