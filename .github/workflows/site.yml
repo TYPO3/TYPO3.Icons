@@ -15,7 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.repository == 'typo3/typo3.icons'
     permissions:
-      contents: write
+      contents: read
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout Code
@@ -43,10 +45,13 @@ jobs:
       - name: Build site
         run: npm run site-build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          allow_empty_commit: false
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./_site/
+          path: ./_site/
+          
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
