@@ -14,6 +14,8 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     if: github.repository == 'typo3/typo3.icons'
+    environment:
+      name: github-pages
     permissions:
       contents: read
       pages: write
@@ -47,11 +49,12 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site/
-          
+
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
