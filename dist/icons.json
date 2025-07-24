@@ -1446,6 +1446,18 @@
       "svg": "svgs/actions/actions-menu-alternative.svg",
       "sprite": "sprites/actions.svg#actions-menu-alternative"
     },
+    "actions-menu-sidebar-collapsed": {
+      "identifier": "actions-menu-sidebar-collapsed",
+      "category": "actions",
+      "svg": "svgs/actions/actions-menu-sidebar-collapsed.svg",
+      "sprite": "sprites/actions.svg#actions-menu-sidebar-collapsed"
+    },
+    "actions-menu-sidebar-expanded": {
+      "identifier": "actions-menu-sidebar-expanded",
+      "category": "actions",
+      "svg": "svgs/actions/actions-menu-sidebar-expanded.svg",
+      "sprite": "sprites/actions.svg#actions-menu-sidebar-expanded"
+    },
     "actions-menu": {
       "identifier": "actions-menu",
       "category": "actions",
