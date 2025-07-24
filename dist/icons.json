@@ -114,6 +114,12 @@
       "svg": "svgs/actions/actions-arrow-up.svg",
       "sprite": "sprites/actions.svg#actions-arrow-up"
     },
+    "actions-aspect-ratio": {
+      "identifier": "actions-aspect-ratio",
+      "category": "actions",
+      "svg": "svgs/actions/actions-aspect-ratio.svg",
+      "sprite": "sprites/actions.svg#actions-aspect-ratio"
+    },
     "actions-badge": {
       "identifier": "actions-badge",
       "category": "actions",
