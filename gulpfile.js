@@ -425,7 +425,7 @@ gulp.task('icons-variables', async (cb) => {
 
         // Write main imports file
         const importPromises = [];
-        for (const category of Object.values(categories)) {
+        for (const category of Object.values(categories).sort((a, b) => a.identifier.localeCompare(b.identifier))) {
             const scssInclude = `@import 'icons-variables-${category.identifier}';`;
             importPromises.push(
                 new Promise((resolve, reject) => {
