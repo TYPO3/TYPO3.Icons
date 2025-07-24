@@ -13,6 +13,7 @@ const svgSprite = require('gulp-svg-sprite');
 const yaml = require('js-yaml');
 const merge = require('deepmerge');
 const execSync = require('child_process').execSync;
+const { exec } = require('child_process');
 
 const minifyCSS = require('gulp-clean-css');
 const sass = require('gulp-sass')(require('sass'));
@@ -240,6 +241,22 @@ function escapeSvg(svg) {
     return svg.replace(regex, c => charReplacementMap[c]);
 }
 
+function playSound() {
+    // Try different sound commands based on platform (silently)
+    const soundCommands = [
+        'echo -e "\\a"',  // Terminal bell
+        'paplay /usr/share/sounds/alsa/Front_Left.wav 2>/dev/null',  // Linux
+        'afplay /System/Library/Sounds/Glass.aiff 2>/dev/null',  // macOS
+        'powershell -c "[console]::beep(800,200)" 2>$null'  // Windows
+    ];
+    
+    soundCommands.forEach(cmd => {
+        exec(cmd, { stdio: 'ignore' }, () => {}); // Completely silent
+    });
+    
+    console.log('✅ Build complete!');
+}
+
 //
 // Icons Clean
 //
@@ -289,7 +306,12 @@ gulp.task('icons-min', () => {
 gulp.task('icons-sprites', () => {
     let processFolder = (folder) => {
         return new Promise((resolve, reject) => {
-            gulp.src([path.join(options.dist_svgs, folder) + '/*.svg'])
+            // Get sorted list of SVG files
+            const svgFiles = getIcons(path.join(options.dist_svgs, folder))
+                .sort()
+                .map(file => path.join(options.dist_svgs, folder, file));
+            
+            gulp.src(svgFiles)
                 .pipe(svgSprite({
                     svg: {
                         rootAttributes: {
@@ -339,33 +361,87 @@ gulp.task('icons-sprites', () => {
 //
 gulp.task('icons-data', (cb) => {
     let data = JSON.stringify(getData(), null, 2);
-    fs.writeFile(options.dist + 'icons.json', data, 'utf8', () => {
-        cb();
+    fs.writeFile(options.dist + 'icons.json', data, 'utf8', (err) => {
+        if (err) {
+            cb(err);
+        } else {
+            cb();
+        }
     });
 });
 
 //
 // Icon variables
 //
-gulp.task('icons-variables', (cb) => {
-    const data = getData();
+gulp.task('icons-variables', async (cb) => {
+    try {
+        const data = getData();
 
-    if (!fs.existsSync(options.dist_scss)){
-        fs.mkdirSync(options.dist_scss);
-    }
+        if (!fs.existsSync(options.dist_scss)){
+            fs.mkdirSync(options.dist_scss, { recursive: true });
+        }
 
-    for (const [identifier, icon] of Object.entries(data.icons)) {
-        const inlineIcon = fs.readFileSync(path.join(options.dist, icon.svg), 'utf8');
-        const scssVariable = `$icon-${identifier}: url("data:image/svg+xml,${escapeSvg(inlineIcon)}") !default;`;
-        fs.appendFileSync(options.dist_scss + `icons-variables-${icon.category}.scss`, scssVariable + "\n", 'utf8');
-    }
+        // Clear existing files first
+        const categories = getCategories();
+        for (const category of Object.values(categories)) {
+            const categoryFile = options.dist_scss + `icons-variables-${category.identifier}.scss`;
+            if (fs.existsSync(categoryFile)) {
+                fs.unlinkSync(categoryFile);
+            }
+        }
+        const mainFile = options.dist_scss + `icons-variables.scss`;
+        if (fs.existsSync(mainFile)) {
+            fs.unlinkSync(mainFile);
+        }
 
-    const categories = getCategories();
-    for (const category of Object.values(categories)) {
-        const scssInclude = `@import 'icons-variables-${category.identifier}';`;
-        fs.appendFileSync(options.dist_scss + `icons-variables.scss`, scssInclude + "\n", 'utf8');
+        // Write icon variables (sorted by identifier)
+        const sortedIcons = Object.entries(data.icons).sort(([a], [b]) => a.localeCompare(b));
+        const categoryFiles = {};
+        
+        // Group by category and prepare content
+        for (const [identifier, icon] of sortedIcons) {
+            if (!categoryFiles[icon.category]) {
+                categoryFiles[icon.category] = [];
+            }
+            const inlineIcon = fs.readFileSync(path.join(options.dist, icon.svg), 'utf8');
+            const scssVariable = `$icon-${identifier}: url("data:image/svg+xml,${escapeSvg(inlineIcon)}") !default;`;
+            categoryFiles[icon.category].push(scssVariable);
+        }
+        
+        // Write each category file with sorted content
+        const writePromises = [];
+        for (const [category, variables] of Object.entries(categoryFiles)) {
+            writePromises.push(
+                new Promise((resolve, reject) => {
+                    fs.writeFile(options.dist_scss + `icons-variables-${category}.scss`, variables.join('\n') + '\n', 'utf8', (err) => {
+                        if (err) reject(err);
+                        else resolve();
+                    });
+                })
+            );
+        }
+
+        await Promise.all(writePromises);
+
+        // Write main imports file
+        const importPromises = [];
+        for (const category of Object.values(categories)) {
+            const scssInclude = `@import 'icons-variables-${category.identifier}';`;
+            importPromises.push(
+                new Promise((resolve, reject) => {
+                    fs.appendFile(options.dist_scss + `icons-variables.scss`, scssInclude + "\n", 'utf8', (err) => {
+                        if (err) reject(err);
+                        else resolve();
+                    });
+                })
+            );
+        }
+
+        await Promise.all(importPromises);
+        cb();
+    } catch (err) {
+        cb(err);
     }
-    cb();
 });
 
 
@@ -417,104 +493,179 @@ gulp.task('site-clean', () => {
     return del([options.site], { force: true });
 });
 gulp.task('site-build', function (cb) {
+    let tasks = [];
 
     // Build Docs CSS
-    gulp.src(path.join(options.assets, 'scss/docs.scss'))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(minifyCSS())
-        .pipe(gulp.dest(path.join(options.site, 'assets', 'css')))
+    tasks.push(new Promise((resolve, reject) => {
+        gulp.src(path.join(options.assets, 'scss/docs.scss'))
+            .pipe(sass().on('error', sass.logError))
+            .pipe(minifyCSS())
+            .pipe(gulp.dest(path.join(options.site, 'assets', 'css')))
+            .on('end', resolve)
+            .on('error', reject);
+    }));
 
     // Copy static assets
-    gulp.src([path.join(options.assets, '**/*'),
-            '!' + path.join(options.assets, '**/*(*.scss)'),
-        ], { base: options.assets })
-        .pipe(gulp.dest(path.join(options.site, 'assets')));
-    gulp.src([path.join(options.dist, '**/*')], { base: options.dist } )
-        .pipe(gulp.dest(path.join(options.site, 'dist')));
+    tasks.push(new Promise((resolve, reject) => {
+        gulp.src([path.join(options.assets, '**/*'),
+                '!' + path.join(options.assets, '**/*(*.scss)'),
+            ], { base: options.assets })
+            .pipe(gulp.dest(path.join(options.site, 'assets')))
+            .on('end', resolve)
+            .on('error', reject);
+    }));
+    
+    tasks.push(new Promise((resolve, reject) => {
+        gulp.src([path.join(options.dist, '**/*')], { base: options.dist } )
+            .pipe(gulp.dest(path.join(options.site, 'dist')))
+            .on('end', resolve)
+            .on('error', reject);
+    }));
 
-    // Fetch generated data
-    let typo3 = JSON.parse(fs.readFileSync('./typo3.json', 'utf8'))
-    let categories = getCategories();
-    let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
-    let icons = data.icons;
-    for (let iconKey in icons) {
-        const iconContent = fs.readFileSync(path.join(options.dist, icons[iconKey].svg), 'utf8');
-        icons[iconKey]._meta = getMetaData(icons[iconKey].identifier, icons[iconKey].category);
-        icons[iconKey]._inline = iconContent
-        icons[iconKey]._inlineEscaped = escapeSvg(iconContent)
-    }
+    // Wait for asset copying to complete before processing templates
+    Promise.all(tasks).then(() => {
+        let templateTasks = [];
+        
+        // Fetch generated data
+        let typo3 = JSON.parse(fs.readFileSync('./typo3.json', 'utf8'))
+        let categories = getCategories();
+        let data = JSON.parse(fs.readFileSync(options.dist + 'icons.json', 'utf8'));
+        let icons = data.icons;
+        for (let iconKey in icons) {
+            const iconContent = fs.readFileSync(path.join(options.dist, icons[iconKey].svg), 'utf8');
+            icons[iconKey]._meta = getMetaData(icons[iconKey].identifier, icons[iconKey].category);
+            icons[iconKey]._inline = iconContent
+            icons[iconKey]._inlineEscaped = escapeSvg(iconContent)
+        }
 
-    // Index
-    gulp.src('./tmpl/html/docs/index.html.twig')
-        .pipe(twig({
-            data: {
-                pkg: pkg,
-                typo3: typo3,
-                icons: icons,
-                category: {},
-                categories: categories,
-                rendering: {},
-                pathPrefix: '',
-            }
-        }))
-        .pipe(rename('index.html'))
-        .pipe(gulp.dest(path.join(options.site)));
-
-    // Guide
-    gulp.src('./tmpl/html/docs/guide.html.twig')
-        .pipe(twig({
-            data: {
-                pkg: pkg,
-                typo3: typo3,
-                icons: icons,
-                category: {},
-                categories: categories,
-                rendering: {},
-                pathPrefix: '',
-            }
-        }))
-        .pipe(rename('guide.html'))
-        .pipe(gulp.dest(path.join(options.site)));
-
-    // Build pages
-    for (let categoryKey in categories) {
-        let category = categories[categoryKey];
-        gulp.src('./tmpl/html/docs/section.html.twig')
-            .pipe(twig({
-                data: {
-                    pkg: pkg,
-                    typo3: typo3,
-                    icons: icons,
-                    category: category,
-                    categories: categories,
-                    pathPrefix: '../',
-                }
-            }))
-            .pipe(rename(category.identifier + '.html'))
-            .pipe(gulp.dest(path.join(options.site, 'icons')));
-        for (let iconKey in category.icons) {
-            let iconIdentifier = category.icons[iconKey];
-            let icon = icons[iconIdentifier];
-            gulp.src('./tmpl/html/docs/single.html.twig')
+        // Index
+        templateTasks.push(new Promise((resolve, reject) => {
+            gulp.src('./tmpl/html/docs/index.html.twig')
                 .pipe(twig({
                     data: {
                         pkg: pkg,
                         typo3: typo3,
-                        icon: icon,
                         icons: icons,
-                        category: category,
+                        category: {},
                         categories: categories,
-                        pathPrefix: '../../',
+                        rendering: {},
+                        pathPrefix: '',
                     }
                 }))
-                .pipe(rename(iconIdentifier + '.html'))
-                .pipe(gulp.dest(path.join(options.site, 'icons', category.identifier)));
-        }
-    }
+                .pipe(rename('index.html'))
+                .pipe(gulp.dest(path.join(options.site)))
+                .on('end', resolve)
+                .on('error', reject);
+        }));
 
-    cb();
+        // Guide
+        templateTasks.push(new Promise((resolve, reject) => {
+            gulp.src('./tmpl/html/docs/guide.html.twig')
+                .pipe(twig({
+                    data: {
+                        pkg: pkg,
+                        typo3: typo3,
+                        icons: icons,
+                        category: {},
+                        categories: categories,
+                        rendering: {},
+                        pathPrefix: '',
+                    }
+                }))
+                .pipe(rename('guide.html'))
+                .pipe(gulp.dest(path.join(options.site)))
+                .on('end', resolve)
+                .on('error', reject);
+        }));
+
+        // Build pages
+        for (let categoryKey in categories) {
+            let category = categories[categoryKey];
+            templateTasks.push(new Promise((resolve, reject) => {
+                gulp.src('./tmpl/html/docs/section.html.twig')
+                    .pipe(twig({
+                        data: {
+                            pkg: pkg,
+                            typo3: typo3,
+                            icons: icons,
+                            category: category,
+                            categories: categories,
+                            pathPrefix: '../',
+                        }
+                    }))
+                    .pipe(rename(category.identifier + '.html'))
+                    .pipe(gulp.dest(path.join(options.site, 'icons')))
+                    .on('end', resolve)
+                    .on('error', reject);
+            }));
+            
+            for (let iconKey in category.icons) {
+                let iconIdentifier = category.icons[iconKey];
+                let icon = icons[iconIdentifier];
+                templateTasks.push(new Promise((resolve, reject) => {
+                    gulp.src('./tmpl/html/docs/single.html.twig')
+                        .pipe(twig({
+                            data: {
+                                pkg: pkg,
+                                typo3: typo3,
+                                icon: icon,
+                                icons: icons,
+                                category: category,
+                                categories: categories,
+                                pathPrefix: '../../',
+                            }
+                        }))
+                        .pipe(rename(iconIdentifier + '.html'))
+                        .pipe(gulp.dest(path.join(options.site, 'icons', category.identifier)))
+                        .on('end', resolve)
+                        .on('error', reject);
+                }));
+            }
+        }
+
+        Promise.all(templateTasks).then(() => {
+            cb();
+        }).catch(cb);
+    }).catch(cb);
 });
 
+
+//  
+// Watch Task with completion callbacks
+//
+function svgNotify(cb) {
+    playSound();
+    cb();
+}
+
+function scssNotify(cb) {
+    playSound();
+    cb();
+}
+
+function templateNotify(cb) {
+    playSound();
+    cb();
+}
+
+gulp.task('watch-svg-complete', gulp.series('icons-min', 'icons-sprites', 'icons-data', 'icons-variables', 'site-build', svgNotify));
+
+gulp.task('watch-scss-complete', gulp.series('icons-sass', 'site-build', scssNotify));
+
+gulp.task('watch-template-complete', gulp.series('site-build', templateNotify));
+
+gulp.task('watch', () => {
+    // Watch SVG source files
+    gulp.watch([options.src + '**/*.svg'], gulp.series('watch-svg-complete'));
+    
+    // Watch SCSS files
+    gulp.watch([options.assets + 'scss/**/*.scss'], gulp.series('watch-scss-complete'));
+    
+    // Watch template files
+    gulp.watch(['./tmpl/**/*.twig', './typo3.json'], gulp.series('watch-template-complete'));
+    
+    console.log('🔍 Watching for file changes...');
+});
 
 //
 // Tasks
@@ -536,4 +687,9 @@ gulp.task('version', gulp.series(
 gulp.task('site', gulp.series(
     'site-clean',
     'site-build'
+));
+gulp.task('dev', gulp.series(
+    'icons',
+    'site',
+    'watch'
 ));

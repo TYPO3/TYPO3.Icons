@@ -48,11 +48,13 @@
   "sass": "dist/icons.scss",
   "style": "dist/icons.css",
   "scripts": {
-    "site-serve": "http-server ./_site",
+    "site-serve": "http-server -c-1 ./_site",
     "site-refresh": "gulp icons && gulp site",
     "site-build": "gulp site",
     "icons-build": "gulp icons",
     "version-build": "gulp version",
-    "stylelint": "stylelint assets/scss/*"
+    "stylelint": "stylelint assets/scss/*",
+    "dev": "gulp dev",
+    "watch": "gulp watch"
   }
 }
