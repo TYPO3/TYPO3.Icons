@@ -4302,6 +4302,12 @@
       "svg": "svgs/module/module-permission.svg",
       "sprite": "sprites/module.svg#module-permission"
     },
+    "module-qrcode": {
+      "identifier": "module-qrcode",
+      "category": "module",
+      "svg": "svgs/module/module-qrcode.svg",
+      "sprite": "sprites/module.svg#module-qrcode"
+    },
     "module-reactions": {
       "identifier": "module-reactions",
       "category": "module",

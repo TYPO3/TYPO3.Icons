@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="module-qrcode.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.4923068"
+     inkscape:cx="55.571008"
+     inkscape:cy="72.623483"
+     inkscape:window-width="1392"
+     inkscape:window-height="759"
+     inkscape:window-x="120"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     fill="#639"
+     d="M0 0h64v64H0z"
+     id="path1"
+     style="fill:#a72e25;fill-opacity:1" />
+  <g
+     fill="currentColor"
+     id="g2"
+     transform="matrix(2.1463849,0,0,2.1463849,14.828921,14.828921)"
+     style="fill:#e3dedb">
+    <path
+       d="M 5,2 V 5 H 2 V 2 H 5 M 6,1 H 1 v 5 h 5 z m 8,1 V 5 H 11 V 2 h 3 m 1,-1 h -5 v 5 h 5 z M 5,11 v 3 H 2 V 11 H 5 M 6,10 H 1 v 5 h 5 z m 7,2 h -3 v 1 h 3 z M 3,7 H 1 V 9 H 2 V 8 H 3 Z M 5,7 H 4 v 2 h 1 z m 3,7 H 7 v 1 h 1 z m 3,0 H 9 v 1 h 2 z m 2,0 h -1 v 1 h 1 z M 8,11 H 8.005 8 M 8,9 H 7 v 4 h 1 v -1 h 1 v -1 h 1 V 10 H 8 Z m 7,3 h -1 v 3 h 1 z m 0,-5 h -1 v 2 h -3 v 2 h 4 z M 12,7 H 9 v 2 h 1 V 8 h 2 z M 9,5 H 7 V 7 H 6 V 8 H 8 V 6 H 9 Z M 8,3 H 8.005 8 M 8,1 H 7 V 4 H 9 V 2 H 8 Z"
+       id="path1-4"
+       style="fill:#e3dedb" />
+  </g>
+</svg>
