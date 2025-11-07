@@ -3,7 +3,8 @@ alias:
   - actions-chevron-double-right
   - actions-view-paging-next
   - actions-view-paging-next-disabled
-changes: []
+changes:
+  - 4.4.0
 tags:
   - navigation
   - logical

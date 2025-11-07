@@ -1,6 +1,7 @@
 alias:
   - actions-caret-bar-left
-changes: []
+changes:
+  - 4.4.0
 tags:
   - navigation
   - logical

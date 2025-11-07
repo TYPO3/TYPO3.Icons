@@ -2,7 +2,8 @@ alias:
   - actions-chevron-bar-left
   - actions-view-paging-first
   - actions-view-paging-first-disabled
-changes: []
+changes:
+  - 4.4.0
 tags:
   - navigation
   - logical

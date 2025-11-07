@@ -3,7 +3,8 @@ alias:
   - actions-navigate-forward
   - actions-chevron-right
   - actions-view-table-expand
-changes: []
+changes:
+  - 4.4.0
 tags:
   - navigation
   - logical

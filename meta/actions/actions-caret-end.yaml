@@ -5,7 +5,8 @@ alias:
   - status-status-current
   - apps-irre-collapsed
   - apps-pagetree-collapse
-changes: []
+changes:
+  - 4.4.0
 tags:
   - navigation
   - logical
