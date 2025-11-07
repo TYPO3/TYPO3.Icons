@@ -248,9 +248,24 @@ npm run site-serve
     ', 'bash') }}
 
     <h3>Release</h3>
+
     {{ makros.codeblock('
 npm version [major | minor | patch]
+git push origin main --tags
 npm publish
     ', 'bash') }}
+
+    <hr class="my-4">
+
+    <h4>Commit Message Convention</h4>
+    <p>This project follows a commit message convention where each commit should be prefixed with a type:</p>
+    <ul>
+        <li><code>[FEATURE]</code> - New features or functionality</li>
+        <li><code>[BUGFIX]</code> - Bug fixes</li>
+        <li><code>[TASK]</code> - General maintenance tasks (refactoring, dependencies, etc.)</li>
+        <li><code>[DOCS]</code> - Documentation changes</li>
+        <li><code>[!!!]</code> or <code>[BREAKING]</code> - Breaking changes</li>
+    </ul>
+    <p>The automated changelog generation categorizes commits based on these prefixes. Release commits with <code>[RELEASE]</code> prefix are automatically excluded from the changelog.</p>
 
 {% endblock %}

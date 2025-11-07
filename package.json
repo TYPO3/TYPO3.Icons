@@ -56,6 +56,8 @@
     "version-build": "gulp version",
     "stylelint": "stylelint assets/scss/*",
     "dev": "gulp dev",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "preversion": "npm run stylelint",
+    "version": "gulp changelog-file && git add CHANGELOG.md"
   }
 }
