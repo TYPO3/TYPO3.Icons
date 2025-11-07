@@ -1,0 +1,13 @@
+alias:
+  - actions-caret-right
+  - actions-move-right
+  - actions-pagetree-collapse
+  - status-status-current
+  - apps-irre-collapsed
+  - apps-pagetree-collapse
+changes: []
+tags:
+  - navigation
+  - logical
+  - bidi
+bidi: true

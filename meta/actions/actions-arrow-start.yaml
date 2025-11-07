@@ -1,0 +1,8 @@
+alias:
+  - actions-arrow-backward
+changes: []
+tags:
+  - navigation
+  - logical
+  - bidi
+bidi: true

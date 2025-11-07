@@ -3,7 +3,7 @@
 {%- set iconSize = iconSize ?? 'auto' -%}
 {%- set iconSpinning = iconSpinning ?? false -%}
 {% if icon %}
-<span class="icon icon-size-{{ iconSize }} icon-state-default{% if iconSpinning %} icon-spin{% endif %}">
+<span class="icon icon-size-{{ iconSize }} icon-state-default{% if iconSpinning %} icon-spin{% endif %}{% if icon._meta.bidi %} icon-bidi{% endif %}">
     <span class="icon-markup">
         {% include '_symbol.html.twig' with { icon: icon } %}
     </span>

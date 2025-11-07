@@ -163,6 +163,67 @@
 
     <hr class="my-4">
 
+    <h3>BiDi (Bidirectional) Support</h3>
+    <p>
+        This icon set includes logical icon variants that support bidirectional languages (Arabic, Hebrew, etc.).
+    </p>
+    <dl>
+        <dt>Logical Icons</dt>
+        <dd>Use <code>-start</code>/<code>-end</code> for navigation and reading direction (previous/next, back/forward)</dd>
+
+        <dt>Physical Icons</dt>
+        <dd>Use <code>-left</code>/<code>-right</code> for absolute positioning (west/east, align left/right)</dd>
+
+        <dt>Implementation</dt>
+        <dd>Icons with <code>bidi: true</code> automatically receive the <code>icon-bidi</code> class and flip in RTL mode</dd>
+
+        <dt>Example</dt>
+        <dd>
+            <div class="row my-3">
+                <div class="col-md-6">
+                    <strong>LTR (Left-to-Right)</strong>
+                    <div dir="ltr" class="mt-2">
+                        <span class="btn btn-default">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: 'actions-chevron-start',
+                                iconSize: 'small'
+                            } -%}
+                            Previous
+                        </span>
+                        <span class="btn btn-default">
+                            Next
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: 'actions-chevron-end',
+                                iconSize: 'small'
+                            } -%}
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <strong>RTL (Right-to-Left)</strong>
+                    <div dir="rtl" class="mt-2">
+                        <span class="btn btn-default">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: 'actions-chevron-start',
+                                iconSize: 'small'
+                            } -%}
+                            السابق
+                        </span>
+                        <span class="btn btn-default">
+                            التالي
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: 'actions-chevron-end',
+                                iconSize: 'small'
+                            } -%}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </dd>
+    </dl>
+
+    <hr class="my-4">
+
     <h3>Module Icons</h3>
     <dl>
         <dt>Size</dt>

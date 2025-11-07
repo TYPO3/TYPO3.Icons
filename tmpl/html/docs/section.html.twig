@@ -9,17 +9,23 @@
         </ol>
     </nav>
 
-    <div class="d-flex mb-4">
+    <div class="d-flex mb-4 align-items-center">
         <h2 class="mb-0">{{ category.title }}</h2>
-        <form class="d-flex flex-nowrap ms-auto">
-            <input class="form-control search mb-0" id="search" placeholder="Start typing to filter..." autocomplete="off">
-        </form>
+        {%- include '_filters.html.twig' -%}
     </div>
 
     <div class="icongrid" id="iconlist">
         {%- for iconIdentifier in category.icons -%}
             {%- set icon = icons[iconIdentifier] -%}
-            <a class="icongrid-item" data-type="icon" data-identifier="{{ icon.identifier }}" data-search="{{ icon.identifier }} {{ icon._meta.tags|join(' ') }}" href="{{ pathPrefix }}icons/{{ category.identifier }}/{{ icon.identifier }}.html" title="{{ icon.identifier }}">
+            <a
+                class="icongrid-item"
+                data-type="icon"
+                data-identifier="{{ icon.identifier }}"
+                data-search="{{ icon.identifier }} {{ icon._meta.tags|join(' ') }}"
+                {% if icon._meta.bidi %}data-bidi="true"{% endif %}
+                href="{{ pathPrefix }}icons/{{ category.identifier }}/{{ icon.identifier }}.html"
+                title="{{ icon.identifier }}"
+            >
                 {%- if not category.rendering.overlay -%}
                     {%- include '_icon.html.twig' with {
                         iconIdentifier: iconIdentifier,
@@ -33,6 +39,9 @@
                         iconSize: 'medium',
                         iconSpinning: category.rendering.spinning
                     } -%}
+                {%- endif -%}
+                {%- if icon._meta.bidi -%}
+                    <span class="icongrid-item-badge" title="BiDi support - flips in RTL">BiDi</span>
                 {%- endif -%}
             </a>
         {%- endfor -%}

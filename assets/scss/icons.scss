@@ -106,6 +106,15 @@ $icon-opacity-disabled: .5 !default;
 }
 
 //
+// BiDi Support
+//
+[dir="rtl"] .icon-bidi {
+    .icon-markup {
+        transform: scaleX(-1);
+    }
+}
+
+//
 // Variants
 //
 @mixin icon-size($identifier) {

@@ -1,0 +1,11 @@
+alias:
+  - actions-navigate-previous
+  - actions-navigate-back
+  - actions-chevron-left
+  - actions-view-table-collapse
+changes: []
+tags:
+  - navigation
+  - logical
+  - bidi
+bidi: true

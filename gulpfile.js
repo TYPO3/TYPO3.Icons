@@ -225,6 +225,7 @@ function getData() {
             data.icons[identifier].category   = folder;
             data.icons[identifier].svg        = 'svgs/' + folder + '/' + identifier + '.svg';
             data.icons[identifier].sprite     = 'sprites/' + folder + '.svg' + '#' + identifier;
+            data.icons[identifier].bidi       = metaData.bidi ? true : false;
         }
     }
     return data;
@@ -249,11 +250,11 @@ function playSound() {
         'afplay /System/Library/Sounds/Glass.aiff 2>/dev/null',  // macOS
         'powershell -c "[console]::beep(800,200)" 2>$null'  // Windows
     ];
-    
+
     soundCommands.forEach(cmd => {
         exec(cmd, { stdio: 'ignore' }, () => {}); // Completely silent
     });
-    
+
     console.log('✅ Build complete!');
 }
 
@@ -310,7 +311,7 @@ gulp.task('icons-sprites', () => {
             const svgFiles = getIcons(path.join(options.dist_svgs, folder))
                 .sort()
                 .map(file => path.join(options.dist_svgs, folder, file));
-            
+
             gulp.src(svgFiles)
                 .pipe(svgSprite({
                     svg: {
@@ -397,7 +398,7 @@ gulp.task('icons-variables', async (cb) => {
         // Write icon variables (sorted by identifier)
         const sortedIcons = Object.entries(data.icons).sort(([a], [b]) => a.localeCompare(b));
         const categoryFiles = {};
-        
+
         // Group by category and prepare content
         for (const [identifier, icon] of sortedIcons) {
             if (!categoryFiles[icon.category]) {
@@ -407,7 +408,7 @@ gulp.task('icons-variables', async (cb) => {
             const scssVariable = `$icon-${identifier}: url("data:image/svg+xml,${escapeSvg(inlineIcon)}") !default;`;
             categoryFiles[icon.category].push(scssVariable);
         }
-        
+
         // Write each category file with sorted content
         const writePromises = [];
         for (const [category, variables] of Object.entries(categoryFiles)) {
@@ -503,7 +504,7 @@ gulp.task('site-build', function (cb) {
             .on('end', resolve)
             .on('error', reject);
     }));
-    
+
     tasks.push(new Promise((resolve, reject) => {
         gulp.src([path.join(options.dist, '**/*')], { base: options.dist } )
             .pipe(gulp.dest(path.join(options.site, 'dist')))
@@ -514,7 +515,7 @@ gulp.task('site-build', function (cb) {
     // Wait for asset copying to complete before processing templates
     Promise.all(tasks).then(() => {
         let templateTasks = [];
-        
+
         // Fetch generated data
         let typo3 = JSON.parse(fs.readFileSync('./typo3.json', 'utf8'))
         let categories = getCategories();
@@ -587,7 +588,7 @@ gulp.task('site-build', function (cb) {
                     .on('end', resolve)
                     .on('error', reject);
             }));
-            
+
             for (let iconKey in category.icons) {
                 let iconIdentifier = category.icons[iconKey];
                 let icon = icons[iconIdentifier];
@@ -619,7 +620,7 @@ gulp.task('site-build', function (cb) {
 });
 
 
-//  
+//
 // Watch Task with completion callbacks
 //
 function svgNotify(cb) {
@@ -646,13 +647,13 @@ gulp.task('watch-template-complete', gulp.series('site-build', templateNotify));
 gulp.task('watch', () => {
     // Watch SVG source files
     gulp.watch([options.src + '**/*.svg'], gulp.series('watch-svg-complete'));
-    
+
     // Watch SCSS files
     gulp.watch([options.assets + 'scss/**/*.scss'], gulp.series('watch-scss-complete'));
-    
+
     // Watch template files
     gulp.watch(['./tmpl/**/*.twig', './typo3.json'], gulp.series('watch-template-complete'));
-    
+
     console.log('🔍 Watching for file changes...');
 });
 

@@ -1,0 +1,11 @@
+alias:
+  - actions-navigate-next
+  - actions-navigate-forward
+  - actions-chevron-right
+  - actions-view-table-expand
+changes: []
+tags:
+  - navigation
+  - logical
+  - bidi
+bidi: true

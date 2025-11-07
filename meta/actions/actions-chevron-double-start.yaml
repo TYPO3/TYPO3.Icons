@@ -1,0 +1,11 @@
+alias:
+  - actions-navigate-first
+  - actions-chevron-double-left
+  - actions-view-paging-previous
+  - actions-view-paging-previous-disabled
+changes: []
+tags:
+  - navigation
+  - logical
+  - bidi
+bidi: true

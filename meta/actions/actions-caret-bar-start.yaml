@@ -1,0 +1,8 @@
+alias:
+  - actions-caret-bar-left
+changes: []
+tags:
+  - navigation
+  - logical
+  - bidi
+bidi: true

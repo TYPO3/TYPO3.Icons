@@ -14,7 +14,17 @@
     <div class="mb-4">
         <h1 class="h2 mb-2">{{ icon.identifier }}</h1>
         <div class="d-sm-flex">
-            <div class="my-2 flex-grow-1">{% if icon._meta.tags|length > 0 %}<strong>Tags:</strong> {{ icon._meta.tags|join(', ') }}{% endif %}</div>
+            <div class="my-2 flex-grow-1">
+                {%- if icon._meta.tags|length > 0 -%}
+                    <strong>Tags:</strong>
+                    {{ icon._meta.tags|join(', ') }}
+                {%- endif -%}
+            </div>
+            {%- if icon._meta.bidi -%}
+                <div class="my-2">
+                    <span class="badge bg-primary" title="This icon automatically flips in right-to-left (RTL) languages">BiDi</span>
+                </div>
+            {%- endif -%}
             {%- if icon._meta.changes|length > 0 -%}
                 <div class="my-2 ms-sm-3">Introduced in <a href="https://github.com/TYPO3/TYPO3.Icons/releases/tag/v{{ icon._meta.changes.0 }}" target="_blank" rel="noopener">v{{ icon._meta.changes.0 }}</a></div>
                 {%- set available = false -%}
@@ -132,6 +142,72 @@
         </div>
     {%- endif -%}
 
+    {%- if category.rendering.buttons and icon._meta.bidi -%}
+        <div class="section">
+            <h2 class="mb-3">BiDi Comparison (LTR vs RTL)</h2>
+            <div class="row">
+                <div class="col-md-6" dir="ltr">
+                    <h3 class="h5 mb-3">LTR (Left-to-Right)</h3>
+                    <p>
+                        <span class="btn btn-default">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: icon.identifier,
+                                iconSize: 'small',
+                                iconSpinning: category.rendering.spinning
+                            } -%}
+                        </span>
+                        <span class="btn btn-dark">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: icon.identifier,
+                                iconSize: 'small',
+                                iconSpinning: category.rendering.spinning
+                            } -%}
+                        </span>
+                    </p>
+                    <p>
+                        <span class="btn btn-default">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: icon.identifier,
+                                iconSize: 'small',
+                                iconSpinning: category.rendering.spinning
+                            } -%}
+                            Next
+                        </span>
+                    </p>
+                </div>
+                <div class="col-md-6" dir="rtl">
+                    <h3 class="h5 mb-3">RTL (Right-to-Left)</h3>
+                    <p>
+                        <span class="btn btn-default">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: icon.identifier,
+                                iconSize: 'small',
+                                iconSpinning: category.rendering.spinning
+                            } -%}
+                        </span>
+                        <span class="btn btn-dark">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: icon.identifier,
+                                iconSize: 'small',
+                                iconSpinning: category.rendering.spinning
+                            } -%}
+                        </span>
+                    </p>
+                    <p>
+                        <span class="btn btn-default">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: icon.identifier,
+                                iconSize: 'small',
+                                iconSpinning: category.rendering.spinning
+                            } -%}
+                            التالي
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    {%- endif -%}
+
     {%- if category.rendering.overlay -%}
         <div class="section">
             <div class="preview">
@@ -159,13 +235,26 @@
     <div class="section">
         <h2 class="mb-3">Usage</h2>
 
+        {%- if icon._meta.bidi -%}
+        <div class="alert alert-info">
+            <strong>BiDi Support:</strong> This icon uses logical naming (start/end instead of left/right) and is designed for bidirectional support.
+            See the usage examples below for implementation details.
+        </div>
+        {%- endif -%}
+
         <h3 class="my-3">Icon Identifier</h3>
         {{ makros.codeblock(icon.identifier) }}
 
         <h3 class="my-3">Markup</h3>
+        {%- if icon._meta.bidi -%}
+        <p class="text-muted small mb-2">⚠ BiDi NOT supported - Raw SVG cannot be flipped. Use inline or sprite methods for BiDi support.</p>
+        {%- endif -%}
         {{ makros.codeblock(icon._inline, 'svg') }}
 
         <h3 class="my-3">Inline</h3>
+        {%- if icon._meta.bidi -%}
+        <p class="text-muted small mb-2">✓ BiDi supported - Icon will flip in RTL mode when using the <code>icon-bidi</code> class</p>
+        {%- endif -%}
         {%- set inlineusage -%}
             {%- if not category.rendering.overlay -%}
                 {%- include '_icon.html.twig' with {
@@ -189,6 +278,9 @@
         {{ makros.codeblock(inlineusage) }}
 
         <h3 class="my-3">Sprite</h3>
+        {%- if icon._meta.bidi -%}
+        <p class="text-muted small mb-2">✓ BiDi supported - Icon will flip in RTL mode when using the <code>icon-bidi</code> class</p>
+        {%- endif -%}
         {%- set spriteusage -%}
             {%- if not category.rendering.overlay -%}
                 {%- include '_icon.html.twig' with {
@@ -210,13 +302,29 @@
         {{ makros.codeblock(spriteusage) }}
 
         <h3 class="my-3">TYPO3 ViewHelper</h3>
+        {%- if icon._meta.bidi -%}
+        <p class="text-muted small mb-2">✓ BiDi supported</p>
+        {%- endif -%}
         {%- if category.rendering.overlay -%}
             {{ makros.codeblock('<core:icon identifier="apps-pagetree-page" overlay="' ~ icon.identifier ~ '" size="small" />') }}
         {%- else -%}
             {{ makros.codeblock('<core:icon identifier="' ~ icon.identifier ~ '" size="small" />') }}
         {%- endif -%}
 
+        <h3 class="my-3">TYPO3 Web Component</h3>
+        {%- if icon._meta.bidi -%}
+        <p class="text-muted small mb-2">✓ BiDi supported</p>
+        {%- endif -%}
+        {%- if category.rendering.overlay -%}
+            {{ makros.codeblock('<typo3-backend-icon identifier="apps-pagetree-page" overlay="' ~ icon.identifier ~ '" size="small"></typo3-backend-icon>') }}
+        {%- else -%}
+            {{ makros.codeblock('<typo3-backend-icon identifier="' ~ icon.identifier ~ '" size="small"></typo3-backend-icon>') }}
+        {%- endif -%}
+
         <h3 class="my-3">CSS Background Image</h3>
+        {%- if icon._meta.bidi -%}
+        <p class="text-muted small mb-2">⚠ BiDi NOT supported - Background images cannot be flipped with CSS. Use inline or sprite methods for BiDi support.</p>
+        {%- endif -%}
         {%- set cssbackgroundimageusage -%}
 .myclass {
     background-size: 1em 1em;
@@ -226,6 +334,9 @@
         {{ makros.codeblock(cssbackgroundimageusage) }}
 
         <h3 class="my-3">Sass Background Variable</h3>
+        {%- if icon._meta.bidi -%}
+        <p class="text-muted small mb-2">⚠ BiDi NOT supported - Background images cannot be flipped with CSS. Use inline or sprite methods for BiDi support.</p>
+        {%- endif -%}
         {%- set sassbackgroundvariable -%}
 @import "@typo3/icons/dist/icons.scss";
 @import "@typo3/icons/dist/scss/icons-variables-{{ icon.category }}.scss";

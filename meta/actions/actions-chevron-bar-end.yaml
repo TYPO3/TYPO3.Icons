@@ -1,0 +1,10 @@
+alias:
+  - actions-chevron-bar-right
+  - actions-view-paging-last
+  - actions-view-paging-last-disabled
+changes: []
+tags:
+  - navigation
+  - logical
+  - bidi
+bidi: true
