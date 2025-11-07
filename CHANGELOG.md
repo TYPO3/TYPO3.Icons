@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.4.0] - 2025-11-07
+
+3893f4769 [FEATURE] Add bidi support
+14c4330b5 [FEATURE] Add actions-aspect-ratio
+7e3db4e5a [FEATURE] Add actions-menu-sideba-* icons
+156254092 [BUGFIX] Correct stylelint
+7fee73266 [BUGFIX] Correct deprecation and sort includes in icons-variables
+1e19e539a [BUGFIX] Revert branches
+ad2a5b4bf [BUGFIX] Add permissions to top level set output url
+6498b800a [BUGFIX] Add environment
+274e596a6 [BUGFIX] Correct gh pages deployment
+830d0217b [BUGFIX] Correct workflow shema detection
+4f002d3fd [TASK] Add Changelog
+84b40849e [TASK] Update del, gulp-sass and dependencies
+17d87846c [TASK] Update stylelint
+5a4eb964e [TASK] Mention styleguide extension in README (#332)
+9228fc0e1 [TASK] Render icon identifier for easy copy (#334)
+2f6e74d31 [TASK] Update npm requirements
+5d8a219e2 [TASK] Modernize GitHub Pages workflow
+f193b1827 [TASK] Add watcher and disable preview caching
+bcda02b9a [TASK] Update versions
+
+
 ## [4.3.3] - 2025-03-31
 
 22250db95 [FEATURE] Added a copy button to the SVG code snippet for easy copying
