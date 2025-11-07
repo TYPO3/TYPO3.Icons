@@ -4,7 +4,7 @@
 const fs = require('fs');
 const pkg = require('./package.json');
 const path = require('path');
-const del = require('del');
+const { deleteAsync, deleteSync } = require('del');
 const twig = require('gulp-twig');
 const svgmin = require('gulp-svgmin');
 const rename = require('gulp-rename');
@@ -261,7 +261,7 @@ function playSound() {
 // Icons Clean
 //
 gulp.task('icons-clean', () => {
-    return del([options.dist], { force: true });
+    return deleteAsync([options.dist], { force: true });
 });
 
 
@@ -423,21 +423,10 @@ gulp.task('icons-variables', async (cb) => {
 
         await Promise.all(writePromises);
 
-        // Write main imports file
-        const importPromises = [];
-        for (const category of Object.values(categories).sort((a, b) => a.identifier.localeCompare(b.identifier))) {
-            const scssInclude = `@import 'icons-variables-${category.identifier}';`;
-            importPromises.push(
-                new Promise((resolve, reject) => {
-                    fs.appendFile(options.dist_scss + `icons-variables.scss`, scssInclude + "\n", 'utf8', (err) => {
-                        if (err) reject(err);
-                        else resolve();
-                    });
-                })
-            );
-        }
-
-        await Promise.all(importPromises);
+        // Write main imports file (sequentially to maintain order)
+        const sortedCategories = Object.values(categories).sort((a, b) => a.identifier.localeCompare(b.identifier));
+        const imports = sortedCategories.map(category => `@import 'icons-variables-${category.identifier}';`).join('\n') + '\n';
+        await fs.promises.writeFile(options.dist_scss + `icons-variables.scss`, imports, 'utf8');
         cb();
     } catch (err) {
         cb(err);
@@ -461,7 +450,7 @@ gulp.task('version-history', () => {
                 let identifier = path.basename(file, '.yaml');
                 fs.stat(path.join(options.src, folder, identifier + '.svg'), (error) => {
                     if (error !== null && error.code === 'ENOENT') {
-                        del(path.join(options.meta, file), { force: true });
+                        deleteSync(path.join(options.meta, file), { force: true });
                     }
                 });
             }
@@ -490,7 +479,7 @@ gulp.task('version-history', () => {
  * Docs
  */
 gulp.task('site-clean', () => {
-    return del([options.site], { force: true });
+    return deleteAsync([options.site], { force: true });
 });
 gulp.task('site-build', function (cb) {
     let tasks = [];
