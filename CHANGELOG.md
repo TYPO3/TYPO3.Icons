@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.4.1] - 2025-11-07
+
+67f82b968 [TASK] Improve bidi detection
+1ac9e0147 [TASK] Update Versions
+
+
 ## [4.4.0] - 2025-11-07
 
 3893f4769 [FEATURE] Add bidi support
