@@ -2387,6 +2387,13 @@
       "sprite": "sprites/actions.svg#actions-square",
       "bidi": false
     },
+    "actions-star-alt": {
+      "identifier": "actions-star-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-star-alt.svg",
+      "sprite": "sprites/actions.svg#actions-star-alt",
+      "bidi": false
+    },
     "actions-star": {
       "identifier": "actions-star",
       "category": "actions",
