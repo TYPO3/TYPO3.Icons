@@ -1,9 +1,6 @@
 alias:
+  - apps-toolbar-menu-cache
   - actions-system-cache-clear
-  - actions-system-cache-clear-impact-high
-  - actions-system-cache-clear-impact-medium
-  - actions-system-cache-clear-impact-low
-  - actions-system-cache-clear-rte
 changes:
   - 1.11.0
   - 1.11.1

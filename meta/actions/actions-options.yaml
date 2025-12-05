@@ -1,5 +1,6 @@
 alias:
   - actions-system-options-view
+  - apps-toolbar-menu-actions
 changes:
   - 2.0.0
   - 2.0.1

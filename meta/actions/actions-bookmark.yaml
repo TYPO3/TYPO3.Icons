@@ -1,4 +1,7 @@
-alias: []
+alias:
+  - actions-system-shortcut-active
+  - actions-system-shortcut-new
+  - apps-toolbar-menu-shortcut
 changes:
   - 4.4.2
 tags: []

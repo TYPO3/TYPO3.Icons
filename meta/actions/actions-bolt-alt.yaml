@@ -1,4 +1,8 @@
-alias: []
+alias:
+  - actions-system-cache-clear-impact-high
+  - actions-system-cache-clear-impact-medium
+  - actions-system-cache-clear-impact-low
+  - actions-system-cache-clear-rte
 changes:
   - 4.4.2
 tags: []

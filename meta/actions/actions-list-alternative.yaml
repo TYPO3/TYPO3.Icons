@@ -1,5 +1,6 @@
 alias:
   - actions-system-list-open
+  - apps-toolbar-menu-systeminformation
 changes:
   - 2.0.0
   - 2.0.1

@@ -1,4 +1,5 @@
-alias: []
+alias:
+  - apps-toolbar-menu-help
 changes:
   - 2.2.1
   - 2.2.2
@@ -32,4 +33,5 @@ changes:
   - 4.4.0
   - 4.4.1
   - 4.4.2
-tags: []
+tags:
+  - help

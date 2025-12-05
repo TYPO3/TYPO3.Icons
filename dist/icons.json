@@ -2695,6 +2695,13 @@
       "sprite": "sprites/actions.svg#actions-window",
       "bidi": false
     },
+    "actions-workspace": {
+      "identifier": "actions-workspace",
+      "category": "actions",
+      "svg": "svgs/actions/actions-workspace.svg",
+      "sprite": "sprites/actions.svg#actions-workspace",
+      "bidi": false
+    },
     "apps-clipboard-images": {
       "identifier": "apps-clipboard-images",
       "category": "apps",
@@ -3211,62 +3218,6 @@
       "category": "apps",
       "svg": "svgs/apps/apps-pagetree-spacer.svg",
       "sprite": "sprites/apps.svg#apps-pagetree-spacer",
-      "bidi": false
-    },
-    "apps-toolbar-menu-actions": {
-      "identifier": "apps-toolbar-menu-actions",
-      "category": "apps",
-      "svg": "svgs/apps/apps-toolbar-menu-actions.svg",
-      "sprite": "sprites/apps.svg#apps-toolbar-menu-actions",
-      "bidi": false
-    },
-    "apps-toolbar-menu-cache": {
-      "identifier": "apps-toolbar-menu-cache",
-      "category": "apps",
-      "svg": "svgs/apps/apps-toolbar-menu-cache.svg",
-      "sprite": "sprites/apps.svg#apps-toolbar-menu-cache",
-      "bidi": false
-    },
-    "apps-toolbar-menu-help": {
-      "identifier": "apps-toolbar-menu-help",
-      "category": "apps",
-      "svg": "svgs/apps/apps-toolbar-menu-help.svg",
-      "sprite": "sprites/apps.svg#apps-toolbar-menu-help",
-      "bidi": false
-    },
-    "apps-toolbar-menu-opendocs": {
-      "identifier": "apps-toolbar-menu-opendocs",
-      "category": "apps",
-      "svg": "svgs/apps/apps-toolbar-menu-opendocs.svg",
-      "sprite": "sprites/apps.svg#apps-toolbar-menu-opendocs",
-      "bidi": false
-    },
-    "apps-toolbar-menu-search": {
-      "identifier": "apps-toolbar-menu-search",
-      "category": "apps",
-      "svg": "svgs/apps/apps-toolbar-menu-search.svg",
-      "sprite": "sprites/apps.svg#apps-toolbar-menu-search",
-      "bidi": false
-    },
-    "apps-toolbar-menu-shortcut": {
-      "identifier": "apps-toolbar-menu-shortcut",
-      "category": "apps",
-      "svg": "svgs/apps/apps-toolbar-menu-shortcut.svg",
-      "sprite": "sprites/apps.svg#apps-toolbar-menu-shortcut",
-      "bidi": false
-    },
-    "apps-toolbar-menu-systeminformation": {
-      "identifier": "apps-toolbar-menu-systeminformation",
-      "category": "apps",
-      "svg": "svgs/apps/apps-toolbar-menu-systeminformation.svg",
-      "sprite": "sprites/apps.svg#apps-toolbar-menu-systeminformation",
-      "bidi": false
-    },
-    "apps-toolbar-menu-workspace": {
-      "identifier": "apps-toolbar-menu-workspace",
-      "category": "apps",
-      "svg": "svgs/apps/apps-toolbar-menu-workspace.svg",
-      "sprite": "sprites/apps.svg#apps-toolbar-menu-workspace",
       "bidi": false
     },
     "avatar-default": {
@@ -5568,11 +5519,15 @@
     "actions-view-go-up": "actions-arrow-right-up",
     "actions-version-workspace-sendtostage": "actions-arrow-right",
     "actions-arrow-backward": "actions-arrow-start",
+    "actions-system-cache-clear-impact-high": "actions-bolt-alt",
+    "actions-system-cache-clear-impact-medium": "actions-bolt-alt",
+    "actions-system-cache-clear-impact-low": "actions-bolt-alt",
+    "actions-system-cache-clear-rte": "actions-bolt-alt",
+    "apps-toolbar-menu-cache": "actions-bolt",
     "actions-system-cache-clear": "actions-bolt",
-    "actions-system-cache-clear-impact-high": "actions-bolt",
-    "actions-system-cache-clear-impact-medium": "actions-bolt",
-    "actions-system-cache-clear-impact-low": "actions-bolt",
-    "actions-system-cache-clear-rte": "actions-bolt",
+    "actions-system-shortcut-active": "actions-bookmark",
+    "actions-system-shortcut-new": "actions-bookmark",
+    "apps-toolbar-menu-shortcut": "actions-bookmark",
     "information-os-apple": "actions-brand-apple",
     "information-git": "actions-brand-git",
     "information-os-linux": "actions-brand-linux",
@@ -5649,8 +5604,8 @@
     "actions-merge": "actions-code-merge",
     "actions-version-document-remove": "actions-code-pull-request-close",
     "sysnote-type-2": "actions-code",
-    "actions-system-extension-configure": "actions-cog-alt",
     "sysnote-type-1": "actions-cog",
+    "actions-system-extension-configure": "actions-cog",
     "actions-edit-cut-release": "actions-cut-release",
     "actions-edit-cut": "actions-cut",
     "actions-system-extension-sqldump": "actions-database-export",
@@ -5695,6 +5650,7 @@
     "actions-document-export-t3d": "actions-file-t3d-download",
     "actions-document-import-t3d": "actions-file-t3d-upload",
     "actions-view-page": "actions-file-view",
+    "apps-toolbar-menu-opendocs": "actions-file",
     "actions-system-tree-search-open": "actions-filter",
     "actions-insert-record": "actions-folder",
     "actions-document-history-open": "actions-history",
@@ -5703,6 +5659,7 @@
     "actions-wizard-rte": "actions-link",
     "actions-wizard-link": "actions-link",
     "actions-system-list-open": "actions-list-alternative",
+    "apps-toolbar-menu-systeminformation": "actions-list-alternative",
     "actions-sign-in": "actions-login",
     "actions-sign-out": "actions-logout",
     "actions-edit-localize-status-high": "actions-message-add",
@@ -5716,10 +5673,12 @@
     "actions-system-extension-documentation": "actions-notebook",
     "actions-pencil": "actions-open",
     "actions-system-options-view": "actions-options",
+    "apps-toolbar-menu-actions": "actions-options",
     "actions-pagetree-mountroot": "actions-pagetree-mount",
     "actions-document-paste-after": "actions-paste-after",
     "actions-add-placeholder": "actions-placeholder-add",
     "actions-add": "actions-plus",
+    "apps-toolbar-menu-help": "actions-question-circle",
     "actions-system-help-open": "actions-question",
     "actions-edit-redo": "actions-redo",
     "actions-system-refresh": "actions-refresh",
@@ -5731,11 +5690,10 @@
     "actions-document-save-translation": "actions-save-translation",
     "actions-document-save-view": "actions-save-view",
     "actions-document-save": "actions-save",
+    "apps-toolbar-menu-search": "actions-search",
     "information-webserver": "actions-server",
     "share-alt": "actions-share-alt",
     "actions-check-markstate": "actions-square",
-    "actions-system-shortcut-active": "actions-star",
-    "actions-system-shortcut-new": "actions-star",
     "actions-version-swap-version": "actions-swap",
     "actions-version-swap-workspace": "actions-swap",
     "sysnote-type-3": "actions-thumbtack",
@@ -5747,6 +5705,7 @@
     "actions-system-backend-user-switch": "actions-user-switch",
     "actions-variable-select": "actions-variable-add",
     "information-application-context": "actions-window-cog",
+    "apps-toolbar-menu-workspace": "actions-workspace",
     "empty-empty": "miscellaneous-placeholder",
     "module-templates": "module-template",
     "module-tstemplate": "module-tsconfig",

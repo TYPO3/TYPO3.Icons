@@ -1,5 +1,6 @@
 alias:
   - sysnote-type-1
+  - actions-system-extension-configure
 changes:
   - 1.9.0
   - 1.10.0
