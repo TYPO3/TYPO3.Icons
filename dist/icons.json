@@ -301,6 +301,13 @@
       "sprite": "sprites/actions.svg#actions-book",
       "bidi": false
     },
+    "actions-bookmark": {
+      "identifier": "actions-bookmark",
+      "category": "actions",
+      "svg": "svgs/actions/actions-bookmark.svg",
+      "sprite": "sprites/actions.svg#actions-bookmark",
+      "bidi": false
+    },
     "actions-brand-apple": {
       "identifier": "actions-brand-apple",
       "category": "actions",
