@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.4.2] - 2025-12-05
+
+99cf06be1 [FEATURE] Modernize actions-star
+783782818 [FEATURE] Add actions-bookmark
+0e5d483bc [FEATURE] Modernize actions-bolt
+5eb5f3658 [FEATURE] Add panel collapse icons
+8104258a5 [TASK] Update Versions
+
+
 ## [4.4.1] - 2025-11-07
 
 67f82b968 [TASK] Improve bidi detection
