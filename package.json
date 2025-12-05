@@ -49,6 +49,7 @@
   "sass": "dist/icons.scss",
   "style": "dist/icons.css",
   "scripts": {
+    "build": "npm run stylelint && npm run icons-build && npm run version-build && npm run site-build",
     "site-serve": "http-server -c-1 ./_site",
     "site-refresh": "gulp icons && gulp site",
     "site-build": "gulp site",
