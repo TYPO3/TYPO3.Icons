@@ -280,6 +280,13 @@
       "sprite": "sprites/actions.svg#actions-bell",
       "bidi": false
     },
+    "actions-bolt-alt": {
+      "identifier": "actions-bolt-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-bolt-alt.svg",
+      "sprite": "sprites/actions.svg#actions-bolt-alt",
+      "bidi": false
+    },
     "actions-bolt": {
       "identifier": "actions-bolt",
       "category": "actions",
