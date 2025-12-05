@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.4.3] - 2025-12-05
+
+278a5f1d2 [TASK] Migrate legacy toolbar icons to actions
+6952827ba [TASK] Update versions
+7a1f284e4 [TASK] Add build command
+
+
 ## [4.4.2] - 2025-12-05
 
 99cf06be1 [FEATURE] Modernize actions-star
