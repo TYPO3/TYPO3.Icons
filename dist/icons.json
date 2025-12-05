@@ -1981,6 +1981,34 @@
       "sprite": "sprites/actions.svg#actions-pagetree",
       "bidi": false
     },
+    "actions-panel-collapse-end": {
+      "identifier": "actions-panel-collapse-end",
+      "category": "actions",
+      "svg": "svgs/actions/actions-panel-collapse-end.svg",
+      "sprite": "sprites/actions.svg#actions-panel-collapse-end",
+      "bidi": true
+    },
+    "actions-panel-collapse-start": {
+      "identifier": "actions-panel-collapse-start",
+      "category": "actions",
+      "svg": "svgs/actions/actions-panel-collapse-start.svg",
+      "sprite": "sprites/actions.svg#actions-panel-collapse-start",
+      "bidi": true
+    },
+    "actions-panel-expand-end": {
+      "identifier": "actions-panel-expand-end",
+      "category": "actions",
+      "svg": "svgs/actions/actions-panel-expand-end.svg",
+      "sprite": "sprites/actions.svg#actions-panel-expand-end",
+      "bidi": true
+    },
+    "actions-panel-expand-start": {
+      "identifier": "actions-panel-expand-start",
+      "category": "actions",
+      "svg": "svgs/actions/actions-panel-expand-start.svg",
+      "sprite": "sprites/actions.svg#actions-panel-expand-start",
+      "bidi": true
+    },
     "actions-paperplane": {
       "identifier": "actions-paperplane",
       "category": "actions",
