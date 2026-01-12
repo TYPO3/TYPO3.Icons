@@ -11,9 +11,39 @@
 
     <div class="d-flex mb-4 align-items-center">
         <h2 class="mb-0">{{ category.title }}</h2>
-        {%- include '_filters.html.twig' -%}
+        {%- include '_filters.html.twig' with { showBidiFilter: not category.rendering.menuview } -%}
     </div>
 
+    {%- if category.rendering.menuview -%}
+    <div class="menuview" id="iconlist">
+        {%- for iconIdentifier in category.icons -%}
+            {%- set icon = icons[iconIdentifier] -%}
+            <a
+                class="menuview-item"
+                data-type="icon"
+                data-identifier="{{ icon.identifier }}"
+                data-search="{{ icon.identifier }} {{ icon._meta.tags|join(' ') }}"
+                href="{{ pathPrefix }}icons/{{ category.identifier }}/{{ icon.identifier }}.html"
+                title="{{ icon.identifier }}"
+            >
+                {%- for colorVariant in ['light', 'dark', 'accent1', 'accent2', 'accent3'] -%}
+                <span class="modulemenu-preview" data-color="{{ colorVariant }}">
+                    <span class="modulemenu-action">
+                        <span class="modulemenu-icon">
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: iconIdentifier,
+                                iconSize: 'medium',
+                                iconSpinning: category.rendering.spinning
+                            } -%}
+                        </span>
+                        <span class="modulemenu-name">{{ icon.identifier }}</span>
+                    </span>
+                </span>
+                {%- endfor -%}
+            </a>
+        {%- endfor -%}
+    </div>
+    {%- else -%}
     <div class="icongrid" id="iconlist">
         {%- for iconIdentifier in category.icons -%}
             {%- set icon = icons[iconIdentifier] -%}
@@ -46,5 +76,6 @@
             </a>
         {%- endfor -%}
     </div>
+    {%- endif -%}
 
 {% endblock %}

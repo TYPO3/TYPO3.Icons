@@ -1,0 +1,110 @@
+//
+// Menuview (TYPO3 Module Menu style)
+//
+.menuview {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.menuview-item {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    text-decoration: none;
+
+    &:first-child {
+        .modulemenu-preview {
+            --modulemenu-padding-top: 8px;
+            --modulemenu-preview-border-top-radius: 4px;
+        }
+    }
+
+    &:last-child {
+        .modulemenu-preview {
+            --modulemenu-padding-bottom: 8px;
+            --modulemenu-preview-border-bottom-radius: 4px;
+        }
+    }
+}
+.menuview-item:hover,
+.menuview-item:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+// Module menu preview container
+.modulemenu-preview {
+    --modulemenu-color: #212121;
+    --modulemenu-bg: #f8f9fa;
+    --modulemenu-padding-top: 0;
+    --modulemenu-padding-bottom: 0;
+    --modulemenu-padding-x: 8px;
+    --modulemenu-preview-border-top-radius: 0;
+    --modulemenu-preview-border-bottom-radius: 0;
+    display: grid;
+    padding: var(--modulemenu-padding-top) var(--modulemenu-padding-x) var(--modulemenu-padding-bottom) var(--modulemenu-padding-x);
+    border-radius: var(--modulemenu-preview-border-top-radius) var(--modulemenu-preview-border-top-radius) var(--modulemenu-preview-border-bottom-radius) var(--modulemenu-preview-border-bottom-radius);
+    width: 300px;
+    background-color: var(--modulemenu-bg);
+    color: var(--modulemenu-color);
+}
+.modulemenu-preview[data-color="dark"] {
+    --modulemenu-color: #ffffff;
+    --modulemenu-bg: #343a40;
+}
+.modulemenu-preview[data-color="accent1"] {
+    --modulemenu-color: #ffffff;
+    --modulemenu-bg: #271f47;
+}
+.modulemenu-preview[data-color="accent2"] {
+    --modulemenu-color: #ffffff;
+    --modulemenu-bg: #1f4736;
+}
+.modulemenu-preview[data-color="accent3"] {
+    --modulemenu-color: #212121;
+    --modulemenu-bg: #dee2ff;
+}
+
+// Module menu action (the clickable item)
+.modulemenu-action {
+    display: flex;
+    min-width: 42px;
+    padding: 4px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 9px;
+    text-align: start;
+    color: var(--modulemenu-color);
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: background-color .15s ease, border-color .15s ease;
+}
+.menuview-item:hover .modulemenu-action,
+.menuview-item:focus .modulemenu-action {
+    background-color: color-mix(in srgb, var(--modulemenu-bg), var(--modulemenu-color) 10%);
+    border-color: color-mix(in srgb, var(--modulemenu-bg), var(--modulemenu-color) 20%);
+}
+
+// Module menu icon
+.modulemenu-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+// Module menu name
+.modulemenu-name {
+    flex-grow: 1;
+    margin-inline-start: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}

@@ -67,9 +67,11 @@ const options = {
         },
         module: {
             preview: true,
+            menuview: true,
         },
         modulegroup: {
             preview: true,
+            menuview: true,
         },
         overlay: {
             overlay: true,

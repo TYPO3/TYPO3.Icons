@@ -1,9 +1,11 @@
 <div class="d-flex flex-nowrap ms-auto gap-4 align-items-center">
+    {%- if showBidiFilter is not defined or showBidiFilter -%}
     <div class="form-check form-switch mb-0">
         <input class="form-check-input" type="checkbox" id="bidiFilter" autocomplete="off">
         <label class="form-check-label" for="bidiFilter" title="Show only icons with BiDi support">
             BiDi
         </label>
     </div>
+    {%- endif -%}
     <input class="form-control search mb-0" id="search" placeholder="Start typing to filter..." autocomplete="off">
 </div>

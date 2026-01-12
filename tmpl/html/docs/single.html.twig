@@ -41,9 +41,9 @@
         </div>
     </div>
 
-    {%- if category.identifier in ['actions', 'apps', 'content', 'default', 'form', 'information', 'mimetypes', 'status', 'spinner'] -%}
+    {%- if category.identifier in ['actions', 'apps', 'content', 'default', 'form', 'information', 'mimetypes', 'module', 'modulegroup', 'status', 'spinner'] -%}
         <div class="mb-4">
-            <div class="iconstage">
+            <div class="iconstage"{% if category.identifier in ['module', 'modulegroup'] %} style="--iconstage-icon-base-size: 32"{% endif %}>
                 <div class="iconstage-icon">
                     {%- include '_icon.html.twig' with {
                         iconIdentifier: icon.identifier,
@@ -81,6 +81,30 @@
                     {%- endfor -%}
                 </div>
             {%- endfor -%}
+        </div>
+    {%- endif -%}
+
+    {%- if category.rendering.menuview -%}
+        <div class="section">
+            <h2 class="mb-3">Module Menu Preview</h2>
+            <div class="menuview">
+                <div class="menuview-item">
+                    {%- for colorVariant in ['light', 'dark', 'accent1', 'accent2', 'accent3'] -%}
+                    <span class="modulemenu-preview" data-color="{{ colorVariant }}">
+                        <span class="modulemenu-action">
+                            <span class="modulemenu-icon">
+                                {%- include '_icon.html.twig' with {
+                                    iconIdentifier: icon.identifier,
+                                    iconSize: 'medium',
+                                    iconSpinning: category.rendering.spinning
+                                } -%}
+                            </span>
+                            <span class="modulemenu-name">{{ icon.identifier }}</span>
+                        </span>
+                    </span>
+                    {%- endfor -%}
+                </div>
+            </div>
         </div>
     {%- endif -%}
 
