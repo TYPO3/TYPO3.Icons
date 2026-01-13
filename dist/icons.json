@@ -3339,6 +3339,13 @@
       "sprite": "sprites/content.svg#content-book",
       "bidi": false
     },
+    "content-bookmark": {
+      "identifier": "content-bookmark",
+      "category": "content",
+      "svg": "svgs/content/content-bookmark.svg",
+      "sprite": "sprites/content.svg#content-bookmark",
+      "bidi": false
+    },
     "content-briefcase": {
       "identifier": "content-briefcase",
       "category": "content",
