@@ -5131,6 +5131,13 @@
       "sprite": "sprites/module.svg#module-permission",
       "bidi": false
     },
+    "module-qrcode": {
+      "identifier": "module-qrcode",
+      "category": "module",
+      "svg": "svgs/module/module-qrcode.svg",
+      "sprite": "sprites/module.svg#module-qrcode",
+      "bidi": false
+    },
     "module-reactions": {
       "identifier": "module-reactions",
       "category": "module",
