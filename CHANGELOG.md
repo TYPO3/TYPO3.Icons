@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [4.4.4] - 2026-01-13
+
+a56d53705 [FEATURE] Add content-bookmark icon
+fbbadb5eb [FEATURE] Add bookmark icons for add, remove and multiple
+e1f892373 [TASK] Update actions
+8512a69e7 [TASK] Update packages
+3c3c692fe [TASK] Add qrcode module icon
+a8079d89b [TASK] Extend module preview
+e68b5995f [TASK] Update versions
+
+
 ## [4.4.3] - 2025-12-05
 
 278a5f1d2 [TASK] Migrate legacy toolbar icons to actions
