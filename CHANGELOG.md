@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.0.0] - 2026-01-15
+
+212815c9f [FEATURE] Update module icons for better theming support
+19657d7f2 [TASK] Update versions
+
+
 ## [4.4.4] - 2026-01-13
 
 a56d53705 [FEATURE] Add content-bookmark icon
