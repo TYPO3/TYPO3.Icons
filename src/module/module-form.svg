@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
-<rect fill="#3B7EB0" width="64" height="64"/>
-<rect x="14" y="14" fill="#FFFFFF" width="32" height="36"/>
-<rect x="22" y="42" fill="#3B7EB0" width="8" height="4"/>
-<rect x="32" y="42" opacity="0.5" fill="#3B7EB0" width="8" height="4"/>
-<rect x="22" y="18" fill="#3B7EB0" width="14" height="2"/>
-<rect x="22" y="32" fill="#3B7EB0" width="2" height="2"/>
-<rect x="22" y="36" fill="#3B7EB0" width="2" height="2"/>
-<rect x="26" y="32" opacity="0.5" fill="#3B7EB0" width="16" height="2"/>
-<rect x="26" y="36" opacity="0.5" fill="#3B7EB0" width="16" height="2"/>
-<rect x="22" y="22" opacity="0.5" fill="#3B7EB0" width="20" height="8"/>
-<rect x="14" y="14" fill="#3B7EB0" width="4" height="4"/>
-<rect x="16" y="14" opacity="0.5" fill="#3B7EB0" width="2" height="36"/>
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
+  <rect x="28" y="36" width="16" height="4" rx="2" ry="2" fill="var(--icon-color-accent, #ff8700)"/>
+  <path d="M26,24h-4c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2h4v4Z" fill="var(--icon-color-accent, #ff8700)"/>
+  <g opacity=".6">
+    <path d="M42,24h-16v-4h16c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2Z" fill="currentColor"/>
+  </g>
+  <path d="M26,32h-4c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2h4v4Z" fill="var(--icon-color-accent, #ff8700)"/>
+  <g opacity=".6">
+    <path d="M42,32h-16v-4h16c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2Z" fill="currentColor"/>
+  </g>
+  <path d="M48,16v28H16v-28h32M50,12H14c-1.1,0-2,.9-2,2v32c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2V14c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>
 </svg>

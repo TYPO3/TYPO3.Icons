@@ -1,14 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
-<rect id="environment-background" fill="#428954" width="64" height="64"/>
-<polygon fill="#FFFFFF" points="45,18 19,18 16,22 16,36 48,36 48,22 "/>
-<polygon opacity="0.5" fill="#428954" enable-background="new    " points="48,22 16,22 19,18 45,18 "/>
-<path fill="#428954" d="M40,24h6v2h-6V24z"/>
-<path fill="#428954" d="M40,32h6v2h-6V32z"/>
-<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,24h20v2H18V24z"/>
-<path fill="#428954" d="M40,28h6v2h-6V28z"/>
-<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,28h20v2H18V28z"/>
-<path opacity="0.5" fill="#428954" enable-background="new    " d="M18,32h20v2H18V32z"/>
-<path opacity="0.75" fill="#FFFFFF" d="M48,42v2H16v-2H48z"/>
-<path fill="#FFFFFF" d="M36,40v6h-8v-6h2v-4h4v4H36z"/>
-<path opacity="0.5" fill="#428954" enable-background="new    " d="M30,36h4v1h-4V36z"/>
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
+  <path d="M42,24h2v4h-2c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z" transform="translate(84 52) rotate(-180)" fill="var(--icon-color-accent, #ff8700)"/>
+  <g opacity=".6">
+    <path d="M22,28h18v-4h-18c-1.1,0-2,.9-2,2h0c0,1.1.9,2,2,2Z" fill="currentColor"/>
+  </g>
+  <path d="M48,16v16H16v-16h32M50,12H14c-1.1,0-2,.9-2,2v20c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2V14c0-1.1-.9-2-2-2h0Z" fill="var(--icon-color-accent, #ff8700)"/>
+  <path d="M50,46h-12c0-1.1-.9-2-2-2h-2v-8h-4v8h-2c-1.1,0-2,.9-2,2h-12c-1.1,0-2,.9-2,2s.9,2,2,2h12c0,1.1.9,2,2,2h8c1.1,0,2-.9,2-2h12c1.1,0,2-.9,2-2s-.9-2-2-2Z" fill="currentColor"/>
 </svg>

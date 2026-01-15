@@ -28,6 +28,7 @@ $icon-unify-modifier:   .86 !default;
 $icon-opacity-disabled: .5 !default;
 :root {
     --icon-color-primary: currentColor;
+    --icon-color-accent: #ff8700;
     --icon-size-small: #{$icon-size-small};
     --icon-size-medium: #{$icon-size-medium};
     --icon-size-large: #{$icon-size-large};
@@ -44,7 +45,7 @@ $icon-opacity-disabled: .5 !default;
     display: inline-flex;
     overflow: hidden;
     white-space: nowrap;
-    color: var(--icon-color-primary);
+    color: var(--icon-color-primary, currentColor);
     height: var(--icon-size, 1em);
     width: var(--icon-size, 1em);
     line-height: var(--icon-size, 1em);

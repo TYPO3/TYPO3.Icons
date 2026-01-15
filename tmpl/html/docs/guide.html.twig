@@ -225,10 +225,119 @@
     <hr class="my-4">
 
     <h3>Module Icons</h3>
+    <p>Module icons are used in the TYPO3 backend navigation. They are designed at 64x64px but typically rendered at 32x32px.</p>
+
+    <h4>Canvas &amp; Scaling</h4>
     <dl>
-        <dt>Size</dt>
+        <dt>Canvas Size</dt>
         <dd>64x64px</dd>
+
+        <dt>Rendered Size</dt>
+        <dd>32x32px (typical display size)</dd>
+
+        <dt>Protective Space</dt>
+        <dd>12px from edges (content area: 40x40px centered)</dd>
+
+        <dt>Stroke Width</dt>
+        <dd>4px (scales to 2px at 32x32)</dd>
+
+        <dt>Corner Radius</dt>
+        <dd>2px for small elements, 4px for larger shapes</dd>
     </dl>
+
+    <h4>Colors</h4>
+    <dl>
+        <dt>Primary Elements</dt>
+        <dd>Use <code>fill="currentColor"</code> for main shapes. This allows the icon to inherit the text color from its context.</dd>
+
+        <dt>Secondary Elements</dt>
+        <dd>Use <code>fill="currentColor"</code> with <code>opacity=".6"</code> for less prominent details.</dd>
+
+        <dt>Accent Elements</dt>
+        <dd>
+            Use <code>fill="var(--icon-color-accent, #ff8700)"</code> for highlighted parts of the icon.
+            The CSS variable allows theming while the fallback ensures the icon works standalone.
+        </dd>
+    </dl>
+
+    <h4>Structure Example</h4>
+    {{ makros.codeblock('
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Primary shape -->
+  <path d="..." fill="currentColor"/>
+
+  <!-- Secondary/detail elements -->
+  <path d="..." fill="currentColor" opacity=".6"/>
+
+  <!-- Accent highlight -->
+  <rect ... fill="var(--icon-color-accent, #ff8700)"/>
+</svg>
+    ', 'xml') }}
+
+    <h4>Example</h4>
+    <p>Module icons adapt to their context. The <code>currentColor</code> elements inherit the text color, while the accent color can be customized via the <code>--icon-color-accent</code> CSS variable.</p>
+    <div class="row my-3">
+        <div class="col-md-4">
+            <strong>Light Background</strong>
+            <div class="p-3 mt-2 rounded" style="background-color: #ffffff; color: #212121;">
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-list',
+                    iconSize: 'large'
+                } -%}
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-page',
+                    iconSize: 'large'
+                } -%}
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-filelist',
+                    iconSize: 'large'
+                } -%}
+            </div>
+        </div>
+        <div class="col-md-4">
+            <strong>Dark Background</strong>
+            <div class="p-3 mt-2 rounded" style="background-color: #212121; color: #ffffff;">
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-list',
+                    iconSize: 'large'
+                } -%}
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-page',
+                    iconSize: 'large'
+                } -%}
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-filelist',
+                    iconSize: 'large'
+                } -%}
+            </div>
+        </div>
+        <div class="col-md-4">
+            <strong>Custom Accent</strong>
+            <div class="p-3 mt-2 rounded" style="background-color: #212121; color: #ffffff; --icon-color-accent: #79A548;">
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-list',
+                    iconSize: 'large'
+                } -%}
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-page',
+                    iconSize: 'large'
+                } -%}
+                {%- include '_icon.html.twig' with {
+                    iconIdentifier: 'module-filelist',
+                    iconSize: 'large'
+                } -%}
+            </div>
+        </div>
+    </div>
+
+    <h4>Design Tips</h4>
+    <ul>
+        <li>Design at 64x64 but preview at 32x32 to ensure clarity at the rendered size</li>
+        <li>Use even stroke widths (4px recommended) for crisp scaling</li>
+        <li>Keep details simple - fine lines may disappear at smaller sizes</li>
+        <li>Test with both light and dark backgrounds since <code>currentColor</code> adapts</li>
+        <li>Limit accent color usage to small highlights that draw attention to the icon's purpose</li>
+    </ul>
 
     <hr class="my-4">
 

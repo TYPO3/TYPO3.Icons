@@ -1,15 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
-<rect fill="#A4276A" width="64" height="64"/>
-<path opacity="0.5" fill="#FFFFFF" d="M40,16h10v-1c0-0.5-0.5-1-1-1h-9V16z"/>
-<rect x="28" y="14" opacity="0.75" fill="#FFFFFF" width="10" height="2"/>
-<path fill="#FFFFFF" d="M40,18h-2H28h-2v-2v-2H15c-0.5,0-1,0.5-1,1v34c0,0.5,0.5,1,1,1h34c0.5,0,1-0.5,1-1V18H40z"/>
-<rect x="38" y="22" fill="#A4276A" width="8" height="14"/>
-<rect x="18" y="22" fill-rule="evenodd" clip-rule="evenodd" fill="#A4276A" width="18" height="14"/>
-<rect x="38" y="24" opacity="0.5" fill="#FFFFFF" width="8" height="12"/>
-<polygon opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="36,36 18,36 18,32 24,30 28,32 32,30 36,24
-	"/>
-<rect x="28" y="40" fill="#A4276A" width="18" height="2"/>
-<rect x="28" y="44" fill="#A4276A" width="10" height="2"/>
-<rect x="18" y="40" fill="#A4276A" width="8" height="6"/>
-<rect x="18" y="42" opacity="0.5" fill="#FFFFFF" width="8" height="4"/>
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
+  <path d="M50,42h-4v-4c0-1.1-.9-2-2-2s-2,.9-2,2v4h-4c-1.1,0-2,.9-2,2s.9,2,2,2h4v4c0,1.1.9,2,2,2s2-.9,2-2v-4h4c1.1,0,2-.9,2-2s-.9-2-2-2Z" fill="var(--icon-color-accent, #ff8700)" class="icon-accent"/>
+  <path d="M26,16v10h-10v-10h10M28,12h-14c-1.1,0-2,.9-2,2v14c0,1.1.9,2,2,2h14c1.1,0,2-.9,2-2v-14c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>
+  <g opacity=".6">
+    <path d="M50,30h-14c-1.1,0-2-.9-2-2v-14c0-1.1.9-2,2-2h14c1.1,0,2,.9,2,2v14c0,1.1-.9,2-2,2Z" fill="currentColor"/>
+  </g>
+  <g opacity=".6">
+    <path d="M28,52h-14c-1.1,0-2-.9-2-2v-14c0-1.1.9-2,2-2h14c1.1,0,2,.9,2,2v14c0,1.1-.9,2-2,2Z" fill="currentColor"/>
+  </g>
 </svg>

@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
-<rect fill="#EE8433" width="64" height="64"/>
-<path fill="#FFFFFF" d="M18,15v34c0,0.552,0.448,1,1,1h26c0.552,0,1-0.448,1-1V22l-8-8H19C18.448,14,18,14.448,18,15z"/>
-<path opacity="0.6" fill="#EE8433" enable-background="new    " d="M38,21v-7l8,8h-7C38.448,22,38,21.552,38,21z"/>
-<rect x="24" y="42" fill="#EE8433" width="16" height="2"/>
-<rect x="24" y="38" fill="#EE8433" width="16" height="2"/>
-<rect x="24" y="30" fill="#EE8433" width="16" height="2"/>
-<rect x="24" y="34" fill="#EE8433" width="16" height="2"/>
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
+  <path d="M34.34,16l9.66,9.66v22.34h-24V16h14.34M36,12h-18c-1.1,0-2,.9-2,2v36c0,1.1.9,2,2,2h28c1.1,0,2-.9,2-2v-26l-12-12h0Z" fill="var(--icon-color-accent, #ff8700)"/>
+  <path d="M38,36h-12c-1.1,0-2-.9-2-2s.9-2,2-2h12c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor"/>
+  <path d="M38,44h-12c-1.1,0-2-.9-2-2s.9-2,2-2h12c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor"/>
+  <g opacity=".6">
+    <path d="M34,16v7.67c0,1.12,1.19,2.33,2.33,2.33h7.67v-.34l-9.66-9.66h-.34Z" fill="currentColor"/>
+  </g>
 </svg>

@@ -1,18 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
-<rect fill="#8B2F60" width="64" height="64"/>
-<g>
-	<path opacity="0.5" fill="#FFFFFF" d="M44,50h1c0.6,0,1-0.4,1-1v-5h-2V50z"/>
-	<rect x="44" y="36" opacity="0.75" fill="#FFFFFF" width="2" height="6"/>
-	<rect x="44" y="28" fill="#FFFFFF" width="2" height="6"/>
-	<path fill="#FFFFFF" d="M45,14H17c-0.6,0-1,0.4-1,1v34c0,0.6,0.4,1,1,1h25v-6v-2v-6v-2v-6v-2h2h2V15C46,14.4,45.6,14,45,14z"/>
-</g>
-<rect x="20" y="18" fill="#8B2F60" width="16" height="2"/>
-<rect x="20" y="22" fill="#8B2F60" width="10" height="2"/>
-<rect x="20" y="26" fill="#8B2F60" width="10" height="2"/>
-<rect x="20" y="34" fill="#8B2F60" width="4" height="12"/>
-<rect x="26" y="38" fill="#8B2F60" width="4" height="8"/>
-<rect x="32" y="32" fill="#8B2F60" width="4" height="14"/>
-<rect x="20" y="40" opacity="0.5" fill="#FFFFFF" width="4" height="6"/>
-<rect x="26" y="40" opacity="0.5" fill="#FFFFFF" width="4" height="6"/>
-<rect x="32" y="34" opacity="0.5" fill="#FFFFFF" width="4" height="12"/>
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
+  <path d="M24,48h-8c-2.21,0-4-1.79-4-4v-28c0-2.21,1.79-4,4-4h32c2.21,0,4,1.79,4,4v12c0,1.1-.9,2-2,2s-2-.9-2-2v-12H16v28h8c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor"/>
+  <path d="M38,52c-.53,0-1.04-.21-1.41-.59l-6-6c-.78-.78-.78-2.05,0-2.83s2.05-.78,2.83,0l4.47,4.47,10.59-12.36c.72-.84,1.98-.93,2.82-.22.84.72.94,1.98.22,2.82l-12,14c-.36.42-.88.68-1.44.7-.03,0-.05,0-.08,0Z" fill="var(--icon-color-accent, #ff8700)"/>
+  <g opacity=".6">
+    <rect x="20" y="22" width="24" height="4" rx="2" ry="2" fill="currentColor"/>
+  </g>
+  <g opacity=".6">
+    <rect x="20" y="30" width="24" height="4" rx="2" ry="2" fill="currentColor"/>
+  </g>
 </svg>

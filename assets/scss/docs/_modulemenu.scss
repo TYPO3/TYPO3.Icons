@@ -49,21 +49,32 @@
     background-color: var(--modulemenu-bg);
     color: var(--modulemenu-color);
 }
+
+.modulemenu-preview[data-color="light"] {
+    --modulemenu-color: #212121;
+    --modulemenu-bg: #f8f9fa;
+    --icon-color-accent: #4083e1;
+}
+
 .modulemenu-preview[data-color="dark"] {
     --modulemenu-color: #ffffff;
     --modulemenu-bg: #343a40;
+    --icon-color-accent: #378aff;
 }
 .modulemenu-preview[data-color="accent1"] {
     --modulemenu-color: #ffffff;
     --modulemenu-bg: #271f47;
+    --icon-color-accent: #8161ff;
 }
 .modulemenu-preview[data-color="accent2"] {
     --modulemenu-color: #ffffff;
     --modulemenu-bg: #1f4736;
+    --icon-color-accent: #4ee3a5;
 }
 .modulemenu-preview[data-color="accent3"] {
     --modulemenu-color: #212121;
     --modulemenu-bg: #dee2ff;
+    --icon-color-accent: #515db4;
 }
 
 // Module menu action (the clickable item)

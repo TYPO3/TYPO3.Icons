@@ -1,4 +1,5 @@
-alias: []
+alias:
+  - module-version
 changes:
   - 2.0.2
   - 2.0.3

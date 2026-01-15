@@ -1,26 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
-<g>
-	<rect y="0" width="64" height="64" fill="#439b92"/>
-	<g opacity=".75">
-		<rect x="12" y="42" width="40" height="8" rx="2" ry="2" fill="#fff"/>
-		<rect x="14" y="44" width="36" height="4" fill="#439b92" opacity=".5"/>
-		<rect x="20" y="42" width="10" height="8" fill="#439b92" opacity=".75"/>
-		<rect x="22" y="40" width="6" height="12" rx="2" ry="2" fill="#fff"/>
-		<rect x="24" y="42" width="2" height="8" fill="#439b92" opacity=".75"/>
-	</g>
-	<g>
-		<rect x="12" y="28" width="40" height="8" rx="2" ry="2" fill="#fff"/>
-		<rect x="14" y="30" width="36" height="4" fill="#439b92" opacity=".5"/>
-		<rect x="36" y="28" width="10" height="8" fill="#439b92" opacity=".75"/>
-		<rect x="38" y="26" width="6" height="12" rx="2" ry="2" fill="#fff"/>
-		<rect x="40" y="28" width="2" height="8" fill="#439b92"/>
-	</g>
-	<g opacity=".75">
-		<rect x="12" y="14" width="40" height="8" rx="2" ry="2" fill="#fff"/>
-		<rect x="14" y="16" width="36" height="4" fill="#439b92" opacity=".5"/>
-		<rect x="28" y="14" width="10" height="8" fill="#439b92" opacity=".75"/>
-		<rect x="30" y="12" width="6" height="12" rx="2" ry="2" fill="#fff"/>
-		<rect x="32" y="14" width="2" height="8" fill="#439b92" opacity=".75"/>
-	</g>
-</g>
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
+  <path d="M18,48h-2c-2.21,0-4-1.79-4-4v-28c0-2.21,1.79-4,4-4h32c2.21,0,4,1.79,4,4v10c0,1.1-.9,2-2,2s-2-.9-2-2v-10H16v28h2c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor"/>
+  <path d="M30,52c-1.1,0-2-.9-2-2v-20c0-1.1.9-2,2-2s2,.9,2,2v20c0,1.1-.9,2-2,2Z" fill="currentColor"/>
+  <path d="M44,52c-1.1,0-2-.9-2-2v-20c0-1.1.9-2,2-2s2,.9,2,2v20c0,1.1-.9,2-2,2Z" fill="currentColor"/>
+  <rect x="24" y="40" width="12" height="8" rx="1.33" ry="1.33" fill="var(--icon-color-accent, #ff8700)"/>
+  <rect x="38" y="32" width="12" height="8" rx="1.33" ry="1.33" fill="var(--icon-color-accent, #ff8700)"/>
+  <g opacity=".6">
+    <rect x="16" y="16" width="32" height="8" fill="currentColor"/>
+  </g>
 </svg>
