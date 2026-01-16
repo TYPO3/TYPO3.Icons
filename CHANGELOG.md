@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.0.1] - 2026-01-16
+
+f9fa18cc1 [TASK] Adjust module icons and add missing styleguide and reactions
+a21c06403 [TASK] Update versions
+
+
 ## [5.0.0] - 2026-01-15
 
 212815c9f [FEATURE] Update module icons for better theming support
