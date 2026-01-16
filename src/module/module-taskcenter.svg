@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
   <path d="M48,16v8H16v-8h32M50,12H14c-1.1,0-2,.9-2,2v12c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2v-12c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>
-  <rect x="12" y="32" width="40" height="8" rx="2" ry="2" fill="currentColor" opacity=".6"/>
-  <rect x="12" y="44" width="40" height="8" rx="2" ry="2" fill="currentColor" opacity=".6"/>
+  <rect x="12" y="32" width="40" height="8" rx="2" ry="2" fill="currentColor" opacity=".4"/>
+  <rect x="12" y="44" width="40" height="8" rx="2" ry="2" fill="currentColor" opacity=".4"/>
   <path d="M14,32h22v8H14c-1.1,0-2-.9-2-2v-4c0-1.1.9-2,2-2Z" fill="currentColor"/>
   <path d="M14,44h14v8h-14c-1.1,0-2-.9-2-2v-4c0-1.1.9-2,2-2Z" fill="currentColor"/>
   <rect x="16" y="16" width="24" height="8" fill="var(--icon-color-accent, #ff8700)"/>

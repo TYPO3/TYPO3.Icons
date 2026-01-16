@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
   <rect x="20" y="24" width="4" height="4" rx="2" ry="2" fill="var(--icon-color-accent, #ff8700)"/>
-  <g opacity=".6">
+  <g opacity=".4">
     <rect x="28" y="24" width="16" height="4" rx="2" ry="2" fill="currentColor"/>
   </g>
-  <g opacity=".6">
+  <g opacity=".4">
     <rect x="28" y="32" width="16" height="4" rx="2" ry="2" fill="currentColor"/>
   </g>
-  <g opacity=".6">
+  <g opacity=".4">
     <rect x="28" y="40" width="16" height="4" rx="2" ry="2" fill="currentColor"/>
   </g>
   <rect x="20" y="32" width="4" height="4" rx="2" ry="2" fill="var(--icon-color-accent, #ff8700)"/>

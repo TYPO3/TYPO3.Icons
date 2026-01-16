@@ -5229,6 +5229,13 @@
       "sprite": "sprites/module.svg#module-sites",
       "bidi": false
     },
+    "module-styleguide": {
+      "identifier": "module-styleguide",
+      "category": "module",
+      "svg": "svgs/module/module-styleguide.svg",
+      "sprite": "sprites/module.svg#module-styleguide",
+      "bidi": false
+    },
     "module-taskcenter": {
       "identifier": "module-taskcenter",
       "category": "module",
@@ -5269,6 +5276,13 @@
       "category": "module",
       "svg": "svgs/module/module-viewpage.svg",
       "sprite": "sprites/module.svg#module-viewpage",
+      "bidi": false
+    },
+    "module-webhooks": {
+      "identifier": "module-webhooks",
+      "category": "module",
+      "svg": "svgs/module/module-webhooks.svg",
+      "sprite": "sprites/module.svg#module-webhooks",
       "bidi": false
     },
     "module-workspaces": {
@@ -5756,6 +5770,7 @@
     "information-application-context": "actions-window-cog",
     "apps-toolbar-menu-workspace": "actions-workspace",
     "empty-empty": "miscellaneous-placeholder",
+    "module-cshmanual": "module-documentation",
     "module-version": "module-generic",
     "module-templates": "module-template",
     "module-tstemplate": "module-tsconfig",

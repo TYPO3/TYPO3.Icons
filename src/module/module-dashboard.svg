@@ -2,10 +2,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
   <path d="M50,42h-4v-4c0-1.1-.9-2-2-2s-2,.9-2,2v4h-4c-1.1,0-2,.9-2,2s.9,2,2,2h4v4c0,1.1.9,2,2,2s2-.9,2-2v-4h4c1.1,0,2-.9,2-2s-.9-2-2-2Z" fill="var(--icon-color-accent, #ff8700)" class="icon-accent"/>
   <path d="M26,16v10h-10v-10h10M28,12h-14c-1.1,0-2,.9-2,2v14c0,1.1.9,2,2,2h14c1.1,0,2-.9,2-2v-14c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>
-  <g opacity=".6">
+  <g opacity=".4">
     <path d="M50,30h-14c-1.1,0-2-.9-2-2v-14c0-1.1.9-2,2-2h14c1.1,0,2,.9,2,2v14c0,1.1-.9,2-2,2Z" fill="currentColor"/>
   </g>
-  <g opacity=".6">
+  <g opacity=".4">
     <path d="M28,52h-14c-1.1,0-2-.9-2-2v-14c0-1.1.9-2,2-2h14c1.1,0,2,.9,2,2v14c0,1.1-.9,2-2,2Z" fill="currentColor"/>
   </g>
 </svg>

@@ -3,7 +3,7 @@
   <path d="M36,20v20h-20v-20h20M38,16H14c-1.1,0-2,.9-2,2v24c0,1.1.9,2,2,2h24c1.1,0,2-.9,2-2v-24c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>
   <path d="M36,20v20h-20v-20h20M38,16H14c-1.1,0-2,.9-2,2v24c0,1.1.9,2,2,2h24c1.1,0,2-.9,2-2v-24c0-1.1-.9-2-2-2h0Z" fill="var(--icon-color-accent, #ff8700)"/>
   <path d="M50,24h-10v4h8v20h-20v-4h-4v6c0,1.1.9,2,2,2h24c1.1,0,2-.9,2-2v-24c0-1.1-.9-2-2-2Z" fill="currentColor"/>
-  <g opacity=".6">
+  <g opacity=".4">
     <path d="M40,18v6h8v-10c0-1.1-.9-2-2-2h-24c-1.1,0-2,.9-2,2v2h18c1.1,0,2,.9,2,2Z" fill="currentColor"/>
   </g>
 </svg>

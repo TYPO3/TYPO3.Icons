@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <path d="M16,28v2.56c0,.86.55,1.63,1.37,1.9l10.63,3.54h8l10.63-3.54c.82-.27,1.37-1.04,1.37-1.9v-2.56H16Z" fill="currentColor"/>
+  <path d="M28,40v8c0,2.21,1.79,4,4,4h0c2.21,0,4-1.79,4-4v-8h-8Z" fill="currentColor" opacity=".4"/>
+  <path d="M46,12h-28c-1.1,0-2,.9-2,2v14h4v-12h4v4c0,1.1.9,2,2,2s2-.9,2-2v-4h4v6c0,1.1.9,2,2,2s2-.9,2-2v-6h8v12h4v-14c0-1.1-.9-2-2-2Z" fill="var(--icon-color-accent, #ff8700)"/>
+</svg>

@@ -5,7 +5,7 @@
   <path d="M44,52c-1.1,0-2-.9-2-2v-20c0-1.1.9-2,2-2s2,.9,2,2v20c0,1.1-.9,2-2,2Z" fill="currentColor"/>
   <rect x="24" y="40" width="12" height="8" rx="1.33" ry="1.33" fill="var(--icon-color-accent, #ff8700)"/>
   <rect x="38" y="32" width="12" height="8" rx="1.33" ry="1.33" fill="var(--icon-color-accent, #ff8700)"/>
-  <g opacity=".6">
+  <g opacity=".4">
     <rect x="16" y="16" width="32" height="8" fill="currentColor"/>
   </g>
 </svg>

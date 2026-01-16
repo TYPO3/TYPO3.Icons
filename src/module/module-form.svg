@@ -2,11 +2,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
   <rect x="28" y="36" width="16" height="4" rx="2" ry="2" fill="var(--icon-color-accent, #ff8700)"/>
   <path d="M26,24h-4c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2h4v4Z" fill="var(--icon-color-accent, #ff8700)"/>
-  <g opacity=".6">
+  <g opacity=".4">
     <path d="M42,24h-16v-4h16c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2Z" fill="currentColor"/>
   </g>
   <path d="M26,32h-4c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2h4v4Z" fill="var(--icon-color-accent, #ff8700)"/>
-  <g opacity=".6">
+  <g opacity=".4">
     <path d="M42,32h-16v-4h16c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2Z" fill="currentColor"/>
   </g>
   <path d="M48,16v28H16v-28h32M50,12H14c-1.1,0-2,.9-2,2v32c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2V14c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
-  <g opacity=".6">
+  <g opacity=".4">
     <rect x="16" y="28" width="32" height="16" fill="currentColor"/>
   </g>
   <path d="M48,16v28H16v-28h32M50,12H14c-1.1,0-2,.9-2,2v32c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2V14c0-1.1-.9-2-2-2h0Z" fill="var(--icon-color-accent, #ff8700)"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
-  <g opacity=".6">
+  <g opacity=".4">
     <rect x="16" y="24" width="32" height="10" fill="currentColor"/>
   </g>
   <rect x="26" y="30" width="12" height="8" rx="1.33" ry="1.33" fill="var(--icon-color-accent, #ff8700)"/>

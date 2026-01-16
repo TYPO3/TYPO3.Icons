@@ -4,7 +4,7 @@
   <rect x="12" y="24" width="8" height="8" rx="2" ry="2" fill="var(--icon-color-accent, #ff8700)"/>
   <rect x="12" y="36" width="8" height="8" rx="2" ry="2" fill="var(--icon-color-accent, #ff8700)"/>
   <path d="M48,16v32h-20V16h20M50,12h-24c-1.1,0-2,.9-2,2v36c0,1.1.9,2,2,2h24c1.1,0,2-.9,2-2V14c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>
-  <path d="M42,24h-8c-1.1,0-2-.9-2-2s.9-2,2-2h8c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor" opacity=".6"/>
-  <path d="M42,32h-8c-1.1,0-2-.9-2-2s.9-2,2-2h8c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor" opacity=".6"/>
-  <path d="M42,40h-8c-1.1,0-2-.9-2-2s.9-2,2-2h8c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor" opacity=".6"/>
+  <path d="M42,24h-8c-1.1,0-2-.9-2-2s.9-2,2-2h8c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor" opacity=".4"/>
+  <path d="M42,32h-8c-1.1,0-2-.9-2-2s.9-2,2-2h8c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor" opacity=".4"/>
+  <path d="M42,40h-8c-1.1,0-2-.9-2-2s.9-2,2-2h8c1.1,0,2,.9,2,2s-.9,2-2,2Z" fill="currentColor" opacity=".4"/>
 </svg>

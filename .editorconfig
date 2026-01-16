@@ -17,8 +17,8 @@ indent_size = 4
 
 # SVG-Files
 [*.svg]
-indent_style = tab
-indent_size = 4
+indent_style = space
+indent_size = 2
 
 # TWIG-Files
 [*.twig]
