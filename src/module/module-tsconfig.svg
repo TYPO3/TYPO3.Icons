@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="34" y="28" width="14" height="16" fill="var(--icon-color-accent, #ff8700)"/>
   <g opacity=".4">
-    <rect x="34" y="28" width="14" height="16" fill="currentColor"/>
+    <path d="M48,16v28H16v-28h32M50,12H14c-1.1,0-2,.9-2,2v32c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2V14c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>
   </g>
-  <path d="M48,16v28H16v-28h32M50,12H14c-1.1,0-2,.9-2,2v32c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2V14c0-1.1-.9-2-2-2h0Z" fill="currentColor"/>
-  <polygon points="16 24 16 28 30 28 30 44 34 44 34 28 48 28 48 24 16 24" fill="var(--icon-color-accent, #ff8700)"/>
+  <polygon points="16 24 16 28 30 28 30 44 34 44 34 28 48 28 48 24 16 24" fill="currentColor"/>
 </svg>

@@ -1,8 +1,6 @@
 <?xml version="1.0" ?>
-<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 64 64">
-  <g opacity=".4">
-    <rect x="16" y="24" width="32" height="10" fill="currentColor"/>
-  </g>
-  <rect x="26" y="30" width="12" height="8" rx="1.33" ry="1.33" fill="var(--icon-color-accent, #ff8700)"/>
-  <path d="M50,20h-8v-4.2c0-2.09-1.76-3.8-3.92-3.8h-12.16c-2.16,0-3.92,1.71-3.92,3.8v4.2h-8c-1.1,0-2,.9-2,2v26c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2v-26c0-1.1-.9-2-2-2ZM26,16h12v4h-12v-4ZM48,46H16v-22h32v22Z" fill="currentColor"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="16" y="24" width="32" height="10" fill="var(--icon-color-accent, #ff8700)" opacity=".4" />
+  <path d="M50,20h-8v-4.2c0-2.09-1.76-3.8-3.92-3.8h-12.16c-2.16,0-3.92,1.71-3.92,3.8v4.2h-8c-1.1,0-2,.9-2,2v26c0,1.1.9,2,2,2h36c1.1,0,2-.9,2-2v-26c0-1.1-.9-2-2-2ZM26,16h12v4h-12v-4ZM48,46H16v-10h32v10ZM48,32H16v-8h32v8Z" fill="currentColor" />
+  <path d="M27.33,40h9.33c.74,0,1.33-.6,1.33-1.33v-2.67h-12v2.67c0,.74.6,1.33,1.33,1.33Z" fill="currentColor" />
 </svg>
