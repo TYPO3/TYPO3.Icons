@@ -1,5 +1,6 @@
 {% if iconInline %}
 {{ icon._inline|raw }}
 {% else %}
-<svg role="img"><use xlink:href="{{ pathPrefix }}dist/{{ icon.sprite }}" /></svg>
+{% set spriteParts = icon.sprite|split('#') %}
+<svg role="img"><use xlink:href="{{ pathPrefix }}dist/{{ spriteParts[0] }}?v={{ cacheBuster }}#{{ spriteParts[1] }}" /></svg>
 {% endif %}

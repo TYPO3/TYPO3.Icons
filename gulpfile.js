@@ -675,6 +675,8 @@ gulp.task('site-build', function (cb) {
             icons[iconKey]._inlineEscaped = escapeSvg(iconContent)
         }
 
+        const cacheBuster = Date.now();
+
         // Index
         templateTasks.push(new Promise((resolve, reject) => {
             gulp.src('./tmpl/html/docs/index.html.twig')
@@ -687,6 +689,7 @@ gulp.task('site-build', function (cb) {
                         categories: categories,
                         rendering: {},
                         pathPrefix: '',
+                        cacheBuster: cacheBuster,
                     }
                 }))
                 .pipe(rename('index.html'))
@@ -707,6 +710,7 @@ gulp.task('site-build', function (cb) {
                         categories: categories,
                         rendering: {},
                         pathPrefix: '',
+                        cacheBuster: cacheBuster,
                     }
                 }))
                 .pipe(rename('guide.html'))
@@ -728,6 +732,7 @@ gulp.task('site-build', function (cb) {
                             category: category,
                             categories: categories,
                             pathPrefix: '../',
+                            cacheBuster: cacheBuster,
                         }
                     }))
                     .pipe(rename(category.identifier + '.html'))
@@ -750,6 +755,7 @@ gulp.task('site-build', function (cb) {
                                 category: category,
                                 categories: categories,
                                 pathPrefix: '../../',
+                                cacheBuster: cacheBuster,
                             }
                         }))
                         .pipe(rename(iconIdentifier + '.html'))
