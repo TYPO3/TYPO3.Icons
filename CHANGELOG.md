@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.0.2] - 2026-01-30
+
+3c03eb13 [TASK] Adjust secondary opacity
+7dd20e36 [TASK] Optimize module icons and merge modulegroups
+bcf221ae [TASK] Add cache busting
+621594db [TASK] Update versions
+
+
 ## [5.0.1] - 2026-01-16
 
 f9fa18cc1 [TASK] Adjust module icons and add missing styleguide and reactions
