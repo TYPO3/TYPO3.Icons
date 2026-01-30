@@ -1,5 +1,6 @@
 alias:
   - module-beuser
   - modulegroup-user
-changes: []
+changes:
+  - 5.0.2
 tags: []

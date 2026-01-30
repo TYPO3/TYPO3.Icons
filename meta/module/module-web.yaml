@@ -1,4 +1,5 @@
 alias:
   - modulegroup-web
-changes: []
+changes:
+  - 5.0.2
 tags: []
