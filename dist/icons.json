@@ -2674,6 +2674,20 @@
       "sprite": "sprites/actions.svg#actions-wallet",
       "bidi": false
     },
+    "actions-wand-sparkles": {
+      "identifier": "actions-wand-sparkles",
+      "category": "actions",
+      "svg": "svgs/actions/actions-wand-sparkles.svg",
+      "sprite": "sprites/actions.svg#actions-wand-sparkles",
+      "bidi": false
+    },
+    "actions-wand": {
+      "identifier": "actions-wand",
+      "category": "actions",
+      "svg": "svgs/actions/actions-wand.svg",
+      "sprite": "sprites/actions.svg#actions-wand",
+      "bidi": false
+    },
     "actions-wave": {
       "identifier": "actions-wave",
       "category": "actions",
