@@ -4956,6 +4956,13 @@
       "sprite": "sprites/module.svg#module-adminpanel",
       "bidi": false
     },
+    "module-assist": {
+      "identifier": "module-assist",
+      "category": "module",
+      "svg": "svgs/module/module-assist.svg",
+      "sprite": "sprites/module.svg#module-assist",
+      "bidi": false
+    },
     "module-belog": {
       "identifier": "module-belog",
       "category": "module",
