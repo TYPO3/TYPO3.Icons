@@ -1568,6 +1568,13 @@
       "sprite": "sprites/actions.svg#actions-form-insert-after",
       "bidi": false
     },
+    "actions-form-insert-before": {
+      "identifier": "actions-form-insert-before",
+      "category": "actions",
+      "svg": "svgs/actions/actions-form-insert-before.svg",
+      "sprite": "sprites/actions.svg#actions-form-insert-before",
+      "bidi": false
+    },
     "actions-form-insert-in": {
       "identifier": "actions-form-insert-in",
       "category": "actions",
