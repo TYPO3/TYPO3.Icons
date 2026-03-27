@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.0.3] - 2026-03-27
+
+2af5e411 [FEATURE] Add actions-form-insert-before icon (#336)
+97c9b44e [FEATURE] Add module-assist icon (#335)
+736cf445 [FEATURE] Add actions-wand-* icons
+dc6165ec [TASK] Update typo3 versions
+f1b609db [TASK] Update versions
+
+
 ## [5.0.2] - 2026-01-30
 
 3c03eb13 [TASK] Adjust secondary opacity
