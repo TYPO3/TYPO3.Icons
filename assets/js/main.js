@@ -37,6 +37,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    document.querySelectorAll('.btn-check[data-version]').forEach(el => {
+        el.addEventListener('change', () => {
+            const activeVersions = Array.from(
+                document.querySelectorAll('.btn-check[data-version]:checked')
+            ).map(e => e.dataset.version);
+
+            const items = document.querySelectorAll('[data-versions]');
+
+            items.forEach((item) => {
+                const versions = item.dataset.versions
+                    .trim()
+                    .split(/\s+/);
+
+                const match =
+                    activeVersions.length === 0
+                        ? true
+                        : activeVersions.some(v => versions.includes(v));
+
+                item.classList.toggle('d-none', !match);
+            });
+
+        });
+    });
+
     document.querySelectorAll('.code-copy-btn').forEach((button) => {
         button.addEventListener('click', () => {
             const codeBlock = button.nextElementSibling?.querySelector('code');

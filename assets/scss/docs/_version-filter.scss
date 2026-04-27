@@ -1,0 +1,16 @@
+.version-badge {
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s ease;
+    opacity: .6;
+}
+
+/* checked state */
+.btn-check:checked + .version-badge {
+    opacity: 1;
+}
+
+/* hover */
+.version-badge:hover {
+    opacity: .85;
+}
