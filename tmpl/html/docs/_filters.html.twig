@@ -7,5 +7,26 @@
         </label>
     </div>
     {%- endif -%}
-    <input class="form-control search mb-0" id="search" placeholder="Start typing to filter..." autocomplete="off">
+    {%- if showVersionFilter is not defined or showVersionFilter -%}
+        <div class="d-flex flex-wrap gap-2">
+            <span class="me-2">Available in TYPO3</span>
+            {%- for typo3version, version in typo3.versions -%}
+                <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="version-{{ typo3version }}"
+                    autocomplete="off"
+                    data-version="{{ typo3version }}"
+                >
+
+                <label
+                    class="badge bg-primary version-badge"
+                    for="version-{{ typo3version }}"
+                >
+                    {{ typo3version }}
+                </label>
+            {%- endfor -%}
+        </div>
+    {%- endif -%}
+    <input class="form-control search mb-0 flex-shrink-0 w-auto" style="min-width: 220px;" id="search" placeholder="Start typing to filter..." autocomplete="off">
 </div>

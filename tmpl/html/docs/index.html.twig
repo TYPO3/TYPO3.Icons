@@ -12,7 +12,7 @@
         <h2 class="mb-0">Icons</h2>
         {%- include '_filters.html.twig' -%}
     </div>
-
+    
     <div class="icongrid" id="iconlist">
         {%- for category in categories -%}
             {%- for iconIdentifier in category.icons -%}
@@ -22,6 +22,7 @@
                         data-type="icon"
                         data-identifier="{{ icon.identifier }}"
                         data-search="{{ icon.identifier }} {{ icon._meta.tags|join(' ') }}"
+                        data-versions="{%- for typo3version, version in typo3.versions -%}{%- if version in icon._meta.changes %}{{ typo3version }} {% endif -%}{%- endfor -%}"
                         {% if icon._meta.bidi %}data-bidi="true"{% endif %}
                         href="{{ pathPrefix }}icons/{{ category.identifier }}/{{ icon.identifier }}.html"
                         title="{{ icon.identifier }}"

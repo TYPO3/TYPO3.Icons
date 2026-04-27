@@ -11,7 +11,7 @@
 
     <div class="d-flex mb-4 align-items-center">
         <h2 class="mb-0">{{ category.title }}</h2>
-        {%- include '_filters.html.twig' with { showBidiFilter: not category.rendering.menuview } -%}
+        {%- include '_filters.html.twig' with { showBidiFilter: not category.rendering.menuview, showVersionFilter: not category.rendering.menuview } -%}
     </div>
 
     {%- if category.rendering.menuview -%}
