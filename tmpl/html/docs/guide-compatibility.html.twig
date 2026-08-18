@@ -1,0 +1,32 @@
+{% extends "_layout.html.twig" %}
+{% block title %}Version compatibility{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Version compatibility</h1>
+    <p class="sds-lead">
+        TYPO3 Core pins a tested version of the icon library. This mapping shows which package
+        version—and therefore which icon identifiers—is available in each TYPO3 branch.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Compatibility matrix</h2>
+        {%- include '_compatibility-table.html.twig' -%}
+    </div>
+    <div class="sds-section">
+        <h2>Checking an individual icon</h2>
+        <p>
+            Every icon detail page lists the TYPO3 versions that include that identifier. Use this table
+            when you need the package version for a complete TYPO3 branch.
+        </p>
+    </div>
+
+{% endblock %}

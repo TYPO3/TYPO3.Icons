@@ -2,15 +2,13 @@
 {% block title %}{{ category.title }}{% endblock %}
 {% block content %}
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ pathPrefix }}index.html">Home</a></li>
-            <li class="breadcrumb-item">{{ category.title }}</li>
-        </ol>
-    </nav>
+    {%- include '_breadcrumb.html.twig' -%}
 
-    <div class="d-flex mb-4 align-items-center">
-        <h2 class="mb-0">{{ category.title }}</h2>
+    <div class="sds-split">
+        <div class="sds-column">
+            <h1>{{ category.title }}</h1>
+            <p class="sds-lead">{{ category.description }}</p>
+        </div>
         {%- include '_filters.html.twig' with { showBidiFilter: not category.rendering.menuview } -%}
     </div>
 

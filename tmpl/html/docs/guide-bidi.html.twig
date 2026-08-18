@@ -1,0 +1,97 @@
+{% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}Bidirectional support{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Bidirectional support</h1>
+
+    <p class="sds-lead">
+        This icon set includes logical variants for interfaces in bidirectional languages such as
+        Arabic and Hebrew.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Logical or physical</h2>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Kind</th>
+                        <th scope="col">Suffix</th>
+                        <th scope="col">Used for</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">Logical</td>
+                        <td class="sds-td-meta">-start / -end</td>
+                        <td>Navigation and reading direction: previous and next, back and forward.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Physical</td>
+                        <td class="sds-td-meta">-left / -right</td>
+                        <td>Absolute positioning: west and east, align left and right.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>
+            An icon marked <code>bidi: true</code> receives the <code>icon-bidi</code> class and flips
+            in a right-to-left context. Physical icons never flip, which is the whole reason the two
+            are named apart.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>LTR and RTL example</h2>
+        <div class="docs-cols">
+            <div>
+                <strong>LTR (Left-to-Right)</strong>
+                <div dir="ltr" class="docs-buttons">
+                    <span class="sds-btn sds-btn--secondary">
+                        {%- include '_icon.html.twig' with {
+                            iconIdentifier: 'actions-chevron-start',
+                            iconSize: 'small'
+                        } -%}
+                        Previous
+                    </span>
+                    <span class="sds-btn sds-btn--secondary">
+                        Next
+                        {%- include '_icon.html.twig' with {
+                            iconIdentifier: 'actions-chevron-end',
+                            iconSize: 'small'
+                        } -%}
+                    </span>
+                </div>
+            </div>
+            <div>
+                <strong>RTL (Right-to-Left)</strong>
+                <div dir="rtl" class="docs-buttons">
+                    <span class="sds-btn sds-btn--secondary">
+                        {%- include '_icon.html.twig' with {
+                            iconIdentifier: 'actions-chevron-start',
+                            iconSize: 'small'
+                        } -%}
+                        السابق
+                    </span>
+                    <span class="sds-btn sds-btn--secondary">
+                        التالي
+                        {%- include '_icon.html.twig' with {
+                            iconIdentifier: 'actions-chevron-end',
+                            iconSize: 'small'
+                        } -%}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

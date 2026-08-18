@@ -1,0 +1,99 @@
+{% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}Backend usage{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Backend usage</h1>
+    <p class="sds-lead">
+        TYPO3 registers the icon library for you. Use the Fluid ViewHelper in server-rendered
+        templates or the backend web component when JavaScript creates the interface.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Fluid templates</h2>
+        <p>
+            The Core ViewHelper resolves the identifier and writes the required icon markup, including
+            optional overlays and size classes.
+        </p>
+        {{ makros.codeblock('<core:icon identifier="actions-document-edit" size="small" />
+    <core:icon identifier="apps-pagetree-page" overlay="overlay-hidden" size="medium" />', 'html') }}
+    </div>
+    <div class="sds-section">
+        <h2>Backend JavaScript</h2>
+        <p>
+            Import the icon element once in your JavaScript module, then use it in a Lit template. The
+            import registers <code>typo3-backend-icon</code>; the component resolves the identifier and
+            loads the correct sprite.
+        </p>
+        {{ makros.codeblock('import "@typo3/backend/element/icon-element.js";
+    import { html } from "lit";
+
+    const icon = html`
+        <typo3-backend-icon
+            identifier="actions-document-edit"
+            size="small"
+        ></typo3-backend-icon>
+    `;', 'javascript') }}
+    </div>
+    <div class="sds-section">
+        <h2>Sizes and states</h2>
+        <p>
+            Use one of the sizes provided by TYPO3. Backend components should not introduce custom icon
+            sizes; choosing from the shared scale keeps controls and layouts visually consistent.
+        </p>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Size</th>
+                        <th scope="col">Rendered size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">default</td>
+                        <td>Scales with the surrounding font size.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">small</td>
+                        <td>16px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">medium</td>
+                        <td>32px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">large</td>
+                        <td>48px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">mega</td>
+                        <td>64px</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="docs-hint">
+            Use <code>small</code> for standard controls and choose a larger provided size only when the
+            surrounding TYPO3 component calls for it.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>Find an identifier</h2>
+        <p>
+            Search the <a href="{{ pathPrefix }}icons.html">complete icon library</a> by identifier,
+            purpose, tag or legacy name. Each detail page lists version availability and supported states.
+        </p>
+    </div>
+
+{% endblock %}

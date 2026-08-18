@@ -1,0 +1,9 @@
+{#- Where the page sits, taken from the navigation tree rather than written out
+    again here. `nav.trail` is the path the tree already knows; `leaf` is for the
+    one thing it cannot know, which is a record. The 796 icons are not
+    navigation entries, so an icon page hands its identifier in.
+
+    The element drops the href of the last step itself, so nothing here has to
+    decide which one is the page. -#}
+{%- set crumbs = leaf is defined and leaf ? nav.trail|merge([{ label: leaf }]) : nav.trail -%}
+<sds-nav-breadcrumb items="{{ crumbs|json_encode|e('html_attr') }}"></sds-nav-breadcrumb>

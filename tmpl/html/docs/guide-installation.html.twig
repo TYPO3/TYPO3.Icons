@@ -1,0 +1,88 @@
+{% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}Installation{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Installation</h1>
+    <p class="sds-lead">
+        TYPO3 Core already includes a tested version of the icon library. Install the npm package
+        only when your project needs to manage the assets independently.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Inside TYPO3</h2>
+        <p>
+            There is nothing to install. Every TYPO3 release pins and registers a compatible version of
+            this library. Use the Core ViewHelper or backend web component and TYPO3 resolves the icon
+            identifier for you.
+        </p>
+        <p>
+            Check <a href="{{ pathPrefix }}guide/compatibility.html">version compatibility</a> before using
+            a recently added identifier in an extension that supports multiple TYPO3 versions.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>Install the package</h2>
+        <p>
+            Install the package for standalone tools, custom build pipelines or projects that need direct
+            access to the SVG, CSS or Sass files.
+        </p>
+        {{ makros.codeblock('npm install @typo3/icons', 'bash') }}
+    </div>
+    <div class="sds-section">
+        <h2>Published files</h2>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Path</th>
+                        <th scope="col">Contents</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">dist/icons.css</td>
+                        <td>Compiled component styles for sizes, states, overlays and animation.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">dist/icons.scss</td>
+                        <td>The component styles as Sass source.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">dist/svgs/</td>
+                        <td>One SVG file per icon, grouped by category.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">dist/sprites/</td>
+                        <td>One SVG sprite per category for <code>&lt;use&gt;</code> references.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">dist/scss/</td>
+                        <td>Per-category Sass variables containing icons as data URIs.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">dist/icons.json</td>
+                        <td>Identifiers, categories and file paths for custom tooling.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="sds-section">
+        <h2>Continue with your context</h2>
+        <ul>
+            <li><a href="{{ pathPrefix }}guide/backend-usage.html">Backend usage</a> for Fluid templates and TYPO3 backend JavaScript.</li>
+            <li><a href="{{ pathPrefix }}guide/external-usage.html">External usage</a> for standalone HTML, SVG, CSS and Sass.</li>
+        </ul>
+    </div>
+
+{% endblock %}

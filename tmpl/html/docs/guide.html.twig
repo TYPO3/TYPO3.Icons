@@ -1,380 +1,109 @@
 {% extends "_layout.html.twig" %}
 {% import "_makros.html.twig" as makros %}
-{% block title %}Guide{% endblock %}
+{% block title %}Design guidelines{% endblock %}
 {% block content %}
 
-    <nav>
-        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
-            <li class="breadcrumb-item"><a href="{{ pathPrefix }}index.html">Home</a></li>
-            <li class="breadcrumb-item">Guide</li>
-        </ul>
-    </nav>
+    {%- include '_breadcrumb.html.twig' -%}
 
-    <h2>{{ pkg.name }}</h2>
-    <p>{{ pkg.description }}</p>
-
-    <hr class="my-4">
-
-    <h3>Sizes</h3>
-
-    <div class="preview my-3">
-    {%- set sizes = ['mega', 'large', 'medium', 'small', 'default'] -%}
-    {%- for size in sizes -%}
-        <div class="preview-item" data-color="light" data-size="{{ size }}">
-            {%- include '_icon.html.twig' with {
-                iconIdentifier: 'actions-brand-typo3',
-                iconSize: size
-            } -%}
-        </div>
-    {%- endfor -%}
-    </div>
-    <div class="table-responsive my-3">
-        <table class="table table-bordered">
-            <tr>
-                <th>default</th>
-                <td>Scales with font-size</td>
-            </tr>
-            <tr>
-                <th>small</th>
-                <td>16px</td>
-            </tr>
-            <tr>
-                <th>medium</th>
-                <td>32px</td>
-            </tr>
-            <tr>
-                <th>large</th>
-                <td>48px</td>
-            </tr>
-            <tr>
-                <th>mega</th>
-                <td>64px</td>
-            </tr>
-        </table>
-    </div>
-
-    <hr class="my-4">
-
-    <h3>Colors</h3>
-
-    <ul class="list-unstyled">
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #FF8700;"></span>
-            <span class="coloritem coloritem-code">#FF8700</span>
-            <span class="coloritem coloritem-name">TYPO3 primary color</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #E8A33D;"></span>
-            <span class="coloritem coloritem-code">#E8A33D</span>
-            <span class="coloritem coloritem-name">Yellow</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #FFC857;"></span>
-            <span class="coloritem coloritem-code">#FFC857</span>
-            <span class="coloritem coloritem-name">Yellow light</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #515151;"></span>
-            <span class="coloritem coloritem-code">#515151</span>
-            <span class="coloritem coloritem-name">Gray dark</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #8C8C8C;"></span>
-            <span class="coloritem coloritem-code">#8C8C8C</span>
-            <span class="coloritem coloritem-name">Gray</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #B9B9B9;"></span>
-            <span class="coloritem coloritem-code">#B9B9B9</span>
-            <span class="coloritem coloritem-name">Gray light</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #EFEFEF;"></span>
-            <span class="coloritem coloritem-code">#EFEFEF</span>
-            <span class="coloritem coloritem-name">Gray brighter</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #C83C3C;"></span>
-            <span class="coloritem coloritem-code">#C83C3C</span>
-            <span class="coloritem coloritem-name">Red</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #FF6777;"></span>
-            <span class="coloritem coloritem-code">#FF6777</span>
-            <span class="coloritem coloritem-name">Red light</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #79A548;"></span>
-            <span class="coloritem coloritem-code">#79A548</span>
-            <span class="coloritem coloritem-name">Green</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #AAD400;"></span>
-            <span class="coloritem coloritem-code">#AAD400</span>
-            <span class="coloritem coloritem-name">Green light</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #5599FF;"></span>
-            <span class="coloritem coloritem-code">#5599FF</span>
-            <span class="coloritem coloritem-name">Blue</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #ABD7FF;"></span>
-            <span class="coloritem coloritem-code">#ABD7FF</span>
-            <span class="coloritem coloritem-name">Blue light</span>
-        </li>
-        <li>
-            <span class="coloritem coloritem-box" style="background-color: #663399;"></span>
-            <span class="coloritem coloritem-code">#663399</span>
-            <span class="coloritem coloritem-name">Purple</span>
-        </li>
-    </ul>
-
-    <hr class="my-4">
-
-    <h3>Action Icons</h3>
-    <dl>
-        <dt>Size</dt>
-        <dd>16x16px</dd>
-
-        <dt>Protective space</dt>
-        <dd>1px</dd>
-
-        <dt>Effective Size</dt>
-        <dd>14x14px</dd>
-
-        <dt>Outline width</dt>
-        <dd>1px</dd>
-
-        <dt>Smoodt Edges</dt>
-        <dd>0.5px / 0.25px</dd>
-
-        <dt>Color</dt>
-        <dd>black / transparent</dd>
-    </dl>
-
-    <hr class="my-4">
-
-    <h3>Overlay Icons</h3>
-    <dl>
-        <dt>Size</dt>
-        <dd>11x11px</dd>
-    </dl>
-
-    <hr class="my-4">
-
-    <h3>BiDi (Bidirectional) Support</h3>
-    <p>
-        This icon set includes logical icon variants that support bidirectional languages (Arabic, Hebrew, etc.).
+    <h1>Icon design guidelines</h1>
+    <p class="sds-lead">
+        Create icons that feel native to TYPO3. These shared grids, sizes, colors and construction
+        rules keep contributions consistent with the icons already used throughout the backend.
     </p>
-    <dl>
-        <dt>Logical Icons</dt>
-        <dd>Use <code>-start</code>/<code>-end</code> for navigation and reading direction (previous/next, back/forward)</dd>
 
-        <dt>Physical Icons</dt>
-        <dd>Use <code>-left</code>/<code>-right</code> for absolute positioning (west/east, align left/right)</dd>
+    {%- include '_toc.html.twig' -%}
 
-        <dt>Implementation</dt>
-        <dd>Icons with <code>bidi: true</code> automatically receive the <code>icon-bidi</code> class and flip in RTL mode</dd>
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Sizes</h2>
 
-        <dt>Example</dt>
-        <dd>
-            <div class="row my-3">
-                <div class="col-md-6">
-                    <strong>LTR (Left-to-Right)</strong>
-                    <div dir="ltr" class="mt-2">
-                        <span class="btn btn-default">
-                            {%- include '_icon.html.twig' with {
-                                iconIdentifier: 'actions-chevron-start',
-                                iconSize: 'small'
-                            } -%}
-                            Previous
-                        </span>
-                        <span class="btn btn-default">
-                            Next
-                            {%- include '_icon.html.twig' with {
-                                iconIdentifier: 'actions-chevron-end',
-                                iconSize: 'small'
-                            } -%}
-                        </span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <strong>RTL (Right-to-Left)</strong>
-                    <div dir="rtl" class="mt-2">
-                        <span class="btn btn-default">
-                            {%- include '_icon.html.twig' with {
-                                iconIdentifier: 'actions-chevron-start',
-                                iconSize: 'small'
-                            } -%}
-                            السابق
-                        </span>
-                        <span class="btn btn-default">
-                            التالي
-                            {%- include '_icon.html.twig' with {
-                                iconIdentifier: 'actions-chevron-end',
-                                iconSize: 'small'
-                            } -%}
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </dd>
-    </dl>
-
-    <hr class="my-4">
-
-    <h3>Module Icons</h3>
-    <p>Module icons are used in the TYPO3 backend navigation. They are designed at 64x64px but typically rendered at 32x32px.</p>
-
-    <h4>Canvas &amp; Scaling</h4>
-    <dl>
-        <dt>Canvas Size</dt>
-        <dd>64x64px</dd>
-
-        <dt>Rendered Size</dt>
-        <dd>32x32px (typical display size)</dd>
-
-        <dt>Protective Space</dt>
-        <dd>12px from edges (content area: 40x40px centered)</dd>
-
-        <dt>Stroke Width</dt>
-        <dd>4px (scales to 2px at 32x32)</dd>
-
-        <dt>Corner Radius</dt>
-        <dd>2px for small elements, 4px for larger shapes</dd>
-    </dl>
-
-    <h4>Colors</h4>
-    <dl>
-        <dt>Primary Elements</dt>
-        <dd>Use <code>fill="currentColor"</code> for main shapes. This allows the icon to inherit the text color from its context.</dd>
-
-        <dt>Secondary Elements</dt>
-        <dd>Use <code>fill="currentColor"</code> with <code>opacity=".4"</code> for less prominent details.</dd>
-
-        <dt>Accent Elements</dt>
-        <dd>
-            Use <code>fill="var(--icon-color-accent, #ff8700)"</code> for highlighted parts of the icon.
-            The CSS variable allows theming while the fallback ensures the icon works standalone.
-        </dd>
-    </dl>
-
-    <h4>Structure Example</h4>
-    {{ makros.codeblock('
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Primary shape -->
-  <path d="..." fill="currentColor"/>
-
-  <!-- Secondary/detail elements -->
-  <path d="..." fill="currentColor" opacity=".4"/>
-
-  <!-- Accent highlight -->
-  <rect ... fill="var(--icon-color-accent, #ff8700)"/>
-</svg>
-    ', 'xml') }}
-
-    <h4>Example</h4>
-    <p>Module icons adapt to their context. The <code>currentColor</code> elements inherit the text color, while the accent color can be customized via the <code>--icon-color-accent</code> CSS variable.</p>
-    <div class="row my-3">
-        <div class="col-md-4">
-            <strong>Light Background</strong>
-            <div class="p-3 mt-2 rounded" style="background-color: #ffffff; color: #212121;">
+        <div class="preview">
+        {%- set sizes = ['mega', 'large', 'medium', 'small', 'default'] -%}
+        {%- for size in sizes -%}
+            <div class="preview-item" data-color="light" data-size="{{ size }}">
                 {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-list',
-                    iconSize: 'large'
-                } -%}
-                {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-page',
-                    iconSize: 'large'
-                } -%}
-                {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-filelist',
-                    iconSize: 'large'
+                    iconIdentifier: 'actions-brand-typo3',
+                    iconSize: size
                 } -%}
             </div>
+        {%- endfor -%}
         </div>
-        <div class="col-md-4">
-            <strong>Dark Background</strong>
-            <div class="p-3 mt-2 rounded" style="background-color: #212121; color: #ffffff;">
-                {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-list',
-                    iconSize: 'large'
-                } -%}
-                {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-page',
-                    iconSize: 'large'
-                } -%}
-                {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-filelist',
-                    iconSize: 'large'
-                } -%}
-            </div>
-        </div>
-        <div class="col-md-4">
-            <strong>Custom Accent</strong>
-            <div class="p-3 mt-2 rounded" style="background-color: #212121; color: #ffffff; --icon-color-accent: #79A548;">
-                {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-list',
-                    iconSize: 'large'
-                } -%}
-                {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-page',
-                    iconSize: 'large'
-                } -%}
-                {%- include '_icon.html.twig' with {
-                    iconIdentifier: 'module-filelist',
-                    iconSize: 'large'
-                } -%}
-            </div>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Size</th>
+                        <th scope="col">Rendered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="sds-td-meta">default</td>
+                    <td>Scales with font-size</td>
+                </tr>
+                <tr>
+                    <td class="sds-td-meta">small</td>
+                    <td>16px</td>
+                </tr>
+                <tr>
+                    <td class="sds-td-meta">medium</td>
+                    <td>32px</td>
+                </tr>
+                <tr>
+                    <td class="sds-td-meta">large</td>
+                    <td>48px</td>
+                </tr>
+                <tr>
+                    <td class="sds-td-meta">mega</td>
+                    <td>64px</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    <div class="sds-section">
+        <h2>Colors</h2>
 
-    <h4>Design Tips</h4>
-    <ul>
-        <li>Design at 64x64 but preview at 32x32 to ensure clarity at the rendered size</li>
-        <li>Use even stroke widths (4px recommended) for crisp scaling</li>
-        <li>Keep details simple - fine lines may disappear at smaller sizes</li>
-        <li>Test with both light and dark backgrounds since <code>currentColor</code> adapts</li>
-        <li>Limit accent color usage to small highlights that draw attention to the icon's purpose</li>
-    </ul>
-
-    <hr class="my-4">
-
-    <h3>Build</h3>
-    {{ makros.codeblock('
-npm ci
-npm run stylelint
-npm run icons-build
-npm run version-build
-    ', 'bash') }}
-
-    <h3>Site</h3>
-    {{ makros.codeblock('
-npm ci
-npm run site-build
-npm run site-serve
-    ', 'bash') }}
-
-    <h3>Release</h3>
-
-    {{ makros.codeblock('
-npm version [major | minor | patch]
-git push origin main --tags
-npm publish
-    ', 'bash') }}
-
-    <hr class="my-4">
-
-    <h4>Commit Message Convention</h4>
-    <p>This project follows a commit message convention where each commit should be prefixed with a type:</p>
-    <ul>
-        <li><code>[FEATURE]</code> - New features or functionality</li>
-        <li><code>[BUGFIX]</code> - Bug fixes</li>
-        <li><code>[TASK]</code> - General maintenance tasks (refactoring, dependencies, etc.)</li>
-        <li><code>[DOCS]</code> - Documentation changes</li>
-        <li><code>[!!!]</code> or <code>[BREAKING]</code> - Breaking changes</li>
-    </ul>
-    <p>The automated changelog generation categorizes commits based on these prefixes. Release commits with <code>[RELEASE]</code> prefix are automatically excluded from the changelog.</p>
+        {#- The palette an icon may be drawn in, as one list to edit. Literal values
+            rather than Soul tokens: these are the icon set's own colours, the same
+            in either mode, which is the case `sds-swatch` takes a literal for. The
+            hex is repeated as `resolved` because the value is what somebody reading
+            this page has come to copy. -#}
+        {%- set palette = [
+            { name: 'TYPO3 primary color', value: '#FF8700' },
+            { name: 'Yellow', value: '#E8A33D' },
+            { name: 'Yellow light', value: '#FFC857' },
+            { name: 'Gray dark', value: '#515151' },
+            { name: 'Gray', value: '#8C8C8C' },
+            { name: 'Gray light', value: '#B9B9B9' },
+            { name: 'Gray brighter', value: '#EFEFEF' },
+            { name: 'Red', value: '#C83C3C' },
+            { name: 'Red light', value: '#FF6777' },
+            { name: 'Green', value: '#79A548' },
+            { name: 'Green light', value: '#AAD400' },
+            { name: 'Blue', value: '#5599FF' },
+            { name: 'Blue light', value: '#ABD7FF' },
+            { name: 'Purple', value: '#663399' }
+        ] -%}
+        <sds-grid>
+            {%- for color in palette -%}
+                <sds-swatch value="{{ color.value }}" name="{{ color.name }}" resolved="{{ color.value }}"></sds-swatch>
+            {%- endfor -%}
+        </sds-grid>
+    </div>
+    <div class="sds-section">
+        <h2>Explore the guidelines</h2>
+        <ul>
+            <li><a href="{{ pathPrefix }}guide/usage.html">Usage</a> — choose between installation, backend usage and external usage.</li>
+            <li><a href="{{ pathPrefix }}guide/drawing.html">Drawing an icon</a> — the construction rules for action and overlay icons.</li>
+            <li><a href="{{ pathPrefix }}guide/modules.html">Module icons</a> — the larger canvas the module menu is drawn on.</li>
+            <li><a href="{{ pathPrefix }}guide/bidi.html">Bidirectional support</a> — logical naming, and what flips in a right-to-left interface.</li>
+            <li><a href="{{ pathPrefix }}guide/contributing.html">Contributing</a> — choosing a contribution path, preparing changes and understanding the review process.</li>
+        </ul>
+    </div>
 
 {% endblock %}

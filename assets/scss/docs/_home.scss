@@ -1,0 +1,75 @@
+//
+// Home
+//
+// The pitched page. Soul draws the bands, the wall, the lists and the field;
+// what is left here is the one thing it cannot draw, plus the two places where
+// this page asks its search for something the bar does not want.
+//
+// The tile has no Soul element. `sds-icon-tile` is exactly this box and cannot
+// be used: `sds-icon` throws on any identifier outside the 392 Soul bundles,
+// which is one category of the 796 this site documents. Every value below is a
+// token, and the hover is the rise and edge that `sds-icon-tile` answers a
+// pointer with — the keyboard gets the same answer.
+.homegrid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    border: var(--border-hairline) solid var(--border-subtle);
+    border-radius: var(--radius-card);
+    background-color: var(--surface-raised);
+    color: var(--text-primary);
+    text-decoration: none;
+    transition:
+        border-color var(--duration-fast) var(--ease-out),
+        transform var(--duration-fast) var(--ease-out);
+
+    &:hover,
+    &:focus-visible {
+        border-color: var(--border-strong);
+        transform: translateY(-2px);
+    }
+}
+
+// The field on this page, addressed by the size only it asks for — the bar
+// renders its own search with no `size` at all, so nothing here reaches it.
+sds-search[size="lg"] {
+    // Both tokens go on `.sds-search` and not on the host: Soul declares them on
+    // that block itself, and a property an element declares beats the one it
+    // would inherit. Set on the host they resolved to 480 there and to Soul's
+    // own 260 one node down, which is the node that draws the field.
+    .sds-search {
+        // The way in for most readers, so the field stands at the width of the
+        // sentence above it rather than at the 260px the bar wants.
+        --sds-search-width: 480px;
+    }
+
+    // Nothing places the panel here any more. Soul 0.1.2 moved it into the top
+    // layer and positions it from `lib/flyout.ts`, which measures the field and
+    // writes the edges as inline styles — so `inset-inline: 0` stopped meaning
+    // the field's leading edge and started meaning the window's, which dragged
+    // the hits to the corner of the screen. It also cannot fall off the page any
+    // more, which was the only reason this page moved it in the first place.
+    //
+    // Which edge it hangs from is hardcoded to `end` in `search.ts` and is not a
+    // property, so a page that wants the other one has nothing to set. That is a
+    // gap in the element rather than something to fight with a stylesheet.
+
+    // A hit here is a mark and its name, and nothing else. The address says what
+    // the name already said, and the sentence under it is the category and the
+    // tags run together — which belongs in the badge beside the name, not in a
+    // line of its own. The badge waits on `kind` reaching SearchEntry upstream;
+    // until then the index still carries the tags, so they are searched without
+    // being shown.
+    //
+    // In the bar both lines stay: a hit there may be a guide page, and the path
+    // and the sentence are what tell you which.
+    .sds-result__path {
+        display: none;
+    }
+    .sds-result__text {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

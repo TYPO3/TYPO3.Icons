@@ -1,0 +1,18 @@
+<div class="sds-table-scroll docs-reference">
+    <table class="sds-table sds-table--medium">
+        <thead>
+            <tr>
+                <th scope="col">TYPO3</th>
+                <th scope="col">@typo3/icons</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%- for typo3version, version in typo3.versions -%}
+                <tr>
+                    <td class="sds-td-meta">{{ typo3version }}</td>
+                    <td><code>{{ version }}</code></td>
+                </tr>
+            {%- endfor -%}
+        </tbody>
+    </table>
+</div>

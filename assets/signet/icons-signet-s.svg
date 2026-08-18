@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="soul-ref" viewBox="0 0 16 16" role="img" aria-label="TYPO3 Icons">
+  <title>TYPO3 Icons</title>
+  <!-- Every colour sits on its own shape, as a var() with a hex fallback: a
+       page that declares the tokens gets its own ink, and this file still
+       renders on its own. Nothing colours it from a <style> or from the root,
+       and no comment in here may carry a double dash, which is what makes an
+       SVG malformed and a reference to it draw nothing. See
+       docs/design-system/artwork.rst. -->
+  <!-- S - drawn at 16, where one unit is one pixel, and for the favicon.
+       Stroke 1, rounding 0.5, gap 1.
+
+       Both peaks survive, but only because the second one is cut deeper
+       than a reduction of the L would cut it: a unit and a half of relief
+       under a one pixel stroke is a bump no screen can show, and a range
+       that reads as a lump says less than a range that reads as a range.
+       The sun keeps its share of the width rather than its distance - at
+       this size the sky is the half of the drawing that carries the
+       meaning, and it has to stay open. -->
+  <path d="M1.5 12.5L5.5 6.5L8.5 10L10 8.5L12.5 12.5Z" fill="var(--text-primary, #8A8378)" stroke="var(--text-primary, #8A8378)" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+  <circle fill="var(--accent, #FF8700)" cx="12.5" cy="5" r="2.5"></circle>
+</svg>

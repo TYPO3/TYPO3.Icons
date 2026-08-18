@@ -1,0 +1,50 @@
+{# llms.txt, the format of llmstxt.org: one markdown file at a known address
+   that tells a language model what this site is and where its parts are, so it
+   does not have to guess from the rendered pages. Generated rather than written
+   by hand — the icon count, the categories and the version table are facts of
+   the build, and a second copy of them kept in prose would be wrong by the next
+   release. The page list is the one the search index is built from, for the
+   same reason: a page added to the guide should not have to be remembered here
+   as well.
+
+   The links are absolute. This file is read away from the site, and every
+   relative path the rest of the build works in loses its meaning there.
+
+   On the whitespace: twig.js drops the newline that follows a {% %} tag, so a
+   blank line in the output needs two here, and a line that ends in {% endif %}
+   has to end its own newline. #}# TYPO3 Icons
+
+> The official icon set of the TYPO3 CMS backend: {{ iconCount }} SVG icons for TYPO3 Core, extensions and custom backend modules, published as the npm package `@typo3/icons`, currently version {{ pkg.version }}, under the MIT license.
+
+Every icon is addressed by an identifier such as `actions-document-edit`. The identifier is the whole interface: the Fluid ViewHelper, the web component, the SVG sprite and the Sass variable all resolve the same string, so naming the right icon means naming an identifier from the categories below.
+
+Icons are monochrome and drawn in `currentColor`, which is why one file serves a light and a dark backend; the only colour of their own is the accent a backend module icon paints a highlight with. Inside TYPO3 nothing needs installing — every release ships a pinned version of the set and registers it with the icon registry. Everywhere else it is `npm install @typo3/icons`, and every published file is a plain asset with no runtime attached.
+
+Which TYPO3 release ships which version of the set:
+
+{% for typo3version, version in typo3.versions %}- TYPO3 {{ typo3version }}: `@typo3/icons` {{ version }}
+{% endfor %}
+
+An installation shows the icons of the version it ships, not of the newest release. An identifier added after that version does not resolve there.
+
+## Documentation
+
+{% for page in pages %}- [{{ page.title }}]({{ siteUrl }}{{ page.url }}): {{ page.text }}
+{% endfor %}
+
+## Icon categories
+
+{% for category in categories %}- [{{ category.title }}]({{ siteUrl }}icons/{{ category.identifier }}.html): {{ category.description }} {{ category.count }} icon{% if category.count != 1 %}s{% endif %}, identifiers beginning `{{ category.identifier }}-`.{{ "\n" }}{% endfor %}
+
+## Machine-readable data
+
+- [llms-full.txt]({{ siteUrl }}llms-full.txt): This page, plus how an icon is placed and every identifier in the set with its tags and the names it used to have.
+- [icons.json]({{ siteUrl }}dist/icons.json): Every identifier with its category, its SVG path, its sprite reference and whether it flips in right-to-left contexts.
+- [search-icons.json]({{ siteUrl }}search-icons.json): The icon search index of the site — every identifier with its category, tags and former names.
+
+## Optional
+
+- [Repository](https://github.com/TYPO3/TYPO3.Icons): The source SVGs, the metadata and the build.
+- [Changelog](https://github.com/TYPO3/TYPO3.Icons/blob/main/CHANGELOG.md): What each release added, changed and removed.
+- [npm package](https://www.npmjs.com/package/@typo3/icons): The published artefacts and their versions.
+- [TYPO3 styleguide extension](https://github.com/TYPO3-CMS/styleguide): Shows the icons actually available in a given TYPO3 installation, which is the version that installation ships rather than this one.

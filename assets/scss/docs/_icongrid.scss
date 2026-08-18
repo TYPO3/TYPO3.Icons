@@ -6,33 +6,37 @@
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
-    gap: 10px;
+    gap: var(--space-2);
 }
 .icongrid-item {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
+    border: var(--border-hairline) solid var(--border-subtle);
+    border-radius: var(--radius-card);
     height: 96px;
     width: 100%;
-    color: var(--icongrid-color);
-    background-color: var(--icongrid-bg-color);
+    color: var(--text-primary);
+    background-color: var(--surface-raised);
+    text-decoration: none;
+    transition: border-color var(--duration-fast) var(--ease-out);
 }
 .icongrid-item:hover,
-.icongrid-item:focus {
-    box-shadow: 0 0 0 2px var(--icongrid-color);
+.icongrid-item:focus-visible {
+    border-color: var(--accent);
     outline: none;
-    color: var(--icongrid-color);
+    color: var(--text-primary);
 }
 
 .icongrid-item-badge {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 12px;
-    padding: 4px 6px;
+    font-size: var(--font-size-label);
+    padding: var(--space-1) var(--space-1-5);
     line-height: 1;
-    border-radius: 0 4px 0 4px;
-    background-color: color-mix(in srgb, var(--icongrid-bg-color), var(--icongrid-color) 10%);
+    border-radius: 0 var(--radius-card) 0 var(--radius-card);
+    color: var(--text-secondary);
+    background-color: var(--surface-inset);
 }

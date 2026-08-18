@@ -4,14 +4,17 @@
 .iconstage {
     --iconstage-icon-size: 256px;
     --iconstage-gutter-width: calc(var(--iconstage-icon-size) / var(--iconstage-icon-base-size, 16));
-    --iconstage-gutter-color: var(--bs-body-color);
-    --iconstage-border-color: color-mix(in srgb, var(--bs-body-color), var(--bs-body-bg));
-    --iconstage-border-radius: 5px;
+    --iconstage-gutter-color: var(--text-primary);
     position: relative;
-    border: 1px solid var(--iconstage-border-color);
-    border-radius: var(--iconstage-border-radius);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    // What follows the stage is a section, or the note a brand icon carries.
+    // Either way it owes the same step the sections keep between themselves,
+    // said here rather than per case.
+    margin-bottom: var(--space-12);
+    border: var(--border-hairline) solid var(--border-subtle);
+    border-radius: var(--radius-card);
+    background-color: var(--surface-raised);
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +26,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        opacity: .25;
+        opacity: .2;
         background-image:
             linear-gradient(
                 0deg,

@@ -1,0 +1,156 @@
+{# The long form of llms.txt: the same summary, the part of the guide a reader
+   needs to actually place an icon, and then every identifier in the set. The
+   index is the reason this file exists — the question asked of a language model
+   is almost always "which icon do I use for X", and that is answered by a name,
+   its tags and the names it used to have.
+
+   The prose between the summary and the index is the short form of the guide,
+   and the one part of this build that is a second copy of something. It is here
+   because a reader with no browser cannot follow a link to find out how an icon
+   is placed. Change the guide, change these paragraphs with it.
+
+   On the whitespace: twig.js drops the newline that follows a {% %} tag, so a
+   blank line in the output needs two here, and a line that ends in {% endif %}
+   has to end its own newline. #}# TYPO3 Icons
+
+> The official icon set of the TYPO3 CMS backend: {{ iconCount }} SVG icons for TYPO3 Core, extensions and custom backend modules, published as the npm package `@typo3/icons`, currently version {{ pkg.version }}, under the MIT license.
+
+Every icon is addressed by an identifier such as `actions-document-edit`. The identifier is the whole interface: the Fluid ViewHelper, the web component, the SVG sprite and the Sass variable all resolve the same string, so naming the right icon means naming an identifier from the index at the end of this file.
+
+Icons are monochrome and drawn in `currentColor`, which is why one file serves a light and a dark backend; the only colour of their own is the accent a backend module icon paints a highlight with.
+
+Which TYPO3 release ships which version of the set:
+
+{% for typo3version, version in typo3.versions %}- TYPO3 {{ typo3version }}: `@typo3/icons` {{ version }}
+{% endfor %}
+
+An installation shows the icons of the version it ships, not of the newest release. An identifier added after that version does not resolve there.
+
+## Documentation
+
+The pages of the site, each covering its subject in more detail than the summary below.
+
+{% for page in pages %}- [{{ page.title }}]({{ siteUrl }}{{ page.url }}): {{ page.text }}
+{% endfor %}
+
+## Installing
+
+Inside TYPO3 there is nothing to install. Every release ships a pinned version of the set and registers it with the icon registry; the ViewHelper and the web component resolve identifiers out of the box.
+
+Outside TYPO3 — a standalone project, a style guide, a build step of your own — the set is a package of plain assets with no runtime attached:
+
+```bash
+npm install @typo3/icons
+```
+
+| Path | What it is |
+| --- | --- |
+| `dist/icons.css` | The component styles: sizes, states, overlays, spinning. |
+| `dist/icons.scss` | The same, as source, if you compile your own. |
+| `dist/svgs/` | One file per icon, by category. |
+| `dist/sprites/` | One sprite per category, for `<use>`. |
+| `dist/scss/` | Per category Sass variables holding each icon as a data URI. |
+| `dist/icons.json` | Every identifier with its category and file paths, for tooling. |
+
+## Placing an icon
+
+Four routes to the same drawing. They differ in what resolves the identifier — the Core, the browser, or your stylesheet — not in what ends up on screen.
+
+### In a Fluid template
+
+The ViewHelper the Core registers. It writes the markup, the overlay and the size class for you.
+
+```html
+<core:icon identifier="actions-document-edit" size="small" />
+<core:icon identifier="apps-pagetree-page" overlay="overlay-hidden" size="medium" />
+```
+
+### In JavaScript or plain HTML
+
+A custom element that fetches the sprite itself, for markup assembled in the browser.
+
+```html
+<typo3-backend-icon identifier="actions-document-edit" size="small"></typo3-backend-icon>
+```
+
+### From the SVG sprite
+
+The markup the two above produce. One request per category, and the glyph inherits `currentColor` like any text around it.
+
+```html
+<link rel="stylesheet" href="node_modules/@typo3/icons/dist/icons.css">
+
+<span class="icon icon-size-small">
+    <span class="icon-markup">
+        <svg role="img"><use xlink:href="dist/sprites/actions.svg#actions-document-edit" /></svg>
+    </span>
+</span>
+```
+
+### From a stylesheet
+
+No markup at all: each icon is a Sass variable holding the drawing as a data URI. The mark cannot inherit a colour this way, so this route is for the cases where the colour is fixed anyway.
+
+```scss
+@import "@typo3/icons/dist/icons.scss";
+@import "@typo3/icons/dist/scss/icons-variables-actions.scss";
+
+.myclass {
+    background-size: 1em 1em;
+    background-image: $icon-actions-document-edit;
+}
+```
+
+## Classes
+
+From `dist/icons.css`. The wrapper carries the size and the colour, the layers inside carry the drawing.
+
+| Class | What it does |
+| --- | --- |
+| `icon` | The wrapper. One em square by default, in `currentColor`. |
+| `icon-markup` | The layer the glyph sits in. Required. |
+| `icon-overlay` | A second glyph, at 68.75% in the bottom corner. |
+| `icon-size-small` | 16px. Also `icon-size-medium` 32, `icon-size-large` 48, `icon-size-mega` 64. Without one, the icon is as big as the text it sits in. |
+| `icon-spin` | Turns the markup layer, two seconds a revolution. |
+| `icon-bidi` | Flips the drawing in a right-to-left context. |
+| `icon-state-disabled` | Fades the markup layer to the disabled opacity. |
+
+## Custom properties
+
+The wrapper reads these, so a size or a colour can be set from anywhere above it without touching the markup.
+
+```css
+.myclass {
+    --icon-size: 20px;
+    --icon-color-primary: currentColor;
+    --icon-color-accent: #79a548;
+    --icon-opacity-disabled: .5;
+}
+```
+
+`--icon-color-accent` is the one a backend module icon paints its highlight with, and the only colour in the set that is not `currentColor`.
+
+## How the drawings are built
+
+{% for grid, count in grids %}- {{ count }} icon{% if count != 1 %}s{% endif %} on a {{ grid }} by {{ grid }} grid.{{ "\n" }}{% endfor %}
+
+Most of the set is drawn at 16 pixels. Overlays are drawn smaller so they stay legible in the corner of another icon, and backend module icons are drawn at 64 because the module menu renders them large.
+
+## Icon index
+
+Every identifier in the set, by category. `tags` are what the icon is about beyond its name, `previously` are the identifiers it answered to in earlier versions, and `flips in RTL` marks the logical icons that mirror in a right-to-left context.
+{% for category in categories %}
+
+### {{ category.title }} — `{{ category.identifier }}` ({{ category.count }} icon{% if category.count != 1 %}s{% endif %})
+
+{{ category.description }}
+
+{% for identifier in category.icons %}- `{{ identifier }}`{% if icons[identifier]._meta.tags|length > 0 %} — tags: {{ icons[identifier]._meta.tags|join(', ') }}{% endif %}{% if icons[identifier]._meta.alias|length > 0 %} — previously: {{ icons[identifier]._meta.alias|join(', ') }}{% endif %}{% if icons[identifier].bidi %} — flips in RTL{% endif %}{{ "\n" }}{% endfor %}
+{% endfor %}
+
+## More
+
+- Site: {{ siteUrl }}
+- Repository: https://github.com/TYPO3/TYPO3.Icons
+- Changelog: https://github.com/TYPO3/TYPO3.Icons/blob/main/CHANGELOG.md
+- npm: https://www.npmjs.com/package/@typo3/icons

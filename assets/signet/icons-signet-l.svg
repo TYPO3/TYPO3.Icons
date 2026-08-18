@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="soul-ref" viewBox="0 0 32 32" role="img" aria-label="TYPO3 Icons">
+  <title>TYPO3 Icons</title>
+  <!-- Every colour sits on its own shape, as a var() with a hex fallback: a
+       page that declares the tokens gets its own ink, and this file still
+       renders on its own. Nothing colours it from a <style> or from the root,
+       and no comment in here may carry a double dash, which is what makes an
+       SVG malformed and a reference to it draw nothing. See
+       docs/design-system/artwork.rst. -->
+  <!-- L - drawn at 32, where one unit is one pixel. Stroke 2, rounding 1,
+       gap 2. The 32 x 24 field is the family's, centred in the square; the
+       frame and the corner marker are not, and this is the second mark in the
+       family to go without them.
+
+       The picture glyph, without the frame every drawing of it carries. What
+       a set of icons is for is standing in place of a thing, and the oldest
+       mark for that is a range and a sun. The sun is the accent, and a sun
+       stands top right anyway: here the family's rule and the drawing want
+       the same thing, which is the only reason this mark can drop the marker
+       and still be one of these.
+
+       The range is filled AND stroked at the same weight with a round join,
+       the way the siblings draw a triangle, so its peaks carry the same
+       rounding as every other corner in the system. Its base sits on the
+       grid; the slopes never land on a pixel at any size and are not asked
+       to. -->
+  <path d="M2 26L10 14L15 20L18 17L23 26Z" fill="var(--text-primary, #8A8378)" stroke="var(--text-primary, #8A8378)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+  <circle fill="var(--accent, #FF8700)" cx="25" cy="10" r="5"></circle>
+</svg>

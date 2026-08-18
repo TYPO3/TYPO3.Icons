@@ -1,0 +1,72 @@
+{% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}Release process{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Release process</h1>
+    <p class="sds-lead">
+        Releases are performed by project maintainers after the intended changes have been reviewed
+        and merged. The process updates package metadata and the changelog, creates a Git tag and
+        publishes the generated icon library to npm.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Before changing the version</h2>
+        <p>
+            Start from a clean, current default branch and confirm that the release contains only the
+            changes intended for publication. Review new identifiers and aliases, check TYPO3 compatibility
+            implications and run the complete build before selecting the version increment.
+        </p>
+        {{ makros.codeblock('npm ci
+    npm run build', 'bash') }}
+        <p>
+            Use a patch release for compatible fixes, a minor release for compatible additions and a major
+            release for breaking changes. The decision describes the public package contract, including
+            identifiers and distributed file paths—not the amount of code changed.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>Create the release commit and tag</h2>
+        <p>
+            The npm version lifecycle runs the configured preversion checks and changelog task. The project
+            uses <code>[RELEASE] v%s</code> as its release commit message, and release commits are excluded
+            from the generated changelog content.
+        </p>
+        {{ makros.codeblock('npm version [major | minor | patch]', 'bash') }}
+        <p>
+            Inspect the version change, changelog entry and generated metadata before pushing. The tag is
+            part of the compatibility history, so correct mistakes before it becomes public.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>Publish the release</h2>
+        <p>
+            Push the reviewed release commit and its tag, then publish with an npm account authorized for
+            <code>@typo3/icons</code>. Do not run these commands from an unreviewed feature branch.
+        </p>
+        {{ makros.codeblock('git push origin main --tags
+    npm publish', 'bash') }}
+    </div>
+    <div class="sds-section">
+        <h2>Verify the public result</h2>
+        <p>
+            Confirm that the npm package version, Git tag and release history agree. Check that the package
+            contains the expected individual SVGs, sprites, CSS, Sass and data files, and verify that the
+            documentation site still resolves the released identifiers and internal navigation.
+        </p>
+        <p>
+            If a publication problem affects consumers, document it explicitly and follow with the smallest
+            safe corrective release. Do not silently move or recreate a public Git tag.
+        </p>
+    </div>
+
+{% endblock %}

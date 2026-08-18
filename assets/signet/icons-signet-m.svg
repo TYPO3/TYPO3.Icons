@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="soul-ref" viewBox="0 0 24 24" role="img" aria-label="TYPO3 Icons">
+  <title>TYPO3 Icons</title>
+  <!-- Every colour sits on its own shape, as a var() with a hex fallback: a
+       page that declares the tokens gets its own ink, and this file still
+       renders on its own. Nothing colours it from a <style> or from the root,
+       and no comment in here may carry a double dash, which is what makes an
+       SVG malformed and a reference to it draw nothing. See
+       docs/design-system/artwork.rst. -->
+  <!-- M - drawn at 24, where one unit is one pixel. Stroke 2, rounding 1,
+       gap 2.
+
+       The same two peaks and the same sun, redrawn rather than scaled: at 24
+       a stroke of 2 is a larger share of the range, so the peaks are set
+       further apart than a reduction of the L would put them, and the valley
+       between them is cut deeper to survive it. -->
+  <path d="M2 19L8 11L12 15L14 13L18 19Z" fill="var(--text-primary, #8A8378)" stroke="var(--text-primary, #8A8378)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+  <circle fill="var(--accent, #FF8700)" cx="19" cy="8" r="4"></circle>
+</svg>

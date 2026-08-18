@@ -1,0 +1,161 @@
+{% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}Module icons{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Module icons</h1>
+
+    <p class="sds-lead">Module icons are used in the TYPO3 backend navigation. They are designed at 64x64px but typically rendered at 32x32px.</p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Canvas &amp; scaling</h2>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Property</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">Canvas Size</td>
+                        <td>64x64px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Rendered Size</td>
+                        <td>32x32px (typical display size)</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Protective Space</td>
+                        <td>12px from edges (content area: 40x40px centered)</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Stroke Width</td>
+                        <td>4px (scales to 2px at 32x32)</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Corner Radius</td>
+                        <td>2px for small elements, 4px for larger shapes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="sds-section">
+        <h2>Colors</h2>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Element</th>
+                        <th scope="col">How it is filled</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">Primary</td>
+                        <td>Use <code>fill="currentColor"</code> for main shapes, so the icon inherits the text colour of its context.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Secondary</td>
+                        <td>Use <code>fill="currentColor"</code> with <code>opacity=".4"</code> for less prominent details.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Accent</td>
+                        <td>Use <code>fill="var(--icon-color-accent, #ff8700)"</code> for highlighted parts. The custom property allows theming; the fallback keeps the icon working standalone.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Structure Example</h3>
+        {{ makros.codeblock('
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <!-- Primary shape -->
+      <path d="..." fill="currentColor"/>
+
+      <!-- Secondary/detail elements -->
+      <path d="..." fill="currentColor" opacity=".4"/>
+
+      <!-- Accent highlight -->
+      <rect ... fill="var(--icon-color-accent, #ff8700)"/>
+    </svg>
+        ', 'xml') }}
+
+        <h3>Example</h3>
+        <p>Module icons adapt to their context. The <code>currentColor</code> elements inherit the text color, while the accent color can be customized via the <code>--icon-color-accent</code> CSS variable.</p>
+        <div class="docs-cols">
+            <div>
+                <strong>Light Background</strong>
+                <div class="docs-swatch" style="background-color: #ffffff; color: #212121;">
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-list',
+                        iconSize: 'large'
+                    } -%}
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-page',
+                        iconSize: 'large'
+                    } -%}
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-filelist',
+                        iconSize: 'large'
+                    } -%}
+                </div>
+            </div>
+            <div>
+                <strong>Dark Background</strong>
+                <div class="docs-swatch" style="background-color: #212121; color: #ffffff;">
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-list',
+                        iconSize: 'large'
+                    } -%}
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-page',
+                        iconSize: 'large'
+                    } -%}
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-filelist',
+                        iconSize: 'large'
+                    } -%}
+                </div>
+            </div>
+            <div>
+                <strong>Custom Accent</strong>
+                <div class="docs-swatch" style="background-color: #212121; color: #ffffff; --icon-color-accent: #79A548;">
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-list',
+                        iconSize: 'large'
+                    } -%}
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-page',
+                        iconSize: 'large'
+                    } -%}
+                    {%- include '_icon.html.twig' with {
+                        iconIdentifier: 'module-filelist',
+                        iconSize: 'large'
+                    } -%}
+                </div>
+            </div>
+        </div>
+
+        <h3>Design Tips</h3>
+        <ul>
+            <li>Design at 64x64 but preview at 32x32 to ensure clarity at the rendered size</li>
+            <li>Use even stroke widths (4px recommended) for crisp scaling</li>
+            <li>Keep details simple - fine lines may disappear at smaller sizes</li>
+            <li>Test with both light and dark backgrounds since <code>currentColor</code> adapts</li>
+            <li>Limit accent color usage to small highlights that draw attention to the icon's purpose</li>
+        </ul>
+    </div>
+
+{% endblock %}

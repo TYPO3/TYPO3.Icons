@@ -1,11 +1,12 @@
-<div class="d-flex flex-nowrap ms-auto gap-4 align-items-center">
+<div class="sds-row">
     {%- if showBidiFilter is not defined or showBidiFilter -%}
-    <div class="form-check form-switch mb-0">
-        <input class="form-check-input" type="checkbox" id="bidiFilter" autocomplete="off">
-        <label class="form-check-label" for="bidiFilter" title="Show only icons with BiDi support">
-            BiDi
-        </label>
-    </div>
+    <sds-checkbox id="bidiFilter" label="BiDi"></sds-checkbox>
     {%- endif -%}
-    <input class="form-control search mb-0" id="search" placeholder="Start typing to filter..." autocomplete="off">
+    <sds-field
+        id="search"
+        icon="actions-search"
+        label="Filter icons"
+        value="Start typing to filter..."
+        min-width="240"
+    ></sds-field>
 </div>

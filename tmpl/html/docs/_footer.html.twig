@@ -1,0 +1,32 @@
+<sds-footer
+    signet="{{ pathPrefix }}assets/signet/icons-signet-m.svg"
+    brand="TYPO3"
+    product="Icons"
+    note="The official icon library for TYPO3 Core, extensions and custom backend modules. Published as {{ pkg.name }}."
+    version="{{ pkg.version }}"
+    copyright="© {{ year }} The TYPO3 Project"
+    groups="{{ [
+        { label: 'Explore', items: [
+            { label: 'All icons', href: pathPrefix ~ 'icons.html' },
+            { label: 'Usage', href: pathPrefix ~ 'guide/usage.html' },
+            { label: 'Version compatibility', href: pathPrefix ~ 'guide/compatibility.html' }
+        ]},
+        { label: 'Design and contribute', items: [
+            { label: 'Design guidelines', href: pathPrefix ~ 'guide.html' },
+            { label: 'Contribution guide', href: pathPrefix ~ 'guide/contributing.html' }
+        ]},
+        { label: 'Project', items: [
+            { label: 'Releases', href: 'https://github.com/TYPO3/TYPO3.Icons/releases', external: true },
+            { label: 'Issues', href: 'https://github.com/TYPO3/TYPO3.Icons/issues', external: true },
+            { label: 'Changelog', href: 'https://github.com/TYPO3/TYPO3.Icons/blob/main/CHANGELOG.md', external: true },
+            { label: 'npm', href: 'https://www.npmjs.com/package/@typo3/icons', external: true }
+        ]},
+        { label: 'TYPO3', items: [
+            { label: 'typo3.org', href: 'https://typo3.org/', external: true },
+            { label: 'Soul Design System', href: 'https://typo3.github.io/soul-design-system/', external: true }
+        ]}
+    ]|json_encode|e('html_attr') }}"
+    marks="{{ [
+        { label: 'GitHub', href: 'https://github.com/TYPO3/TYPO3.Icons', external: true, icon: 'actions-brand-github' }
+    ]|json_encode|e('html_attr') }}"
+></sds-footer>

@@ -1,64 +1,78 @@
 //
-// Misc
+// Page furniture
 //
-.btn-default {
-    --bs-btn-color: #333333;
-    --bs-btn-bg: rgb(238, 238, 238);
-    --bs-btn-border-color: #bbbbbb;
-    --bs-btn-hover-color: #333333;
-    --bs-btn-hover-bg: #cacaca;
-    --bs-btn-hover-border-color: #bebebe;
-    --bs-btn-focus-shadow-rgb: 159, 159, 159;
-    --bs-btn-active-color: #333333;
-    --bs-btn-active-bg: #bebebe;
-    --bs-btn-active-border-color: #b3b3b3;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    --bs-btn-disabled-color: #333333;
-    --bs-btn-disabled-bg: rgb(238, 238, 238);
-    --bs-btn-disabled-border-color: #bbbbbb;
-}
-.btn-dark {
-    --bs-btn-border-color: color-mix(in srgb, var(--bs-btn-color) 5%, var(--bs-btn-bg));
-    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-btn-hover-color) 5%, var(--bs-btn-hover-bg));
-    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-btn-active-color) 5%, var(--bs-btn-active-bg));
-    --bs-btn-disabled-border-color: color-mix(in srgb, var(--bs-btn-disabled-color) 5%, var(--bs-btn-disabled-bg));
-}
-.bg-adapt-light {
-    background: color-mix(in srgb, var(--bs-body-color) 10%, var(--bs-body-bg));
-}
-.table td {
-    vertical-align: middle;
-    white-space: nowrap;
-}
-.section + .section {
-    margin-top: 3.5rem;
-}
-.coloritem {
-    display: inline-block;
-    vertical-align: middle;
-    &-box {
-        border-radius: 3px;
-        height: 1.25rem;
-        width: 1.25rem;
-        background-color: #fafafa;
+// The docs are written in Soul: everything here is what the icon documentation
+// needs on top of it, and nothing that Soul already states.
+//
+// What is true of a single icon: its tags, its badges, the versions it is in.
+.docs-intro {
+    h1 {
+        margin: 0 0 var(--space-2);
     }
-    &-code {
-        margin-left: .5rem;
-        margin-right: .5rem;
-        font-family: monospace;
+
+    // The stage is the evidence for the title above it, so the pair closes.
+    &:has(+ .iconstage) {
+        margin-bottom: var(--space-6);
     }
 }
-.code-container {
-    position: relative;
-    border-radius: var(--bs-border-radius);
-    overflow: hidden;
-    .code-copy-btn {
-        font-family: var(--bs-font-monospace);
-        position: absolute;
-        inset-block-start: 0;
-        inset-inline-end: 0;
-        border-start-start-radius: 0;
-        border-start-end-radius: 0;
-        border-end-end-radius: 0;
+
+.docs-facts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-6);
+    font-size: var(--font-size-ui);
+    color: var(--text-secondary);
+}
+// One fact wraps inside itself as well as against its neighbours: the version
+// row is a label and eight badges, and on a phone that is wider than the column
+// it stands in. Without this the row pushed the whole page into a horizontal
+// scroll — the facts wrapped between each other and this one could not.
+.docs-fact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+// Icons shown inside controls, which is where most of them end up.
+.docs-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+// Two or three examples read side by side — a comparison, so they wrap
+// together rather than one at a time.
+.docs-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-4);
+}
+
+// A stated ground for an example that has to keep its own colours.
+.docs-swatch {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    margin-top: var(--space-2);
+    border-radius: var(--radius-card);
+}
+
+// A two column lookup reads as a list, not as a spread: it keeps the measure
+// of the sentence above it rather than the width of the column it sits in.
+.docs-reference {
+    max-width: var(--measure-prose);
+    code {
+        vertical-align: baseline;
     }
+}
+
+// A note about the example above it, quieter than the example.
+.docs-hint {
+    font-size: var(--font-size-dense);
+    color: var(--text-muted);
 }

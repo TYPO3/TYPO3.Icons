@@ -1,0 +1,26 @@
+{#- The pitched layout: bands across the full width, no rail. What a reader
+    arriving at the site sees before they know what they are looking for. -#}
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{% block title %}{% endblock %} - TYPO3 Icons</title>
+    {%- include '_head.html.twig' -%}
+</head>
+<body class="sds-app">
+
+    <a class="sds-skip sds-btn sds-btn--secondary" href="#main-content">Skip to content</a>
+
+    <div class="sds-shell">
+
+        {%- include '_bar.html.twig' -%}
+
+        <main class="sds-bands" id="main-content">
+            {%- block content -%}{%- endblock -%}
+        </main>
+
+        {%- include '_footer.html.twig' -%}
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+{% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}Development setup{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Development setup</h1>
+    <p class="sds-lead">
+        The repository contains both the icon production pipeline and the documentation site. A local
+        build lets you verify source changes in the same generated formats used by the npm package and
+        the published website.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Requirements and installation</h2>
+        <p>
+            Continuous integration runs on Node.js 24. Use the same major version locally to reduce
+            differences in dependency and build behaviour. Install the locked dependency tree with
+            <code>npm ci</code>; this keeps local output aligned with CI.
+        </p>
+        {{ makros.codeblock('npm ci', 'bash') }}
+    </div>
+    <div class="sds-section">
+        <h2>Know the source boundaries</h2>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Path</th>
+                        <th scope="col">What it holds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">src/</td>
+                        <td>Authoring SVGs, grouped by their public icon category.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">meta/</td>
+                        <td>Aliases, search tags and generated release history for each identifier.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">tmpl/ and assets/</td>
+                        <td>Twig content, JavaScript and Sass used to build the documentation site.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">dist/ and _site/</td>
+                        <td>Generated package and website output. Rebuild these from their sources.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="sds-section">
+        <h2>Build icon assets</h2>
+        <p>
+            The icon build optimizes the source SVGs and produces individual files, category sprites,
+            stylesheets, Sass variables and the JSON data consumed by the site. Run it after changing an
+            SVG or icon metadata that affects generated output.
+        </p>
+        {{ makros.codeblock('npm run icons-build', 'bash') }}
+    </div>
+    <div class="sds-section">
+        <h2>Build and preview the site</h2>
+        <p>
+            The site build renders the Twig templates and copies the icon distribution and Soul Design
+            System into <code>_site/</code>. Serve that directory locally to test navigation, responsive
+            layout, code examples and icon previews as a reader will encounter them.
+        </p>
+        {{ makros.codeblock('npm run site-build
+    npm run site-serve', 'bash') }}
+        <p>
+            For an active editing session, <code>npm run dev</code> builds the icon set and site once, then
+            watches SVG, Sass and Twig sources for changes.
+        </p>
+        {{ makros.codeblock('npm run dev', 'bash') }}
+    </div>
+    <div class="sds-section">
+        <h2>Run the relevant checks</h2>
+        <p>
+            CI installs from the lockfile, runs Stylelint and rebuilds the icons. Match those checks before
+            submitting a pull request. Documentation changes should also receive a complete site build so
+            broken templates and navigation data are caught locally.
+        </p>
+        {{ makros.codeblock('npm run stylelint
+    npm run icons-build
+    npm run site-build', 'bash') }}
+    </div>
+    <div class="sds-section">
+        <h2>Commit message convention</h2>
+        <p>
+            Prefix each commit with the type that best describes its effect. The release tooling uses these
+            prefixes to organize changelog entries, so choose the user-visible outcome rather than the file
+            type you happened to edit.
+        </p>
+        <ul>
+            <li><code>[FEATURE]</code> for new functionality or new public assets.</li>
+            <li><code>[BUGFIX]</code> for corrections to shipped behaviour or assets.</li>
+            <li><code>[TASK]</code> for maintenance, refactoring and dependency work.</li>
+            <li><code>[DOCS]</code> for documentation-only changes.</li>
+            <li><code>[!!!]</code> or <code>[BREAKING]</code> for incompatible changes.</li>
+        </ul>
+    </div>
+
+{% endblock %}

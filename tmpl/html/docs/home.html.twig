@@ -1,0 +1,229 @@
+{% extends "_layout-page.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}Official icon library{% endblock %}
+{% block content %}
+
+    <section class="sds-band">
+        <div class="sds-split sds-split--center">
+            <div class="sds-column">
+                <sds-eyebrow label="The official icon library for TYPO3"></sds-eyebrow>
+                {#- No qualifier. "every TYPO3 backend" claimed a plural that does
+                    not exist, and naming the backend would have shut out the half
+                    of the guide about using the set with no TYPO3 runtime. Where
+                    it reaches is a fact for the sentence below, which has room for
+                    it; the line itself only has to say what the library is. -#}
+                <h1 class="sds-display">One visual language for TYPO3</h1>
+                <p class="sds-lead">
+                    Browse {{ iconCount }} production-ready icons for TYPO3 Core, extensions and custom
+                    backend modules — and for any project that needs to match them. Find the right icon,
+                    preview every state and copy the code you need.
+                </p>
+                {#- The field owes no step by its own contract, so loose in the
+                    flow it touched the actions under it. `sds-field-group` is the
+                    name for the box that pays one. -#}
+                <sds-field-group>
+                    {#- The icons only index, not the site one: somebody arriving here is
+                        looking for a mark, and a guide page among the hits answers a
+                        question they did not ask. The bar keeps the whole site. -#}
+                    <sds-search size="lg" index="{{ pathPrefix }}search-icons.json" label="Search by name, purpose or previous identifier"></sds-search>
+                </sds-field-group>
+                <div class="sds-actions">
+                    <sds-button href="{{ pathPrefix }}icons.html" variant="primary" size="lg">Browse all {{ iconCount }} icons</sds-button>
+                    <sds-button href="{{ pathPrefix }}guide/usage.html" variant="secondary" size="lg">Start using the icons</sds-button>
+                </div>
+            </div>
+            <div class="sds-column">
+                {#- Six marks, each the way into its own page: the wall is the
+                    first thing a reader sees, and a glyph they can press is the
+                    shortest route from "that one" to the identifier they came
+                    for. The identifier is the link's name rather than a caption
+                    under it, because the wall is scanned by shape and six names
+                    would be six things to read before the shape is found.
+
+                    These six are the wall a reader arrives at, and `main.js`
+                    draws six others over them from `showcase.json` once it has
+                    it. Written out rather than left empty for the script to
+                    fill: the box is the first thing on the page, and a set of
+                    six holes is worse than a set somebody chose. They are named
+                    here rather than picked by the build so that two builds of
+                    the same source are the same bytes.
+
+                    Chosen by silhouette, not by category: half this set is page
+                    shaped, and six rectangles in a row show range in a table and
+                    none on a wall. A gear, a folder, a box, a sheet, a speaker
+                    and a person, which is also six different categories. -#}
+                <sds-grid variant="dense" data-showcase>
+                    {%- set showcase = [
+                        'actions-cog', 'apps-filetree-folder-default', 'module-extensionmanager',
+                        'mimetypes-pdf', 'content-audio', 'status-user-admin'
+                    ] -%}
+                    {%- for iconIdentifier in showcase -%}
+                        <a class="homegrid-item"
+                            href="{{ pathPrefix }}icons/{{ icons[iconIdentifier].category }}/{{ iconIdentifier }}.html"
+                            aria-label="{{ iconIdentifier }}"
+                            title="{{ iconIdentifier }}"
+                        >
+                            {%- include '_icon.html.twig' with {
+                                iconIdentifier: iconIdentifier,
+                                iconSize: 'large'
+                            } -%}
+                        </a>
+                    {%- endfor -%}
+                </sds-grid>
+            </div>
+        </div>
+    </section>
+
+    {#- One flow, not a run of boxes. Soul states the air above a heading on the
+        block before it (`:has(+ h3)`), so a heading wrapped in a box of its own
+        can never be given any: every step in this band collapsed to the 16px a
+        paragraph owes its neighbour. Headings and paragraphs carry the measure
+        from `base`, so the boxes bought nothing in exchange. -#}
+    <section class="sds-band">
+        <h2>Browse icons by category</h2>
+        <p>
+            Start with the part of the backend you are building. Every category groups icons by
+            a real TYPO3 interface task, from editing content to managing files and modules.
+        </p>
+        <sds-grid variant="flush">
+            {%- for categoryItem in categories if not categoryItem.minor -%}
+                <sds-card
+                    heading="{{ categoryItem.title }}"
+                    href="{{ pathPrefix }}icons/{{ categoryItem.identifier }}.html"
+                    label="{{ categoryItem.count }} {{ categoryItem.count == 1 ? 'icon' : 'icons' }}"
+                    action="Browse {{ categoryItem.title|lower }}"
+                >
+                    <p>{{ categoryItem.description }}</p>
+                </sds-card>
+            {%- endfor -%}
+        </sds-grid>
+
+        {#- The minor categories, mentioned rather than listed. A single avatar,
+            one fallback and a spinner had a heading, a paragraph and six rows of
+            description between them — as much of the page as the nine categories
+            above, for eleven icons nobody comes here to browse. Named, linked,
+            and left at that.
+
+            The list is gathered first because Twig withholds `loop.last` and
+            `loop.revindex` from a `for` that filters, and the sentence needs to
+            know which name is the last one. -#}
+        {%- set minorCategories = [] -%}
+        {%- for categoryItem in categories if categoryItem.minor -%}
+            {%- set minorCategories = minorCategories|merge([categoryItem]) -%}
+        {%- endfor -%}
+        <p>
+            And more:
+            {%- for categoryItem in minorCategories -%}
+                {{- ' ' }}<a href="{{ pathPrefix }}icons/{{ categoryItem.identifier }}.html">{{ categoryItem.title }}</a>
+                {%- if loop.revindex0 == 1 %} and{% elseif not loop.last %},{% endif -%}
+            {%- endfor -%}.
+        </p>
+    </section>
+
+    <section class="sds-band sds-band--quiet">
+        <div class="sds-split sds-split--center">
+            <div class="sds-column">
+                <h2>From search to implementation</h2>
+                <p>
+                    Find an icon by name, purpose, tag or legacy identifier. Each detail page shows its
+                    available sizes, states, TYPO3 versions and implementation-ready identifier.
+                </p>
+                <p>
+                    Inside TYPO3 Core there is nothing to install. For extensions and standalone tools,
+                    choose Fluid, the TYPO3 web component, SVG sprites, CSS or Sass.
+                </p>
+                <div class="sds-actions">
+                    <sds-button href="{{ pathPrefix }}guide/usage.html" variant="primary">Compare integration methods</sds-button>
+                </div>
+            </div>
+            <div class="sds-column">
+                {{ makros.codeblock('<core:icon identifier="actions-document-edit" size="small" />', 'html') }}
+                {{ makros.codeblock('npm install @typo3/icons', 'bash') }}
+            </div>
+        </div>
+    </section>
+
+    {#- Two subjects, one band. Each was a band of its own holding a heading, a
+        sentence and either three claims or a single button, so each spent a full
+        band's padding on half a band's worth of content. Side by side they cost
+        one set of padding instead of two.
+
+        Top aligned rather than `--center`: what pairs the two halves is their
+        headings, and centring the shorter one against the taller would put them
+        on different lines. -#}
+    <section class="sds-band">
+        <div class="sds-split">
+            <div class="sds-column">
+                <h2>Designed for real backend work</h2>
+                <p>
+                    These icons are made for TYPO3's compact controls, page trees, content modules
+                    and editing workflows—not adapted from a generic interface set.
+                </p>
+                <ul class="sds-list sds-list--plain">
+                    <li>
+                        <strong>Consistent at every size</strong> — <span>Shared grids, strokes and color rules keep Core and extensions visually aligned.</span>
+                    </li>
+                    <li>
+                        <strong>Ready for every language</strong> — <span>Directional icons can mirror automatically in right-to-left interfaces.</span>
+                    </li>
+                    <li>
+                        <strong>Stable across releases</strong> — <span>Version metadata shows which icons are available in each TYPO3 branch.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sds-column">
+                <h2 id="releases">TYPO3 version compatibility</h2>
+                <p>
+                    TYPO3 Core pins a tested version of the icon library. Check which package
+                    version—and therefore which icons—you can rely on in each TYPO3 branch.
+                </p>
+                <div class="sds-table-scroll docs-reference">
+                    <table class="sds-table sds-table--compact">
+                        <thead>
+                            <tr>
+                                <th scope="col">TYPO3</th>
+                                <th scope="col">@typo3/icons</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {#- The supported branches only. The full mapping back to 7.6 is
+                                what the compatibility page is for; here it would be a table
+                                of versions nobody can install any more. -#}
+                            {%- for typo3version, version in typo3.versions -%}
+                                {%- if typo3version in ['12.4', '13.4', '14.x'] -%}
+                                    <tr>
+                                        <td class="sds-td-meta">{{ typo3version }}</td>
+                                        <td class="sds-td-meta">{{ version }}</td>
+                                    </tr>
+                                {%- endif -%}
+                            {%- endfor -%}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sds-actions">
+                    <sds-button href="{{ pathPrefix }}guide/compatibility.html" variant="secondary">Check every TYPO3 version</sds-button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sds-band sds-band--quiet">
+        <div class="sds-split sds-split--center">
+            <div class="sds-column">
+                <sds-eyebrow label="Built by the TYPO3 community"></sds-eyebrow>
+                <h2>Help shape the TYPO3 visual language</h2>
+                <p>
+                    Improve an existing icon or the documentation, follow the drawing rules and
+                    contribute your work through the established GitHub workflow.
+                </p>
+            </div>
+            <div class="sds-column">
+                <div class="sds-actions">
+                    <sds-button href="{{ pathPrefix }}guide/contributing.html" variant="primary" size="lg">Contribution guide</sds-button>
+                    <sds-button href="https://github.com/TYPO3/TYPO3.Icons" variant="secondary" size="lg">View on GitHub</sds-button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

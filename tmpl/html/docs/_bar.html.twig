@@ -1,0 +1,9 @@
+<sds-nav-main
+    home="{{ pathPrefix }}index.html"
+    signet="{{ pathPrefix }}assets/signet/icons-signet-m.svg"
+    brand="TYPO3"
+    product="Icons"
+    label="Sections"
+    index="{{ pathPrefix }}search.json"
+    menu="{{ nav.tree|json_encode|e('html_attr') }}"
+></sds-nav-main>

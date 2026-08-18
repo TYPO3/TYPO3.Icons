@@ -1,0 +1,81 @@
+{% extends "_layout.html.twig" %}
+{% block title %}Contributing{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Contribute to TYPO3 Icons</h1>
+    <p class="sds-lead">
+        TYPO3 Icons is maintained in the open. Contributions improve the shared visual language used
+        by the Core, extensions and custom backend modules—from a more legible SVG to clearer usage
+        guidance or a more reliable build.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Where your contribution fits</h2>
+        <p>
+            Start with the part of the project you intend to change. Each path has a different source of
+            truth and a different review focus, but all changes use the same repository and pull-request
+            workflow.
+        </p>
+
+        <h3>Icon changes</h3>
+        <p>
+            Refine an existing icon or add an asset that follows the established grids, naming rules and
+            visual conventions. Work in <code>src/</code>, keep identifiers stable where possible and
+            review the generated result at the sizes people will actually see.
+        </p>
+        <p><a href="{{ pathPrefix }}guide/contributing-icons.html">Prepare an icon contribution</a></p>
+
+        <h3>Documentation and tooling</h3>
+        <p>
+            Improve explanations, examples, templates, styles or build scripts. The documentation is part
+            of the product: it determines whether developers can find the right identifier and implement
+            it correctly without reading the repository source.
+        </p>
+        <p><a href="{{ pathPrefix }}guide/contributing-development.html">Set up the project locally</a></p>
+
+        <h3>Releases</h3>
+        <p>
+            Publishing is a maintainer task. The release process turns reviewed changes into a versioned
+            npm package, updates the changelog and creates the Git tag consumed by downstream projects.
+        </p>
+        <p><a href="{{ pathPrefix }}guide/contributing-releases.html">Review the release process</a></p>
+    </div>
+    <div class="sds-section">
+        <h2>Review-ready changes</h2>
+        <p>
+            Keep the change focused and explain the problem it solves. For visual work, include before and
+            after previews at the intended rendered size. For documentation or tooling, describe the user
+            path or failure that motivated the change and note how you verified the result.
+        </p>
+        <p>
+            Generated files should reflect their sources, not replace them. Edit the SVGs, templates or
+            styles first, run the relevant build and review its output before opening the pull request.
+            A focused contribution with reproducible checks gives reviewers the context they need to make
+            a confident decision.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>From branch to merge</h2>
+        <ol>
+            <li>Create a focused branch from the current default branch.</li>
+            <li>Change the source files and run the checks relevant to that change.</li>
+            <li>Review generated assets and documentation locally.</li>
+            <li>Commit with the project prefix that best describes the change.</li>
+            <li>Open a pull request with context, verification notes and useful visual evidence.</li>
+        </ol>
+        <p>
+            Review may lead to small refinements. That is part of keeping a library used across many TYPO3
+            versions consistent: a local improvement also has to work as part of the complete set.
+        </p>
+    </div>
+
+{% endblock %}

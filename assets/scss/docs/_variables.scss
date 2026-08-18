@@ -2,16 +2,13 @@
 // Variables
 //
 :root {
-    // Block
-    --block-light-color: #212529;
-    --block-light-bg-color: #f8f9fa;
-    --block-dark-color: #ffffff;
-    --block-dark-bg-color: #343a40;
-    --block-color: var(--block-light-color);
-    --block-bg-color: var(--block-light-bg-color);
-    // Grid
-    --icongrid-color: var(--block-color);
-    --icongrid-bg-color: var(--block-bg-color);
+    // The grounds the specimens stand on. They show how an icon behaves on a
+    // light and on a dark surface, so they are stated rather than themed:
+    // both are on the page at once, whatever mode the page is read in.
+    --block-light-color: #1c1a17;
+    --block-light-bg-color: #ffffff;
+    --block-dark-color: #ede9e2;
+    --block-dark-bg-color: #171614;
     // Preview
     --preview-light-color: var(--block-light-color);
     --preview-light-bg-color: var(--block-light-bg-color);
@@ -19,10 +16,4 @@
     --preview-dark-bg-color: var(--block-dark-bg-color);
     --preview-color: var(--preview-light-color);
     --preview-bg-color: var(--preview-light-bg-color);
-}
-[data-bs-theme="dark"] {
-    --block-color: var(--block-dark-color);
-    --block-bg-color: var(--block-dark-bg-color);
-    --preview-color: var(--block-preview-dark-color);
-    --preview-bg-color: var(--block-preview-dark-bg-color);
 }

@@ -1,15 +1,15 @@
 {% extends "_layout.html.twig" %}
-{% block title %}Home{% endblock %}
+{% block title %}All icons{% endblock %}
 {% block content %}
 
-    <nav>
-        <ul class="breadcrumb mb-0 text-muted bg-transparent p-0">
-            <li class="breadcrumb-item">Home</li>
-        </ul>
-    </nav>
-
-    <div class="d-flex mb-4 align-items-center">
-        <h2 class="mb-0">Icons</h2>
+    <div class="sds-split">
+        <div class="sds-column">
+            <h1>All TYPO3 icons</h1>
+            <p class="sds-lead">
+                Browse {{ iconCount }} icons from the official TYPO3 library. Filter by identifier,
+                purpose or tag, then open an icon to preview its states and implementation details.
+            </p>
+        </div>
         {%- include '_filters.html.twig' -%}
     </div>
 

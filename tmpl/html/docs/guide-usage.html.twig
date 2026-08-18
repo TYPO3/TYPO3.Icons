@@ -1,0 +1,111 @@
+{% extends "_layout.html.twig" %}
+{% block title %}Icon usage{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Icon usage</h1>
+    <p class="sds-lead">
+        Start with your project context. Installation explains where the assets come from, backend
+        usage covers TYPO3-native components, and external usage covers standalone tools and builds.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Choose your path</h2>
+
+        {#- Four ways in, as cards rather than as four headings with a text link
+            under each: this page exists to be chosen from, and `sds-card` is the
+            element for that — the whole frame is the one link, and `action` is the
+            call to action as words rather than a second control inside it.
+
+            `label` carries where the path applies, because that is the question a
+            reader arrives with. The glyphs are from the actions category, which is
+            the one Soul bundles — `sds-icon` throws on any identifier outside it. -#}
+        {%- set paths = [
+            {
+                label: 'Any project',
+                heading: 'Installation',
+                icon: 'actions-package',
+                href: 'guide/installation.html',
+                action: 'Set up the icon library',
+                body: 'What TYPO3 Core already provides, when to install the npm package, and which files the package publishes.'
+            },
+            {
+                label: 'Inside TYPO3',
+                heading: 'Backend usage',
+                icon: 'actions-brand-typo3',
+                href: 'guide/backend-usage.html',
+                action: 'Use icons in the TYPO3 backend',
+                body: 'Add icons to Fluid templates and backend JavaScript with the TYPO3 ViewHelper or the backend icon web component.'
+            },
+            {
+                label: 'Outside TYPO3',
+                heading: 'External usage',
+                icon: 'actions-globe',
+                href: 'guide/external-usage.html',
+                action: 'Use icons outside TYPO3',
+                body: 'Use the published SVG sprites, CSS and Sass variables in a standalone project with no TYPO3 runtime.'
+            },
+            {
+                label: 'Before you ship',
+                heading: 'Version compatibility',
+                icon: 'actions-history',
+                href: 'guide/compatibility.html',
+                action: 'Check version compatibility',
+                body: 'Which icon-library release each supported TYPO3 branch includes, before you rely on a recently introduced identifier.'
+            }
+        ] -%}
+        <sds-grid>
+            {%- for path in paths -%}
+                <sds-card
+                    label="{{ path.label }}"
+                    heading="{{ path.heading }}"
+                    icon="{{ path.icon }}"
+                    href="{{ pathPrefix }}{{ path.href }}"
+                    action="{{ path.action }}"
+                >
+                    <p>{{ path.body }}</p>
+                </sds-card>
+            {%- endfor -%}
+        </sds-grid>
+    </div>
+    <div class="sds-section">
+        <h2>Quick comparison</h2>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Context</th>
+                        <th scope="col">Recommended method</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">Fluid template</td>
+                        <td>TYPO3 Core icon ViewHelper</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Backend JavaScript</td>
+                        <td>Backend icon web component</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Standalone HTML</td>
+                        <td>SVG category sprite</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Compiled stylesheet</td>
+                        <td>Sass data-URI variable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}

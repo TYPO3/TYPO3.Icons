@@ -1,0 +1,75 @@
+{% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}External usage{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>External usage</h1>
+    <p class="sds-lead">
+        Use the icon assets in standalone tools, prototypes and custom build pipelines without a
+        TYPO3 runtime. Install the package, then choose SVG markup or Sass variables.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Install the assets</h2>
+        {{ makros.codeblock('npm install @typo3/icons', 'bash') }}
+        <p>
+            See <a href="{{ pathPrefix }}guide/installation.html">Installation</a> for the complete list
+            of published files.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>SVG sprites</h2>
+        <p>
+            Include the component stylesheet and reference the icon in its category sprite. The SVG uses
+            <code>currentColor</code>, so it follows the surrounding text or control color.
+        </p>
+        {{ makros.codeblock('<link rel="stylesheet" href="node_modules/@typo3/icons/dist/icons.css">
+
+    <span class="icon icon-size-small">
+        <span class="icon-markup">
+            <svg role="img" aria-label="Edit">
+                <use href="node_modules/@typo3/icons/dist/sprites/actions.svg#actions-document-edit" />
+            </svg>
+        </span>
+    </span>', 'html') }}
+    </div>
+    <div class="sds-section">
+        <h2>Individual SVG files</h2>
+        <p>
+            Every icon is also published as an individual file under <code>dist/svgs/</code>. Use these
+            assets when your build system imports, copies or optimizes SVG files directly.
+        </p>
+        {{ makros.codeblock('node_modules/@typo3/icons/dist/svgs/actions/actions-document-edit.svg', 'text') }}
+    </div>
+    <div class="sds-section">
+        <h2>Sass variables</h2>
+        <p>
+            Each category exposes its icons as data-URI variables. This method produces a background
+            image and therefore cannot inherit <code>currentColor</code>; use it when the icon color is fixed.
+        </p>
+        {{ makros.codeblock('@import "@typo3/icons/dist/icons.scss";
+    @import "@typo3/icons/dist/scss/icons-variables-actions.scss";
+
+    .edit-action {
+        background-size: 1em 1em;
+        background-image: $icon-actions-document-edit;
+    }', 'scss') }}
+    </div>
+    <div class="sds-section">
+        <h2>Find an asset</h2>
+        <p>
+            Open an icon in the <a href="{{ pathPrefix }}icons.html">complete library</a> to confirm its
+            identifier, category and package path before adding it to your build.
+        </p>
+    </div>
+
+{% endblock %}

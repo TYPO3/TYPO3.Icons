@@ -1,0 +1,108 @@
+{% extends "_layout.html.twig" %}
+{% import "_makros.html.twig" as makros %}
+{% block title %}Drawing an icon{% endblock %}
+{% block content %}
+
+    {%- include '_breadcrumb.html.twig' -%}
+
+    <h1>Drawing an icon</h1>
+    <p class="sds-lead">
+        Most of the set is drawn at 16 pixels, and an overlay at 11. Both are small enough that a
+        half pixel of drift is visible, so the construction is stated rather than judged by eye.
+    </p>
+
+    {%- include '_toc.html.twig' -%}
+
+    {#- The rhythm between the sections, stated by the container Soul has
+        for it. Left to the flow, the air above a heading is a rule on the
+        block before it, and a block whose own margin ties with that rule
+        wins on source order — a table before a heading closed the two to
+        the step a paragraph gets. -#}
+    <div class="sds-section">
+        <h2>Action icons</h2>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Property</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">Size</td>
+                        <td>16x16px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Protective space</td>
+                        <td>1px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Effective size</td>
+                        <td>14x14px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Outline width</td>
+                        <td>1px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Smooth edges</td>
+                        <td>0.5px / 0.25px</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">Color</td>
+                        <td>black / transparent</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="sds-section">
+        <h2>Overlay icons</h2>
+        <p>
+            Drawn at 11x11px. An overlay sits in the corner of another icon rather than standing on
+            its own, so it is the one part of the set not drawn to the 16 pixel grid.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>Which grid an icon is on</h2>
+        <p>
+            Counted from the set as it stands, not stated once and left to rot. A drawing that does not
+            sit on one of these is drawn to a box nothing else in the set uses.
+        </p>
+        <div class="sds-table-scroll docs-reference">
+            <table class="sds-table sds-table--medium">
+                <thead>
+                    <tr>
+                        <th scope="col">Grid</th>
+                        <th scope="col">Icons</th>
+                        <th scope="col">Where</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sds-td-meta">16</td>
+                        <td>{{ grids['16'] }}</td>
+                        <td>Actions, apps, content, form, mimetypes and the rest.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">11</td>
+                        <td>{{ grids['11'] }}</td>
+                        <td>Overlays, which sit in the corner of another icon.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">32</td>
+                        <td>{{ grids['32'] }}</td>
+                        <td>The Install Tool.</td>
+                    </tr>
+                    <tr>
+                        <td class="sds-td-meta">64</td>
+                        <td>{{ grids['64'] }}</td>
+                        <td>Modules, avatar and file folders. See <a href="{{ pathPrefix }}guide/modules.html">module icons</a>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}
