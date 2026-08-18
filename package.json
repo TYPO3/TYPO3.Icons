@@ -29,7 +29,7 @@
   "license": "MIT",
   "devDependencies": {
     "@stylistic/stylelint-plugin": "^4.0.0",
-    "@typo3/soul-frontend": "^0.1.2",
+    "@typo3/soul-frontend": "^0.1.3",
     "deepmerge": "^4.3.1",
     "del": "^8.0.1",
     "gulp": "^5.0.1",
