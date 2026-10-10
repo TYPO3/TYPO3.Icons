@@ -58,6 +58,34 @@
         </div>
     </div>
     <div class="sds-section">
+        <h2>On the pixel grid</h2>
+        <p>
+            Every horizontal and vertical edge lies on a whole pixel. So does every point where a curve
+            runs exactly horizontal or vertical: the top of a circle, the outer edge of a ring, the end of
+            a rounded cap. A circle is centred so that its radius lands on whole pixels, and a 1px ring
+            runs between two whole-pixel radii around the same centre.
+        </p>
+        <p>
+            A diagonal can only meet the grid at its ends, so its ends and the corners it forms are held
+            to the rule instead. Geometry taken from another icon is checked again rather than trusted:
+            a borrowed shape brings its drift with it.
+        </p>
+    </div>
+    <div class="sds-section">
+        <h2>Corners</h2>
+        <p>
+            Convex corners are rounded by 0.5px, as on the bars of the plus or the frame of the desktop
+            device. Acute corners such as arrowheads, tip included, take 0.25px. Concave corners stay
+            sharp, and so do the ends of 1px lines. Larger frames that belong to a family keep that
+            family's radius: the window icons use 1px.
+        </p>
+        <p>
+            Rounding a corner that is not a right angle moves its outermost point off the grid. The corner
+            is then shifted until the curve's extreme lands on a whole pixel, rather than keeping the
+            vertex on the grid and letting the curve drift.
+        </p>
+    </div>
+    <div class="sds-section">
         <h2>Overlay icons</h2>
         <p>
             Drawn at 11x11px. An overlay sits in the corner of another icon rather than standing on
