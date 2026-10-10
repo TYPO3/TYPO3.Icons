@@ -337,8 +337,8 @@
         <p class="docs-hint">⚠ BiDi NOT supported - Background images cannot be flipped with CSS. Use inline or sprite methods for BiDi support.</p>
         {%- endif -%}
         {%- set sassbackgroundvariable -%}
-@import "@typo3/icons/dist/icons.scss";
-@import "@typo3/icons/dist/scss/icons-variables-{{ icon.category }}.scss";
+@use "@typo3/icons/dist/icons" as *;
+@use "@typo3/icons/dist/scss/icons-variables-{{ icon.category }}" as *;
 
 .myclass {
     background-size: 1em 1em;

@@ -629,10 +629,10 @@ gulp.task('icons-variables', async (cb) => {
 
         await Promise.all(writePromises);
 
-        // Write main imports file (sequentially to maintain order)
+        // Write main forwards file (sorted to keep a stable order)
         const sortedCategories = Object.values(categories).sort((a, b) => a.identifier.localeCompare(b.identifier));
-        const imports = sortedCategories.map(category => `@import 'icons-variables-${category.identifier}';`).join('\n') + '\n';
-        await fs.promises.writeFile(options.dist_scss + `icons-variables.scss`, imports, 'utf8');
+        const forwards = sortedCategories.map(category => `@forward 'icons-variables-${category.identifier}';`).join('\n') + '\n';
+        await fs.promises.writeFile(options.dist_scss + `icons-variables.scss`, forwards, 'utf8');
         cb();
     } catch (err) {
         cb(err);

@@ -56,8 +56,8 @@
             Each category exposes its icons as data-URI variables. This method produces a background
             image and therefore cannot inherit <code>currentColor</code>; use it when the icon color is fixed.
         </p>
-        {{ makros.codeblock('@import "@typo3/icons/dist/icons.scss";
-    @import "@typo3/icons/dist/scss/icons-variables-actions.scss";
+        {{ makros.codeblock('@use "@typo3/icons/dist/icons" as *;
+    @use "@typo3/icons/dist/scss/icons-variables-actions" as *;
 
     .edit-action {
         background-size: 1em 1em;

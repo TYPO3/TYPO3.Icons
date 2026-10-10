@@ -92,8 +92,8 @@ The markup the two above produce. One request per category, and the glyph inheri
 No markup at all: each icon is a Sass variable holding the drawing as a data URI. The mark cannot inherit a colour this way, so this route is for the cases where the colour is fixed anyway.
 
 ```scss
-@import "@typo3/icons/dist/icons.scss";
-@import "@typo3/icons/dist/scss/icons-variables-actions.scss";
+@use "@typo3/icons/dist/icons" as *;
+@use "@typo3/icons/dist/scss/icons-variables-actions" as *;
 
 .myclass {
     background-size: 1em 1em;
