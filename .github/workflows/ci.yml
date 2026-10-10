@@ -44,6 +44,9 @@ jobs:
       - name: Stylelint
         run: npm run stylelint
 
+      - name: Verify sources and metadata
+        run: npm run verify
+
       - name: Build
         run: npm run icons-build
 

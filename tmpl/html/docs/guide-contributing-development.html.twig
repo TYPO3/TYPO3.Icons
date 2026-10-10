@@ -93,12 +93,14 @@
     <div class="sds-section">
         <h2>Run the relevant checks</h2>
         <p>
-            CI installs from the lockfile, runs Stylelint, rebuilds the icons and fails when the result
+            CI installs from the lockfile, runs Stylelint, checks the sources and metadata against the
+            rules for identifiers, tags and aliases, rebuilds the icons and fails when the result
             differs from the committed <code>dist/</code> folder. Match those checks before submitting a
             pull request, and commit the rebuilt <code>dist/</code> with the source change. Documentation changes should also receive a complete site build so
             broken templates and navigation data are caught locally.
         </p>
         {{ makros.codeblock('npm run stylelint
+    npm run verify
     npm run icons-build
     npm run site-build', 'bash') }}
     </div>

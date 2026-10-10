@@ -80,7 +80,8 @@
             Write tags in English and in lowercase. A phrase such as <em>broken link</em> is a single tag.
             Leave out words the identifier already contains; it is searched anyway. Use the same words as
             the icons around it for the same concept, so a search for <em>delete</em> finds every icon
-            that deletes.
+            that deletes. <code>npm run verify</code> checks the count, the case and the words of the
+            identifier, and CI runs it on every push.
         </p>
         {{ makros.codeblock('alias: []
     tags:

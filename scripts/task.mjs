@@ -11,6 +11,7 @@ import { icons, iconsMin, iconsOutputs, iconsSass, iconsSprites } from './icons.
 import { site, siteBuild } from './site.mjs';
 import { versionHistory } from './versions.mjs';
 import { changelog } from './changelog.mjs';
+import { verify } from './verify.mjs';
 
 function playSound() {
     // Try different sound commands based on platform (silently)
@@ -79,6 +80,7 @@ const tasks = {
     site: site,
     version: versionHistory,
     changelog: changelog,
+    verify: verify,
     watch: watch,
     dev: async () => {
         await icons();
@@ -98,7 +100,12 @@ if (names.length === 0 || unknown.length > 0) {
 }
 for (const name of names) {
     const started = Date.now();
-    await tasks[name]();
+    try {
+        await tasks[name]();
+    } catch (error) {
+        console.error(`✗ '${name}' failed: ${error.message}`);
+        process.exit(1);
+    }
     if (name !== 'watch' && name !== 'dev') {
         console.log(`Finished '${name}' after ${((Date.now() - started) / 1000).toFixed(2)} s`);
     }
