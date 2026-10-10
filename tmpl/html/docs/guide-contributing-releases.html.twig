@@ -61,6 +61,14 @@
             and publishes <code>@typo3/icons</code> to npm. It authenticates through npm trusted publishing, so no npm token is stored in the
             repository, and the package carries a provenance statement that links it to the workflow run.
         </p>
+        <p>
+            After the publish, the workflow creates the GitHub release for the tag. Its page lists the
+            version's changelog entry, the install command and the commits since the previous release. A
+            version with a prerelease suffix such as <code>-rc.1</code> is published to the
+            <code>next</code> tag on npm and marked as a prerelease on GitHub. To read the release page
+            before pushing the tag, run:
+        </p>
+        {{ makros.codeblock('scripts/release-notes.sh v<version>', 'bash') }}
     </div>
     <div class="sds-section">
         <h2>Verify the public result</h2>

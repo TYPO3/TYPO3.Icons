@@ -60,5 +60,42 @@ jobs:
       # and the build job has checked it. Installing here would run
       # dependency scripts in a job that can mint the npm OIDC token.
       # Trusted publishing needs no token and attaches provenance itself.
+      # A prerelease goes to `next`, so `latest` stays the version to install.
       - name: Publish
-        run: npm publish
+        run: |
+          args=()
+          case "${GITHUB_REF_NAME}" in *-*) args+=(--tag next) ;; esac
+          npm publish "${args[@]}"
+
+  # The release page, from the version's CHANGELOG.md entry. A job of its
+  # own, so no job holds both the npm OIDC token and write access to the
+  # repository, and a failed page can be rerun without touching npm.
+  github-release:
+    name: Create GitHub release
+    needs: publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # The whole history and every tag: the page links the commits since
+      # the release before this one.
+      - name: Checkout Code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Write release notes
+        run: scripts/release-notes.sh "${GITHUB_REF_NAME}" > "${RUNNER_TEMP}/notes.md"
+
+      # A prerelease says so on the page, so `latest` on the releases list
+      # stays the version to install.
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          args=(--verify-tag --title "${GITHUB_REF_NAME}" --notes-file "${RUNNER_TEMP}/notes.md")
+          case "${GITHUB_REF_NAME}" in *-*) args+=(--prerelease) ;; esac
+          gh release create "${GITHUB_REF_NAME}" "${args[@]}"
