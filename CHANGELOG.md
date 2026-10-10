@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.1.0] - 2026-10-10
+
+aae72fcf [FEATURE] Match every word in the icon search
+68523ea8 [FEATURE] Add device preview, zoom and cloud status icons
+b042295c [TASK] Update the TYPO3 version map
+87bf8e12 [TASK] Tag every icon for the search
+08ee55c5 [TASK] Limit the npm package to the icon files
+2486e098 [TASK] Remove VS Code settings from the repository
+22fd6044 [TASK] Create the GitHub release from CI
+350352d9 [TASK] Publish releases to npm from CI
+f17d59fe [TASK] Update GitHub actions
+ac0f5d3d [TASK] Migrate Sass to the module system
+3eb5aeee [TASK] Update dependencies
+7714d38b [TASK] Update @typo3/soul-frontend to 0.8.1
+167d78b5 [TASK] Update @typo3/soul-frontend to 0.1.3
+5f8ffaf3 [TASK] Update versions
+ecb74d0c [DOCS] Describe how to tag an icon
+adf81896 [DOCS] Rebuild the documentation site on Soul
+
+
 ## [5.0.3] - 2026-03-27
 
 2af5e411 [FEATURE] Add actions-form-insert-before icon (#336)
