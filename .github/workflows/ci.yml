@@ -1,12 +1,20 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 name: CI
 
+# Tags are left to the release workflow, which runs this build itself
+# before it publishes.
 on:
   push:
+    branches:
+      - '**'
   pull_request:
+  workflow_call:
 
 env:
   NODE: 24.x
+
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -38,3 +46,8 @@ jobs:
 
       - name: Build
         run: npm run icons-build
+
+      # The package ships the committed dist folder. A fresh build must
+      # reproduce it, so no commit can carry stale or edited files.
+      - name: Check build against committed files
+        run: git diff --exit-code -- dist

@@ -50,16 +50,23 @@
     <div class="sds-section">
         <h2>Publish the release</h2>
         <p>
-            Push the reviewed release commit and its tag, then publish with an npm account authorized for
-            <code>@typo3/icons</code>. Do not run these commands from an unreviewed feature branch.
+            Push the reviewed release commit and its tag. Do not push a release tag from an unreviewed
+            feature branch.
         </p>
-        {{ makros.codeblock('git push origin main --tags
-    npm publish', 'bash') }}
+        {{ makros.codeblock('git push origin main --tags', 'bash') }}
+        <p>
+            The tag starts the release workflow. It first runs the same build as CI: stylelint, a fresh
+            build of the icons and the check that the result matches the committed <code>dist</code>
+            folder. Once the build has passed, the workflow checks that the tag matches the package version
+            and publishes <code>@typo3/icons</code> to npm. It authenticates through npm trusted publishing, so no npm token is stored in the
+            repository, and the package carries a provenance statement that links it to the workflow run.
+        </p>
     </div>
     <div class="sds-section">
         <h2>Verify the public result</h2>
         <p>
-            Confirm that the npm package version, Git tag and release history agree. Check that the package
+            Confirm that the publish workflow succeeded and that the npm package version, Git tag and
+            release history agree. Check that the package
             contains the expected individual SVGs, sprites, CSS, Sass and data files, and verify that the
             documentation site still resolves the released identifiers and internal navigation.
         </p>

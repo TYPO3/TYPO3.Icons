@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  NODE: 24.x
+
+permissions:
+  contents: read
+
+jobs:
+  # The same build as on every push: stylelint, a fresh build and the
+  # check that it reproduces the committed dist folder.
+  build:
+    name: Build
+    uses: ./.github/workflows/ci.yml
+
+  # npm trusted publishing trusts this workflow file by name, so the
+  # publish stays in this file rather than in a called workflow.
+  publish:
+    name: Publish to npm
+    needs: build
+    if: github.repository == 'typo3/typo3.icons'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    environment:
+      name: npm
+      url: https://www.npmjs.com/package/@typo3/icons
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      # No cache in a release build: a restored cache is a tree nobody
+      # checked.
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "${{ env.NODE }}"
+          registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
+
+      - name: Check tag against package version
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          if [ "${GITHUB_REF_NAME}" != "v${version}" ]; then
+            echo "::error::Tag ${GITHUB_REF_NAME} does not match package version ${version}"
+            exit 1
+          fi
+
+      # No install and no build. Everything the package ships is committed,
+      # and the build job has checked it. Installing here would run
+      # dependency scripts in a job that can mint the npm OIDC token.
+      # Trusted publishing needs no token and attaches provenance itself.
+      - name: Publish
+        run: npm publish
