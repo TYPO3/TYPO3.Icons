@@ -1,133 +1,149 @@
-// The facts the icon build and the site build share: the categories, the
-// metadata of every icon and the navigation every page carries.
+// The facts every task shares: the categories, the icons with their metadata,
+// and the navigation every page of the site carries.
 import fs from 'node:fs';
 import path from 'node:path';
 import * as yaml from 'js-yaml';
 import merge from 'deepmerge';
 import { options } from './options.mjs';
+import { categories as categoryConfig } from './categories.mjs';
+import { pages, sections } from './pages.mjs';
 
 export function getFolders(dir) {
-    return fs.readdirSync(dir)
-        .filter(function (file) {
-            return fs.statSync(path.join(dir, file)).isDirectory();
-        });
+    return fs.readdirSync(dir).filter((file) => fs.statSync(path.join(dir, file)).isDirectory());
 }
 
 export function getIcons(dir) {
-    return fs.readdirSync(dir)
-        .filter(function (file) {
-            var fileExtension = path.extname(path.join(dir, file));
-            if (fileExtension === ".svg") {
-                return true;
-            } else {
-                return false;
-            }
-        });
+    return fs.readdirSync(dir).filter((file) => path.extname(file) === '.svg');
 }
 
 export function getMetaFiles(dir) {
-    return fs.readdirSync(dir)
-        .filter(function (file) {
-            var fileExtension = path.extname(path.join(dir, file));
-            if (fileExtension === ".yaml") {
-                return true;
-            } else {
-                return false;
-            }
-        });
+    return fs.readdirSync(dir).filter((file) => path.extname(file) === '.yaml');
 }
 
 export function getCategories() {
-    let categories = getFolders(options.src);
-    return categories.map((category) => {
-        let icons = getIcons(path.join(options.dist_svgs, category)).map((icon) => { return path.basename(icon, '.svg') });
+    return getFolders(options.src).map((category) => {
+        const config = categoryConfig[category] ?? {};
+        const icons = getIcons(path.join(options.dist_svgs, category)).map((icon) => path.basename(icon, '.svg'));
         return {
             identifier: category,
-            title: options.titles[category] ?? category.charAt(0).toUpperCase() + category.slice(1),
-            description: options.descriptions[category] ?? '',
-            minor: options.minor.includes(category),
+            title: config.title ?? category.charAt(0).toUpperCase() + category.slice(1),
+            description: config.description ?? '',
+            minor: config.minor ?? false,
             sprite: 'sprites/' + category + '.svg',
-            rendering: options.rendering[category] ?? {},
+            rendering: config.rendering ?? {},
             icons: icons,
-            count: icons.length
+            count: icons.length,
         };
     });
+}
+
+export function getMetaDataFileName(identifier, folder) {
+    return path.join(options.meta, folder, identifier + '.yaml');
+}
+
+export function getMetaData(identifier, folder) {
+    const defaultmeta = { alias: [], changes: [], tags: [] };
+    const metafile = getMetaDataFileName(identifier, folder);
+    const metadata = fs.existsSync(metafile) ? yaml.load(fs.readFileSync(metafile, 'utf8')) : {};
+    return merge.all([defaultmeta, metadata]);
+}
+
+export function updateMetaData(identifier, folder, metadata) {
+    const metafile = getMetaDataFileName(identifier, folder);
+    fs.mkdirSync(path.dirname(metafile), { recursive: true });
+    fs.writeFileSync(metafile, yaml.dump(metadata), 'utf8');
+}
+
+// Every built icon with its metadata, read once. The package data, the Sass
+// variables and the site are all views of this.
+export function loadIcons() {
+    const icons = {};
+    for (const folder of getFolders(options.dist_svgs)) {
+        for (const file of getIcons(path.join(options.dist_svgs, folder))) {
+            const identifier = path.basename(file, '.svg');
+            const meta = getMetaData(identifier, folder);
+            icons[identifier] = {
+                identifier: identifier,
+                category: folder,
+                svg: 'svgs/' + folder + '/' + identifier + '.svg',
+                sprite: 'sprites/' + folder + '.svg' + '#' + identifier,
+                bidi: meta.bidi ? true : false,
+                meta: meta,
+            };
+        }
+    }
+    return icons;
+}
+
+// What dist/icons.json publishes: every icon without its metadata, and the old
+// identifiers that still resolve to it.
+export function getData(icons = loadIcons()) {
+    const data = { icons: {}, aliases: {} };
+    for (const { meta, ...icon } of Object.values(icons)) {
+        for (const alias of meta.alias) {
+            data.aliases[alias] = icon.identifier;
+        }
+        data.icons[icon.identifier] = icon;
+    }
+    return data;
+}
+
+export function escapeSvg(svg) {
+    const charReplacementMap = {
+        '"': '\'',
+        '#': '%23',
+        '<': '%3c',
+        '>': '%3e'
+    };
+    const regex = new RegExp('[' + Object.keys(charReplacementMap).join('') + ']', 'g');
+    return svg.replace(regex, c => charReplacementMap[c]);
 }
 
 /**
  * The navigation every page shares, as one tree: the bar reads it as sections,
  * the rail as the pages of the section the reader is in. Built here rather than
  * in Twig because both layouts need the same tree and a template cannot hand
- * one back.
+ * one back. The sections and their pages come from pages.mjs.
  */
 export function buildNav(categories, pathPrefix, page, currentCategory) {
-    let inSection = page === 'section' || page === 'single';
+    const inSection = page === 'section' || page === 'single';
+    const byPage = Object.fromEntries(pages.map((entry) => [entry.page, entry]));
 
-    let entryOf = (category) => {
-        return {
-            label: category.title,
-            href: pathPrefix + 'icons/' + category.identifier + '.html',
-            current: inSection && category.identifier === currentCategory,
-        };
-    };
-    let categoryPages = [
-        ...categories.filter((category) => !category.minor).map(entryOf),
-        ...categories.filter((category) => category.minor).map(entryOf),
-    ];
-    let icons = {
+    const entryOf = (category) => ({
+        label: category.title,
+        href: pathPrefix + 'icons/' + category.identifier + '.html',
+        current: inSection && category.identifier === currentCategory,
+    });
+    const icons = {
         label: 'Icons',
         href: pathPrefix + 'icons.html',
         front: true,
         current: page === 'icons',
         here: inSection,
-        items: categoryPages,
-    };
-    let useIcons = {
-        label: 'Usage',
-        href: pathPrefix + 'guide/usage.html',
-        front: true,
-        current: page === 'guide-usage',
-        here: ['guide-installation', 'guide-backend-usage', 'guide-external-usage', 'guide-compatibility'].includes(page),
         items: [
-            { label: 'Installation', href: pathPrefix + 'guide/installation.html', current: page === 'guide-installation' },
-            { label: 'Backend usage', href: pathPrefix + 'guide/backend-usage.html', current: page === 'guide-backend-usage' },
-            { label: 'External usage', href: pathPrefix + 'guide/external-usage.html', current: page === 'guide-external-usage' },
-            { label: 'Version compatibility', href: pathPrefix + 'guide/compatibility.html', current: page === 'guide-compatibility' },
+            ...categories.filter((category) => !category.minor).map(entryOf),
+            ...categories.filter((category) => category.minor).map(entryOf),
         ],
     };
-    let design = {
-        label: 'Design guidelines',
-        href: pathPrefix + 'guide.html',
+    const sectionOf = (section) => ({
+        label: section.label,
+        href: pathPrefix + byPage[section.page].file,
         front: true,
-        current: page === 'guide',
-        here: ['guide-drawing', 'guide-modules', 'guide-bidi'].includes(page),
-        items: [
-            { label: 'Design foundations', href: pathPrefix + 'guide.html', current: page === 'guide' },
-            { label: 'Drawing an icon', href: pathPrefix + 'guide/drawing.html', current: page === 'guide-drawing' },
-            { label: 'Module icons', href: pathPrefix + 'guide/modules.html', current: page === 'guide-modules' },
-            { label: 'Bidirectional support', href: pathPrefix + 'guide/bidi.html', current: page === 'guide-bidi' },
-        ],
-    };
-    let contribute = {
-        label: 'Contribute',
-        href: pathPrefix + 'guide/contributing.html',
-        front: true,
-        current: page === 'guide-contributing',
-        here: ['guide-contributing-icons', 'guide-contributing-development', 'guide-contributing-releases'].includes(page),
-        items: [
-            { label: 'Overview', href: pathPrefix + 'guide/contributing.html', current: page === 'guide-contributing' },
-            { label: 'Icon changes', href: pathPrefix + 'guide/contributing-icons.html', current: page === 'guide-contributing-icons' },
-            { label: 'Development setup', href: pathPrefix + 'guide/contributing-development.html', current: page === 'guide-contributing-development' },
-            { label: 'Release process', href: pathPrefix + 'guide/contributing-releases.html', current: page === 'guide-contributing-releases' },
-        ],
-    };
+        current: page === section.page,
+        here: section.items.filter((item) => item !== section.page).includes(page),
+        items: section.items.map((item) => ({
+            label: byPage[item].nav,
+            href: pathPrefix + byPage[item].file,
+            current: page === item,
+        })),
+    });
 
     // One canonical tree feeds every navigation surface. The bar receives the
     // whole tree; the rail receives the active branch from that same array.
     // No second list of labels or links exists to drift out of sync.
-    let sections = [icons, useIcons, design, contribute];
-    let tree = { label: 'TYPO3 Icons', items: sections };
-    let section = sections.find((entry) => entry.current || entry.here) ?? icons;
+    const all = [icons, ...sections.map(sectionOf)];
+    const tree = { label: 'TYPO3 Icons', items: all };
+    const section = all.find((entry) => entry.current || entry.here) ?? icons;
 
     // And the trail, from the same tree. A breadcrumb is the path to a page,
     // which the tree already knows — written out on each template instead, it
@@ -139,13 +155,13 @@ export function buildNav(categories, pathPrefix, page, currentCategory) {
     // walk needs nothing the tree does not already carry. It stops at `current`
     // rather than descending past it, which is what keeps `guide.html` — a
     // section that is also the first page under itself — one step and not two.
-    let trailOf = (entries) => {
-        for (let entry of entries) {
+    const trailOf = (entries) => {
+        for (const entry of entries) {
             if (entry.current) {
                 return [{ label: entry.label, href: entry.href }];
             }
             if (entry.here && entry.items) {
-                let below = trailOf(entry.items);
+                const below = trailOf(entry.items);
                 if (below.length) {
                     return [{ label: entry.label, href: entry.href }, ...below];
                 }
@@ -160,74 +176,6 @@ export function buildNav(categories, pathPrefix, page, currentCategory) {
         // The front page opens the trail. It is not a section of the tree — the
         // tree's own root is the site — so it is named from the root's label and
         // stated once here rather than at the head of fifteen templates.
-        trail: [{ label: tree.label, href: pathPrefix + 'index.html' }, ...trailOf(sections)],
+        trail: [{ label: tree.label, href: pathPrefix + 'index.html' }, ...trailOf(all)],
     };
-}
-
-export function getMetaDataFileName(identifier, folder) {
-    return path.join(options.meta, folder, identifier + '.yaml' );
-}
-
-export function getMetaData(identifier, folder) {
-    let defaultmeta = {
-        alias: [
-        ],
-        changes: [
-        ],
-        tags: [
-        ]
-    };
-    let metafile = path.join(options.meta, folder, identifier + '.yaml' );
-    let metadata = {};
-    if (fs.existsSync(metafile)) {
-        metadata = yaml.load(fs.readFileSync(metafile, 'utf8'));
-    }
-    return merge.all([defaultmeta, metadata]);
-}
-
-export function updateMetaData(identifier, folder, metadata) {
-    let metafile = getMetaDataFileName(identifier, folder);
-    if (!fs.existsSync(path.dirname(metafile))){
-        fs.mkdirSync(path.dirname(metafile));
-    }
-    fs.writeFileSync(metafile, yaml.dump(metadata), 'utf8');
-}
-
-export function getData() {
-    let data = {};
-        data.icons = {};
-        data.aliases = {};
-    let folders = getFolders(options.dist_svgs);
-    for (var folderCount = 0; folderCount < folders.length; folderCount++) {
-        let folder = folders[folderCount];
-        let iconFiles = getIcons(path.join(options.dist_svgs, folder));
-        for (var i = 0; i < iconFiles.length; i++) {
-            let file = path.join('svgs', folder, iconFiles[i]);
-            let identifier = path.basename(file, '.svg');
-            let metaData = getMetaData(identifier, folder);
-            if (metaData.alias.length > 0) {
-                for (let aliasKey in metaData.alias) {
-                    data.aliases[metaData.alias[aliasKey]] = identifier;
-                }
-            }
-            data.icons[identifier] = {};
-            data.icons[identifier].identifier = identifier;
-            data.icons[identifier].category   = folder;
-            data.icons[identifier].svg        = 'svgs/' + folder + '/' + identifier + '.svg';
-            data.icons[identifier].sprite     = 'sprites/' + folder + '.svg' + '#' + identifier;
-            data.icons[identifier].bidi       = metaData.bidi ? true : false;
-        }
-    }
-    return data;
-}
-
-export function escapeSvg(svg) {
-    const charReplacementMap = {
-        '"': '\'',
-        '#': '%23',
-        '<': '%3c',
-        '>': '%3e'
-    };
-    const regex = new RegExp('[' + Object.keys(charReplacementMap).join('') + ']', 'g');
-    return svg.replace(regex, c => charReplacementMap[c]);
 }

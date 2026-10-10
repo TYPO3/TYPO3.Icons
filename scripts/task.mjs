@@ -7,7 +7,7 @@
 import fs from 'node:fs';
 import { exec } from 'node:child_process';
 import { options } from './lib/options.mjs';
-import { icons, iconsData, iconsMin, iconsSass, iconsSprites, iconsVariables } from './icons.mjs';
+import { icons, iconsMin, iconsOutputs, iconsSass, iconsSprites } from './icons.mjs';
 import { site, siteBuild } from './site.mjs';
 import { versionHistory } from './versions.mjs';
 import { changelog } from './changelog.mjs';
@@ -30,7 +30,8 @@ function playSound() {
 
 // What a change under each watched path rebuilds.
 const rebuilds = [
-    { path: options.src, match: (file) => file.endsWith('.svg'), steps: [iconsMin, iconsSprites, iconsData, iconsVariables, siteBuild] },
+    { path: options.src, match: (file) => file.endsWith('.svg'), steps: [iconsMin, iconsSprites, iconsOutputs, siteBuild] },
+    { path: options.meta, match: (file) => file.endsWith('.yaml'), steps: [iconsOutputs, siteBuild] },
     { path: options.assets + 'scss/', match: (file) => file.endsWith('.scss'), steps: [iconsSass, siteBuild] },
     { path: './tmpl/', match: (file) => file.endsWith('.twig'), steps: [siteBuild] },
     { path: './', match: (file) => file === 'typo3.json', steps: [siteBuild], recursive: false },

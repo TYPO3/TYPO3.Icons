@@ -1,30 +1,14 @@
 // The package: dist/, built from src/ and the stylesheets under assets/scss.
 import fs from 'node:fs';
 import path from 'node:path';
-import * as sass from 'sass';
-import CleanCSS from 'clean-css';
 import { loadConfig, optimize } from 'svgo';
 import SVGSpriter from 'svg-sprite';
 import { options } from './lib/options.mjs';
-import { escapeSvg, getCategories, getData, getFolders, getIcons } from './lib/data.mjs';
+import { compileCss } from './lib/css.mjs';
+import { escapeSvg, getCategories, getData, getFolders, getIcons, loadIcons } from './lib/data.mjs';
 
 export async function iconsClean() {
     await fs.promises.rm(options.dist, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
-}
-
-// A stylesheet compiled the way the Sass CLI would, then minified. Shared with
-// the site build, which compiles its own stylesheet the same way.
-export async function compileCss(file) {
-    const source = await fs.promises.readFile(file, 'utf8');
-    const result = await sass.compileStringAsync(source, { loadPaths: [path.dirname(file)] });
-    const target = path.resolve(file).replace(/\.scss$/, '.css');
-    // Keyed by its path, so clean-css rebases relative URLs from where the
-    // stylesheet stands to where it is written, which is the same folder.
-    const minified = await new CleanCSS({ rebaseTo: path.dirname(target) }).minify({ [target]: { styles: result.css } });
-    if (minified.errors.length) {
-        throw new Error(minified.errors.join(' '));
-    }
-    return minified.styles;
 }
 
 // The source stylesheet ships next to the compiled one, so a project that
@@ -103,20 +87,19 @@ export async function iconsSprites() {
     }));
 }
 
-export async function iconsData() {
-    await fs.promises.writeFile(options.dist + 'icons.json', JSON.stringify(getData(), null, 2), 'utf8');
+export async function iconsData(icons = loadIcons()) {
+    await fs.promises.writeFile(options.dist + 'icons.json', JSON.stringify(getData(icons), null, 2), 'utf8');
 }
 
 // Every icon as a Sass variable holding the drawing as a data URI, one file
 // per category, and one file that forwards them all.
-export async function iconsVariables() {
-    const data = getData();
+export async function iconsVariables(icons = loadIcons()) {
     const categories = getCategories();
     await fs.promises.rm(options.dist_scss, { recursive: true, force: true });
     await fs.promises.mkdir(options.dist_scss, { recursive: true });
 
     const categoryFiles = {};
-    for (const [identifier, icon] of Object.entries(data.icons).sort(([a], [b]) => a.localeCompare(b))) {
+    for (const [identifier, icon] of Object.entries(icons).sort(([a], [b]) => a.localeCompare(b))) {
         const inlineIcon = fs.readFileSync(path.join(options.dist, icon.svg), 'utf8');
         (categoryFiles[icon.category] ??= []).push(`$icon-${identifier}: url("data:image/svg+xml,${escapeSvg(inlineIcon)}") !default;`);
     }
@@ -131,11 +114,17 @@ export async function iconsVariables() {
     await fs.promises.writeFile(options.dist_scss + 'icons-variables.scss', forwards, 'utf8');
 }
 
+// The two outputs read from the icons and their metadata, from one read.
+export async function iconsOutputs() {
+    const model = loadIcons();
+    await iconsData(model);
+    await iconsVariables(model);
+}
+
 export async function icons() {
     await iconsClean();
     await iconsSass();
     await iconsMin();
     await iconsSprites();
-    await iconsData();
-    await iconsVariables();
+    await iconsOutputs();
 }
