@@ -53,15 +53,42 @@
         <h2>Metadata and compatibility</h2>
         <p>
             Matching YAML files under <code>meta/&lt;category&gt;/</code> hold aliases, tags and version history.
-            Add searchable terms that describe meaning rather than appearance. When an identifier replaces
-            an older name, an alias can preserve discovery and compatibility; do not remove an identifier
-            casually once it has shipped.
+            When an identifier replaces an older name, an alias can preserve discovery and compatibility; do
+            not remove an identifier casually once it has shipped.
         </p>
         <p>
             Version history is generated from Git tags. Review it as release data, not as a substitute for
             the commit history. Compatibility across TYPO3 branches depends on the package version in which
             the identifier first appears.
         </p>
+    </div>
+    <div class="sds-section">
+        <h2>Tags</h2>
+        <p>
+            Tags are what the search finds an icon by, next to its identifier and its aliases. Every word of
+            a query has to appear in one of them, so a tag is only useful if it is a word somebody would
+            type when looking for the icon. Give every icon three to eight tags, drawn from three kinds:
+        </p>
+        <ul>
+            <li>What the icon depicts: <em>trash can</em>, <em>clock</em>, <em>flag</em>, <em>chain</em>.</li>
+            <li>What it stands for in TYPO3, in TYPO3's own terms: <em>deleted records</em>,
+                <em>scheduler task</em>, <em>page tree</em>, <em>backend layout</em>.</li>
+            <li>Synonyms people type for the same thing: <em>delete</em> and <em>remove</em>,
+                <em>settings</em> and <em>configuration</em>.</li>
+        </ul>
+        <p>
+            Write tags in English and in lowercase. A phrase such as <em>broken link</em> is a single tag.
+            Leave out words the identifier already contains; it is searched anyway. Use the same words as
+            the icons around it for the same concept, so a search for <em>delete</em> finds every icon
+            that deletes.
+        </p>
+        {{ makros.codeblock('alias: []
+    tags:
+      - trash
+      - bin
+      - deleted records
+      - restore
+      - undelete', 'yaml') }}
     </div>
     <div class="sds-section">
         <h2>Build and inspect the result</h2>
@@ -80,6 +107,7 @@
         <h2>Pull-request checklist</h2>
         <ul>
             <li>The identifier and category describe the icon's meaning.</li>
+            <li>The metadata file carries three to eight tags that follow the tag rules.</li>
             <li>The SVG follows the correct grid and remains legible at its intended size.</li>
             <li>Colors and directionality behave correctly in supported contexts.</li>
             <li>Generated assets were rebuilt and inspected.</li>
