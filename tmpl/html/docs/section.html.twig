@@ -20,7 +20,7 @@
                 class="menuview-item"
                 data-type="icon"
                 data-identifier="{{ icon.identifier }}"
-                data-search="{{ icon.identifier }} {{ icon._meta.tags|join(' ') }}"
+                data-search="{{ icon.identifier }} {{ icon._meta.tags|join(' ') }} {{ icon._meta.alias|join(' ') }}"
                 href="{{ pathPrefix }}icons/{{ category.identifier }}/{{ icon.identifier }}.html"
                 title="{{ icon.identifier }}"
             >
@@ -49,7 +49,7 @@
                 class="icongrid-item"
                 data-type="icon"
                 data-identifier="{{ icon.identifier }}"
-                data-search="{{ icon.identifier }} {{ icon._meta.tags|join(' ') }}"
+                data-search="{{ icon.identifier }} {{ icon._meta.tags|join(' ') }} {{ icon._meta.alias|join(' ') }}"
                 {% if icon._meta.bidi %}data-bidi="true"{% endif %}
                 href="{{ pathPrefix }}icons/{{ category.identifier }}/{{ icon.identifier }}.html"
                 title="{{ icon.identifier }}"

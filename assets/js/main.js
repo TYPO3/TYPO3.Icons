@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    let searchWord = '';
+    let searchWords = [];
     let showBidiOnly = false;
 
     function filterIcons() {
@@ -166,11 +166,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         for (let i = 0; i < icons.length; i++) {
             let icon = icons[i];
-            let elementSearch = icon.dataset.search;
+            let elementSearch = icon.dataset.search.toLowerCase();
             let isBidi = icon.dataset.bidi === 'true';
 
-            // Check search filter
-            let matchesSearch = elementSearch.toLowerCase().indexOf(searchWord) > -1;
+            // Check search filter: every word has to appear, in any order,
+            // so "add page" finds actions-page-add and the tag "add page"
+            let matchesSearch = searchWords.every((word) => elementSearch.indexOf(word) > -1);
 
             // Check BiDi filter
             let matchesBidi = !showBidiOnly || isBidi;
@@ -185,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     search.addEventListener('sds-input', (event) => {
-        searchWord = String(event.detail ?? '').toLowerCase();
+        searchWords = String(event.detail ?? '').toLowerCase().split(/\s+/).filter(Boolean);
         filterIcons();
     });
 
