@@ -46,7 +46,7 @@
     "stylelint": "^17.16.0",
     "stylelint-order": "^8.1.1",
     "stylelint-scss": "^7.3.0",
-    "twig": "1.15.4"
+    "twig": "^3.0.0"
   },
   "files": [
     "dist",
@@ -69,5 +69,10 @@
     "watch": "gulp watch",
     "preversion": "npm run stylelint",
     "version": "gulp changelog-file && git add CHANGELOG.md"
+  },
+  "overrides": {
+    "gulp-twig": {
+      "twig": "$twig"
+    }
   }
 }
