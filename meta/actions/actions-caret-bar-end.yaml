@@ -14,4 +14,8 @@ tags:
   - navigation
   - logical
   - bidi
+  - last
+  - skip
+  - next track
+  - right
 bidi: true

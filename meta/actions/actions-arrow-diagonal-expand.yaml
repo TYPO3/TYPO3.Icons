@@ -1,7 +1,8 @@
 alias: []
 changes: []
 tags:
-  - expand
   - enlarge
   - maximize
-  - diagonal
+  - fullscreen
+  - resize
+  - outward

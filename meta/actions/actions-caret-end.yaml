@@ -19,4 +19,9 @@ tags:
   - navigation
   - logical
   - bidi
+  - triangle
+  - collapse
+  - collapsed
+  - right
+  - move right
 bidi: true

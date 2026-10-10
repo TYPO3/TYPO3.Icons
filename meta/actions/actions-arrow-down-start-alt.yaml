@@ -13,5 +13,9 @@ tags:
   - navigation
   - logical
   - bidi
-  - diagonal
+  - return
+  - enter
+  - turn
+  - corner
+  - left
 bidi: true

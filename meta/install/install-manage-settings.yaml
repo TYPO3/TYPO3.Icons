@@ -52,4 +52,10 @@ changes:
   - 5.0.1
   - 5.0.2
   - 5.0.3
-tags: []
+tags:
+  - configuration
+  - options
+  - installation-wide options
+  - typo3_conf_vars
+  - global configuration
+  - gear

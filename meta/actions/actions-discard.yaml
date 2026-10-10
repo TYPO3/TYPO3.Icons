@@ -1,6 +1,10 @@
 alias: []
 changes: []
 tags:
-  - discard
   - revert
   - changes
+  - undo
+  - cancel
+  - reset
+  - throw away
+  - go back

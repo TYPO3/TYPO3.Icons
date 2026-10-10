@@ -11,8 +11,8 @@ tags:
   - navigation
   - logical
   - bidi
-  - panel
   - sidebar
   - collapse
-  - expand
+  - show
+  - open
 bidi: true

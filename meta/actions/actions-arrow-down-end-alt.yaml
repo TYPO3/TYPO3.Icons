@@ -13,5 +13,8 @@ tags:
   - navigation
   - logical
   - bidi
-  - diagonal
+  - turn
+  - corner
+  - bent
+  - right
 bidi: true

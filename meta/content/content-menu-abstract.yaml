@@ -63,4 +63,11 @@ changes:
   - 5.0.1
   - 5.0.2
   - 5.0.3
-tags: []
+tags:
+  - summary
+  - description
+  - subpages
+  - navigation
+  - page list
+  - teaser
+  - content element

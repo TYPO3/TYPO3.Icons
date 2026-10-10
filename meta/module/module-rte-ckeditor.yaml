@@ -52,4 +52,10 @@ changes:
   - 5.0.1
   - 5.0.2
   - 5.0.3
-tags: []
+tags:
+  - rich text editor
+  - wysiwyg
+  - text editor
+  - presets
+  - configuration
+  - backend module

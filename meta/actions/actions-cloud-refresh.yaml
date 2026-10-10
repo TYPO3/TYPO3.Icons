@@ -1,7 +1,9 @@
 alias: []
 changes: []
 tags:
-  - cloud
   - sync
   - saving
-  - refresh
+  - reload
+  - synchronize
+  - in progress
+  - online

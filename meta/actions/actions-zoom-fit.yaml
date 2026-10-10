@@ -1,7 +1,9 @@
 alias: []
 changes: []
 tags:
-  - zoom
-  - fit
   - scale
   - viewport
+  - contain
+  - fit to screen
+  - shrink to fit
+  - resize

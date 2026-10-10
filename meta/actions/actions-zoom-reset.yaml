@@ -1,8 +1,9 @@
 alias: []
 changes: []
 tags:
-  - zoom
-  - reset
-  - actual-size
+  - actual size
   - center
   - scale
+  - original size
+  - 100%
+  - default size

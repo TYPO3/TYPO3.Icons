@@ -1,7 +1,11 @@
 alias: []
 changes: []
 tags:
-  - responsive
   - breakpoint
   - viewport
-  - device
+  - screen size
+  - mobile
+  - desktop
+  - phone
+  - preview
+  - adaptive

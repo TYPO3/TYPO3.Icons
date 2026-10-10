@@ -1,7 +1,8 @@
 alias: []
 changes: []
 tags:
-  - collapse
   - reduce
   - minimize
-  - diagonal
+  - shrink
+  - exit fullscreen
+  - inward

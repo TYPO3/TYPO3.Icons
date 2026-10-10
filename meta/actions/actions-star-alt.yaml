@@ -8,5 +8,8 @@ changes:
   - 5.0.2
   - 5.0.3
 tags:
-  - star
   - favorite
+  - bookmark
+  - rating
+  - highlight
+  - filled

@@ -1,7 +1,10 @@
 alias: []
 changes: []
 tags:
-  - cloud
   - error
   - failed
+  - failure
   - offline
+  - not saved
+  - sync error
+  - problem

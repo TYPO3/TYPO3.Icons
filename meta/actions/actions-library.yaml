@@ -1,8 +1,10 @@
 alias: []
 changes: []
 tags:
-  - library
   - blocks
   - elements
   - patterns
   - insert
+  - widgets
+  - add
+  - grid

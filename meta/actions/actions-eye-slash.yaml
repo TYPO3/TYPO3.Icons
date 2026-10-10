@@ -1,6 +1,10 @@
 alias: []
 changes: []
 tags:
+  - hide
   - hidden
   - invisible
   - visibility
+  - not visible
+  - disabled
+  - private

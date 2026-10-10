@@ -15,4 +15,8 @@ tags:
   - navigation
   - logical
   - bidi
+  - triangle
+  - left
+  - move left
+  - back
 bidi: true

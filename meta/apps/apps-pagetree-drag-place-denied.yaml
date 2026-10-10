@@ -63,4 +63,11 @@ changes:
   - 5.0.1
   - 5.0.2
   - 5.0.3
-tags: []
+tags:
+  - not allowed
+  - forbidden
+  - prohibited
+  - no entry
+  - invalid drop
+  - drag and drop
+  - error

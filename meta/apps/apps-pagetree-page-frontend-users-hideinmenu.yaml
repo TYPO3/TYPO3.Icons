@@ -63,4 +63,12 @@ changes:
   - 5.0.1
   - 5.0.2
   - 5.0.3
-tags: []
+tags:
+  - frontend user group
+  - user group
+  - login required
+  - page type
+  - page tree
+  - hide in menu
+  - not in menu
+  - hidden in navigation

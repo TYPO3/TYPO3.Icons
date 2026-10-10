@@ -14,4 +14,7 @@ tags:
   - logical
   - bidi
   - alternative
+  - forward
+  - next
+  - right
 bidi: true

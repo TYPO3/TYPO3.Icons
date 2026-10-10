@@ -37,5 +37,10 @@ changes:
   - 5.0.1
   - 5.0.2
   - 5.0.3
-tags: []
+tags:
+  - shuffle
+  - crossing arrows
+  - mix
+  - randomize
+  - arbitrary
 bidi: true
