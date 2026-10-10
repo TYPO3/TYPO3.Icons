@@ -52,6 +52,10 @@
                         <td>Twig content, JavaScript and Sass used to build the documentation site.</td>
                     </tr>
                     <tr>
+                        <td class="sds-td-meta">scripts/</td>
+                        <td>The build: plain Node.js scripts behind the npm scripts, with no task runner.</td>
+                    </tr>
+                    <tr>
                         <td class="sds-td-meta">dist/ and _site/</td>
                         <td>Generated package and website output. Rebuild these from their sources.</td>
                     </tr>
@@ -86,8 +90,9 @@
     <div class="sds-section">
         <h2>Run the relevant checks</h2>
         <p>
-            CI installs from the lockfile, runs Stylelint and rebuilds the icons. Match those checks before
-            submitting a pull request. Documentation changes should also receive a complete site build so
+            CI installs from the lockfile, runs Stylelint, rebuilds the icons and fails when the result
+            differs from the committed <code>dist/</code> folder. Match those checks before submitting a
+            pull request, and commit the rebuilt <code>dist/</code> with the source change. Documentation changes should also receive a complete site build so
             broken templates and navigation data are caught locally.
         </p>
         {{ makros.codeblock('npm run stylelint

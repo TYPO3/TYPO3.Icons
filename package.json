@@ -30,15 +30,8 @@
   "devDependencies": {
     "@stylistic/stylelint-plugin": "^5.3.1",
     "@typo3/soul-frontend": "^0.8.1",
+    "clean-css": "^4.2.4",
     "deepmerge": "^4.3.1",
-    "del": "^9.0.1",
-    "gulp": "^5.0.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-rename": "^2.1.0",
-    "gulp-sass": "^6.0.1",
-    "gulp-svg-sprite": "^2.0.3",
-    "gulp-svgmin": "^4.1.0",
-    "gulp-twig": "^1.2.0",
     "http-server": "^14.1.1",
     "js-yaml": "^5.4.3",
     "postcss-scss": "^4.0.9",
@@ -46,6 +39,8 @@
     "stylelint": "^17.16.0",
     "stylelint-order": "^8.1.1",
     "stylelint-scss": "^7.3.0",
+    "svg-sprite": "^2.0.4",
+    "svgo": "^2.8.4",
     "twig": "^3.0.0"
   },
   "files": [
@@ -60,19 +55,14 @@
   "scripts": {
     "build": "npm run stylelint && npm run icons-build && npm run version-build && npm run site-build",
     "site-serve": "http-server -c-1 ./_site",
-    "site-refresh": "gulp icons && gulp site",
-    "site-build": "gulp site",
-    "icons-build": "gulp icons",
-    "version-build": "gulp version",
+    "site-refresh": "node scripts/task.mjs icons site",
+    "site-build": "node scripts/task.mjs site",
+    "icons-build": "node scripts/task.mjs icons",
+    "version-build": "node scripts/task.mjs version",
     "stylelint": "stylelint assets/scss/*",
-    "dev": "gulp dev",
-    "watch": "gulp watch",
+    "dev": "node scripts/task.mjs dev",
+    "watch": "node scripts/task.mjs watch",
     "preversion": "npm run stylelint",
-    "version": "gulp changelog-file && git add CHANGELOG.md"
-  },
-  "overrides": {
-    "gulp-twig": {
-      "twig": "$twig"
-    }
+    "version": "node scripts/task.mjs changelog && git add CHANGELOG.md"
   }
 }
