@@ -48,6 +48,13 @@
     "stylelint-scss": "^7.3.0",
     "twig": "1.15.4"
   },
+  "files": [
+    "dist",
+    "meta",
+    "src",
+    "CHANGELOG.md",
+    "typo3.json"
+  ],
   "sass": "dist/icons.scss",
   "style": "dist/icons.css",
   "scripts": {
