@@ -9,13 +9,6 @@ module.exports = {
                     removeUnknownsAndDefaults: {
                         keepRoleAttr: true,
                     },
-                    removeViewBox: false,
-                    removeAttrs: {
-                        attrs: [
-                            "data-name",
-                            "clip-rule"
-                        ]
-                    }
                 },
             },
         },
@@ -23,5 +16,8 @@ module.exports = {
         "convertStyleToAttrs",
         "removeDimensions",
         "sortAttrs",
+        // Not in the default preset since svgo 4. An icon carries no title of
+        // its own: the component that places it names it.
+        "removeTitle",
     ],
 };

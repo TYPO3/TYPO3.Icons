@@ -30,7 +30,7 @@
   "devDependencies": {
     "@stylistic/stylelint-plugin": "^5.3.1",
     "@typo3/soul-frontend": "^0.8.1",
-    "clean-css": "^4.2.4",
+    "clean-css": "^5.3.3",
     "deepmerge": "^4.3.1",
     "http-server": "^14.1.1",
     "js-yaml": "^5.4.3",
@@ -40,7 +40,7 @@
     "stylelint-order": "^8.1.1",
     "stylelint-scss": "^7.3.0",
     "svg-sprite": "^2.0.4",
-    "svgo": "^2.8.4",
+    "svgo": "^4.1.0",
     "twig": "^3.0.0"
   },
   "files": [
