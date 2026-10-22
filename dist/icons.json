@@ -2597,6 +2597,13 @@
       "sprite": "sprites/actions.svg#actions-poll",
       "bidi": false
     },
+    "actions-power": {
+      "identifier": "actions-power",
+      "category": "actions",
+      "svg": "svgs/actions/actions-power.svg",
+      "sprite": "sprites/actions.svg#actions-power",
+      "bidi": false
+    },
     "actions-preview": {
       "identifier": "actions-preview",
       "category": "actions",
