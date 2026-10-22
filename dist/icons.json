@@ -2989,6 +2989,27 @@
       "sprite": "sprites/actions.svg#actions-viewmode-tiles",
       "bidi": false
     },
+    "actions-volume-high": {
+      "identifier": "actions-volume-high",
+      "category": "actions",
+      "svg": "svgs/actions/actions-volume-high.svg",
+      "sprite": "sprites/actions.svg#actions-volume-high",
+      "bidi": false
+    },
+    "actions-volume-low": {
+      "identifier": "actions-volume-low",
+      "category": "actions",
+      "svg": "svgs/actions/actions-volume-low.svg",
+      "sprite": "sprites/actions.svg#actions-volume-low",
+      "bidi": false
+    },
+    "actions-volume-slash": {
+      "identifier": "actions-volume-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-volume-slash.svg",
+      "sprite": "sprites/actions.svg#actions-volume-slash",
+      "bidi": false
+    },
     "actions-wallet": {
       "identifier": "actions-wallet",
       "category": "actions",
