@@ -1,5 +1,6 @@
 alias:
   - actions-check-markstate
+  - actions-markstate
 changes:
   - 2.0.0
   - 2.0.1

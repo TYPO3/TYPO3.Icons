@@ -1,5 +1,6 @@
 alias:
   - actions-check-unmarkstate
+  - actions-unmarkstate
   - apps-pagetree-category-toggle-hide-checked
   - sysnote-type-4
 changes:

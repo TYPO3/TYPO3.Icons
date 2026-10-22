@@ -1,4 +1,5 @@
-alias: []
+alias:
+  - apps-pagetree-page-not-in-menu
 changes:
   - 1.0.0
   - 1.1.0
