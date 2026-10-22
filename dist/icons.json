@@ -4886,6 +4886,13 @@
       "sprite": "sprites/content.svg#content-quote",
       "bidi": false
     },
+    "content-record-list-item": {
+      "identifier": "content-record-list-item",
+      "category": "content",
+      "svg": "svgs/content/content-record-list-item.svg",
+      "sprite": "sprites/content.svg#content-record-list-item",
+      "bidi": false
+    },
     "content-social-media": {
       "identifier": "content-social-media",
       "category": "content",
