@@ -1225,6 +1225,13 @@
       "sprite": "sprites/actions.svg#actions-dice",
       "bidi": false
     },
+    "actions-disapprove": {
+      "identifier": "actions-disapprove",
+      "category": "actions",
+      "svg": "svgs/actions/actions-disapprove.svg",
+      "sprite": "sprites/actions.svg#actions-disapprove",
+      "bidi": false
+    },
     "actions-discard": {
       "identifier": "actions-discard",
       "category": "actions",
