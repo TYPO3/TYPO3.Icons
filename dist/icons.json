@@ -1806,6 +1806,13 @@
       "sprite": "sprites/actions.svg#actions-fullscreen",
       "bidi": false
     },
+    "actions-gauge": {
+      "identifier": "actions-gauge",
+      "category": "actions",
+      "svg": "svgs/actions/actions-gauge.svg",
+      "sprite": "sprites/actions.svg#actions-gauge",
+      "bidi": false
+    },
     "actions-gift-card": {
       "identifier": "actions-gift-card",
       "category": "actions",
