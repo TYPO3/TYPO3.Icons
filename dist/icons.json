@@ -2919,6 +2919,13 @@
       "sprite": "sprites/actions.svg#actions-shield",
       "bidi": false
     },
+    "actions-signature": {
+      "identifier": "actions-signature",
+      "category": "actions",
+      "svg": "svgs/actions/actions-signature.svg",
+      "sprite": "sprites/actions.svg#actions-signature",
+      "bidi": false
+    },
     "actions-sitemap": {
       "identifier": "actions-sitemap",
       "category": "actions",
