@@ -192,5 +192,6 @@ this repository in place of its scopes.
 Only maintainers release. `npm version <major|minor|patch>` makes the
 `[RELEASE] vX.Y.Z` commit, the changelog entry and the tag. The push of the
 tag starts `.github/workflows/release.yml`, which publishes to npm. A removed
-or renamed identifier, or a changed file path in `dist/`, is a major release.
-Do not move or make again a published tag.
+identifier, or a renamed identifier without an `alias`, is a major release. An
+alias keeps the old identifier working, so a rename with an alias can go into
+a minor or patch release. Do not move or make again a published tag.
