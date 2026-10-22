@@ -2744,6 +2744,13 @@
       "sprite": "sprites/actions.svg#actions-reply",
       "bidi": false
     },
+    "actions-roadmap": {
+      "identifier": "actions-roadmap",
+      "category": "actions",
+      "svg": "svgs/actions/actions-roadmap.svg",
+      "sprite": "sprites/actions.svg#actions-roadmap",
+      "bidi": false
+    },
     "actions-robot": {
       "identifier": "actions-robot",
       "category": "actions",
