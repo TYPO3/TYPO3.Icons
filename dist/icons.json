@@ -2513,6 +2513,13 @@
       "sprite": "sprites/actions.svg#actions-paperplane",
       "bidi": false
     },
+    "actions-passkey": {
+      "identifier": "actions-passkey",
+      "category": "actions",
+      "svg": "svgs/actions/actions-passkey.svg",
+      "sprite": "sprites/actions.svg#actions-passkey",
+      "bidi": false
+    },
     "actions-paste-after": {
       "identifier": "actions-paste-after",
       "category": "actions",
