@@ -2590,6 +2590,13 @@
       "sprite": "sprites/actions.svg#actions-reply",
       "bidi": false
     },
+    "actions-robot": {
+      "identifier": "actions-robot",
+      "category": "actions",
+      "svg": "svgs/actions/actions-robot.svg",
+      "sprite": "sprites/actions.svg#actions-robot",
+      "bidi": false
+    },
     "actions-rocket": {
       "identifier": "actions-rocket",
       "category": "actions",
