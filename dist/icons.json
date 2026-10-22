@@ -2940,6 +2940,27 @@
       "sprite": "sprites/actions.svg#actions-shield",
       "bidi": false
     },
+    "actions-signal-high": {
+      "identifier": "actions-signal-high",
+      "category": "actions",
+      "svg": "svgs/actions/actions-signal-high.svg",
+      "sprite": "sprites/actions.svg#actions-signal-high",
+      "bidi": false
+    },
+    "actions-signal-low": {
+      "identifier": "actions-signal-low",
+      "category": "actions",
+      "svg": "svgs/actions/actions-signal-low.svg",
+      "sprite": "sprites/actions.svg#actions-signal-low",
+      "bidi": false
+    },
+    "actions-signal-medium": {
+      "identifier": "actions-signal-medium",
+      "category": "actions",
+      "svg": "svgs/actions/actions-signal-medium.svg",
+      "sprite": "sprites/actions.svg#actions-signal-medium",
+      "bidi": false
+    },
     "actions-signature": {
       "identifier": "actions-signature",
       "category": "actions",
