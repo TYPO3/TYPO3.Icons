@@ -840,6 +840,20 @@
       "sprite": "sprites/actions.svg#actions-clock",
       "bidi": false
     },
+    "actions-close-circle-alt": {
+      "identifier": "actions-close-circle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-close-circle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-close-circle-alt",
+      "bidi": false
+    },
+    "actions-close-circle": {
+      "identifier": "actions-close-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-close-circle.svg",
+      "sprite": "sprites/actions.svg#actions-close-circle",
+      "bidi": false
+    },
     "actions-close": {
       "identifier": "actions-close",
       "category": "actions",
