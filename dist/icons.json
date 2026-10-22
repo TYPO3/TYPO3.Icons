@@ -3423,6 +3423,20 @@
       "sprite": "sprites/actions.svg#actions-webhook",
       "bidi": false
     },
+    "actions-wifi-slash": {
+      "identifier": "actions-wifi-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-wifi-slash.svg",
+      "sprite": "sprites/actions.svg#actions-wifi-slash",
+      "bidi": false
+    },
+    "actions-wifi": {
+      "identifier": "actions-wifi",
+      "category": "actions",
+      "svg": "svgs/actions/actions-wifi.svg",
+      "sprite": "sprites/actions.svg#actions-wifi",
+      "bidi": false
+    },
     "actions-window-cog": {
       "identifier": "actions-window-cog",
       "category": "actions",
