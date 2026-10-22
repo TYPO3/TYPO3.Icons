@@ -4739,6 +4739,13 @@
       "sprite": "sprites/content.svg#content-menu-abstract",
       "bidi": false
     },
+    "content-menu-breadcrumb": {
+      "identifier": "content-menu-breadcrumb",
+      "category": "content",
+      "svg": "svgs/content/content-menu-breadcrumb.svg",
+      "sprite": "sprites/content.svg#content-menu-breadcrumb",
+      "bidi": false
+    },
     "content-menu-card": {
       "identifier": "content-menu-card",
       "category": "content",
