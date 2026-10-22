@@ -1806,6 +1806,13 @@
       "sprite": "sprites/actions.svg#actions-filter",
       "bidi": false
     },
+    "actions-fingerprint": {
+      "identifier": "actions-fingerprint",
+      "category": "actions",
+      "svg": "svgs/actions/actions-fingerprint.svg",
+      "sprite": "sprites/actions.svg#actions-fingerprint",
+      "bidi": false
+    },
     "actions-flag-checkered": {
       "identifier": "actions-flag-checkered",
       "category": "actions",
