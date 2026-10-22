@@ -3129,6 +3129,20 @@
       "sprite": "sprites/actions.svg#actions-text-strikethrough",
       "bidi": false
     },
+    "actions-text-subscript": {
+      "identifier": "actions-text-subscript",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-subscript.svg",
+      "sprite": "sprites/actions.svg#actions-text-subscript",
+      "bidi": false
+    },
+    "actions-text-superscript": {
+      "identifier": "actions-text-superscript",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-superscript.svg",
+      "sprite": "sprites/actions.svg#actions-text-superscript",
+      "bidi": false
+    },
     "actions-text-underline": {
       "identifier": "actions-text-underline",
       "category": "actions",
