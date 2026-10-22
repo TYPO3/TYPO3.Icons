@@ -658,6 +658,34 @@
       "sprite": "sprites/actions.svg#actions-certificate",
       "bidi": false
     },
+    "actions-chart-area": {
+      "identifier": "actions-chart-area",
+      "category": "actions",
+      "svg": "svgs/actions/actions-chart-area.svg",
+      "sprite": "sprites/actions.svg#actions-chart-area",
+      "bidi": false
+    },
+    "actions-chart-bar": {
+      "identifier": "actions-chart-bar",
+      "category": "actions",
+      "svg": "svgs/actions/actions-chart-bar.svg",
+      "sprite": "sprites/actions.svg#actions-chart-bar",
+      "bidi": false
+    },
+    "actions-chart-line": {
+      "identifier": "actions-chart-line",
+      "category": "actions",
+      "svg": "svgs/actions/actions-chart-line.svg",
+      "sprite": "sprites/actions.svg#actions-chart-line",
+      "bidi": false
+    },
+    "actions-chart-pie": {
+      "identifier": "actions-chart-pie",
+      "category": "actions",
+      "svg": "svgs/actions/actions-chart-pie.svg",
+      "sprite": "sprites/actions.svg#actions-chart-pie",
+      "bidi": false
+    },
     "actions-chat": {
       "identifier": "actions-chat",
       "category": "actions",
