@@ -3052,6 +3052,13 @@
       "sprite": "sprites/actions.svg#actions-window",
       "bidi": false
     },
+    "actions-workflow": {
+      "identifier": "actions-workflow",
+      "category": "actions",
+      "svg": "svgs/actions/actions-workflow.svg",
+      "sprite": "sprites/actions.svg#actions-workflow",
+      "bidi": false
+    },
     "actions-workspace": {
       "identifier": "actions-workspace",
       "category": "actions",
