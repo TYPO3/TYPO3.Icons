@@ -2800,6 +2800,13 @@
       "sprite": "sprites/actions.svg#actions-stop",
       "bidi": false
     },
+    "actions-stopwatch": {
+      "identifier": "actions-stopwatch",
+      "category": "actions",
+      "svg": "svgs/actions/actions-stopwatch.svg",
+      "sprite": "sprites/actions.svg#actions-stopwatch",
+      "bidi": false
+    },
     "actions-store": {
       "identifier": "actions-store",
       "category": "actions",
