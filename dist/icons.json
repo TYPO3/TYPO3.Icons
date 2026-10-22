@@ -1085,6 +1085,13 @@
       "sprite": "sprites/actions.svg#actions-cog",
       "bidi": false
     },
+    "actions-command": {
+      "identifier": "actions-command",
+      "category": "actions",
+      "svg": "svgs/actions/actions-command.svg",
+      "sprite": "sprites/actions.svg#actions-command",
+      "bidi": false
+    },
     "actions-comment": {
       "identifier": "actions-comment",
       "category": "actions",
