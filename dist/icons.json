@@ -1645,6 +1645,13 @@
       "sprite": "sprites/actions.svg#actions-filter",
       "bidi": false
     },
+    "actions-flag": {
+      "identifier": "actions-flag",
+      "category": "actions",
+      "svg": "svgs/actions/actions-flag.svg",
+      "sprite": "sprites/actions.svg#actions-flag",
+      "bidi": false
+    },
     "actions-folder-add": {
       "identifier": "actions-folder-add",
       "category": "actions",
