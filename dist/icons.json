@@ -546,11 +546,39 @@
       "sprite": "sprites/actions.svg#actions-bullhorn",
       "bidi": false
     },
+    "actions-calendar-add": {
+      "identifier": "actions-calendar-add",
+      "category": "actions",
+      "svg": "svgs/actions/actions-calendar-add.svg",
+      "sprite": "sprites/actions.svg#actions-calendar-add",
+      "bidi": false
+    },
     "actions-calendar-alternative": {
       "identifier": "actions-calendar-alternative",
       "category": "actions",
       "svg": "svgs/actions/actions-calendar-alternative.svg",
       "sprite": "sprites/actions.svg#actions-calendar-alternative",
+      "bidi": false
+    },
+    "actions-calendar-check": {
+      "identifier": "actions-calendar-check",
+      "category": "actions",
+      "svg": "svgs/actions/actions-calendar-check.svg",
+      "sprite": "sprites/actions.svg#actions-calendar-check",
+      "bidi": false
+    },
+    "actions-calendar-clock": {
+      "identifier": "actions-calendar-clock",
+      "category": "actions",
+      "svg": "svgs/actions/actions-calendar-clock.svg",
+      "sprite": "sprites/actions.svg#actions-calendar-clock",
+      "bidi": false
+    },
+    "actions-calendar-remove": {
+      "identifier": "actions-calendar-remove",
+      "category": "actions",
+      "svg": "svgs/actions/actions-calendar-remove.svg",
+      "sprite": "sprites/actions.svg#actions-calendar-remove",
       "bidi": false
     },
     "actions-calendar": {
