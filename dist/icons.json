@@ -5257,6 +5257,13 @@
       "sprite": "sprites/mimetypes.svg#mimetypes-excel",
       "bidi": false
     },
+    "mimetypes-font": {
+      "identifier": "mimetypes-font",
+      "category": "mimetypes",
+      "svg": "svgs/mimetypes/mimetypes-font.svg",
+      "sprite": "sprites/mimetypes.svg#mimetypes-font",
+      "bidi": false
+    },
     "mimetypes-media-audio": {
       "identifier": "mimetypes-media-audio",
       "category": "mimetypes",
@@ -5404,11 +5411,25 @@
       "sprite": "sprites/mimetypes.svg#mimetypes-text-json",
       "bidi": false
     },
+    "mimetypes-text-markdown": {
+      "identifier": "mimetypes-text-markdown",
+      "category": "mimetypes",
+      "svg": "svgs/mimetypes/mimetypes-text-markdown.svg",
+      "sprite": "sprites/mimetypes.svg#mimetypes-text-markdown",
+      "bidi": false
+    },
     "mimetypes-text-php": {
       "identifier": "mimetypes-text-php",
       "category": "mimetypes",
       "svg": "svgs/mimetypes/mimetypes-text-php.svg",
       "sprite": "sprites/mimetypes.svg#mimetypes-text-php",
+      "bidi": false
+    },
+    "mimetypes-text-sql": {
+      "identifier": "mimetypes-text-sql",
+      "category": "mimetypes",
+      "svg": "svgs/mimetypes/mimetypes-text-sql.svg",
+      "sprite": "sprites/mimetypes.svg#mimetypes-text-sql",
       "bidi": false
     },
     "mimetypes-text-text": {
