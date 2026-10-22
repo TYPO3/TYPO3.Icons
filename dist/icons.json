@@ -1610,6 +1610,13 @@
       "sprite": "sprites/actions.svg#actions-eye",
       "bidi": false
     },
+    "actions-eyedropper": {
+      "identifier": "actions-eyedropper",
+      "category": "actions",
+      "svg": "svgs/actions/actions-eyedropper.svg",
+      "sprite": "sprites/actions.svg#actions-eyedropper",
+      "bidi": false
+    },
     "actions-face-frown": {
       "identifier": "actions-face-frown",
       "category": "actions",
