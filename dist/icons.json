@@ -2807,11 +2807,32 @@
       "sprite": "sprites/actions.svg#actions-text-align-start",
       "bidi": true
     },
+    "actions-text-bold": {
+      "identifier": "actions-text-bold",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-bold.svg",
+      "sprite": "sprites/actions.svg#actions-text-bold",
+      "bidi": false
+    },
+    "actions-text-heading": {
+      "identifier": "actions-text-heading",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-heading.svg",
+      "sprite": "sprites/actions.svg#actions-text-heading",
+      "bidi": false
+    },
     "actions-text-indent": {
       "identifier": "actions-text-indent",
       "category": "actions",
       "svg": "svgs/actions/actions-text-indent.svg",
       "sprite": "sprites/actions.svg#actions-text-indent",
+      "bidi": false
+    },
+    "actions-text-italic": {
+      "identifier": "actions-text-italic",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-italic.svg",
+      "sprite": "sprites/actions.svg#actions-text-italic",
       "bidi": false
     },
     "actions-text-lengthen": {
@@ -2833,6 +2854,20 @@
       "category": "actions",
       "svg": "svgs/actions/actions-text-shorten.svg",
       "sprite": "sprites/actions.svg#actions-text-shorten",
+      "bidi": false
+    },
+    "actions-text-strikethrough": {
+      "identifier": "actions-text-strikethrough",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-strikethrough.svg",
+      "sprite": "sprites/actions.svg#actions-text-strikethrough",
+      "bidi": false
+    },
+    "actions-text-underline": {
+      "identifier": "actions-text-underline",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-underline.svg",
+      "sprite": "sprites/actions.svg#actions-text-underline",
       "bidi": false
     },
     "actions-thumbtack": {
