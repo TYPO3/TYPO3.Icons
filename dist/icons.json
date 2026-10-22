@@ -2583,6 +2583,13 @@
       "sprite": "sprites/actions.svg#actions-plus",
       "bidi": false
     },
+    "actions-poll": {
+      "identifier": "actions-poll",
+      "category": "actions",
+      "svg": "svgs/actions/actions-poll.svg",
+      "sprite": "sprites/actions.svg#actions-poll",
+      "bidi": false
+    },
     "actions-preview": {
       "identifier": "actions-preview",
       "category": "actions",
