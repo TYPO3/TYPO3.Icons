@@ -2534,6 +2534,13 @@
       "sprite": "sprites/actions.svg#actions-print",
       "bidi": false
     },
+    "actions-pulse": {
+      "identifier": "actions-pulse",
+      "category": "actions",
+      "svg": "svgs/actions/actions-pulse.svg",
+      "sprite": "sprites/actions.svg#actions-pulse",
+      "bidi": false
+    },
     "actions-qrcode": {
       "identifier": "actions-qrcode",
       "category": "actions",
