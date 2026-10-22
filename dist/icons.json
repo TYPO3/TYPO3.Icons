@@ -4354,6 +4354,13 @@
       "sprite": "sprites/content.svg#content-bullets",
       "bidi": false
     },
+    "content-button": {
+      "identifier": "content-button",
+      "category": "content",
+      "svg": "svgs/content/content-button.svg",
+      "sprite": "sprites/content.svg#content-button",
+      "bidi": false
+    },
     "content-card-group": {
       "identifier": "content-card-group",
       "category": "content",
