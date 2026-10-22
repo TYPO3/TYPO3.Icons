@@ -6622,6 +6622,20 @@
       "sprite": "sprites/spinner.svg#spinner-circle",
       "bidi": false
     },
+    "status-reference-hard": {
+      "identifier": "status-reference-hard",
+      "category": "status",
+      "svg": "svgs/status/status-reference-hard.svg",
+      "sprite": "sprites/status.svg#status-reference-hard",
+      "bidi": false
+    },
+    "status-reference-soft": {
+      "identifier": "status-reference-soft",
+      "category": "status",
+      "svg": "svgs/status/status-reference-soft.svg",
+      "sprite": "sprites/status.svg#status-reference-soft",
+      "bidi": false
+    },
     "status-user-admin": {
       "identifier": "status-user-admin",
       "category": "status",
