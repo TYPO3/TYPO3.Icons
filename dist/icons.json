@@ -2674,6 +2674,27 @@
       "sprite": "sprites/actions.svg#actions-print",
       "bidi": false
     },
+    "actions-priority-high": {
+      "identifier": "actions-priority-high",
+      "category": "actions",
+      "svg": "svgs/actions/actions-priority-high.svg",
+      "sprite": "sprites/actions.svg#actions-priority-high",
+      "bidi": false
+    },
+    "actions-priority-low": {
+      "identifier": "actions-priority-low",
+      "category": "actions",
+      "svg": "svgs/actions/actions-priority-low.svg",
+      "sprite": "sprites/actions.svg#actions-priority-low",
+      "bidi": false
+    },
+    "actions-priority-medium": {
+      "identifier": "actions-priority-medium",
+      "category": "actions",
+      "svg": "svgs/actions/actions-priority-medium.svg",
+      "sprite": "sprites/actions.svg#actions-priority-medium",
+      "bidi": false
+    },
     "actions-pulse": {
       "identifier": "actions-pulse",
       "category": "actions",
