@@ -2380,6 +2380,13 @@
       "sprite": "sprites/actions.svg#actions-minus",
       "bidi": false
     },
+    "actions-money": {
+      "identifier": "actions-money",
+      "category": "actions",
+      "svg": "svgs/actions/actions-money.svg",
+      "sprite": "sprites/actions.svg#actions-money",
+      "bidi": false
+    },
     "actions-moon": {
       "identifier": "actions-moon",
       "category": "actions",
