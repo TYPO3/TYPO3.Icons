@@ -2562,6 +2562,13 @@
       "sprite": "sprites/actions.svg#actions-percent",
       "bidi": false
     },
+    "actions-phone-slash": {
+      "identifier": "actions-phone-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-phone-slash.svg",
+      "sprite": "sprites/actions.svg#actions-phone-slash",
+      "bidi": false
+    },
     "actions-phone": {
       "identifier": "actions-phone",
       "category": "actions",
