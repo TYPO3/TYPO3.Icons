@@ -1456,6 +1456,27 @@
       "sprite": "sprites/actions.svg#actions-eye",
       "bidi": false
     },
+    "actions-face-frown": {
+      "identifier": "actions-face-frown",
+      "category": "actions",
+      "svg": "svgs/actions/actions-face-frown.svg",
+      "sprite": "sprites/actions.svg#actions-face-frown",
+      "bidi": false
+    },
+    "actions-face-neutral": {
+      "identifier": "actions-face-neutral",
+      "category": "actions",
+      "svg": "svgs/actions/actions-face-neutral.svg",
+      "sprite": "sprites/actions.svg#actions-face-neutral",
+      "bidi": false
+    },
+    "actions-face-smile": {
+      "identifier": "actions-face-smile",
+      "category": "actions",
+      "svg": "svgs/actions/actions-face-smile.svg",
+      "sprite": "sprites/actions.svg#actions-face-smile",
+      "bidi": false
+    },
     "actions-file-add": {
       "identifier": "actions-file-add",
       "category": "actions",
