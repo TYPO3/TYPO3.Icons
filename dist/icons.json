@@ -4844,6 +4844,13 @@
       "sprite": "sprites/content.svg#content-quote",
       "bidi": false
     },
+    "content-social-media": {
+      "identifier": "content-social-media",
+      "category": "content",
+      "svg": "svgs/content/content-social-media.svg",
+      "sprite": "sprites/content.svg#content-social-media",
+      "bidi": false
+    },
     "content-special-div": {
       "identifier": "content-special-div",
       "category": "content",
