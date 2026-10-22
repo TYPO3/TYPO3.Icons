@@ -2786,6 +2786,13 @@
       "sprite": "sprites/actions.svg#actions-upload",
       "bidi": false
     },
+    "actions-user-add": {
+      "identifier": "actions-user-add",
+      "category": "actions",
+      "svg": "svgs/actions/actions-user-add.svg",
+      "sprite": "sprites/actions.svg#actions-user-add",
+      "bidi": false
+    },
     "actions-user-edit": {
       "identifier": "actions-user-edit",
       "category": "actions",
@@ -2798,6 +2805,13 @@
       "category": "actions",
       "svg": "svgs/actions/actions-user-emulate.svg",
       "sprite": "sprites/actions.svg#actions-user-emulate",
+      "bidi": false
+    },
+    "actions-user-remove": {
+      "identifier": "actions-user-remove",
+      "category": "actions",
+      "svg": "svgs/actions/actions-user-remove.svg",
+      "sprite": "sprites/actions.svg#actions-user-remove",
       "bidi": false
     },
     "actions-user-switch": {
