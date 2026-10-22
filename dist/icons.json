@@ -2226,6 +2226,13 @@
       "sprite": "sprites/actions.svg#actions-panel-expand-start",
       "bidi": true
     },
+    "actions-paperclip": {
+      "identifier": "actions-paperclip",
+      "category": "actions",
+      "svg": "svgs/actions/actions-paperclip.svg",
+      "sprite": "sprites/actions.svg#actions-paperclip",
+      "bidi": false
+    },
     "actions-paperplane": {
       "identifier": "actions-paperplane",
       "category": "actions",
