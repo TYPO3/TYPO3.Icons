@@ -2604,6 +2604,13 @@
       "sprite": "sprites/actions.svg#actions-question",
       "bidi": false
     },
+    "actions-quote": {
+      "identifier": "actions-quote",
+      "category": "actions",
+      "svg": "svgs/actions/actions-quote.svg",
+      "sprite": "sprites/actions.svg#actions-quote",
+      "bidi": false
+    },
     "actions-random": {
       "identifier": "actions-random",
       "category": "actions",
