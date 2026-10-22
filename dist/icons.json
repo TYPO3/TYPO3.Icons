@@ -4697,6 +4697,13 @@
       "sprite": "sprites/content.svg#content-listgroup",
       "bidi": false
     },
+    "content-logo": {
+      "identifier": "content-logo",
+      "category": "content",
+      "svg": "svgs/content/content-logo.svg",
+      "sprite": "sprites/content.svg#content-logo",
+      "bidi": false
+    },
     "content-magnet": {
       "identifier": "content-magnet",
       "category": "content",
