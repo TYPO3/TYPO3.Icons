@@ -1806,6 +1806,13 @@
       "sprite": "sprites/actions.svg#actions-image",
       "bidi": false
     },
+    "actions-inbox": {
+      "identifier": "actions-inbox",
+      "category": "actions",
+      "svg": "svgs/actions/actions-inbox.svg",
+      "sprite": "sprites/actions.svg#actions-inbox",
+      "bidi": false
+    },
     "actions-infinity": {
       "identifier": "actions-infinity",
       "category": "actions",
