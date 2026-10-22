@@ -756,6 +756,13 @@
       "sprite": "sprites/actions.svg#actions-check-circle",
       "bidi": false
     },
+    "actions-check-double": {
+      "identifier": "actions-check-double",
+      "category": "actions",
+      "svg": "svgs/actions/actions-check-double.svg",
+      "sprite": "sprites/actions.svg#actions-check-double",
+      "bidi": false
+    },
     "actions-check-square-alt": {
       "identifier": "actions-check-square-alt",
       "category": "actions",
