@@ -1995,6 +1995,20 @@
       "sprite": "sprites/actions.svg#actions-microchip",
       "bidi": false
     },
+    "actions-microphone-slash": {
+      "identifier": "actions-microphone-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-microphone-slash.svg",
+      "sprite": "sprites/actions.svg#actions-microphone-slash",
+      "bidi": false
+    },
+    "actions-microphone": {
+      "identifier": "actions-microphone",
+      "category": "actions",
+      "svg": "svgs/actions/actions-microphone.svg",
+      "sprite": "sprites/actions.svg#actions-microphone",
+      "bidi": false
+    },
     "actions-minus-badge-alt": {
       "identifier": "actions-minus-badge-alt",
       "category": "actions",
