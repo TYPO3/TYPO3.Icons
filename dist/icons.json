@@ -4522,6 +4522,13 @@
       "sprite": "sprites/content.svg#content-container",
       "bidi": false
     },
+    "content-countdown": {
+      "identifier": "content-countdown",
+      "category": "content",
+      "svg": "svgs/content/content-countdown.svg",
+      "sprite": "sprites/content.svg#content-countdown",
+      "bidi": false
+    },
     "content-cpu": {
       "identifier": "content-cpu",
       "category": "content",
