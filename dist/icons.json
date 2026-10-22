@@ -5768,6 +5768,13 @@
       "sprite": "sprites/mimetypes.svg#mimetypes-text-typoscript",
       "bidi": false
     },
+    "mimetypes-text-xliff": {
+      "identifier": "mimetypes-text-xliff",
+      "category": "mimetypes",
+      "svg": "svgs/mimetypes/mimetypes-text-xliff.svg",
+      "sprite": "sprites/mimetypes.svg#mimetypes-text-xliff",
+      "bidi": false
+    },
     "mimetypes-text-xml": {
       "identifier": "mimetypes-text-xml",
       "category": "mimetypes",
