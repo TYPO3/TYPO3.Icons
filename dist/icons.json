@@ -5418,6 +5418,13 @@
       "sprite": "sprites/mimetypes.svg#mimetypes-application",
       "bidi": false
     },
+    "mimetypes-calendar": {
+      "identifier": "mimetypes-calendar",
+      "category": "mimetypes",
+      "svg": "svgs/mimetypes/mimetypes-calendar.svg",
+      "sprite": "sprites/mimetypes.svg#mimetypes-calendar",
+      "bidi": false
+    },
     "mimetypes-compressed": {
       "identifier": "mimetypes-compressed",
       "category": "mimetypes",
