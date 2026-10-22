@@ -2590,6 +2590,27 @@
       "sprite": "sprites/actions.svg#actions-text-indent",
       "bidi": false
     },
+    "actions-text-lengthen": {
+      "identifier": "actions-text-lengthen",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-lengthen.svg",
+      "sprite": "sprites/actions.svg#actions-text-lengthen",
+      "bidi": false
+    },
+    "actions-text-rewrite": {
+      "identifier": "actions-text-rewrite",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-rewrite.svg",
+      "sprite": "sprites/actions.svg#actions-text-rewrite",
+      "bidi": false
+    },
+    "actions-text-shorten": {
+      "identifier": "actions-text-shorten",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-shorten.svg",
+      "sprite": "sprites/actions.svg#actions-text-shorten",
+      "bidi": false
+    },
     "actions-thumbtack": {
       "identifier": "actions-thumbtack",
       "category": "actions",
