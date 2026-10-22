@@ -2702,6 +2702,20 @@
       "sprite": "sprites/actions.svg#actions-soft-hyphen",
       "bidi": false
     },
+    "actions-sort-alpha-down": {
+      "identifier": "actions-sort-alpha-down",
+      "category": "actions",
+      "svg": "svgs/actions/actions-sort-alpha-down.svg",
+      "sprite": "sprites/actions.svg#actions-sort-alpha-down",
+      "bidi": false
+    },
+    "actions-sort-alpha-up": {
+      "identifier": "actions-sort-alpha-up",
+      "category": "actions",
+      "svg": "svgs/actions/actions-sort-alpha-up.svg",
+      "sprite": "sprites/actions.svg#actions-sort-alpha-up",
+      "bidi": false
+    },
     "actions-sort-amount-down": {
       "identifier": "actions-sort-amount-down",
       "category": "actions",
