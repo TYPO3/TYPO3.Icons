@@ -1799,6 +1799,13 @@
       "sprite": "sprites/actions.svg#actions-file",
       "bidi": false
     },
+    "actions-filter-close": {
+      "identifier": "actions-filter-close",
+      "category": "actions",
+      "svg": "svgs/actions/actions-filter-close.svg",
+      "sprite": "sprites/actions.svg#actions-filter-close",
+      "bidi": false
+    },
     "actions-filter": {
       "identifier": "actions-filter",
       "category": "actions",
