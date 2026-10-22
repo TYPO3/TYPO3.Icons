@@ -4438,6 +4438,13 @@
       "sprite": "sprites/content.svg#content-clock",
       "bidi": false
     },
+    "content-code": {
+      "identifier": "content-code",
+      "category": "content",
+      "svg": "svgs/content/content-code.svg",
+      "sprite": "sprites/content.svg#content-code",
+      "bidi": false
+    },
     "content-coffee": {
       "identifier": "content-coffee",
       "category": "content",
