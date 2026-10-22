@@ -2653,6 +2653,13 @@
       "sprite": "sprites/actions.svg#actions-sort-amount",
       "bidi": false
     },
+    "actions-sparkles": {
+      "identifier": "actions-sparkles",
+      "category": "actions",
+      "svg": "svgs/actions/actions-sparkles.svg",
+      "sprite": "sprites/actions.svg#actions-sparkles",
+      "bidi": false
+    },
     "actions-square": {
       "identifier": "actions-square",
       "category": "actions",
