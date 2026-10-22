@@ -1869,6 +1869,13 @@
       "sprite": "sprites/actions.svg#actions-key",
       "bidi": false
     },
+    "actions-keyboard": {
+      "identifier": "actions-keyboard",
+      "category": "actions",
+      "svg": "svgs/actions/actions-keyboard.svg",
+      "sprite": "sprites/actions.svg#actions-keyboard",
+      "bidi": false
+    },
     "actions-layers": {
       "identifier": "actions-layers",
       "category": "actions",
