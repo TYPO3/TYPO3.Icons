@@ -2996,6 +2996,13 @@
       "sprite": "sprites/actions.svg#actions-user-check",
       "bidi": false
     },
+    "actions-user-circle": {
+      "identifier": "actions-user-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-user-circle.svg",
+      "sprite": "sprites/actions.svg#actions-user-circle",
+      "bidi": false
+    },
     "actions-user-edit": {
       "identifier": "actions-user-edit",
       "category": "actions",
