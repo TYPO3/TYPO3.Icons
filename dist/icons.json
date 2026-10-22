@@ -1645,6 +1645,13 @@
       "sprite": "sprites/actions.svg#actions-face-neutral",
       "bidi": false
     },
+    "actions-face-smile-add": {
+      "identifier": "actions-face-smile-add",
+      "category": "actions",
+      "svg": "svgs/actions/actions-face-smile-add.svg",
+      "sprite": "sprites/actions.svg#actions-face-smile-add",
+      "bidi": false
+    },
     "actions-face-smile": {
       "identifier": "actions-face-smile",
       "category": "actions",
