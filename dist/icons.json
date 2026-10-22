@@ -3052,6 +3052,20 @@
       "sprite": "sprites/actions.svg#actions-translate",
       "bidi": false
     },
+    "actions-trend-down": {
+      "identifier": "actions-trend-down",
+      "category": "actions",
+      "svg": "svgs/actions/actions-trend-down.svg",
+      "sprite": "sprites/actions.svg#actions-trend-down",
+      "bidi": false
+    },
+    "actions-trend-up": {
+      "identifier": "actions-trend-up",
+      "category": "actions",
+      "svg": "svgs/actions/actions-trend-up.svg",
+      "sprite": "sprites/actions.svg#actions-trend-up",
+      "bidi": false
+    },
     "actions-triangle": {
       "identifier": "actions-triangle",
       "category": "actions",
