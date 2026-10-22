@@ -1,0 +1,12 @@
+alias: []
+changes: []
+tags:
+  - right
+  - flush right
+  - ragged left
+  - paragraph
+  - rte
+  - formatting
+  - logical
+  - bidi
+bidi: true

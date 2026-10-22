@@ -2674,6 +2674,34 @@
       "sprite": "sprites/actions.svg#actions-terminal",
       "bidi": false
     },
+    "actions-text-align-center": {
+      "identifier": "actions-text-align-center",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-align-center.svg",
+      "sprite": "sprites/actions.svg#actions-text-align-center",
+      "bidi": false
+    },
+    "actions-text-align-end": {
+      "identifier": "actions-text-align-end",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-align-end.svg",
+      "sprite": "sprites/actions.svg#actions-text-align-end",
+      "bidi": true
+    },
+    "actions-text-align-justify": {
+      "identifier": "actions-text-align-justify",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-align-justify.svg",
+      "sprite": "sprites/actions.svg#actions-text-align-justify",
+      "bidi": false
+    },
+    "actions-text-align-start": {
+      "identifier": "actions-text-align-start",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-align-start.svg",
+      "sprite": "sprites/actions.svg#actions-text-align-start",
+      "bidi": true
+    },
     "actions-text-indent": {
       "identifier": "actions-text-indent",
       "category": "actions",
