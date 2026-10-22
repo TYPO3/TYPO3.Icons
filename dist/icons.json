@@ -1785,6 +1785,13 @@
       "sprite": "sprites/actions.svg#actions-history",
       "bidi": false
     },
+    "actions-hourglass": {
+      "identifier": "actions-hourglass",
+      "category": "actions",
+      "svg": "svgs/actions/actions-hourglass.svg",
+      "sprite": "sprites/actions.svg#actions-hourglass",
+      "bidi": false
+    },
     "actions-house": {
       "identifier": "actions-house",
       "category": "actions",
