@@ -1946,6 +1946,13 @@
       "sprite": "sprites/actions.svg#actions-hashtag",
       "bidi": false
     },
+    "actions-headphones": {
+      "identifier": "actions-headphones",
+      "category": "actions",
+      "svg": "svgs/actions/actions-headphones.svg",
+      "sprite": "sprites/actions.svg#actions-headphones",
+      "bidi": false
+    },
     "actions-heart-alt": {
       "identifier": "actions-heart-alt",
       "category": "actions",
