@@ -4851,6 +4851,13 @@
       "sprite": "sprites/content.svg#content-plugin",
       "bidi": false
     },
+    "content-pricing": {
+      "identifier": "content-pricing",
+      "category": "content",
+      "svg": "svgs/content/content-pricing.svg",
+      "sprite": "sprites/content.svg#content-pricing",
+      "bidi": false
+    },
     "content-quote": {
       "identifier": "content-quote",
       "category": "content",
