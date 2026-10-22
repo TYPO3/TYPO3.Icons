@@ -1904,6 +1904,13 @@
       "sprite": "sprites/actions.svg#actions-form-insert-in",
       "bidi": false
     },
+    "actions-forward": {
+      "identifier": "actions-forward",
+      "category": "actions",
+      "svg": "svgs/actions/actions-forward.svg",
+      "sprite": "sprites/actions.svg#actions-forward",
+      "bidi": false
+    },
     "actions-fullscreen-exit": {
       "identifier": "actions-fullscreen-exit",
       "category": "actions",
@@ -2980,13 +2987,6 @@
       "category": "actions",
       "svg": "svgs/actions/actions-share-alt.svg",
       "sprite": "sprites/actions.svg#actions-share-alt",
-      "bidi": false
-    },
-    "actions-share": {
-      "identifier": "actions-share",
-      "category": "actions",
-      "svg": "svgs/actions/actions-share.svg",
-      "sprite": "sprites/actions.svg#actions-share",
       "bidi": false
     },
     "actions-shield-star": {
@@ -6857,6 +6857,7 @@
     "apps-toolbar-menu-opendocs": "actions-file",
     "actions-system-tree-search-open": "actions-filter",
     "actions-insert-record": "actions-folder",
+    "actions-share": "actions-forward",
     "actions-document-history-open": "actions-history",
     "actions-document-info": "actions-info",
     "actions-edit-insert-default": "actions-insert",

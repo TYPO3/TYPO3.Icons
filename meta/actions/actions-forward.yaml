@@ -1,4 +1,5 @@
-alias: []
+alias:
+  - actions-share
 changes:
   - 2.4.0
   - 2.4.1
@@ -35,7 +36,7 @@ changes:
   - 5.1.0
 tags:
   - send
-  - forward
+  - share
   - social
   - distribute
   - publish
