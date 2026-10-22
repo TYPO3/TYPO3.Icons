@@ -588,6 +588,13 @@
       "sprite": "sprites/actions.svg#actions-calendar",
       "bidi": false
     },
+    "actions-camera": {
+      "identifier": "actions-camera",
+      "category": "actions",
+      "svg": "svgs/actions/actions-camera.svg",
+      "sprite": "sprites/actions.svg#actions-camera",
+      "bidi": false
+    },
     "actions-canvas": {
       "identifier": "actions-canvas",
       "category": "actions",
