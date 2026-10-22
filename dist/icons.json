@@ -5565,6 +5565,13 @@
       "sprite": "sprites/mimetypes.svg#mimetypes-text-yaml",
       "bidi": false
     },
+    "mimetypes-vcard": {
+      "identifier": "mimetypes-vcard",
+      "category": "mimetypes",
+      "svg": "svgs/mimetypes/mimetypes-vcard.svg",
+      "sprite": "sprites/mimetypes.svg#mimetypes-vcard",
+      "bidi": false
+    },
     "mimetypes-word": {
       "identifier": "mimetypes-word",
       "category": "mimetypes",
