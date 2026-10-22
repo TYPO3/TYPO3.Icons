@@ -2,6 +2,122 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.2.0] - 2026-10-22
+
+696d5c43 [FEATURE] Add content-spacer
+65e2a738 [FEATURE] Add content-record-list-item
+59e80e3f [FEATURE] Add mimetypes-text-xliff
+03d0646e [FEATURE] Add content-menu-breadcrumb
+440e8366 [FEATURE] Add content-logo
+9a5569c8 [FEATURE] Add actions-filter-close
+2ddc8d7d [FEATURE] Add content-pricing
+d4c80c1a [FEATURE] Add status-reference-hard and status-reference-soft
+8c428863 [FEATURE] Add content-countdown
+1aea7d44 [FEATURE] Add actions-thumbtack-slash
+b3be135d [FEATURE] Add content-social-media
+4009ce26 [FEATURE] Add actions-log
+3dd1aafe [FEATURE] Add actions-money
+889a0c2e [FEATURE] Add content-code
+3daab48c [FEATURE] Add content-button
+c7fc125b [FEATURE] Add actions-fingerprint
+067b2290 [FEATURE] Add content-embed
+c23f4cbd [FEATURE] Add actions-phone-slash
+5861b3a0 [FEATURE] Add actions-passkey
+cae056b2 [FEATURE] Add actions-priority-low, -medium and -high
+fd633bf7 [FEATURE] Add actions-face-smile-add
+c070edc5 [FEATURE] Add mimetypes-calendar
+39623163 [FEATURE] Add actions-signal-low, -medium and -high
+fac47d01 [FEATURE] Add actions-close-badge and actions-close-badge-alt
+085d5ea7 [FEATURE] Add actions-folder-remove
+2d2a8b7c [FEATURE] Add actions-signature
+f376203e [FEATURE] Add actions-roadmap
+957d0a22 [FEATURE] Add actions-eyedropper
+a26e314d [FEATURE] Add actions-headphones
+7a7402e6 [FEATURE] Add actions-screen-share
+a1cd9816 [FEATURE] Add mimetypes-vcard
+d47a2759 [FEATURE] Add actions-flip-horizontal and actions-flip-vertical
+b8160a3c [FEATURE] Add actions-power
+ae3de374 [FEATURE] Add actions-separator-horizontal
+465dd0e0 [FEATURE] Add actions-text-superscript and actions-text-subscript
+a9865127 [FEATURE] Add actions-truck
+7154ec7d [FEATURE] Add actions-calculator
+8ce64c72 [FEATURE] Add actions-wifi and actions-wifi-slash
+84b1b4f7 [FEATURE] Add actions-poll
+103b37ca [FEATURE] Add actions-flag-checkered
+22f6c38b [FEATURE] Add actions-alarm and actions-alarm-slash
+a31b3a53 [FEATURE] Add mimetypes-text-markdown, mimetypes-text-sql and mimetypes-font
+3f81d28f [FEATURE] Add actions-rotate-left and actions-rotate-right
+1dc39692 [FEATURE] Add actions-hashtag
+d2d48951 [FEATURE] Add actions-text-clear-format
+6bd322ba [FEATURE] Add actions-quote
+cdbcdbc3 [FEATURE] Add actions-closed-captioning
+6d591901 [FEATURE] Add actions-focus
+d90004f5 [FEATURE] Add actions-plug and actions-plug-slash
+186e43fb [FEATURE] Add actions-flask
+fa636791 [FEATURE] Add actions-pulse
+52cc5be7 [FEATURE] Add actions-gauge
+1fe7e5b3 [FEATURE] Add actions-trend-up and actions-trend-down
+88e68af7 [FEATURE] Add actions-circle-dashed
+bda537a6 [FEATURE] Add actions-sitemap
+96dbd715 [FEATURE] Add actions-messages and actions-message-check
+3d0a867c [FEATURE] Add actions-robot
+1beb9ced [FEATURE] Add actions-command
+09508011 [FEATURE] Add actions-check-double
+c90826ee [FEATURE] Add actions-stopwatch
+a007a9a7 [FEATURE] Add actions-camera
+a91655f6 [FEATURE] Add actions-print
+5c37f5b5 [FEATURE] Add actions-sort-alpha-down and actions-sort-alpha-up
+6df8d18a [FEATURE] Add actions-menu-alternative-horizontal
+e54cefbf [FEATURE] Add actions-video-slash
+1782b029 [FEATURE] Add actions-calendar-add, -check, -remove and -clock
+d7b0ab8a [FEATURE] Add actions-user-circle
+8769ae97 [FEATURE] Add actions-user-check and actions-user-lock
+457efe50 [FEATURE] Add actions-close-square and actions-close-square-alt
+96692f03 [FEATURE] Add mimetypes-text-yaml, -json, -xml and mimetypes-media-image-svg
+b78840bc [FEATURE] Add actions-list-check
+ca7dbc6f [FEATURE] Add actions-palette
+1546fb2f [FEATURE] Add actions-text-bold, -italic, -underline, -strikethrough and -heading
+a3bc7ff0 [FEATURE] Add actions-list-ordered
+8124e75a [FEATURE] Add actions-sparkles
+3a758d30 [FEATURE] Add actions-chart-bar, -line, -area and -pie
+4fce7093 [FEATURE] Add actions-volume-low, actions-volume-high and actions-volume-slash
+4565f8cd [FEATURE] Add actions-reply and actions-reply-all
+1a3a68b7 [FEATURE] Add actions-workflow
+c16bac74 [FEATURE] Add actions-kanban
+a67f1216 [FEATURE] Add actions-at
+a0b8727b [FEATURE] Add actions-paperclip
+fc62e53b [FEATURE] Add actions-keyboard
+9d4c5241 [FEATURE] Add actions-hourglass
+eb0f7b01 [FEATURE] Add actions-flag
+2dd60f8a [FEATURE] Add actions-inbox
+dc008132 [FEATURE] Add actions-text-align-start, -center, -end and -justify
+d88fd3ad [FEATURE] Add actions-user-add and actions-user-remove
+762db9ef [FEATURE] Add actions-disapprove
+2def9e24 [FEATURE] Add actions-close-circle and actions-close-circle-alt
+6e5408f9 [FEATURE] Add actions-microphone and actions-microphone-slash
+5f6a9ebd [FEATURE] Add actions-target and actions-pen-fountain
+81feb117 [FEATURE] Add actions-face-smile, actions-face-neutral and actions-face-frown
+f8bc3abf [FEATURE] Add actions-stop, actions-stop-circle and actions-stop-circle-alt
+664e4c10 [FEATURE] Add actions-text-shorten, actions-text-lengthen and actions-text-rewrite
+731e4586 [BUGFIX] Add the missing aliases of six renamed identifiers
+285fb037 [BUGFIX] Correct metadata for actions-forward
+fcb0525a [BUGFIX] Draw actions-filter as bars that get shorter
+57703937 [BUGFIX] Draw actions-thumbtack upright
+4f37f39b [BUGFIX] Sharpen the inner edges of actions-phone
+013d7afd [BUGFIX] Separate the plus of actions-folder-add from the folder
+03e16793 [TASK] Move the reference icons to actions-reference-hard and actions-reference-soft
+8fda99fa [TASK] Rename actions-share to actions-forward
+38c2f5d1 [TASK] Add the search tags paper plane, full screen, bulb and vertical ellipsis
+0d987666 [TASK] Update svgo to 4 and clean-css to 5
+d772b069 [TASK] Check sources and metadata in CI
+8948e5dc [TASK] Restructure the build scripts
+36521eb5 [TASK] Replace gulp with plain Node.js scripts
+9a207c18 [TASK] Update twig to 3.0
+19578380 [TASK] Update versions
+3722974a [DOCS] Allow a rename with an alias in a minor release
+81b9e4c5 [DOCS] Add AGENTS.md with the rules for work in this repository
+
+
 ## [5.1.0] - 2026-10-10
 
 aae72fcf [FEATURE] Match every word in the icon search
