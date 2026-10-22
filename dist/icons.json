@@ -1799,6 +1799,20 @@
       "sprite": "sprites/actions.svg#actions-flask",
       "bidi": false
     },
+    "actions-flip-horizontal": {
+      "identifier": "actions-flip-horizontal",
+      "category": "actions",
+      "svg": "svgs/actions/actions-flip-horizontal.svg",
+      "sprite": "sprites/actions.svg#actions-flip-horizontal",
+      "bidi": false
+    },
+    "actions-flip-vertical": {
+      "identifier": "actions-flip-vertical",
+      "category": "actions",
+      "svg": "svgs/actions/actions-flip-vertical.svg",
+      "sprite": "sprites/actions.svg#actions-flip-vertical",
+      "bidi": false
+    },
     "actions-focus": {
       "identifier": "actions-focus",
       "category": "actions",
