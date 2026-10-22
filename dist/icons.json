@@ -1764,6 +1764,13 @@
       "sprite": "sprites/actions.svg#actions-flask",
       "bidi": false
     },
+    "actions-focus": {
+      "identifier": "actions-focus",
+      "category": "actions",
+      "svg": "svgs/actions/actions-focus.svg",
+      "sprite": "sprites/actions.svg#actions-focus",
+      "bidi": false
+    },
     "actions-folder-add": {
       "identifier": "actions-folder-add",
       "category": "actions",
