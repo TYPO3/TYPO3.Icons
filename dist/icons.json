@@ -2520,6 +2520,27 @@
       "sprite": "sprites/actions.svg#actions-star",
       "bidi": false
     },
+    "actions-stop-circle-alt": {
+      "identifier": "actions-stop-circle-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-stop-circle-alt.svg",
+      "sprite": "sprites/actions.svg#actions-stop-circle-alt",
+      "bidi": false
+    },
+    "actions-stop-circle": {
+      "identifier": "actions-stop-circle",
+      "category": "actions",
+      "svg": "svgs/actions/actions-stop-circle.svg",
+      "sprite": "sprites/actions.svg#actions-stop-circle",
+      "bidi": false
+    },
+    "actions-stop": {
+      "identifier": "actions-stop",
+      "category": "actions",
+      "svg": "svgs/actions/actions-stop.svg",
+      "sprite": "sprites/actions.svg#actions-stop",
+      "bidi": false
+    },
     "actions-store": {
       "identifier": "actions-store",
       "category": "actions",
