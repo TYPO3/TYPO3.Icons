@@ -3199,6 +3199,13 @@
       "sprite": "sprites/actions.svg#actions-trophy",
       "bidi": false
     },
+    "actions-truck": {
+      "identifier": "actions-truck",
+      "category": "actions",
+      "svg": "svgs/actions/actions-truck.svg",
+      "sprite": "sprites/actions.svg#actions-truck",
+      "bidi": false
+    },
     "actions-undo": {
       "identifier": "actions-undo",
       "category": "actions",
