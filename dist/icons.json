@@ -2821,6 +2821,13 @@
       "sprite": "sprites/actions.svg#actions-selection",
       "bidi": false
     },
+    "actions-separator-horizontal": {
+      "identifier": "actions-separator-horizontal",
+      "category": "actions",
+      "svg": "svgs/actions/actions-separator-horizontal.svg",
+      "sprite": "sprites/actions.svg#actions-separator-horizontal",
+      "bidi": false
+    },
     "actions-server": {
       "identifier": "actions-server",
       "category": "actions",
