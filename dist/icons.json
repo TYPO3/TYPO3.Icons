@@ -4557,6 +4557,13 @@
       "sprite": "sprites/content.svg#content-elements-searchform",
       "bidi": false
     },
+    "content-embed": {
+      "identifier": "content-embed",
+      "category": "content",
+      "svg": "svgs/content/content-embed.svg",
+      "sprite": "sprites/content.svg#content-embed",
+      "bidi": false
+    },
     "content-extension": {
       "identifier": "content-extension",
       "category": "content",
