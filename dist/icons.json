@@ -2247,6 +2247,13 @@
       "sprite": "sprites/actions.svg#actions-pagetree",
       "bidi": false
     },
+    "actions-palette": {
+      "identifier": "actions-palette",
+      "category": "actions",
+      "svg": "svgs/actions/actions-palette.svg",
+      "sprite": "sprites/actions.svg#actions-palette",
+      "bidi": false
+    },
     "actions-panel-collapse-end": {
       "identifier": "actions-panel-collapse-end",
       "category": "actions",
