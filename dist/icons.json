@@ -868,6 +868,13 @@
       "sprite": "sprites/actions.svg#actions-chevron-up",
       "bidi": false
     },
+    "actions-circle-dashed": {
+      "identifier": "actions-circle-dashed",
+      "category": "actions",
+      "svg": "svgs/actions/actions-circle-dashed.svg",
+      "sprite": "sprites/actions.svg#actions-circle-dashed",
+      "bidi": false
+    },
     "actions-circle-full": {
       "identifier": "actions-circle-full",
       "category": "actions",
