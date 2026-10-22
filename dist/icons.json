@@ -3017,6 +3017,13 @@
       "sprite": "sprites/actions.svg#actions-text-bold",
       "bidi": false
     },
+    "actions-text-clear-format": {
+      "identifier": "actions-text-clear-format",
+      "category": "actions",
+      "svg": "svgs/actions/actions-text-clear-format.svg",
+      "sprite": "sprites/actions.svg#actions-text-clear-format",
+      "bidi": false
+    },
     "actions-text-heading": {
       "identifier": "actions-text-heading",
       "category": "actions",
