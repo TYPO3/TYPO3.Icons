@@ -2450,6 +2450,20 @@
       "sprite": "sprites/actions.svg#actions-replace",
       "bidi": false
     },
+    "actions-reply-all": {
+      "identifier": "actions-reply-all",
+      "category": "actions",
+      "svg": "svgs/actions/actions-reply-all.svg",
+      "sprite": "sprites/actions.svg#actions-reply-all",
+      "bidi": false
+    },
+    "actions-reply": {
+      "identifier": "actions-reply",
+      "category": "actions",
+      "svg": "svgs/actions/actions-reply.svg",
+      "sprite": "sprites/actions.svg#actions-reply",
+      "bidi": false
+    },
     "actions-rocket": {
       "identifier": "actions-rocket",
       "category": "actions",
