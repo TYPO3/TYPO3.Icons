@@ -2478,6 +2478,20 @@
       "sprite": "sprites/actions.svg#actions-play",
       "bidi": false
     },
+    "actions-plug-slash": {
+      "identifier": "actions-plug-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plug-slash.svg",
+      "sprite": "sprites/actions.svg#actions-plug-slash",
+      "bidi": false
+    },
+    "actions-plug": {
+      "identifier": "actions-plug",
+      "category": "actions",
+      "svg": "svgs/actions/actions-plug.svg",
+      "sprite": "sprites/actions.svg#actions-plug",
+      "bidi": false
+    },
     "actions-plus-badge-alt": {
       "identifier": "actions-plus-badge-alt",
       "category": "actions",
