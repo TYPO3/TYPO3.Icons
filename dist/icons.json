@@ -3101,6 +3101,13 @@
       "sprite": "sprites/actions.svg#actions-variable",
       "bidi": false
     },
+    "actions-video-slash": {
+      "identifier": "actions-video-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-video-slash.svg",
+      "sprite": "sprites/actions.svg#actions-video-slash",
+      "bidi": false
+    },
     "actions-video": {
       "identifier": "actions-video",
       "category": "actions",
