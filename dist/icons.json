@@ -1897,6 +1897,13 @@
       "sprite": "sprites/actions.svg#actions-hand-pointer",
       "bidi": false
     },
+    "actions-hashtag": {
+      "identifier": "actions-hashtag",
+      "category": "actions",
+      "svg": "svgs/actions/actions-hashtag.svg",
+      "sprite": "sprites/actions.svg#actions-hashtag",
+      "bidi": false
+    },
     "actions-heart-alt": {
       "identifier": "actions-heart-alt",
       "category": "actions",
