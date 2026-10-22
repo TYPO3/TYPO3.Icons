@@ -959,6 +959,13 @@
       "sprite": "sprites/actions.svg#actions-close",
       "bidi": false
     },
+    "actions-closed-captioning": {
+      "identifier": "actions-closed-captioning",
+      "category": "actions",
+      "svg": "svgs/actions/actions-closed-captioning.svg",
+      "sprite": "sprites/actions.svg#actions-closed-captioning",
+      "bidi": false
+    },
     "actions-cloud-check": {
       "identifier": "actions-cloud-check",
       "category": "actions",
