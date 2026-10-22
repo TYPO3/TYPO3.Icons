@@ -945,6 +945,20 @@
       "sprite": "sprites/actions.svg#actions-clock",
       "bidi": false
     },
+    "actions-close-badge-alt": {
+      "identifier": "actions-close-badge-alt",
+      "category": "actions",
+      "svg": "svgs/actions/actions-close-badge-alt.svg",
+      "sprite": "sprites/actions.svg#actions-close-badge-alt",
+      "bidi": false
+    },
+    "actions-close-badge": {
+      "identifier": "actions-close-badge",
+      "category": "actions",
+      "svg": "svgs/actions/actions-close-badge.svg",
+      "sprite": "sprites/actions.svg#actions-close-badge",
+      "bidi": false
+    },
     "actions-close-circle-alt": {
       "identifier": "actions-close-circle-alt",
       "category": "actions",
