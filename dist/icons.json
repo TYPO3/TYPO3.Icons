@@ -2191,6 +2191,13 @@
       "sprite": "sprites/actions.svg#actions-pause",
       "bidi": false
     },
+    "actions-pen-fountain": {
+      "identifier": "actions-pen-fountain",
+      "category": "actions",
+      "svg": "svgs/actions/actions-pen-fountain.svg",
+      "sprite": "sprites/actions.svg#actions-pen-fountain",
+      "bidi": false
+    },
     "actions-percent-badge": {
       "identifier": "actions-percent-badge",
       "category": "actions",
@@ -2602,6 +2609,13 @@
       "category": "actions",
       "svg": "svgs/actions/actions-tag.svg",
       "sprite": "sprites/actions.svg#actions-tag",
+      "bidi": false
+    },
+    "actions-target": {
+      "identifier": "actions-target",
+      "category": "actions",
+      "svg": "svgs/actions/actions-target.svg",
+      "sprite": "sprites/actions.svg#actions-target",
       "bidi": false
     },
     "actions-template-new": {
