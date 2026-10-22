@@ -1967,6 +1967,13 @@
       "sprite": "sprites/actions.svg#actions-list-alternative",
       "bidi": false
     },
+    "actions-list-ordered": {
+      "identifier": "actions-list-ordered",
+      "category": "actions",
+      "svg": "svgs/actions/actions-list-ordered.svg",
+      "sprite": "sprites/actions.svg#actions-list-ordered",
+      "bidi": false
+    },
     "actions-list": {
       "identifier": "actions-list",
       "category": "actions",
