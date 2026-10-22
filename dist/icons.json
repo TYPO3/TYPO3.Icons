@@ -1771,6 +1771,13 @@
       "sprite": "sprites/actions.svg#actions-filter",
       "bidi": false
     },
+    "actions-flag-checkered": {
+      "identifier": "actions-flag-checkered",
+      "category": "actions",
+      "svg": "svgs/actions/actions-flag-checkered.svg",
+      "sprite": "sprites/actions.svg#actions-flag-checkered",
+      "bidi": false
+    },
     "actions-flag": {
       "identifier": "actions-flag",
       "category": "actions",
