@@ -2072,6 +2072,13 @@
       "sprite": "sprites/actions.svg#actions-marker",
       "bidi": false
     },
+    "actions-menu-alternative-horizontal": {
+      "identifier": "actions-menu-alternative-horizontal",
+      "category": "actions",
+      "svg": "svgs/actions/actions-menu-alternative-horizontal.svg",
+      "sprite": "sprites/actions.svg#actions-menu-alternative-horizontal",
+      "bidi": false
+    },
     "actions-menu-alternative": {
       "identifier": "actions-menu-alternative",
       "category": "actions",
