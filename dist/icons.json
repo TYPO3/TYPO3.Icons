@@ -2807,6 +2807,20 @@
       "sprite": "sprites/actions.svg#actions-redo",
       "bidi": true
     },
+    "actions-reference-hard": {
+      "identifier": "actions-reference-hard",
+      "category": "actions",
+      "svg": "svgs/actions/actions-reference-hard.svg",
+      "sprite": "sprites/actions.svg#actions-reference-hard",
+      "bidi": false
+    },
+    "actions-reference-soft": {
+      "identifier": "actions-reference-soft",
+      "category": "actions",
+      "svg": "svgs/actions/actions-reference-soft.svg",
+      "sprite": "sprites/actions.svg#actions-reference-soft",
+      "bidi": false
+    },
     "actions-refresh": {
       "identifier": "actions-refresh",
       "category": "actions",
@@ -6669,20 +6683,6 @@
       "category": "spinner",
       "svg": "svgs/spinner/spinner-circle.svg",
       "sprite": "sprites/spinner.svg#spinner-circle",
-      "bidi": false
-    },
-    "status-reference-hard": {
-      "identifier": "status-reference-hard",
-      "category": "status",
-      "svg": "svgs/status/status-reference-hard.svg",
-      "sprite": "sprites/status.svg#status-reference-hard",
-      "bidi": false
-    },
-    "status-reference-soft": {
-      "identifier": "status-reference-soft",
-      "category": "status",
-      "svg": "svgs/status/status-reference-soft.svg",
-      "sprite": "sprites/status.svg#status-reference-soft",
       "bidi": false
     },
     "status-user-admin": {
