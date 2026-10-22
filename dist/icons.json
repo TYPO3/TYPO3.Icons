@@ -3318,6 +3318,13 @@
       "sprite": "sprites/actions.svg#actions-text-underline",
       "bidi": false
     },
+    "actions-thumbtack-slash": {
+      "identifier": "actions-thumbtack-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-thumbtack-slash.svg",
+      "sprite": "sprites/actions.svg#actions-thumbtack-slash",
+      "bidi": false
+    },
     "actions-thumbtack": {
       "identifier": "actions-thumbtack",
       "category": "actions",
