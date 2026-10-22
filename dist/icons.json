@@ -7,6 +7,20 @@
       "sprite": "sprites/actions.svg#actions-accessibility",
       "bidi": false
     },
+    "actions-alarm-slash": {
+      "identifier": "actions-alarm-slash",
+      "category": "actions",
+      "svg": "svgs/actions/actions-alarm-slash.svg",
+      "sprite": "sprites/actions.svg#actions-alarm-slash",
+      "bidi": false
+    },
+    "actions-alarm": {
+      "identifier": "actions-alarm",
+      "category": "actions",
+      "svg": "svgs/actions/actions-alarm.svg",
+      "sprite": "sprites/actions.svg#actions-alarm",
+      "bidi": false
+    },
     "actions-approve": {
       "identifier": "actions-approve",
       "category": "actions",
