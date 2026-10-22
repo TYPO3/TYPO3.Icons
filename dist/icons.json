@@ -2807,6 +2807,13 @@
       "sprite": "sprites/actions.svg#actions-save",
       "bidi": false
     },
+    "actions-screen-share": {
+      "identifier": "actions-screen-share",
+      "category": "actions",
+      "svg": "svgs/actions/actions-screen-share.svg",
+      "sprite": "sprites/actions.svg#actions-screen-share",
+      "bidi": false
+    },
     "actions-search": {
       "identifier": "actions-search",
       "category": "actions",
