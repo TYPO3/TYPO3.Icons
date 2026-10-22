@@ -1834,6 +1834,13 @@
       "sprite": "sprites/actions.svg#actions-folder-add",
       "bidi": false
     },
+    "actions-folder-remove": {
+      "identifier": "actions-folder-remove",
+      "category": "actions",
+      "svg": "svgs/actions/actions-folder-remove.svg",
+      "sprite": "sprites/actions.svg#actions-folder-remove",
+      "bidi": false
+    },
     "actions-folder": {
       "identifier": "actions-folder",
       "category": "actions",
