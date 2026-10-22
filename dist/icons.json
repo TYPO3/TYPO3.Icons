@@ -2135,6 +2135,13 @@
       "sprite": "sprites/actions.svg#actions-message-add",
       "bidi": false
     },
+    "actions-message-check": {
+      "identifier": "actions-message-check",
+      "category": "actions",
+      "svg": "svgs/actions/actions-message-check.svg",
+      "sprite": "sprites/actions.svg#actions-message-check",
+      "bidi": false
+    },
     "actions-message-dots": {
       "identifier": "actions-message-dots",
       "category": "actions",
@@ -2161,6 +2168,13 @@
       "category": "actions",
       "svg": "svgs/actions/actions-message.svg",
       "sprite": "sprites/actions.svg#actions-message",
+      "bidi": false
+    },
+    "actions-messages": {
+      "identifier": "actions-messages",
+      "category": "actions",
+      "svg": "svgs/actions/actions-messages.svg",
+      "sprite": "sprites/actions.svg#actions-messages",
       "bidi": false
     },
     "actions-microchip": {
