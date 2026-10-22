@@ -560,6 +560,13 @@
       "sprite": "sprites/actions.svg#actions-bullhorn",
       "bidi": false
     },
+    "actions-calculator": {
+      "identifier": "actions-calculator",
+      "category": "actions",
+      "svg": "svgs/actions/actions-calculator.svg",
+      "sprite": "sprites/actions.svg#actions-calculator",
+      "bidi": false
+    },
     "actions-calendar-add": {
       "identifier": "actions-calendar-add",
       "category": "actions",
