@@ -238,6 +238,13 @@
       "sprite": "sprites/actions.svg#actions-aspect-ratio",
       "bidi": false
     },
+    "actions-at": {
+      "identifier": "actions-at",
+      "category": "actions",
+      "svg": "svgs/actions/actions-at.svg",
+      "sprite": "sprites/actions.svg#actions-at",
+      "bidi": false
+    },
     "actions-badge": {
       "identifier": "actions-badge",
       "category": "actions",
