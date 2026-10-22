@@ -1869,6 +1869,13 @@
       "sprite": "sprites/actions.svg#actions-insert",
       "bidi": false
     },
+    "actions-kanban": {
+      "identifier": "actions-kanban",
+      "category": "actions",
+      "svg": "svgs/actions/actions-kanban.svg",
+      "sprite": "sprites/actions.svg#actions-kanban",
+      "bidi": false
+    },
     "actions-key": {
       "identifier": "actions-key",
       "category": "actions",
