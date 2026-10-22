@@ -2989,6 +2989,13 @@
       "sprite": "sprites/actions.svg#actions-user-add",
       "bidi": false
     },
+    "actions-user-check": {
+      "identifier": "actions-user-check",
+      "category": "actions",
+      "svg": "svgs/actions/actions-user-check.svg",
+      "sprite": "sprites/actions.svg#actions-user-check",
+      "bidi": false
+    },
     "actions-user-edit": {
       "identifier": "actions-user-edit",
       "category": "actions",
@@ -3001,6 +3008,13 @@
       "category": "actions",
       "svg": "svgs/actions/actions-user-emulate.svg",
       "sprite": "sprites/actions.svg#actions-user-emulate",
+      "bidi": false
+    },
+    "actions-user-lock": {
+      "identifier": "actions-user-lock",
+      "category": "actions",
+      "svg": "svgs/actions/actions-user-lock.svg",
+      "sprite": "sprites/actions.svg#actions-user-lock",
       "bidi": false
     },
     "actions-user-remove": {
