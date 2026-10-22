@@ -2478,6 +2478,13 @@
       "sprite": "sprites/actions.svg#actions-preview",
       "bidi": false
     },
+    "actions-print": {
+      "identifier": "actions-print",
+      "category": "actions",
+      "svg": "svgs/actions/actions-print.svg",
+      "sprite": "sprites/actions.svg#actions-print",
+      "bidi": false
+    },
     "actions-qrcode": {
       "identifier": "actions-qrcode",
       "category": "actions",
