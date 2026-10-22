@@ -4900,6 +4900,13 @@
       "sprite": "sprites/content.svg#content-social-media",
       "bidi": false
     },
+    "content-spacer": {
+      "identifier": "content-spacer",
+      "category": "content",
+      "svg": "svgs/content/content-spacer.svg",
+      "sprite": "sprites/content.svg#content-spacer",
+      "bidi": false
+    },
     "content-special-div": {
       "identifier": "content-special-div",
       "category": "content",
