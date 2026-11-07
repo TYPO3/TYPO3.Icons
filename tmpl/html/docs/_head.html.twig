@@ -5,14 +5,14 @@
 <meta property="og:site_name" content="TYPO3 Icons">
 <meta property="og:type" content="website">
 <meta property="og:description" content="The official icon library for TYPO3 Core, extensions and custom backend modules.">
-<script src="{{ pathPrefix }}soul/soul-boot.js"></script>
-<link rel="preload" as="font" type="font/woff2" crossorigin href="{{ pathPrefix }}soul/fonts/source-sans-3-latin-wght-normal.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="{{ pathPrefix }}soul/fonts/source-code-pro-latin-wght-normal.woff2">
-<link rel="stylesheet" href="{{ pathPrefix }}soul/soul.css">
+<script src="{{ soul.base }}soul-boot.js" integrity="{{ soul.integrity['soul-boot.js'] }}" crossorigin="anonymous"></script>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="{{ soul.base }}fonts/source-sans-3-latin-wght-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="{{ soul.base }}fonts/source-code-pro-latin-wght-normal.woff2">
+<link rel="stylesheet" href="{{ soul.base }}soul.css" integrity="{{ soul.integrity['soul.css'] }}" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ pathPrefix }}dist/icons.css">
 <link rel="stylesheet" href="{{ pathPrefix }}assets/css/docs.css">
 <link rel="icon" href="{{ pathPrefix }}assets/signet/icons-signet-s.svg" type="image/svg+xml" sizes="16x16">
 <link rel="icon" href="{{ pathPrefix }}assets/signet/icons-signet-l.svg" type="image/svg+xml" sizes="32x32">
 <link rel="shortcut icon" href="{{ pathPrefix }}assets/favicon.ico" type="image/x-icon">
-<script type="module" src="{{ pathPrefix }}soul/soul.js" defer></script>
+<script type="module" src="{{ soul.base }}soul.js" integrity="{{ soul.integrity['soul.js'] }}" crossorigin="anonymous"></script>
 <script src="{{ pathPrefix }}assets/js/main.js" defer></script>

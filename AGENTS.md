@@ -92,8 +92,9 @@ Follow the existing icons of the same category. `guide-drawing` and
 ## The site and the Soul design system
 
 The site uses Soul (`@typo3/soul-frontend`): `soul.css` for the tokens and
-the `sds-` classes, `soul.js` for the `<sds-*>` elements. The site build
-copies its `dist/` to `_site/soul/`. The rules are in
+the `sds-` classes, `soul.js` for the `<sds-*>` elements. The pages load
+these files from jsDelivr, at the installed release and with an `integrity`
+hash. After a Soul update, run `npm run site-build` again. The rules are in
 `node_modules/@typo3/soul-frontend/README.md`. `dist/custom-elements.json` in
 that package lists every element with its attributes. The manual is at
 https://typo3.github.io/soul-design-system/frontend/index.html.

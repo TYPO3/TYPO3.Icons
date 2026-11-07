@@ -1,4 +1,5 @@
 // The documentation site: _site/, built from tmpl/, assets/ and dist/.
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import Twig from 'twig';
@@ -9,6 +10,20 @@ import { showcase } from './lib/categories.mjs';
 import { pages } from './lib/pages.mjs';
 
 const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+
+// The pages load Soul from jsDelivr at the exact release that is installed,
+// never a range. A script of another release draws markup that the build did
+// not check against. Each linked file gets the hash of the installed file, so
+// a browser runs only those bytes. The fonts, the chunks and the sprites that
+// these files load in turn have no hash, because no tag names them.
+function soulCdn() {
+    const release = JSON.parse(fs.readFileSync(path.join(options.soul, '..', 'package.json'), 'utf8')).version;
+    const integrity = Object.fromEntries(['soul-boot.js', 'soul.css', 'soul.js'].map((file) => {
+        const hash = crypto.createHash('sha384').update(fs.readFileSync(path.join(options.soul, file))).digest('base64');
+        return [file, 'sha384-' + hash];
+    }));
+    return { base: 'https://cdn.jsdelivr.net/npm/@typo3/soul-frontend@' + release + '/dist/', integrity: integrity };
+}
 
 // A code sample written into a template carries the template's indentation.
 // The first line of a Twig string literal begins right after the opening quote
@@ -78,17 +93,6 @@ export async function siteBuild() {
         // The static assets, without the stylesheets they are compiled from.
         copyTree(options.assets, path.join(options.site, 'assets'), (file, isDirectory) => isDirectory || !file.endsWith('.scss')),
         copyTree(options.dist, path.join(options.site, 'dist')),
-        // Copy the Soul design system. Nearly the whole dist is needed: soul.css
-        // references the fonts relatively and the elements resolve their sprites
-        // next to soul.js — which is `assets/icons/sprites/`, the one thing under
-        // assets this site asks for.
-        //
-        // `assets/icons/svgs/` is left behind: 392 single files and 1.6MB, published
-        // for consumers who want one glyph as a file, and nothing here links to any
-        // of them. It arrived with the move from git to the registry, where the two
-        // pack differently — worth stating, because a copy this broad is otherwise
-        // a directory that grows the published site whenever the package grows.
-        copyTree(options.soul, path.join(options.site, 'soul'), (file) => path.relative(options.soul, file) !== path.join('assets', 'icons', 'svgs')),
     ]);
 
     // Twig.js keeps one global template registry. Keeping it makes inheritance
@@ -170,6 +174,7 @@ export async function siteBuild() {
     // category or an icon page, which category or icon it shows.
     const context = {
         pkg: pkg,
+        soul: soulCdn(),
         typo3: typo3,
         icons: icons,
         iconCount: iconCount,
