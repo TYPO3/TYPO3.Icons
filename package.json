@@ -29,7 +29,7 @@
   "license": "MIT",
   "devDependencies": {
     "@stylistic/stylelint-plugin": "^5.3.1",
-    "@typo3/soul-frontend": "^0.8.1",
+    "@typo3/soul-frontend": "^0.11.1",
     "clean-css": "^5.3.3",
     "deepmerge": "^4.3.1",
     "http-server": "^14.1.1",
