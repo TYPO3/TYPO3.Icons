@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [5.3.0] - 2026-11-08
+
+1a193d2e [FEATURE] Add actions-life-ring
+263fef5c [FEATURE] Add actions-scale-balanced, actions-scale-unbalanced and actions-scale-unbalanced-flip
+46ecc1e9 [TASK] Load Soul from jsDelivr on the documentation site
+7965428d [TASK] Update @typo3/soul-frontend to 0.11.1
+18f14060 [DOCS] Remove outdated icon counts from a comment of the home page
+c43df03d [DOCS] Use the Soul elements on the home page and fix its narrow layouts
+
+
 ## [5.2.0] - 2026-10-22
 
 696d5c43 [FEATURE] Add content-spacer
