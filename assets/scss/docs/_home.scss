@@ -10,6 +10,15 @@
 // which is one category of the 796 this site documents. Every value below is a
 // token, and the hover is the rise and edge that `sds-icon-tile` answers a
 // pointer with — the keyboard gets the same answer.
+//
+// The wall is three tiles across at every width, so the six marks stand in
+// two rows. `sds-grid` keeps an item at 150px or more, and on a phone it gave
+// two columns. The wall fills its column at every width.
+.homegrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+}
 .homegrid-item {
     display: flex;
     align-items: center;
@@ -72,4 +81,12 @@ sds-search[size="lg"] {
         text-overflow: ellipsis;
         overflow: hidden;
     }
+}
+
+// The intro stacks below 470px per column. Soul releases a split column at
+// 280px, and there the display heading of the intro breaks into four lines.
+// `--split-min` is internal to `.sds-split` in Soul, so a Soul update can
+// remove it. Then the intro stacks at 280px again and nothing breaks.
+.docs-intro {
+    --split-min: 470px;
 }

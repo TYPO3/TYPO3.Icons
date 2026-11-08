@@ -4,7 +4,7 @@
 {% block content %}
 
     <section class="sds-band">
-        <div class="sds-split sds-split--center">
+        <div class="sds-split sds-split--center docs-intro">
             <div class="sds-column">
                 <sds-eyebrow label="The official icon library for TYPO3"></sds-eyebrow>
                 {#- No qualifier. "every TYPO3 backend" claimed a plural that does
@@ -52,7 +52,7 @@
                     shaped, and six rectangles in a row show range in a table and
                     none on a wall. A gear, a folder, a box, a sheet, a speaker
                     and a person, which is also six different categories. -#}
-                <sds-grid variant="dense" data-showcase>
+                <div class="homegrid" data-showcase>
                     {%- set showcase = [
                         'actions-cog', 'apps-filetree-folder-default', 'module-extensionmanager',
                         'mimetypes-pdf', 'content-audio', 'status-user-admin'
@@ -69,7 +69,7 @@
                             } -%}
                         </a>
                     {%- endfor -%}
-                </sds-grid>
+                </div>
             </div>
         </div>
     </section>
@@ -177,8 +177,8 @@
                     TYPO3 Core pins a tested version of the icon library. Check which package
                     version—and therefore which icons—you can rely on in each TYPO3 branch.
                 </p>
-                <div class="sds-table-scroll docs-reference">
-                    <table class="sds-table sds-table--compact">
+                <sds-table density="compact" scrollable>
+                    <table>
                         <thead>
                             <tr>
                                 <th scope="col">TYPO3</th>
@@ -199,7 +199,7 @@
                             {%- endfor -%}
                         </tbody>
                     </table>
-                </div>
+                </sds-table>
                 <div class="sds-actions">
                     <sds-button href="{{ pathPrefix }}guide/compatibility.html" variant="secondary">Check every TYPO3 version</sds-button>
                 </div>
@@ -207,23 +207,17 @@
         </div>
     </section>
 
+    {#- The one call to action of the page. `sds-cta` draws the heading, the
+        line and the two presses, so the band holds no split of its own. -#}
     <section class="sds-band sds-band--quiet">
-        <div class="sds-split sds-split--center">
-            <div class="sds-column">
-                <sds-eyebrow label="Built by the TYPO3 community"></sds-eyebrow>
-                <h2>Help shape the TYPO3 visual language</h2>
-                <p>
-                    Improve an existing icon or the documentation, follow the drawing rules and
-                    contribute your work through the established GitHub workflow.
-                </p>
-            </div>
-            <div class="sds-column">
-                <div class="sds-actions">
-                    <sds-button href="{{ pathPrefix }}guide/contributing.html" variant="primary" size="lg">Contribution guide</sds-button>
-                    <sds-button href="https://github.com/TYPO3/TYPO3.Icons" variant="secondary" size="lg">View on GitHub</sds-button>
-                </div>
-            </div>
-        </div>
+        <sds-cta
+            heading="Help shape the TYPO3 visual language"
+            body="Improve an existing icon or the documentation, follow the drawing rules and contribute your work through the established GitHub workflow."
+            action="Contribution guide"
+            href="{{ pathPrefix }}guide/contributing.html"
+            second="View on GitHub"
+            second-href="https://github.com/TYPO3/TYPO3.Icons"
+        ></sds-cta>
     </section>
 
 {% endblock %}
