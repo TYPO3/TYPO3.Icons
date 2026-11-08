@@ -2940,6 +2940,27 @@
       "sprite": "sprites/actions.svg#actions-save",
       "bidi": false
     },
+    "actions-scale-balanced": {
+      "identifier": "actions-scale-balanced",
+      "category": "actions",
+      "svg": "svgs/actions/actions-scale-balanced.svg",
+      "sprite": "sprites/actions.svg#actions-scale-balanced",
+      "bidi": false
+    },
+    "actions-scale-unbalanced-flip": {
+      "identifier": "actions-scale-unbalanced-flip",
+      "category": "actions",
+      "svg": "svgs/actions/actions-scale-unbalanced-flip.svg",
+      "sprite": "sprites/actions.svg#actions-scale-unbalanced-flip",
+      "bidi": false
+    },
+    "actions-scale-unbalanced": {
+      "identifier": "actions-scale-unbalanced",
+      "category": "actions",
+      "svg": "svgs/actions/actions-scale-unbalanced.svg",
+      "sprite": "sprites/actions.svg#actions-scale-unbalanced",
+      "bidi": false
+    },
     "actions-screen-share": {
       "identifier": "actions-screen-share",
       "category": "actions",
