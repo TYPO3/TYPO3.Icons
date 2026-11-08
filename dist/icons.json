@@ -2142,6 +2142,13 @@
       "sprite": "sprites/actions.svg#actions-library",
       "bidi": false
     },
+    "actions-life-ring": {
+      "identifier": "actions-life-ring",
+      "category": "actions",
+      "svg": "svgs/actions/actions-life-ring.svg",
+      "sprite": "sprites/actions.svg#actions-life-ring",
+      "bidi": false
+    },
     "actions-lightbulb-on": {
       "identifier": "actions-lightbulb-on",
       "category": "actions",
